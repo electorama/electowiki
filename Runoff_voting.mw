@@ -1,0 +1,83 @@
+'''Runoff voting'''  is a [[voting system]] used in single-seat [[election]]s. It is used widely around the world, including in elections for the [[President of France]] and [[President of Finland|Finland]], and especially in a [[political party]]'s [[primary election]]s, in which it selects candidates to present to the public.
+
+When restricted to two rounds, it is sometimes called the '''two round system''' or the '''second ballot'''.  When the number of rounds is unlimited, then it is sometimes known as an '''elimination ballot'''.
+
+== Voting ==
+
+In the preliminary election, voters select their preferred candidate.  If one candidate reaches the election threshold (usually fifty percent of the positive votes plus one), they are elected.  
+
+Otherwise, in a two round system, the top candidates (usually the top two) are placed on a secondary ballot.  Whoever receives the most votes on the second ballot is declared elected.
+
+In an elimination ballot, successive rounds of voting are held until a candidate wins a majority of the positive votes.  After each inconclusive round, those candidates at the bottom whose votes together do not add up to the votes of the next candidate are eliminated (so barring ties at least one candidate is eliminated each round).
+
+Runoff voting can be condensed into a single preference ballot paper, at which point it becomes [[instant-runoff voting]] or an "alternative vote".  A simplified model of a two round system is the [[supplementary vote]].    
+
+A runoff ballot is not the same thing as a [[primary election]]. In a runoff ballot, all candidates are placed on the inital ballot and all voters are allowed to participate in the vote, whereas primaries are generally internal measures within a political party.
+
+== An Example ==
+
+{{Tenn_voting_example}}
+
+Assuming each voter voted for their preferred city (for a more sophisticated approach, see below), the first ballot results would be as follows: 
+
+*Memphis: 42%
+*Nashville: 26%
+*Knoxville: 17%
+*Chattanooga: 15%
+
+In a two round runoff,  Knoxville and Chattanooga are eliminated, while Nashville and Memphis advance to the second ballot.
+
+The voters from Knoxville and Chattanooga prefer Nashville to Memphis, so the results of the second ballot would be:
+
+*Nashville: 58%
+*Memphis: 42%
+
+Nashville would then be declared the winner.
+
+Note on strategy: A two round runoff encourages candidates to unite to make the top two cut. Since Chattanooga and Knoxville both prefer each other second, knowing their divided vote might eliminate them both, they might work together before the election and decide for only Chattanooga to run. That would cause the defeat of Nashville (third place) and Chattanooga could win the final runoff round against Memphis.  Something similar would happen with a multi-round elimination ballot.
+
+In an elimination ballot, Chattanooga would be eliminated after the first round, and the second round would be:
+
+*Memphis: 42%
+*Knoxville: 32%  
+*Nashville: 26%
+
+Nashville would then be eliminated and the third round of the elimination ballot would be:
+
+*Knoxville: 58%
+*Memphis: 42%
+
+So Knoxville would win.
+
+== Potential for Tactical Voting ==
+
+The runoff system encourages voters to "compromise" by not voting for their favorite candidate in their first round.  In the above two-round example, if all voters from Chattanooga "compromised" for Knoxville in the first round, Knoxville would advance to the second round, where it would defeat Memphis.  This would be a better result for the Chattanooga voters than sincere voting would get them.  The Memphis supporters voters could respond by voting for Nashville instead of Memphis as a way to prevent Knoxville or Chattanooga winning.  
+
+Runoff voting can also encourage voters to vote for "push-overs", in order to set up a more favorable second-round matchup.  
+
+== Impact of scattered voting on two-round systems ==
+A two-round runoff voting system, in practice, may work as a system of [[primary election]]s in countries where there are two major partisan blocks, by choosing for the second round of election a candidate in each block. While this is the usual outcome, different situations may arise in the presence of coalitions fielding multiple candidates, protest votes and third parties.
+
+A striking example, which attracted considerable media attention, was that of the [[French presidential election, 2002|2002 French presidential election]]. The two major contenders, respectively leading a left-wing and a right-wing coalition, were [[Lionel Jospin]] and [[Jacques Chirac]]. However, the left-wing coalition fielded three additional candidates representing minor parties in the coalition. Furthermore, part of the left-wing vote went to candidates from far-left parties, presumably to protest Jospin's policies, deemed too centrist. A third important candidate was [[Jean-Marie Le Pen]], a controversial politician often described as racist and fascist-leaning. On the first round of elections:
+* Jacques Chirac obtained 19.88% of the vote; added to other candidate in the same coalition [[FranÃƒÂ§ois Bayrou]]'s 6.84%, this makes 26.72%;
+* Lionel Jospin obtained 16.18% of the vote; added to other candidates in the same coalition [[Robert Hue]] (3.37%), [[NoÃƒÂ«l MamÃƒÂ¨re]] (5.25%), [[Christiane Taubira]] (2.32%), this makes 27.12%.
+While it is not established that voters for minor candidates of each coalition would have voted for the major candidate of the same coalition, these sums would tend to indicate that Jospin had a slight edge over Chirac.
+Le Pen, however, obtained 16.86% and thus went to the second round of election against Chirac. Since the vast majority of the electorate disapproves of Le Pen's policies, Chirac then won by an enormous majority (82.21%). In the last decades, normal second rounds in French presidential elections were settled around 50% for each side.
+
+== Impact on factions and candidates ==
+
+Between each round of voting, discussion and dealing is possible; policy concessions and withdrawals can be negotiated. Accordingly, runoff votes in some form are advocated as part of most [[deliberative democracy]] proposals.  Other [[electoral reform]] and [[grassroots democracy]] advocates prefer [[instant-runoff voting]] which let larger groups participate in the process by ballot - the French participation of the whole electorate in a runoff vote is a rare exception and permits some dealing between parties who have lost and those who seek their support.
+
+The one-ballot "instant runoff" proposals are the opposite of such 'deliberative' processes, as there is no time nor place for explicit discussion and dealing as the power relationships become clear. Polls can take the place of early rounds of balloting, but are nowhere near as statistically valid as a formal vote.
+
+== See also ==
+
+*[[Voting system]] - many other ways of voting
+*[[First Past the Post electoral system]]
+*[[Instant-runoff voting]]
+*[[primary election]]
+*[[deliberative democracy]]
+
+[[Category:Voting systems]]
+
+{{fromwikipedia}}
