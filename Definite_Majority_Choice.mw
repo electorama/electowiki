@@ -15,7 +15,7 @@ The philosophical basis of DMC (also due to [http://lists.electorama.com/piperma
 DMC is currently the best candidate for a Condorcet Method that meets the [[Public Acceptability Criterion|Public Acceptability "Criterion"]].
 == Procedure ==
 The DMC differs from the [[Condorcet Criterion|Condorcet Winner]] in one crucial respect:
-The Definite Majority Choice winner is the candidate who, when compared in turn with each of the other ''higher-approved'' candidates, is preferred over the other candidate.
+:The Definite Majority Choice winner is the candidate who, when compared in turn with each of the other ''higher-approved'' candidates, is preferred over the other candidate.
 
 We'll illustrate the method with a deliberately crude ballot and then follow with an example of other ballot possibilities.
 
@@ -145,7 +145,6 @@ If equal Approval scores affect the outcome, there are several alternatives for 
 When there are no ties, the winner is the candidate in Forest Simmon's '''[http://wiki.electorama.com/wiki/Techniques_of_method_design#Special_sets P]''' set, the ''set of candidates which are not definitively defeated''.
 
 In the event of a pairwise tie or near tie (say, margin within 0.01%), it is sometimes possible to proceed anyway, since another member of P may defeat the tied pair.  But if there is no clear winner, ties should be handled using the same [http://wiki.electorama.com/wiki/Maximize_Affirmed_Majorities#Compute_Tiebreak Random Ballot] procedure as in [[Maximize Affirmed Majorities]].
-
 
 == See Also ==
 
