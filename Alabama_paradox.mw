@@ -1,0 +1,45 @@
+The Alabama paradox refers to the pathologicial scenario of the [[Hamilton_method]] in which an increase in the total number of seats in the legislature would cause an electoral district or political party to lose a seat.
+
+For example:
+{|
+|-
+! Party !! Votes
+|-
+| A || 56.7%
+|-
+| B || 38.5%
+|-
+| C || 4.2%
+|-
+| D || 0.6%
+|}
+
+With 323 seats, the Hamilton method gives:
+{|
+|-
+! Party !! Quotas !! Seats
+|-
+| A || 183.141 || 183
+|-
+| B || 124.355 || 124
+|-
+| C || 13.566 || '''14'''
+|-
+| D || 1.938 || 2
+|}
+
+But with 324 seats:
+{|
+|-
+! Party !! Quotas !! Seats
+|-
+| A || 183.708 || 184
+|-
+| B || 124.740 || 125
+|-
+| C || 13.608 || '''13'''
+|-
+| D || 1.944 || 2
+|}
+
+The Alabama Paradox is named after the 1880 observation by U.S. census clerk C.W. Seaton that the state of Alabama would lose one of its 8 seats in the House of Representatives if the size of the House were increased from 299 to 300.
