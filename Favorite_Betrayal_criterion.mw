@@ -1,11 +1,8 @@
-In [[social choice theory]], the '''Favoriate Betrayal criterion''' is a criterion for evaluating [[voting system]]s.
+In [[social choice theory]], the '''Favorite Betrayal criterion''' is a criterion for evaluating [[voting system]]s.
 
 ==Definition==
 
-<p>A voter optimizes the outcome (from his own perspective) if his vote
-causes the election of the best possible candidate that can be elected,
-based on his own preferences, given all the votes cast by other
-voters.</p>
+A voter optimizes the outcome (from his own perspective) if his vote causes the election of the best possible candidate that can be elected, based on his own preferences, given all the votes cast by other voters.
 
 ==Statement of the criterion==
 
@@ -19,26 +16,7 @@ The [[approval voting|approval]] method complies with the favorite betrayal crit
 
 Election methods that meet this criterion provide no incentive for voters to betray their favorite candidate by voting another candidate over him or her.
 
-''Some parts of this article are derived with permission from text at http://electionmethods.org''
-
-== See also ==
-
-*[[Voting system]]
-*[[Monotonicity criterion]]
-*[[Condorcet Criterion]]
-*[[Generalized Condorcet criterion]]
-*[[Strategy-Free criterion]]
-*[[Generalized Strategy-Free criterion]]
-*[[Strong Defensive Strategy criterion]]
-*[[Weak Defensive Strategy criterion]]
-*[[Participation criterion]]
-*[[Summability criterion]]
-
-== External links ==
-
-* [http://electionmethods.org/ Election Methods Education and Research Group]
-
-
 [[Category:Voting system criteria]]
 
+''Some parts of this article are derived with permission from text at http://electionmethods.org''
 {{fromwikipedia}}
