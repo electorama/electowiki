@@ -58,6 +58,7 @@ Examples of Condorcet methods include:
 * '''Smith/Minimax''' restricts the Minimax algorithm to the Smith set.<sup>1</sup>
 * '''[[Ranked Pairs]]''' (RP) or '''Tideman''' (named after [[Nicolaus Tideman]]) with variations such as '''[[Maximize Affirmed Majorities]]''' (MAM) and  '''[[Maximum Majority Voting]]''' (MMV)<sup>1</sup>
 * '''Schulze''' with several reformulations/variations, including '''Schwartz Sequential Dropping (SSD)''' and '''[[Cloneproof Schwartz Sequential Dropping]] (CSSD)'''<sup>1</sup>
+* '''[[Approval-Condorcet Hybrids]]''', such as '''[[Definite Majority Choice]]''', use an [[Approval Cutoff]] to augment the Condorcet pair wise array.  Many believe that such a method would  make a good first-round public proposal.
 
 <sup>1</sup> There are different ways to measure the strength of each defeat in some methods.  Some use the margin of defeat (the difference between votes for and votes against), while others use winning votes (the votes favoring the defeat in question).
 Electionmethods.org argues that there are several disadvantages of systems that use margins instead of winning votes.
