@@ -1,23 +1,22 @@
-[[Image:Voters at the voting booths in 1945.jpeg|thumb|250px|Voters at the voting booths in the [[US]] in 1945]]
-'''Voting systems''' are methods ([[algorithm]]s) for groups of people to select one or more options from many, taking into account the individual preferences of the group members. [[Vote|Voting]] is often seen as the defining feature of [[democracy]], and is best known for its use in [[election]]s &mdash; but it can also be used to award prizes, to select between different plans of action, or as a means for computer programs to evaluate which solution is best for a complex problem. 
+'''Voting systems''' or '''election methods''' are methods for groups of people to select one or more options from many, taking into account the individual preferences of the group members.  Voting is often seen as the defining feature of democracy, and is best known for its use in elections &mdash; but it can also be used to award prizes, to select between different plans of action, or as a means for computer programs to evaluate which solution is best for a complex problem. 
 
-A key property of voting systems is that, because they are algorithms, they must be formally defined.  [[Consensus]], for example, which is sometimes put forward as a voting system, is more properly a broad way of working with others, analogous to democracy or [[anarchy]] (See [[consensus decision making]] for disciplined consensus methods and how they relate to voting).
+A key property of voting systems is that, because they are algorithms, they must be formally defined.  Consensus, for example, which is sometimes put forward as a voting system, is more properly a broad way of working with others, analogous to democracy or anarchy.
 
 == Aspects of voting systems ==
 
 === The ballot ===
 
-Different voting systems have different forms for allowing the individual to express their [[tolerances versus preferences|tolerances or preferences]].  In [[ranked ballot]] or "preference" voting systems, like [[Instant-runoff voting]], the [[Borda count]], or a [[Condorcet method]], voters order the list of options from most to least preferred.  In [[range voting]], voters rate each option separately.  In [[first-past-the-post]] (also known as plurality voting), voters select only one option, while in [[approval voting]], they can select as many as they want.  In voting systems that allow "plumping", like [[cumulative voting]], voters may vote for the same candidate multiple times.
+Different voting systems have different forms for allowing the individual to express their [[tolerances versus preferences|tolerances or preferences]].  In [[ranked ballot]] or "preference" voting systems, like [[Instant-runoff voting]], the [[Borda count]], or a [[Condorcet method]], voters order the list of options from most to least preferred.  In [[range voting]], voters rate each option separately.  In [[first-past-the-post]] (also known as plurality voting), voters select only one option, while in [[approval voting]], they can select as many as they want.  In voting systems that allow [[plumping]], like [[cumulative voting]], voters may vote for the same candidate multiple times.
 
 === District (constituency) size ===
 
-A voting system may select only one option (usually a candidate, but also an option that represents a decision), in which case it is called a "single winner system", or it may select multiple options , for example candidates to fill an assembly or alternative possible decisions on the measure the ballot posed.
+A voting system may select only one option (usually a candidate, but also an option that represents a decision), in which case it is called a "single winner system", or it may select multiple options, for example candidates to fill an assembly or alternative possible decisions on the measure the ballot posed.
 
 Some countries, like [[Israel]], fill their entire parliament using a single multiple-winner district ([[constituency]]), while others, like [[Ireland]] or [[Belgium]], break up their national elections into smaller, multiple-winner districts, and yet others, like the [[United States]] or the [[United Kingdom]], hold only single-winner elections.  Some systems, like the [[Additional member system]], embed smaller districts within larger ones.
 
 === Party-list systems ===
 
-In [[party-list proportional representation]] systems, candidates can be aligned with, or nominated by, parties, and the party's list of candidates plays a functional role within the system.  These parties may in turn be aligned with other parties, to form coalitions, which can play roles beyond those played by the party.  These systems are designed to ensure [[proportional representation]], the idea that the candidates selected from a given party (or, in non-party-list systems, informal grouping) should be in proportion to the votes cast for that party.  Some of these systems, however, have [[election threshold]]s--minimum numbers of votes cast for a party to win any seats.  The purpose of an election threshold is generally to keep very small parties from participating in a parliament, in order to maintain stability of governments.
+In [[party-list proportional representation]] systems, candidates can be aligned with, or nominated by, parties, and the party's list of candidates plays a functional role within the system.  These parties may in turn be aligned with other parties, to form [[coalition]]s, which can play roles beyond those played by the party.  These systems are designed to ensure [[proportional representation]], the idea that the candidates selected from a given party (or, in non-party-list systems, informal grouping) should be in proportion to the votes cast for that party.  Some of these systems, however, have [[election threshold]]s--minimum numbers of votes cast for a party to win any seats.  The purpose of an election threshold is generally to keep very small parties from participating in a parliament, in order to maintain stability of governments.
 
 === None of the above option===
 
@@ -56,8 +55,7 @@ Other criteria which have been used to judge voting systems include:
 *[[Participation criterion]] (PC)
 *[[Summability criterion]] (SC)
 
-
-Voting systems can be abstracted as mathematical functions that select between choices based on the [[utility]] of each option for each voter.  This greatly resembles a [[social welfare function]] as studied in [[welfare economics]] and many of the same considerations can be studied. For aspects such as simplicity, dispute, and fraud, the practical implementation is far more important than the abstract function. However, the choice of abstract function puts some constraints on the implementation. For instance, certain voting systems such as First Past the Post, [[Cloneproof Schwartz Sequential Dropping]], or Borda Count can be tallied in one distributed step, others such as Instant-Runoff require centralization, and others such as multi-round runoff require multiple polling rounds.
+Voting systems can be abstracted as mathematical functions that select between choices based on the [[utility]] of each option for each voter.  This greatly resembles a [[social welfare function]] as studied in welfare economics and many of the same considerations can be studied. For aspects such as simplicity, dispute, and fraud, the practical implementation is far more important than the abstract function. However, the choice of abstract function puts some constraints on the implementation. For instance, certain voting systems such as First Past the Post, [[Cloneproof Schwartz Sequential Dropping]] (CSSD), or Borda Count can be tallied in one distributed step, others such as IRV require centralization, and others such as multi-round runoff require multiple polling rounds.
 
 == List of systems ==
 
@@ -124,7 +122,7 @@ They can also be classified on how many times votes can be counted. Methods like
 **[[Additional Member System]] (also called Mixed Member Proportional) 
 **[[Parallel voting]] (also called Supplementary Member system)
 
-===Criteria for evaluating election methods (by Mike Ossipoff)===
+===Criteria for evaluating election methods===
 ; Favorite Betrayal Criterion (FBC) : a voter should never have to vote a less favored candidate over their favorite
 Some would argue that if a voter is not too narrow-minded and understands overall trends and the  dynamics of calculating votes, then this criterion should be ignored. Others might consider this cheating.
 ; Strategy Free Criterion (SFC) : a voter should be able to achieve optimal results by voting their sincere preferences
@@ -148,24 +146,16 @@ Some would argue that if a voter is not too narrow-minded and understands overal
 *[[Kenneth Arrow]] (mathematically demonstrated the limitations of voting systems)
 
 ==See also==
-*[[List of democracy and elections-related topics]]
 
-*[[Consensus]]
-*[[Democracy]]
 *[[Disapproval voting]] (anyone not disapproved, effectively wins - this method is more associated with [[reality game show]]s than with public elections)
 *[[Duverger's law]]
 *[[Electoral reform]]
 *''Electoral Systems: A Comparative Introduction'' ISBN 0333801628
-*[[Grassroots democracy]]
 *[[Party system]]
-*[[Political scientist]]s
-*[[Politics]]
-*[[Representative democracy]]
 *[[Seniomeritocracy]]
 *[[Spoiler effect]]
 *[[Table of voting systems by nation]]
 *[[Tactical voting]]
-*[[Vote counting systems]]
 
 == External links ==
 
@@ -183,7 +173,6 @@ Some would argue that if a voter is not too narrow-minded and understands overal
 * [http://fc.antioch.edu/~jarmyta@antioch-college.edu/voting.htm James Green-Armytage's voting methods page] Includes a beginner-friendly introduction and a helpful in-depth tutorial
 * [http://www.mcs.vuw.ac.nz/~ncj/comp303/schulze.pdf A New Monotonic and Clone-Independent Single-Winner Election Method] ('''[[Portable Document Format|PDF]]''') by Markus Schulze ([http://www.citizensassembly.bc.ca/resources/submissions/csharman-10_0409201706-143.pdf mirror1], [http://lists.gnu.org/archive/html/demexp-dev/2003-09/pdflQW7IlpAfC.pdf mirror2])
 * [http://www.masquilier.org/republic/election/ A different way to vote] by AugustinMa. Of interest is the [http://www.masquilier.org/libre/phpbb/ modified] version of the popular phpBB bulletin board that can be found [http://www.masquilier.org/agora/ here]. The board allows the users to create plurality, approval and condorcet ([http://en.wikipedia.org/wiki/Cloneproof_Schwartz_Sequential_Dropping Cloneproof Schwartz Sequential Dropping]) polls and [http://www.masquilier.org/agora/viewforum.php?f=7 cast their ballots].
-
 
 [[Category:Voting systems|*]]
 
