@@ -1,4 +1,4 @@
-'''Definite Majority Choice''' (DMC) is a [[voting method]] proposed by several (name suggested by [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015164.html Forest Simmons]) to select a single winner using ballots that express preferences, with an additional indication of Approval Cutoff.
+'''Definite Majority Choice''' (DMC) is a [[voting method]] proposed by several (name suggested by [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015164.html Forest Simmons]) to select a single winner using ballots that express both ranked preferences and approval.
 
 If there is a candidate who is preferred over the other candidates,
 when compared in turn with each of the others, DMC guarantees that that candidate will win.
@@ -16,10 +16,12 @@ DMC is currently the best candidate for a Condorcet Method that meets the '[[Pub
 == Procedure ==
 
 === The Ballot ===
-A voter ranks candidates in order of preference, and may decide to rank some candidates without giving them approval.
+A voter ranks candidates in order of preference, additionally giving approval points to some or all of those ranked.
 
 ==== Using Grades to Rank Candidates ====
-A [[Graded Ballot]] ballot implementation would infer the ordinal ranking from the grades given to candidates.
+Many people are familiar with the standard method of giving grades A-plus through F-minus.   Most are also familiar with the Pass/Fail form of grading. A student receives grades from many instructors and on finishing school has a total grade point average or pass/fail total.
+
+A similar idea could be used to rank candidates -- a voter could grade candidates as if the voter were the instructor and the candidates were the students.  Determining the winner of the election would be similar to finding the student with the best set of grades.
 <pre>
             A    B    C    D    F       +  /  -
 				       	    	  
@@ -31,18 +33,15 @@ A [[Graded Ballot]] ballot implementation would infer the ordinal ranking from t
 				       	    	  
       X3   ( )  ( )  ( )  ( )  ( )     ( )   ( )
 </pre>
+Like an instructor grading students, a voter may give the same grade (rank) to more than one candidate.   But here, there is one additional grade -- no grade at all.  Ungraded candidates are ranked lower than all graded candidates.  By giving one candidate a higher grade than another, the voter gives the higher-graded candidate one vote in its one-to-one contest with the lower-graded candidate.
 
-A voter may give the same grade (rank) to more than one candidate.   Ungraded candidates are graded (ranked) below all graded candidates.
+C is the "Lowest Passing Grade" (LPG):  any candidate with a grade of C or higher gets one Approval point.  No Approval points are given to candidates graded at C-minus or below (that includes ungraded candidates).
 
-A candidate gets one vote in the one-to-one contest with any other candidate with a lower grade (rank).
-
-C is the "Lowest Passing Grade" (LPG):  any candidate with a grade of C or higher gets one Approval point.  No Approval points are given to candidates graded at C-minus or below or to ungraded candidates.
-
-A candidate's total approval score will be used like the 'seed' rating in sports tournaments, to decide which one-to-one contests have greater weight.
+A candidate's total approval score will be used like the 'seed' rating in sports tournaments, to decide which one-to-one victories are worth more than others.
 
 Grades assigned to non-passing (disapproved) candidates help determine which of them will win if the voter's approved candidates do not win.
 
-In small races it should be sufficient to grade 2 or 3 candidates, but in crowded races, there is the option to add a plus or minus to the grade, allowing a voter to rank candidates at up to 16 levels:  8 approved (A-plus to C) and 8 unapproved (C-minus to unranked).
+In small elections it should be adequate for a voter to grade only 2 or 3 candidates, but in crowded races, the voter could also add a plus or minus on the grade.  That allows a voter to specify up to 16 different rank levels:  8 approved (A-plus to C) and 8 unapproved (C-minus to unranked).
 
 With the Approval Cutoff / Lowest Passing Grade at C instead of C-minus, an indecisive voter can be hesitant about granting approval by initially filling in a grade of C.  If after reconsideration the voter decides to withold approval, the minus can then be checked.
 
@@ -61,10 +60,10 @@ If the Graded Ballot is deemed too complex, a ranked ballot could be used instea
       X3   ( )  ( )  ( )  ( )    ( )  ( )  ( )
 </pre>
 
-Ranks 1 through 4 would be approved, 5 through 7 and ungraded would be unapproved.
+Ranks 1 through 4 would be approved, 5 through 7 and ungraded (rank 8) would be unapproved.
 
 The voting method would be unchanged otherwise:
-# Candidates receiving rank 1 through 4 would get 1 approval point.
+# Candidates ranked at 1st through 4th choice get 1 approval point each.
 # A higher-ranked candidate gets one vote in each one-to-one contest with lower-ranked candidates.
 
 ==== Discussion ====
