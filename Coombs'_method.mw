@@ -1,0 +1,110 @@
+The '''Coombs' method''', created by [[Clyde Coombs]], is a [[voting system]] used for single-winner [[election]]s [[preferential voting|in which each voter rank-orders the candidates]]. It sort of works like [[Instant Runoff Voting]] (a US term; it is known as Preferential Voting in some countries) in reverse.
+
+==Procedures==
+Each voter rank-orders all of the candidates on their ballot. If at any time one candidate is ranked first (among non-eliminated candidates) by an absolute majority of the voters, then this is the winner. As long as this is not the case, the candidate which is ranked last (again among non-eliminated candidates) by the most (or a [[plurality]] of) voters is eliminated.
+
+==An example==
+Imagine an election to choose the capital of [[Tennessee]], a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 miles northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
+<div style="float:right;  padding:2px; text-align:center">
+[[Image:CondorcetTennesee.png]]</div>
+
+* Memphis (Shelby County): 826,330
+* Nashville (Davidson County): 510,784
+* Chattanooga (Hamilton County): 285,536
+* Knoxville (Knox County): 335,749
+
+Let's say that in the vote, the voters vote based on geographic proximity.  Assuming that the population distribution of the rest of Tennesee follows from those population centers, one could easily envision an election where the percentages of sincere preferences would be as follows:
+
+<table border=1>
+<tr>
+<td>
+'''Group A: 42% of voters <br>(close to Memphis)'''<br>
+1. Memphis<br>
+2. Nashville<br>
+3. Chattanooga<br>
+4. Knoxville
+</td>
+<td valign="top">
+'''Group B: 26% of voters <br>(close to Nashville)'''<br>
+1. Nashville<br>
+2. Chattanooga<br>
+3. Knoxville<br>
+4. Memphis
+</td>
+<td>
+'''Group C: 15% of voters <br>(close to Chattanooga)'''<br>
+1. Chattanooga<br>
+2. Knoxville<br>
+3. Nashville<br>
+4. Memphis
+</td>
+<td>
+'''Group D: 17% of voters <br>(close to Knoxville)'''<br>
+1. Knoxville<br>
+2. Chattanooga<br>
+3. Nashville<br>
+4. Memphis
+</td>
+</tr>
+</table>
+
+Assuming all of the voters vote sincerely (strategic voting is discussed below), the results would be as follows, by percentage:
+
+<table border="1">
+  <caption>Coombs' Method Election Results</caption>
+    <tr>
+      <th rowspan="2">City</th>
+      <th colspan="2">Round 1</th>
+      <th colspan="2">Round 2</th>
+    </tr>
+    <tr>
+      <th>First</th>
+      <th>Last</th>
+      <th>First</th>
+      <th>Last</th>
+    </tr>
+    <tr>
+      <th bgcolor="#ffc0c0">Memphis</th>
+      <td bgcolor="#ffc0c0">42</td>
+      <td bgcolor="#ffc0c0">58</td>
+      <td bgcolor="#e0e0ff"><strike>42</strike> 0 </td>
+      <td bgcolor="#c0c0c0" rowspan="4"></td>
+    </tr>
+    <tr>
+      <th bgcolor="#ffc0c0">Nashville</th>
+      <td bgcolor="#ffc0c0">26</td>
+      <td bgcolor="#ffc0c0">0</td>
+      <td bgcolor="#ffc0c0"><strike>26</strike> 68</td>
+    </tr>
+    <tr>
+      <th bgcolor="#ffc0c0">Chattanooga</th>
+      <td bgcolor="#ffc0c0">15</td>
+      <td bgcolor="#ffc0c0">0</td>
+      <td bgcolor="#ffc0c0">15</td>
+    </tr>
+    <tr>
+      <th bgcolor="#ffc0c0">Knoxville</th>
+      <td bgcolor="#ffc0c0">17</td>
+      <td bgcolor="#ffc0c0">42</td>
+      <td bgcolor="#ffc0c0">17</td>
+    </tr>
+</table>
+
+* In the first round, no candidate has an absolute majority of first place votes (51).
+* Memphis, having the most last place votes (26+15+17=58), is therefore eliminated.   
+* In the second round, Memphis is out of the running, and so must be factored out. Memphis was ranked first on Group A's ballots, so the second choice of Group A, Nashville, gets an additional 42 first place votes, giving it an absolute majority of first place votes (68 versus 15+17=32) and making it thus the winner. Note that the last place votes are disregarded in the final round.
+
+Note that although Coomb's method chose the [[Condorcet winner]] here, this is not necessarily the case.
+
+==Potential for tactical voting==
+The Coombs' method is vulnerable to three strategies: [[tactical voting|compromising, push-over]] and [[strategic nomination|teaming]].
+
+==See also==
+* [[List of democracy and elections-related topics]] 
+
+==External links==
+*[http://condorcet.org/emr/methods.shtml#Coombs Condorcet.org EMR: Coombs' method]
+
+[[Category:Voting systems]]
+
+{{fromwikipedia}}
