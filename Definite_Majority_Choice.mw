@@ -68,6 +68,8 @@ To determine the winner:
 # Eliminate all strongly defeated candidates.
 # The winner is the candidate that pairwise defeats all other remaining candidates.
 
+DMC always selects the Condorcet Winner, if it exists, and otherwise selects a member of the Smith Set.
+
 === Handling Ties and Near Ties ===
 
 In ordinary DMC, the winner is the candidate in Forest Simmon's '''[http://wiki.electorama.com/wiki/Techniques_of_method_design#Special_sets P]''' set, the ''set of candidates which are not approval-consistently defeated''.
