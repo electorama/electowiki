@@ -1,4 +1,6 @@
-'''Maximum majority voting''' (MMV) is a single-winner, [[preferential voting|ranked ballot]] [[voting method]].  MMV can also be used to create a sorted list of winners.  MMV and [[maximize affirmed majorities]] (MAM) are variations of the [[ranked pairs]] (RP) [[Condorcet method]].
+'''Maximum majority voting''' (MMV) is a [[voting method]] that selects a single winner using votes that express preferences.  MMV can also be used to create a sorted list of winners.  MMV and [[maximize affirmed majorities]] (MAM) are variations of [[Nicolaus Tideman|Tideman's]] [[ranked pairs]] (RP) method.
+
+If there is a candidate who is preferred over the other candidates, when compared in turn with each of the others, MMV guarantees that that candidate will win.  Because of this property, MMV is (by definition) a '''[[Condorcet method]]'''.  Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and [[instant-runoff voting]], which do not make this guarantee.
 
 == Procedure ==
 
@@ -47,7 +49,8 @@ The candidate with the most paiwise wins (i.e. the Maximum Majority) wins the el
 === The situation (voting) ===
 
 Imagine an election for the capital of [[Tennessee]], a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
-<div style="float:right;  padding:2px; text-align:center">[[File:TennesseeMMV.png]]</div>
+<div style="float:right;  padding:2px; text-align:center">
+[[Image:CondorcetTennesee.png]]</div>
 
 * Memphis (Shelby County): 826,330
 * Nashville (Davidson County): 510,784
@@ -169,7 +172,7 @@ Thus, the pairs from above would be sorted this way:
 | Memphis (42%) vs. Knoxville (58%)|| Knoxville 58%
 |}
 
-=== Candidate ordering, winner selection ===
+=== Candidate erdering, winner selection ===
 
 The pairs are then sorted in order, skipping any pairs
 that would create a cycle:
@@ -188,7 +191,7 @@ In this example, Nashville is the winner using MMV - and would be in any [[Condo
 
 === Ambiguity resolution example ===
 
-Let's say there was an ambiguity.  For a simple situation involving candidates A, B, and C.
+Let's say there was an ambiguity.  For a simple situation involving canidates A, B, and C.
 
 * A > B 72%
 * B > C 68%
@@ -198,7 +201,7 @@ In this situation we sort the majorities starting with the greatest one first.
 
 * Lock A > B
 * Lock B > C
-* We eliminate the final C > A as it creates an ambiguity or cycle.
+* We elimate the final C > A as it creates an ambiguity or cycle.
 
 Therefore, A is the winner.
 
@@ -209,9 +212,15 @@ This would be true for any [[Condorcet method]].
 Using the [[first-past-the-post]] system and some other systems, Memphis would have won the election by having the most people, even though Nashville won every simulated pairwise election outright.  Using [[Instant-runoff voting]] in this example would result in Knoxville winning, even though more people preferred Nashville over Knoxville.
 
 == External resources ==
-* [http://radicalcentrism.org/resources/maximum-majority-voting/ Maximum Majority Voting]
+* [http://groups.yahoo.com/group/election-methods-list/ A mailing list containing technical discussions about election methods]
+* [http://electionmethods.org/ electionmethods.org]
+* [http://condorcet.org/rp Ranked Pairs]
+* [http://accurate-democracy.com/ Accurate Democracy]
+* [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)]
+* [http://radicalcentrism.org/majority_voting.html Maximum Majority Voting]
+* [http://cec.wustl.edu/~rhl1/rbvote/desc.html Descriptions of ranked-ballot voting methods]
+* [http://fc.antioch.edu/~jarmyta@antioch-college.edu/voting.htm Voting methods resource page]
 
+[[Category:Voting systems]]
 
 {{fromwikipedia}}
-
-[[Category:Condorcet method]]
