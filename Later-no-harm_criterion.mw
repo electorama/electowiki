@@ -2,8 +2,14 @@
 
 <p><em>Adding a preference to a ballot must not decrease the probability of election of any candidate ranked above the new preference.</em></p>
 
-The reasoning behind this criterion is that the voter should feel free to vote his complete ranking of the candidates, without fear that he is "giving away" information about his lower choices that the method may use against him.
-
 <h4 class=left>Complying Methods</h4>
 
-<p>Later-no-harm is satisfied by [[Plurality voting|First-Preference Plurality]], [[IRV|Instant Runoff Voting]], [[Minmax|Minmax(pairwise opposition)]], Douglas Woodall's [[Descending Solid Coalitions]] method, and [[Random Ballot]]. It is failed by virtually everything else.</p>
+<p>'''Later-no-harm''' is satisfied by [[IRV|Instant Runoff Voting]], [[Minmax|Minmax(pairwise opposition)]], and Douglas Woodall's [[Descending Solid Coalitions]] method. It is trivially satisfied by  [[Plurality voting|First-Preference Plurality]] and [[Random Ballot]], since those methods do not usually regard lower preferences. Virtually every other method fails this criterion.</p>
+
+<h4 class=left>Commentary</h4>
+
+'''Later-no-harm''' guarantees that the method will not use a voter's lower preferences to elect a candidate who that voter likes less than the candidate that would have been elected if this voter had kept his lower preferences a secret.
+
+As a result, voters may feel free to vote their complete ranking of the candidates, which in turn may give the election method more complete information to use to find a winner.
+
+'''Later-no-harm''' is incompatible with the [[Condorcet Criterion|Condorcet criterion]].
