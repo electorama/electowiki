@@ -98,7 +98,7 @@ B: No, no, that's not necessarily so! You cannot look at only one kind of the in
 
 ''A: But which candidate *is* the winner, then?''
 
-B: '''The winner is the first candidate in the "proposing order" which passes the pairwise contests with all those candidates who got more approval!'''
+B: '''The winner is the first candidate in the "proposing order" which wins in all the pairwise contests with those candidates who got more approval!'''
 
 It's easier to see what happens by looking at an example, so let us just watch what the officials are doing right now: They considered Ellen first, but found that 67% of the voters preferred Cecil to her, who has also received more approval than Ellen. So Ellen is not the winner since she is '''defeated by another candidate on two different measures''', approval and pairwise preferences.
 
