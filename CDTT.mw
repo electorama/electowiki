@@ -1,0 +1,18 @@
+The '''Condorcet doubly-augmented top tier''' or '''CDTT''' is defined by Douglas Woodall as the union of all minimal nonempty sets of candidates such that no candidate in each set has a majority-strength pairwise loss to any candidate outside of the set.
+
+Equivalently it can be defined as the set containing each candidate ''A'' who has a majority-strength beatpath to every other candidate ''B'' who has a majority-strength beatpath to ''A''. That is, a candidate ''A'' is in the CDTT unless some candidate ''B'' has a majority-strength beatpath to ''A'' while ''A'' has no such beatpath to ''B''.
+
+== Uses ==
+
+Limiting an election method's selection to the CDTT members can permit it to satisfy the [[Strong Defensive Strategy criterion]] (or [[Minimal Defense]]) and [[Mutual majority criterion|Majority]], while coming close to satisfying the [[Later-no-harm criterion]]. Specifically, the CDTT completely satisfies [[Later-no-harm criterion|Later-no-harm]] in the three-candidate case, and failures can only occur in the general case when there are majority-strength cycles.
+
+In order to maximize Later-no-harm compliance, the CDTT should be paired with a method that itself fully satisfies Later-no-harm. In order to ensure that [[Monotonicity criterion|Mono-raise]] is not failed, the paired method should be used to generate a ranking of the candidates which is not influenced by which candidates make it into the CDTT. Then the CDTT member who appears first in this ranking is elected.
+
+Some methods which can be paired in this way with the CDTT:
+*'''[[Random Ballot]]''': This can be very indecisive, but it is conceptually simple, and it satisfies [[Monotonicity criterion|Mono-raise]] and Clone Independence.
+*'''[[Plurality voting|First-Preference Plurality]]''': This is decisive, simple, and [[Monotonicity criterion|monotone]], but fails Clone Independence.
+*'''[[Instant-runoff voting|Instant Runoff Voting]]''': This is more complicated. It satisfies Clone Independence but not [[Monotonicity criterion|monotonicity]].
+*'''[[Descending Solid Coalitions]]''': This is also somewhat complicated, but it's the only non-random option which satisfies Clone Independence and [[Monotonicity criterion|Mono-raise]].
+*'''[[Minmax|MinMax (Pairwise Opposition)]]''': This has the advantage that it is calculated based on the pairwise matrix, just as the CDTT itself is. However, it is somewhat indecisive and fails Clone Independence. It satisfies [[Monotonicity criterion|Mono-raise]].
+
+Regardless of the method paired with the CDTT, it should be noted that the combined method necessarily fails the [[Plurality criterion]] and [[Condorcet criterion]].
