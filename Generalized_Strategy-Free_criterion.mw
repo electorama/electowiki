@@ -1,0 +1,56 @@
+<h4 class=left>Definitions</h4>
+
+<p>A sincere vote is one with no falsified preferences or preferences
+left unspecified when the election method allows them to be specified
+(in addition to the preferences already specified).</p>
+
+<p>One candidate is preferred over another candidate if, in a one-on-one
+competition, more voters prefer the first candidate than prefer the
+other candidate.</p>
+
+<p>The [[Smith set]] is the smallest set of candidates such that every
+member of the set is preferred to every candidate not in the set. If the
+[[Smith set]] consists of only one candidate, that candidate is called "Condorcet candidate" or "Condorcet winner".</p>
+
+<h4 class=left>Statement of Criterion</h4>
+
+<p><em>If a majority prefers a member of the [[Smith set]] to another
+candidate who is not in the Smith set, then the other candidate should
+not win if that majority votes sincerely and no other voter falsifies
+any preferences.</em></p>
+
+<h4 class=left>Complying Methods</h4>
+
+<p>[[Cloneproof Schwartz Sequential Dropping]] complies with the Generalized Strategy-Free
+Criterion, while [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], [[Plurality voting]], and [[Instant-Runoff Voting]] do not comply.</p>
+
+<h4 class=left>Commentary</h4>
+
+<p>GSFC generalizes the [[Strategy-Free criterion]] (SFC) to the case in
+which no Condorcet candidate exists, thereby covering all
+possible cases. If no Condorcet candidate exists, then a cyclical ambiguity exists among
+the members of the [[Smith set]] and must be resolved. The commentary for
+SFC above applies here also.</p>
+
+''Some parts of this article are derived with permission from text at http://electionmethods.org''
+
+== See Also ==
+
+*[[Voting system]]
+*[[Monotonicity criterion]]
+*[[Condorcet Criterion]]
+*[[Generalized Condorcet criterion]]
+*[[Strategy-Free criterion]]
+*[[Strong Defensive Strategy criterion]]
+*[[Weak Defensive Strategy criterion]]
+*[[Favorite Betrayal criterion]]
+*[[Participation criterion]]
+*[[Summability criterion]]
+
+== External Links ==
+
+* [http://electionmethods.org/ Election Methods Education and Research Group]
+
+[[Category:Voting system criteria]]
+
+{{fromwikipedia}}
