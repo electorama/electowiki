@@ -1,0 +1,35 @@
+In [[voting system]]s, '''Arrow&rsquo;s impossibility theorem''', or '''Arrow&rsquo;s paradox''' demonstrates the impossibility of designing a set of rules for social decision making that would obey every &lsquo;reasonable&rsquo; criterion required by society.  
+
+The theorem is named after economist [[Kenneth Arrow]], who proved the theorem in his [[Doctor of Philosophy|Ph.D.]] thesis and popularized it in his [[1951]] book ''Social Choice and Individual Values.'' Arrow was a co-recipient of the [[1972]] [[Bank of Sweden Prize in Economic Sciences in Memory of Alfred Nobel|Bank of Sweden Prize in Economic Sciences in Memory of Alfred Nobel]] (popularly known as the &ldquo;Nobel Prize in Economics&rdquo;).
+
+The theorem&rsquo;s content, somewhat simplified, is as follows. 
+A society needs to agree on a [[preference]] order among several different options. Each individual in the society has a particular personal preference order. The problem is to find a general mechanism, called a ''social choice function,'' which transforms the set of preference orders, one for each individual, into a global societal preference order. This social choice function should have several desirable (&ldquo;fair&rdquo;) properties:
+* '''unrestricted domain''' or '''universality''': the social choice function should create a deterministic, complete societal preference order from every possible set of individual preference orders.  (The vote must have a result that ranks all possible choices relative to one another, the voting mechanism must be able to process all possible sets of voter preferences, and it should always give the same result for the same votes, without random selection.)
+* '''non-imposition''' or '''citizen sovereignty''': every possible societal preference order should be achievable by some set of individual preference orders.  (Every result must be achievable somehow.)
+* '''non-dictatorship''': the social choice function should not simply follow the preference order of a single individual while ignoring all others.
+* '''positive association of social and individual values''' or '''[[monotonicity criterion|monotonicity]]''': if an individual modifies his or her preference order by promoting a certain option, then the societal preference order should respond only by promoting that same option or not changing, never by placing it lower than before.  (An individual should not be able to hurt an option by ranking it ''higher''.)
+* '''[[independence of irrelevant alternatives]]''': if we restrict attention to a subset of options, and apply the social choice function only to those, then the result should be compatible with the outcome for the whole set of options. (Changes in individuals&rsquo; rankings of &ldquo;irrelevant&rdquo; alternatives [i.e., ones outside the subset] should have no impact on the societal ranking of the &ldquo;relevant&rdquo; subset.)
+Arrow&rsquo;s theorem says that if the decision-making body has at least two members and at least three options to decide among, then it is impossible to design a social choice function that satisfies all these conditions at once.
+
+Another version of Arrow&rsquo;s theorem can be obtained by replacing the monotonicity criterion with that of:
+* '''unanimity''' or '''[[Pareto efficiency]]''': if every individual prefers a certain option to another, then so must the resulting societal preference order.
+This statement is stronger, because assuming both monotonicity and independence of irrelevant alternatives implies Pareto efficiency.
+
+With a narrower definition of &ldquo;irrelevant alternatives&rdquo; which excludes those candidates in the [[Smith set]], some [[Condorcet method]]s meet all the criteria.
+
+==See also==
+*[[Gibbard-Satterthwaite theorem]]
+*[[Voting paradox]]
+
+== External links ==
+
+* [http://ideas.repec.org/p/cwl/cwldpp/1123r3.html Three Brief Proofs of Arrow&rsquo;s Impossibility Theorem]
+* [http://citeseer.nj.nec.com/dardanoni99pedagogical.html A Pedagogical Proof of Arrow&rsquo;s Impossibility Theorem]
+* [http://www.electionmethods.org/Arrow.htm Discussion of Arrow&rsquo;s Theorem and Condorcet&rsquo;s method]
+
+[[Category:Voting theory]]
+[[Category:Economics]]
+[[Category:Paradoxes]]
+[[Category:Theorems]]
+
+{{fromwikipedia}}
