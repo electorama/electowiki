@@ -61,16 +61,8 @@ Grading candidate X below the LPG gives the voter a chance to say "I don't like 
 Rankings are added into a pairwise array.  The approval scores of each candidate can be stored the diagonal cells, which are unused in other non-Approval-Condorcet hybrids.
 
 To determine the winner:
-# Eliminate any candidate that is defeated in a one-to-one match with any other higher-approved candidate.  So by 2 different measures, a definite majority agrees that candidate should be eliminated.
+# Eliminate any candidate that is defeated in a one-to-one match with any other higher-approved candidate.  Such a defeat is called an Approval-consistent or [http://wiki.electorama.com/wiki/Techniques_of_method_design#Defeats_and_defeat_strength definitive defeat].
 #If more than one candidate remains, the winner is the single candidate that defeats all others in one-to-one (pairwise)contests.
-
-A simple way to implement this is to permute the pairwise array so that candidates are listed in order of approval.
-
-Then, starting with the diagonal cell corresponding to the least-approved candidate, examine all the cells in the column above the diagonal.  If the candidate loses to any higher-approved candidates, proceed up the diagonal to the approval rating of the next-higher-approved candidate.
-
-The winner is the first candidate found with no losses to higher-approved candidates.
-
-''Can this be made clearer? --[[User:Araucaria|Araucaria]] 15:05, 21 Mar 2005 (PST)''
 
 === Handling Ties and Near Ties ===
 
