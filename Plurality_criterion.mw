@@ -2,6 +2,8 @@
 
 <p><em>If the number of ballots ranking ''A'' as the first preference is greater than the number of ballots on which another candidate ''B'' is given any preference, then ''A''<nowiki>'</nowiki>s probability of election must be greater than ''B''<nowiki>'</nowiki>s.</em></p>
 
+The reasoning behind this criterion is that, if A has more first preferences than B has any kind of preferences, it's intuitively implausible that there could be a good reason to elect B instead of A.
+
 <h4 class=left>Complying Methods</h4>
 
 <p>[[Plurality voting|First-Preference Plurality]], [[Approval voting]], [[IRV]], and many [[Condorcet method|Condorcet methods]] (using winning votes as defeat strength) satisfy the Plurality criterion. [[Condorcet method|Condorcet methods]] using margins as the measure of defeat strength fail it, as do [[Raynaud]] regardless of the measure of defeat strength, and also [[Minmax|Minmax(pairwise opposition)]].</p>
