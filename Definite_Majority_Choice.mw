@@ -14,34 +14,43 @@ DMC chooses the same winner as (and could be considered equivalent in most respe
 
 === The Ballot ===
 
-One implementation of Definite Majority Choice might use a [[Graded Ballot]] with a Lowest Passing Grade option.  Voters can grade their choices from favorite (A) to least preferred (ungraded), and give some or all of their graded choices a "passing grade" to signify approval.
+Voters rank their preferred candidates, from favorite to least preferred, and may optionally specify an Approval cutoff.
+
+A [[Graded Ballot]] ballot implementation would infer the ranking from the 'grades' given to candidates, and the Approval Cutoff would be determined with a Lowest Passing Grade option.  Voters can grade their choices from favorite (A+) to least preferred (ungraded), and give some or all of their graded choices a "passing grade" to signify approval.
 
 <pre>
-            A    B    C    D    E    F    G
-
-      X1   ( )  ( )  ( )  ( )  ( )  ( )  ( )
-
-      X2   ( )  ( )  ( )  ( )  ( )  ( )  ( )
-
-      X3   ( )  ( )  ( )  ( )  ( )  ( )  ( )
-
-      X3   ( )  ( )  ( )  ( )  ( )  ( )  ( )
-
-   Lowest  ( )  ( )  ( )  ( )  ( )  ( )  ( )
+            A    B    C    D    F       + /  -
+				       	    	  
+      X1   ( )  ( )  ( )  ( )  ( )     ( )  ( )
+				       	    	  
+      X2   ( )  ( )  ( )  ( )  ( )     ( )  ( )
+				       	    	  
+      X3   ( )  ( )  ( )  ( )  ( )     ( )  ( )
+				       	    	  
+      X3   ( )  ( )  ( )  ( )  ( )     ( )  ( )
+				       	    	  
+   Lowest  ( )  ( )  ( )  ( )  ( )     ( )  ( )
    Passing
    Grade
-   (optional)
+   ("C-" Default)
 </pre>
 
-A voter can give the same grade to more than one candidate.  If not given a higher grade, he LPG candidate has a grade of G by default, giving each graded candidate a "passing grade", or one Approval point.
+A voter may give the same grade to more than one candidate.   Ungraded candidates are graded below all graded candidates.
 
-Ungraded candidates are graded below all others and get no Approval points.
+Any candidate at the Lowest Passing Grade or higher is given one Approval vote.  Unless changed, the Lowest Passing Grade is C-minus by default.
 
-A voter may optionally specify a Lowest Passing Grade (LPG), which means that any graded candidates with lower grades will receive no approval points.
+Candidates graded below the Lowest Passing Grade and Ungraded candidates receive no Approval votes.
 
-If this were a vote for president, one could compare the LPG 'candidate' to Gerald Ford.  One might argue whether he was a good or bad president, but anybody better would be a good president, and anybody worse would be bad.
+Grades assigned to non-passing (disapproved) candidates help determine which of them will win in the event that none of the voter's approved candidates wins.
 
-The main reason for a voter to grade candidates below the "Gerald Ford" mark would be if the voter is not optimistic about the chances for higher-ranked favorite and compromise candidates.  Grading candidate X below the LPG mark gives the voter a chance to say "I don't like X and don't want him to win, but of all the alternatives, he would make the fewest changes in the wrong direction.  I won't give him a passing grade because I want him to have as small a mandate as possible."  This allows members of the minority to have some say in the outcome, instead of leaving the choice to the strongest core support within the majority faction.
+Adding a plus or minus to a candidate's grade is optional, but allows up to 15 rankings.
+
+==== Discussion ====
+What is a voter saying by giving a candidate a grade below the Approval Cutoff?
+
+In a vote for president, one could compare the LPG to Gerald Ford.  Anybody better would be a good president, and anybody worse would be bad.
+
+Grading candidate X below the LPG gives the voter a chance to say "I don't like X and don't want him to win, but of all the alternatives, he would make the fewest changes in the wrong direction.  I won't give him a passing grade because I want him to have as small a mandate as possible."  This allows the losing minority to have some say in the outcome of the election, instead of leaving the choice to the strongest core support within the majority faction.
 
 === Tallying Votes ===
 
