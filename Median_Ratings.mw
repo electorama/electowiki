@@ -1,0 +1,68 @@
+'''Median Ratings''', or is a [[voting system]] used for single-seat elections.  It is like [[Cardinal Ratings]] except that the candidate with the highest [[median]] score, rather than the highest total score, is elected.
+
+==Example==
+{{Tenn_voting_example}}
+
+Suppose that voters were told to grant 1 to 4 points to each city such that their most liked choice(s) got 4 points, and least liked choice(s) got 1 point.
+
+<table border="1">
+   <tr>
+      <th>City</th>
+      <th>Memphis</th>
+      <th>Nashville</th>
+      <th>Chattanooga</th>
+      <th>Knoxville</th>
+   </tr>
+   <tr>
+      <th>"4" votes</th>
+      <td>42</td>
+      <td>26</td>
+      <td>15</td>
+      <td>17</td>
+   </tr>
+   <tr>
+      <th>"3" votes</th>
+      <td>0</td>
+      <td>42</td>
+      <td>43</td>
+      <td>15</td>
+   </tr>
+   <tr>
+      <th>"2" votes</th>
+      <td>0</td>
+      <td>32</td>
+      <td>42</td>
+      <td>26</td>
+   </tr>
+   <tr>
+      <th>"1" votes</th>
+      <td>58</td>
+      <td>0</td>
+      <td>0</td>
+      <td>42</td>
+   </tr>
+   <tr>
+      <th>Median</th>
+      <td>1</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+   </tr>
+</table>
+
+There is a tie between Nashville and Chattanooga.
+
+==Flaws==
+
+The example illustates one of the major flaws of Median Ratings.  Because the [[median]], by definition, is either the value of a single rating or the average of two ratings, there are very few possible values for a median score, and this makes ties much more likely than in [[Cardinal Ratings]].
+
+Another problem with Median Ratings is its failure of [[Neutrality of Spolied Ballots]].  For example, with the ballots
+
+* A=1, B=4
+* A=2, B=4
+* A=8, B=4
+* A=9, B=4
+
+A (median rating=5) beats B (median rating=4), but if the ballot (A=0, B=0) is added, then A's median rating drops to 2, causing B to win.
+
+[[Category:Single-winner voting systems]]
