@@ -1,3 +1,257 @@
-{{stub}}
+When the [[single transferable vote]] [[voting system]] is applied to a single-winner election it is sometimes called '''instant-runoff voting''' (IRV), as it is much like holding a series of runoff elections in which the lowest polling candidate is eliminated in each round until someone receives [[simple majority |majority]] vote.  IRV is often considered independently of multi-winner [[Single transferable vote]] (STV) because it is simpler and because it is the most widely advocated electoral reform in the [[United States|USA]].
 
-Instant runoff voting - a single winner form of [[Single Transferable Vote]]
+Instant-runoff voting is also known as Ranked Choice Voting (RCV), a term useful for describing the voter's experience as well as the appearance of the ballot.
+
+Outside the USA, IRV is known as the '''[[Alternative Vote]]''', '''[[preferential voting]]''', '''single-winner STV''', or the '''[[Thomas Hare|Hare]] System''', though there is room for confusion with some of these terms since they can also refer to STV in general.
+
+IRV is used to elect the [[Australian House of Representatives]], the lower houses of most of [[Australia|Australia's]] [[States of Australia|state]] parliaments, the [[President of Ireland]], the [[Papua New Guinea]] National Parliament, the [[Fiji|Fijian]] [[House of Representatives (Fiji)|House of Representatives]], and the [[Parliament of Nauru|Parliament]] of [[Nauru]].  See below for a more detailed list.
+
+== How IRV works ==
+
+=== Voting ===
+
+Each voter ranks at least one candidate in [[Preferential_voting|order of preference]]. In most Australian elections, voters are required to rank all candidates. In other elections, votes may be "truncated", for example if the voter only ranks his first five choices.
+
+=== Counting the votes ===
+
+First choices are tallied. If no candidate has the support of a majority of voters, the candidate with the least support is eliminated. A second round of counting takes place, with the votes of supporters of the eliminated candidate now counting for their second choice candidate. After a candidate is eliminated, he or she may not receive any more votes.
+
+This process of counting and eliminating is repeated until one candidate has over half the votes. This is equivalent to continuing until there is only one candidate left. However it is possible, with voter truncation, for the process to continue until there is only one candidate left, who does not end up with more than half the votes.
+
+=== An example ===
+
+{{Tenn_voting_example}}
+
+<div class="floatright">
+{| border=1
+!City
+!Round 1
+!Round 2
+!Round 3
+|-
+!bgcolor="#ffc0c0"|Memphis
+|bgcolor="#ffc0c0"|42
+|bgcolor="#ffc0c0"|42
+|bgcolor="#ffc0c0"|42
+|-
+!bgcolor="#ffc0c0"|Nashville
+|bgcolor="#ffc0c0"|26
+|bgcolor="#ffc0c0"|26
+|bgcolor="#e0e0ff"|<strike>26</strike> 0
+|-
+!bgcolor="#ffc0c0"|Chattanooga
+|bgcolor="#ffc0c0"|15
+|bgcolor="#e0e0ff"|<strike>15</strike> 0
+|bgcolor="#e0e0ff"|0
+|-
+!bgcolor="#ffc0c0"|Knoxville
+|bgcolor="#ffc0c0"|17
+|bgcolor="#ffc0c0"|<strike>17</strike> 32
+|bgcolor="#ffffc0"|<strike>32</strike> 58
+|}
+</div>
+
+Chattanooga, having the smallest vote, is eliminated in the first round.  All of the votes for Chattanooga have Knoxville as a second choice, so they are transferred to Knoxville.  Nashville now has the smallest vote, so it is eliminated.  The votes for Nashville have Chattanooga as a second choice, but as Chattanooga has been eliminated, they instead transfer to their third choice, Knoxville.  Knoxville now has 58% of the vote, and it is the winner.
+
+In a real election, of course, voters would show greater variation in the rankings they cast, which could influence the result.
+
+=== Special cases of IRV eliminations ===
+
+Instant Runoff Voting as an ideal does not explicitly define how to handle special cases such as ties and different rules can be considered. A good IRV election must define rules to handle these cases before the votes are cast. The reason why is that there are cases where one set of rules will select a winner different from another set of rules and the set of rules used may affect how the voters cast their ballots.
+
+Especially when performing IRV counts on smaller elections, there can be frequent last-place ties that prevent clear bottom elimination. 
+
+Here are some approaches to consider, individually and combined. The first class of rules allows many candidates to be eliminated at the first count regardless of actual ties. These are practical rules before the first round that reward stronger candidates among the full set of competition. Such rules won't likely affect the winner but they will reduce the number of elimination rounds and thus the number of opportunities for ties to develop. A second class of rules consider actual ties that can't be avoided.
+
+* '''Consider multicandidate elimination of weak candidates as the first step:'''
+** CANDIDATE COUNT: Define a maximum number of candidates that can survive the first round.
+*** Example top-two
+** VOTE MINIMUM: Define a minimum vote threshold (5 vote for example) and eliminate all weaker candidates together. 
+*** Requires limitations for rule to apply
+** PERCENT MINIMUM: Define a minimum percent vote threshold (5% for example) and eliminate all weaker candidates together. 
+*** Again, requires limitations for application
+** PERCENT RETENTION: Define a minimum percent of votes by top candidates to be retained. 
+*** Example - retain the top set of candidates who combined control 50% of the vote
+
+* '''Tie-breaking rules:'''
+** LOGIC: If the tied candidates combined have fewer votes than the next highest candidate, the entire tied set can be eliminated at once. 
+*** Logically deterministic, but may not apply
+** LAST ROUND: Eliminate the candidate in the tie with the least votes from a previous round. 
+*** Traditional rule; violates purity of one-person, one vote ideal
+** ALL: Eliminate all tied candidates at once. 
+*** Good for weak candidates (with less than 5% of votes), but can lead to [[strategic nomination]]s, which cause IRV implementations using this method to not be [[Spoiler_effect|spoiler proof]]
+** RANDOM: Eliminate one randomly to break the tie.
+** ORDER: If the order of the candidates on the ballot paper has been determined by lot, then ties can be eliminated by choosing say the top candidate.
+** [http://alumnus.caltech.edu/~seppley/MAM%20procedure%20definition.htm Random Voter Hierarchy (RVH)]: Randomly determine a strict ordering of the candidates and when selecting a candidate to eliminate, pick one based on this strict ordering.
+*** Similar to random elimination, but with many nice properties not found with random elimination
+
+== Where IRV is used ==
+
+The single-winner variant of STV is used in Australia for elections to the Federal [[Australian House of Representatives|House of Representatives]], for the Legislative Assemblies ("lower houses") of all states and territories except [[Tasmania]] and the [[Australian Capital Territory]], which use regional multi-member constituencies.  It is also used for the Legislative Councils ("upper houses") of [[Tasmania]] and [[Victoria (Australia)|Victoria]], although the latter will switch to the multi-member variant from [[2006]].  The multi-member variant of STV is used to elect the [[Australian Senate]] and the Legislative Councils of [[New South Wales]] and [[South Australia]] in statewide constituencies, and of [[Western Australia]] in regional constituencies. 
+
+[[Ireland]] uses STV to elect its own parliament and its delegation to the [[European Parliament]] (by the multi-member variant), and its [[President of Ireland|President]] (by the single-member variant).  [[Northern Ireland]] also uses the multi-member variant for elections to its [[Northern Ireland Assembly|Assembly]] and for its [[European Parliament|European Parliamentary MPs]].  [[Malta]] uses the multi-member variant for its parliamentary elections.  
+
+In the [[Pacific]], the multi-member variant of STV is used to elect the parliament of [[Nauru]], while the single-member variant is used for the [[Fiji|Fijian]] [[House of Representatives (Fiji)|House of Representatives]].  [[Papua New Guinea]] has also decided to adopt it for future elections, starting in [[2007]].   The Fijian system has been modified to allow for both "default preferences", specified by the political party or candidate, and "custom preferences", specified by the voter.  Each political party or candidate ranks all other candidates according to its own preference; voters who are happy with that need only to vote for their own preferred candidate, whose preferences will automatically be transferred according to the ranking specified by the candidate.  Voters who disagree with the ranking, however, may opt to rank the candidates according to their own preferences.  In the [[Fiji election of 2001|last election]], about a third of all voters did so. The ballot paper is divided by a thick black line, with boxes above (for the default options) and below (for customized preferences).
+
+The countries mentioned above all use STV for some or all of their municipal elections.  Starting in [[2004]], some municipal areas in [[New Zealand]] also adopted STV to elect mayors (by the single-member variant) and councilors (by the multimember variant).  Political parties, cooperatives and other private groups also use STV and/or IRV.
+
+The single winner version of IRV is also used to select the winning bid of both the Summer and Winter Olympics in the [[International Olympic Committee]].
+
+See [[Table of voting systems by nation]]
+
+=== Adoption in the United States ===
+
+Suggested by [[Robert's Rules of Order]], instant-runoff voting is increasingly used in the United States for non-governmental elections, including student elections at many major universities.
+
+Notable supporters include Republican U.S. Senator [[John McCain]] and [[U.S. Democratic Party presidential nomination, 2004|2004 Democratic presidential primary]] election candidates [[Howard Dean]] and [[Dennis Kucinich]]. The system is favored by many third parties, most notably the [[United States Green Party|Green Party]] and the [[United States Libertarian Party|Libertarian Party]], as a solution to the [[spoiler effect|"spoiler" effect]] third-party sympathizers suffer from under plurality voting (i.e., voters are forced to vote tactically to defeat the candidate they most dislike, rather than for their own preferred candidate).  In order to increase awareness of the voting method and to demonstrate it in a real-world situation, the [[Independence Party of Minnesota]] tested IRV by using it in a [[straw poll]] during the 2004 [[Minnesota]] [[caucus]]es (results favored [[John Edwards]]).
+
+This dilemma rose to attention in the [[United States]] in the [[U.S. presidential election, 2000|2000 election]]. Supporters of [[Ralph Nader]] who nevertheless preferred [[United States Democratic Party|Democrat]] [[Al Gore]] to [[United States Republican Party|Republican]] [[George W. Bush]] found themselves caught in a dilemma. They could vote for Nader, and risk Gore losing to Bush, or, they could vote for Gore, just to make sure that Bush is defeated.  It has been argued that Bush won largely due to the "spoiler effect" of Nader supporters in [[Florida]].  
+
+In March [[2002]], an initiative backed by the [[Center for Voting and Democracy]] passed by referendum making instant runoff voting the means of electing local candidates in [[San Francisco]].  It was first used in that city in Fall of 2004. (Note: The [http://www.ci.sf.ca.us/site/election_page.asp?id=24269 San Francisco Department of Elections] prefers the term "Ranked Choice Voting" because "the word 'instant' might create an expectation that final results will be available immediately after the polls close on election night.") The new system did not work as well as was hoped due to software and logistical difficulties; the results took several days to produce definitive results.  
+
+In September [[2003]], an amendment to the California State Constitution was proposed ([http://info.sen.ca.gov/pub/bill/sen/sb_0001-0050/sca_14_bill_20030912_introduced.html SCA 14]) with wide-ranging goals of [[election reform]], including ranked-choice voting for statewide offices.
+
+The voters in the city of [http://www.firv.org Ferndale, Michigan], a Detroit suburb, amended their  city charter in 2004 to allow for election of the mayor and city council by instant runoff voting. 
+
+Washington State has an initiative seeking ballot access in 2005 ([http://www.irvwa.org/ I-318]) that would change the state primary system to IRV.
+
+=== Adoption in Canada ===
+
+The British Columbia [http://www.citizensassembly.bc.ca/ Citizens Assembly on Electoral Reform ] met during 2004 and selected STV as the preferred method of voting in British Columbia.
+
+== Assessing IRV ==
+
+===Comparison of IRV to normal runoff voting===
+Advantages to instant runoff ballot: (IRV)
+* FEWER GAMES: Voters and parties have less opportunity for playing games in early round(s) to influence the elimination order in favor of easier competition. (Runoffs allow more flexibility in tactical votes, influencing elimination, and still having a chance to move back to a favorite in the final round)
+* MORE POSITIVE: Candidates are discouraged from negative campaigning. (A winning candidate will usually need first, second and lower ranked preferences to win, and can't safely afford to make enemies with no second chance vote)
+
+Advantages to sequential balloting: (runoff voting)
+* EASIER TO VOTE: A runoff allows voters and factions to refocus their attention on remaining candidates in each round. (In IRV, voters must make careful choices among a large set of candidates in one ballot and may not have enough information to make informed rankings among the competitive candidates.)
+* CHANCE FOR APPEAL: Candidates that were eliminated are given another chance to endorse and remaining candidates have another chance to court voters supporting the eliminated candidates.
+
+=== Effect on parties and candidates ===
+
+Unlike runoff voting, however, there are no chances to deal in between rounds, change voters' minds, or gain support of the other candidates.
+
+Giving them only one chance to do so, instant runoff preference voting encourages candidates to balance earning core support through winning first choice support and earning broad support through winning the second and third preferences of other candidates' core supporters. As with any winner-take-all voting system, however, any bloc of more than half the voters can elect a candidate regardless of the opinion of the rest of the voters.
+
+This is considered a weakness by the advocates of a more [[deliberative democracy]], who point to the French system of presidential election where such between-round dealings are heavily exploited and useful (they say) to draw together a very factionalized electorate. However, critics of the French runoff system point to the dreaded "votez escroc, pas facho" (vote for the crook, not the fascist) phenomenon, which awarded Chirac an undeserved landslide victory in 2002.
+
+''The australian system also allows minority parties to have key planks of their platforms included in those of the major parties by means of so-called "preference deals". This is seen as legitimate political activity. If enough people care about (for instance) green party issues that that party's second preference can swing the vote, then it is fair enough that it have some limited say in policy.''
+
+''Another advantage of runoff voting is that it allows a "protest vote" to be made without penalty. A person voting for a minority party doers not "throw their vote away", as with first-past-the-post systems, so allowing the electorate to send clear signals to the major parties.''
+
+=== Flaws of IRV ===
+
+IRV meets few of the formal [[voting system criterion|voting system criteria]] defined by political scientists for assessment of voting systems. Although the [[Gibbard-Satterthwaite theorem]] shows that all reasonable voting systems allow for some form of [[tactical voting]], the scope and impact of tactical voting varies a great deal for different systems.
+
+IRV is unusual in that it does not satisfy the [[monotonicity criterion]] &mdash;in some situations, if a voter or group of voters decides to rank a preferred candidate ''lower'', it can result in that candidate winning the election, whereas if they had ranked the candidate ''higher'', according to their sincere preference, that candidate would not have won.
+
+These theoretical objections correspond with several serious practical 'failure modes' for IRV, discussed below. The first two, '''compromise''' and '''push-over''', are common forms of tactical voting, where voters must change their preferred ranking of candidates to increase the likelihood of a favored outcome. Traditional plurality elections are also vulnerable to 'compromise' tactical voting. The other failure modes are more specific to IRV.
+
+It should be noted that [[Condorcet method]]s can avoid the '''Return of the '3rd-party spoiler effect'''' and '''Failure to pick a good compromise''' problems.
+
+==== Compromise ====
+Assume the earlier Tennessee example. If the voters from Memphis suspect that they do not comprise half of the voters and that Memphis is the last choice of all other voters, they can "compromise" by ranking Nashville over Memphis, and thus ensure that Nashville, their second choice, will win, rather than Knoxville, their last choice.
+
+Alternatively, if the voters from Memphis are unlikely to vote tactically (because they think they have a chance of winning outright or for any other reasons), voters from Nashville can improve their result by "compromising" and ranking Chattanooga over Nashville. This would allow Chattanooga to defeat Knoxville in the first round and go on to become eventual winner, a better result for Nashville voters than a Knoxville win.
+
+==== Push-over ====
+Tactical voters can intentionally promote "push-overs", candidates unlikely to win, past their real preference. This can sometimes benefit voters by bringing their preferred candidate to a more winnable final runoff round, basically using the push-overs as a shield for protection of their primary vote.
+
+==== Return of the '3rd-party spoiler effect' ====
+IRV only stops the '3rd-party spoiler effect' as long as the 3rd party clearly does not have a chance to win. Just when the 3rd party grows to a competitive size, voters may start to find again that they benefit from tactically ranking a major party candidate over their favorite candidate.
+
+This failure mode occurs if the voter fears that his 1st-choice candidate (the 3rd party) might first win from his best-liked major party, then not get enough of the redistributed votes, and finally almost certainly lose to the other major party. The voter would wind up with his least-favored outcome. The voter may seek to prevent this by ranking the best-liked major party over his actual first choice.
+
+The following example is given on [[http://electionmethods.org/ ElectionMethods.org]]:
+:Suppose my true preference is for the Libertarian first and the Republican second. Suppose further that the Libertarians are the strongest "minor" party. At some round of the IRV counting process, all the candidates will be eliminated except the Republican, the Democrat, and the Libertarian. If the Libertarian then has the fewest first-choice votes, he or she will be eliminated and my vote will transfer to the Republican, just as I wanted. But what if the Republican is eliminated before the Libertarian? Unless all the Republican votes transfer to the Libertarian, which is extremely unlikely, the Democrat might then beat the Libertarian. If so, I will have helped the Democrat win by not strategically ranking the Republican first.
+
+==== Failure to pick a good compromise ====
+IRV can ignore a good compromise in favor of a polarized choice that enjoys smaller actual support.
+
+This failure mode occurs in a 3-choice election where parties A and B are bitterly opposed, and party C is first choice for a minority but tolerable for a large majority. For a real-life example, consider the 17th-century Europe struggle over "government-enforced [[Catholicism]]" versus "government-enforced [[Protestantism]]", with "freedom of private worship" as the compromise C.
+
+Voting turnout would resemble the following:
+{| border=1
+!38% of voters
+!38% of voters
+!11% of voters
+!13% of voters
+|-
+|1. A
+|1. B
+|1. C
+|1. C
+|-
+|2. C
+|2. C
+|2. A
+|2. B
+|-
+|3. B
+|3. A
+|3. B
+|3. A
+|}
+
+In IRV, the compromise (choice C) is eliminated immediately. Choice B is elected, giving severely lower total satisfaction amongst voters than choice C.
+
+===Logistical issues===
+
+Ballots in IRV cannot be easily summarized.  (Political scientists call this the [[Summability criterion]].)  In most forms of voting, each district can examine the ballots locally and publish the total votes for each candidate.  Anyone can add up the published totals to determine the winner, and if there are allegations of irregularities in one district only that district needs to be recounted.
+
+With IRV, each time a candidate is dropped, the ballots assigned to them must be re-examined to determine which remaining candidate to assign them to.  Repeated several times, this can be time-consuming.  If there is a candidate X who got more votes than all of the candidates who got less than X put together, then all of these candidates who lost to X can be dropped simultaneously without affecting the final outcome, which can speed up counting.
+
+If counting takes place in several places for a single IRV election (as in Australia), these counting centers must be connected by a securely authenticated channel (historically the telegraph was used) to inform them which candidate has come last and should be dropped.  Centralizing the counting to avoid this problem can add opportunity for tampering.
+
+===Logistical issues in Australia===
+
+==== House of Representatives ====
+Initially, in Australia, ballots are counted at the booth level, with first preference results reported to the Divisional Returning officer and then to the National Tally Room. If it is clear who the two leading candidates will be, a notional distribution of the preferences of the minor candidates may be made. Postal and absentee ballots are of course yet to be processed - that takes another week or two.
+
+Over the next few weeks, ballots and matching documentation are concentrated in the offices of the Divisional Returning Officer, where a actual distribution of preferences is made. This may be done by physically moving the ballots around, or by entering ballot data into a suitable computer.
+
+If a candidate wins 51% of first preferences, a distribution of minor party preferences is strictly speaking not necessary, however the law now allows that such preferences be distributed to see what the "two-party preferred vote" actually is.
+
+Federal elections are conducted by the Australian Electoral Commission, who employ all the workers at all the booths, to a common standard of neutrality and efficiency. Candidates may appoint scrutineers to watch (but not touch) what is going on.
+
+==Other ranked ballot methods==
+
+Like IRV, [[Condorcet method]]s and [[Borda count]] methods grant voters the expressive power to rank candidates in order of preference (some such methods also allow voters to rank some candidates equally), but they differ in how the votes are counted and how the winner is determined.
+
+==See also==
+*[[List of democracy and elections-related topics]]
+*[[Table of voting systems by nation]]
+*[[Voting system]] - many other ways of voting
+*[[First Past the Post electoral system]]
+*[[Australian electoral system]]
+*[[Electoral systems of the Australian states and territories]]
+*[[Runoff voting]]
+*[[Single Transferable Vote]]
+*[[Approval voting]]
+*[[Condorcet method]]
+*[[Borda count]]
+*[[Politics of Papua New Guinea|Papua New Guinea]] uses an IRV variant known as ''Limited Preferential Vote''
+
+==External links==
+* Pro/advocacy positions
+** [http://www.fairvote.org/irv Center for Voting and Democracy]
+** [http://instantrunoff.com instant runoff]
+** [http://www.firv.org Ferndale for Instant Runoff Voting]
+** [http://www.mich.com/~donald/first.html Candidate Election Methods, Donald Davison]
+** [http://www.isye.gatech.edu/~jjb/papers/stv.pdf "Single Transferable Vote Resists Strategic Voting" by Bartholdi and Orlin]
+* Con/analysis positions
+** [http://electionmethods.org/IRVproblems.htm The Problem with Instant Runoff Voting]
+** [http://www.condorcet.org/rp/IRV.shtml Comparison with Condorcet Voting]
+** [http://www.alumni.caltech.edu/~seppley/Comparisons%20of%20MAM%20and%20Instant%20Runoff.htm Computer Simulations Comparing Instant Runoff with another voting system]
+** [http://www.ijs.co.nz/irv-wrong-winners.htm Mention of the "Avy" method concerning IRV]
+* Examples
+** [http://www.mnip.org/caucusresults.htm Minnesota Independence Party 2004, IRV poll for U.S. President.]
+** [http://stv.sourceforge.net/ pSTV -- Software for computing IRV and STV]
+** [http://www.aec.gov.au/ Australian Electoral Commission]
+*Further Explanation
+** [http://anewprogressiveamerica.blogspot.com/2004/11/what-is-instant-runoff-voting.html  What is Instant Runoff Voting?]
+
+{{fromwikipedia}}
