@@ -1,0 +1,37 @@
+'''SCRIRVE''' is a voting system devised by Chris Benham for use with ranked ballots. 
+Truncation is allowed, but in the standard version equal non-last preferences are not.
+Truncated ballots are first symmetrically completed. Then, working on the reversed profile,
+repeatedly eliminate the [[IRV]] "winner", until one candidate remains. That candidate is elected.
+
+(The name of the voting system is an acronym, standing for "symmetrically complete, reverse, IRV elimination.")
+
+"Symmetrically complete" here refers to a process that is applied to truncated ballots. Each truncated ballot is, as
+Douglas Woodall puts it, "replaced" by "all possible completions of it with equal weight, chosen so that the total
+weight is 1."
+("''Symmetric-Completion''" (''SC'') is a Woodall criterion that says "a truncated ballot should be treated the same way as its
+symmetric completion.")
+An alternative  description of the system  makes no mention of symmetric completion: 
+"Treat truncated ballots as giving equal-last preference to all the unranked candidates. Working on the reversed profile,
+use ER-IRV (fractional) to repeatedly eliminate candidates until one (who is elected) remains. (Handle equal preferences by splitting them into 
+equal fractions that sum to 1.)"
+
+===Example===
+{{Tenn_voting_example}}
+
+There is no truncation, so there is no "symmetric completing" to do. To use IRV on the reversed profile, we can begin by looking at the last preferences:
+
+Memphis 58,   Knoxville 42,  Chattanooga 0,  Nashville 0.<br>
+Memphis has more than half the last preferences, and so wins the first IRV election on the reversed profile; and so is  eliminated (and dropped from the ballots.)
+
+New last preferences tallies:
+<br>Knoxville 68,  Nashville 32,  Chattanooga 0.<br>
+Knoxville has more than half the last preferences, and so wins the second IRV election on the reversed profile; and so is eliminated (and dropped from the ballots.)
+
+New last preference tallies:
+<br>Nashville 32,  Chattanooga 68.<br>
+Chattanooga has more than half the last preferences, and so wins the third  IRV election on the reversed profile; and so is eliminated.
+The one remaining candidate is Nashville, so Nashville is the winner.
+
+Things are more simple when there are only three candidates.  In that case, SCRIRVE  elects the winner of the pairwise comparison between the candidate with the
+fewest (fractional) last preferences (or the fewest on the symmetrically completed ballots); and the winner of the pairwise comparison between the other two
+candidates. If the three candidates are in a cycle, then the winner is simply  always the candidate with the fewest (fractional) last preferences.
