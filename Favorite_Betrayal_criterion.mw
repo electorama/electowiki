@@ -1,49 +1,44 @@
-The '''Favorite Betrayal criterion''' is a criterion for evaluating [[voting system]]s.
+In [[social choice theory]], the '''Favoriate Betrayal criterion''' is a criterion for evaluating [[voting system]]s.
 
+==Definition==
 
-== Current Definition of FBC: ==
+<p>A voter optimizes the outcome (from his own perspective) if his vote
+causes the election of the best possible candidate that can be elected,
+based on his own preferences, given all the votes cast by other
+voters.</p>
 
-
-'''Requirements:'''
-
-The voting system must allow the voter to vote at top as many candidates as s/he wishes.
-
-If the winner is a candidate who is top-voted by you, then moving an additional candidate to top on your ballot shouldn't change the winner to a candidate who is not then top-voted by you.
-
-'''Supplementary definition:'''
-
-A candidate is "top-voted" by you, and is "at top" on your ballot, if you don't vote anyone over him/her.
-
-
-----
-
-The definiton written below is the one that FBC's initial propponent had originally written and used. Its problem was that it led to the question of "What if the way of voting that optimizes your outcome without favorite-burial is some complicated, difficult-to-find strategy?". That question led to a better definition, written above on this page. Some time ago, someone else, too, had written that definition, and a link to it is given at the bottom of this page, under a different name (Sincere Favorite Criterion).
-
-The above part of this page was added by Michael Ossipoff
-
-==Earlier Definition==
-
-'''Supplementary Definition:'''
-
-A voter optimizes the outcome (from his/her own perspective) if his vote causes the election of the best possible candidate that can be elected, based on his own preferences, given all the votes cast by other voters.
-
-'''Earlier FBC definition:'''
+==Statement of the criterion==
 
 <em>For any voter who has a unique favorite, there should be no possible set of votes cast by the other voters such that the voter can optimize the outcome (from his own perspective) only by voting someone over his favorite.</em>
 
 ==Complying methods==
 
-[[Approval voting]], [[range voting]], [[Majority Judgment]], [[MMPO|MinMax(pairwise opposition)]], [[MCA]] (except MCA-A and some versions of MCA-R), [[MAMPO]], and [[Improved Condorcet Approval]] comply with the favorite betrayal criterion, as do ICT and [[Symmetrical ICT]]. 
-
-[[Borda count]], [[plurality voting]], [[Condorcet criterion|Condorcet methods]] (except for Improved Condorcet methdods, such as Kevin Venzke's [[ICA]], and Chris Benham's ICT, and [[Symmetrical ICT]]) and [[instant-runoff voting]] do not comply.
+The [[approval voting|approval]] method complies with the favorite betrayal criterion, while [[cardinal ratings]], [[Borda count]], [[plurality voting]], and [[instant-runoff voting]] do not comply. It is not known whether [[Cloneproof Schwartz Sequential Dropping]] complies.  One form of [[majority-choice approval]] does not comply, the other form does.
 
 ==Commentary==
 
 Election methods that meet this criterion provide no incentive for voters to betray their favorite candidate by voting another candidate over him or her.
 
-An interpretation of this criterion applied to votes as cast is the [[Sincere Favorite criterion]].
+''Some parts of this article are derived with permission from text at http://electionmethods.org''
+
+== See also ==
+
+*[[Voting system]]
+*[[Monotonicity criterion]]
+*[[Condorcet Criterion]]
+*[[Generalized Condorcet criterion]]
+*[[Strategy-Free criterion]]
+*[[Generalized Strategy-Free criterion]]
+*[[Strong Defensive Strategy criterion]]
+*[[Weak Defensive Strategy criterion]]
+*[[Participation criterion]]
+*[[Summability criterion]]
+
+== External links ==
+
+* [http://electionmethods.org/ Election Methods Education and Research Group]
+
 
 [[Category:Voting system criteria]]
 
-''Some parts of this article are derived with permission from text at http://electionmethods.org''
 {{fromwikipedia}}
