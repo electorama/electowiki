@@ -13,8 +13,9 @@ Looking at pairwise defeats and their strength can help assessing the "immunity"
 * (Pairwise) '''defeat''' <=> ''more voters expressed to prefer A over B than expressed to prefer B over A'' 
 * '''Winning votes''' (wv) = ''no. of voters preferring the winner of the defeat to the loser''
 * '''Margin(s)''' = ''winning votes minus no. of voters preferring the loser.'' Gives more strategic incentives and seems more arbitrary (why not take the quotient instead?) than wv
+* '''Pairwise opposition''' or '''Votes against''' = Certain methods behave differently when defeats are not considered; instead the number of votes for each side of a pairwise contest against the other are counted as "opposition."
 * Other similar definitions of strength are possible, especially when voters can distinguish between equivalence and undecidedness
-* '''Majority-strength defeat''' = ''pairwise defeat which has a wv-strength of more than half the no. of voters.'' Using only such defeats can help reduce incentive to truncate
+* '''Majority-strength defeat''' = ''pairwise defeat which has a wv-strength of more than half the no. of voters.'' Using only such defeats can reduce incentive to truncate by reducing the likelihood that additional preferences will harm earlier ones. Voters adding a preference can create a majority-strength win, but they can't reverse the direction of one.
 * '''Approval-consistent defeat''' (definitive defeat) = ''pairwise defeat in which the winner is more approved than the loser.'' These are acyclic and can thus all be respected without a contradiction
 * '''Winning approval''' = ''approval score of the winner of the defeat.'' Using this as defeat strength leaves only one immune candidate: the least approved of those who beat all more approved ones. Similar for other scores. 
 * '''Approval-based support''' = ''no. of voters approving of the winner but not of the loser of the defeat.'' Gives special influence to preferences which cross the aproval cutoff and thus helps diminishing certain strategies. Useful when one assumes that only these voters will support the correspondig "majority complaint".
