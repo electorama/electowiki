@@ -1,42 +1,33 @@
-An election method is ''k-summable'' (or "passes the k-Summability Criterion") if there exists a constant c such that in any election with n candidates, the required size of the "array" is at most c*n^k.  An election method is "non-summable" if there is no k for which it is k-summable.
+Each vote should map onto a summable array, where the summation operation is associative and commutative, and the winner should be determined from the array sum for all votes cast.  An election method is ''k-summable'' (or "passes the k-Summability Criterion") if there exists a constant c such that in any election with n candidates, the required size of the "array" is at most c*n^k.  An election method is "non-summable" if there is no k for which it is k-summable.
 
 === Summable Methods ===
 
-==== 1-summable methods ====
-
+{|align=center|border=1
+|+ Methods and their summability levels.
+! k=1 !! k=2 !! k=3 !! non-summable
+|-
+|
 *[[Borda count]]
 *[[Plurality voting]]
 *[[Cardinal Ratings]]
-
-==== 2-summable methods ====
-
+||
 *most [[Condorcet method]]s, 
 *[[Bucklin]]
-
-==== 3-summable methods ====
-
+||
 *[[Iterative Ranked Approval Voting]]
-
-==== Non-summable methods ====
-
+||
 *[[Instant-Runoff Voting]] 
+|}
 
 === Commentary ===
 
-The summability criterion is the only criteria that addresses implementation logistics. Election methods that comply with the summability criterion are substantially easier to implement with integrity than those that do not. 
+The summability criterion addresses implementation logistics. Election methods with lower summability numbers are substantially easier to implement with integrity than those that do not.
 
-In [[plurality voting]], each vote is equivalent to a one-dimensional
-array with a 1 in the element for the selected candidate, and a 0 for
-each of the other candidates. The sum of the arrays for all the votes
-cast is simply a list of vote counts for each candidate.
-
-[[Approval voting]] is the same as plurality voting except that more than
-one candidate can get a 1 in the array for each vote. Each of the
-selected or "approved" candidates gets a 1, and the others get a 0.</p>
+In [[plurality voting]], each vote is equivalent to a one-dimensional array with a 1 in the element for the selected candidate, and a 0 for each of the other candidates. The sum of the arrays for all the votes cast is simply a list of vote counts for each candidate.  [[Approval voting]] is the same as plurality voting except that more than one candidate can get a 1 in the array for each vote. Each of the selected or "approved" candidates gets a 1, and the others get a 0.
 
 In [[Cloneproof Schwartz Sequential Dropping]], each vote is equivalent to a two-dimensional array referred to as a pairwise matrix. If candidate A is ranked above candidate B, then the element in the A row and B column gets a 1, while the element in the B row and A column gets a 0. The pairwise matrices for all the votes are summed, and the winner is determined from the resulting pairwise matrix sum.
 
-[[IRV]] does not comply with the summability criterion. In the IRV system, a count can be maintained of identical votes, but votes do not correspond to a summable array. The total possible number of unique votes grows factorially with the number of candidates. The larger the number of candidates, the more error-prone and less practical it becomes to maintain counts of each possible unique vote. It becomes impractical with more than about six candidates.
+IRV does not comply with the summability criterion. In the IRV system, a count can be maintained of identical votes, but votes do not correspond to a summable array. The total possible number of unique votes grows factorially with the number of candidates. The larger the number of candidates, the more error-prone and less practical it becomes to maintain counts of each possible unique vote. It becomes impractical with more than about six candidates.
 
 Suppose, for example, that the number of candidates is ten. In our current [[plurality voting|plurality]] system, the votes at any level (precinct, county, state, or national) can be compressed into a list of ten numbers. The same is true for an [[Approval voting|Approval]] system. For [[Cloneproof Schwartz Sequential Dropping]], a 10x10 matrix is needed. In an [[IRV]] system, however, the number of possible unique votes is over ten factorial -- a huge number.
 
