@@ -2,6 +2,10 @@ Any election method conforming to the [[Condorcet criterion]] is known as a '''C
 
 '''Condorcet''' is sometimes used to indicate the family of Condorcet methods as a whole.
 
+===Simple Explanation===
+
+If a candidate would beat all other candidates head-to-head, that candidate is the Condorcet Winner.  This can be determined through ranked ballots.  In rare occasions, there is no clear Condorcet Winner, in which case complicated tiebreaking procedures can be used.
+
 === Casting ballots ===
 
 Each voter fills out a [[preferential voting|ranked ballot]].  The voter can include less than all candidates under consideration.   Usually when a candidate ''is not listed'' on the voter's ballot they are considered less preferred than listed candidates, and ranked accordingly.  However, some variations allow a "no opinion" default option where no for- or against- preference is counted for that candidate.  Write-ins are possible, but are somewhat more difficult to implement for automatic counting than in other election methods.  This is a counting issue, but results in the frequent omission of the write-in option in ballot software.
