@@ -64,10 +64,26 @@ As an example, say a voter ranked candidates as follows:
   -------+-------+-------+-------+-------+-------+
 </pre>
 
-This vote would be counted as
+This ballot could be summarized briefly using the notation
   X2 > X4 >> X1 > X3
+where the ">>" indicates the approval cutoff --- candidates to the right of that sign receive no approval votes.  This ballot is counted as
+  X2 > X4
+  X2 > X1
+  X2 > X3
+  X2 > X2  (approval point)
+  X4 > X1
+  X4 > X3
+  X4 > X4  (approval point)
+  X1 > X3
 
-And the following votes would be entered into the pairwise array:
+=== Tallying Votes ===
+As in other [[Condorcet method]]s, the rankings on a single ballot are added into a round-robin table using the standard [[Condorcet_method#Counting_with_matrices|Condorcet pairwise matrix]]:  when a ballot ranks / grades one candidate higher than another, it means the higher-ranked candidate receives one vote in the head-to-head contest against the other.
+
+Since the diagonal cells in the Condorcet pairwise matrix are usually left blank, those locations can be used to store each candidate's Approval point score.
+
+For example, the single example ballot above,
+ X2 > X4 >> X1 > X3
+, the following votes would be added into the pairwise array:
 {| border="1"
 ! !! X1 !! X2 !! X3 !! X4
 |-
@@ -79,11 +95,6 @@ And the following votes would be entered into the pairwise array:
 |-
 ! X4 || 1 || 0 || 1 || 1
 |}
-
-=== Tallying Votes ===
-As in other [[Condorcet method]]s, the rankings on a single ballot are added into a round-robin table using the standard [[Condorcet_method#Counting_with_matrices|Condorcet pairwise matrix]]:  when a ballot ranks / grades one candidate higher than another, it means the higher-ranked candidate receives one vote in the head-to-head contest against the other.
-
-Since the diagonal cells in the Condorcet pairwise matrix are usually left blank, those locations can be used to store each candidate's Approval point score.
 
 We call a candidate [[Techniques_of_method_design#Defeats_and_defeat_strength|definitively defeated]] when that candidate is defeated in a head-to-head contest against any other candidate with higher Approval score.  This kind of defeat is also called an ''Approval-consistent defeat''.
 
