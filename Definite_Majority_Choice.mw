@@ -36,7 +36,7 @@ A voter ranks candidates in order of preference, additionally giving approval po
          |       |       |       |       |       |
       X3 |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
          |       |       |       |       |       |
-      X3 |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
+      X4 |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
   -------+-------+-------+-------+-------+-------+
 </pre>
 
@@ -44,6 +44,41 @@ On this ballot,
 # Candidates ranked at 1st through 3rd choice get 1 approval point each.
 # Candidates ranked fourth, fifth and unranked receive no approval points.
 # A higher-ranked candidate is given one vote in each of its head-to-head contests with lower-ranked candidates.  In particular, all explicitly ranked candidates are given 1 vote in each of their contests with unranked candidates.
+
+As an example, say a voter ranked candidates as follows:
+<pre>
+         +-----------------------+---------------+
+         |<-- Favorite        Least Preferred -->|
+         +-----------------------+---------------+
+         |<--    Approved     -->|  Not Approved |
+         +-------+-------+-------+-------+-------+
+         |   1   |   2   |   3   |   4   |   5   |
+  -------+-------+-------+-------+-------+-------+
+      X1 |  ( )  |  ( )  |  ( )  |  (X)  |  ( )  |
+         |       |       |       |       |       |
+      X2 |  (X)  |  ( )  |  ( )  |  ( )  |  ( )  |
+         |       |       |       |       |       |
+      X3 |  ( )  |  ( )  |  ( )  |  ( )  |  (X)  |
+         |       |       |       |       |       |
+      X4 |  ( )  |  (X)  |  ( )  |  ( )  |  ( )  |
+  -------+-------+-------+-------+-------+-------+
+</pre>
+
+This vote would be counted as
+  X2 > X4 >> X1 > X3
+
+And the following votes would be entered into the pairwise array:
+{| border="1"
+! !! X1 !! X2 !! X3 !! X4
+|-
+! X1 || 0 || 0 || 1 || 0
+|-
+! X2 || 1 || 1 || 1 || 1
+|-
+! X3 || 0 || 0 || 0 || 0
+|-
+! X4 || 1 || 0 || 1 || 1
+|}
 
 === Tallying Votes ===
 As in other [[Condorcet method]]s, the rankings on a single ballot are added into a round-robin table using the standard [[Condorcet_method#Counting_with_matrices|Condorcet pairwise matrix]]:  when a ballot ranks / grades one candidate higher than another, it means the higher-ranked candidate receives one vote in the head-to-head contest against the other.
