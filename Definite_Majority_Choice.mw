@@ -1,0 +1,42 @@
+== Definite Majority Choice ==
+
+''I'm just throwing something up here to get this page started.  Edit as appropriate --[[User:Araucaria|Araucaria]] 15:09, 18 Mar 2005 (PST)''
+
+Voters can grade their choices from favorite (A) to least preferred (ungraded), and give some or all of their graded choices a "passing grade", which signifies approval.
+
+Graded rankings added into a Round-Robin array, and the approval
+scores of each candidate are tabulated as well.
+
+To determine the winner:
+* Eliminate any candidate that is defeated in a one-to-one match with any other higher-approved candidate.  So by 2 different measures, a definite majority agrees that candidate should be eliminated.
+*If more than one candidate remains, the winner is the single candidate that defeats all others in one-to-one (pairwise)contests.
+
+One implementation of Definite Majority Choice might use a [[Graded Ballot]] with a Lowest Passing Grade option:
+
+<pre>
+            A    B    C    D    E    F    G
+
+      X1   ( )  ( )  ( )  ( )  ( )  ( )  ( )
+
+      X2   ( )  ( )  ( )  ( )  ( )  ( )  ( )
+
+      X3   ( )  ( )  ( )  ( )  ( )  ( )  ( )
+
+      X3   ( )  ( )  ( )  ( )  ( )  ( )  ( )
+
+   Lowest  ( )  ( )  ( )  ( )  ( )  ( )  ( )
+   Passing
+   Grade
+   (optional)
+</pre>
+
+You can give the same grade to more than one candidate.  By default, each graded candidate gets a "passing grade" and one Approval point.
+
+Ungraded candidates are graded below all others and get no Approval points.
+
+Optionally, a voter can specify a Lowest Passing Grade (LPG), which means that any graded candidates with lower grades get no approval points.
+
+If this were a vote for president, one could compare the LPG selection to Gerald Ford.  One might disagree whether he was a good or bad president, but anybody better than him would be a good president, and anybody worse than him would be bad.
+
+The main reason to grade candidates below the "Gerald Ford" mark would be if you're not optimistic about the chances for your higher-ranked favorite and compromise candidates.  Grading candidate X below the LPG mark gives you a chance to say "I don't like X and
+don't want him to win, but of all the alternatives, he would make the fewest changes in the wrong direction.  I won't give him a passing grade because I want him to have as small a mandate as possible."  Then you have some say in the outcome, instead of leaving the choice among the alternatives to the most vocal and extreme parts of other factions.
