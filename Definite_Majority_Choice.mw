@@ -1,15 +1,27 @@
-== Definite Majority Choice ==
+'''Definite Majority Choice''' (DMC) is a [[voting method]] proposed by several to  select a single winner using ballots that express preferences, with an additional indication of Approval Cutoff.
 
-''I'm just throwing something up here to get this page started.  Edit as appropriate --[[User:Araucaria|Araucaria]] 15:09, 18 Mar 2005 (PST)''
+If there is a candidate who is preferred over the other candidates,
+when compared in turn with each of the others, DMC guarantees that that candidate will win.
+Because of this property, DMC is (by definition) a '''[[Condorcet method]]'''.
+Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and
+[[Instant-runoff voting]], which do not make this guarantee.
 
-Voters can grade their choices from favorite (A) to least preferred (ungraded), and give some or all of their graded choices a "passing grade", which signifies approval.
+The main difference between DMC and other Condorcet methods such as [[Ranked Pairs]] (RP), [[Cloneproof Schwartz Sequential Dropping]] (Beatpath or Schulze) and [[River]] is the use of the additional Approval score to break ties.  If defeat strength is measured by the Total Approval score of the pairwise winner, DMC is equiavent to each of these other methods [''This needs to be verified! --[[User:Araucaria|Araucaria]] 12:22, 21 Mar 2005 (PST)'']
+
+DMC chooses the same winner as (and could be considered equivalent in most respects to) [[Ranked Approval Voting]] (RAV) (also known as Approval Ranked Concorcet), and [[Pairwise Sorted Approval]] (PSA).
+
+''How do I get a Table of Contents to display in here? --[[User:Araucaria|Araucaria]] 12:22, 21 Mar 2005 (PST)''
+
+== Procedure ==
+
+Voters can grade their choices from favorite (A) to least preferred (ungraded), and give some or all of their graded choices a "passing grade" to signify approval.
 
 Graded rankings added into a Round-Robin array, and the approval
 scores of each candidate are tabulated as well.
 
 To determine the winner:
-* Eliminate any candidate that is defeated in a one-to-one match with any other higher-approved candidate.  So by 2 different measures, a definite majority agrees that candidate should be eliminated.
-*If more than one candidate remains, the winner is the single candidate that defeats all others in one-to-one (pairwise)contests.
+# Eliminate any candidate that is defeated in a one-to-one match with any other higher-approved candidate.  So by 2 different measures, a definite majority agrees that candidate should be eliminated.
+#If more than one candidate remains, the winner is the single candidate that defeats all others in one-to-one (pairwise)contests.
 
 One implementation of Definite Majority Choice might use a [[Graded Ballot]] with a Lowest Passing Grade option:
 
@@ -48,3 +60,6 @@ In ordinary DMC, the winner is the candidate in Forest Simmon's '''[http://wiki.
 But in the event of a tie or near tie (say, margin within 0.01%), there may be no clear winner.
 
 In that case, form the superset '''P*''', the union of all sets P that result from all possible combinations of reversed ties or near-ties.  Then choose the winner from P* using [http://wiki.electorama.com/wiki/Techniques_of_method_design#Orderings Random Ballot Order].
+
+
+[[Category:Condorcet method]]
