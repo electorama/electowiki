@@ -62,7 +62,7 @@ Rankings are added into a pairwise array.  The approval scores of each candidate
 
 To determine the winner:
 # Eliminate any candidate that is defeated in a one-to-one match with any other higher-approved candidate.  Such a defeat is called an Approval-consistent or [http://wiki.electorama.com/wiki/Techniques_of_method_design#Defeats_and_defeat_strength definitive defeat].
-#If more than one candidate remains, the winner is the single candidate that defeats all others in one-to-one (pairwise)contests.
+#If more than one candidate remains, the winner is the one that defeats all other non-definitively-defeated candidates in one-to-one (pairwise) contests.
 
 === Handling Ties and Near Ties ===
 
