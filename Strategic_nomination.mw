@@ -1,6 +1,6 @@
-'''Strategic nomination''' is the manipulation of an [[election]] through its candidate set (compare this to [[tactical voting]], where the manipulation comes from the voters).
+'''Strategic nomination''' is the manipulation of an election through its candidate set (compare this to [[tactical voting]], where the manipulation comes from the voters).
 
-Obviously, if the winner of an election wasn't running in the first place then somebody else would have won instead and if a candidate gets "added" to an election it should be possible that this candidate now wins. If these are the only cases in which a change in the candidate set leads to a different election outcome, then the [[voting system]] is [[Independence of irrelevant alternatives|independent of irrelevant alternatives]] and therefore immune to strategic nomination.
+Obviously, if the winner of an election wasn't running in the first place then somebody else would have won instead and if a candidate gets "added" to an election it should be possible that this candidate now wins.  If these are the only cases in which a change in the candidate set leads to a different election outcome, then the [[voting system]] is [[Independence of irrelevant alternatives|independent of irrelevant alternatives]] and therefore immune to strategic nomination.
 
 '''Independence of irrelevant alternatives''', however, is a very hard property to satisfy (satisfied, for one, by cardinal or average ratings). This is illustrated by the following example of Condorcet's [[voting paradox]]:
 
@@ -19,12 +19,8 @@ If an election system is unaffected by clones (i.e. neither the addition nor the
 
 Although the real existence of clones is nearly impossible as it only takes one voter to create a differentiation between two candidates, the behavior an election method shows with regard to clones will tend to apply gracefully when it comes to near-clone situations (unless the election system was a deliberately contrived construction, e.g. a [[Borda count|Borda election]] after a purging of clones).
 
-==See also==
-* [[List of democracy and elections-related topics]] 
-
 ==External links==
 [http://www.condorcet.org/emr/singfaq.shtml Single-Winner Electoral Methods FAQ]
 
 [[Category:Voting theory]]
-
 {{fromwikipedia}}
