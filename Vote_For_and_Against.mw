@@ -14,6 +14,18 @@ In the three-candidate case, VFA does satisfy the [[Mutual majority criterion|Ma
 
 Although VFA performs rather poorly with respect to criteria, it is as easy to count as [[Plurality voting|First-Preference Plurality]] or [[Approval voting]], neither of which satisfies the ''Majority Last Preference criterion'' or (even in the three-candidate case) the [[Mutual majority criterion|Majority criterion for solid coalitions]].
 
+==== Variant satisfying Participation ====
+
+VFA can be made into a version of [[Descending Solid Coalitions]], and so can be made to satisfy the [[Participation criterion]], by making a small rule change: Instead of only disqualifying a candidate receiving more than half of the ''against'' votes, disqualify every candidate who receives more ''against'' votes than ''for'' votes.
+
+When this rule is used, the addition of a ballot can only disqualify the candidate ''against'' whom that ballot voted; it cannot cause any candidate to no longer be disqualified except for the candidate voted ''for''; and similarly that's the only candidate whose ''for'' vote tally can be increased.
+
+In the original version, adding a ballot could cause a candidate to no longer be disqualified, by altering how many votes constitutes "more than half." This rule has the advantage that if a candidate is disqualified, there is no way to alter the votes that didn't vote ''against'' this candidate in such a way that this candidate wouldn't have been disqualified.
+
+The variant rule doesn't share this property, and so voters would have incentive to vote ''for'' the strongest candidate they prefer, in attempt to keep him from being disqualified.
+
+Also, under the variant rule it is possible to be elected with extremely few ''for'' votes. It's possible that the two strongest candidates could both be disqualified, giving the election to the candidate with the third-most ''for'' votes, no matter how few votes that is.
+
 == Example ==
 {{Tenn_voting_example}}
 
