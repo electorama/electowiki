@@ -1,51 +1,8 @@
 This is a list of techniques and concepts which are more or less useful when designing a single winner election method, with some comments.
 
-== Scores ==
+= Scores =
 Scores can be interpreted as measures of "goodness" of a candidate. Their usage can thus improve the "efficiency" of a method.
-* '''Direct support''' = ''no. of voters ranking the candidate first.'' Retains clone-proofness when used appropriately, requires ranked ballots, is not well defined when more than one candidate is ranked top.
-* (Total) '''approval score''' = ''no. of voters approving of the candidate.'' Retains clone-proofness when used appropriately, requires approval information.
-* '''Borda score''' = ''sum of ranks the candidate gets on all ballots.'' Destroys clone-proofness and most "independency"-properties, requires ranked ballots.
-* '''Copeland score''' = ''no. of alternatives the candidate beats pairwise.'' Destroys clone-proofness.
-* Laslier's '''minimal gain score''' = ''probability that an alternative beaten by the candidate wins divided by the probability that an alternative beating the candidate wins, when choosing from the bipartisan distribution on the set of all other candidates.'' Improves the monotonicity of the bipartisan distribution, but destroys clone-proofness and is complicated to compute.
-
-== Defeats and defeat strength ==
-Looking at pairwise defeats and their strength can help assessing the "immunity" of a candidate against certain types of complaints. Care has to be taken so that the definition of strength doesn't destroy monotonicity.
-* (Pairwise) '''defeat''' <=> ''more voters expressed to prefer A over B than expressed to prefer B over A'' 
-* '''Winning votes''' (wv) = ''no. of voters preferring the winner of the defeat to the loser''
-* '''Margin(s)''' = ''winning votes minus no. of voters preferring the loser.'' Gives more strategic incentives and seems more arbitrary (why not take the quotient instead?) than wv
-* '''Pairwise opposition''' or '''Votes against''' = Certain methods behave differently when defeats are not considered; instead the number of votes for each side of a pairwise contest against the other are counted as "opposition."
-* Other similar definitions of strength are possible, especially when voters can distinguish between equivalence and undecidedness
-* '''Majority-strength defeat''' = ''pairwise defeat which has a wv-strength of more than half the no. of voters.'' Using only such defeats can reduce incentive to truncate by reducing the likelihood that additional preferences will harm earlier ones. Voters adding a preference can create a majority-strength win, but they can't reverse the direction of one.
-* '''Approval-consistent defeat''' (definitive defeat) = ''pairwise defeat in which the winner is more approved than the loser.'' These are acyclic and can thus all be respected without a contradiction
-* '''Winning approval''' = ''approval score of the winner of the defeat.'' Using this as defeat strength leaves only one immune candidate: the least approved of those who beat all more approved ones. Similar for other scores. 
-* '''Approval-based support''' = ''no. of voters approving of the winner but not of the loser of the defeat.'' Gives special influence to preferences which cross the aproval cutoff and thus helps diminishing certain strategies. Useful when one assumes that only these voters will support the corresponding "majority complaint".
-* '''Cardinal rated''' strength = ''sum of difference in the candidates' cardinal ratings on all ballots which rate the winner over the loser of the defeat.'' Helps diminishing certain strategies even better, but requires interpersonally comparable cardinal ratings.
-
-== Steps ==
-Many methods work in more than one, perhaps similar, perhaps different steps.
-* '''Iteration''': Similar steps are performed until some break criterion applies.
-* '''Reduction to a subset''': All members outside some special set are removed.
-* '''Runoff''': Special case of reduction to a subset, for example by removing worst candidate according to some score. Can be iterated.
-* '''Ordering''': Many methods involve the construction of an ordering of the candidates or the defeats, not to be interpreted as a social order, but only as an intermediate tool.
-* '''Randomization''': Using a certain amount of randomness can help avoiding some strategies, especially when it leads to each candidate being beaten by a possible winner.
-
-== Special sets ==
-* '''[[Smith set]]''' (top cycle, top tier, minimal dominant set) = ''smallest non-empty set of candidates each of which beats all candidates outside the set.''
-* '''[[Schwartz set]]''' (GOChA set, union of minimal undominated sets) = ''smallest non-empty set of candidates so that each candidate beating a member of the set is also in the set.''
-* Woodall's '''[[CDTT]]''' ("Condorcet doubly-augmented top tier") = ''union of all minimal non-empty sets such that no candidate in each set has a majority-strength loss to any candidate outside the set''. Alternatively, ''the set containing every candidate ''A'' where, for each other candidate ''B'' who has a majority-strength [[Schulze method|beatpath]] to ''A'', ''A'' also has a majority-strength beatpath to ''B.
-* '''[[Uncovered set]]''' = ''set of candidates which have defeats or beatpaths of length two to all other candidates''. Not monotonic as a set.
-* '''Banks set''' = ''set of candidates which are top on some maximal sub-chain of the defeat graph.'' Not monotonic as a set.
-* Dutta's '''Minimal covering set''' = ''smallest non-empty set such that when any other candidate is added, that candidate is covered in the resulting set.
-* '''Bipartisan set''' = ''set of candidates getting non-zero probability in the bipartisan distribution.'' 
-* Forest Simmons' set '''P''' = ''set of candidates which are not approval-consistently defeated.'' This set is totally ordered by the defeats and contains the most approved candidate and a possible Condorcet winner.
-
-== Orderings == 
-* Ordering by some score
-* (Uniformly) '''random order''': ''Pick some order uniformly at random.'' Destroys clone-proofness.
-* '''Random ballot order''': ''A is above B when A is above B on the first ballot distinguishing between them, in a random sequence of ballots.'' This is an often used tie breaking rank order (TBRO). Retains clone-proofness when used appropriately.
-* '''Random ballot approval order''': ''A is above B when A is above B on the first ballot on which the approval cutoff is between them, in a random sequence of ballots.'' Retains clone-proofness when used appropriately.
-
-== Randomization ==
-* '''Randomized start''': Pick an initial candidate by some random process, then proceed with other steps.
-* '''Randomized order''': Use a random process to determine the order in which the candidates are processes in some way.
-* '''Final randomization''': Restrict to some subset, then use a random process to choose from that set.
+* '''(Total) Approval Score''' = no. of voters approving of the candidate; retains clone-proofness, requires approval information
+* '''Borda Score''' = sum of ranks the candidate gets on all ballots; destroys clone-proofness and most "independency"-properties, requires ranked ballots
+* '''Copeland Score''' = no. of alternatives the candidate beats pairwise; destroys clone-proofness
+* Laslier's '''Minimal Gain Score''' = probability that an alternative beaten by the candidate wins divided by the probability that an alternative beating the candidate wins, when choosing from the bipartisan distribution on the set of all other candidates; improves the monotonicity of the bipartisan distribution, but destroys clone-proofness and is complicated to compute
