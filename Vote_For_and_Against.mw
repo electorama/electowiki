@@ -12,7 +12,7 @@ If we suppose ranked ballots are being used, then in the general case VFA satisf
 
 In the three-candidate case, VFA does satisfy the [[Mutual majority criterion|Majority criterion for solid coalitions]], and in one respect also Clone Independence: When the winner in a two-candidate race is ''cloned'', this cannot cause the loser of the two-candidate race to be elected.
 
-Although VFA performs rather poorly with respect to criteria, it is as easy to count as [[Plurality voting|First-Preference Plurality]] or [[Approval voting]], neither of which satisfies the ''Majority Last Preference criterion''.
+Although VFA performs rather poorly with respect to criteria, it is as easy to count as [[Plurality voting|First-Preference Plurality]] or [[Approval voting]], neither of which satisfies the ''Majority Last Preference criterion'' or (even in the three-candidate case) the [[Mutual majority criterion|Majority criterion for solid coalitions]].
 
 == Example ==
 {{Tenn_voting_example}}
