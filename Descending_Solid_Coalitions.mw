@@ -1,0 +1,38 @@
+'''Descending Solid Coalitions''' (or '''DSC''') is a [[voting system]] devised by Douglas Woodall for use with ranked ballots.
+
+== Procedure ==
+
+Every possible set of candidates is given a score equal to the number of voters who are ''solidly committed'' to the candidates in that set. A voter is solidly committed to a set of candidates if he ranks every candidate in this set strictly above every candidate not in the set.
+
+Then the sets are considered in turn, from those with the greatest score to those with the least. When a set is considered, every candidate not in the set becomes ineligible to win, unless this would cause all candidates to be ineligible, in which case that set is ignored.
+
+When only one candidate is still eligible to win, that candidate is elected.
+
+== Properties ==
+
+DSC satisfies the [[Plurality criterion]], the [[Mutual majority criterion|Majority criterion]], [[Monotonicity criterion|Mono-raise]], [[Mono-add-top criterion|Mono-add-top]], the [[Participation criterion]], [[Later-no-harm criterion|Later-no-harm]], and Clone Independence.
+
+DSC fails the [[Condorcet criterion]] and [[Smith set|Smith criterion]].
+
+DSC can be considered a [[Plurality voting|First-Preference Plurality]] variant that satisfies Clone Independence.
+
+===Example===
+{{Tenn_voting_example}}
+
+The sets have the following strengths:
+100 {M,N,C,K},
+58 {N,C,K},
+42 {M,N,C},
+42 {M,N},
+42 {M},
+32 {C,K},
+26 {N,C},
+26 {N},
+17 {K},
+15 {C}.
+
+{N,C,K} is the strongest set that excludes a candidate. Memphis becomes ineligible.
+
+No matter in which order we consider the sets with 42% of the voters solidly committed to them, we will arrive at the same result, which is that Nashville will be the only candidate remaining. So Nashville is the winner.
+
+Notice that more than half of the votes held Memphis to be the worst alternative, yet the Memphis supporters' votes were still useful in securing their second choice, Nashville. If the Memphis voters had not listed any preferences after Memphis, the winner would have been Chattanooga.
