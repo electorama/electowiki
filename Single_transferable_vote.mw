@@ -1,6 +1,6 @@
 The '''Single Transferable Vote''', or '''STV''', is a [[preference voting|preference]] [[voting system]] designed to minimise wasted votes in multi-candidate elections while ensuring that votes are explicitly for candidates rather than party lists.  
 
-When promoted as a [[proportional representation]] method in multi-party multi-seat elections, it is generally known as '''Proportional Representation through the Single Transferable Vote''' or '''PR-STV'''.  When a similar method is applied to single-seat [[elections]] it is sometimes called ''[[instant-runoff voting]]'' or the ''alternative vote'', and has different proportionality implications for a similar ballot. In both systems of voting the ballot choices represent an [[Preferential_voting|ordinal ranking of preferences]], but an "instant runoff" for only one position or measure is a simple calculation.  
+When promoted as a [[proportional representation]] method in multi-party multi-seat elections, it is generally known as '''Proportional Representation through the Single Transferable Vote''' or '''PR-STV'''.  When a similar method is applied to single-seat elections it is sometimes called ''[[instant-runoff voting]]'' or the ''alternative vote'', and has different proportionality implications for a similar ballot. 
 
 == Voting ==
 
@@ -107,31 +107,26 @@ There are also tactical considerations for parties standing more than one candid
 
 ==In practice==
 Places that use STV for governmental elections include:
-* [[Australia]], for the [[Australian Senate|Senate]] [http://www.eca.gov.au/systems/proportional/proportion_rep.htm] and for one or other of the state houses.
-* [[Republic of Ireland|Ireland]], for all elections [http://www.rte.ie/news/dailguide/prsystem.html]
-* [[Malta]], for all elections [http://www.maltadata.com]
-* [[New Zealand]] [http://www.stv.govt.nz], where STV is being used for the first time for district health board and some local authority elections in October 2004
-* [[Northern Ireland]], for local, [[Northern Ireland Assembly|Assembly]] and [[European Parliament|European]] elections
-* The [[United States]], where the only official governing bodies that use STV to elect representatives are the City Council and School Committee of [[Cambridge, Massachusetts]].
+* Australia, for the Senate [http://www.eca.gov.au/systems/proportional/proportion_rep.htm] and for one or other of the state houses.
+* Ireland, for all elections [http://www.rte.ie/news/dailguide/prsystem.html]
+* Malta, for all elections [http://www.maltadata.com]
+* New Zealand [http://www.stv.govt.nz], where STV is being used for the first time for district health board and some local authority elections in October 2004
+* Northern Ireland, for local, Assembly and European elections
+* The United States, where the only official governing bodies that use STV to elect representatives are the City Council and School Committee of [[Cambridge, Massachusetts]].
 
-STV enjoyed some popularity in the United States in the first half of the 20th Century. The community school boards of the City of [[New York City|New York]] [http://ccrc.wustl.edu/~lorracks/projects/techreport/subsection3_4_4.html] used STV until they were abolished in 2002.
+STV enjoyed some popularity in the United States in the first half of the 20th Century. The community school boards of the City of New York [http://ccrc.wustl.edu/~lorracks/projects/techreport/subsection3_4_4.html] used STV until they were abolished in 2002.
 
-The method used for electing the Legislative Assemblies of [[Tasmania]] and the elections in the province of [[Alberta]], [[Canada]] from [[1926]] to [[1955]].
+The method used for electing the Legislative Assemblies of Tasmania and the elections in the province of Alberta, Canada from 1926 to 1955.
 
-[[British Columbia]] will decide in 2005 by referendum whether to adopt STV to replace its current [[First Past the Post]] electoral system, after a recommendation of STV [http://www.citizensassembly.bc.ca/public/news/2004/10/dmaclachlan-3_0410241345-701] by the [[Citizens' Assembly on Electoral Reform (British Columbia)|Citizens' Assembly on Electoral Reform]].
+British Columbia will decide in 2005 by referendum whether to adopt STV to replace its current [[First Past the Post]] electoral system, after a recommendation of STV [http://www.citizensassembly.bc.ca/public/news/2004/10/dmaclachlan-3_0410241345-701] by the Citizens' Assembly on Electoral Reform.
 
-Some non-governmental organisations also use STV.  For instance, all [[National Union of Students of the United Kingdom]] elections and those of their constituent members are under the system.
+Some non-governmental organisations also use STV.  For instance, all National Union of Students of the United Kingdom elections and those of their constituent members are under the system.
 
 ==Historical assessments==
-An early proponent of STV was [[John Stuart Mill]], who praised it in "On Representation." In the "English Constitution" [[Walter Bagehot]] praised the Hare system for allowing everyone, even ideological minorities, to elect an MP, but said that the Hare would create more problems than it solved. "[the Hare system] is inconsistent with the extrinsic independence as well as the inherent moderation of a Parliament - two of the conditions we have seen, are essential to the bare possibility of parliamentary government."
+An early proponent of STV was John Stuart Mill, who praised it in "On Representation." In the "English Constitution" Walter Bagehot praised the Hare system for allowing everyone, even ideological minorities, to elect an MP, but said that the Hare would create more problems than it solved. "[the Hare system] is inconsistent with the extrinsic independence as well as the inherent moderation of a Parliament - two of the conditions we have seen, are essential to the bare possibility of parliamentary government."
 
 ==See also==
-*[[List of democracy and elections-related topics]]
-* [[Table of voting systems by nation]]
 * [[Single Non-Transferable Vote]]
-* [[preference voting]]
-* [[Instant-runoff voting]]
-* [[voting systems]]
 * [[Hagenbach-Bischoff quota]]
 * [[Hare quota]]
 * [[Imperiali quota]]
@@ -140,12 +135,10 @@ An early proponent of STV was [[John Stuart Mill]], who praised it in "On Repres
 == External links ==
 *[http://dmoz.org/Society/Politics/Campaigns_and_Elections/Voting_Systems/Single_Transferable_Vote/ ODP category]
 * [http://stv.sourceforge.net/ pSTV--software for computing the single transferable vote]
-*[http://www.electionmethods.org/ ElectionMethods.org] on comparisons between different methods
-* [http://www.electoral-reform.org.uk Electoral Reform Society]
-[[Category:Voting systems]]
 * [http://www.prsa.org.au Proportional Representation Society of Australia] 
 * [http://www.oasis.gov.ie/government_in_ireland/elections/proportional_representation.html?PHPSESSID=fe117d4bb6373eea8e4bf359999978c5 The Single Transferrable Vote procedure in Ireland]
 * [http://www.stvforbc.com Information on BC-STV. British Columbia's Referendum on STV]
 * [http://fc.antioch.edu/james_green-armytage/voting.htm James Green-Armytage's voting methods page] information about single-winner and multiple-winner voting methods, including several versions of STV
 
+[[Category:Voting systems]]
 {{fromwikipedia}}
