@@ -8,6 +8,8 @@ Then the sets are considered in turn, from those with the greatest score to thos
 
 When only one candidate is still eligible to win, that candidate is elected.
 
+A variation of this method is [[Descending Acquiescing Coalitions]].
+
 == Properties ==
 
 DSC satisfies the [[Plurality criterion]], the [[Mutual majority criterion|Majority criterion]], [[Monotonicity criterion|Mono-raise]], [[Mono-add-top criterion|Mono-add-top]], the [[Participation criterion]], [[Later-no-harm criterion|Later-no-harm]], and Clone Independence.
