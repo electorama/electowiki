@@ -1,0 +1,42 @@
+<h4 class=left>Definitions</h4>
+
+<p>A voter votes X equal to Y if the voter doesn't vote X over Y, and
+doesn't vote Y over X, but votes X over someone, and votes Y over
+someone.</p>
+
+<p>A sincere vote is one with no falsified preferences or preferences
+left unspecified when the election method allows them to be specified
+(in addition to the preferences already specified).</p>
+
+<p>One candidate is preferred over another candidate if, in a one-on-one
+competition, more voters prefer the first candidate than prefer the
+other candidate.</p>
+
+<h4 class=left>Statement of Criterion</h4>
+
+<p><em>If a majority prefers one particular candidate to another, then
+they should have a way of voting that will ensure that the other cannot
+win, without any member of that majority reversing a preference for one
+candidate over another or falsely voting two candidates equal.</em></p>
+
+<h4 class=left>Complying Methods</h4>
+
+<p>[[Cloneproof Schwartz Sequential Dropping]] and [[Majority Choice Approval]] comply with the Strong Defensive Strategy Criterion, while [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], [[Plurality voting]], and [[Instant-Runoff Voting]] do not comply.</p>
+
+<h4 class=left>Commentary</h4>
+
+<p>Compliance with SDSC means that a majority never needs any more than
+[[truncation strategy]] to defeat a particular candidate, even when
+countering [[offensive order reversal]] by that candidate's voters.
+Offensive order reversal is the only strategy that can create the need
+for defensive strategy in [[Cloneproof Schwartz Sequential Dropping]].</p>
+
+''Some parts of this article are derived with permission from text at http://electionmethods.org''
+
+== External Links ==
+
+* [http://electionmethods.org/ Election Methods Education and Research Group]
+
+[[Category:Voting system criteria]]
+
+{{fromwikipedia}}
