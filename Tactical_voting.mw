@@ -8,7 +8,7 @@ There are different types of tactical voting:
 
 '''Burying''' is a type of strategic voting in which a voter insincerely ranks an alternative lower in the hopes of defeating it.  For example, in the [[Borda count]], a voter may insincerely rank a perceived strong alternative last in order to help their preferred alternative beat it. A real-world analogy would be voters of one party crossing over to vote in the other party's [[primary election|primary]] against the candidate they think might beat the candidate of their party.
 
-'''Push-over''' or '''turkey-raising''' is a type of strategic voting in which a voter ranks a perceived weak alternative higher, but not in the hopes of getting it elected.  For example, in a [[bloc voting|bloc vote]] where multiple votes are required, a voter may insincerely vote for a candidate they perceive as unlikely to win, in order to help their preferred candidate win.
+'''Push-over''' is a type of strategic voting that is only useful in methods that violate monotonicity. It may involve a voter ranking an alternative lower in the hope of getting it elected, or ranking an alternative higher in the hope of defeating it.
 
 == Strategy-free voting methods ==
 
