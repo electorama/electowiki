@@ -100,7 +100,7 @@ If equal Approval scores affect the outcome, there are several alternatives for 
 
 ==== Pairwise Ties ====
 
-When there are no ties, the winner is the candidate in Forest Simmon's '''[http://wiki.electorama.com/wiki/Techniques_of_method_design#Special_sets P]''' set, the ''set of candidates which are not approval-consistently defeated''.
+When there are no ties, the winner is the candidate in Forest Simmon's '''[http://wiki.electorama.com/wiki/Techniques_of_method_design#Special_sets P]''' set, the ''set of candidates which are not definitively defeated''.
 
 In the event of a pairwise tie or near tie (say, margin within 0.01%), it is sometimes possible to proceed anyway, since another member of P may defeat the tied pair.  But if there is no clear winner, ties should be handled using the same [http://wiki.electorama.com/wiki/Maximize_Affirmed_Majorities#Compute_Tiebreak Random Ballot] procedure as in [[Maximize Affirmed Majorities]].
 
