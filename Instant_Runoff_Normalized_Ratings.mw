@@ -1,6 +1,6 @@
 == Instant Runoff Normalized Ratings (IRNR) ==
 
-Based on a ratings ballot, IRNR seeks to give every voter equal power and encourage honest ratings.
+Based on a [[ratings ballot]], IRNR seeks to give every voter equal power and encourage honest ratings.
 
 The first step is normalizing, which can happen in two ways.
 
@@ -9,10 +9,10 @@ The first step is normalizing, which can happen in two ways.
 
 Sum up the normalized ratings for each candidate. If there are two choices, the highest rated is the winner. If there are more than two choices, disqualify the lowest rated choice.
 
-The process repeats with a normalization step that ignores disqualified choices. A voter's voting power is thus redistributed among the remaining choices.
+The process repeats with a normalization step that ignores disqualified choices.  A voter's voting power is thus redistributed among the remaining choices.
 
-----
+== External link ==
 
-[http://bolson.org/voting/vote_util/org/bolson/vote/IRNR.java Java code that implements IRNR]
+* [http://bolson.org/voting/vote_util/org/bolson/vote/IRNR.java Java code that implements IRNR]
 
 [[Category:Voting systems]]
