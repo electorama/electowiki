@@ -1,61 +1,56 @@
-<h4 class=left>Statement of Criterion</h4>
+An election method is ''k-summable'' (or "passes the k-Summability Criterion") if there exists a constant c such that in any election with n candidates, the required size of the "array" is at most c*n^k.  An election method is "non-summable" if there is no k for which it is k-summable.
 
-<p><em>Each vote should map onto a summable array, where the summation
-operation is associative and commutative, and the winner should be
-determined from the array sum for all votes cast.</em></p>
+=== Summable Methods ===
 
-<h4 class=left>Complying Methods</h4>
+==== 1-summable methods ====
 
-<p>[[Majority Choice Approval]], [[Cloneproof Schwartz Sequential Dropping]], [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], and [[Plurality voting]] all comply.  Only [[Instant-Runoff Voting]] does not comply.</p>
+*[[Borda count]]
+*[[Plurality voting]]
+*[[Cardinal Ratings]]
 
-<h4 class=left>Commentary</h4>
+==== 2-summable methods ====
 
-<p>The summability criterion is the only criteria that addresses implementation logistics. Election methods that comply with the summability criterion are substantially easier to implement with integrity than those that do not. All the election methods listed above comply except Instant Runoff Voting (IRV).</p>
+*most [[Condorcet method]]s, 
+*[[Bucklin]]
 
-<p>In [[plurality voting]], each vote is equivalent to a one-dimensional
+==== 3-summable methods ====
+
+*[[Iterative Ranked Approval Voting]]
+
+==== Non-summable methods ====
+
+*[[Instant-Runoff Voting]] 
+
+=== Commentary ===
+
+The summability criterion is the only criteria that addresses implementation logistics. Election methods that comply with the summability criterion are substantially easier to implement with integrity than those that do not. 
+
+In [[plurality voting]], each vote is equivalent to a one-dimensional
 array with a 1 in the element for the selected candidate, and a 0 for
 each of the other candidates. The sum of the arrays for all the votes
-cast is simply a list of vote counts for each candidate.</p>
+cast is simply a list of vote counts for each candidate.
 
-<p>[[Approval voting]] is the same as plurality voting except that more than
+[[Approval voting]] is the same as plurality voting except that more than
 one candidate can get a 1 in the array for each vote. Each of the
 selected or "approved" candidates gets a 1, and the others get a 0.</p>
 
-<p>In [[Cloneproof Schwartz Sequential Dropping]], each vote is equivalent to a two-dimensional array referred to as a pairwise matrix. If candidate A is ranked above candidate B, then the element in the A row and B column gets a 1, while the element in the B row and A column gets a 0. The pairwise matrices for all the votes are summed, and the winner is determined from the resulting pairwise matrix sum.</p>
+In [[Cloneproof Schwartz Sequential Dropping]], each vote is equivalent to a two-dimensional array referred to as a pairwise matrix. If candidate A is ranked above candidate B, then the element in the A row and B column gets a 1, while the element in the B row and A column gets a 0. The pairwise matrices for all the votes are summed, and the winner is determined from the resulting pairwise matrix sum.
 
-<p>[[IRV]] does not comply with the summability criterion. In the IRV system, a count can be maintained of identical votes, but votes do not correspond to a summable array. The total possible number of unique votes grows factorially with the number of candidates. The larger the number of candidates, the more error-prone and less practical it becomes to maintain counts of each possible unique vote. It becomes impractical with more than about six candidates.</p>
+[[IRV]] does not comply with the summability criterion. In the IRV system, a count can be maintained of identical votes, but votes do not correspond to a summable array. The total possible number of unique votes grows factorially with the number of candidates. The larger the number of candidates, the more error-prone and less practical it becomes to maintain counts of each possible unique vote. It becomes impractical with more than about six candidates.
 
-<p>Suppose, for example, that the number of candidates is ten. In our current [[plurality voting|plurality]] system, the votes at any level (precinct, county, state, or national) can be compressed into a list of ten numbers. The same is true for an [[Approval voting|Approval]] system. For [[Cloneproof Schwartz Sequential Dropping]], a 10x10 matrix is needed. In an [[IRV]] system, however, the number of possible unique votes is over ten factorial -- a huge number.</p>
+Suppose, for example, that the number of candidates is ten. In our current [[plurality voting|plurality]] system, the votes at any level (precinct, county, state, or national) can be compressed into a list of ten numbers. The same is true for an [[Approval voting|Approval]] system. For [[Cloneproof Schwartz Sequential Dropping]], a 10x10 matrix is needed. In an [[IRV]] system, however, the number of possible unique votes is over ten factorial -- a huge number.
 
-<p>Under [[IRV]], therefore, every individual vote (rank list) must be available at a central location to determine the winner. In a major public election, that could be millions or even tens of millions of votes. The votes cannot be compressed by summing as in other election methods because votes may need to be transferred according to which candidates are eliminated in each round.</p>
+Under IRV, therefore, every individual vote (rank list) must be available at a central location to determine the winner. In a major public election, that could be millions or even tens of millions of votes. The votes cannot be compressed by summing as in other election methods because votes may need to be transferred according to which candidates are eliminated in each round.
 
-<p>[[IRV]] therefore requires far more data transfer and storage than the other methods. Modern networking and computer technology can handle it, but that is beside the point. The biggest challenge in using computers for public elections will always be security and integrity. If many thousands of times more data needs to be transferred and stored, verification becomes more difficult and the potential for fraudulent tampering becomes substantially greater.</p>
+IRV therefore requires far more data transfer and storage than the other methods. Modern networking and computer technology can handle it, but that is beside the point. The biggest challenge in using computers for public elections will always be security and integrity. If many thousands of times more data needs to be transferred and stored, verification becomes more difficult and the potential for fraudulent tampering becomes substantially greater.
 
-<p>To illustrate this point, consider the verification of a vote tally for a national office. In our current plurality system, each precinct verifies its vote count. The counts for each precinct in a county can then be added to determine the county totals, and anyone with a calculator or computer can verify that the totals are correct. The same process is then repeated at the state level and the national level.</p>
+To illustrate this point, consider the verification of a vote tally for a national office. In our current plurality system, each precinct verifies its vote count. The counts for each precinct in a county can then be added to determine the county totals, and anyone with a calculator or computer can verify that the totals are correct. The same process is then repeated at the state level and the national level.
 
-<p>The point is that once the votes are verified at the lowest (precinct) level, the numbers are available to anyone for independent verification, and election officials could never get away with "fudging" the numbers. At the lowest level, ballot problems such as "hanging chads" could be a problem, but adding the vote counts will certainly not be a problem. And this applies not only to conventional plurality elections, it applies also to [[Cloneproof Schwartz Sequential Dropping]], [[Approval voting|Approval]], and even [[Borda count|Borda]] -- but not [[IRV]].</p>
+The point is that once the votes are verified at the lowest (precinct) level, the numbers are available to anyone for independent verification, and election officials could never get away with "fudging" the numbers. At the lowest level, ballot problems such as "hanging chads" could be a problem, but adding the vote counts will certainly not be a problem. And this applies not only to conventional plurality elections, it applies also to [[Cloneproof Schwartz Sequential Dropping]], Approval voting, and even Borda -- but not IRV.
 
-<p>In an [[IRV]] election, the voting data cannot be "compressed" by adding the vote totals together at each level, so verification of the tally results becomes nearly impossible. The final result depends on all the votes, but even if the individual votes are all counted correctly, nobody can verify that the total pool of votes has not been tampered with at some level of the tallying process. And with IRV's erratic properties, someone could <em>lower</em> the rankings of a candidate to make him <em>win</em> or <em>raise</em> the rankings of a candidate to make him <em>lose</em>.</p>
-
-''Some parts of this article are derived with permission from text at http://electionmethods.org''
-
-== See Also ==
-
-*[[Voting system]]
-*[[Monotonicity criterion]]
-*[[Condorcet Criterion]]
-*[[Generalized Condorcet criterion]]
-*[[Strategy-Free criterion]]
-*[[Generalized Strategy-Free criterion]]
-*[[Strong Defensive Strategy criterion]]
-*[[Weak Defensive Strategy criterion]]
-*[[Favorite Betrayal criterion]]
-*[[Participation criterion]]
-
-== External Links ==
-
-* [http://electionmethods.org/ Election Methods Education and Research Group]
+In an [[IRV]] election, the voting data cannot be "compressed" by adding the vote totals together at each level, so verification of the tally results becomes nearly impossible. The final result depends on all the votes, but even if the individual votes are all counted correctly, nobody can verify that the total pool of votes has not been tampered with at some level of the tallying process. And with IRV's erratic properties, someone could ''lower'' the rankings of a candidate to make him ''win'' or ''raise'' the rankings of a candidate to make him ''lose''.
 
 [[Category:Voting system criteria]]
 
+''Some parts of this article are derived with permission from text at http://electionmethods.org''
 {{fromwikipedia}}
