@@ -1,9 +1,7 @@
-'''Approval voting''' is a [[voting system]] used for [[election]]s, in which each voter can vote for as many or as few candidates as the voter chooses. It is typically used for single-winner elections but can be extended to multiple winners.  Approval voting is a limited form of [[range voting]], where the range that voters are allowed to express is extremely constrained: accept or not.  
+'''Approval voting''' is a [[voting system]] in which each voter can vote for as many or as few candidates as the voter chooses. It is typically used for single-winner elections but can be extended to multiple winners.  Approval voting is a limited form of [[range voting]], where the range that voters are allowed to express is extremely constrained: accept or not.  
 
 ==Procedures==
-Each voter may vote for as many options as they wish, at most once per option.  This is equivalent to saying that each voter may "approve" or "disapprove" each option by voting or not voting for it, and it's also equivalent to voting +1 or 0 in a range voting system.
-
-The votes for each option are tallied.  The option with the most votes wins.
+Each voter may vote for as many options as they wish, at most once per option.  This is equivalent to saying that each voter may "approve" or "disapprove" each option by voting or not voting for it, and it's also equivalent to voting +1 or 0 in a range voting system.  The votes for each option are tallied.  The option with the most votes wins.
 
 ==Example==
 {{Tenn_voting_example}}
@@ -18,9 +16,14 @@ Supposing that voters voted for their two favorite candidates, the results would
 ==Potential for tactical voting==
 Approval voting passes a form of the [[monotonicity criterion]], in that voting for a candidate never lowers that candidate's chance of winning.  Indeed, there is never a reason for a voter to [[tactical voting|tactically vote]] for a candidate X without voting for all candidates he or she prefers to candidate X.
 
-However, as approval voting does not offer a single method of expressing sincere preferences, but rather a plethora of them, voters are encouraged to analyze their fellow voters' preferences and use that information to decide which candidates to vote for.
+===Proper strategy for voters ===
 
-A good tactic is to vote for every candidate the voter prefers to the leading candidate, and to also vote for the leading candidate if that candidate is preferred to the current second-place candidate.  When all voters use this tactic, the [[Condorcet method|Condorcet winner]] is almost certain to win.
+As approval voting does not offer a single method of expressing sincere preferences, but rather a plethora of them, voters are encouraged to analyze their fellow voters' preferences and use that information to decide which candidates to vote for.
+
+Some strategies for approval voting:
+
+#Vote for every candidate you prefer to the leading candidate, and to also vote for the leading candidate if that candidate is preferred to the current second place candidate.
+#For each candidate C, if the winner is more likely to come from the set of candidates that are worse than C than from the set of candidates that are better than C, then approve C, else don't.
 
 In the above election, if Chattanooga is perceived as the strongest challenger to Nashville, voters from Nashville will only vote for Nashville, because it is the leading candidate and they prefer no alternative to it.  Voters from Chattanooga and Knoxville will withdraw their support from Nashville, the leading candidate, because they do not support it over Chattanooga.  The new results would be:
 *Memphis: 42
@@ -35,7 +38,7 @@ If, however, Memphis were perceived as the strongest challenger, voters from Mem
 *Knoxville: 32
 
 ==Effect on elections==
-The effect of this system as an [[electoral reform]] is disputed.  [[Instant-runoff voting]] advocates like the [[Center for Voting and Democracy]] argue that Approval Voting would lead to the election of "compromise candidates" disliked by few, and liked by few.  A study by Approval advocates [[Steven Brams]] and [[Dudley R. Herschbach]] published in ''[[Science (journal)|Science]]'' in [[2000]] argued that approval voting was "fairer" than [[Preferential voting|preference voting]] on a number of criteria.  They claimed that a close analysis shows that the hesitation to support a 'compromise candidate' to the same degree as one supports one's first choice (as approval voting requires) actually outweighs the extra votes that such second choices get.  Accordingly, preference voting is more biased towards compromise candidates than approval voting - a non-obvious and surprising result.  The United States organiation [[Citizens for Approval Voting]] was organized in [[December 2002]] to promote the use of approval voting in all public single-winner elections.
+The effect of this system is disputed.  [[Instant-runoff voting]] advocates like the [[Center for Voting and Democracy]] argue that Approval Voting would lead to the election of "compromise candidates" disliked by few, and liked by few.  A study by Approval advocates [[Steven Brams]] and [[Dudley R. Herschbach]] published in ''[[Science (journal)|Science]]'' in [[2000]] argued that approval voting was "fairer" than [[Preferential voting|preference voting]] on a number of criteria.  They claimed that a close analysis shows that the hesitation to support a 'compromise candidate' to the same degree as one supports one's first choice (as approval voting requires) actually outweighs the extra votes that such second choices get.  Accordingly, preference voting is more biased towards compromise candidates than approval voting - a non-obvious and surprising result.  The United States organisation [[Citizens for Approval Voting]] was organized in [[December 2002]] to promote the use of approval voting in all public single-winner elections.
 
 ==Other issues and comparisons==
 Advocates of approval voting often note that a single simple ballot can serve for single, multiple, or negative choices.  It requires the voter to think carefully about who or what they really accept, rather than trusting a system of tallying or compromising by formal ranking or counting. Compromises happen but they are explicit, and chosen by the voter, not by the ballot counting.
@@ -44,8 +47,6 @@ Some features of approval voting include:
 *Increasing options for voters, when compared with the common [[First-past-the-post election system|first-past-the-post system]], could increase voter turnout
 *It provides less incentive for [[negative campaigning]] than many other systems.
 *It allows voters to express [[tolerances versus preferences|tolerances but not preferences]]. Some political scientists consider this a major advantage, especially where acceptable choices are more important than popular choices. 
-*Each voter may vote as many times as they wish, at most once per candidate.   This is equivalent to saying that each voter may "approve" or "disapprove" each candidate by voting or not voting for them, and it's also equivalent to voting +1 or 0 in a [[range voting]] system.
-*It is easily reversed as [[disapproval voting]] where a choice is disavowed, as is already required in other measures in politics (e.g. representative [[recall election|recall]]).
 
 ===Multiple winners===
 Approval voting can be extended to multiple winner elections, either as ''block approval voting'', a simple variant on [[block voting]] where each voter can select an unlimited number of candidates and the candidates with the most approval votes win, or as ''[[proportional approval voting]]'' which seeks to maximise the overall satisfaction with the final result using approval voting.
@@ -55,6 +56,8 @@ Approval voting can be extended to multiple winner elections, either as ''block 
 
 ==Ballot types==
 Approval ballots can be of at least four semi-distinct forms. The simplest form is a blank ballot where the names of supported candidates is written in by hand. A more structured ballot will list all the candidates and allow a mark or word to be made by each supported candidate. A more explicit structured ballot can list the candidates and give two choices by each. (Candidate list ballots can include spaces for write-in candidates as well.)
+
+<!-- Commented out until the images are imported from Wikipedia.
 {| BORDER
 |-
 | [[Image:Approvalballotname.png|160px]]
@@ -62,18 +65,9 @@ Approval ballots can be of at least four semi-distinct forms. The simplest form 
 | [[Image:Approvalballotmark.png|160px]]
 | [[Image:Approvalballotchoice.png|160px]]
 |}
+-->
 
 All four ballots are interchangeable. The more structured ballots may aid voters in offering clear votes so they explicitly know all their choices. The Yes/No format can help to detect an "undervote" when a candidate is left unmarked, and allow the voter a second chance to confirm the ballot markings are correct.
-
-==See also==
-*[[List of democracy and elections-related topics]]
-*[[Borda count]]
-*[[Bucklin voting]]
-*[[First Past the Post electoral system]] (also called Plurality or Relative Majority)
-*[[Condorcet method]]
-*[[Cloneproof Schwartz Sequential Dropping]]
-*[[Instant-runoff voting]]
-*[[Voting system]] - many other ways of voting
 
 ==External links==
 *[http://bcn.boulder.co.us/government/approvalvote/ Approval Voting Home Page]
