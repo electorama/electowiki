@@ -1,0 +1,17 @@
+The '''Generalized Condorcet criterion''' or '''Smith criterion''' for a [[voting system]] is that it picks the winner from the [[Smith set]], the smallest set of candidates such that every member of the set is preferred to every candidate not in the set. One candidate is preferred over another candidate if, in a one-on-one competition, more voters prefer the first candidate than prefer the other candidate.
+
+Any election method that complies with the Generalized Condorcet criterion also complies with the [[Condorcet criterion]], since if there is a Condorcet winner, then that winner is the only member of the Smith set.
+
+== Complying Methods ==
+
+Among methods that comply with the Condorcet criterion, [[Cloneproof Schwartz Sequential Dropping]] and [[Ranked Pairs]] comply with the Generalized Condorcet Criterion.
+
+Methods that do not comply with the Condorcet criterion, such as [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], [[Plurality voting]], and [[Instant-Runoff Voting]], do not with the Generalized Condorcet Criterion.</p>
+
+== External Links ==
+
+* [http://electionmethods.org/ Election Methods Education and Research Group]
+
+[[Category:Voting system criteria]]
+
+{{fromwikipedia}}
