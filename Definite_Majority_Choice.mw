@@ -12,59 +12,115 @@ DMC chooses the same winner as (and could be considered equivalent in most respe
 
 The philosophical basis of DMC (also due to [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015144.html Forest Simmons]) is to first eliminate candidates that the voters strongly agree should not win, using two different measures, and choose the winner from among those that remain.
 
-DMC is currently the best candidate for a Condorcet Method that meets the '[[Public Acceptability Criterion]]'.
+DMC is currently the best candidate for a Condorcet Method that meets the [[Public Acceptability Criterion|Public Acceptability "Criterion"]].
 == Procedure ==
+The DMC differs from the [[Condorcet Criterion|Condorcet Winner]] in one crucial respect:
+The Definite Majority Choice winner is the candidate who, when compared in turn with each of the other ''higher-approved'' candidates, is preferred over the other candidate.
 
-=== The Ballot ===
-A voter ranks candidates in order of preference, additionally giving approval points to some or all of those ranked.
+We'll illustrate the method with a deliberately crude ballot and then follow with an example of other ballot possibilities.
 
-==== Using Grades to Rank Candidates ====
+=== Simple ballot example ===
+A voter ranks candidates in order of preference, additionally giving approval points to some or all of those ranked, using a ballot like the following:
+<pre>
+           |<-- Approved -->|
+            1    2    3    4      5    6    7
+
+      X1   ( )  ( )  ( )  ( )    ( )  ( )  ( )
+
+      X2   ( )  ( )  ( )  ( )    ( )  ( )  ( )
+
+      X3   ( )  ( )  ( )  ( )    ( )  ( )  ( )
+
+      X3   ( )  ( )  ( )  ( )    ( )  ( )  ( )
+</pre>
+
+On this ballot,
+# Candidates ranked at 1st through 4th choice get 1 approval point each.
+# Candidates ranked fifth, sixth, seventh and ungraded receive no approval points.
+# A higher-ranked candidate is given one vote in each of its head-to-head contests with lower-ranked candidates.
+
+=== Tallying Votes ===
+As in other [[Condorcet method]]s, the rankings on a single ballot are added into a round-robin table using the standard [[Condorcet_method#Counting_with_matrices|Condorcet pairwise matrix]]:  when a ballot ranks / grades one candidate higher than another, it means the higher-ranked candidate receives one vote in the head-to-head contest against the other.
+
+Since the diagonal cells in the Condorcet pairwise matrix are usually left blank, those locations can be used to store each candidate's Approval point score.
+
+We call a candidate [[Techniques_of_method_design#Defeats_and_defeat_strength|Definitively defeated]] when that candidate is defeated in a head-to-head contest against any other candidate with higher Approval score.  This kind of defeat is also called an ''Approval-consistent defeat''.
+
+To determine the winner:
+# Eliminate all definitively defeated candidates.
+# The winner is the single candidate who pairwise defeats (wins head-to-head contests with) all other remaining candidates.
+
+DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Step 1 has the effect of successively eliminating the least approved candidate in the Smith set (and then recalculating the new Smith set).  But Step 1 also allows higher-approved candidates outside the Smith set, such as the Approval Winner, to remain in the set of non-strongly-defeated candidates.
+
+==== A more intuitive ballot --- Ranking Candidates using Grades ====
+One barrier to public acceptance of DMC is the ballot design.  So how could the process be more intuitive, without sacrificing flexibility and expression?
+
 Many people are familiar with the standard method of giving grades A-plus through F-minus.   Most are also familiar with the Pass/Fail form of grading. A student receives grades from many instructors and on finishing school has a total grade point average or pass/fail total.
 
 A similar idea could be used to rank candidates -- a voter could grade candidates as if the voter were the instructor and the candidates were the students.  Determining the winner of the election would be similar to finding the student with the best set of grades.
 <pre>
             A    B    C    D    F       +  /  -
-				       	    	  
+
       X1   ( )  ( )  ( )  ( )  ( )     ( )   ( )
-				       	    	  
+
       X2   ( )  ( )  ( )  ( )  ( )     ( )   ( )
-				       	    	  
+
       X3   ( )  ( )  ( )  ( )  ( )     ( )   ( )
-				       	    	  
+
       X3   ( )  ( )  ( )  ( )  ( )     ( )   ( )
 </pre>
-Like an instructor grading students, a voter may give the same grade (rank) to more than one candidate.   But here, there is one additional grade -- no grade at all.  Ungraded candidates are ranked lower than all graded candidates.  By giving one candidate a higher grade than another, the voter gives the higher-graded candidate one vote in its one-to-one contest with the lower-graded candidate.
+Like an instructor grading students, a voter may give the same grade (rank) to more than one candidate.   But here, there is one additional grade -- no grade at all.  Ungraded candidates are ranked lower than all graded candidates.  By giving one candidate a higher grade than another, the voter gives the higher-graded candidate one vote in its head-to-head contest with the lower-graded candidate.
 
 C is the "Lowest Passing Grade" (LPG):  any candidate with a grade of C or higher gets one Approval point.  No Approval points are given to candidates graded at C-minus or below (that includes ungraded candidates).
 
-A candidate's total approval score will be used like the 'seed' rating in sports tournaments, to decide which one-to-one victories are worth more than others.
+A candidate's total approval score will be used like the 'seed' rating in sports tournaments, to decide which head-to-head victories are worth more than others.
 
 Grades assigned to non-passing (disapproved) candidates help determine which of them will win if the voter's approved candidates do not win.
 
-In small elections it should be adequate for a voter to grade only 2 or 3 candidates, but in crowded races, the voter could also add a plus or minus on the grade.  That allows a voter to specify up to 16 different rank levels:  8 approved (A-plus to C) and 8 unapproved (C-minus to unranked).
+In small elections it should be adequate for a voter to grade only 2 or 3 candidates, but in crowded races, the voter could also fill in the plus or minus option to fine-tune the grade.  Plus/minus options allow a voter to distinguish up to 16 different rank levels:  8 approved (A-plus to C) and 8 unapproved (C-minus to unranked).
 
-With the Approval Cutoff / Lowest Passing Grade at C instead of C-minus, an indecisive voter can be hesitant about granting approval by initially filling in a grade of C.  If after reconsideration the voter decides to withold approval, the minus can then be checked.
+Because we have fixed the Approval Cutoff / Lowest Passing Grade at C instead of C-minus, an indecisive voter has the opportunity to be hesitant about granting approval by initially filling in a grade of C.  If after reconsideration the voter decides to withold approval, the minus can then be checked.
 
-==== Ranking Candidates using a Ranked Choice ballot ====
-If the Graded Ballot is deemed too complex, a ranked ballot could be used instead.  Here is one possible format:
+To avoid spoiled ballots, we count a grade with both plus and minus cells filled as no plus or minus at all.  So a truly indecisive voter could change a C grade to C-minus and back to C.
+
+==== An even simpler ballot --- Voting by slate ====
+In our modern world, there are sometimes too many choices available.  A voter who is confused by too many choices or hasn't had time to study issues carefully might benefit by using a published preference slate, as has been suggested by the [[Imagine Democratic Fair Choice|Democratic Fair Choice]] method:
 <pre>
-           |<-- Approved -->|
-            1    2    3    4      5    6    7
-				       	    	  
-      X1   ( )  ( )  ( )  ( )    ( )  ( )  ( )
-				       	    	  
-      X2   ( )  ( )  ( )  ( )    ( )  ( )  ( )
-				       	    	  
-      X3   ( )  ( )  ( )  ( )    ( )  ( )  ( )
-				       	    	  
-      X3   ( )  ( )  ( )  ( )    ( )  ( )  ( )
+                     I      |  I also
+                  support   |  approve
+                 directly:  |    of:
+  --------------------------+----------
+  Anna              (X)     |    ( )
+  Bob               ( )     |    ( )
+  Cecil             ( )     |    (X)
+  Deirdre           ( )     |    (X)
+  Ellen             ( )     |    ( )
+  --------------------------+----------
+  Democrat          ( )     |    ---
+  Republican        ( )     |    ---
+  Libertarian       ( )     |    ---
+  Green             ( )     |    ---
+  Labor             ( )     |    ---
+  Progressive       ( )     |    ---
+  <local newspaper> ( )     |    ---
+  --------------------------+----------
+                    (vote   | (vote for as
+                     for    |  many candidates
+                   exactly  |  as you want)
+                     one)   |
 </pre>
+Each candidate, political organization or local newspaper could publish a preference and approval ranking, its "slate" for that particular race.
 
-Ranks 1 through 4 would be approved, 5 through 7 and ungraded (rank 8) would be unapproved.
+By selecting a slate, the voter is saying that they want to simply copy the ranking, but if they also approve other candidates, they have the opportunity to move those candidates up in the ranking in the order they appear in the slate.
 
-The voting method would be unchanged otherwise:
-# Candidates ranked at 1st through 4th choice get 1 approval point each.
-# A higher-ranked candidate gets one vote in each one-to-one contest with lower-ranked candidates.
+Say the Libertarian slate for this rate is
+<pre>
+    Deirdre (Lib.) >> Cecil (Reb.) > Ellen (Dem.) > Bob (Ind.) > Anna (Green)
+</pre>
+where we denote the approval cutoff using ">>".  Say the voter selects the libertarian slate but also approves Bob and Anna.  Then the ballot would be counted as
+<pre>
+    Deirdre (Lib.) > Bob (Ind.) > Anna (Green) >> Cecil (Reb.) > Ellen (Dem.)
+</pre>
 
 ==== Discussion ====
 What is a voter saying by giving a candidate a non-approved grade or rank?
@@ -73,24 +129,11 @@ One could consider the Approval Cutoff / Lowest Passing Grade (LPG) to be like G
 
 Grading candidate X below the LPG gives the voter a chance to say "I don't want X to win, but of all the alternatives, X would make fewest changes in the wrong direction.  I also won't give X a passing grade because I want X to have as small a mandate as possible."  This allows the losing minority to have some say in the outcome of the election, instead of leaving the choice to the strongest core support within the majority faction.
 
-=== Tallying Votes ===
-The rankings on a single ballot are added into a round-robin table using the standard [[Condorcet_method#Counting_with_matrices|Condorcet pairwise matrix]] method:  When a ballot ranks / grades one candidate higher than another, it is saying that the first candidate receives one vote in the one-to-one contest against the other.
-
-Since the diagonal cells in the Condorcet pairwise matrix are usually left blank, those locations can be used to store each candidate's Approval point score.
-
-We call a candidate [[Techniques_of_method_design#Defeats_and_defeat_strength|Definitively defeated]] when that candidate is defeated in a one-to-one contest against any other candidate with higher Approval score.  This kind of defeat is also called an Approval-consistent defeat.
-
-To determine the winner:
-# Eliminate all definitively defeated candidates.
-# The winner is the candidate that pairwise defeats all other remaining candidates.
-
-DMC always selects the Condorcet Winner, if one exists, and otherwise selects a member of the Smith Set.  Step 1 has the effect of successively eliminating the least approved candidate in the Smith set, but allows higher-approved candidates outside the Smith set (such as the Approval Winner) to remain in the set of non-strongly-defeated candidates.
-
 === Handling Ties and Near Ties ===
 
 ==== Approval Ties ====
 
-During the initial ranking of candidates, two candidates may have the same approval score. 
+During the initial ranking of candidates, two candidates may have the same approval score.
 
 If equal Approval scores affect the outcome, there are several alternatives for Approval-tie-breaking.  The procedure that would be most in keeping with the spirit of DMC, however would be to initially rank candidates
 # In descending order of Approval
