@@ -27,15 +27,6 @@ Voting systems which use a ranked ballot include:
 * Write names: Hand-written names as a list from first to last preference.
 * Touch screen: A slightly different category of voting is a computer [[Touch screen]] could also be used, asking voters their first, second, etc preferences, and showing the selections so far and remaining choices, allowing selections to be removed if the voter makes a mistake or changes her mind during voting. Some people want touch screen voting to print a paper ballot at the end as a hardcopy backup.
 
-<TABLE BORDER>
-  <TR>
-    <TD>[[Image:Rankballotoval.gif|160px]]</TD>
-    <TD>[[Image:Rankballotnumber2.gif|160px]]</TD>
-    <TD>[[Image:Rankballotname2.gif|160px]]</TD>
-    <TD>[[Image:Rankballottouch.gif|160px]]</TD>
-  </TR>
-</TABLE>
-
 ==Scope for corruption==
 A potential problem with preferential votes is that they can be used to undermine a [[secret ballot]], and thus enable [[corruption]] by vote buying.  If there are enough candidates then the number of possible voting patterns may be much larger than the number of voters, and it then becomes possible to use early preferences to vote for the desired candidates and then to use later preferences to identify the voter to the person who has purchased the vote and looks at the ballot papers.  
 
@@ -52,13 +43,6 @@ This may contradict some of the statements made in the previous item.
 
 In Australia, election for the upper houses which use proportional representation as well as preferential voting, it may be daunting to have to fill in 70 boxes - preferences are compulsory. To ease this onerous task, "Above the line" voting, allows the voter to choose one party or group, and all the remaing squares are deemed to be filled in according to a registered party ticket. About 95% of voters choose to use this method.
 
-==See also==
-* [[List of democracy and elections-related topics]] 
-
-==Further reading==
-
-Works of [[Richard S. Katz]], [[David Farrell]], [[Michael Marsh]], [[Arend Lijphart]], [[Lauri Karvonen]].
-
-[[Category:Voting systems]]
+[[Category:Ballot types]]
 
 {{fromwikipedia}}
