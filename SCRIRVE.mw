@@ -35,5 +35,3 @@ The one remaining candidate is Nashville, so Nashville is the winner.
 Things are more simple when there are only three candidates.  In that case, SCRIRVE  elects the winner of the pairwise comparison between the candidate with the
 fewest (fractional) last preferences (or the fewest on the symmetrically completed ballots); and the winner of the pairwise comparison between the other two
 candidates. If the three candidates are in a cycle, then the winner is simply  always the candidate with the fewest (fractional) last preferences.
-
-[[Category:Condorcet method]]
