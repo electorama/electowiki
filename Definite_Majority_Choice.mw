@@ -36,7 +36,7 @@ A voter may give the same grade (rank) to more than one candidate.   Ungraded ca
 
 A candidate gets one vote in the one-to-one contest with any other candidate with a lower grade (rank).
 
-C is the "Lowest Passing Grade":  any candidate with a grade of C or higher gets one Approval point.  No Approval points are given to candidates graded at C-minus or below, or to ungraded candidates.
+C is the "Lowest Passing Grade" (LPG):  any candidate with a grade of C or higher gets one Approval point.  No Approval points are given to candidates graded at C-minus or below, or to ungraded candidates.
 
 Grades assigned to non-passing (disapproved) candidates help determine which of them will win if the voter's approved candidates do not win.
 
