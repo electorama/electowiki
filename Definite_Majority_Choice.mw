@@ -47,11 +47,11 @@ Jill (pairwise) defeats both of the remaining candidates, so Jill is the DMC win
 
 Note that Jill is the lowest approval candidate that pairwise defeats each of the higher approved candidates.  This property is obviously true of the [[Condorcet Criterion|Condorcet Winner]] when there is one, and completely determines the DMC winner, as well:
 
-The Definite Majority Choice winner is the ''least approved'' candidate who is preferred pairwise over each ''higher-approved'' candidate.
+:The Definite Majority Choice winner is the ''least approved'' candidate who is preferred pairwise over each ''higher-approved'' candidate.
 
 At first blush "least approved" may sound bad, but if we did not use the least approved candidate with the "defeat all above" property, then there would be another candidate that defeated everybody "seeded" above our candidate while defeating our candidate, too.
 
-:The lower the candidate with the "defeat all above" property, the greater the solid list of highly seeded candidates that it defeats.
+The lower the candidate with the "defeat all above" property, the greater the solid list of highly seeded candidates that it defeats.
 
 The ideal state of affairs is that the highest approval candidate pairwise defeats all candidates below it, in which case it is simultaneously the Approval Winner, the Condorcet Winner, and the DMC winner.  This is the expected state of affairs when there is no ambiguity in the will of the voters.
 
