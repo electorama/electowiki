@@ -1,0 +1,28 @@
+A '''simple majority''' is the most common requirement in [[voting]] for a measure to pass, especially in [[deliberative body|deliberative bodies]] and small organizations. It means that, of those who cast a vote for or against a proposition or candidate, more than half of the [[vote]]s is necessary for election.
+
+As an example, let's consider three propositions: A, B, and C, that are proposed in a [[club]] of 100 members.  In order for a proposition to be successful, a simple majority must agree to it.  The results of the [[election]] are:
+* 20 votes for proposition A
+* 40 votes for proposition B
+* 10 votes for proposition C
+* 10 votes are blank
+
+Since there are more votes for B than there are votes for both A and C combined, B has the simple majority, and so wins.  Notice that [[abstention]]s and non-voters do not affect a simple majority process, since they neither support nor oppose.  They only affect an [[absolute majority]].
+
+In an election for president in the same club having candidates Jim, Bob, Sally, and Bridget, the results are as follows:
+* 20 votes for Jim
+* 20 votes for Bob
+* 40 votes for Sally
+* 2 votes for Bridget
+
+In this election, no one has more votes than the combined votes of the opponents, so no one wins.  In a case like this, most systems would either adopt a [[plurality]] rule or would have a second [[runoff election]].
+
+Tie votes do not meet simple majority and are classfied as failures.
+
+==See also==
+* [[Majority]]
+* [[Majority rule]]
+* [[List of democracy and elections-related topics]] 
+
+[[Category:Voting theory]]
+
+{{fromwikipedia}}
