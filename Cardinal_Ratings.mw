@@ -1,12 +1,11 @@
-'''Range voting''', or '''average voting''', or '''cardinal ratings''' is a [[voting system]] used for single or multiple-seat [[election]]s. It is also used on the web - for rating movies ([[Internet Movie Database]]), comments ([[Kuro5hin]]), and many other things.
+'''Range voting''', or '''average voting''', or '''cardinal ratings''' is a [[voting system]] used for single or multiple-seat elections.  It is also used on the web - for rating movies (Internet Movie Database), comments (Kuro5hin), and many other things.
 
 == Voting ==
 
 For each candidate, each voter expresses the utility of that
 candidate's election to them in the form of a number.  In "pure" range
 voting, each voter may give any candidate any [[real number]], but as the
-potential for [[tactical voting]] is huge, most systems use some
-bounds.  For example, each voter might give a real number between -1
+potential for [[tactical voting]] is huge, most systems use upper and lower bounds.  For example, each voter might give a real number between -1
 and 1, or an [[integer]] between 1 and 10.
 
 Range voting in which only two different votes may be submitted (0 and 1, for example) is equivalent to [[approval voting]].
@@ -75,16 +74,6 @@ Nashville wins.
 In general, the optimal strategy for range voting is to vote it identically to approval voting, so that all candidates are given either the maximum score or the minimum score. For more detailed strategies, see [[approval voting]].
 
 Range voting assumes that voters are actually expressing their personal feelings rather than doing everything they can to cause their most favored outcomes.
-
-==See also==
-*[[List of democracy and elections-related topics]]
-
-*[[Consensus decision-making]] 
-*[[Decision making]] 
-*[[Democracy]]
-*[[Hot or Not]] &ndash; a real world example
-*[[Majoritarianism]] (Majority rule)
-*[[Minoritarianism]]
 
 [[Category:Voting systems]]
 
