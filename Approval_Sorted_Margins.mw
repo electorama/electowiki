@@ -1,0 +1,21 @@
+First "seed" the list in approval order. Then while any alternative X pairwise defeats the alternative Y immediately above it in the list, find the X and Y of this type that have the least difference D in approval, and modify the list by swapping X and Y.
+
+Note that before the swap the higher approval alternative Y will be above the lower approval alternative X, so the difference D in question will always be positive.  This positive difference is the opposite of the approval margin -D between the pairwise winner X and the pairwise loser Y.  So the least positive D corresponds to the greatest pairwise approval margin -D between X and Y, respectively, in the conventional winner/loser order.
+
+Why use the smallest absolute approval difference to decide which pairwise defeat to accept next?
+
+Because if the approval difference is small, then the pairwise over-ride of the approval order does the least violence to that order.  It is an attempt to reconcile the approval order with the pairwise defeats while keeping the strongest approval information intact.
+
+When the sorting process is finished, the resulting ordering of the alternatives has this symmetry: if all of the ballots are reversed, then the final order will be reversed.
+
+A sort that works from the top down or bottom up, like Bubble or Sink, will not enjoy this kind of symmetry.
+
+This Approval Sorted Margins has a nice monotonic property:
+
+If alternative A moves up relative to some other alternative, either pairwise or in approval, while none of the other alternatives move up or down relative to each other, then alternative A will move up (if at all) in the final order.
+
+By the symmetry mentioned above, we also have (mutatis mutandi):
+
+If alternative A moves down relative to some other alternative, either pairwise or in approval, while none of the other alternatives move down or up relative to each other, then alternative A will move down (if at all) in the final order.
+
+This method, like any approval seeded pairwise swap sorted method, is also clone independent.  This is because (true) clones are seeded near each other by approval, and any alternative outside of a clone set will either pairwise defeat all of the members of the clone set or none of them.  In other words, if it gets past one of them, it will make it past all of them, so that the clones will be together in the final order.
