@@ -47,4 +47,4 @@ In ordinary DMC, the winner is the candidate in Forest Simmon's '''[http://wiki.
 
 But in the event of a tie or near tie (say, margin within 0.01%), there may be no clear winner.
 
-In that case, form the superset '''P*''', the union of all sets P that result from all possible combinations of reversed ties or near-ties.  Then choose the winner using [http://wiki.electorama.com/wiki/Techniques_of_method_design#Orderings Random Ballot Order].
+In that case, form the superset '''P*''', the union of all sets P that result from all possible combinations of reversed ties or near-ties.  Then choose the winner from P* using [http://wiki.electorama.com/wiki/Techniques_of_method_design#Orderings Random Ballot Order].
