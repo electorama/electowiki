@@ -1,0 +1,9 @@
+Pairwise Sorted Approval is the simplest of a class of [[Pairwise Sorted Methods]].
+
+A voter ranks candidates, and specifies approval, either by using an [[Approval Cutoff]] or by ranking above and below a fixed approval cutoff rank.
+
+To determine the winner, 
+# sorted candidates in descending order of approval.
+# For each candidate, move it higher in the list as long as it pairwise beats the next-higher candidate, and only after all candidates above it have moved upward as far as they can.
+
+This procedure can be used to produce a social ordering.  It finds the same winner as [[Definite Majority Choice]].
