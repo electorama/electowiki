@@ -12,7 +12,7 @@ Ballots are counted by considering all possible sets of two-candidate elections 
 
 If a candidate is preferred over all other candidates, that candidate is the [[Condorcet Criterion|Condorcet candidate]].  However, a Condorcet candidate may not exist, due to a fundamental [[Voting paradox|paradox]]: It is possible for the electorate to prefer A over B, B over C, and C over A simultaneously.  This is called a circular tie, and it must be resolved by some other mechanism.
 
-==== Counting with matrixes ====
+==== Counting with matrices ====
 
 A frequent implementation of this method will illustrate the basic counting method.  Consider an election between A, B, and C, and a ballot (B, C, A, D).  That is, a ballot ranking B first, C second, A third, and D forth.  This can be represented as a matrix, where the row is the runner under consideration, and the column is the opponent.  The cell at (runner,opponent) has a one if runner is preferred, and a zero if not.
 
@@ -32,7 +32,7 @@ Cells marked "&mdash;" are logically zero, but are blank for clarity&mdash;they 
 
 When the sum matrix is found, the contest between each candidate is considered.  The number of votes for runner over opponent (runner,opponent) is compared the number of votes for opponent over runner (opponent,runner).  The one-on-one winner has the most votes.  If one candidate wins against all other candidates, that candidate wins the election.
 
-The sum matrix is the primary piece of data used to resolve circular ties (also called circular ambiguities).
+The sum of all ballot matrices, the '''Condorcet pairwise matrix''', is the primary piece of data used to resolve circular ties (also called circular ambiguities).
 
 === Key terms in ambiguity resolution ===
 
