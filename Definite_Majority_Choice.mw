@@ -62,9 +62,11 @@ Grading candidate X below the LPG gives the voter a chance to say "I don't want 
 
 Rankings are added into a pairwise array.  The approval scores of each candidate can be stored the diagonal cells, which are unused in other non-Approval-Condorcet hybrids.
 
+We call a candidate '''Strongly defeated''' when that candidate is pairwise defeated by any other higher-ranked candidate.  This kind of defeat is also called an Approval-consistent or [http://wiki.electorama.com/wiki/Techniques_of_method_design#Defeats_and_defeat_strength definitive defeat].
+
 To determine the winner:
-# Eliminate any candidate that is defeated in a one-to-one match with any other higher-approved candidate.  Such a defeat is called an Approval-consistent or [http://wiki.electorama.com/wiki/Techniques_of_method_design#Defeats_and_defeat_strength definitive defeat].
-#If more than one candidate remains, the winner is the one that defeats all other non-definitively-defeated candidates in one-to-one (pairwise) contests.
+# Eliminate all strongly defeated candidates.
+# The winner is the candidate that pairwise defeats all other remaining candidates.
 
 === Handling Ties and Near Ties ===
 
