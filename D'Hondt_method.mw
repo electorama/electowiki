@@ -1,4 +1,6 @@
-The '''d'Hondt method''' is a method for allocating seats in [[party-list proportional representation]]. [[Argentina]], [[Austria]], [[Bulgaria]], [[Chile]], [[Finland]], [[Israel]], [[the Netherlands]], [[Poland]], [[Portugal]] and [[Spain]] are among the places that use this allocation system, as do [[European Parliament election, 2004|elections to the European Parliament]] in some countries.  This system favors large parties slightly more than the other popular divisor method, [[Sainte-LaguÃƒÂ« method|Sainte-LaguÃƒÂ«]], does.  The method is named after [[Belgium|Belgian]] mathematician [[Victor d'Hondt]].
+The '''d'Hondt method''' is a method for allocating seats in [[party-list proportional representation]].  This system favors large parties slightly more than the other popular [[divisor method]], [[Sainte-LaguÃƒÂ« method|Sainte-LaguÃƒÂ«]], does.
+
+It is used in: Argentina, Austria, Bulgaria, Chile, Finland, Israel, the Netherlands, Poland, Portugal and Spain, as well as  elections to the European Parliament in some countries.  The method is named after Belgian mathematician [[Victor d'Hondt]].
 
 ==Allocation==
 
@@ -107,10 +109,6 @@ In some cases, a [[election threshold|threshold]] or ''barrage'' is set, and any
 
 Some systems allow parties to associate their lists together into a single ''cartel'' in order to overcome the threshold, while some systems set a separate threshold for cartels. Smaller parties often form pre-election [[coalition]]s to make sure they get past the election threshold.
 
-==See also==
-*[[List of democracy and elections-related topics]]
-*[[Voting systems]]
-
-[[Category:Voting systems]]
+[[Category:Party list theory]]
 
 {{fromwikipedia}}
