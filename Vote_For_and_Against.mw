@@ -1,0 +1,22 @@
+The '''Vote For and Against''' or '''VFA''' is a simple election method in which the voter votes ''for'' one candidate and also ''against'' one candidate.
+
+If a ranked ballot were being used, this would be equivalent to the voter having to submit a complete strict ranking of the candidates. The voter would be counted as voting ''for'' the first preference and ''against'' the last preference.
+
+== Procedure ==
+
+Just as in [[Plurality voting|First-Preference Plurality]], the candidate with the most ''for'' votes is elected. The only exception is that if one candidate receives more than half of the ''against'' votes, this candidate is not eligible to be elected.
+
+== Properties ==
+
+If we suppose ranked ballots are being used, then in the general case VFA satisfies the [[Monotonicity criterion]], and what could be called the ''Majority Last Preference criterion'' (i.e., the last preference of a majority cannot win). It fails the [[Condorcet criterion]], the [[Mutual majority criterion|Majority criterion for solid coalitions]], Clone Independence, and the [[Participation criterion]].
+
+In the three-candidate case, VFA does satisfy the [[Mutual majority criterion|Majority criterion for solid coalitions]], and in one respect also Clone Independence: When the winner in a two-candidate race is ''cloned'', this cannot cause the loser of the two-candidate race to be elected.
+
+Although VFA performs rather poorly with respect to criteria, it is as easy to count as [[Plurality voting|First-Preference Plurality]] or [[Approval voting]], neither of which satisfies the ''Majority Last Preference criterion''.
+
+== Example ==
+{{Tenn_voting_example}}
+
+In this scenario, Memphis receives the most ''for'' votes. However, Memphis also receives more than half of the ''against'' votes, so that Memphis can't win. The winner is instead the option with the next-greatest ''for'' votes, Nashville.
+
+Nashville also happens to be the [[Condorcet criterion|Condorcet winner]], but VFA doesn't reliably elect these candidates. Nashville only wins over Knoxville and Chattanooga due to possessing more ''for'' votes than either of the others.
