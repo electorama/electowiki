@@ -1,7 +1,5 @@
-In [[voting system]]s, the '''Smith set''' is the smallest set of candidates in a particular election who, when paired off in pairwise elections, can beat all other candidates outside the set.  Ideally, this set consists of only one candidate, the [[Condorcet winner]].  However, when the electorate is conflicted (as in [[Voting paradox|Condorcet's paradox]]), the set has at least one cycle of candidates for whom A beats B, B beats C, and C beats A. See also [[Schwartz set]], [[Directed Graph]].
+The '''Smith set''' is the smallest set of candidates in a particular election who, when paired off in pairwise elections, can beat all other candidates outside the set.  This set might consist of only one candidate, the [[Condorcet winner]].  However, when the electorate is conflicted (as in [[Voting paradox|Condorcet's paradox]]), the set has at least one [[cycle]] of candidates for whom A beats B, B beats C, and C beats A. 
 
 {{stub}}
-
-[[Category:Voting theory]]
-
 {{fromwikipedia}}
+[[Category:Voting theory]]
