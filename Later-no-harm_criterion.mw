@@ -1,0 +1,7 @@
+<h4 class=left>Statement of Criterion</h4>
+
+<p><em>Adding a preference to a ballot must not decrease the probability of election of any candidate ranked above the new preference.</em></p>
+
+<h4 class=left>Complying Methods</h4>
+
+<p>Later-no-harm is satisfied by [[Plurality voting|First-Preference Plurality]], [[IRV|Instant Runoff Voting]], [[Minmax|Minmax(pairwise opposition)]], Douglas Woodall's [[Descending Solid Coalitions]] method, and [[Random Ballot]]. It is failed by virtually everything else.</p>
