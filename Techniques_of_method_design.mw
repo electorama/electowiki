@@ -1,0 +1,8 @@
+This is a list of techniques and concepts which are more or less useful when designing a single winner election method, with some comments.
+
+= Scores =
+Scores can be interpreted as measures of "goodness" of a candidate. Their usage can thus improve the "efficiency" of a method.
+* '''(Total) Approval Score''' = no. of voters approving of the candidate; retains clone-proofness, requires approval information
+* '''Borda Score''' = sum of ranks the candidate gets on all ballots; destroys clone-proofness and most "independency"-properties, requires ranked ballots
+* '''Copeland Score''' = no. of alternatives the candidate beats pairwise; destroys clone-proofness
+* Laslier's '''Minimal Gain Score''' = probability that an alternative beaten by the candidate wins divided by the probability that an alternative beating the candidate wins, when choosing from the bipartisan distribution on the set of all other candidates; improves the monotonicity of the bipartisan distribution, but destroys clone-proofness and is complicated to compute
