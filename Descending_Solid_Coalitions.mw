@@ -16,25 +16,28 @@ DSC satisfies the [[Plurality criterion]], the [[Mutual majority criterion|Major
 
 DSC fails the [[Condorcet criterion]] and [[Smith set|Smith criterion]].
 
-DSC can be considered a [[Plurality voting|First-Preference Plurality]] variant that satisfies Clone Independence.
+DSC can be considered a [[Plurality voting|First-Preference Plurality]] variant that satisfies Clone Independence. It (along with [[DAC]]) is the most complicated method satisfying the [[Participation criterion]].
 
 ===Example===
 {{Tenn_voting_example}}
 
 The sets have the following strengths:
-100 {M,N,C,K},
-58 {N,C,K},
-42 {M,N,C},
-42 {M,N},
-42 {M},
-32 {C,K},
-26 {N,C},
-26 {N},
-17 {K},
-15 {C}.
+
+100 {M,N,C,K}<br>
+58 {N,C,K}<br>
+42 {M,N,C}<br>
+42 {M,N}<br>
+42 {M}<br>
+32 {C,K}<br>
+26 {N,C}<br>
+26 {N}<br>
+17 {K}<br>
+15 {C}<br>
 
 {N,C,K} is the strongest set that excludes a candidate. Memphis becomes ineligible.
 
 No matter in which order we consider the sets with 42% of the voters solidly committed to them, we will arrive at the same result, which is that Nashville will be the only candidate remaining. So Nashville is the winner.
 
 Notice that more than half of the votes held Memphis to be the worst alternative, yet the Memphis supporters' votes were still useful in securing their second choice, Nashville. If the Memphis voters had not listed any preferences after Memphis, the winner would have been Chattanooga.
+
+Since DSC satisfies [[Later-no-harm criterion|Later-no-harm]], it's not possible for a voter to get a better result by withholding lower preferences.
