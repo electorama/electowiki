@@ -1,0 +1,33 @@
+'''Proportional approval voting''' (PAV) is a theoretical [[voting system]] for multiple-winner [[election]]s, in which each voter can vote for as many or as few candidates as the voter chooses.  It was developed by Forest Simmons in [[2001]].
+
+PAV works by looking at how "satisfied" each voter is with each potential result or outcome of the of the election.
+The satisfaction for individual voters of a potential result is calculated based on how many of the successful candidates they voted for.  In this particular system, if an individual voted for ''n'' successful candidates (and an irrelevant number of unsuccessful ones) then their satisfaction is taken to be
+
+: <math>1 + \frac{1}{2} + \frac{1}{3} + \ldots + \frac{1}{n}</math>
+
+Adding up the satisfaction of all the voters with the potential result gives the total satisfaction with that result.  The potential result with the highest total satisfaction is chosen as the actual result.
+
+If there was only one winner then ''proportional approval voting'' would become simple ''[[approval voting]]''.  Alternatively, if each voter only voted for all the candidates of a single party then the results would essentially be the same as the [[D'Hondt method]] of ''[[party-list proportional representation]]''.  
+
+Without the weighting of satisfaction, i.e. if the numbers of votes for each candidate are simply added up and those with the highest numbers elected, equivalent to satisfaction being ''n'', then this would amount to ''[[block approval voting]]'' which could have a similar chance of landslide results as ''[[block voting]]''.
+
+''Proportional approval voting'' is a computationally complex method of vote counting.  If there were ''c'' candidates and ''w'' winners, then there would be
+
+: <math>\frac{c!}{w! (c-w)!}</math>
+
+potential results to compare with each vote.  If there were 20 candidates for 5 seats then there would be more than 15,000 potential results.  Such elections could only reasonably be counted by computer. 
+
+A somewhat simpler counting method is '''sequential proportional approval voting''' where candidates are elected one-by-one to the winners' circle by approval voting, but in each round the value of the votes of each voter who already has ''m'' candidates in the winners' circle is reduced to
+
+: <math>\frac{1}{m+1}</math>
+
+This was developed by the Danish polymath Thorvald N. Thiele, and used (with adaptations) in [[Sweden]] for a short period after [[1909]].
+
+The system disadvantages minority groups who share some preferences with the majority.  In terms of [[tactical voting]], it is therefore highly desirable to withhold approval from candidates who are likely to be elected in any case, as with [[cumulative voting]] and the [[single non-transferable vote]].
+
+==See also==
+* [[List of democracy and elections-related topics]]
+
+[[Category:Voting systems]]
+
+{{fromwikipedia}}
