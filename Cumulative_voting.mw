@@ -1,8 +1,24 @@
-'''Cumulative voting''' ('''accumulation voting''' or '''weighted voting''') is a multiple-winner [[voting system]] intended to promote [[proportional representation]].  It is used heavily in corporate governance, where it is mandated by many U.S. states, and it was used to elect the Illinois House of Representatives from 1870 until 1980.  It was used in England in the late 19th century to elect school boards.
+'''Cumulative voting''' ('''accumulation voting''' or '''weighted voting''') is a multiple-winner [[voting system]] intended to promote [[proportional representation]].  It is used heavily in [[corporate governance]], where it is mandated by many [[U.S. state]]s, and it was used to elect the [[Illinois]] House of Representatives from 1870 until 1980.  It was used in [[England]] in the late 19th century to elect school boards.
 
-In this system, a voter facing multiple choices is given X number of ''points''. The voter can then assign his points to one or more of the choices, thus enabling one to weight one's vote if desired.  This could be achieved through a normalized [[ratings ballot]], or through multiple [[plurality ballot]]s, one per each point allocated.  Typically, each voter will have as many votes as there are winners to be selected.  If there was only one winner to be selected and voters were given one vote, this is equivalent to the [[First Past the Post electoral system]] voting.
+In this system, a voter facing multiple choices is given X number of ''points''. The voter can then assign his points to one or more of the choices, thus enabling one to weight one's vote if desired. 
+
+Unlike [[preference voting]] where the numbers represent ranks of choices or candidates in some order (i.e. they are [[ordinal number]]s), in cumulative votes the numbers represent quantities (i.e. they are [[cardinal number]]s).
+
+This form of voting is advocated by those who argue that minorities deserve better representation, and thus could (by concentrating their votes on a small number of minority candidates) ensure some representation from the minority.  
+
+There is nothing in this system that requires each voter to be given the same of points each, apart from general policies of electoral equality.  So if certain voters are seen as being more deserving, perhaps because they are in an oppressed group, are cleverer, or make a bigger financial contribution, they could be assigned more points per voter.
+
+If each voter has the same number of points then typically the number of votes would be equal to the number of winners, though there is no reason why this should be required.  If each voter is given just one point then the system becomes identical to a [[single non-transferable vote]].  While giving voters more points may appear to give them a greater ability to graduate their support for individual candidates, it is not obvious that it changes the democratic structure of the method.
 
 [[Tactical voting]] is the rational response to this system.  The strategy of voters should be to balance how strong their preferences for individual candidates are against how close those candidates will be to the critical number of votes needed for election.      
+
+This describes how cumulative voting works in a single case. Where there is a [[General Election]], several cases occur simultaneously in different constituencies. There is no automatic requirement that all of these should return the same numbers of winners under all implementations; indeed certain demographic rules for boundary changes might alter the number of winners as well as, or instead of, the boundaries. So the special case of one single winner is possible; if voters in this case also only have one vote then this is identical to [[First Past the Post electoral system]] voting.
+
+Cumulative voting ballots can have different forms. One simple ballot form &mdash; called ''equal and even cumulative voting'' &mdash; offers an approval ballot, only one mark allowed by each candidate. Voters can mark as few or many ballots as they like. Their vote is counted based on how many votes they offer. For instance, if I vote for 3 candidates, each candidate gets 1/3 of my vote. This approach is harder to count, but offers less problem for voters if they are unsure on strategy for which candidate needs more of their vote. It is nice for voters since it has no wrong way to vote, although in practice you still might want to limit the number of marks to the number of seats being contested.
+
+The most flexible ballot (not the easiest to use) allows a full vote to be divided in any fraction between all candidates, so long as the fractions add to less than or equal to 1. (The value of this flexibility is questionable since voters don't know where their vote is most needed.)
+
+Interestingly the voting method [[single transferable vote]] is actually a form of Cumulative voting with fractional votes. The difference is the method itself determines the optimal fractions based on a rank preference ballot from voters.
 
 <TABLE BORDER>
   <CAPTION>
@@ -17,5 +33,9 @@ In this system, a voter facing multiple choices is given X number of ''points''.
   </TR>
 </TABLE>
 
-[[Category:Multi-winner voting systems]]
+==See also==
+*[[List of democracy and elections-related topics]]
+
+[[Category:Voting systems]]
+
 {{fromwikipedia}}
