@@ -1,0 +1,20 @@
+The '''Minimal Defense criterion''' for [[voting system|voting systems]] is similar to and was inspired by the [[Strong Defensive Strategy criterion]].
+
+<h4 class=left>Statement of Criterion</h4>
+
+Steve Eppley gives this official definition:
+
+''"If more than half of the voters prefer alternative y over alternative x, then that majority must have some way of voting that ensures x will not be elected and does not require any of them to rank y equal to or over any alternatives preferred over y."''
+
+This definition is most similar to that of [[SDSC]]. Another definition suggested by Eppley makes reference only to the cast votes:
+
+''If more than half of the voters rank ''Y'' above ''X'', and ''X'' above no other candidate, then ''X'' must not be elected.''
+
+It's also required that the method permits voters to submit complete strict rankings.
+
+<h4 class=left>Complying Methods</h4>
+
+Methods satisfying '''Minimal Defense''' include Steve Eppley's own [[Maximize Affirmed Majorities]] method, [[Cloneproof Schwartz Sequential Dropping]] using winning votes as the measure of defeat strength, Jobst Heitzig's [[River]] method, and methods electing from the [[CDTT|CDTT set]].
+
+== External Resources ==
+* [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)]
