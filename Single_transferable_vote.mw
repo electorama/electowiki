@@ -1,0 +1,151 @@
+The '''Single Transferable Vote''', or '''STV''', is a [[preference voting|preference]] [[voting system]] designed to minimise wasted votes in multi-candidate elections while ensuring that votes are explicitly for candidates rather than party lists.  
+
+When promoted as a [[proportional representation]] method in multi-party multi-seat elections, it is generally known as '''Proportional Representation through the Single Transferable Vote''' or '''PR-STV'''.  When a similar method is applied to single-seat [[elections]] it is sometimes called ''[[instant-runoff voting]]'' or the ''alternative vote'', and has different proportionality implications for a similar ballot. In both systems of voting the ballot choices represent an [[Preferential_voting|ordinal ranking of preferences]], but an "instant runoff" for only one position or measure is a simple calculation.  
+
+== Voting ==
+
+Each voter ranks all candidates in order of preference. For example:
+
+#Andrea
+#Carter
+#Brad
+#Delilah
+
+=== Setting the Quota===
+
+When all the votes have been cast, a winning quota is set.  The most common formula for the quota is the [[Droop Quota]] which is most often given as:
+:<math>\left({{\rm votes} \over {\rm seats}+1}\right)+1</math>.
+
+Other quotas used include the [[Hare Quota]]:
+
+:<math>\rm votes \over \rm seats</math>
+
+and the [[Imperiali Quota]]:
+
+:<math>\rm votes \over \rm {seats+2}</math>.
+
+For those keeping track, the size of the quota is then generally Hare > Droop > Imperiali.
+
+=== Counting The Votes ===
+
+Process A: Top-preference votes are tallied.  If one or more candidates have received at least as many votes as the quota, they are declared elected.  After a candidate is elected, they may not receive any more votes (though see below for a modernisation).
+
+The excess votes for the winning candidate are reallocated to the next-highest ranked candidates on the ballots for the elected candidate.  There are different methods for determining how to reallocate the votes.  Some versions use random selection, others count each ballot fractionally.
+
+Process A is repeated until there are no more candidates who have reached the quota.
+
+Process B: The candidate with the least support is eliminated, and
+their votes are reallocated to the next-highest ranked candidates on
+the eliminated ballots.  After a candidate is eliminated, they may not
+receive any more votes.
+
+After each iteration of Process B is completed, Process A starts
+again, until all candidates have been elected or eliminated.  
+
+=== An example ===
+
+2 seats to be filled, four candidates: Andrea, Brad, Carter, and
+Delilah.
+
+5 voters rank the candidates:
+
+#Andrea
+#Brad
+#Carter
+#Delilah
+
+17 voters rank the candidates:
+
+#Andrea
+#Carter
+#Brad
+#Delilah
+
+8 voters rank the candidates:
+
+# Delilah
+
+The threshold is: <math>\left({30 \over (2+1)}\right)  +1 = 11</math>
+
+In the first round, Andrea receives 22 votes and Delilah 8.  Andrea is
+elected with 11 excess votes.  Her 11 excess votes are reallocated to their second preferences (which votes are chosen may be decided by random selection).  For example, 8 of the reallocated votes are for Carter, 3 for Brad.  Note: this is not a realistic example - elections with a small number of votes often have special rules - for example, Irish Senate elections are conducted using thousands of votes.
+
+As none of the candidates have reached their threshold, Brad, the
+candidate with the fewest votes, is eliminated.  All of his votes have
+Carter as the next-place choice, and are reallocated to Carter.  This
+gives Carter 11 votes and he is elected.
+
+== Is STV a proportional voting system? ==
+
+STV is not a proportional system in the strict sense. STV does not guarantee that a party will get the same percentage of seats as it gets as a percentage of votes. In fact the notion of a vote "for a party" is less meaningful for STV because votes are not necessarily for a single party. A vote can list candidates from an assortment of political parties, in any order. The candidates that are elected reflect the combined preferences of all votes cast.
+
+Another complication with proportionality under STV is the constituency system, where a set of candidates is elected in each electoral district. There is no explicit process in STV for balancing the votes between constituencies, so the overall electoral result is merely the sum of the constituency results.
+
+Within a constituency, however, STV can be said to be proportional for whatever characteristics the voters valued. For example, if 60% of voters put all the female candidates first, and 40% put all the male candidates first, 60% of the winners would be female and 40% would be male. (Assuming there are sufficient candidates of each gender to make up the numbers.)
+
+STV provides this proportionality simply by wasting as few votes as possible. A vote is "wasted" if it does not elect anyone; it is partially wasted if it elects someone who gets more votes than is necessary to be elected. STV transfers votes that would otherwise be wasted, and it only transfers such votes.
+
+The degree of proportionality nationwide is strongly related to the number of seats to be filled in each constituency. In a three-seat constituency, using the Droop quota, about a quarter of the vote is "wasted". These votes may be for minor candidates that were not eliminated, or elected candidates' surplus votes that did not get redistributed. In a nine-seat constituency, only a tenth of the vote is wasted, and a party needs only 10% of the vote in a constituency to win a seat. Consequently the best proportionality is achieved when there are a large number of representatives per constituency.
+
+The proportionality of STV can be controversial, especially in close elections such as the [[1981]] election in [[Malta]]. In this election the Maltese Labour Party won a majority of seats despite the Nationalist Party winning a majority of first preference votes. This caused a constitutional crisis, leading to provision for the possibility of bonus seats. These bonus seats were used in [[1987]] and again in [[1996]]. Similarly, the [[Northern Ireland Assembly Election, 1998|Northern Ireland elections]] in [[1998]] led to the [[Ulster Unionist]]s winning more seats than the [[Social Democratic and Labour Party]], despite winning a smaller share of the vote.
+
+Advocates of STV argue that the apparent disproportionality in STV is indicative of poor support for the party's candidates in second and third preferences. They argue that the STV result is actually a more accurate estimate of the party's support than a simple tally of first-preference votes.
+
+== Potential for Tactical Voting ==
+
+The single transferable vote eliminates much of the reason for [[Tactical voting|tactical voting]]. Voters are "safe" voting for a candidate they fear won't be elected, 
+because their votes will be reallocated in Process B.  They are "safe" voting for a candidate they believe will receive overwhelming support, because their votes
+will get reallocated in Process A.
+
+However, in older STV systems there is a loophole: 
+candidates who have already been elected do not receive any more votes, so there is incentive to avoid voting for your top-ranked candidate until after they have already been elected.  For example, a voter might make a tactical decision to rank their top-place candidate beneath a candidate they know will lose (perhaps a fictional candidate).  If the voter's true top-place candidate has not been elected by the time their fake top candidate loses, the voter's full vote will count for their true top-place candidate.  Otherwise, the
+voter will have avoided having had their ballot in the lottery to be "wasted" on their top-ranked candidate, and will continue on to lower-ranked candidates.
+
+Note that in more modern STV systems, this loophole has been fixed. A vote receives the same fractional weighting regardless of when it arrives at the successful candidate. This modernisation has not been adopted in all STV systems.
+
+There are also tactical considerations for parties standing more than one candidate in the election.  Standing too few may result in all the candidates being elected in the early stages, and votes being transferred to candidates of other parties. Standing too many candidates might result in first-preference votes being spread amongst them, and several being eliminated before any are elected and their second-preference votes distributed, if voters do not stick tightly to their preferred party's candidates; however, if voters vote for all candidates from a particular party before any other candidates and before stopping expressing preferences, then too many candidates is not an issue - in Malta where voters tend to strictly express party preference, parties frequently stand more candidates than there are seats to be elected.
+
+==In practice==
+Places that use STV for governmental elections include:
+* [[Australia]], for the [[Australian Senate|Senate]] [http://www.eca.gov.au/systems/proportional/proportion_rep.htm] and for one or other of the state houses.
+* [[Republic of Ireland|Ireland]], for all elections [http://www.rte.ie/news/dailguide/prsystem.html]
+* [[Malta]], for all elections [http://www.maltadata.com]
+* [[New Zealand]] [http://www.stv.govt.nz], where STV is being used for the first time for district health board and some local authority elections in October 2004
+* [[Northern Ireland]], for local, [[Northern Ireland Assembly|Assembly]] and [[European Parliament|European]] elections
+* The [[United States]], where the only official governing bodies that use STV to elect representatives are the City Council and School Committee of [[Cambridge, Massachusetts]].
+
+STV enjoyed some popularity in the United States in the first half of the 20th Century. The community school boards of the City of [[New York City|New York]] [http://ccrc.wustl.edu/~lorracks/projects/techreport/subsection3_4_4.html] used STV until they were abolished in 2002.
+
+The method used for electing the Legislative Assemblies of [[Tasmania]] and the elections in the province of [[Alberta]], [[Canada]] from [[1926]] to [[1955]].
+
+[[British Columbia]] will decide in 2005 by referendum whether to adopt STV to replace its current [[First Past the Post]] electoral system, after a recommendation of STV [http://www.citizensassembly.bc.ca/public/news/2004/10/dmaclachlan-3_0410241345-701] by the [[Citizens' Assembly on Electoral Reform (British Columbia)|Citizens' Assembly on Electoral Reform]].
+
+Some non-governmental organisations also use STV.  For instance, all [[National Union of Students of the United Kingdom]] elections and those of their constituent members are under the system.
+
+==Historical assessments==
+An early proponent of STV was [[John Stuart Mill]], who praised it in "On Representation." In the "English Constitution" [[Walter Bagehot]] praised the Hare system for allowing everyone, even ideological minorities, to elect an MP, but said that the Hare would create more problems than it solved. "[the Hare system] is inconsistent with the extrinsic independence as well as the inherent moderation of a Parliament - two of the conditions we have seen, are essential to the bare possibility of parliamentary government."
+
+==See also==
+*[[List of democracy and elections-related topics]]
+* [[Table of voting systems by nation]]
+* [[Single Non-Transferable Vote]]
+* [[preference voting]]
+* [[Instant-runoff voting]]
+* [[voting systems]]
+* [[Hagenbach-Bischoff quota]]
+* [[Hare quota]]
+* [[Imperiali quota]]
+* [[Ross quota]]
+
+== External links ==
+*[http://dmoz.org/Society/Politics/Campaigns_and_Elections/Voting_Systems/Single_Transferable_Vote/ ODP category]
+* [http://stv.sourceforge.net/ pSTV--software for computing the single transferable vote]
+*[http://www.electionmethods.org/ ElectionMethods.org] on comparisons between different methods
+* [http://www.electoral-reform.org.uk Electoral Reform Society]
+[[Category:Voting systems]]
+* [http://www.prsa.org.au Proportional Representation Society of Australia] 
+* [http://www.oasis.gov.ie/government_in_ireland/elections/proportional_representation.html?PHPSESSID=fe117d4bb6373eea8e4bf359999978c5 The Single Transferrable Vote procedure in Ireland]
+* [http://www.stvforbc.com Information on BC-STV. British Columbia's Referendum on STV]
+* [http://fc.antioch.edu/james_green-armytage/voting.htm James Green-Armytage's voting methods page] information about single-winner and multiple-winner voting methods, including several versions of STV
+
+{{fromwikipedia}}
