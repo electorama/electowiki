@@ -1,0 +1,29 @@
+The '''Condorcet candidate''' or '''Condorcet winner''' of an [[election]] is the candidate who, when compared in turn with each of the other candidates, is preferred over the other candidate. Mainly because of Condorcet's [[voting paradox]], a Condorcet winner will not always exist in a given set of votes.
+
+The '''Condorcet criterion''' for a [[voting system]] is that it chooses the Condorcet winner when one exists. Any method conforming to the Condorcet criterion is known as a [[Condorcet method]].
+
+==Complying methods==
+
+Black, Smith/IRV, [[Copeland's method|Copeland]], minimax, Smith/minimax, [[ranked pairs]] and variations ([[maximize affirmed majorities]], [[maximum majority voting]]), [[Cloneproof Schwartz Sequential Dropping|Schulze]] and variations ([[Cloneproof Schwartz Sequential Dropping|Schwartz sequential dropping]], [[Cloneproof Schwartz Sequential Dropping|cloneproof Schwartz sequential dropping]]) comply with the Condorcet criterion.
+
+[[Approval voting]], [[Range voting]], [[Borda count]], [[plurality voting]], and [[instant-runoff voting]] do not.
+
+==Commentary==
+
+Non-ranking methods such as [[plurality voting|plurality]] and [[approval voting|approval]] cannot comply with the Condorcet criterion because they do not allow each voter to fully specify their preferences. But instant-runoff voting allows each voter to rank the candidates, yet it still does not comply. A simple example will prove that IRV fails to comply with the Condorcet criterion.
+
+Consider, for example, the following vote count of preferences with three candidates {A,B,C}:
+
+<blockquote><table>
+<tr><td align=right>499:</td><td align=left>A,B,C</td></tr>
+<tr><td align=right>498:</td><td align=left>C,B,A</td></tr>
+<tr><td align=right>3:</td><td align=left>B,C,A</td></tr>
+</table></blockquote>
+
+In this case, B is preferred to A by 501 votes to 499, and B is
+preferred to C by 502 to 498, hence B is preferred to both A and C. So
+according to the Condorcet criteria, B should win. By contrast, according to the rules of IRV, B is ranked first by the fewest voters and is eliminated, and C wins with the transferred voted from B; in plurality voting A wins with the most first choices.
+
+[[Category:Voting system criteria]]
+
+{{fromwikipedia}}
