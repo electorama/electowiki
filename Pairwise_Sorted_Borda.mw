@@ -1,0 +1,19 @@
+First "seed" the list in Borda order. Then while any alternative X pairwise defeats the alternative Y immediately above it in the list, find the X and Y of this type that have the least difference D in approval, and modify the list by swapping X and Y.
+
+Note that before the swap the higher Borda alternative Y will be above the lower Borda alternative X, so the difference D in question will always be positive.
+
+Why use the smallest Borda difference to decide which pairwise defeat to accept next?
+
+Because if the Borda difference is small, then the pairwise over-ride of the Borda order does the least violence to that order.  It is an attempt to reconcile the Borda order with the pairwise defeats while keeping the strongest Borda information intact.
+
+When the sorting process is finished, the resulting ordering of the alternatives has this symmetry: if all of the ballots are reversed, then the final order will be reversed.
+
+A sort that works from the top down or bottom up, like Bubble or Sink, will not enjoy this kind of symmetry.
+
+This Pairwise Sorted Borda has a nice monotonic property:
+
+If alternative A moves up relative to some other alternative, while none of the other alternatives move up or down relative to each other, then alternative A will move up (if at all) in the final order.
+
+By the symmetry mentioned above, we also have (mutatis mutandi):
+
+If alternative A moves down relative to some other alternative, while none of the other alternatives move down or up relative to each other, then alternative A will move down (if at all) in the final order.
