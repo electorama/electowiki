@@ -4,7 +4,7 @@ Pairwise Sorted Methods all share these properties:
 * The winner is the candidate that ends up at the top of the list.
 
 All methods of this type satisfy the [[Condorcet Criterion]] because until the "beats all" alternative is at the top of the list, it will be out of pairwise order with the alternative above it.  So all Pairwise Sorted Methods satisfy the following slight modification of the Condorcet Criterion:
-:The winner is that candidate who, when compared in turn with each of the other ''higher-seeded'' candidates, is preferred over the other candidate.
+:The winner is the ''lowest seeded'' candidate who, when compared in turn with each of the other ''higher-seeded'' candidates, is preferred over the other candidate.
 
 In fact, all of these methods satisfy the Generalized Condorcet Criterion since the Smith set will be sorted above all non-Smith alternatives.
 
