@@ -71,8 +71,9 @@ One could consider the Lowest Passing Grade (LPG) to be like Gerald Ford.  Anybo
 Grading candidate X below the LPG gives the voter a chance to say "I don't want X to win, but of all the alternatives, X would make fewest changes in the wrong direction.  I also won't give X a passing grade because I want X to have as small a mandate as possible."  This allows the losing minority to have some say in the outcome of the election, instead of leaving the choice to the strongest core support within the majority faction.
 
 === Tallying Votes ===
+The rankings on a single ballot are added into a round-robin table using the standard [[Condorcet_method#Counting_with_matrices|Condorcet pairwise matrix]] method:  the higher ranked candidates are given one vote in each of their pairwise contests with lower ranked candidates.
 
-Rankings are added into a pairwise array.  The approval scores of each candidate can be stored the diagonal cells, which are unused in other non-Approval-Condorcet hybrids.
+The Condorcet pairwise matrix can also be used to store each candidate's Approval point score, in the diagonal cell which is unused in other Condorcet methods.
 
 We call a candidate '''Strongly defeated''' when that candidate is pairwise defeated by any other candidate with higher Approval rating.  This kind of defeat is also called an Approval-consistent or [http://wiki.electorama.com/wiki/Techniques_of_method_design#Defeats_and_defeat_strength definitive defeat].
 
