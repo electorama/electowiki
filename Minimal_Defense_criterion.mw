@@ -10,17 +10,11 @@ This definition is most similar to that of [[SDSC]]. Another definition suggeste
 
 ''If more than half of the voters rank ''Y'' above ''X'', and ''X'' above no other candidate, then ''X'' must not be elected.''
 
-It's also required that the method permits voters to submit complete or incomplete rankings. In particular, truncation must be an option: It's not adequate for the method to require that the voters rank ''X'' strictly ''below'' every other candidate.
+It's also required that the method permits voters to submit complete strict rankings.
 
 <h4 class=left>Complying Methods</h4>
 
-Methods satisfying '''Minimal Defense''' include Steve Eppley's own [[Maximize Affirmed Majorities]] method, [[Schulze method|Schulze]] using winning votes as the measure of defeat strength, Jobst Heitzig's [[River]] method, [[Bucklin voting]], methods electing from the [[CDTT|CDTT set]], [[MDDA]], [[MAMPO]], and [[Condorcet//Approval]].
-
-<h4 class=left>Commentary</h4>
-
-In a method that satisfies '''Minimal Defense''', when a majority of the voters prefer candidate ''A'' to candidate ''B'', all that these voters need to do to avoid the election of ''B'' is to not give ''B'' a ranking over another candidate.
-
-In particular, even if all of the voters preferring ''A'' to ''B'' each prefer many other different candidates to ''A'', '''Minimal Defense''' guarantees that these voters don't need to insincerely rank ''A'' above or even equal to these other candidates to ensure that ''B'' won't be elected.
+Methods satisfying '''Minimal Defense''' include Steve Eppley's own [[Maximize Affirmed Majorities]] method, [[Cloneproof Schwartz Sequential Dropping]] using winning votes as the measure of defeat strength, Jobst Heitzig's [[River]] method, and methods electing from the [[CDTT|CDTT set]].
 
 == External Resources ==
 * [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)]
