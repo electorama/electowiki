@@ -73,7 +73,7 @@ Grading candidate X below the LPG gives the voter a chance to say "I don't want 
 === Tallying Votes ===
 The rankings on a single ballot are added into a round-robin table using the standard [[Condorcet_method#Counting_with_matrices|Condorcet pairwise matrix]] method:  the higher ranked candidates are given one vote in each of their pairwise contests with lower ranked candidates.
 
-The Condorcet pairwise matrix can also be used to store each candidate's Approval point score, in the diagonal cell which is unused in other Condorcet methods.
+The Condorcet pairwise matrix can also be used to store each candidate's Approval point score, in the otherwise-unused diagonal cell.
 
 We call a candidate '''Strongly defeated''' when that candidate is pairwise defeated by any other candidate with higher Approval rating.  This kind of defeat is also called an Approval-consistent or [http://wiki.electorama.com/wiki/Techniques_of_method_design#Defeats_and_defeat_strength definitive defeat].
 
@@ -81,7 +81,7 @@ To determine the winner:
 # Eliminate all strongly defeated candidates.
 # The winner is the candidate that pairwise defeats all other remaining candidates.
 
-DMC always selects the Condorcet Winner, if it exists, and otherwise selects a member of the Smith Set.  Step 1 has the effect of successively eliminating the least approved candidate in the Smith set, but allows higher-approved candidates outside the Smith set (such as the Approval Winner) to remain in the set of non-strongly-defeated candidates.
+DMC always selects the Condorcet Winner, if one exists, and otherwise selects a member of the Smith Set.  Step 1 has the effect of successively eliminating the least approved candidate in the Smith set, but allows higher-approved candidates outside the Smith set (such as the Approval Winner) to remain in the set of non-strongly-defeated candidates.
 
 === Handling Ties and Near Ties ===
 
