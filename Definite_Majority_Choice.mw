@@ -72,11 +72,20 @@ DMC always selects the Condorcet Winner, if it exists, and otherwise selects a m
 
 === Handling Ties and Near Ties ===
 
-In ordinary DMC, the winner is the candidate in Forest Simmon's '''[http://wiki.electorama.com/wiki/Techniques_of_method_design#Special_sets P]''' set, the ''set of candidates which are not approval-consistently defeated''.
+==== Approval Ties ====
 
-But in the event of a tie or near tie (say, margin within 0.01%), there may be no clear winner.
+During the initial ranking of candidates, two candidates may have the same approval score. 
 
-In that case, form the superset '''P*''', the union of all sets P that result from all possible combinations of reversed ties or near-ties.  Then choose the winner from P* using [http://wiki.electorama.com/wiki/Techniques_of_method_design#Orderings Random Ballot Order].
+If equal Approval scores affect the outcome, there are several alternatives for Approval-tie-breaking.  The procedure that would be most in keeping with the spirit of DMC, however would be to initially rank candidates
+# In descending order of Approval
+# If equal, in descending order of "Grade Point Average" (i.e., total Cardinal Rating)
+# If equal, in descending order of total first- and second-place votes
+# If equal, in descending order of total first-, second- and third-place votes.
 
+==== Pairwise Ties ====
+
+When there are no ties, the winner is the candidate in Forest Simmon's '''[http://wiki.electorama.com/wiki/Techniques_of_method_design#Special_sets P]''' set, the ''set of candidates which are not approval-consistently defeated''.
+
+In the event of a pairwise tie or near tie (say, margin within 0.01%), it is sometimes possible to proceed anyway, since another member of P may defeat the tied pair.  But if there is no clear winner, ties should be handled using the same [http://wiki.electorama.com/wiki/Maximize_Affirmed_Majorities#Compute_Tiebreak Random Ballot] procedure as in [[Maximize Affirmed Majorities]].
 
 [[Category:Condorcet method]]
