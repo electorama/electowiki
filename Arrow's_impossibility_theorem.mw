@@ -12,7 +12,7 @@ A society needs to agree on a [[preference]] order among several different optio
 Arrow&rsquo;s theorem says that if the decision-making body has at least two members and at least three options to decide among, then it is impossible to design a social choice function that satisfies all these conditions at once.
 
 Another version of Arrow&rsquo;s theorem can be obtained by replacing the monotonicity criterion with that of:
-* '''unanimity''' or '''[[Pareto efficiency]]''': if every individual prefers a certain option to another, then so must the resulting societal preference order.
+* '''unanimity''' or '''[[Pareto criterion|Pareto efficiency]]''': if every individual prefers a certain option to another, then so must the resulting societal preference order.
 This statement is stronger, because assuming both monotonicity and independence of irrelevant alternatives implies Pareto efficiency.
 
 With a narrower definition of &ldquo;irrelevant alternatives&rdquo; which excludes those candidates in the [[Smith set]], some [[Condorcet method]]s meet all the criteria.
