@@ -6,21 +6,22 @@ A '''majority''' means, literally, "more than half".  Compare this with [[plural
 *a '''supermajority''' is a fraction of the voters between half and all (e.g. 2/3)
 *'''consensus''' usually means complete agreement or "all voters"
 
-== Majority rule/Majority winner ==
+== Majority rule/Majority winner - Four Critera==
 
-Many methods claim to elect the "majority winner" or work by "majority rule" (See, for example, the [[Center for Voting and Democracy|CVD]]'s talking points re: IRV: [http://www.fairvote.org/irv/talking.htm]).  However, [[Condorcet's paradox]] raises an issue: with some groups of voters, no matter which candidate wins, ''some'' majority of the voters will prefer a different candidate.  Below is a list of criterion, in ascending order of strictness, which could be called "majority rule" in some sense.
+Many methods claim to elect the "majority winner" or work by "majority rule" (See, for example, the [[Center for Voting and Democracy|CVD]]'s talking points re: IRV: [http://www.fairvote.org/irv/talking.htm]).  However, [[Condorcet's paradox]] raises an issue: with some groups of voters, no matter which candidate wins, ''some'' majority of the voters will prefer a different candidate.  Below is a list of criterion, in ascending order of strictness, which could be used to rank the relative strengths of a "majority."
 
- *Criterion 1: If a majority of the electorate coordinates their efforts, they can assure 
-   that a given candidate is elected, or that another given candidate is not elected. 
+ *Criterion 1: If a majority of the electorate coordinates their efforts, 
+               they can assure that a given candidate is elected, 
+               or that another given candidate is not elected. 
  *Criterion 2: [[Mutual majority criterion]]
  *Criterion 3: [[Condorcet criterion]]
  *Criterion 4: Minimal dominant set ([[Smith set|Smith]], GeTChA) efficiency 
 
-In weak majority methods (like plurality and range voting), a given majority of the electorate '''can''' coordinate their intentions and decide the winner, but this merely postpones the question of how they do this. The stronger majority methods not only enable firmly coordinated majorities to assert themselves, but they allow un-coordinated majorities to '''reveal''' themselves, without any need for prior coordination. Voting methods that facilitate this process of revelation are considered superior to those that do not.
+In pseudo-majority methods (like plurality and range voting), a given majority of the electorate '''can''' coordinate their intentions and decide the winner, but this merely postpones the question of how they do this. The stronger majority methods not only enable firmly coordinated majorities to assert themselves, but they allow un-coordinated majorities to '''reveal''' themselves, without any need for prior coordination. Voting methods that facilitate this process of revelation are considered superior to those that do not.
 
 The remaining three categories allow mutual majorities to reveal themselves (in the absence of a self-defeating strategy by supporters of this majority). Strong majority rule methods not only reveal mutual majorities, but they reveal [[minimal dominant set]]s and Condorcet winners (in the absence of a severe [[burying strategy]]). This is considered especially valuable because it means revealing possible compromises on divisive issues, thus avoiding a lot of political polarization and strife.
 
-=== Criterion 1 only ===
+=== Criterion 1 only - Pseudo-Majority Rule Methods===
 
 Methods which pass criterion 1 only include [[First-past-the-post electoral system|Plurality]], [[approval voting|Approval]], [[Cardinal Ratings]], and the [[Borda count]].  Although it is always '''possible''' in these systems for a coordinated majority to elect their preferred candidate, coordination may be difficult.  For example, take an electorate with preferences as follows:
 
@@ -31,7 +32,7 @@ Methods which pass criterion 1 only include [[First-past-the-post electoral syst
 
 In a plurality election, a clear majority (60-40) prefer both A and B to C.  But unless A and B voters know whether to vote for A or whether to vote for B, C may win a plurality of votes.  In addition, voters for A and B voters may play a game of "chicken", refusing to vote for the other, because they believe their candidate should win.
 
-==Criteria 1 and 2 ==
+===Criteria 1 and 2 - Weak Majority Rule Methods===
 
 [[Instant-runoff voting]] (aka IRV, Single-winner STV) passes the mutual majority criterion.  In the example above, IRV enables A and B to coordinate.  If all voters voted their sincere preferences, B would be eliminated first, but their votes would transfer to A, resulting in a majority for A.
 
@@ -43,13 +44,13 @@ However, IRV doesn't pass the [[Condorcet criterion]].  In an election with pref
 
 Looking at this election pairwise, there are three majorities: a majority (69 to 31) prefer B to A, a majority (69-31) prefer C to A, and a majority (60-40) prefer B to C.  If you were to award the title "majority winner" to any candidate, B has the fairest claim to that title, as (different) majorities of voters prefer B to each other candidate.  However, in IRV, B is eliminated first and does not win.
 
-=== Criteria 1,2, and 3===
+=== Criteria 1,2, and 3 - Intermediate Majority Rule Methods===
 
 Methods that pass the Condorcet criterion would always elect B, the Condorcet winner, in that election.  
 
 [[Minimax]] (aka SD, PC, etc.), [[Nanson]], [[Black]], etc.
 
-=== Criteria 1,2,3, and 4 ===
+=== Criteria 1,2,3, and 4 - Strong Majority Rule Methods===
 
 [[ranked pairs]], [[beatpath]], [[river]], 
 
