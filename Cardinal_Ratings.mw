@@ -1,0 +1,91 @@
+'''Range voting''', or '''average voting''', or '''cardinal ratings''' is a [[voting system]] used for single or multiple-seat [[election]]s. It is also used on the web - for rating movies ([[Internet Movie Database]]), comments ([[Kuro5hin]]), and many other things.
+
+== Voting ==
+
+For each candidate, each voter expresses the utility of that
+candidate's election to them in the form of a number.  In "pure" range
+voting, each voter may give any candidate any [[real number]], but as the
+potential for [[tactical voting]] is huge, most systems use some
+bounds.  For example, each voter might give a real number between -1
+and 1, or an [[integer]] between 1 and 10.
+
+Range voting in which only two different votes may be submitted (0 and 1, for example) is equivalent to [[approval voting]].
+
+Range voting satisfies the [[monotonicity criterion]].
+
+== Counting the Votes ==
+
+The scores for each candidate are summed, and the candidates with the
+highest sums are declared the winners.
+
+Another method of counting is to find the [[median]] score of each candidate, and elect the candidate with the highest median score.
+
+==Example==
+{{Tenn_voting_example}}
+
+Suppose that voters were told to grant 1 to 4 points to each city such that their most liked choice(s) got 4 points, and least liked choice(s) got 1 point.
+
+<TABLE BORDER=1 style="empty-cells: show">
+		<TR>
+			<TH>City</TH>
+			<TH>Memphis</TH>
+			<TH>Nashville</TH>
+			<TH>Chattanooga</TH>
+			<TH>Knoxville</TH>
+			<TH>Total</TH>
+		</TR>
+                <TR>
+			<TD>Memphis</TD>
+			<TD>168 (42 * 4)</TD>
+			<TD>26</TD>
+			<TD>15</TD>
+			<TD>17</TD>
+			<TD>226</TD>
+		</TR>
+                <TR>
+			<TD>Nashville</TD>
+			<TD>126 (42 * 3)</TD>
+			<TD>104 (26 * 4)</TD>
+			<TD>30 (15 * 2)</TD>
+			<TD>34 (17 * 2)</TD>
+			<TD>294</TD>
+		</TR>
+                <TR>
+			<TD>Chattanooga</TD>
+			<TD>84 (42 * 2)</TD>
+			<TD>78 (26 * 3)</TD>
+			<TD>60 (15 * 4)</TD>
+			<TD>51 (17 * 3)</TD>
+			<TD>273</TD>
+		</TR>
+                <TR>
+			<TD>Knoxville</TD>
+			<TD>42</TD>
+			<TD>52 (26 * 2)</TD>
+			<TD>45 (15 * 3)</TD>
+			<TD>68 (17 * 4)</TD>
+			<TD>207</TD>
+		</TR>
+</TABLE>
+
+Nashville wins.
+
+==Strategy==
+
+In general, the optimal strategy for range voting is to vote it identically to approval voting, so that all candidates are given either the maximum score or the minimum score. For more detailed strategies, see [[approval voting]].
+
+Range voting assumes that voters are actually expressing their personal feelings rather than doing everything they can to cause their most favored outcomes.
+
+==See also==
+*[[List of democracy and elections-related topics]]
+
+*[[Consensus decision-making]] 
+*[[Decision making]] 
+*[[Democracy]]
+*[[Hot or Not]] &ndash; a real world example
+*[[Majoritarianism]] (Majority rule)
+*[[Minoritarianism]]
+
+[[Category:Voting systems]]
+
+{{fromwikipedia}}
