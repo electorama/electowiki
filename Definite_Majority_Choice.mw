@@ -44,8 +44,8 @@ In small races it should be sufficient to grade 2 or 3 candidates, but in crowde
 
 With the Approval Cutoff / Lowest Passing Grade at C instead of C-minus, an indecisive voter can be hesitant about granting approval by initially filling in a grade of C.  If after reconsideration the voter decides to withold approval, the minus can then be checked.
 
-==== Ranked Ballot format ====
-If the Graded Ballot is deemed too complex, a ranked ballot may be used.  Here is one possible format:
+==== Ranking Candidates using a Ranked Choice ballot ====
+If the Graded Ballot is deemed too complex, a ranked ballot could be used instead.  Here is one possible format:
 <pre>
            |<-- Approved -->|
             1    2    3    4      5    6    7
@@ -61,7 +61,9 @@ If the Graded Ballot is deemed too complex, a ranked ballot may be used.  Here i
 
 Ranks 1 through 4 would be approved, 5 through 7 and ungraded would be unapproved.
 
-This ballot is less flexible and intuitive than the Graded Ballot version, but the voting method would be unchanged otherwise.
+The voting method would be unchanged otherwise:
+# Candidates receiving rank 1 through 4 would get 1 approval point.
+# A higher-ranked candidate gets one vote in each one-to-one contest with lower-ranked candidates.
 
 ==== Discussion ====
 What is a voter saying by giving a candidate a grade below the Approval Cutoff?
