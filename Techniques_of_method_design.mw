@@ -2,14 +2,14 @@ This is a list of techniques and concepts which are more or less useful when des
 
 == Scores ==
 Scores can be interpreted as measures of "goodness" of a candidate. Their usage can thus improve the "efficiency" of a method.
-* '''Direct support''' = ''no. of voters ranking the candidate first.'' Retains clone-proofness when used appropriately, requires ranked ballots, is not well defined when more than one candidate is ranked top
-* (Total) '''approval score''' = ''no. of voters approving of the candidate.'' Retains clone-proofness when used appropriately, requires approval information
-* '''Borda score''' = ''sum of ranks the candidate gets on all ballots.'' Destroys clone-proofness and most "independency"-properties, requires ranked ballots
-* '''Copeland score''' = ''no. of alternatives the candidate beats pairwise.'' Destroys clone-proofness
-* Laslier's '''minimal gain score''' = ''probability that an alternative beaten by the candidate wins divided by the probability that an alternative beating the candidate wins, when choosing from the bipartisan distribution on the set of all other candidates.'' Improves the monotonicity of the bipartisan distribution, but destroys clone-proofness and is complicated to compute
+* '''Direct support''' = ''no. of voters ranking the candidate first.'' Retains clone-proofness when used appropriately, requires ranked ballots, is not well defined when more than one candidate is ranked top.
+* (Total) '''approval score''' = ''no. of voters approving of the candidate.'' Retains clone-proofness when used appropriately, requires approval information.
+* '''Borda score''' = ''sum of ranks the candidate gets on all ballots.'' Destroys clone-proofness and most "independency"-properties, requires ranked ballots.
+* '''Copeland score''' = ''no. of alternatives the candidate beats pairwise.'' Destroys clone-proofness.
+* Laslier's '''minimal gain score''' = ''probability that an alternative beaten by the candidate wins divided by the probability that an alternative beating the candidate wins, when choosing from the bipartisan distribution on the set of all other candidates.'' Improves the monotonicity of the bipartisan distribution, but destroys clone-proofness and is complicated to compute.
 
 == Defeats and defeat strength ==
-Looking at pairwise defeats and their strength can help assessing the "immunity" of a candidate against certain types of complaints.
+Looking at pairwise defeats and their strength can help assessing the "immunity" of a candidate against certain types of complaints. Care has to be taken so that the definition of strength doesn't destroy monotonicity.
 * (Pairwise) '''defeat''' <=> ''more voters expressed to prefer A over B than expressed to prefer B over A'' 
 * '''Winning votes''' (wv) = ''no. of voters preferring the winner of the defeat to the loser''
 * '''Margin(s)''' = ''winning votes minus no. of voters preferring the loser.'' Gives more strategic incentives and seems more arbitrary (why not take the quotient instead?) than wv
@@ -18,4 +18,28 @@ Looking at pairwise defeats and their strength can help assessing the "immunity"
 * '''Approval-consistent defeat''' (definitive defeat) = ''pairwise defeat in which the winner is more approved than the loser.'' These are acyclic and can thus all be respected without a contradiction
 * '''Winning approval''' = ''approval score of the winner of the defeat.'' Using this as defeat strength leaves only one immune candidate: the least approved of those who beat all more approved ones. Similar for other scores. 
 * '''Approval-based support''' = ''no. of voters approving of the winner but not of the loser of the defeat.'' Gives special influence to preferences which cross the aproval cutoff and thus helps diminishing certain strategies. Useful when one assumes that only these voters will support the correspondig "majority complaint".
-* '''Cardinal rated''' strength = sum of difference in the candidates' cardinal ratings on all ballots which rate the winner over the loser of the defeat. Helps diminishing certain strategies even better, but requires interpersonally comparable cardinal ratings.
+* '''Cardinal rated''' strength = ''sum of difference in the candidates' cardinal ratings on all ballots which rate the winner over the loser of the defeat.'' Helps diminishing certain strategies even better, but requires interpersonally comparable cardinal ratings.
+
+== Steps ==
+Many methods work in more than one perhaps similar, perhaps different steps.
+* '''Iteration''': Similar steps are performed until some break criterion applies.
+* '''Reduction to a subset''': All members outside some special set are removed.
+* '''Runoff''': Special case of reduction to a subset, for example by removing worst candidate according to some score. Can be iterated.
+
+== Special sets ==
+* '''Smith set''' (top cycle, top tier) = ''smallest non-empty set of candidates each of which beats all candidates outside the set.''
+* '''Schwartz set''' = ''smallest non-empty set of candidates so that each candidate beating a member of the set is also in the set.''
+* Woodall's '''CDTT''' = PLEASE ADD!
+* '''Uncovered set''' = ''set of candidates which have defeats or beatpaths of length two to all other candidates''. Not monotonic as a set.
+* '''Banks set''' = ''set of candidates which are top on some maximal sub-chain of the defeat graph.'' Not monotonic as a set.
+* Dutta's '''Minimal covering set''' = ''smallest non-empty set such that when any other candidate is added, that candidate is covered in the resulting set.
+* '''Bipartisan set''' = ''set of candidates getting non-zero probability in the bipartisan distribution.'' 
+* Forest Simmons' set '''P''' = ''set of candidates which are not approval-consistently defeated.'' This set is totally ordered by the defeats and contains the most approved candidate and a possible Condorcet winner.
+
+== Orderings ==
+
+
+== Randomization ==
+* '''Randomized start''': Pick an initial candidate by some random process, then proceed with other steps.
+* '''Randomized order''': Use a random process to determine the order in which the candidates are processes in some way.
+* '''Final randomization''': Restrict to some subset, then use a random process to choose from that set.
