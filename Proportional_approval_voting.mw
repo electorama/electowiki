@@ -1,4 +1,4 @@
-'''Proportional approval voting''' (PAV) is a theoretical [[voting system]] for multiple-winner [[election]]s, in which each voter can vote for as many or as few candidates as the voter chooses.  It was developed by Forest Simmons in [[2001]].
+'''Proportional approval voting''' (PAV) is a theoretical [[voting system]] for multiple-winner elections, in which each voter can vote for as many or as few candidates as the voter chooses.  It was developed by Forest Simmons in [[2001]].
 
 PAV works by looking at how "satisfied" each voter is with each potential result or outcome of the of the election.
 The satisfaction for individual voters of a potential result is calculated based on how many of the successful candidates they voted for.  In this particular system, if an individual voted for ''n'' successful candidates (and an irrelevant number of unsuccessful ones) then their satisfaction is taken to be
@@ -25,9 +25,5 @@ This was developed by the Danish polymath Thorvald N. Thiele, and used (with ada
 
 The system disadvantages minority groups who share some preferences with the majority.  In terms of [[tactical voting]], it is therefore highly desirable to withhold approval from candidates who are likely to be elected in any case, as with [[cumulative voting]] and the [[single non-transferable vote]].
 
-==See also==
-* [[List of democracy and elections-related topics]]
-
 [[Category:Voting systems]]
-
 {{fromwikipedia}}
