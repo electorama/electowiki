@@ -3,7 +3,9 @@ Pairwise Sorted Methods all share these properties:
 * The list is then sorted by swaping adjacent alternatives that are "out of order" pairwise, until each alternative pairwise defeats the alternative immediately below it on the list.
 * The winner is the candidate that ends up at the top of the list.
 
-All methods of this type satisfy the [[Condorcet Criterion]] because until the "beats all" alternative is at the top of the list, it will be out of pairwise order with the alternative above it.  So all Pairwise Sorted Methods satisfy the following slight modification of the Condorcet Criterion:
+All methods of this type satisfy the [[Condorcet Criterion]] because until the "beats all" alternative is at the top of the list, it will be out of pairwise order with the alternative above it.  
+
+In particular, all Pairwise Sorted Methods that Bubble sort the seeded list satisfy the following slight modification of the Condorcet Criterion:
 :The winner is the ''lowest seeded'' candidate who, when compared in turn with each of the other ''higher-seeded'' candidates, is preferred over the other candidate.
 
 In fact, all of these methods satisfy the Generalized Condorcet Criterion since the Smith set will be sorted above all non-Smith alternatives.
