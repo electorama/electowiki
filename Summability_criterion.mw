@@ -1,4 +1,4 @@
-Each vote should map onto a summable array, where the summation operation is associative and commutative, and the winner should be determined from the array sum for all votes cast.  An election method is ''k-summable'' (or "passes the k-Summability Criterion") if there exists a constant c such that in any election with n candidates, the required size of the "array" is at most c*n^k.  An election method is "non-summable" if there is no k for which it is k-summable.
+Each vote should map onto a summable array, where the summation operation is associative and commutative, and the winner should be determined from the array sum for all votes cast.  An election method is ''kth-order summable'' if there exists a constant ''c'' such that in any election with ''n'' candidates, the required size of the "array" is at most ''cn<sup>k</sup>''.  If there is no value of ''k'' for which the method is ''k''th-order summable, the method is ''non-summable''.
 
 == Summable Methods ==
 
