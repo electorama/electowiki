@@ -30,8 +30,8 @@ Many methods work in more than one, perhaps similar, perhaps different steps.
 * '''Randomization''': Using a certain amount of randomness can help avoiding some strategies, especially when it leads to each candidate being beaten by a possible winner.
 
 == Special sets ==
-* '''Smith set''' (top cycle, top tier) = ''smallest non-empty set of candidates each of which beats all candidates outside the set.''
-* '''Schwartz set''' = ''smallest non-empty set of candidates so that each candidate beating a member of the set is also in the set.''
+* '''Smith set''' (top cycle, top tier, minimal dominant set) = ''smallest non-empty set of candidates each of which beats all candidates outside the set.''
+* '''Schwartz set''' (GOChA set, union of minimal undominated sets) = ''smallest non-empty set of candidates so that each candidate beating a member of the set is also in the set.''
 * Woodall's '''[[CDTT]]''' ("Condorcet doubly-augmented top tier") = ''union of all minimal non-empty sets such that no candidate in each set has a majority-strength loss to any candidate outside the set''. Alternatively, ''the set containing every candidate ''A'' where, for each other candidate ''B'' who has a majority-strength beatpath to ''A'', ''A'' also has a majority-strength beatpath to ''B.
 * '''Uncovered set''' = ''set of candidates which have defeats or beatpaths of length two to all other candidates''. Not monotonic as a set.
 * '''Banks set''' = ''set of candidates which are top on some maximal sub-chain of the defeat graph.'' Not monotonic as a set.
