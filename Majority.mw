@@ -4,11 +4,11 @@ A '''majority''' means, literally, "more than half".  Compare this with [[plural
 *'''simple majority''' means "more than half of cast votes"
 *'''absolute majority''' means "more than half of eligible voters"
 *a '''supermajority''' is a fraction of the voters between half and all (e.g. 2/3)
-*'''Consensus''' usually means complete agreement or "all voters"
+*'''consensus''' usually means complete agreement or "all voters"
 
 == Majority rule/Majority winner ==
 
-Many methods claim to elect the "majority winner" or work by "majority rule".  However, [[Condorcet's paradox]] tells us that this is complicated: with some groups of voters, no matter which candidate wins, ''some'' majority of the voters will prefer a different candidate.  Below is a list of criterion, in ascending order of strictness, which could be called "majority rule" in some sense.
+Many methods claim to elect the "majority winner" or work by "majority rule".  However, [[Condorcet's paradox]] raises this issue: with some groups of voters, no matter which candidate wins, ''some'' majority of the voters will prefer a different candidate.  Below is a list of criterion, in ascending order of strictness, which could be called "majority rule" in some sense.
 
  *Criterion 1: If a majority of the electorate coordinates their efforts, they can assure 
    that a given candidate is elected, or that another given candidate is not elected. 
@@ -16,15 +16,15 @@ Many methods claim to elect the "majority winner" or work by "majority rule".  H
  *Criterion 3: [[Condorcet criterion]]
  *Criterion 4: Minimal dominant set ([[Smith set|Smith]], GeTChA) efficiency 
 
-In pseudomajority methods (like plurality and range voting), a given majority of the electorate '''can''' coordinate their intentions and decide the winner, but this merely postpones the question of how they do this. The stronger majority methods not only enable firmly coordinated majorities to assert themselves, but they allow majorities to '''reveal''' themselves, without any need for prior coordination. I think that voting methods that facilitate this process of revelation are superior to those that do not.
+In weak majority methods (like plurality and range voting), a given majority of the electorate '''can''' coordinate their intentions and decide the winner, but this merely postpones the question of how they do this. The stronger majority methods not only enable firmly coordinated majorities to assert themselves, but they allow un-coordinated majorities to '''reveal''' themselves, without any need for prior coordination. Voting methods that facilitate this process of revelation are considered superior to those that do not.
 
-The remaining three categories allow mutual majorities to reveal themselves (in the absence of a self-defeating strategy by supporters of this majority). Strong majority rule methods not only reveal mutual majorities, but they reveal minimal dominant sets and Condorcet winners (in the absence of a severe burying strategy). This is especially valuable because it means revealing possible compromises on divisive issues, thus avoiding a lot of political polarization and strife.
+The remaining three categories allow mutual majorities to reveal themselves (in the absence of a self-defeating strategy by supporters of this majority). Strong majority rule methods not only reveal mutual majorities, but they reveal [[minimal dominant set]]s and Condorcet winners (in the absence of a severe [[burying strategy]]). This is considered especially valuable because it means revealing possible compromises on divisive issues, thus avoiding a lot of political polarization and strife.
 
 === Criterion 1 only ===
 
-Methods which pass criterion 1 only include [[First-past-the-post electoral system|Plurality]], [[approval voting|Approval]], [[Cardinal Ratings]], and the [[Borda count]].  Although it is always '''possible''' in these systems for a coordinated majority to elect their preferred candidate, the coordination problem can be difficult.  For example, take an electorate with preferences as follows:
+Methods which pass criterion 1 only include [[First-past-the-post electoral system|Plurality]], [[approval voting|Approval]], [[Cardinal Ratings]], and the [[Borda count]].  Although it is always '''possible''' in these systems for a coordinated majority to elect their preferred candidate, coordination may be difficult.  For example, take an electorate with preferences as follows:
 
- 31 A > B > C
+ 31 A > B > C [[Election Model Notation | *]]
  29 B > A > C
  20 C > B > A
  20 C > A > B
