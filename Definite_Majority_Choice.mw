@@ -15,10 +15,47 @@ The philosophical basis of DMC (also due to [http://lists.electorama.com/piperma
 Some people believe that DMC is currently the best candidate for a Condorcet Method that meets the [[Public Acceptability Criterion|Public Acceptability "Criterion"]].
 
 == Procedure ==
-The DMC differs from the [[Condorcet Criterion|Condorcet Winner]] in one crucial respect:
-:The Definite Majority Choice winner is the ''least approved'' candidate who, when compared in turn with each of the other ''higher-approved'' candidates, is preferred over the other candidate.
+Before explaining how the ballots elicit the approval and pairwise preference information from the voters, let's consider a simple example of how that information is used to determine the DMC winner.
 
-We'll illustrate how the method works with a deliberately crude ballot and then explore other ballot formats.
+Suppose that the candidates (in order of approval) are
+
+John
+
+Jane
+
+Jill
+
+Jack
+
+Jean
+
+and that the only two "downward" majority preferences are Jill to Jack and Jane to Jean.
+
+We are assuming that all other majority preferences are directed upward:
+
+Jane defeats John,
+
+Jill defeats both Jane and John,
+
+Jack defeats both Jane and John, and
+
+Jean defeats John, Jill, and Jack.
+
+The downward or "approval consistent" preferences are enforced by eliminating Jack and Jean.
+
+Jill (pairwise) defeats both of the remaining candidates, so Jill is the DMC winner.
+
+Note that Jill is the lowest approval candidate that pairwise defeats each of the higher approved candidates.  This property is obviously true of the [[Condorcet Criterion|Condorcet Winner]] when there is one, and completely determines the DMC winner, as well:
+
+The Definite Majority Choice winner is the ''least approved'' candidate who is preferred pairwise over each ''higher-approved'' candidate.
+
+At first blush "least approved" may sound bad, but if we did not use the least approved candidate with the "defeat all above" property, then there would be another candidate that defeated everybody "seeded" above our candidate while defeating our candidate, too.
+
+The lower the candidate with the "defeat all above" property, the greater the solid list of highly seeded candidates that it defeats.
+
+The ideal state of affairs is that the highest approval candidate pairwise defeats all candidates below it, in which case it is simultaneously the Approval Winner, the Condorcet Winner, and the DMC winner.  This is the expected state of affairs when there is no ambiguity in the will of the voters.
+
+Now for the nitty gritty of collecting approval and pairwise preference information from the voters. First we'll illustrate how the method works with a deliberately crude ballot and then explore other ballot formats.
 
 === Simple ballot example ===
 A voter ranks candidates in order of preference, additionally giving approval points to some or all of those ranked, using a ballot like the following:
@@ -131,7 +168,7 @@ Like an instructor grading students, a voter may give the same grade (rank) to m
 
 C is the "Lowest Passing Grade" (LPG):  any candidate with a grade of C or higher gets one Approval point.  No Approval points are given to candidates graded at C-minus or below (that includes ungraded candidates).
 
-A candidate's total approval score will be used like the 'seed' rating in sports tournaments, to decide which head-to-head victories are worth more than others.
+A candidate's total approval score will be used like the 'seed' ranking in sports tournaments, to decide in which order head-to-head contests are to be scheduled.
 
 Grades assigned to non-passing (disapproved) candidates help determine which of them will win if the voter's approved candidates do not win.
 
