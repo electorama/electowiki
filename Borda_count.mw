@@ -1,6 +1,4 @@
-The '''Borda count''' is a [[voting system]] devised by [[Jean-Charles de Borda]] (who was apparently preceded by [[Nicholas of Cusa]] [http://www-gap.dcs.st-and.ac.uk/~history/HistTopics/Voting.html]), used for single or multiple-seat [[election]]s.  This form of voting is extremely popular in determining awards for
-sports in the [[United States]].  It is used in determining the [[MLB Most Valuable Player Award|Most Valuable Player]] in [[Major League Baseball]], the national
-championship of college [[American football|football]], the [[Eurovision Song Contest]], as well as many others. Used for parliamentary elections in countries of Nauru and Slovenia. 
+The '''Borda count''' is a [[voting system]] devised by Jean-Charles de Borda (who was apparently preceded by Nicholas of Cusa [http://www-gap.dcs.st-and.ac.uk/~history/HistTopics/Voting.html]), used for single or multiple-seat [[election]]s.  It is used for parliamentary elections in Nauru and Slovenia.  This form of voting is also extremely popular in determining awards for sports in the United States.  It is used in determining the Most Valuable Player in Major League Baseball, the national championship of college football, the Eurovision Song Contest, as well as many others. 
 
 == Procedures ==
 
@@ -11,7 +9,7 @@ Borda elections use [[Preferential_voting|rank preference ballots]].
 A first-place rank is worth ''n'' points, a second-place rank is worth ''n''-1
 points, down to an ''n''th rank being worth 1 point.  A candidate's score is the sum of the number of points they received.  The highest-scoring candidate is elected.
 
-In the trivial case of ''n''=1, this is mathematically identical to [[plurality voting]].
+In the trivial case of ''n''=1, this is mathematically identical to plurality voting.
 
 In the trivial (limiting case) of n=&infin;, allowing truncated preferences, this is mathematically identical to [[approval voting]]. This is approximately true for large ''n'' the votes offered to ranked candidates will be approximately equal and nonranked candidates will all get zero votes. Example, if ''n''=10, and I rank only only three choices, they each get 10,9,8 votes respectively, normalized to 1.0, 0.9, 0.8 votes, close to 1.0 vote for an equivalent vote offered in Approval.
 
@@ -50,14 +48,6 @@ In addition, voters are also encouraged to "bury" likely opponents by insincerel
 In an extreme example of burying likely rivals, voters may "bullet vote": vote for a single choice only, thus allocating no points to other choices.  One variation of Borda addresses this by allocating a number of points for the first choice equal to the number of choices made.  In the above example, a partisan for Memphis who listed only Memphis on her ballot would give one point to Memphis, while a voter who listed Memphis first and listed second, third, and fourth choices on the ballot would allocate four points to Memphis.  If there were more choices, this form of Borda encourages voters to vote for "push-overs", candidates absolutely unlikely to win the election, in order to get more points for their preferred candidate.
 
 In addition to tactical voting, [[strategic nomination]] considerations reign supreme in the Borda count.  Running multiple, similar candidates may enhance a party's chance of winning the election by increasing the point differences with opposing candidates, if the party is allowed to advance more than one candidate for consideration.
-
-==See also==
-* [[List of democracy and elections-related topics]]
-* [[Voting system]] - many other ways of voting
-* [[First Past the Post electoral system]]
-* [[Instant-runoff voting]]
-* [[Cloneproof Schwartz Sequential Dropping]]
-* [[Approval voting]]
 
 ==External link==
 *[http://www.deborda.org The de Borda Institute, Northern Ireland]
