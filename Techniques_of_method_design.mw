@@ -1,8 +1,17 @@
 This is a list of techniques and concepts which are more or less useful when designing a single winner election method, with some comments.
 
+= Defeats and defeat strength =
+Looking at pairwise defeats and their strength can help assessing the "immunity" of a candidate against certain types of complaints.
+* (Pairwise) '''defeat''' <=> more voters expressed to prefer A over B than expressed to prefer B over A 
+* '''Winning votes''' (wv) = no. of voters preferring the winner of the defeat to the loser
+* '''Margin(s)''' = winning votes minus no. of voters preferring the loser; gives more strategic incentives and seems more arbitrary (why not take the quotient instead?) than wv
+* other similar definitions of strength are possible, especially when voters can distinguish between equivalence and undecidedness
+* '''Majority-strength defeat''' = pairwise defeat which has a wv-strength of more than half the no. of voters; using only such defeats can help avoiding strategic truncation
+* '''approval-consistent defeat''' (definitive defeat) = pairwise defeat in which the winner is more approved than the loser; these are acyclic and can thus all be respected without a contradiction
+
 = Scores =
 Scores can be interpreted as measures of "goodness" of a candidate. Their usage can thus improve the "efficiency" of a method.
-* '''(Total) Approval Score''' = no. of voters approving of the candidate; retains clone-proofness, requires approval information
-* '''Borda Score''' = sum of ranks the candidate gets on all ballots; destroys clone-proofness and most "independency"-properties, requires ranked ballots
-* '''Copeland Score''' = no. of alternatives the candidate beats pairwise; destroys clone-proofness
-* Laslier's '''Minimal Gain Score''' = probability that an alternative beaten by the candidate wins divided by the probability that an alternative beating the candidate wins, when choosing from the bipartisan distribution on the set of all other candidates; improves the monotonicity of the bipartisan distribution, but destroys clone-proofness and is complicated to compute
+* (Total) '''approval score''' = no. of voters approving of the candidate; retains clone-proofness, requires approval information
+* '''Borda score''' = sum of ranks the candidate gets on all ballots; destroys clone-proofness and most "independency"-properties, requires ranked ballots
+* '''Copeland score''' = no. of alternatives the candidate beats pairwise; destroys clone-proofness
+* Laslier's '''minimal gain score''' = probability that an alternative beaten by the candidate wins divided by the probability that an alternative beating the candidate wins, when choosing from the bipartisan distribution on the set of all other candidates; improves the monotonicity of the bipartisan distribution, but destroys clone-proofness and is complicated to compute
