@@ -1,0 +1,116 @@
+The '''d'Hondt method''' is a method for allocating seats in [[party-list proportional representation]]. [[Argentina]], [[Austria]], [[Bulgaria]], [[Chile]], [[Finland]], [[Israel]], [[the Netherlands]], [[Poland]], [[Portugal]] and [[Spain]] are among the places that use this allocation system, as do [[European Parliament election, 2004|elections to the European Parliament]] in some countries.  This system favors large parties slightly more than the other popular divisor method, [[Sainte-LaguÃƒÂ« method|Sainte-LaguÃƒÂ«]], does.  The method is named after [[Belgium|Belgian]] mathematician [[Victor d'Hondt]].
+
+==Allocation==
+
+After all the votes have been tallied, successive quotients are calculated for each list.  The formula for the quotient is V/(s+1), where V is the total number of votes that list received, and s is the number of seats that party has been allocated so far (initially 0 for all parties).  Whichever list has the highest quotient gets the next seat allocated, and their quotient is recalculated given their new seat total.  The process is repeated until all seats have been allocated.  
+
+The order in which seats allocated to a list are then allocated to individuals on the list is irrelevant to the allocation procedure.  It may be internal to the party (a [[closed list]] system) or the voters may have influence over it through various methods (an [[open list]] system).
+
+The rationale behind this procedure (and the Sainte-LaguÃƒÂ« procedure) is to allocate seats in proportion to the number of votes a list received, by maintaining the ratio of votes received to seats allocated as close as possible. This makes it possible for parties having relatively few votes to be represented.
+
+==Example==
+
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td><div align="right"></div></td>
+    <td><div align="center"><strong>Party A</strong></div></td>
+    <td><div align="center"><strong>Party B</strong></div></td>
+    <td><div align="center"><strong>Party C</strong></div></td>
+    <td><div align="center"><strong>Party D</strong></div></td>
+    <td><div align="center"><strong>Party E</strong></div></td>
+  </tr>
+  <tr> 
+    <td><div align="left"><strong>Votes</strong></div></td>
+    <td><div align="center">340,000</div></td>
+    <td><div align="center">280,000</div></td>
+    <td><div align="center">160,000</div></td>
+    <td><div align="center">60,000</div></td>
+    <td><div align="center">15,000</div></td>
+  </tr>
+  <tr> 
+    <td><div align="left"><strong>Seat 1</strong></div></td>
+    <td><div align="center"><font color="#FF0000">340,000</font></div></td>
+    <td><div align="center">280,000</div></td>
+    <td><div align="center">160,000</div></td>
+    <td><div align="center">60,000</div></td>
+    <td><div align="center">15,000</div></td>
+  </tr>
+  <tr> 
+    <td><div align="left"><strong>Seat 2</strong></div></td>
+    <td><div align="center">170,000</div></td>
+    <td><div align="center"><font color="#FF0000">280,000</font></div></td>
+    <td><div align="center">160,000</div></td>
+    <td><div align="center">60,000</div></td>
+    <td><div align="center">15,000</div></td>
+  </tr>
+  <tr> 
+    <td><div align="left"><strong>Seat 3</strong></div></td>
+    <td><div align="center"><font color="#FF0000">170,000</font></div></td>
+    <td><div align="center">140,000</div></td>
+    <td><div align="center">160,000</div></td>
+    <td><div align="center">60,000</div></td>
+    <td><div align="center">15,000</div></td>
+  </tr>
+  <tr> 
+    <td><div align="left"><strong>Seat 4</strong></div></td>
+    <td><div align="center">113,333</div></td>
+    <td><div align="center">140,000</div></td>
+    <td><div align="center"><font color="#FF0000">160,000</font></div></td>
+    <td><div align="center">60,000</div></td>
+    <td><div align="center">15,000</div></td>
+  </tr>
+  <tr> 
+    <td><div align="left"><strong>Seat 5</strong></div></td>
+    <td><div align="center">113,333</div></td>
+    <td><div align="center"><font color="#FF0000">140,000</font></div></td>
+    <td><div align="center">80,000</div></td>
+    <td><div align="center">60,000</div></td>
+    <td><div align="center">15,000</div></td>
+  </tr>
+  <tr> 
+    <td><div align="left"><strong>Seat 6</strong></div></td>
+    <td><div align="center"><font color="#FF0000">113,333</font></div></td>
+    <td><div align="center">93,333</div></td>
+    <td><div align="center">80,000</div></td>
+    <td><div align="center">60,000</div></td>
+    <td><div align="center">15,000</div></td>
+  </tr>
+  <tr> 
+    <td><div align="left"><strong>Seat 7</strong></div></td>
+    <td><div align="center">85,000</div></td>
+    <td><div align="center"><font color="#FF0000">93,333</font></div></td>
+    <td><div align="center">80,000</div></td>
+    <td><div align="center">60,000</div></td>
+    <td><div align="center">15,000</div></td>
+  </tr>
+  <tr> 
+    <td><div align="left"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+    <td><div align="center"></div></td>
+  </tr>
+  <tr> 
+    <td><div align="left"><strong>Total Seats</strong></div></td>
+    <td><div align="center">3</div></td>
+    <td><div align="center">3</div></td>
+    <td><div align="center">1</div></td>
+    <td><div align="center">0</div></td>
+    <td><div align="center">0</div></td>
+  </tr>
+</table>
+
+==Variations==
+
+In some cases, a [[election threshold|threshold]] or ''barrage'' is set, and any list which does not receive that threshold will not have any seats allocated to it, even if it received enough votes to otherwise have been rewarded with a seat. Examples of countries using this threshold are Israel (1.5%) and Belgium (5%, on regional basis).
+
+Some systems allow parties to associate their lists together into a single ''cartel'' in order to overcome the threshold, while some systems set a separate threshold for cartels. Smaller parties often form pre-election [[coalition]]s to make sure they get past the election threshold.
+
+==See also==
+*[[List of democracy and elections-related topics]]
+*[[Voting systems]]
+
+[[Category:Voting systems]]
+
+{{fromwikipedia}}
