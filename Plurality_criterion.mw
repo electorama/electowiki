@@ -4,7 +4,7 @@
 
 <h4 class=left>Complying Methods</h4>
 
-<p>[[Plurality voting|First-Preference Plurality]], [[Approval voting]], [[IRV]], and many [[Condorcet method|Condorcet methods]] (using winning votes as defeat strength) satisfy the Plurality criterion. [[Condorcet method|Condorcet methods]] using margins as the measure of defeat strength fail it, as do [[Raynaud]] regardless of the measure of defeat strength, and also [[Minmax|Minmax(pairwise opposition)]].</p>
+<p>[[Plurality voting|First-Preference Plurality]], [[Approval voting]], [[IRV]], and many [[Condorcet method|Condorcet methods]] (using winning votes as defeat strength) satisfy the Plurality criterion. [[Condorcet method|Condorcet methods]] using margins as the measure of defeat strength fail it, as does [[Raynaud]] (using either winning votes or margins as the measure of defeat strength), and also [[Minmax|Minmax(pairwise opposition)]].</p>
 
 <h4 class=left>Commentary</h4>
 
