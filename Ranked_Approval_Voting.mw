@@ -1,0 +1,15 @@
+'''Ranked Approval Voting''' is an election method combining a ranked ballot with an approval measure. Possibly Kevin Venzke was the first to suggest it on the election methods mailing list, in 2003. It was given the name "Ranked Approval Voting" by Russ Paielli.
+
+== Ballot Format ==
+
+The voter ranks the candidates. Approval could be indicated by a cutoff placed by the voter, or it can be implicit that the approved candidates are all those that the voter chooses to rank.
+
+== Procedure ==
+
+Ranked Approval Voting is a '''[[Condorcet method]]''', which means it always elects a "Condorcet winner" if one exists. A Condorcet winner is a candidate who, given any other candidate ''Y'', more voters rank this candidate above ''Y'' than vice versa.
+
+If a Condorcet winner doesn't initially exist, then the candidate with the least approval is eliminated such that his pairwise contests are no longer considered. These eliminations continue until a Condorcet winner is created; that is, until some non-eliminated candidate has pairwise wins over every other non-eliminated candidate. Then this candidate is elected.
+
+== Advantages ==
+
+Ranked Approval Voting inherently satisfies the [[Smith set|Smith criterion]], without requiring an explicit step to reduce to the Smith set.
