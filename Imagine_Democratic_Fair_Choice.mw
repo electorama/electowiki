@@ -1,33 +1,113 @@
-Welcome to tonight's election show on WDTN.
+''A: Welcome to tonight's election show on WDTN!''
 
-Here on World Democratic Television Network we will give you all the latest news of today's first public election of the Secretary General to the United Nations by you, the people of the world!
+B: Here on World Democratic Television Network we will give you all the latest news of today's first public election of the Secretary General to the United Nations by you, the people of the world!
 
 Some hours ago the last voting booths have been closed, and until now enough votes have been counted to determine the winner with great certainty.
 
-Before joining the officials in performing the last step of the election, let us shortly recall the rules of the sophisticated new voting system which the United Nations adopted last year for this election. Although the system, called "Democratic Fair Choice", requires the voter to make just one or a few simple marks on the ballot, it is based on much more detailed information than most other comparable voting systems. 
+''A: Before joining the officials in performing the last step of the election, let us shortly recall the rules of the sophisticated new voting system which the United Nations adopted last year for this election. Although the system, called '''"Democratic Fair Choice"''', requires the voter to make '''just one or a few simple marks''' on the ballot, it is based on much more detailed information than most other comparable voting systems.'' 
 
-This is because with your one main vote, called the "direct support vote", you not only voted for your favourite candidate today, but you voted for a whole ranking of all the candidates, with your favourite on top. Perhaps you remember those rankings each of the candidates published a week ago? This is the ranking your "direct support vote" is counted for! 
+B: Right, this is because with your one main vote, called the '''"direct support vote"''', you not only voted for your favourite candidate today, but you voted for a whole ''ranking'' of all the candidates, with your favourite on top. Perhaps you remember those '''rankings published by each of the candidates''' a week ago? This is the ranking your "direct support vote" is counted for! 
 
-Unless, of course, you made use of the additional possibilities of your ballot: those "approval votes" can be used to mark as many additional candidates as you want, in order to express that you find them acceptable, in case your favourite may not get enough support to win, and to indicate that you prefer all of them to each of the unmarked candidates. 
+''A: Unless, of course, you made use of the additional possibilities of your ballot! Those '''"approval votes"''' can be used to mark as many additional candidates as you want, in order to express that you find them acceptable, in case your favourite may not get enough support to win.'' 
 
-If you used some "approval votes", then the voting computers will have computed your personal ranking of the candidates for you. How do they do this? They will just take your favourite's ranking and lift all your approved candidates to the top, right below your favourite candidate, keeping their relative ranking intact. 
+B: Yes, and to indicate that you prefer all of these approved candidates to each of the unmarked candidates. If you used some "approval votes", then the voting computers will have inferred your ''individual'' ranking of the candidates for you from the marks you made! 
 
-We should give an example: Let's suppose you voted direct support for Anna and indicated additional approval for Cecil and Deirdre. What was Anna's published ranking? Ah, here it is: Anna ranked
+''A: How do they do this?'' 
+
+B: Well, that's easy: they will just take your favourite's published ranking and lift all your approved candidates to the top, right below your favourite candidate, and keeping their relative order intact. 
+
+''A: We should give an example for this.'' 
+
+B: OK, let's suppose you voted direct support for Anna and indicated additional approval for Cecil and Deirdre on '''your ballot''':
+              I     |  I also
+           support  |  approve
+          directly: |    of:
+  ------------------+----------
+  Anna        X     |     O
+  Bob         O     |     O  
+  Cecil       O     |     X
+  Deirdre     O     |     X
+  Ellen       O     |     O
+  ------------------+----------
+            (vote   | (vote for     
+             for    |  as many
+           exactly  |   as you 
+             one)   |   want)
+What was Anna's published ranking? Ah, here it is: Anna ranked
   1. Anna
   2. Cecil
   3. Bob
   4. Ellen
   5. Deirdre
-  6. ...
-So, your ranking will look the same, except that Deirdre will be lifted above Bob and Ellen since you indicated approval for her, whereas Cecil is already at the right position:
+So, your '''individual ranking''' will look the same, except that Deirdre will be lifted above Bob and Ellen since you indicated approval for her, whereas Cecil is already at the right position:
   1. Anna
   2. Cecil
   3. Deirdre
   4. Bob
   5. Ellen
-  6. ...
-That's a lot information you provided by just making a few marks, isn't it? This way, you can be quite sure that your vote isn't lost and your interests are taken into account properly even when your favourite will not have enough direct support to win!
 
-But now it's time to join the officials and enter the last phase of the election. Look, they are just about to open the sealed envelopes with which the candidates collectively have determined the "proposing voter"! This is the most thrilling moment of the election! Imagine you will be the one voter whose direct support vote starts the final choice procedure! What a great honour it must be to know that one's individual ranking guided the process of finding a winner with profound majority support, even when this will not be one's favourite candidate!
+''A: That's a lot information you provided by just making a few marks, isn't it? This way, you can be quite sure that '''your vote isn't lost''' and your interests are taken into account properly even when your favourite will not have enough support to win!''
 
-...
+''But now it's time to join the officials and enter the last phase of the election. Look, they are just about to open the sealed envelopes with which the candidates collectively have determined the "proposing voter"! This is the most thrilling moment of the election! Imagine you will be the one voter whose direct support vote starts the final choice procedure!''
+
+B: Yes, what a great honour it must be to know that one's favourite's ranking guided the process of finding a winner with profound majority support, even when this will not be one's favourite candidate herself!
+
+''A: Here's a summary of the '''numbered list of all voters''', grouped by which candidate they directly supported, in order of decreasing direct support:''
+  0,000,000,001-2,512,549,572: supporters of Cecil
+  2,512,549,573-4,738,764,902: supporters of Anna
+  4,738,764,903-6,729,027,359: supporters of Deirdre
+  6,729,027,360-8,540,931,755: supporters of Ellen
+  8,540,931,755-9,859,214,704: supporters of Bob
+
+B: And here's the numbers the five candidates submitted in their '''sealed envelopes:'''
+  3,726,527,365, 
+  7,638,541,983, 
+  9,148,688,383, 
+  0,325,826,818, and 
+  6,324,797,103.
+Now the sum of these numbers is the number of the "proposing voter". It's voter no. 27,164,381,652 or rather no. 7,445,952,244 since we continue counting again from 1 when we pass the last voter. This is one of the voters in the fourth block.
+
+''A: So, this is the "proposing voter": Voter no. 7,445,952,244, who voted direct support for Ellen! This means Ellen's published ranking will become the "proposing order" which will lead us through the rest of the process, is that right?''
+
+B: Yes, let's see what this '''"proposing order"''' is:
+  Ellen's published ranking:
+  1. Ellen
+  2. Cecil
+  3. Deirdre
+  4. Bob
+  5. Anna
+
+''A: Does that mean Ellen is the winner?''
+
+B: No, no! This ranking is only the order in which the officials will now look at the candidates until they find one with broad enough support. And in view of the direct support values, I doubt that this will be Ellen.
+
+''A: But what exactly will they do?''
+
+B: Well, they will first consider Ellen, since she is first on the list above, and they will look at how much approval she got. Let us have a look at the list of '''approval''', as indicated by the voters:
+  Anna    4,734,634,646
+  Deirdre 3,814,364,366 
+  Cecil   2,631,734,432 
+  Ellen   2,323,636,264 
+  Bob     1,713,744,366
+
+''A: So, then Anna must win, right?''
+
+B: No, no, that's not necessarily so! You cannot look at only one kind of the information like approval. The whole point of "Democratic Fair Choice" is that all three major kinds of information supplied by the voters and the candidates are taken into account in a balanced way: direct support (for determining the "proposing order"), approval, and '''pairwise comparisons''' (as indicated on the individual rankings). So, Anna might win, but need not to, and I doubt that she will since she comes last in the proposing oder.
+
+''A: But which candidate *is* the winner, then?''
+
+B: '''The winner is the first candidate in the "proposing order" which passes the pairwise contests with all those candidates who got more approval!'''
+
+It's easier to see what happens by looking at an example, so let us just watch what the officials are doing right now: They considered Ellen first, but found that 67% of the voters preferred Cecil to her, who has also received more approval than Ellen. So Ellen is not the winner since she is '''defeated by another candidate on two different measures''', approval and pairwise preferences.
+
+''A: But now they are looking at Cecil, who comes next in the "proposing order"!''
+
+B: Yes, but see: Although Cecil passes the pairwise contest with the more approved Deirdre, he is defeated 52% to 48% by the most approved candidate Anna.
+
+''A: OK, so Cecil is also not the winner. How thrilling! Next comes Deirdre, I guess.''
+
+B: Correct. And because she got so much approval, she must only pass one pairwise contest: with Anna! Here they announce the result: It's 58% for Deirdre, and 42% for Anna. This means Deirdre is the winner!
+
+''A: Ladies and Gentlemen, the next Secretary General to the United Nations, as elected by the people of the world by means of "Democratic Fair Choice", is DEIRDRE! Thank you for watching WDTN, and have a good night!''
+
+B: Good night!
