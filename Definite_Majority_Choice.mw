@@ -40,3 +40,11 @@ If this were a vote for president, one could compare the LPG selection to Gerald
 
 The main reason to grade candidates below the "Gerald Ford" mark would be if you're not optimistic about the chances for your higher-ranked favorite and compromise candidates.  Grading candidate X below the LPG mark gives you a chance to say "I don't like X and
 don't want him to win, but of all the alternatives, he would make the fewest changes in the wrong direction.  I won't give him a passing grade because I want him to have as small a mandate as possible."  Then you have some say in the outcome, instead of leaving the choice among the alternatives to the most vocal and extreme parts of other factions.
+
+== Handling Ties and Near Ties ==
+
+In ordinary DMC, the winner is the candidate in Forest Simmon's '''[http://wiki.electorama.com/wiki/Techniques_of_method_design#Special_sets P]''' set, the ''set of candidates which are not approval-consistently defeated''.
+
+But in the event of a tie or near tie (say, margin within 0.01%), there may be no clear winner.
+
+In that case, form the superset '''P*''', the union of all sets P that result from all possible combinations of reversed ties or near-ties.  Then choose the winner using [http://wiki.electorama.com/wiki/Techniques_of_method_design#Orderings Random Ballot Order].
