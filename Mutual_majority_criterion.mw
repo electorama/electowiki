@@ -1,0 +1,13 @@
+The '''Mutual majority criterion''' is a criterion for evaluating [[voting system]]s.  It applies to [[ranked ballot]] elections.  It can be stated as follows:
+
+:''If there is a majority of voters for which it is true that they all rank a set of candidates above all others, then one of these candidates must win.''
+
+Systems which pass:
+
+[[Borda-Elimination]], [[Bucklin]], [[Coombs]], [[IRV]], [[Kemeny-Young]], [[Nanson (original)]], [[Pairwise-Elimination]], [[Ranked Pairs]], [[Schulze]], [[Smith//Minmax]]
+
+Systems which fail: 
+
+[[Black]], [[Borda]], [[Dodgson]], [[Minmax]], [[Sum of Defeats]]
+
+[[Category:Voting system criteria]]
