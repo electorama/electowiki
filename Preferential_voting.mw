@@ -11,13 +11,13 @@ Voting systems which use a ranked ballot include:
 *[[Instant-runoff voting]]
 *[[Single Transferable Vote]]
 
-(2) ''Preferential voting'' is a synonym for instant-runoff voting, especially in [[Australia]], where such ballots are actually in use in elections. See [[Australian electoral system]].
+(2) ''Preferential voting'' is a synonym for instant-runoff voting, especially in Australia, where such ballots are actually in use in elections. See [[Australian electoral system]].
 
 (3) In Europe, preferential voting denotes what is in United States known as the [[Open list|Open List Proportional Representation]] (Open list PR). It is a voting system giving a voter an option to vote for one of the party lists and then also express a preference for one of the candidates of this list.
 
 (4) Often term preferential voting is used for any kind of intraparty preference.
 
-[[Ballot design]] or [[voting machine]] instructions are particularly important in such systems, as each voter is expected to express a rather complex set of [[tolerances versus preferences| tolerances or preferences]] in each [[vote]].
+Ballot design or voting machine instructions are particularly important in such systems, as each voter is expected to express a rather complex set of [[tolerances versus preferences|tolerances or preferences]] in each vote.
 
 == Ballot variations ==
 
@@ -25,24 +25,17 @@ Voting systems which use a ranked ballot include:
 ** Column rank ballots have limits rankings due primarily to available paper space. For example the image below is limited to three rankings.
 * Write numbers: Hand-written numeric rankings are more compact to vote and easier to hand count.
 * Write names: Hand-written names as a list from first to last preference.
-* Touch screen: A slightly different category of voting is a computer [[Touch screen]] could also be used, asking voters their first, second, etc preferences, and showing the selections so far and remaining choices, allowing selections to be removed if the voter makes a mistake or changes her mind during voting. Some people want touch screen voting to print a paper ballot at the end as a hardcopy backup.
+* Touch screen: A slightly different category of voting is a computer Touch screen could also be used, asking voters their first, second, etc preferences, and showing the selections so far and remaining choices, allowing selections to be removed if the voter makes a mistake or changes her mind during voting. Some people want touch screen voting to print a paper ballot at the end as a hardcopy backup.
 
 ==Scope for corruption==
-A potential problem with preferential votes is that they can be used to undermine a [[secret ballot]], and thus enable [[corruption]] by vote buying.  If there are enough candidates then the number of possible voting patterns may be much larger than the number of voters, and it then becomes possible to use early preferences to vote for the desired candidates and then to use later preferences to identify the voter to the person who has purchased the vote and looks at the ballot papers.  
+A potential problem with preferential votes is that they can be used to undermine a [[secret ballot]], and thus enable corruption by vote buying.  If there are enough candidates then the number of possible voting patterns may be much larger than the number of voters, and it then becomes possible to use early preferences to vote for the desired candidates and then to use later preferences to identify the voter to the person who has purchased the vote and looks at the ballot papers.  
 
-As an example, in the [[Irish general election, 2002]], the electronic votes were published for the [[Dublin]] North [[constituency]].  There were 17 candidates allowing more than 966 million million possible patterns of preferences, but there were fewer than 44,000 votes cast. The most common pattern (for three of the candidates in a particular order) was chosen by 800 voters, and more than 16,000 patterns were chosen by just one voter each.  
+As an example, in the Irish general election of 2002, the electronic votes were published for the Dublin North constituency.  There were 17 candidates, allowing more than 966 million million possible patterns of preferences, but there were fewer than 44,000 votes cast. The most common pattern (for three of the candidates in a particular order) was chosen by 800 voters, and more than 16,000 patterns were chosen by just one voter each.  
 
-One way to avoid this possibility for buying a vote and confirming it has been cast as specified is to prevent partisan observers from systematically viewing each voter's preferences.
+One way to avoid this possibility for buying a vote and confirming it has been cast as specified is to prevent partisan observers from systematically viewing individual voter's preferences.
 
-==How to Vote Cards==
-In Australia, which uses preferential voting for both houses, candidates hand out at the entrance to Polling Stations "How to Vote Cards", which advise voters how best to fill in their ballots to support that candidate, and any cross preference deals they may have arranged with other candidates. These HTVC cards are voluntary, and no voter is obliged to do so, but high proportion are happy to do so.
-
-This may contradict some of the statements made in the previous item.
-
-==Above the line Voting==
-
-In Australia, election for the upper houses which use proportional representation as well as preferential voting, it may be daunting to have to fill in 70 boxes - preferences are compulsory. To ease this onerous task, "Above the line" voting, allows the voter to choose one party or group, and all the remaing squares are deemed to be filled in according to a registered party ticket. About 95% of voters choose to use this method.
+==How to Vote Cards and "Above the line" voting==
+In Australia, which uses preferential voting for both houses, candidates hand out at the entrance to Polling Stations "How to Vote Cards", which advise voters how best to fill in their ballots to support that candidate, and any cross preference deals they may have arranged with other candidates. These HTVC cards are voluntary, and no voter is obliged to do so, but high proportion are happy to do so.  In elections for the upper houses, which use proportional representation as well as preferential voting, it may be daunting to have to fill in 70 boxes - preferences are compulsory. To ease this onerous task, "Above the line" voting, allows the voter to choose one party or group, and all the remaing squares are deemed to be filled in according to a registered party ticket. About 95% of voters choose to use this method.
 
 [[Category:Ballot type]]
-
 {{fromwikipedia}}
