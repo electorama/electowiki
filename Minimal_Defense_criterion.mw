@@ -16,5 +16,11 @@ It's also required that the method permits voters to submit complete or incomple
 
 Methods satisfying '''Minimal Defense''' include Steve Eppley's own [[Maximize Affirmed Majorities]] method, [[Cloneproof Schwartz Sequential Dropping]] using winning votes as the measure of defeat strength, Jobst Heitzig's [[River]] method, and methods electing from the [[CDTT|CDTT set]].
 
+<h4 class=left>Commentary</h4>
+
+In a method that satisfies '''Minimal Defense''', when a majority of the voters prefer candidate ''A'' to candidate ''B'', all that these voters need to do to avoid the election of ''B'' is to not give ''B'' a ranking over another candidate.
+
+In particular, even if all of the voters preferring ''A'' to ''B'' each prefer many other different candidates to ''A'', '''Minimal Defense''' guarantees that these voters don't need to insincerely rank ''A'' above or even equal to these other candidates to ensure that ''B'' won't be elected.
+
 == External Resources ==
 * [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)]
