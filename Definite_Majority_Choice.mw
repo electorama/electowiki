@@ -16,11 +16,10 @@ DMC is currently the best candidate for a Condorcet Method that meets the '[[Pub
 == Procedure ==
 
 === The Ballot ===
+A voter ranks candidates in order of preference, and may decide to rank some candidates without giving them approval.
 
-Voters rank their preferred candidates, from favorite to least preferred, and may optionally specify an '''Approval Cutoff'''.
-
-A [[Graded Ballot]] ballot implementation would infer the ordinal ranking from the grades given to candidates, and the Approval Cutoff would be determined with a Lowest Passing Grade option.  Voters could grade their choices from favorite (A+) to least preferred (ungraded), and give some or all of their graded choices a "passing grade" to signify approval.
-
+==== Graded Ballot format ====
+A [[Graded Ballot]] ballot implementation would infer the ordinal ranking from the grades given to candidates.
 <pre>
             A    B    C    D    F       +  /  -
 				       	    	  
@@ -31,33 +30,43 @@ A [[Graded Ballot]] ballot implementation would infer the ordinal ranking from t
       X3   ( )  ( )  ( )  ( )  ( )     ( )   ( )
 				       	    	  
       X3   ( )  ( )  ( )  ( )  ( )     ( )   ( )
-				       	    	  
-   Lowest  ( )  ( )  ( )  ( )  ( )     ( )   ( )
-   Passing
-   Grade
-   ("C" by default)
 </pre>
 
 A voter may give the same grade (rank) to more than one candidate.   Ungraded candidates are graded (ranked) below all graded candidates.
 
-Any candidate at the Lowest Passing Grade or higher is given one Approval vote.  Unless explicitly changed, the Lowest Passing Grade is assumed to be C.
+A candidate gets one vote in the one-to-one contest with any other candidate with a lower grade (rank).
 
-No Approval votes are given to ungraded candidates or candidates graded below the Lowest Passing Grade (i.e., C- and lower, by default).
+C is the "Lowest Passing Grade":  any candidate with a grade of C or higher gets one Approval point.  No Approval points are given to candidates graded at C-minus or below, or to ungraded candidates.
 
 Grades assigned to non-passing (disapproved) candidates help determine which of them will win if the voter's approved candidates do not win.
 
-Adding a plus or minus to a candidate's grade is optional, but enables 16 rank levels (including no rank given).
+In small races it should be sufficient to grade 2 or 3 candidates, but in crowded races, there is the option to add a plus or minus to the grade, allowing a voter to rank candidates at up to 16 levels:  8 approved (A-plus to C) and 8 unapproved (C-minus to unranked).
 
-99% of the time, there should be no need to change the LPG -- with 8 default approved grade levels from A+ to C, there is plenty of room to express relative preferences.
+With the Approval Cutoff / Lowest Passing Grade at C instead of C-minus, an indecisive voter can be hesitant about granting approval by initially filling in a grade of C.  If after reconsideration the voter decides to withold approval, the minus can then be checked.
 
-Setting the default LPG at C instead of C-minus allows an indecisive voter to be hesitant about granting approval by initially filling in a grade of C.  If after reconsideration the voter decides to disapprove the candidate, the minus can then be checked.
+==== Ranked Ballot format ====
+If the Graded Ballot is deemed too complex, a ranked ballot may be used.  Here is one possible format:
+<pre>
+           |<-- Approved -->|
+            1    2    3    4      5    6    7
+				       	    	  
+      X1   ( )  ( )  ( )  ( )    ( )  ( )  ( )
+				       	    	  
+      X2   ( )  ( )  ( )  ( )    ( )  ( )  ( )
+				       	    	  
+      X3   ( )  ( )  ( )  ( )    ( )  ( )  ( )
+				       	    	  
+      X3   ( )  ( )  ( )  ( )    ( )  ( )  ( )
+</pre>
 
-Having an LPG option may be useful as a last resort --- it allows a voter to move the cutoff higher or lower after entering grades if the voter makes a mistake.  But it is not necessary to have an LPG option in a first public proposal.
+Ranks 1 through 4 would be approved, 5 through 7 and ungraded would be unapproved.
+
+This ballot is less flexible and intuitive than the Graded Ballot version, but the voting method would be unchanged otherwise.
 
 ==== Discussion ====
 What is a voter saying by giving a candidate a grade below the Approval Cutoff?
 
-One could consider the LPG to be like Gerald Ford.  Anybody better would make a good president, and anybody worse would be bad.
+One could consider the Lowest Passing Grade (LPG) to be like Gerald Ford.  Anybody better would make a good president, and anybody worse would be bad.
 
 Grading candidate X below the LPG gives the voter a chance to say "I don't want X to win, but of all the alternatives, X would make fewest changes in the wrong direction.  I also won't give X a passing grade because I want X to have as small a mandate as possible."  This allows the losing minority to have some say in the outcome of the election, instead of leaving the choice to the strongest core support within the majority faction.
 
