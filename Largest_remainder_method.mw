@@ -1,0 +1,422 @@
+The '''largest remainder method''' is one way of allocating seats proportionally for representative assemblies with [[Party-list proportional representation|party list]] [[voting systems]].  It is a contrast to the [[highest averages method]].  
+
+==Method==
+
+The ''largest remainder method'' requires the number of votes for each party to be divided a [[quota]] representing the number of votes ''required'' for a seat, and this gives a notional number of seats to each, usually including an [[integer]] and either a [[fraction]] or alternatively a [[remainder]].  Each party receives seats equal to the integer.  This will generally leave some seats unallocated: the parties are then ranked on the basis of the fraction or equivalently on the basis of the remainder, and parties with the larger fractions or remainders are each allocated one additional seat until all the seats have been allocated.  This gives the method its name.
+
+==Quotas==
+
+There are several possibilities for the quota. The most common are: 
+the [[Hare quota]] and the [[Droop quota]]. 
+
+The Hare Quota is defined as follows
+
+:<math>\frac{\mbox{total} \; \mbox{votes}}{\mbox{total} \; \mbox{seats}}</math>
+
+The [[Hamilton method|Hamilton method of apportionment]] is actually a largest-remainder method which is specifically defined as using the Hare Quota. It is used for legislative elections in [[Namibia]] and in the territory of [[Legislative Council of Hong Kong|Hong Kong]]. It was historically applied for [[United States Congressional Apportionment|congressional apportionment]] in the [[United States]] during the [[nineteenth century]].
+
+The [[Droop quota]] is the integer part of 
+
+:<math>1+\frac{\mbox{total} \; \mbox{votes}}{1+\mbox{total} \; \mbox{seats}}</math>
+
+and is applied in elections in South Africa.
+
+The Hare quota tends to be slightly more generous to less popular parties and the Droop quota to more popular parties.  Which is more proportional depends on what measure of proportionality is used.
+
+The [[Imperiali quota]] 
+:<math>\frac{\mbox{total} \; \mbox{votes}}{2+\mbox{total} \; \mbox{seats}}</math>
+is rarely  used since it suffers from the problem that it may result in more candidates being elected than there are seats available; this will certainly happen if there are only two parties.  In such a case, it is usual to increase the quota until the number of candidates elected is equal to the number of seats available, in effect changing the voting system to a highest averages system with the [[d'Hondt method|Jefferson apportionment formula]].
+
+==Technical evaluation and paradoxes==
+The largest remainder method is the only apportionment that satisfies the [[quota rule]]; in fact, it is designed to satisfy this criterion. However, it comes at the cost of [[paradox|paradoxical behaviour]]. The [[Alabama paradox]] is defined as when an increase in seats apportioned leads to decrease in the number of seats a certain party holds. Suppose we want to apportion 25 seats between 6 parties in the proportions 1500:1500:900:500:500:200. The two parties with 500 votes get three seats each. Now allocate 26 seats, and it will be found that the these parties get only two seats apiece.
+
+With 25 seats, we get:
+
+<table border=1>
+ <tr>
+  <td >Party</td>
+  <td  >A</td>
+  <td  >B</td>
+  <td  >C</td>
+  <td  >D</td>
+  <td  >E</td>
+  <td  >F</td>
+  <td  >Total</td>
+ </tr>
+ <tr  >
+  <td  >Votes</td>
+  <td >1500</td>
+  <td  >1500</td>
+  <td   >900</td>
+  <td  >500</td>
+  <td  >500</td>
+  <td  >200</td>
+  <td >5100</td>
+ </tr>
+ <tr  >
+  <td  >Seats</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >25</td>
+ </tr>
+ <tr  >
+  <td >Hare Quota</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >204</td>
+ </tr>
+ <tr  >
+  <td  >Quotas Received</td>
+  <td >7.35</td>
+  <td  >7.35</td>
+  <td  >4.41</td>
+  <td  >2.45</td>
+  <td  >2.45</td>
+  <td  >0.98</td>
+  <td >&nbsp;</td>
+ </tr>
+ <tr  >
+  <td  >Automatic seats</td>
+  <td >7</td>
+  <td  >7</td>
+  <td  >4</td>
+  <td  >2</td>
+  <td  >2</td>
+  <td  >0</td>
+  <td  >22</td>
+ </tr>
+ <tr  >
+  <td  >Remainder</td>
+  <td  >0.35</td>
+  <td  >0.35</td>
+  <td  >0.41</td>
+  <td  >0.45</td>
+  <td  >0.45</td>
+  <td  >0.98</td>
+  <td >&nbsp;</td>
+ </tr>
+ <tr  >
+  <td  >Surplus seats</td>
+  <td  >0</td>
+  <td  >0</td>
+  <td  >0</td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >3</td>
+ </tr>
+ <tr  >
+  <td  >Total Seats </td>
+  <td  >7</td>
+  <td  >7</td>
+  <td  >4</td>
+  <td  >3</td>
+  <td  >3</td>
+  <td  >1</td>
+  <td  >25</td>
+ </tr>
+</table>
+
+With 26 seats, we have:
+<table border=1>
+ <tr>
+  <td >Party</td>
+  <td  >A</td>
+  <td  >B</td>
+  <td  >C</td>
+  <td  >D</td>
+  <td  >E</td>
+  <td  >F</td>
+  <td  >Total</td>
+ </tr>
+ <tr  >
+  <td  >Votes</td>
+  <td >1500</td>
+  <td  >1500</td>
+  <td   >900</td>
+  <td  >500</td>
+  <td  >500</td>
+  <td  >200</td>
+  <td >5100</td>
+ </tr>
+ <tr  >
+  <td  >Seats</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >26</td>
+ </tr>
+ <tr  >
+  <td >Hare Quota</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >196</td>
+ </tr>
+ <tr  >
+  <td  >Quotas Received</td>
+  <td >7.65</td>
+  <td  >7.65</td>
+  <td  >4.59</td>
+  <td  >2.55</td>
+  <td  >2.55</td>
+  <td  >1.02</td>
+  <td >&nbsp;</td>
+ </tr>
+ <tr  >
+  <td  >Automatic seats</td>
+  <td >7</td>
+  <td  >7</td>
+  <td  >4</td>
+  <td  >2</td>
+  <td  >2</td>
+  <td  >1</td>
+  <td  >23</td>
+ </tr>
+ <tr  >
+  <td  >Remainder</td>
+  <td  >0.65</td>
+  <td  >0.65</td>
+  <td  >0.59</td>
+  <td  >0.55</td>
+  <td  >0.55</td>
+  <td  >0.02</td>
+  <td >&nbsp;</td>
+ </tr>
+ <tr  >
+  <td  >Surplus seats</td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >0</td>
+  <td  >0</td>
+  <td  >0</td>
+  <td  >3</td>
+ </tr>
+ <tr  >
+  <td  >Total Seats </td>
+  <td  >8</td>
+  <td  >8</td>
+  <td  >5</td>
+  <td  >2</td>
+  <td  >2</td>
+  <td  >1</td>
+  <td  >26</td>
+ </tr>
+</table>
+
+== Examples==
+
+These examples take an election to allocate 10 seats where there are 100,000 votes.
+
+===Hare quota===
+<table border=1>
+ <tr>
+  <td >Party</td>
+  <td  >Yellows</td>
+  <td  >Whites</td>
+  <td  >Reds</td>
+  <td  >Greens</td>
+  <td  >Blues</td>
+  <td  >Pinks</td>
+  <td  >Total</td>
+ </tr>
+ <tr  >
+  <td  >Votes</td>
+  <td >47,000</td>
+  <td  >16,000</td>
+  <td   >15,800</td>
+  <td  >12,000</td>
+  <td  >6,100</td>
+  <td  >3,100</td>
+  <td >100,000</td>
+ </tr>
+ <tr  >
+  <td  >Seats</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >10</td>
+ </tr>
+ <tr  >
+  <td >Hare Quota</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >10,000</td>
+ </tr>
+ <tr  >
+  <td  >Votes/Quota</td>
+  <td >4.70</td>
+  <td  >1.60</td>
+  <td  >1.58</td>
+  <td  >1.20</td>
+  <td  >0.61</td>
+  <td  >0.31</td>
+  <td >&nbsp;</td>
+ </tr>
+ <tr  >
+  <td  >Automatic seats</td>
+  <td >4</td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >0</td>
+  <td  >0</td>
+  <td  >7</td>
+ </tr>
+ <tr  >
+  <td  >Remainder</td>
+  <td  >0.70</td>
+  <td  >0.60</td>
+  <td  >0.58</td>
+  <td  >0.20</td>
+  <td  >0.61</td>
+  <td  >0.31</td>
+  <td >&nbsp;</td>
+ </tr>
+ <tr  >
+  <td  >Highest Remainder Seats </td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >0</td>
+  <td  >0</td>
+  <td  >1</td>
+  <td  >0</td>
+  <td  >3</td>
+ </tr>
+ <tr  >
+  <td  >Total Seats </td>
+  <td  >5</td>
+  <td  >2</td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >0</td>
+  <td  >10</td>
+ </tr>
+</table>
+
+===Droop quota===
+<table border=1>
+ <tr  >
+  <td >Party</td>
+  <td  >Yellows</td>
+  <td  >Whites</td>
+  <td  >Reds</td>
+  <td  >Greens</td>
+  <td  >Blues</td>
+  <td  >Pinks</td>
+  <td  >Total</td>
+ </tr>
+ <tr  >
+  <td  >Votes</td>
+  <td  >47,000</td>
+  <td  >16,000</td>
+  <td  >15,800</td>
+  <td  >12,000</td>
+  <td  >6,100</td>
+  <td  >3,100</td>
+  <td  >100,000</td>
+ </tr>
+ <tr  >
+  <td  >Seats</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >10</td>
+ </tr>
+ <tr  >
+  <td >Droop Quota</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td >&nbsp;</td>
+  <td  >9,091</td>
+ </tr>
+ <tr  >
+  <td  >Votes/Quota </td>
+  <td >5.170</td>
+  <td >1.760</td>
+  <td >1.738</td>
+  <td >1.320</td>
+  <td >0.671</td>
+  <td >0.341</td>
+  <td >&nbsp;</td>
+ </tr>
+ <tr  >
+  <td  >Automatic  seats </td>
+  <td  >5</td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >0</td>
+  <td  >0</td>
+  <td  >8</td>
+ </tr>
+ <tr  >
+  <td  >Remainder</td>
+  <td >0.170</td>
+  <td >0.760</td>
+  <td >0.738</td>
+  <td >0.320</td>
+  <td >0.671</td>
+  <td >0.341</td>
+  <td >&nbsp;</td>
+ </tr>
+ <tr  >
+  <td  >Highest Remainder Seats </td>
+  <td  >0</td>
+  <td  >1</td>
+  <td  >1</td>
+  <td  >0</td>
+  <td  >0</td>
+  <td  >0</td>
+  <td  >2</td>
+ </tr>
+ <tr  >
+  <td  >Total Seats </td>
+  <td  >5</td>
+  <td  >2</td>
+  <td  >2</td>
+  <td  >1</td>
+  <td  >0</td>
+  <td  >0</td>
+  <td  >10</td>
+ </tr>
+</table>
+
+==See also==
+* [[List of democracy and elections-related topics]] 
+
+[[Category:Voting systems]]
+
+==External links==
+*[http://www.cut-the-knot.org/Curriculum/SocialScience/AHamilton.shtml Hamilton method experimentation applet]
+
+{{fromwikipedia}}
