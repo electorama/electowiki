@@ -6,7 +6,7 @@ Equivalently it can be defined as the set containing each candidate ''A'' who ha
 
 == Uses ==
 
-Limiting an election method's selection to the CDTT members can permit it to satisfy the [[Strong Defensive Strategy criterion]] (or [[Minimal Defense]]) and [[Mutual majority criterion|Majority]], while coming close to satisfying the [[Later-no-harm criterion]]. Specifically, the CDTT completely satisfies [[Later-no-harm criterion|Later-no-harm]] in the three-candidate case, and failures can only occur in the general case when there are majority-strength cycles.
+Limiting an election method's selection to the CDTT members can permit it to satisfy the [[Minimal Defense criterion]] (and thus the [[Strong Defensive Strategy criterion]]) and [[Mutual majority criterion|Majority]], while coming close to satisfying the [[Later-no-harm criterion]]. Specifically, the CDTT completely satisfies [[Later-no-harm criterion|Later-no-harm]] in the three-candidate case, and failures can only occur in the general case when there are majority-strength cycles.
 
 In order to maximize Later-no-harm compliance, the CDTT should be paired with a method that itself fully satisfies Later-no-harm. In order to ensure that [[Monotonicity criterion|Mono-raise]] is not failed, the paired method should be used to generate a ranking of the candidates which is not influenced by which candidates make it into the CDTT. Then the CDTT member who appears first in this ranking is elected.
 
