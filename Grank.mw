@@ -1,5 +1,3 @@
 '''GRank''' is a project for improving '''G'''raphical '''Rank'''ing interfaces for web polling and voting systems.  It was started in October 2004 by [[User:RobLa|Rob Lanphier]] and Rob Brown.
 
 [http://electorama.com/2004/condorcetballot/ An initial version of the code (demo and source)] is available.  The CVS repository can be found [http://sourceforge.net/projects/grank at the Sourceforge project page].
-
-[[Category:Voting software]]
