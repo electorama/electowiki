@@ -15,7 +15,7 @@ The philosophical basis of DMC (also due to [http://lists.electorama.com/piperma
 DMC is currently the best candidate for a Condorcet Method that meets the [[Public Acceptability Criterion|Public Acceptability "Criterion"]].
 == Procedure ==
 The DMC differs from the [[Condorcet Criterion|Condorcet Winner]] in one crucial respect:
-:The Definite Majority Choice winner is the candidate ''with lowest approval'' who, when compared in turn with each of the other ''higher-approved'' candidates, is preferred over the other candidate.
+:The Definite Majority Choice winner is the ''least approved'' candidate who, when compared in turn with each of the other ''higher-approved'' candidates, is preferred over the other candidate.
 
 We'll illustrate how the method works with a deliberately crude ballot and then explore other ballot formats.
 
