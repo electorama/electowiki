@@ -1,32 +1,18 @@
-The '''Condorcet (doubly-augmented gross) top tier''' or '''CDTT''' is defined by Douglas Woodall as the union of all minimal nonempty sets of candidates such that no candidate in each set has a majority-strength pairwise loss to any candidate outside of the set.
+The '''Condorcet doubly-augmented top tier''' or '''CDTT''' is defined by Douglas Woodall as the union of all minimal nonempty sets of candidates such that no candidate in each set has a majority-strength pairwise loss to any candidate outside of the set.
 
 Equivalently it can be defined as the set containing each candidate ''A'' who has a majority-strength beatpath to every other candidate ''B'' who has a majority-strength beatpath to ''A''. That is, a candidate ''A'' is in the CDTT unless some candidate ''B'' has a majority-strength beatpath to ''A'' while ''A'' has no such beatpath to ''B''.
 
-(The term ''doubly-augmented'' refers to Woodall's notion of the ''doubly-augmented gross score'' of one candidate against another. This score, for ''X'' against ''Y'', is defined as the number of voters ranking ''X'' above ''Y'', plus the full number of voters abstaining from this pairwise contest. Then the CDTT can be defined as the union of all minimal nonempty sets such that no candidate in each set has a doubly-augmented gross score of less than half the number of votes, against any candidate outside the set.)
-
-== EM mailing list ==
-
-In the pre-2005 years, CDTT was called [http://lists.electorama.com/pipermail/election-methods-electorama.com/1997-May/001484.html Smith//Truncation set] and [http://lists.electorama.com/pipermail/election-methods-electorama.com/1997-October/001544.html beatpath GMC] (where ''GMC'' means ''Generalized Majority Criterion'') at the EM mailing list.
-
 == Uses ==
 
-Limiting an election method's selection to the CDTT members can permit it to satisfy the [[Minimal Defense criterion]] (and thus the [[Strong Defensive Strategy criterion]]) and the [[Mutual majority criterion|Majority criterion for solid coalitions]], while coming close to satisfying the [[Later-no-harm criterion]]. Specifically, the CDTT completely satisfies [[Later-no-harm criterion|Later-no-harm]] in the three-candidate case, and failures can only occur in the general case when there are majority-strength cycles.
+Limiting an election method's selection to the CDTT members can permit it to satisfy the [[Strong Defensive Strategy criterion]] (or [[Minimal Defense]]) and [[Mutual majority criterion|Majority]], while coming close to satisfying the [[Later-no-harm criterion]]. Specifically, the CDTT completely satisfies [[Later-no-harm criterion|Later-no-harm]] in the three-candidate case, and failures can only occur in the general case when there are majority-strength cycles.
 
-(Please see the articles on the [[Minimal Defense criterion]] and [[Later-no-harm criterion]] for commentary on the significance of these criteria.)
-
-The CDTT's [[Later-no-harm criterion|Later-no-harm]] performance can be preserved by pairing the CDTT with a method which itself fully satisfies [[Later-no-harm criterion|Later-no-harm]]. When the paired method is used to generate a ranking of the candidates which is ''not'' influenced by which candidates make it into the CDTT, then compliance with the [[Monotonicity criterion]] can be preserved when the paired method already satisfies this criterion. Then the CDTT member who appears first in this ranking would be elected.
+In order to maximize Later-no-harm compliance, the CDTT should be paired with a method that itself fully satisfies Later-no-harm. In order to ensure that [[Monotonicity criterion|Mono-raise]] is not failed, the paired method should be used to generate a ranking of the candidates which is not influenced by which candidates make it into the CDTT. Then the CDTT member who appears first in this ranking is elected.
 
 Some methods which can be paired in this way with the CDTT:
 *'''[[Random Ballot]]''': This can be very indecisive, but it is conceptually simple, and it satisfies [[Monotonicity criterion|Mono-raise]] and Clone Independence.
 *'''[[Plurality voting|First-Preference Plurality]]''': This is decisive, simple, and [[Monotonicity criterion|monotone]], but fails Clone Independence.
-*'''[[Instant-runoff voting|Instant Runoff Voting]]''': This is more complicated. It satisfies Clone Independence but not [[Monotonicity criterion|monotonicity]]. The IRV ranking would be the reverse of the candidates' elimination order.
+*'''[[Instant-runoff voting|Instant Runoff Voting]]''': This is more complicated. It satisfies Clone Independence but not [[Monotonicity criterion|monotonicity]].
 *'''[[Descending Solid Coalitions]]''': This is also somewhat complicated, but it's the only non-random option which satisfies Clone Independence and [[Monotonicity criterion|Mono-raise]].
 *'''[[Minmax|MinMax (Pairwise Opposition)]]''': This has the advantage that it is calculated based on the pairwise matrix, just as the CDTT itself is. However, it is somewhat indecisive and fails Clone Independence. It satisfies [[Monotonicity criterion|Mono-raise]].
 
-When the CDTT is paired with a method which satisfies [[Later-no-harm criterion|Later-no-harm]], the combined method fails the [[Plurality criterion]] and [[Condorcet criterion]]. Otherwise there need not be any incompatibility. For example, the [[Schulze method]] (using ''[[Minmax|winning votes]]'') always elects from the CDTT and also satisfies both of [[Plurality criterion|Plurality]] and [[Condorcet criterion|Condorcet]].
-
-== References ==
-
-* Woodall, Douglas R. (2003). "Properties of single-winner preferential election rules II: examples and problems". (Draft.)
-
-[[Category:Single-winner voting methods]]
+Regardless of the method paired with the CDTT, it should be noted that the combined method necessarily fails the [[Plurality criterion]] and [[Condorcet criterion]].
