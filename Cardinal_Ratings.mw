@@ -2,16 +2,15 @@
 
 == Voting ==
 
-For each candidate, each voter expresses the utility of that candidate's election to them in the form of a number.  In "pure" range voting, each voter may give any candidate any real number, but as the potential for [[tactical voting]] is huge, most systems use upper and lower bounds.  For example, each voter might give a real number between -1 and 1, or an integer between 1 and 10.
+Cardinal Ratings uses a [[ratings ballot]]; that is, each voter rates each candidate with a number.  In "pure Cardinal Ratings", each voter may give any candidate any real number, but as the potential for [[tactical voting]] is huge, most systems use upper and lower bounds.  For example, each voter might give a real number between -1 and 1, or an integer between 1 and 10.
 
-Range voting in which only two different votes may be submitted (0 and 1, for example) is equivalent to [[approval voting]].
+Cardinal Ratings in which only two different votes may be submitted (0 and 1, for example) is equivalent to [[approval voting]].
 
-Range voting satisfies the [[monotonicity criterion]].
+Cardinal Ratings satisfies the [[monotonicity criterion]].
 
 == Counting the Votes ==
 
-The scores for each candidate are summed, and the candidates with the
-highest sums are declared the winners.
+The scores for each candidate are summed, and the candidates with the highest sums are declared the winners.
 
 Another method of counting is to find the [[median]] score of each candidate, and elect the candidate with the highest median score.
 
@@ -67,10 +66,9 @@ Nashville wins.
 
 ==Strategy==
 
-In general, the optimal strategy for range voting is to vote it identically to approval voting, so that all candidates are given either the maximum score or the minimum score. For more detailed strategies, see [[approval voting]].
+In general, the optimal strategy for Cardinal Ratings is to vote it identically to approval voting, so that all candidates are given either the maximum score or the minimum score. For more detailed strategies, see [[approval voting]].
 
 Range voting assumes that voters are actually expressing their personal feelings rather than doing everything they can to cause their most favored outcomes.
 
 [[Category:Voting systems]]
-
 {{fromwikipedia}}
