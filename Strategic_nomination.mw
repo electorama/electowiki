@@ -1,0 +1,30 @@
+'''Strategic nomination''' is the manipulation of an [[election]] through its candidate set (compare this to [[tactical voting]], where the manipulation comes from the voters).
+
+Obviously, if the winner of an election wasn't running in the first place then somebody else would have won instead and if a candidate gets "added" to an election it should be possible that this candidate now wins. If these are the only cases in which a change in the candidate set leads to a different election outcome, then the [[voting system]] is [[Independence of irrelevant alternatives|independent of irrelevant alternatives]] and therefore immune to strategic nomination.
+
+'''Independence of irrelevant alternatives''', however, is a very hard property to satisfy (satisfied, for one, by cardinal or average ratings). This is illustrated by the following example of Condorcet's [[voting paradox]]:
+
+* 40 voters preferring candidate A to B to C
+* 35 voters preferring candidate B to C to A
+* 25 voters preferring candidate C to A to B
+
+Whichever candidate an election method chooses as winner here, one can always cause one other candidate to get a majority of votes against this one by removing the third candidate. Since the absence of any candidate would leave the impression that the preference of the group of voters as a whole is clear-cut while it's clearly not, one can argue that none of these candidates, now that they form a cycle (i.e. are part of the [[Smith set]]), are "irrelevant" as their combined presence provides conflicting information (both to the election system as well as to observers). Because of this strange relationship between the candidates and the voters, strategic nomination through this manner is doubtful as it becomes very much a question of whether the presence or absence in an election of a potential "cycle-maker" (provided one exists and can be found) can be decided by those who seek to gain from it.
+
+In light of this, (academic) attention is usually restricted to a specific, more obvious, kind of strategic nomination: the kind which involve '''clones'''. Clones in this context are those candidates such that every voter rank them the same relative to every other candidate. Strategic nomination through clone manipulation is much easier as examples of real life (near-)clones are easy to come by in the form of candidates from the same [[political party]] or differently worded but identical proposals. Election systems can be affected by clones in various ways:
+#'''[[Vote-splitting]]''' happens when adding clones decreases the chance of any of them winning. It is considered to be a [[spoiler effect]]. Methods that suffer from this include the [[First Past the Post electoral system]] and two-round [[runoff voting]]. This explains why parties will usually just let one candidate run in such a single-winner election by making a selection beforehand (see in that regard [[primary election]]).
+#'''Teaming''' happens when adding more clones actually helps the chances of any of them winning. [[Borda count|Borda]], for one, is notorious for suffering from it.
+#'''Crowding''' is when adding clones affects the outcome of an election without either hurting or harming the chances of the clone group. An example is the [[Kemeny-Young Maximum Likelihood Method]] of choosing a winner.
+
+If an election system is unaffected by clones (i.e. neither the addition nor the removal of a clone will ever lead to a change from a win of a member of the clone set to a win of a non-clone or vice versa), then it can be called '''independent of clones'''. The property "independence of clones" was first formulated by [[Nicolaus Tideman]].
+
+Although the real existence of clones is nearly impossible as it only takes one voter to create a differentiation between two candidates, the behavior an election method shows with regard to clones will tend to apply gracefully when it comes to near-clone situations (unless the election system was a deliberately contrived construction, e.g. a [[Borda count|Borda election]] after a purging of clones).
+
+==See also==
+* [[List of democracy and elections-related topics]] 
+
+==External links==
+[http://www.condorcet.org/emr/singfaq.shtml Single-Winner Electoral Methods FAQ]
+
+[[Category:Voting theory]]
+
+{{fromwikipedia}}
