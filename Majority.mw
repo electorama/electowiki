@@ -9,14 +9,11 @@ A '''majority''' means, literally, "more than half".  Compare this with [[plural
 == Majority rule/Majority winner - Four Critera==
 
 Many methods claim to elect the "majority winner" or work by "majority rule" (See, for example, the [[Center for Voting and Democracy|CVD]]'s talking points re: IRV: [http://www.fairvote.org/irv/talking.htm]).  However, [[Condorcet's paradox]] raises an issue: with some groups of voters, no matter which candidate wins, ''some'' majority of the voters will prefer a different candidate.  Below is a list of criterion, in ascending order of strictness, which could be used to rank the relative strengths of a "majority."
-
- *Criterion 1: If a majority of the electorate coordinates their efforts, 
-               they can assure that a given candidate is elected, 
-               or that another given candidate is not elected. 
- *Criterion 2: [[Mutual majority criterion]]
- *Criterion 3: [[Condorcet criterion]]
- *Criterion 4: Minimal dominant set ([[Smith set|Smith]], GeTChA) efficiency 
-
+<div Style="background-color:#ffffff;padding:12px;margin-left:12px;margin-right:12px;margin-top:12px;margin-bottom:12px;border-width:thick;border-style:double;border-color:#cc9999">
+*Criterion 1: If a majority of the electorate coordinates their efforts, they can assure that a given candidate is elected, or that another given candidate is not elected. 
+*Criterion 2: [[Mutual majority criterion]]
+*Criterion 3: [[Condorcet criterion]]
+*Criterion 4: Minimal dominant set ([[Smith set|Smith]], GeTChA) efficiency </div>
 In pseudo-majority methods (like plurality and range voting), a given majority of the electorate '''can''' coordinate their intentions and decide the winner, but this merely postpones the question of how they do this. The stronger majority methods not only enable firmly coordinated majorities to assert themselves, but they allow un-coordinated majorities to '''reveal''' themselves, without any need for prior coordination. Voting methods that facilitate this process of revelation are considered superior to those that do not.
 
 The remaining three categories allow mutual majorities to reveal themselves (in the absence of a self-defeating strategy by supporters of this majority). Strong majority rule methods not only reveal mutual majorities, but they reveal [[minimal dominant set]]s and Condorcet winners (in the absence of a severe [[burying strategy]]). This is considered especially valuable because it means revealing possible compromises on divisive issues, thus avoiding a lot of political polarization and strife.
