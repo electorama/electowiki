@@ -1,0 +1,3 @@
+'''Raynaud''' or '''Pairwise-Elimination''' is a [[Condorcet criterion|Condorcet method]] in which the loser of the strongest pairwise defeat is repeatedly eliminated until only one candidate remains. Usually, defeat strength is measured as the absolute number of votes cast for the winning side.
+
+In contrast to most other Condorcet methods using winning votes as the measure of defeat strength, Raynaud fails the [[Plurality criterion]]. It also fails the [[Monotonicity criterion]].
