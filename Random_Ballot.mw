@@ -1,0 +1,14 @@
+'''Random Ballot''', also known as '''Random Dictatorship''', is a [[voting system]] in which the first preference candidate of a ballot drawn at random is elected.
+
+When the drawn ballot is not decisive, then additional ballots are drawn and used only to resolve the indecision of previously drawn ballots.
+
+== Properties ==
+
+Random Ballot satisfies the [[Plurality criterion]], [[Monotonicity criterion]], [[Participation criterion]], [[Later-no-harm criterion]], Clone Independence, [[Favorite Betrayal criterion]], and [[Pareto efficiency|Pareto criterion]].
+
+However, Random Ballot fails the [[Mutual majority criterion|Majority criterion]], [[Condorcet criterion]], [[Smith set|Smith criterion]], and [[Strong Defensive Strategy criterion]].
+
+===Example===
+{{Tenn_voting_example}}
+
+Memphis wins with 42% probability, Nashville with 26%, Chattanooga 15%, and Knoxville 17%. If the Knoxville and Chattanooga voters has instead ranked Knoxville and Chattanooga equally, and one of their ballots had been drawn, then Knoxville would win with 0% probability, since it would be impossible to draw a ballot which prefers Knoxville to Chattanooga.
