@@ -1,0 +1,11 @@
+'''Minmax''' is the name of several election methods based on electing the candidate with the lowest score, based on votes received in pairwise contests with other candidates.
+
+'''Minmax(winning votes)''' elects the candidate whose greatest pairwise loss to another candidate is the least, when the strength of a pairwise loss is measured as the number of voters who voted for the winning side.
+
+'''Minmax(margins)''' is the same, except that the strength of a pairwise loss is measured as the number of votes for the winning side ''minus'' the number of votes for the losing side.
+
+Both of these methods satisfy the [[Condorcet criterion]], and both fail the [[Smith set|Smith criterion]]. Minmax(winning votes) also satisfies the [[Plurality criterion]]. In the three-candidate case, Minmax(margins) satisfies the [[Participation criterion]].
+
+'''Minmax(pairwise opposition)''' or '''MMPO''' elects the candidate whose greatest ''opposition'' from another candidate is minimal. Pairwise wins or losses are not considered; all that matters is the number of votes for one candidate over another.
+
+Minmax(pairwise opposition) does not strictly satisfy the [[Condorcet criterion]] or [[Smith set|Smith criterion]]. It also fails the [[Plurality criterion]], and is more indecisive than the other Minmax methods. However, it satisfies the [[Later-no-harm criterion]], and in the three-candidate case, the [[Participation criterion]].
