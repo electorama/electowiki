@@ -1,0 +1,44 @@
+In [[social choice theory]], the '''Favoriate Betrayal criterion''' is a criterion for evaluating [[voting system]]s.
+
+==Definition==
+
+<p>A voter optimizes the outcome (from his own perspective) if his vote
+causes the election of the best possible candidate that can be elected,
+based on his own preferences, given all the votes cast by other
+voters.</p>
+
+==Statement of the criterion==
+
+<em>For any voter who has a unique favorite, there should be no possible set of votes cast by the other voters such that the voter can optimize the outcome (from his own perspective) only by voting someone over his favorite.</em>
+
+==Complying methods==
+
+The [[approval voting|approval]] method complies with the favorite betrayal criterion, while [[cardinal ratings]], [[Borda count]], [[plurality voting]], and [[instant-runoff voting]] do not comply. It is not known whether [[Cloneproof Schwartz Sequential Dropping]] complies.  One form of [[majority-choice approval]] does not comply, the other form does.
+
+==Commentary==
+
+Election methods that meet this criterion provide no incentive for voters to betray their favorite candidate by voting another candidate over him or her.
+
+''Some parts of this article are derived with permission from text at http://electionmethods.org''
+
+== See also ==
+
+*[[Voting system]]
+*[[Monotonicity criterion]]
+*[[Condorcet Criterion]]
+*[[Generalized Condorcet criterion]]
+*[[Strategy-Free criterion]]
+*[[Generalized Strategy-Free criterion]]
+*[[Strong Defensive Strategy criterion]]
+*[[Weak Defensive Strategy criterion]]
+*[[Participation criterion]]
+*[[Summability criterion]]
+
+== External links ==
+
+* [http://electionmethods.org/ Election Methods Education and Research Group]
+
+
+[[Category:Voting system criteria]]
+
+{{fromwikipedia}}
