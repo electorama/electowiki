@@ -52,6 +52,12 @@ Suppose that voters were told to grant 1 to 4 points to each city such that thei
 
 There is a tie between Nashville and Chattanooga.
 
+==Advantages==
+
+The main advantages of using the median instead of the sum or arithmetic mean of the individual ratings are:
+*The result is determined by majorities: when a majority specifies a ranking at least a, then the median is also at least a, and when a majority specifies a ranking at most a, then the median is also at most a.
+*The resulting method possesses many more and more natural-looking [[group strategy equilibria]] than [[Cardinal Ratings]] in the case of a [[sincere Condorcet Winner]]. 
+
 ==Disadvantages==
 
 The example illustates one of the major flaws of Median Ratings.  Because the [[median]], by definition, is either the value of a single rating or the average of two ratings, there are very few possible values for a median score, and this makes ties much more likely than in [[Cardinal Ratings]].
