@@ -10,20 +10,11 @@ The main difference between DMC and other Condorcet methods such as [[Ranked Pai
 
 DMC chooses the same winner as (and could be considered equivalent in most respects to) [[Ranked Approval Voting]] (RAV) (also known as Approval Ranked Concorcet), and [[Pairwise Sorted Approval]] (PSA).
 
-''How do I get a Table of Contents to display in here? --[[User:Araucaria|Araucaria]] 12:22, 21 Mar 2005 (PST)''
-
 == Procedure ==
 
-Voters can grade their choices from favorite (A) to least preferred (ungraded), and give some or all of their graded choices a "passing grade" to signify approval.
+=== The Ballot ===
 
-Graded rankings added into a Round-Robin array, and the approval
-scores of each candidate are tabulated as well.
-
-To determine the winner:
-# Eliminate any candidate that is defeated in a one-to-one match with any other higher-approved candidate.  So by 2 different measures, a definite majority agrees that candidate should be eliminated.
-#If more than one candidate remains, the winner is the single candidate that defeats all others in one-to-one (pairwise)contests.
-
-One implementation of Definite Majority Choice might use a [[Graded Ballot]] with a Lowest Passing Grade option:
+One implementation of Definite Majority Choice might use a [[Graded Ballot]] with a Lowest Passing Grade option.  Voters can grade their choices from favorite (A) to least preferred (ungraded), and give some or all of their graded choices a "passing grade" to signify approval.
 
 <pre>
             A    B    C    D    E    F    G
@@ -42,18 +33,25 @@ One implementation of Definite Majority Choice might use a [[Graded Ballot]] wit
    (optional)
 </pre>
 
-You can give the same grade to more than one candidate.  By default, each graded candidate gets a "passing grade" and one Approval point.
+A voter can give the same grade to more than one candidate.  If not given a higher grade, he LPG candidate has a grade of G by default, giving each graded candidate a "passing grade", or one Approval point.
 
 Ungraded candidates are graded below all others and get no Approval points.
 
-Optionally, a voter can specify a Lowest Passing Grade (LPG), which means that any graded candidates with lower grades get no approval points.
+A voter may optionally specify a Lowest Passing Grade (LPG), which means that any graded candidates with lower grades will receive no approval points.
 
-If this were a vote for president, one could compare the LPG selection to Gerald Ford.  One might disagree whether he was a good or bad president, but anybody better than him would be a good president, and anybody worse than him would be bad.
+If this were a vote for president, one could compare the LPG 'candidate' to Gerald Ford.  One might argue whether he was a good or bad president, but anybody better would be a good president, and anybody worse would be bad.
 
-The main reason to grade candidates below the "Gerald Ford" mark would be if you're not optimistic about the chances for your higher-ranked favorite and compromise candidates.  Grading candidate X below the LPG mark gives you a chance to say "I don't like X and
-don't want him to win, but of all the alternatives, he would make the fewest changes in the wrong direction.  I won't give him a passing grade because I want him to have as small a mandate as possible."  Then you have some say in the outcome, instead of leaving the choice among the alternatives to the most vocal and extreme parts of other factions.
+The main reason for a voter to grade candidates below the "Gerald Ford" mark would be if the voter is not optimistic about the chances for higher-ranked favorite and compromise candidates.  Grading candidate X below the LPG mark gives the voter a chance to say "I don't like X and don't want him to win, but of all the alternatives, he would make the fewest changes in the wrong direction.  I won't give him a passing grade because I want him to have as small a mandate as possible."  This allows members of the minority to have some say in the outcome, instead of leaving the choice to the strongest core support within the majority faction.
 
-== Handling Ties and Near Ties ==
+=== Tallying Votes ===
+
+Rankings are added into a Round-Robin array, and the approval scores of each candidate are tabulated into the otherwise unused diagonal entries.
+
+To determine the winner:
+# Eliminate any candidate that is defeated in a one-to-one match with any other higher-approved candidate.  So by 2 different measures, a definite majority agrees that candidate should be eliminated.
+#If more than one candidate remains, the winner is the single candidate that defeats all others in one-to-one (pairwise)contests.
+
+=== Handling Ties and Near Ties ===
 
 In ordinary DMC, the winner is the candidate in Forest Simmon's '''[http://wiki.electorama.com/wiki/Techniques_of_method_design#Special_sets P]''' set, the ''set of candidates which are not approval-consistently defeated''.
 
