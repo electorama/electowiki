@@ -52,10 +52,15 @@ Since the diagonal cells in the Condorcet pairwise matrix are usually left blank
 We call a candidate [[Techniques_of_method_design#Defeats_and_defeat_strength|Definitively defeated]] when that candidate is defeated in a head-to-head contest against any other candidate with higher Approval score.  This kind of defeat is also called an ''Approval-consistent defeat''.
 
 To determine the winner:
-# Eliminate all definitively defeated candidates.
-# The winner is the single candidate who pairwise defeats (wins head-to-head contests with) all other remaining candidates.
+# Eliminate all definitively defeated candidates.  Let us call the set of remaining candidates the Definite Majority set.
+# The winner is the single candidate who pairwise defeats (wins head-to-head contests with) all other candidates in the Definite Majority set.
 
-DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Step 1 has the effect of successively eliminating the least approved candidate in the Smith set (and then recalculating the new Smith set).  But Step 1 also allows higher-approved candidates outside the Smith set, such as the Approval Winner, to remain in the set of non-strongly-defeated candidates.
+DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Step 1 has the effect of successively eliminating the least approved candidate in the Smith set and then recalculating the new Smith set, and repeating until a single winner exists.  But Step 1 also allows higher-approved candidates outside the Smith set, such as the Approval Winner, to remain in the Definite Majority set.
+
+DMC has some interesting properties:
+* The DMC winner has the lowest total approval score of any candidate in the Definite Majority set.
+* When defeat strength is measured by the approval of the defeating candidate, there is only one possible immune method, namely DMC.
+* DMC is a [[Majority#Majority_rule.2FMajority_winner_-_Four_Critera|Strong Majority rule method]].
 
 ==== A more intuitive ballot --- Ranking Candidates using Grades ====
 One barrier to public acceptance of DMC is the ballot design.  So how could the process be more intuitive, without sacrificing flexibility and expression?
