@@ -1,0 +1,226 @@
+'''Maximum majority voting''' (MMV) is a [[voting method]] that selects a single winner using votes that express preferences.  MMV can also be used to create a sorted list of winners.  MMV and [[maximize affirmed majorities]] (MAM) are variations of [[Nicolaus Tideman|Tideman's]] [[ranked pairs]] (RP) method.
+
+If there is a candidate who is preferred over the other candidates, when compared in turn with each of the others, MMV guarantees that that candidate will win.  Because of this property, MMV is (by definition) a '''[[Condorcet method]]'''.  Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and [[instant-runoff voting]], which do not make this guarantee.
+
+== Procedure ==
+
+The MMV procedure is as follows:
+# Voting
+# Preferences
+# Counting
+# Sorting
+# Candidate ordering
+# Winner selection
+
+MMV can also be used to create a sorted list of preferred candidates.
+To create a sorted list, repeatedly use MMV to select a winner,
+remove that winner from the list of candidates,
+and repeat (to find the next runner up, and so forth).
+
+=== Voting, preferences, counting ===
+
+In the votes, each voter's preferences are considered.
+For example, if a voter states "A &gt; B &gt; C"
+(A is better than B, and B is better than C), then the count
+should add one for A in A vs. B, one for A in A vs. C, and
+one for B in B vs. C.
+Voters may also express indifference (e.g., A = B), and unstated
+candidates are assumed to be equally worse than the stated candidates.
+
+After counting the majorities can be determined.
+If "Vxy" is the number of Votes that rank x over y, then
+"x" wins if Vxy &gt; Vyx, and "y" wins if Vyx &gt; Vxy.
+
+=== Sorting ===
+
+The pairs of winners, called the "majorities", are then sorted from
+the largest majority to the smallest majority.
+If two matchups have the same number of winning votes, the one with the largest margin (weakest loser) is listed first.
+
+=== Candidate ordering, winner selection ===
+
+Using the sorted list, the candidates are ordered from greatest majority to least,
+''unless'' the pair will create a circularity
+(e.g., where A is more than B, B is more than C, but C is more than A), then the smallest majority in the circularity is eliminated.
+The candidate with the most paiwise wins (i.e. the Maximum Majority) wins the election.
+
+== An example ==
+
+=== The situation (voting) ===
+
+Imagine an election for the capital of [[Tennessee]], a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
+<div style="float:right;  padding:2px; text-align:center">
+[[Image:CondorcetTennesee.png]]</div>
+
+* Memphis (Shelby County): 826,330
+* Nashville (Davidson County): 510,784
+* Chattanooga (Hamilton County): 285,536
+* Knoxville (Knox County): 335,749
+
+Let's say that in the vote, the voters vote based on geographic proximity.  Assuming that the population distribution of the rest of Tennessee follows from those population centers, one could easily envision an election where the percentages of votes would be as follows:
+
+<table border=1>
+<tr>
+<td>
+'''42% of voters (close to Memphis)'''<br>
+1. Memphis<br>
+2. Nashville<br>
+3. Chattanooga<br>
+4. Knoxville
+</td>
+<td valign="top">
+'''26% of voters (close to Nashville)'''<br>
+1. Nashville<br>
+2. Chattanooga<br>
+3. Knoxville<br>
+4. Memphis
+</td>
+<td>
+'''15% of voters (close to Chattanooga)'''<br>
+1. Chattanooga<br>
+2. Knoxville<br>
+3. Nashville<br>
+4. Memphis
+</td>
+<td>
+'''17% of voters (close to Knoxville)'''<br>
+1. Knoxville<br>
+2. Chattanooga<br>
+3. Nashville<br>
+4. Memphis
+</td>
+</tr>
+</table>
+
+The results would be tabulated as follows:
+<table BORDER><caption>Pairwise Election Results</caption>
+<tr><th colspan=2><th colspan=4 bgcolor="#c0c0ff">A</tr>
+
+<tr>
+<th colspan=2><th bgcolor="#c0c0ff">Memphis
+<th bgcolor="#c0c0ff">Nashville
+<th bgcolor="#c0c0ff">Chattanooga
+<th bgcolor="#c0c0ff">Knoxville
+</tr>
+<tr><th  bgcolor="#ffc0c0" rowspan=4>B<th bgcolor="#ffc0c0">Memphis<td><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br></tr>
+<tr><th bgcolor="#ffc0c0">Nashville<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td><td nowrap bgcolor="#ffe0e0">[A] 32% <br>[B] 68% <br><td nowrap bgcolor="#ffe0e0">[A] 32% <br>[B] 68% <br></tr>
+
+<tr><th bgcolor="#ffc0c0">Chattanooga<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td nowrap bgcolor="#e0e0ff">[A] 68% <br>[B] 32% <br><td><td nowrap bgcolor="#ffe0e0">[A] 17% <br>[B] 83% <br></tr>
+<tr><th bgcolor="#ffc0c0">Knoxville<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td nowrap bgcolor="#e0e0ff">[A] 68% <br>[B] 32% <br><td nowrap bgcolor="#e0e0ff">[A] 83% <br>[B] 17% <br><td></tr>
+<tr><th colspan=2 bgcolor="#c0c0ff">Pairwise election results (won-lost-tied):
+
+<td bgcolor="#ffffff">0-3-0
+<td bgcolor="#ffffff">3-0-0
+<td bgcolor="#ffffff">2-1-0
+<td bgcolor="#ffffff">1-2-0
+<tr><th colspan=2 bgcolor="#c0c0ff">Votes against in worst pairwise defeat:
+<td bgcolor="#ffffff">58%<td bgcolor="#ffffff">N/A<td bgcolor="#ffffff">68%<td bgcolor="#ffffff">83%</table>
+
+* [A] indicates voters who preferred the candidate listed in the column caption to the candidate listed in the row caption
+* [B] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
+* [NP] indicates voters who expressed no preference between either candidate
+
+=== Counting ===
+
+First, list every pair, and determine the winner:
+{| border="1"
+!Pair!!Winner
+|-
+| Memphis (42%) vs. Nashville (58%)|| Nashville 58%
+|-
+| Memphis (42%) vs. Chattanooga (58%)|| Chattanooga 58%
+|-
+| Memphis (42%) vs. Knoxville (58%)|| Knoxville 58%
+|-
+| Nashville (68%) vs. Chattanooga (32%)|| Nashville 68%
+|-
+| Nashville (68%) vs. Knoxville (32%)||Nashville 68%
+|-
+| Chattanooga (83%) vs. Knoxville (17%)|| Chattanooga: 83%
+|}
+
+Note that absolute counts of votes can be used, or
+percentages of the total number of votes; it makes no difference.
+
+=== Sorting ===
+
+The votes are then sorted.
+The largest majority is "Chattanooga over Knoxville"; 83% of the
+voters prefer Chattanooga.
+Nashville (68%) beats both Chattanooga and Knoxville by a score
+of 68% over 32% (an exact tie, which is unlikely in real life
+for this many voters).
+Since Chattanooga &gt; Knoxville, and they're the losers,
+Nashville vs. Knoxville will be added first, followed by
+Nashville vs. Chattanooga.
+
+Thus, the pairs from above would be sorted this way:
+
+{| border="1"
+!Pair!!Winner
+|-
+| Chattanooga (83%) vs. Knoxville (17%)|| Chattanooga 83%
+|-
+| Nashville (68%) vs. Knoxville (32%)||Nashville 68%
+|-
+| Nashville (68%) vs. Chattanooga (32%)|| Nashville 68%
+|-
+| Memphis (42%) vs. Nashville (58%)|| Nashville 58%
+|-
+| Memphis (42%) vs. Chattanooga (58%)|| Chattanooga 58%
+|-
+| Memphis (42%) vs. Knoxville (58%)|| Knoxville 58%
+|}
+
+=== Candidate erdering, winner selection ===
+
+The pairs are then sorted in order, skipping any pairs
+that would create a cycle:
+
+* Chattanooga over Knoxville.
+* Nashville over Knoxville.
+* Nashville over Chattanooga.
+* Nashville over Memphis.
+* Chattanooga over Memphis.
+* Knoxville over Memphis.
+
+In this case, no cycles are created by any of the
+pairs, so none are eliminated.
+
+In this example, Nashville is the winner using MMV - and would be in any [[Condorcet method]].
+
+=== Ambiguity resolution example ===
+
+Let's say there was an ambiguity.  For a simple situation involving canidates A, B, and C.
+
+* A > B 72%
+* B > C 68%
+* C > A 52%
+
+In this situation we sort the majorities starting with the greatest one first.
+
+* Lock A > B
+* Lock B > C
+* We elimate the final C > A as it creates an ambiguity or cycle.
+
+Therefore, A is the winner.
+
+=== Summary ===
+
+In the example election, the winner is Nashville.
+This would be true for any [[Condorcet method]].
+Using the [[first-past-the-post]] system and some other systems, Memphis would have won the election by having the most people, even though Nashville won every simulated pairwise election outright.  Using [[Instant-runoff voting]] in this example would result in Knoxville winning, even though more people preferred Nashville over Knoxville.
+
+== External resources ==
+* [http://groups.yahoo.com/group/election-methods-list/ A mailing list containing technical discussions about election methods]
+* [http://electionmethods.org/ electionmethods.org]
+* [http://condorcet.org/rp Ranked Pairs]
+* [http://accurate-democracy.com/ Accurate Democracy]
+* [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)]
+* [http://radicalcentrism.org/majority_voting.html Maximum Majority Voting]
+* [http://cec.wustl.edu/~rhl1/rbvote/desc.html Descriptions of ranked-ballot voting methods]
+* [http://fc.antioch.edu/~jarmyta@antioch-college.edu/voting.htm Voting methods resource page]
+
+[[Category:Voting systems]]
+
+{{fromwikipedia}}
