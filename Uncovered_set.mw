@@ -1,0 +1,4 @@
+The '''uncovered set''' is defined for a set of [[preferential voting|rank-order]] preferences.  Usually, the uncovered set is defined only for situations without pairwise ties. When there are no pairwise ties, then the uncovered set is identical to the set called '''Fishburn winners''':
+
+:Select the candidate or candidates that are not Fishburn losers.  A candidate ''i'' is a Fishburn loser if there is some other candidate ''j'' such that every candidate that pairwise beats ''j'' also pairwise beats ''i'' and there is at least one candidate that pairwise beats ''i'' but does not pairwise beat ''j''.
+[[Category:Voting theory]]
