@@ -5,3 +5,16 @@ Electowiki is a wiki associated with [http://www.electorama.com Electorama], the
 We are just starting, so come join us, help establish the rules around here, and get some election-methods-related material up here.
 
 Editors, see the [[Project:Community Portal|Community Portal]] and [[Project:FAQ|Frequently Asked Questions]] to learn more.
+
+Systems:
+
+*[[Single-winner system]]s:
+**[[Condorcet Method]]s
+***[[Cloneproof Schwartz Sequential Dropping]] (CSSD)
+**[[Instant-runoff voting]] (IRV)
+**[[Approval voting]]
+**etc..
+*[[Multi-winner system]]s:
+**[[Single Transferable Vote]] (STV)
+**[[Single Non-Transferable Vote]] (SNTV)
+**etc.
