@@ -1,113 +1,28 @@
---[[Electowiki:Collaboration of the Week|Collaborative project in process]]--
+A '''simple majority''' is the most common requirement in [[voting]] for a measure to pass, especially in [[deliberative body|deliberative bodies]] and small organizations. It means that, of those who cast a vote for or against a proposition or candidate, more than half of the [[vote]]s is necessary for election.
 
-A '''majority''' means, literally, "more than half".  Compare this with [[plurality]], which means "the most of the group".  When applied to specific situations, majority can take on different meanings, depending on how you apply it:
+As an example, let's consider three propositions: A, B, and C, that are proposed in a [[club]] of 100 members.  In order for a proposition to be successful, a simple majority must agree to it.  The results of the [[election]] are:
+* 20 votes for proposition A
+* 40 votes for proposition B
+* 10 votes for proposition C
+* 10 votes are blank
 
-*'''relative majority''' usually means "plurality" 
-*'''simple majority''' means "more than half of cast votes"
-*'''absolute majority''' means "more than half of eligible voters"
-*a '''supermajority''' is a fraction of the voters between half and all (e.g. 2/3)
-*'''consensus''' usually means complete agreement or "all voters"
+Since there are more votes for B than there are votes for both A and C combined, B has the simple majority, and so wins.  Notice that [[abstention]]s and non-voters do not affect a simple majority process, since they neither support nor oppose.  They only affect an [[absolute majority]].
 
-== Majority rule/Majority winner - Four Criteria ==
+In an election for president in the same club having candidates Jim, Bob, Sally, and Bridget, the results are as follows:
+* 20 votes for Jim
+* 20 votes for Bob
+* 40 votes for Sally
+* 2 votes for Bridget
 
-Many methods claim to elect the "majority winner" or work by "majority rule" (See, for example, the [[Center for Voting and Democracy|CVD]]'s talking points re: IRV: [http://www.fairvote.org/irv/talking.htm]).  However, [[Condorcet's paradox]] raises an issue: with some groups of voters, no matter which candidate wins, ''some'' majority of the voters will prefer a different candidate.  Below is a list of criterion, in ascending order of strictness, which could be used to rank the relative strengths of a "majority."
+In this election, no one has more votes than the combined votes of the opponents, so no one wins.  In a case like this, most systems would either adopt a [[plurality]] rule or would have a second [[runoff election]].
 
-<div class="blist"> 
-*'''Criterion 1:''' If a majority of the electorate coordinates their efforts, they can assure that a given candidate is elected, or that another given candidate is not elected. 
-*'''Criterion 2:''' [[Mutual majority criterion]]
-*'''Criterion 3:''' [[Condorcet criterion]]
-*'''Criterion 4:''' Minimal dominant set ([[Smith set|Smith]], GeTChA) efficiency 
+Tie votes do not meet simple majority and are classfied as failures.
 
-
-*'''Criterion 1 only:''' Pseudomajority methods.
-*'''Criteria 1 and 2 only:''' Weak majority rule methods.
-*'''Criteria 1, 2, and 3:''' Intermediate majority rule methods.
-*'''Criteria 1, 2, 3, and 4:''' Strong majority rule methods.
-
-
-*'''Pseudomajority methods:''' [[Plurality]], [[Approval voting |approval]], [[Cardinal Ratings | range voting]], [[Borda count|Borda]]
-*'''Weak majority rule methods:''' single-winner [[Single transferable vote|STV]]
-*'''Intermediate majority rule methods:''' [[Minmax|Minimax]] (aka Simpson-Kramer, PC, etc.), [[Black]], etc.
-*'''Strong majority rule methods:''' [[ranked pairs]], [[Schulze method|Schulze]], [[river]], [[Nanson]], cardinal pairwise (assuming that a strong-majority base method is used)
-</div>
-
-In pseudo-majority methods (like plurality and range voting), a given majority of the electorate '''can''' coordinate their intentions and decide the winner, but this merely postpones the question of how they do this. The stronger majority methods not only enable firmly coordinated majorities to assert themselves, but they allow un-coordinated majorities to '''reveal''' themselves, without any need for prior coordination. Voting methods that facilitate this process of revelation are considered superior to those that do not.
-
-The remaining three categories allow mutual majorities to reveal themselves (in the absence of a self-defeating strategy by supporters of this majority). Strong majority rule methods not only reveal mutual majorities, but they reveal [[minimal dominant set]]s and Condorcet winners (in the absence of a severe [[burying strategy]]). This is considered especially valuable because it means revealing possible compromises on divisive issues, thus avoiding a lot of political polarization and strife.
-
-=== Criterion 1 only - Pseudo-Majority Rule Methods===
-
-Methods which pass criterion 1 only include [[First-past-the-post electoral system|Plurality]], [[approval voting|Approval]], [[Cardinal Ratings]], and the [[Borda count]].  Although it is always '''possible''' in these systems for a coordinated majority to elect their preferred candidate, coordination may be difficult.  For example, take an electorate with preferences as follows:
-<div class="votesABC">
-:31 A > B > C 
-:29 B > A > C
-:20 C > B > A
-:20 C > A > B</div>
-
-In a plurality election, a clear majority (60-40) prefer both A and B to C.  But unless A and B voters know whether to vote for A or whether to vote for B, C may win a plurality of votes.  In addition, voters for A and B may play a game of "chicken", refusing to vote for the other, because they believe their candidate should win.
-
-===Criteria 1 and 2 - Weak Majority Rule Methods===
-
-[[Instant-runoff voting]] (aka IRV, Single-winner STV) passes the mutual majority criterion.  In the example above, IRV enables A and B to coordinate.  If all voters voted their sincere preferences, B would be eliminated first, but their votes would transfer to A, resulting in a majority for A.
-
-However, IRV doesn't pass the [[Condorcet criterion]].  In an election with preferences as follows:
-<div class="votesABC">
-:31 A > B > C
-:29 B > C > A
-:40 C > B > A</div>
-
-Looking at this election pairwise, there are three majorities: a majority (69 to 31) prefer B to A, a majority (69-31) prefer C to A, and a majority (60-40) prefer B to C.  If you were to award the title "majority winner" to any candidate, B has the fairest claim to that title, as (different) majorities of voters prefer B to each other candidate.  However, in IRV, B is eliminated first and does not win.
-
-=== Criteria 1,2, and 3 - Intermediate Majority Rule Methods===
-
-Methods that pass the Condorcet criterion would always elect B, the Condorcet winner, in that election.  
-
-[[Minmax|Minimax]] (aka Simpson-Kramer, PC, etc.), [[Nanson]], [[Black]], etc.
-
-=== Criteria 1,2,3, and 4 - Strong Majority Rule Methods===
-
-[[ranked pairs]], [[Schulze method|Schulze]], [[river]], 
-
-''Derived from an e-mail by James Green-Armytage''
-
-== Criticism of this scheme ==
-
-While criteria 2-4 above are popular, only criterion 2 (the [[Majority criterion for solid coalitions]] a.k.a. the [[Mutual majority criterion]]) deals with "majority" in the sense of "more than half of the voters," and even this criterion applies only in the peculiar special case that more than half of the voters rank the same set of candidates uninterrupted, in some order, in the top positions of the ballot.
-
-Criterion 1 (that a coordinated majority can always elect a specific candidate) is extremely weak, and satisfied by almost any deterministic method.
-
-Criteria 3 and 4 (the [[Condorcet criterion]] and [[Smith set|Smith criterion]]) only deal with a "majority" in the sense of "more than half of the voters expressing an opinion between two given candidates." They don't make any assurance that a "majority" in the stronger sense will take precedence over a "majority" in this weaker sense.
-
-== Majority rule criteria based on sincerity ==
-
-An alternative criterion to these four might guarantee that a majority of the voters (in the sense of "more than half of the voters") with a given preference (such as, "candidate A is preferable to candidate B") can always prevail over the other voters, simply by voting sincerely, without having to use a strategic vote.
-
-For instance, one wording of the [[Minimal Defense criterion]] guarantees that if such a majority ranks A sincerely, and simply doesn't rank B above anyone (by leaving B out of the ranking), then B can't win. If we assume that B is a rival frontrunner to A, then very little strategy is demanded of the A voters, since they will likely be inclined to not vote for B, anyway.
-
-This property doesn't imply satisfaction of any of the above criteria except for criterion 1, and none of the above criteria implies this property.
-
-In the following methods, a majority sincerely preferring A to B can ensure that B loses merely by voting for A and not voting for B: [[Approval voting]], [[Bucklin voting]], the [[River]] method, the [[Schulze method]] and [[Ranked Pairs]] (assuming with these that defeat strength is measured as the number of voters favoring the winning side). Most methods with an [[Approval voting|approval]] base also guarantee this.
-
-The following methods lack this property: [[Plurality voting|Plurality]], [[Borda count]], [[IRV|instant runoff voting]], and [[Minimax|Minmax]]. Also, methods which don't allow voters to "not vote for" some candidates would lack this property.
-
-== Majority rule criteria based on beatpaths ==
-
-If more voters prefer candidate A to candidate B, then A ''pairwise beats'' B, and the ''strength'' of this pairwise win is equal to the literal number of voters who rank A above B. (It is possible to define ''strength'' in other ways, but not for this purpose.)
-
-Candidate A has a ''beatpath'' to candidate B if there is some sequence of candidates such that A is the first candidate, B is the last candidate, and for every pair of adjacent candidates in this sequence I followed by J, I pairwise beats J. The strength of this beatpath is equal to the strength of the weakest pairwise win in this sequence (that is, of one candidate over the following candidate).
-
-A pairwise win or a beatpath is of ''majority strength'' if its strength is equal to more than half of the voters.
-
-At least two all-in-one majority rule criteria have been proposed which use the concept of beatpaths:
-
-#If A has a majority-strength pairwise win against B, but B does not have even a majority-strength beatpath to A, then B must not be elected. (Attributed to Stephen Eppley.)
-#If A has a majority-strength beatpath to B, but B does not have a majority-strength beatpath back to A, then B must not be elected. (Attributed to Markus Schulze.)
-
-Satisfaction of either of these criteria also implies satisfaction of the [[Minimal Defense criterion]] and the [[Majority criterion for solid coalitions]].
-
-When criterion #2 is used, this is equivalent to requiring that the winner always comes from the [[CDTT|Condorcet (doubly-augmented gross) top tier]] or [[CDTT]].
-
-The most popular method which satisfies these properties is the [[Schulze method]].<br><br>
+==See also==
+* [[Majority]]
+* [[Majority rule]]
+* [[List of democracy and elections-related topics]] 
 
 [[Category:Voting theory]]
+
 {{fromwikipedia}}
