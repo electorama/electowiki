@@ -10,7 +10,7 @@ When the sorting process is finished, the resulting ordering of the alternatives
 
 A sort that works from the top down or bottom up, like Bubble or Sink, will not enjoy this kind of symmetry.
 
-Approval Sorted Margins has a nice monotonic property:
+This Approval Sorted Margins has a nice monotonic property:
 
 If alternative A moves up relative to some other alternative, either pairwise or in approval, while none of the other alternatives move up or down relative to each other, then alternative A will move up (if at all) in the final order.
 
@@ -19,5 +19,3 @@ By the symmetry mentioned above, we also have (mutatis mutandi):
 If alternative A moves down relative to some other alternative, either pairwise or in approval, while none of the other alternatives move down or up relative to each other, then alternative A will move down (if at all) in the final order.
 
 This method, like any approval seeded pairwise swap sorted method, is also clone independent.  This is because (true) clones are seeded near each other by approval, and any alternative outside of a clone set will either pairwise defeat all of the members of the clone set or none of them.  In other words, if it gets past one of them, it will make it past all of them, so that the clones will be together in the final order.
-
-Approval Sorted Margins finds the same winner as [[Marginal Ranked Approval Voting]].
