@@ -10,7 +10,7 @@ This definition is most similar to that of [[SDSC]]. Another definition suggeste
 
 ''If more than half of the voters rank ''Y'' above ''X'', and ''X'' above no other candidate, then ''X'' must not be elected.''
 
-It's also required that the method permits voters to submit complete strict rankings.
+It's also required that the method permits voters to submit complete or incomplete rankings. In particular, truncation must be an option: It's not adequate for the method to require that the voters rank ''X'' strictly ''below'' every other candidate.
 
 <h4 class=left>Complying Methods</h4>
 
