@@ -10,24 +10,24 @@ After all of the ballots are in, the pairwise sort is seeded by approval, which 
 
 One of several possible ways to finish the process is this:
 
-1. Make three pairwise matrices, M, M', and M''.  The first of these M makes no distinction in the preference relation strengths, so that (for M) our sample ballot is interpreted as
+1. Make three pairwise matrices, M2, M1, and M0.  The first of these M2 makes no distinction in the preference relation strengths, so that (for M2) our sample ballot is interpreted as
 
         A>B>C>D>E>F>G>H .
 
-The second matrix M' collapses the weakest relations and makes no distinction among the rest, so that (for it) our sample ballot is treated as though it were
+The second matrix M1 collapses the weakest relations and makes no distinction among the rest, so that (for it) our sample ballot is treated as though it were
   
         A=B > C=D > E=F > G=H .
 
-The third matrix M'' is the coarsest; it  collapses all of the relations except the strongest (root) relation:
+The remaining matrix M0 is the coarsest; it  collapses all of the relations except the strongest (root) relation:
 
         A=B=C=D > E=F=G=H
 
-2. Now take our approval seeded list and sort it according to the pairwise matrix M', and then according to the (finest)pairwise matrix M.
+2. Now take our approval seeded list and sort it according to the pairwise matrix M1, and then according to the (finest) pairwise matrix M2.
 
 Remarks:
 
-In step 2 it makes a difference if bubble sort or sink sort or some other kind of swap sort is used. I suggest a sort that (at each step) always reverses the remaining out-of-order pair with the greatest defeat strength as measured by the next coarser pairwise matrix.
+In step 2 it does make a difference if bubble sort or sink sort or some other kind of swap sort is used. I suggest a sort that (at each step) always reverses the remaining out-of-order pair with the greatest defeat strength as measured by the next coarser pairwise matrix.
 
-So while sorting with M', we should measure defeat strength with M'', and while sorting with M, we should gauge defeat strength with M'.
+So while sorting with M1, we should measure defeat strength with M0, and while sorting with M2, we should gauge defeat strength with M1.
 
 If symmetry is an important consideration, then the pairwise margin in the next coarser matrix is the appropriate gauge.
