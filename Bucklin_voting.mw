@@ -1,24 +1,18 @@
-Bucklin is a [[voting system]] that can be used for single-member districts and also multi-member districts.  It is also known as the Grand Junction system after Grand Junction, Colorado, where it was first proposed. It is closely related to the class of [[graded Bucklin systems]], in which equal and/or skipped rankings are allowed, which includes such systems as [[Majority Choice Approval]] (MCA). Modern theorists tend to prefer graded Bucklin systems over ungraded ones, as they usually comply better with criteria such as [[FBC]].
+Bucklin is a [[voting system]] that can be used for single-member districts and also multi-member districts.  It is also known as the Grand Junction system after Grand Junction, Colorado, where it was first proposed.
 
-== How did it work? ==
+== How does it work? ==
 
-Voters were allowed [[Preferential_voting|rank preference ballots]] - first, second, third. In some cases, voters were allowed multiple rankings at the third rank, although there is no record of the use of MCA, which allows equal ranking at all levels.
+Voters are allowed [[Preferential_voting|rank preference ballots]] - first, second, third.
 
-First choice votes were first counted. If one candidate had a majority, that candidate won. Otherwise the second choices were added to the first choices. Again, if a candidate with a majority vote was found, the winner was the candidate with the most votes in that round. Lower rankings were added as needed.  
+First choice votes are first counted. If one candidate has a majority, that candidate wins. Otherwise the second choices are added to the first choices. Again, if a candidate with a majority vote is found, the winner is the candidate with the most votes in that round. Lower rankings are added as needed.
 
-A majority was defined as half the number of voters, similar to [[absolute majority]]. Since after the first round there were more votes cast than voters, it was possible more than one candidate to have majority support. 
+A majority is defined as half the number of voters, similar to [[Absolute majority]]. Since after the first round there are more votes cast than voters, it is possible more than one candidate to have majority support. This makes Bucklin a variation of [[approval voting]].
 
-For multi-member districts, voters marked as many first choices as there are seats to be filled.  Voters marked the same number of second and further choices.  In some localities, the voter was required to mark a full set of first choices for his or her ballot to be valid.
+For multi-member districts, voters mark as many first choices as there are seats to be filled.  Voters mark the same number of second and further choices.  In some localities, the voter was required to mark a full set of first choices for his or her ballot to be valid.
 
-== Where was it used? ==
+== Where is it used? ==
 
-This method was apparently first used in Geneva during the French Revolution, in the period from 1792 to 1798, at the suggestion of the Marquis de Condorcet. This was a time of upheaval and experiment, and this usage has only recently come to light again.
-
-It was later reinvented and used in many political elections in the United States in the early 20th Century.  In most states it was repealed and in a few states it was found to violate the state constitution.
-
-== Satisfied criteria ==
-
-Bucklin satisfies the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], [[Monotonicity criterion|Monotonicity]], ''Later-no-help'', and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). It fails the [[Condorcet criterion]], [[Strategic nomination|Clone Independence]], [[Participation criterion|Participation]], and [[Later-no-harm criterion|Later-no-harm]].
+This method was used in many political elections in the United States in the early 20th Century.  In most states it was repealed and in a few states it was found to violate the state constitution.
 
 === An example ===
 
@@ -54,12 +48,16 @@ The first round has no majority winner. Therefore the second rank votes are adde
 
 Voters supporting a strong candidate have a advantage to "Bullet Vote" (Only offer one ranking), in hopes that other voters will add enough votes to help their candidate win. This strategy is most secure if the supported candidate appears likely to gain many second rank votes.
 
-In the above example, Memphis voters have the most first place votes and might not offer a second preference in hopes of winning, but this attempted strategy fails because they are not a second favorite from competitors.
+In the above example, Memphis voters have the most first place votes and might not offer a second preference in hopes of winning, but it fails because they are not a second favorite from competitors.
 
-== See also ==
+==See also==
+* [[List of democracy and elections-related topics]] 
+* [[Voting system]] - many other ways of voting
+* [[First Past the Post electoral system]]
+* [[Instant-runoff voting]]
+* [[approval_voting]]
+* [[Borda count]]
 
-[[ER-Bucklin]]
-
-[[Category:Single-winner voting methods]][[Category:Multi-winner voting methods]][[Category:Preferential voting methods]]
+[[Category:Voting systems]]
 
 {{fromwikipedia}}
