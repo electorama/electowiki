@@ -1,4 +1,36 @@
-A '''majority''' means more than half of the counted preferences.  For example, a candidate who receives 23 of 35 votes is said to have won a ''majority'' of the votes, while a candidate who wins 16 of 35 votes has not, regardless of whether they have received a [[plurality]] of votes.  
+A '''majority''' means, literally, "more than half".  Compare this with [[plurality]], which means "the most of the group".  When applied to specific situations, majority can take on different meanings, depending on how you apply it:
+
+*'''relative majority''' usually means "plurality" 
+*'''simple majority''' means "more than half of cast votes"
+*'''absolute majority''' means "more than half of eligible voters"
+*a '''supermajority''' is a fraction of the voters between half and all (e.g. 2/3)
+
+== Majority rule/Majority winner ==
+
+Many methods claim to elect the "majority winner" or work by "majority rule".  But [[Condorcet's paradox]] tells us that this must be a little complicated: with some groups of voters, no matter which candidate wins, ''some'' majority of the voters will prefer a different candidate.  Below is a list of criterion, in ascending order of strictness, which could be called "majority rule" in some sense.
+
+ *Criterion 1: If a majority of the electorate coordinates their efforts, they can 
+   assure that a given candidate is elected, or that another given candidate is not elected. 
+ *Criterion 2: [[Mutual majority criterion]]
+ *Criterion 3: [[Condorcet criterion]]
+ *Criterion 4: Minimal dominant set ([[Smith set|Smith]], GeTChA) efficiency 
+
+ * Criterion 1 only: Pseudomajority methods.
+ * Criteria 1 and 2 only: Weak majority rule methods.
+ * Criteria 1, 2, and 3: Intermediate majority rule methods.
+ * Criteria 1, 2, 3, and 4: Strong majority rule methods. 
+
+ * Pseudomajority methods: [[Plurality]], [[approval voting|approval]], [[Cardinal Ratings]], [[Borda count|borda]]
+ * Weak majority rule methods: [[Instant-runoff voting|single-winner STV]]
+ * Intermediate majority rule methods: [[Minimax]] (aka SD, PC, etc.), [[Nanson]], [[Black]], etc.
+ * Strong majority rule methods: [[ranked pairs]], [[beatpath]], [[river]], 
+    [[cardinal pairwise]] (assuming that a strong-majority base method is used) 
+
+In pseudomajority methods (like plurality and range voting), a given majority of the electorate '''can''' coordinate their intentions and decide the winner, but this merely postpones the question of how they do this. The stronger majority methods not only enable firmly coordinated majorities to assert themselves, but they allow majorities to '''reveal''' themselves, without any need for prior coordination. I think that voting methods that facilitate this process of revelation are superior to those that do not.
+
+The remaining three categories allow mutual majorities to reveal themselves (in the absence of a self-defeating strategy by supporters of this majority). Strong majority rule methods not only reveal mutual majorities, but they reveal minimal dominant sets and Condorcet winners (in the absence of a severe burying strategy). This is especially valuable because it means revealing possible compromises on divisive issues, thus avoiding a lot of political polarization and strife.
+
+''Derived from an e-mail by James Green-Armytage''
 
 == See also: ==
 
