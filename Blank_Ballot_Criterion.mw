@@ -1,14 +1,14 @@
 == Definitions ==
 
-A ''blank ballot'' is a ballot that fails to indicate any preference between any of the candidates.
+A ''spoiled ballot'' is a ballot that fails to indicate any preference between any of the candidates.
 
 == Statement of Criterion ==
 
-The addition of one or more blank ballots cannot change the winner.
+The addition of one or more spoiled ballots cannot change the winner.
 
 == Complying Methods ==
 
-*'''Complies''': [[Approval voting]], [[Cardinal Ratings]], [[Schulze method|Schulze]]
+*'''Complies''': [[Approval voting]], [[Cardinal Ratings]], [[Borda count]] (in all versions where equal rankings give an equal number of points), [[Cloneproof Schwartz Sequential Dropping]]
 *'''Fails''': [[Median Ratings]]
 
 [[Category:Voting system criteria]]
