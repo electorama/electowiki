@@ -1,6 +1,7 @@
-The '''voting paradox''' is a situation noted by the [[Marquis de Condorcet]] in the late [[18th century]],
-in which collective preferences can be cyclic (i.e. not [[transitivity (mathematics)|transitive]]), even if the preferences of individual voters are not.
-This is [[paradox|paradoxical]], because it means that majority wishes can be in conflict with each other. When this occurs, it is because the conflicting majorities are each made up of different groups of individuals.
+[[Image:Condorcetparadox.png|thumb|right|A majority of the dots are closer to B than A, C than B, and A than C.]]
+The '''voting paradox''' is a situation noted by the [[Marquis de Condorcet]] in the late 18th century,
+in which collective preferences can be cyclic (i.e. not transitive), even if the preferences of individual voters are not.
+This is paradoxical, because it means that majority wishes can be in conflict with each other.  When this occurs, it is because the conflicting majorities are each made up of different groups of individuals.
 
 For example, suppose we have three candidates, A, B and C, and that there are three voters with preferences as follows
 (candidates being listed in decreasing order of preference):
@@ -19,9 +20,5 @@ Note that there is no fair and deterministic resolution to this trivial example 
 * [[Arrow's impossibility theorem]]
 * [[Gibbard-Satterthwaite theorem]]
 * [[Smith set]]
-* [[voting system]]
 
-[[Category:Voting theory]]
-[[Category:Paradoxes]]
-
-{{fromwikipedia}}
+{{fromwikipedia}}[[Category:Voting theory]]
