@@ -17,7 +17,7 @@ Otherwise both the seed order and the sort algorithm can affect the outcome.  Ap
 
 Among pairwise sorted methods that have been suggested on the election-methods mailing list are
 * [[Pairwise Sorted Approval]]:  Use total Approval score in descending order for initial seed.  Bubble sort the list. (Bubble sort moves up the highest remaining out-of-order alternative first.)
-* [[Pairwise Sorted Bordal]]:  Use total Borda score in descending order for initial seed.
+* [[Pairwise Sorted Borda]]:  Use total Borda score in descending order for initial seed.
 * [[Approval Sorted Margins]].  Use total Approval score in descending order for initial seed.  For subsequent pairwise sort, repeat until all pairs are ordered pairwise:
 ** Search through the list for pairs that are out of order pairwise.  
 ** Of these, reverse the pair with the least difference in approval.
