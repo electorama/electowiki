@@ -68,7 +68,7 @@ Examples of Condorcet methods include:
 * '''[[Black]]''' chooses the Condorcet winner when it exists and otherwise the [[Borda count|Borda winner]]. It is named after Duncan Black.
 * '''[[Smith/IRV]]''' is [[instant-runoff voting]] with the candidates restricted to the Smith set.
 * '''[[Copeland's method|Copeland]]''' selects the candidate that wins the most pairwise matchups.  Note that if there is no Condorcet winner, Copeland will often still result in a tie.
-* '''[[Minimax''' (also called '''Simpson''') chooses the candidate whose worst pair wise defeat is less bad than that of all other candidates.<sup>1</sup>
+* '''[[Minimax]]''' (also called '''Simpson''') chooses the candidate whose worst pair wise defeat is less bad than that of all other candidates.<sup>1</sup>
 * '''Smith/Minimax''' restricts the Minimax algorithm to the Smith set.<sup>1</sup>
 * '''[[Ranked Pairs]]''' (RP) or '''Tideman''' (named after [[Nicolaus Tideman]]) with variations such as '''[[Maximize Affirmed Majorities]]''' (MAM) and  '''[[Maximum Majority Voting]]''' (MMV)<sup>1</sup>
 * '''Schulze''' with several reformulations/variations, including '''Schwartz Sequential Dropping (SSD)''' and '''[[Cloneproof Schwartz Sequential Dropping]] (CSSD)'''<sup>1</sup>
