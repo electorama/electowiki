@@ -1,0 +1,85 @@
+The '''Supplementary Vote''' (SV) is a [[voting system]] used for the election of a single candidate. Under SV each voter ranks from among the list of candidates a first and a second preference. If no candidate receives an absolute majority of votes on the first count all but the two leading candidates are eliminated and the second preferences of those who voted for eliminated candidates are redistributed to help determine a winner.
+
+The Supplementary Vote may be understood both as a special variant of [[Instant-runoff voting|Instant Run-off Voting]] (also known as the Alternative Vote) in which there are only two rounds of counting and the voter is restricted to expressing only a first and a second preference, and of [[Runoff voting|Run-off Voting]] (also known as the Two Round System) in which both 'rounds' may occur without the need for a second poll. The Supplementary Vote is used to elect several mayors in [[England]], including the [[Mayor of London]].
+
+==Voting==
+
+Each voter ranks at least one and no more than two candidates in order of preference. E.g.
+
+#Memphis
+#Nashville
+
+==Counting the votes==
+
+In the first round, if a candidate has the support of an absolute majority (i.e. more than half) of the total number of first preferences expressed they are deemed elected. If no candidate has such a majority then all candidates except the two who have received the largest number of first preferences are eliminated and the count proceeds to a second round.
+
+In the second round any voter whose first preference has been eliminated has their vote transferred to the candidate of their second preference (but only if their second choice has not also been eliminated). The candidate with the most votes is then declared elected.
+
+=== An example ===
+
+{{Tenn_voting_example}}
+
+<div class=floatright>
+{| border=1 
+!City!!Round 1!!Round2
+|-
+!Memphis
+|bgcolor="#ffc0c0"|42%
+|bgcolor="#ffc0c0"|42%
+|-
+!Nashville
+|bgcolor="#ffc0c0"|26%
+|bgcolor="#ffc0c0"|26%
+|-
+!Chattanooga
+|bgcolor="#ffc0c0"|15%
+|bgcolor="#e0e0ff"|<strike>15%</strike> 0
+|-
+!Knoxville
+|bgcolor="#ffc0c0"|17%
+|bgcolor="#e0e0ff"|<strike>17%</strike> 0
+|}
+</div>
+
+Assuming each voter votes according to their sincere preferences (for a more sophisticated approach, see below), Nashville and Memphis would receive the most votes and advance to the second round.
+
+The second preference of voters from Chattanooga is for Knoxville while the second preference of voters from Knoxville is for Chattanooga. For this reason, in this particular case, no votes from either Chattanooga or Knoxville may be transferred to the two remaining candidates.
+
+On the second and final count, Memphis still has more votes than Nashville, and wins.
+
+== Potential for tactical voting ==
+
+Under the Supplementary Vote, unlike under Instant Run-off Voting, a voter will not influence the final result of an election unless they express either a first or a second preference for one of the two leading candidates. Furthermore, their first preference is unlikely to be of influence unless it is expressed for one of the three leading candidates.
+
+More specifically, the Supplementary Vote is vulnerable to the tactics of 'push over' and 'compromise'. In the example given voters from Knoxville might have 'compromised' by voting for Nashville as either their first or second preference. This would ultimately have resulted in the election of Nashville (their third choice) rather than Memphis (their last choice). SV is less vulnerable to the tactic of 'compromise' than the [[Single Member Plurality]] ('First-Past-the-Post') system but more so than Instant Run-off Voting.  
+
+Using the 'push-over' tactic voters who prefer one of the two leading candidates in an election may help their favourite candidate by expressing a first preference for a less popular third candidate in order to bring it about that their favourite candidate faces a weaker rival than their actual strongest opponent when they advance to the final round.
+
+Because under SV it is paradoxically possible both to harm the chances of a candidate by ranking them ''higher'', and to aid the chances of a candidate by ranking them ''lower'', the system is said to fail the [[monotonicity criterion]].
+
+== Impact on factions and candidates ==
+
+The Supplementary Vote is not a form of [[proportional representation]], and were it used to elect a council or legislature, it could be expected to overrepresent larger parties at the expense of smaller ones in the same manner as other systems based on single winner elections, such as Single Member Plurality and Instant Run-off Voting.
+
+Like IRV, the SV is said to encourage candidates to seek support beyond their core base of supporters in order to secure the second preferences of the supporters of other candidates. This is said to create a more conciliatory campaigning style among candidates with similar policy platforms.  SV is also likely to improve the chances of 'third party' candidates by encouraging voters who wish to do so to vote sincerely for such candidates where under systems such as the Single Member Plurality system they would be discouraged from doing so for tactical reasons.
+
+These arguably positive effects will be moderated, however, by the strong incentives the Supplementary Vote creates for voting, in most circumstances, only for candidates from among the leading three.
+
+== Where it is used ==
+
+The Supplementary Vote has been used since 2000 to elect the Mayor of London. At the start of the 21st century it was also in use for the direct election of 11 English [[Mayors in the United Kingdom|mayors]].
+
+A system that may be considered a variant of the Supplementary Vote has been used to elect the President of [[Sri Lanka]] since 1982. Under the Sri Lankan system voters are permitted to express, from among the list of candidates, not just a first and second but also a third preference.
+
+In the past, the [[Australia|Australian]] state of [[Queensland]] used a variant of the Supplementary Vote, known as the "'''Contingent Vote'''", between [[1892]] and [[1942]]. A form of SV was also briefly used in [[Alabama]] from [[1915]]-[[1931]]. The name of the "Supplementary Vote" was coined in [[1993]] by the [[United Kingdom]] [[Labour Party (UK)|Labour Party]]Ã‚â€™s [[Plant Commission]]. The commission recommended it for use in British elections, believing they had invented a new system. 
+
+==See also:==
+*[[Sri Lankan Supplementary Vote]]
+*[[Preferential voting]]
+
+==External links:==
+*[http://www.londonelects.org.uk/voting/howthevoteworks/mayor-2.html LondonElects: How the Mayor of London is Elected]
+*[http://www.aceproject.org/main/english/es/esy_lk.htm Electoral Systems Index: Sri Lanka]
+[[Category:Voting systems]]
+
+{{fromwikipedia}}
