@@ -2,11 +2,7 @@
 
 == Voting ==
 
-For each candidate, each voter expresses the utility of that
-candidate's election to them in the form of a number.  In "pure" range
-voting, each voter may give any candidate any [[real number]], but as the
-potential for [[tactical voting]] is huge, most systems use upper and lower bounds.  For example, each voter might give a real number between -1
-and 1, or an [[integer]] between 1 and 10.
+For each candidate, each voter expresses the utility of that candidate's election to them in the form of a number.  In "pure" range voting, each voter may give any candidate any real number, but as the potential for [[tactical voting]] is huge, most systems use upper and lower bounds.  For example, each voter might give a real number between -1 and 1, or an integer between 1 and 10.
 
 Range voting in which only two different votes may be submitted (0 and 1, for example) is equivalent to [[approval voting]].
 
