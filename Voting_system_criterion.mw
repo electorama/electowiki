@@ -2,63 +2,41 @@ A formally defined pass/fail criterion by which a [[voting system]] may be asses
 
 Examples for such criteria are:
 
+:[[Monotonicity criterion]]
+
+:[[Pareto efficiency|Pareto criterion]]
+
 :[[Condorcet Criterion|Condorcet criterion]]
 
-:[[Consensus Criteria]]
-
-:[[Consistency|Consistency criterion]]
-
-:[[Favorite Betrayal criterion]]
-
-:[[Generalized Strategy-Free criterion]]
-
-:[[Greatest Possible Consensus Criterion]]
+:[[Smith set|Smith criterion]] ([[Aka_(initialism)|aka]] [[Generalized Condorcet criterion]])
 
 :[[Independence of irrelevant alternatives|independence from irrelevant alternatives]]
 
 :[[Independence of irrelevant alternatives|local independence from irrelevant alternatives]]
 
-:[[Tactical voting|invulnerability to burying]]
-
-:[[Tactical voting|invulnerability to compromising]]
-
-:[[Later-no-harm criterion]]
-
-:[[Monotonicity criterion]]
-
-:[[Pareto criterion]]
-
-:[[Participation criterion]]
-
-:[[Plurality criterion]]
-
 :[[Schwartz set|Schwartz criterion]]
-
-:[[Smith set|Smith criterion]] (also known as [[Generalized Condorcet criterion]])
-
-:[[Strategic nomination|Independence of clones]]
 
 :[[Strategy-Free criterion]]
 
+:[[Generalized Strategy-Free criterion]]
+
 :[[Strong Defensive Strategy criterion]]
-
-:[[Summability criterion]]
-
-:[[Unanimous Consensus Criterion]]
 
 :[[Weak Defensive Strategy criterion]]
 
+:[[Summability criterion]]
 
+:[[Strategic nomination|Independence of clones]]
 
+:[[Participation criterion]]
 
+:[[Consistency|Consistency criterion]]
 
+:[[Tactical voting|invulnerability to compromising]]
 
+:[[Tactical voting|invulnerability to burying]]
 
-
-
-
-
-
+:[[Favorite Betrayal criterion]]
 
 [[Category:Voting_system_criteria|Voting system criteria]]
 {{stub}}
