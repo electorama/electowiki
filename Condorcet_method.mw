@@ -1,24 +1,16 @@
-Any election method conforming to the [[Condorcet criterion]] is known as a '''Condorcet method'''. The name comes from a deviser, the [[18th century]] [[mathematician]] and [[philosopher]] [[Marquis de Condorcet]], although the method was previously devised by [[Ramon Llull]] in the [[13th century]]. 
+Any election method conforming to the [[Condorcet criterion]] is known as a '''Condorcet method'''. The name comes from a deviser, the 18th century mathematician and philosopher [[Marquis de Condorcet]], although the method was previously devised by [[Ramon Llull]] in the 13th century. 
 
 '''Condorcet''' is sometimes used to indicate the family of Condorcet methods as a whole.
 
-== Basic procedure ==
-
-The basic procedure for casting ballots is identical to most preferential ballots, such as IRV and Borda ballots.  However, the voter might prefer to order them differently.  In most systems, first place is given additional consideration, as though first choice is a very strong preference.  In ballots used in a Condorcet Method, order is the only consideration; First place is not a special rank with special consideration&mdash; it is simply preferred to second or third or fourth.
-
 === Casting ballots ===
 
-Each voter ranks the candidates in the order they prefer each candidate.  The voter can include less than all candidates under consideration.
-
-Usually when a candidate ''is not listed'' on the voter's ballot they are considered less preferred than listed candidates, and ranked accordingly.  However, some variations allow a "no opinion" default option where no for- or against- preference is counted for that candidate.
-
-Write-ins are possible, but are somewhat more difficult to implement for automatic counting than in other election methods.  This is a counting issue, but results in the frequent omission of the write-in option in ballot software.
+Each voter fills out a [[preferential voting|ranked ballot]].  The voter can include less than all candidates under consideration.   Usually when a candidate ''is not listed'' on the voter's ballot they are considered less preferred than listed candidates, and ranked accordingly.  However, some variations allow a "no opinion" default option where no for- or against- preference is counted for that candidate.  Write-ins are possible, but are somewhat more difficult to implement for automatic counting than in other election methods.  This is a counting issue, but results in the frequent omission of the write-in option in ballot software.
 
 === Counting ballots ===
 
 Ballots are counted by considering all possible sets of two-candidate elections from all available candidates.  That is, each candidate is considered against each and every other candidate.  A candidate is considered to "win" against another on a single ballot if they are ranked higher than their opponent.  All the votes for candidate Alice over candidate Bob are counted, as are all of the votes for Bob over Alice.  Whoever has the most votes in each one-on-one election wins.
 
-If a candidate is preferred over all other candidates, that candidate is the [[Condorcet Criterion|Condorcet candidate]].  However, a [[Condorcet Criterion|Condorcet candidate]] may not exist, due to a fundamental [[Voting paradox|paradox]]: It is possible for the electorate to prefer A over B, B over C, and C over A simultaneously.  This is called a circular tie, and it must be resolved by some other mechanism.
+If a candidate is preferred over all other candidates, that candidate is the [[Condorcet Criterion|Condorcet candidate]].  However, a Condorcet candidate may not exist, due to a fundamental [[Voting paradox|paradox]]: It is possible for the electorate to prefer A over B, B over C, and C over A simultaneously.  This is called a circular tie, and it must be resolved by some other mechanism.
 
 ==== Counting with matrixes ====
 
@@ -42,15 +34,9 @@ When the sum matrix is found, the contest between each candidate is considered. 
 
 The sum matrix is the primary piece of data used to resolve circular ties (also called circular ambiguities).
 
-== Resolving circular ambiguities ==
-
-Just about any election system that treats every voter equally (''anonymity'') and every candidate equally (''neutrality'') has the possibility of ties. A Condorcet method isn't different in that regard.  For example, it's possible for candidates to tie with each other and "pairwise defeat" everybody else. 
-
-However, "Condorcet" methods have an additional ambiguity: the problem of the '''[[Condorcet paradox]]'''. There may be cycles in the results.
-
-For example, it would be possible for the totalled votes to record that A defeats B, B defeats C, and C defeats A. And while voters often vote so that there is a single Condorcet winner of a given election (see in that regard [[political spectrum]]), a Condorcet method is usually only considered for serious use if such cycles can be handled.  Handling cases where there is not a single Condorcet winner is called ambiguity resolution in this article, though other phrases such as "cyclic ambiguity resolution" and "Condorcet completion" are used as well.
-
 === Key terms in ambiguity resolution ===
+
+Handling cases where there is not a single Condorcet winner is called ambiguity resolution in this article, though other phrases such as "cyclic ambiguity resolution" and "Condorcet completion" are used as well.
 
 The following are key terms when discussing ambiguity resolution methods:
 * '''[[Smith set]]''':  the smallest set of candidates in a particular election who, when paired off in pairwise elections, can beat all other candidates outside the set.
@@ -110,7 +96,7 @@ In MMV all such conflicting matchups are ignored (though any non-conflicting mat
 
 === Cloneproof Schwartz Sequential Dropping (CSSD) ===
 
-The "[[Cloneproof Schwartz Sequential Dropping|cloneproof Schwartz Sequential Dropping]]" (CSSD) method resolves votes as follows:
+The "[[Cloneproof Schwartz Sequential Dropping]]" (CSSD) method resolves votes as follows:
 
 # First, determine the Schwartz set (the innermost unbeaten set). If no defeats exist among the Schwartz set, then its members are the winners (plural only in the case of a tie, which must be resolved by another method).
 # Otherwise, drop the weakest defeat information among the Schwartz set (i.e., where the number of votes favoring the defeat is the smallest). Determine the new Schwartz set, and repeat the procedure.
@@ -128,7 +114,7 @@ Other terms related to the Condorcet method are:
 
 == An example ==
 
-Imagine an election for the capital of [[Tennessee]], a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
+Imagine an election for the capital of Tennessee, a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
 <div style="float:right;  padding:2px; text-align:center">
 [[Image:CondorcetTennesee.png]]</div>
 
@@ -198,19 +184,16 @@ The results would be tabulated as follows:
 * [A] indicates voters who preferred the candidate listed in the column caption to the candidate listed in the row caption
 * [B] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
 
-In this election, Nashville is the Condorcet winner and thus the winner under all possible Condorcet methods. Notice how [[first-past-the-post]] and [[instant-runoff voting]] would have respectively selected Memphis and Knoxville here, while compared to either of them, most people would have preferred Nashville.
+In this election, Nashville is the Condorcet winner and thus the winner under all possible Condorcet methods. 
 
 == Use of Condorcet voting ==
 
 Condorcet voting is not currently used in government elections.  However, it is starting to receive support in some public organizations. Organizations which currently use some variant of the Condorcet method are:
 
-# The [[Debian]] project uses [[Cloneproof Schwartz Sequential Dropping]].
-# The [[Software in the Public Interest]] project uses [[Cloneproof Schwartz Sequential Dropping]].
-# The [[UserLinux]] project uses [[Cloneproof Schwartz Sequential Dropping]].
-# The [[Free State Project]] for choosing its target state
-# The voting procedure for the [[United Kingdom|uk]].* hierarchy of [[Usenet]]
+# The Debian project uses Cloneproof Schwartz Sequential Dropping.
+# The Software in the Public Interest project uses Cloneproof Schwartz Sequential Dropping.
+# The UserLinux project uses Cloneproof Schwartz Sequential Dropping.
+# The Free State Project uses a Condorcet method for choosing its target state
+# The voting procedure for the uk.* hierarchy of Usenet
 #[http://www.rsabey.pwp.blueyonder.co.uk/rpc/fscc/ Five-Second Crossword Competition]
-
-
-
 {{fromwikipedia}}
