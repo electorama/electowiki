@@ -1,0 +1,216 @@
+'''Cloneproof Schwartz Sequential Dropping''' ('''CSSD''') is a [[voting system]] developed by Markus Schulze that selects a single winner using votes that express preferences.  CSSD can also be used to create a sorted list of winners.  CSSD is also known as "Schwartz Sequential Dropping", "Beatpath Method", "Beatpath Winner", "Path Voting", "Path Winner", and "Schulze Method".
+
+If there is a candidate who is preferred over the other candidates,
+when compared in turn with each of the others, CSSD guarantees that that candidate will win.
+Because of this property, CSSD is (by definition) a '''[[Condorcet method]]'''.
+Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and
+[[Instant-runoff voting]], which do not make this guarantee.
+
+== The Schwartz Set ==
+
+The definition of a [[Schwartz set]], as used in CSSD, is as follows:
+
+# An unbeaten set is a set of candidates of whom none is beaten by anyone outside that set. 
+# An innermost unbeaten set is an unbeaten set that doesn't contain a smaller unbeaten set. 
+# The Schwartz set is the set of candidates who are in innermost unbeaten sets.
+
+== Procedure ==
+
+The voters cast their ballots by ranking the candidates according to their preferences, just like for any other Condorcet election.
+
+CSSD uses [[Condorcet method|Condorcet]] pairwise matchups between the candidates and a winner is chosen in each of the matchups.
+
+From there, CSSD operates as follows to select a winner (or create a ranked list):
+
+# Calculate the Schwartz set based only on undropped defeats. 
+# If there are no defeats among the members of that set then they (plural in the case of a tie) win and the count ends. 
+# Otherwise, drop the weakest defeat among the candidates of that set. Go to 1.
+
+== An Example ==
+
+=== The Situation ===
+
+Imagine an election for the capital of [[Tennessee]], a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
+<div style="float:right;  padding:2px; text-align:center">
+[[Image:CondorcetTennesee.png]]</div>
+
+* Memphis (Shelby County): 826,330
+* Nashville (Davidson County): 510,784
+* Chattanooga (Hamilton County): 285,536
+* Knoxville (Knox County): 335,749
+
+Let's say that in the vote, the voters vote based on geographic proximity.  Assuming that the population distribution of the rest of Tennessee follows from those population centers, one could easily envision an election where the percentages of votes would be as follows:
+
+<table border=1>
+<tr>
+<td>
+'''42% of voters (close to Memphis)'''<br>
+1. Memphis<br>
+2. Nashville<br>
+3. Chattanooga<br>
+4. Knoxville
+</td>
+<td valign="top">
+'''26% of voters (close to Nashville)'''<br>
+1. Nashville<br>
+2. Chattanooga<br>
+3. Knoxville<br>
+4. Memphis
+</td>
+<td>
+'''15% of voters (close to Chattanooga)'''<br>
+1. Chattanooga<br>
+2. Knoxville<br>
+3. Nashville<br>
+4. Memphis
+</td>
+<td>
+'''17% of voters (close to Knoxville)'''<br>
+1. Knoxville<br>
+2. Chattanooga<br>
+3. Nashville<br>
+4. Memphis
+</td>
+</tr>
+</table>
+
+The results would be tabulated as follows:
+<table BORDER><caption>Pairwise Election Results</caption>
+<tr><th colspan=2><th colspan=4 bgcolor="#c0c0ff">A</tr>
+
+<tr>
+<th colspan=2><th bgcolor="#c0c0ff">Memphis
+<th bgcolor="#c0c0ff">Nashville
+<th bgcolor="#c0c0ff">Chattanooga
+<th bgcolor="#c0c0ff">Knoxville
+</tr>
+<tr><th  bgcolor="#ffc0c0" rowspan=4>B<th bgcolor="#ffc0c0">Memphis<td><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br></tr>
+<tr><th bgcolor="#ffc0c0">Nashville<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td><td nowrap bgcolor="#ffe0e0">[A] 32% <br>[B] 68% <br><td nowrap bgcolor="#ffe0e0">[A] 32% <br>[B] 68% <br></tr>
+
+<tr><th bgcolor="#ffc0c0">Chattanooga<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td nowrap bgcolor="#e0e0ff">[A] 68% <br>[B] 32% <br><td><td nowrap bgcolor="#ffe0e0">[A] 17% <br>[B] 83% <br></tr>
+<tr><th bgcolor="#ffc0c0">Knoxville<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td nowrap bgcolor="#e0e0ff">[A] 68% <br>[B] 32% <br><td nowrap bgcolor="#e0e0ff">[A] 83% <br>[B] 17% <br><td></tr>
+<tr><th colspan=2 bgcolor="#c0c0ff">Pairwise election results (won-lost-tied):
+
+<td bgcolor="#ffffff">0-3-0
+<td bgcolor="#ffffff">3-0-0
+<td bgcolor="#ffffff">2-1-0
+<td bgcolor="#ffffff">1-2-0
+<tr><th colspan=2 bgcolor="#c0c0ff">Votes against in worst pairwise defeat:
+<td bgcolor="#ffffff">58%<td bgcolor="#ffffff">N/A<td bgcolor="#ffffff">68%<td bgcolor="#ffffff">83%</table>
+
+* [A] indicates voters who preferred the candidate listed in the column caption to the candidate listed in the row caption
+* [B] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
+* [NP] indicates voters who expressed no preference between either candidate
+
+=== Pairwise Winners ===
+
+First, list every pair, and determine the winner:
+{| border="1"
+!Pair!!Winner
+|-
+| Memphis (42%) vs. Nashville (58%)|| Nashville 58%
+|-
+| Memphis (42%) vs. Chattanooga (58%)|| Chattanooga 58%
+|-
+| Memphis (42%) vs. Knoxville (58%)|| Knoxville 58%
+|-
+| Nashville (68%) vs. Chattanooga (32%)|| Nashville 68%
+|-
+| Nashville (68%) vs. Knoxville (32%)||Nashville 68%
+|-
+| Chattanooga (83%) vs. Knoxville (17%)|| Chattanooga: 83%
+|}
+
+Note that absolute counts of votes can be used, or
+percentages of the total number of votes; it makes no difference.
+
+=== Dropping ===
+
+Next we start with our list of cities and their matchup wins/defeats
+
+* Nashville 3-0
+* Chattanooga 2-1
+* Knoxville 1-2
+* Memphis 0-3
+
+Technically, the Schwartz set is simply Nashville as it beat all others 3 to 0.
+
+Therefore, Nashville is the winner.
+
+=== Ambiguity Resolution Example ===
+
+Let's say there was an ambiguity.  For a simple situation involving candidates A, B, and C.
+
+* A > B 72%
+* B > C 68%
+* C > A 52%
+
+In this situation the Schwartz set is A, B, and C as they all beat someone.
+
+CSSD then says to drop the weakest defeat, so we drop C > A and are left with
+
+* A > B 72% (as C has been removed)
+
+Therefore, A is the winner.
+
+
+(It may be more accessible to phrase that as "drop the weakest win", though purists may complain.)
+
+=== Summary ===
+
+In the (first) example election, the winner is Nashville.
+This would be true for any [[Condorcet method]].
+Using the [[first-past-the-post]] system and some other systems, Memphis would have won the election by having the most people, even though Nashville won every simulated pairwise election outright.  Using [[Instant-runoff voting]] in this example would result in Knoxville winning, even though more people preferred Nashville over Knoxville.
+
+== Satisfied Criteria ==
+
+CSSD satisfies the following criteria:
+
+# [[Monotonicity criterion]]
+# [[Pareto efficiency|Pareto criterion]]
+# [[Condorcet Criterion|Condorcet criterion]]
+# [[Smith set|Smith criterion]] ([[Aka_(initialism)|aka]] [[Generalized Condorcet criterion]])
+# [[Independence of irrelevant alternatives|local independence from irrelevant alternatives]]
+# [[Schwartz set|Schwartz criterion]]
+# [[Strategy-Free criterion]]
+# [[Generalized Strategy-Free criterion]]
+# [[Strong Defensive Strategy criterion]]
+# [[Weak Defensive Strategy criterion]]
+# [[Summability criterion]]
+# [[Strategic nomination|Independence of clones]]
+
+CSSD violates the following criteria:
+
+# [[Participation criterion]]
+# [[Consistency|Consistency criterion]]
+# [[Tactical voting|invulnerability to compromising]]
+# [[Tactical voting|invulnerability to burying]]
+
+It isn't known whether CSSD satisfies the following criteria:
+
+# [[Favorite Betrayal criterion]]
+
+== Use of CSSD ==
+
+CSSD is not currently used in government elections.  However, it is starting to receive support in some public organizations. Organizations which currently use CSSD are:
+
+# the [[Debian]] project
+# the [[Software in the Public Interest]] project
+# the [[UserLinux]] project
+# the [http://www.leaderofthefreeworld.com/ Leader of the Free World] project
+# the [http://www.demexp.org/ L'ExpÃƒÂ©rience DÃƒÂ©mocratique] project
+# the [http://glasnost.entrouvert.org/ Glasnost] project
+
+== External Resources ==
+* [http://groups.yahoo.com/group/election-methods-list/ A mailing list containing technical discussions about election methods]
+* [http://electionmethods.org/ electionmethods.org] where CSSD is also called "Schwartz Sequential Dropping" and "Beatpath Winner"
+* [http://www.condorcet.org/emr/index.shtml Election Methods Resource] where CSSD is called "Schulze"
+* [http://accuratedemocracy.com/voting_rules.htm Accurate Democracy] where CSSD is called "Schulze", "Schwartz Sequential Dropping", and "Beatpath"
+* [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)] where CSSD is called "Path Winner"
+* [http://www.mcs.vuw.ac.nz/~ncj/comp303/schulze.pdf A New Monotonic and Clone-Independent Single-Winner Election Method] ('''[[Portable Document Format|PDF]]''') by Markus Schulze ([http://www.citizensassembly.bc.ca/resources/submissions/csharman-10_0409201706-143.pdf mirror1], [http://lists.gnu.org/archive/html/demexp-dev/2003-09/pdflQW7IlpAfC.pdf mirror2])
+* [http://cec.wustl.edu/~rhl1/rbvote/desc.html Descriptions of ranked-ballot voting methods] where CSSD is called "Schulze"
+* [http://fc.antioch.edu/~jarmyta@antioch-college.edu/voting.htm Voting methods resource page] where CSSD is also called "Schwartz Sequential Dropping" and "Beatpath"
+
+[[Category:Voting systems]]
+
+{{fromwikipedia}}
