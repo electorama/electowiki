@@ -1,8 +1,8 @@
-The '''largest remainder method''' is one way of allocating seats proportionally for representative assemblies with [[Party-list proportional representation|party list]] [[voting system]]s.  It is a contrast to the [[highest averages method]].  
+The '''largest remainder method''' is one way of allocating seats proportionally for representative assemblies with [[Party-list proportional representation|party list]] [[voting systems]].  It is a contrast to the [[highest averages method]].  
 
 ==Method==
 
-The ''largest remainder method'' requires the number of votes for each party to be divided a quota representing the number of votes ''required'' for a seat, and this gives a notional number of seats to each, usually including an integer and either a fraction or alternatively a remainder.  Each party receives seats equal to the integer.  This will generally leave some seats unallocated: the parties are then ranked on the basis of the fraction or equivalently on the basis of the remainder, and parties with the larger fractions or remainders are each allocated one additional seat until all the seats have been allocated.  This gives the method its name.
+The ''largest remainder method'' requires the number of votes for each party to be divided a [[quota]] representing the number of votes ''required'' for a seat, and this gives a notional number of seats to each, usually including an [[integer]] and either a [[fraction]] or alternatively a [[remainder]].  Each party receives seats equal to the integer.  This will generally leave some seats unallocated: the parties are then ranked on the basis of the fraction or equivalently on the basis of the remainder, and parties with the larger fractions or remainders are each allocated one additional seat until all the seats have been allocated.  This gives the method its name.
 
 ==Quotas==
 
@@ -411,7 +411,10 @@ These examples take an election to allocate 10 seats where there are 100,000 vot
  </tr>
 </table>
 
-[[Category:Party list theory]]
+==See also==
+* [[List of democracy and elections-related topics]] 
+
+[[Category:Voting systems]]
 
 ==External links==
 *[http://www.cut-the-knot.org/Curriculum/SocialScience/AHamilton.shtml Hamilton method experimentation applet]
