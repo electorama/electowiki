@@ -9,6 +9,6 @@ The addition of one or more spoiled ballots cannot change the winner.
 == Complying Methods ==
 
 *'''Complies''': [[Approval voting]], [[Cardinal Ratings]], [[Cloneproof Schwartz Sequential Dropping]]
-*'''Fails''': [[Median Ratings]]
+*'''Fails''': [[Median Ratings]], methods electing from the [[CDTT|CDTT set]]
 
 [[Category:Voting system criteria]]
