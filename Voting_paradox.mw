@@ -1,7 +1,6 @@
-[[Image:Condorcetparadox.png|thumb|right|A majority of the dots are closer to B than A, C than B, and A than C.]]
-The '''voting paradox''' is a situation noted by the [[Marquis de Condorcet]] in the late 18th century,
-in which collective preferences can be cyclic (i.e. not transitive), even if the preferences of individual voters are not.
-This is paradoxical, because it means that majority wishes can be in conflict with each other.  When this occurs, it is because the conflicting majorities are each made up of different groups of individuals.
+The '''voting paradox''' is a situation noted by the [[Marquis de Condorcet]] in the late [[18th century]],
+in which collective preferences can be cyclic (i.e. not [[transitivity (mathematics)|transitive]]), even if the preferences of individual voters are not.
+This is [[paradox|paradoxical]], because it means that majority wishes can be in conflict with each other. When this occurs, it is because the conflicting majorities are each made up of different groups of individuals.
 
 For example, suppose we have three candidates, A, B and C, and that there are three voters with preferences as follows
 (candidates being listed in decreasing order of preference):
@@ -12,7 +11,7 @@ For example, suppose we have three candidates, A, B and C, and that there are th
 
 If C is chosen as the winner, it can be argued that B should win instead, since two voters (1 and 2) prefer B to C and only one voter (3) prefers C to B.  However, by the same argument A is preferred to B, and C is preferred to A, by a margin of two to one on each occasion.
 
-When a [[Condorcet method]] is used to determine an election, a voting paradox among the ballots can mean that the election has no [[pairwise champion]].  The several variants of the Condorcet method differ chiefly on how they [[Condorcet method#Resolving ambiguities|resolve such ambiguities]] when they arise to determine a winner.
+When a [[Condorcet method]] is used to determine an election, a voting paradox among the ballots can mean that the election has no [[Condorcet winner]].  The several variants of the Condorcet method differ chiefly on how they [[Condorcet method#Resolving ambiguities|resolve such ambiguities]] when they arise to determine a winner.
 Note that there is no fair and deterministic resolution to this trivial example because each candidate is in an exactly symmetrical situation.
 
 ==See also== 
@@ -20,5 +19,9 @@ Note that there is no fair and deterministic resolution to this trivial example 
 * [[Arrow's impossibility theorem]]
 * [[Gibbard-Satterthwaite theorem]]
 * [[Smith set]]
+* [[voting system]]
 
-{{fromwikipedia}}[[Category:Voting theory]]
+[[Category:Voting theory]]
+[[Category:Paradoxes]]
+
+{{fromwikipedia}}
