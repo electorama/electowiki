@@ -1,10 +1,10 @@
-The '''Coombs' method''', created by Clyde Coombs, is a [[voting system]] used for single-winner elections [[preferential voting|in which each voter rank-orders the candidates]]. It sort of works like [[Instant Runoff Voting]] (a US term; it is known as Preferential Voting in some countries) in reverse.
+The '''Coombs' method''', created by [[Clyde Coombs]], is a [[voting system]] used for single-winner [[election]]s [[preferential voting|in which each voter rank-orders the candidates]]. It sort of works like [[Instant Runoff Voting]] (a US term; it is known as Preferential Voting in some countries) in reverse.
 
 ==Procedures==
 Each voter rank-orders all of the candidates on their ballot. If at any time one candidate is ranked first (among non-eliminated candidates) by an absolute majority of the voters, then this is the winner. As long as this is not the case, the candidate which is ranked last (again among non-eliminated candidates) by the most (or a [[plurality]] of) voters is eliminated.
 
 ==An example==
-Imagine an election to choose the capital of Tennessee, a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 miles northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
+Imagine an election to choose the capital of [[Tennessee]], a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 miles northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
 <div style="float:right;  padding:2px; text-align:center">
 [[Image:CondorcetTennesee.png]]</div>
 
@@ -99,10 +99,12 @@ Note that although Coomb's method chose the [[Condorcet winner]] here, this is n
 ==Potential for tactical voting==
 The Coombs' method is vulnerable to three strategies: [[tactical voting|compromising, push-over]] and [[strategic nomination|teaming]].
 
+==See also==
+* [[List of democracy and elections-related topics]] 
+
 ==External links==
 *[http://condorcet.org/emr/methods.shtml#Coombs Condorcet.org EMR: Coombs' method]
 
+[[Category:Voting systems]]
 
 {{fromwikipedia}}
-
-[[Category:Preferential voting systems]]
