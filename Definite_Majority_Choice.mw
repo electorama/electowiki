@@ -154,5 +154,6 @@ In the event of a pairwise tie or near tie (say, margin within 0.01%), it is som
 == See Also ==
 
 * [[Imagine Democratic Fair Choice]]:  a method that picks its winner from the same P set as DMC.  It has a much simpler ballot.
+* [[Pairwise Sorted Methods]]
 
 [[Category:Condorcet method]]
