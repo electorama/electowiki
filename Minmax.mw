@@ -10,4 +10,4 @@ Both of these methods satisfy the [[Condorcet criterion]], and both fail the [[S
 
 Minmax(pairwise opposition) does not strictly satisfy the [[Condorcet criterion]] or [[Smith set|Smith criterion]]. It also fails the [[Plurality criterion]], and is more indecisive than the other Minmax methods. However, it satisfies the [[Later-no-harm criterion]], and in the three-candidate case, the [[Participation criterion]].
 
-The Minmax method is also known as 'Simpson-Kramer method'.
+The Minmax method is also known as ''Simpson-Kramer method''.
