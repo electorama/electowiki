@@ -1,0 +1,7 @@
+The '''Pareto criterion''' is a basic criterion for evaluating [[voting system|voting systems]]. It can be defined in this way:
+
+:''If every voter ranks candidate ''A'' above candidate ''B'', then ''B'' must not be elected''.
+
+This criterion is important in the context of [[Arrow's impossibility theorem]].
+
+Virtually every devised election method satisfies this criterion. An example of a method which would fail it would be ''Random Candidate'', where some candidate is elected at random, regardless of the submitted votes.
