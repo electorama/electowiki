@@ -21,10 +21,12 @@ Looking at pairwise defeats and their strength can help assessing the "immunity"
 * '''Cardinal rated''' strength = ''sum of difference in the candidates' cardinal ratings on all ballots which rate the winner over the loser of the defeat.'' Helps diminishing certain strategies even better, but requires interpersonally comparable cardinal ratings.
 
 == Steps ==
-Many methods work in more than one perhaps similar, perhaps different steps.
+Many methods work in more than one, perhaps similar, perhaps different steps.
 * '''Iteration''': Similar steps are performed until some break criterion applies.
 * '''Reduction to a subset''': All members outside some special set are removed.
 * '''Runoff''': Special case of reduction to a subset, for example by removing worst candidate according to some score. Can be iterated.
+* '''Ordering''': Many methods involve the construction of an ordering of the candidates or the defeats, not to be interpreted as a social order, but only as an intermediate tool.
+* '''Randomization''': Using a certain amount of randomness can help avoiding some strategies, especially when it leads to each candidate being beaten by a possible winner.
 
 == Special sets ==
 * '''Smith set''' (top cycle, top tier) = ''smallest non-empty set of candidates each of which beats all candidates outside the set.''
@@ -36,8 +38,11 @@ Many methods work in more than one perhaps similar, perhaps different steps.
 * '''Bipartisan set''' = ''set of candidates getting non-zero probability in the bipartisan distribution.'' 
 * Forest Simmons' set '''P''' = ''set of candidates which are not approval-consistently defeated.'' This set is totally ordered by the defeats and contains the most approved candidate and a possible Condorcet winner.
 
-== Orderings ==
-
+== Orderings == 
+* Ordering by some score
+* (Uniformly) '''random order''': ''Pick some order uniformly at random.'' Destroys clone-proofness.
+* '''Random ballot order''': ''A is above B when A is above B on the first ballot distinguishing between them, in a random sequence of ballots.'' This is an often used tie breaking rank order (TBRO). Retains clone-proofness when used appropriately.
+* '''Random ballot approval order''': ''A is above B when A is above B on the first ballot on which the approval cutoff is between them, in a random sequence of ballots.'' Retains clone-proofness when used appropriately.
 
 == Randomization ==
 * '''Randomized start''': Pick an initial candidate by some random process, then proceed with other steps.
