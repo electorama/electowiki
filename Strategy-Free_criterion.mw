@@ -1,35 +1,36 @@
-== Definitions ==
+<h4 class=left>Definitions</h4>
 
-A sincere vote is one with no falsified preferences or preferences left unspecified when the election method allows them to be specified (in addition to the preferences already specified).
+<p>A sincere vote is one with no falsified preferences or preferences left unspecified when the election method allows them to be specified (in addition to the preferences already specified).</p>
 
-One candidate is preferred over another candidate if, in a one-on-one competition, more voters prefer the first candidate than prefer the other candidate.
+<p>One candidate is preferred over another candidate if, in a one-on-one competition, more voters prefer the first candidate than prefer the other candidate.</p>
 
-If one candidate is preferred over each of the other candidates, that candidate is called "Condorcet candidate" or "Condorcet winner".
+<p>If one candidate is preferred over each of the other candidates, that candidate is called "Condorcet candidate" or "Condorcet winner".</p>
 
-== Statement of Criterion ==
+<h4 class=left>Statement of Criterion</h4>
 
-''If a Condorcet candidate exists, and if a majority prefers this candidate to another candidate, then the other candidate should not win if that majority votes sincerely and no other voter falsifies
-any preferences.''
+<p><em>If a Condorcet candidate exists, and if a majority
+prefers this candidate to another candidate, then the other candidate should
+not win if that majority votes sincerely and no other voter falsifies
+any preferences.</em></p>
 
-In a ranked method, it is nearly equivalent to say: ''If more than half of the voters rank ''x'' above ''y'', and there is no candidate ''z'' whom more than half of the voters rank above ''x'', then ''y'' must not be elected.''
+[[Category:Voting system criteria]]
 
-== Complying Methods ==
+<h4 class=left>Complying Methods</h4>
 
-*'''Complies''': [[Schulze method]] (with winning votes as the measure of defeat strength), [[MDDA]], [[MAMPO]]
-*'''Fails''': [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], [[Plurality voting]], [[Instant-Runoff Voting]]
+<p>[[Cloneproof Schwartz Sequential Dropping]] complies with the Strategy-Free Criterion, while [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], [[Plurality voting]], and [[Instant-Runoff Voting]] do not comply.</p>
 
-== Commentary ==
+<h4 class=left>Commentary</h4>
 
-The reader may be wondering how the Condorcet candidate, if one exists, could
+<p>The reader may be wondering how the Condorcet candidate, if one exists, could
 possibly <em>not</em> be preferred by a majority of voters over any
 other candidate. The key is that some voters may have no preference
 between a given pair of candidates. Out of 100 voters, for example, 45
 could prefer the Condorcet candidate over another particular candidate, and 40 could
 prefer the opposite, with the other 15 having no preference between the
 two. In that case, it is not true that a majority of voters prefer the
-Condorcet candidate over the other candidate, and SFC does not apply.
+Condorcet candidate over the other candidate, and SFC does not apply.</p>
 
-In order to understand SFC, one must also understand that there are
+<p>In order to understand SFC, one must also understand that there are
 two types of insincere votes: false preferences and truncated
 preferences.  Voters <em>truncate</em> by terminating their rank list
 before their true preferences are fully specified (note that the last
@@ -37,11 +38,11 @@ choice is always implied, so leaving it out is not considered
 truncation). Voters <em>falsify</em> their preferences, on the other
 hand, by reversing the order of their true preferences or by specifying
 a preference they don't really have. Suppose, for example, that a
-voter's true preferences are (A,B,C) with no preference between D and E.
-The vote (A) or (A,B) would be a truncated vote, and the vote (B,A,C) or (A,C,B)
-or (A,B,C,D,E) would be a falsified vote.
+voter's true preferences are (A,B,C,D). The vote (A) or (A,B) would be a
+truncated vote, and the vote (B,A,C) or (A,C,B) would be a falsified
+vote.</p>
 
-SFC requires that the majority of voters who prefer the Condorcet candidate to
+<p>SFC requires that the majority of voters who prefer the Condorcet candidate to
 another particular candidate vote sincerely (neither falsify nor
 truncate their preferences), and it also requires that no other voter
 falsifies preferences. SFC therefore implies that the minority that does
@@ -51,17 +52,34 @@ minority could cause the other candidate to win by falsifying their
 preferences, but that would be a very risky <em>offensive</em> strategy
 that is more likely to backfire than to succeed.) The significance of
 the SFC guarantee is that the majority has no need for defensive
-strategy, hence the name Strategy-Free Criterion.
+strategy, hence the name Strategy-Free Criterion.</p>
 
-[[Schulze method|Schulze]] was shown to comply with both the
+<p>[[Cloneproof Schwartz Sequential Dropping]] was shown to comply with both the
 Condorcet and Generalized Condorcet Criteria (CC and GCC) above.
 Although compliance with CC and GCC are important, those criteria apply
 only in the theoretically ideal case in which all votes are sincere. The
 Strategy-Free criterion goes further and shows that, under certain
 reasonable conditions, a majority of voters have no incentive to vote
-insincerely. The fact that [[Schulze method|Schulze]] also complies with SFC
-therefore enhances the significance of CC and GCC considerably.
+insincerely. The fact that [[Cloneproof Schwartz Sequential Dropping]] also complies with SFC
+therefore enhances the significance of CC and GCC considerably.</p>
 
 ''Some parts of this article are derived with permission from text at http://electionmethods.org''
+
+== See Also ==
+
+*[[Voting system]]
+*[[Monotonicity criterion]]
+*[[Condorcet Criterion]]
+*[[Generalized Condorcet criterion]]
+*[[Generalized Strategy-Free criterion]]
+*[[Strong Defensive Strategy criterion]]
+*[[Weak Defensive Strategy criterion]]
+*[[Favorite Betrayal criterion]]
+*[[Participation criterion]]
+*[[Summability criterion]]
+
+== External Links ==
+
+* [http://electionmethods.org/ Election Methods Education and Research Group]
+
 {{fromwikipedia}}
-[[Category:Voting system criteria]]
