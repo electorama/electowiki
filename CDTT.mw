@@ -6,14 +6,16 @@ Equivalently it can be defined as the set containing each candidate ''A'' who ha
 
 == Uses ==
 
-Limiting an election method's selection to the CDTT members can permit it to satisfy the [[Minimal Defense criterion]] (and thus the [[Strong Defensive Strategy criterion]]) and [[Mutual majority criterion|Majority]], while coming close to satisfying the [[Later-no-harm criterion]]. Specifically, the CDTT completely satisfies [[Later-no-harm criterion|Later-no-harm]] in the three-candidate case, and failures can only occur in the general case when there are majority-strength cycles.
+Limiting an election method's selection to the CDTT members can permit it to satisfy the [[Minimal Defense criterion]] (and thus the [[Strong Defensive Strategy criterion]]) and the [[Mutual majority criterion|Majority criterion for solid coalitions]], while coming close to satisfying the [[Later-no-harm criterion]]. Specifically, the CDTT completely satisfies [[Later-no-harm criterion|Later-no-harm]] in the three-candidate case, and failures can only occur in the general case when there are majority-strength cycles.
 
-In order to maximize Later-no-harm compliance, the CDTT should be paired with a method that itself fully satisfies Later-no-harm. In order to ensure that [[Monotonicity criterion|Mono-raise]] is not failed, the paired method should be used to generate a ranking of the candidates which is not influenced by which candidates make it into the CDTT. Then the CDTT member who appears first in this ranking is elected.
+(Please see the articles on the [[Minimal Defense criterion]] and [[Later-no-harm criterion]] for commentary on the significance of these criteria.)
+
+The CDTT's [[Later-no-harm criterion|Later-no-harm]] performance can be preserved by pairing the CDTT with a method which itself fully satisfies [[Later-no-harm criterion|Later-no-harm]]. When the paired method is used to generate a ranking of the candidates which is ''not'' influenced by which candidates make it into the CDTT, then compliance with the [[Monotonicity criterion]] can be preserved when the paired method already satisfies this criterion. Then the CDTT member who appears first in this ranking would be elected.
 
 Some methods which can be paired in this way with the CDTT:
 *'''[[Random Ballot]]''': This can be very indecisive, but it is conceptually simple, and it satisfies [[Monotonicity criterion|Mono-raise]] and Clone Independence.
 *'''[[Plurality voting|First-Preference Plurality]]''': This is decisive, simple, and [[Monotonicity criterion|monotone]], but fails Clone Independence.
-*'''[[Instant-runoff voting|Instant Runoff Voting]]''': This is more complicated. It satisfies Clone Independence but not [[Monotonicity criterion|monotonicity]].
+*'''[[Instant-runoff voting|Instant Runoff Voting]]''': This is more complicated. It satisfies Clone Independence but not [[Monotonicity criterion|monotonicity]]. The IRV ranking would be the reverse of the candidates' elimination order.
 *'''[[Descending Solid Coalitions]]''': This is also somewhat complicated, but it's the only non-random option which satisfies Clone Independence and [[Monotonicity criterion|Mono-raise]].
 *'''[[Minmax|MinMax (Pairwise Opposition)]]''': This has the advantage that it is calculated based on the pairwise matrix, just as the CDTT itself is. However, it is somewhat indecisive and fails Clone Independence. It satisfies [[Monotonicity criterion|Mono-raise]].
 
