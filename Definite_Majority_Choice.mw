@@ -62,7 +62,7 @@ Grading candidate X below the LPG gives the voter a chance to say "I don't want 
 
 Rankings are added into a pairwise array.  The approval scores of each candidate can be stored the diagonal cells, which are unused in other non-Approval-Condorcet hybrids.
 
-We call a candidate '''Strongly defeated''' when that candidate is pairwise defeated by any other higher-ranked candidate.  This kind of defeat is also called an Approval-consistent or [http://wiki.electorama.com/wiki/Techniques_of_method_design#Defeats_and_defeat_strength definitive defeat].
+We call a candidate '''Strongly defeated''' when that candidate is pairwise defeated by any other candidate with higher Approval rating.  This kind of defeat is also called an Approval-consistent or [http://wiki.electorama.com/wiki/Techniques_of_method_design#Defeats_and_defeat_strength definitive defeat].
 
 To determine the winner:
 # Eliminate all strongly defeated candidates.
