@@ -1,0 +1,7 @@
+In [[voting system]]s, the '''Gibbard-Satterthwaite theorem''' states that every unimposing [[voting method]] (one in which every preference order is achievable) which chooses between three or more candidates, must be either dictatorial or manipulable (i.e. susceptible to [[tactical voting]]). It follows from [[Arrow's impossibility theorem]].
+
+{{math-stub}}
+[[Category:Voting theory]]
+[[Category:Theorems]]
+
+{{fromwikipedia}}
