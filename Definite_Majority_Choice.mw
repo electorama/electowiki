@@ -68,7 +68,7 @@ To determine the winner:
 # Eliminate all strongly defeated candidates.
 # The winner is the candidate that pairwise defeats all other remaining candidates.
 
-DMC always selects the Condorcet Winner, if it exists, and otherwise selects a member of the Smith Set.
+DMC always selects the Condorcet Winner, if it exists, and otherwise selects a member of the Smith Set.  Step 1 has the effect of successively eliminating the least approved candidate in the Smith set, but allows higher-approved candidates outside the Smith set (such as the Approval Winner) to remain in the set of non-strongly-defeated candidates.
 
 === Handling Ties and Near Ties ===
 
