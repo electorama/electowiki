@@ -5,3 +5,5 @@ The '''Pareto criterion''' is a basic criterion for evaluating [[voting system|v
 This criterion is important in the context of [[Arrow's impossibility theorem]].
 
 Virtually every devised election method satisfies this criterion. An example of a method which would fail it would be ''Random Candidate'', where some candidate is elected at random, regardless of the submitted votes.
+
+[[Category:Voting system criteria]]
