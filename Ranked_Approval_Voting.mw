@@ -6,7 +6,7 @@ The voter ranks the candidates. Approval could be indicated by a cutoff placed b
 
 == Procedure ==
 
-Ranked Approval Voting is a '''[[Condorcet method]]''', which means it always elects a "Condorcet winner" if one exists. A Condorcet winner is a candidate who, given any other candidate ''Y'', more voters rank this candidate above ''Y'' than vice versa.
+Ranked Approval Voting is a '''[[Condorcet method]]''', which means it always elects a "Condorcet winner" if one exists. A Condorcet winner is a candidate whom more voters rank above ''Y'' than vice versa, given any other candidate ''Y''.
 
 If a Condorcet winner doesn't initially exist, then the candidate with the least approval is eliminated such that his pairwise contests are no longer considered. These eliminations continue until a Condorcet winner is created; that is, until some non-eliminated candidate has pairwise wins over every other non-eliminated candidate. Then this candidate is elected.
 
