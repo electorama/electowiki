@@ -1,4 +1,13 @@
-'''Ranked Pairs''' (RP) or '''Tideman''' (named after [[Nicolaus Tideman]]) is a [[voting system]] that selects a single winner using votes that express preferences.  RP can also be used to create a sorted list of winners.  RP passes the [[Condorcet Criterion]], and is by definition a '''[[Condorcet method]]'''.  RP has many variations such as the [[Maximize Affirmed Majorities]] (MAM) and [[Maximum Majority Voting]] (MMV) voting methods.
+'''Ranked Pairs''' (RP) or '''Tideman''' (named after [[Nicolaus Tideman]]) is a [[voting method]] that selects a single winner using votes that express preferences.  RP can also be used to create a sorted list of winners.
+
+If there is a candidate who is preferred over the other candidates,
+when compared in turn with each of the others, RP guarantees that that candidate will win.
+Because of this property, RP is (by definition) a '''[[Condorcet method]]'''.
+Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and
+[[Instant-runoff voting]], which do not make this guarantee.
+
+RP has many variations such as the [[Maximize Affirmed Majorities]] (MAM) and [[Maximum Majority Voting]] (MMV) voting methods.
+Also check out other [[Condorcet method]]s.
 
 == Procedure ==
 
@@ -214,14 +223,23 @@ In this situation we "lock in" the majorities starting with the greatest one fir
 
 Therefore, A is the winner.
 
+=== Summary ===
+
+In the example election, the winner is Nashville.
+This would be true for any [[Condorcet method]].
+Using the [[first-past-the-post]] system and some other systems, Memphis would have won the election by having the most people, even though Nashville won every simulated pairwise election outright.  Using [[Instant-runoff voting]] in this example would result in Knoxville winning, even though more people preferred Nashville over Knoxville.
+
+
 == External Resources ==
+* [http://groups.yahoo.com/group/election-methods-list/ A mailing list containing technical discussions about election methods]
+* [http://electionmethods.org/ electionmethods.org]
 * [http://condorcet.org/rp Ranked Pairs]
+* [http://accurate-democracy.com/ Accurate Democracy]
 * [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)]
 * [http://radicalcentrism.org/majority_voting.html Maximum Majority Voting]
 * [http://cec.wustl.edu/~rhl1/rbvote/desc.html Descriptions of ranked-ballot voting methods]
-* [http://fc.antioch.edu/~james_green-armytage/voting.htm Voting methods resource page]
+* [http://fc.antioch.edu/~jarmyta@antioch-college.edu/voting.htm Voting methods resource page]
 
-[[Category:Single-winner voting methods]]
-[[Category:Condorcet method]]
+[[Category:Voting systems]]
 
 {{fromwikipedia}}
