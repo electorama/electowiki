@@ -1,0 +1,67 @@
+The '''Borda count''' is a [[voting system]] devised by [[Jean-Charles de Borda]] (who was apparently preceded by [[Nicholas of Cusa]] [http://www-gap.dcs.st-and.ac.uk/~history/HistTopics/Voting.html]), used for single or multiple-seat [[election]]s.  This form of voting is extremely popular in determining awards for
+sports in the [[United States]].  It is used in determining the [[MLB Most Valuable Player Award|Most Valuable Player]] in [[Major League Baseball]], the national
+championship of college [[American football|football]], the [[Eurovision Song Contest]], as well as many others. Used for parliamentary elections in countries of Nauru and Slovenia. 
+
+== Procedures ==
+
+A number ''n'' is selected; this number can be smaller than or equal to the number of candidates.  Each voter lists their top ''n'' choices, in order of preference.
+
+Borda elections use [[Preferential_voting|rank preference ballots]].
+
+A first-place rank is worth ''n'' points, a second-place rank is worth ''n''-1
+points, down to an ''n''th rank being worth 1 point.  A candidate's score is the sum of the number of points they received.  The highest-scoring candidate is elected.
+
+In the trivial case of ''n''=1, this is mathematically identical to [[plurality voting]].
+
+In the trivial (limiting case) of n=&infin;, allowing truncated preferences, this is mathematically identical to [[approval voting]]. This is approximately true for large ''n'' the votes offered to ranked candidates will be approximately equal and nonranked candidates will all get zero votes. Example, if ''n''=10, and I rank only only three choices, they each get 10,9,8 votes respectively, normalized to 1.0, 0.9, 0.8 votes, close to 1.0 vote for an equivalent vote offered in Approval.
+
+If all candidates are to be ranked, the number of points given per candidate can be reduced by one (so that a first-place rank is worth ''n''-1 points and the last-place ranks is worth no points at all). This variation has the (possibly convenient) property that the number of possible points per candidate will be between 0 and (''c''-1)*''v'' inclusive, where ''c'' is the number of candidates and ''v'' the number of voters.
+
+== An Example ==
+
+{{Tenn_voting_example}}
+
+<div class="floatright">
+{| border=1 
+!City||First||Second||Third||Fourth||Points
+|-
+!Memphis
+|42||0||0||58||226
+|-
+!Nashville
+|26||42||32||0||294
+|-
+!Chattanooga
+|15||43||42||0||273
+|-
+!Knoxville
+|17||15||26||42||207
+|}
+</div>
+
+Nashville is the winner in this election, as it has the most points.  Nashville also happens to be the [[Condorcet winner]] in this case, but the Borda count does not always select the Condorcet winner.
+
+== Potential for Tactical Voting ==
+
+The Borda count encourages [[tactical voting]] in many ways.  Voters can be encouraged to "bury their favorite" candidate if they have no chance of winning.  In the above example, voters from Memphis and Knoxville are encouraged to compromise  because their first choices are unlikely to win.  
+
+In addition, voters are also encouraged to "bury" likely opponents by insincerely ranking them lower or not at all.  In the above example, voters from both Memphis and Nashville are encouraged to insincerely "bury" Chattanooga, the candidate most likely to challenge Nashville, while voters from Chattanooga and Knoxville are encouraged to insincerely rank Nashville lower for the same reason.
+
+In an extreme example of burying likely rivals, voters may "bullet vote": vote for a single choice only, thus allocating no points to other choices.  One variation of Borda addresses this by allocating a number of points for the first choice equal to the number of choices made.  In the above example, a partisan for Memphis who listed only Memphis on her ballot would give one point to Memphis, while a voter who listed Memphis first and listed second, third, and fourth choices on the ballot would allocate four points to Memphis.  If there were more choices, this form of Borda encourages voters to vote for "push-overs", candidates absolutely unlikely to win the election, in order to get more points for their preferred candidate.
+
+In addition to tactical voting, [[strategic nomination]] considerations reign supreme in the Borda count.  Running multiple, similar candidates may enhance a party's chance of winning the election by increasing the point differences with opposing candidates, if the party is allowed to advance more than one candidate for consideration.
+
+==See also==
+* [[List of democracy and elections-related topics]]
+* [[Voting system]] - many other ways of voting
+* [[First Past the Post electoral system]]
+* [[Instant-runoff voting]]
+* [[Cloneproof Schwartz Sequential Dropping]]
+* [[Approval voting]]
+
+==External link==
+*[http://www.deborda.org The de Borda Institute, Northern Ireland]
+*[http://fc.antioch.edu/~james_green-armytage/voting.htm Voting methods resource page] Includes a critique of the Borda count.
+[[Category:Voting systems]]
+
+{{fromwikipedia}}
