@@ -18,7 +18,7 @@ DMC is currently the best candidate for a Condorcet Method that meets the '[[Pub
 === The Ballot ===
 A voter ranks candidates in order of preference, and may decide to rank some candidates without giving them approval.
 
-==== Graded Ballot format ====
+==== Using Grades to Rank Candidates ====
 A [[Graded Ballot]] ballot implementation would infer the ordinal ranking from the grades given to candidates.
 <pre>
             A    B    C    D    F       +  /  -
