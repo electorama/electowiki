@@ -52,11 +52,11 @@ Suppose that voters were told to grant 1 to 4 points to each city such that thei
 
 There is a tie between Nashville and Chattanooga.
 
-==Flaws==
+==Disadvantages==
 
 The example illustates one of the major flaws of Median Ratings.  Because the [[median]], by definition, is either the value of a single rating or the average of two ratings, there are very few possible values for a median score, and this makes ties much more likely than in [[Cardinal Ratings]].
 
-Another problem with Median Ratings is its failure of [[Neutrality of Spolied Ballots]].  For example, with the ballots
+Another problem with Median Ratings is its failure of [[Neutrality of Spoiled Ballots]].  For example, with the ballots
 
 * A=1, B=4
 * A=2, B=4
