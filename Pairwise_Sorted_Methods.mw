@@ -5,9 +5,9 @@ Pairwise Sorted Methods all share these properties:
 
 Almost all methods of this type satisfy the [[Condorcet Criterion]] because a candidate that pairwise defeats every other candidate will eventually be bubble-sorted to the top of the list.
 
-In other fields, the pairwise sorting stage is known as Local Kemenization or Rank Aggregation.  See, for example, [http://www10.org/cdrom/papers/577/ Rank Aggregation Methods for the Web].
+In other fields, the pairwise sorting stage is known as Local Kemenization.  See, for example, [http://www10.org/cdrom/papers/577/ Rank Aggregation Methods for the Web].
 
-One nice by-product of rank aggregation is that the initial seed order is acyclic --- any pairwise cycles that might exist are precluded from the final result.
+One nice by-product of local Kemenization is that the initial seed order is acyclic --- any pairwise cycles that might exist are precluded from the final result.
 
 Among pairwise sorted methods that have been suggested on the election-methods mailing list are
 * [[Pairwise Sorted Approval]]:  Use total Approval score in descending order for initial seed.
