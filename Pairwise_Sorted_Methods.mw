@@ -1,0 +1,17 @@
+Pairwise Sorted Methods all share these properties:
+* The list of candidates is first sorted top to bottom according to some metric.  This can be considered to be a seed for the next sorting stage.
+* Starting at the top of the list, each pair of candidates is processed in some way in accordance with their pairwise (one-to-one) contest.
+* The winner is the candidate that ends up at the top of the list.
+
+Almost all methods of this type satisfy the [[Condorcet Criterion]] because a candidate that pairwise defeats every other candidate will eventually be bubble-sorted to the top of the list.
+
+In other fields, the pairwise sorting stage is known as Local Kemenization or Rank Aggregation.  See, for example, [http://www10.org/cdrom/papers/577/ Rank Aggregation Methods for the Web].
+
+One nice by-product of rank aggregation is that the initial seed order is acyclic --- any pairwise cycles that might exist are precluded from the final result.
+
+Among pairwise sorted methods that have been suggested on the election-methods mailing list are
+* [[Pairwise Sorted Approval]]:  Use total Approval score in descending order for initial seed.
+* [[Pairwise Sorted Approval]]:  Use total Borda score in descending order for initial seed.
+* [[Approval Sorted Margins]].  Use total Approval score in descending order for initial seed.  For subsequent pairwise sort, repeat until all pairs are ordered pairwise:
+** Search through list for pairs that are out of order pairwise.  
+** Reverse the pair with the least difference in approval.
