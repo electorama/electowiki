@@ -13,7 +13,8 @@ Each vote should map onto a summable array, where the summation operation is ass
 *[[Approval voting]]
 ||
 *most [[Condorcet method]]s, 
-*[[Bucklin]]
+*[[Bucklin voting|Bucklin]]
+*[[Descending Solid Coalitions]]
 ||
 *[[Iterative Ranked Approval Voting]]
 ||
