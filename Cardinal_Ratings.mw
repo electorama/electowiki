@@ -12,7 +12,7 @@ Cardinal Ratings satisfies the [[monotonicity criterion]].
 
 The scores for each candidate are summed, and the candidates with the highest sums are declared the winners.
 
-Another method of counting is to find the [[median]] score of each candidate, and elect the candidate with the highest median score.
+Another method of counting is to find the [[median]] score of each candidate, and elect the candidate with the highest median score.  (See [[Median Ratings]])
 
 ==Example==
 {{Tenn_voting_example}}
