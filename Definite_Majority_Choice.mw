@@ -60,7 +60,7 @@ DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, 
 DMC has some interesting properties:
 * The DMC winner has the lowest total approval score of any candidate in the Definite Majority set.
 * When defeat strength is measured by the approval of the defeating candidate, there is only one possible immune method, namely DMC.
-* DMC is a [[Majority#Majority_rule.2FMajority_winner_-_Four_Critera|Strong Majority rule method]].
+* DMC is a [[Majority|Strong Majority rule]] method.
 
 ==== A more intuitive ballot --- Ranking Candidates using Grades ====
 One barrier to public acceptance of DMC is the ballot design.  So how could the process be more intuitive, without sacrificing flexibility and expression?
