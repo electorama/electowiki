@@ -1,9 +1,7 @@
-The '''Schwartz set''' is a term used in regard to [[voting system]]s.
-Given a particular election using preferential votes, the Schwartz [[set]] is the [[Union (set theory)|union]] of all possible sets of candidates such that for every set:
+The '''Schwartz set''' is the union of all possible sets of candidates such that for every set:
 # every candidate inside the set is pairwise unbeatable by any other candidate outside the set, i.e. ties are allowed
-# no proper (smaller) [[subset]] of the set fulfills the first property
-The Schwartz set is always a [[subset]] of the [[Smith set]], although not necessarily a ''smaller'' (i.e., proper) subset.
+# no proper (smaller) subset of the set fulfills the first property
+The Schwartz set is always a subset of the [[Smith set]], although not necessarily a ''smaller'' (i.e., proper) subset.
 
 [[Category:Voting theory]]
-
 {{fromwikipedia}}
