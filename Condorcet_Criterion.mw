@@ -1,51 +1,12 @@
-The '''Condorcet candidate''', '''Pairwise Champion''' (PC), or '''Condorcet winner''' (CW) of an [[election]] is the candidate who, when compared in turn with each of the other candidates, is preferred over the other candidate.  On a one-dimensional [[political spectrum]], the pairwise champion will be at the position of the median voter.  Mainly because of Condorcet's [[voting paradox]], a pairwise champion will not always exist in a given set of votes. If the pairwise champion exists, they will be the only candidate in the [[Smith set]]; otherwise, the Smith set will have three or more members.
+The '''Condorcet candidate''' or '''Condorcet winner''' of an [[election]] is the candidate who, when compared in turn with each of the other candidates, is preferred over the other candidate. Mainly because of Condorcet's [[voting paradox]], a Condorcet winner will not always exist in a given set of votes.
 
-The '''Condorcet criterion''' for a [[voting system]] is that it chooses the pairwise champion when one exists. Any method conforming to the Condorcet criterion is known as a [[Condorcet method]].
-
-
-== A More General Wording of Condorcet Criterion Definition ==
-
-'''Requirements:''' 
-
-1. The voting system must allow the voter to vote as many transitive pairwise preferences as desired.
-
-(Typically that's in the form of an unlimited ranking)
-
-2. If there are one or more unbeaten candidates, then the winner should be an unbeaten candidate.
-
-'''Traditional definition of "beat":'''
-
-X beats Y iff more voters vote X over Y than vote Y over X.
-
-'''Alternative definition of "beat" that is claimed to be more consistent with the preferences, intent and wishes of equal-top-ranking voters:'''
-
-(Argument supporting that claim can be found at the [[Symmetrical ICT]] article.)
-
-(X>Y) means the number of ballots voting X over Y.
-
-(Y>X) means the number of ballots voting Y over X.
-
-(X=Y)T means the number of ballots voting X and Y at top 
-
-(a ballot votes a candidate at top if it doesn't vote anyone over him/her)
-
-X beats Y iff (X>Y) > (Y>X) + (X=Y)T
-
-[end of alternative definition]
-
-With this alternative definition of "beat", [[FBC]] and the Condorcet Criterion are compatible.
-
-== Majority Condorcet criterion ==
-
-The majority Condorcet criterion is the same as the above, but with "beat" replaced by "majority-beat", defined to be "X majority-beats Y iff over 50% voters vote X over Y."
+The '''Condorcet criterion''' for a [[voting system]] is that it chooses the Condorcet winner when one exists. Any method conforming to the Condorcet criterion is known as a [[Condorcet method]].
 
 ==Complying methods==
 
-Black, [[Condorcet//Approval]], Smith/IRV, [[Copeland's method|Copeland]], [[Llull-Approval Voting]], [[Minmax]], Smith/Minmax, [[ranked pairs]] and variations ([[maximize affirmed majorities]], [[maximum majority voting]]), and [[Schulze method|Schulze]] comply with the Condorcet criterion.
+Black, Smith/IRV, [[Copeland's method|Copeland]], minimax, Smith/minimax, [[ranked pairs]] and variations ([[maximize affirmed majorities]], [[maximum majority voting]]), [[Cloneproof Schwartz Sequential Dropping|Schulze]] and variations ([[Cloneproof Schwartz Sequential Dropping|Schwartz sequential dropping]], [[Cloneproof Schwartz Sequential Dropping|cloneproof Schwartz sequential dropping]]) comply with the Condorcet criterion.
 
-It has been recently argued that the definition of the verb "beat" should be regarded as external to the Condorcet Criterion...and that "beat should be defined in a way that interprets equal-top ranking consistent with the actual preferences, intent and wishes of the equal-top-ranking voters. When such a definition of "beat" is used in the Condorcet Criterion definition, then the Condorcet Criterion is compatible with [[FBC]], and there are Condorcet methods that pass [[FBC]]. Discussion and arguments on that matter can be found at the [[Symmetrical ICT]] article.
-
-[[Approval voting]], [[Range voting]], [[Borda count]], [[plurality voting]], and [[instant-runoff voting]] do not comply with the Condorcet Criterion.
+[[Approval voting]], [[Range voting]], [[Borda count]], [[plurality voting]], and [[instant-runoff voting]] do not.
 
 ==Commentary==
 
@@ -54,16 +15,14 @@ Non-ranking methods such as [[plurality voting|plurality]] and [[approval voting
 Consider, for example, the following vote count of preferences with three candidates {A,B,C}:
 
 <blockquote><table>
-<tr><td align=right>499:</td><td align=left>A&gt;B&gt;C</td></tr>
-<tr><td align=right>498:</td><td align=left>C&gt;B&gt;A</td></tr>
-<tr><td align=right>3:</td><td align=left>B&gt;C&gt;A</td></tr>
+<tr><td align=right>499:</td><td align=left>A,B,C</td></tr>
+<tr><td align=right>498:</td><td align=left>C,B,A</td></tr>
+<tr><td align=right>3:</td><td align=left>B,C,A</td></tr>
 </table></blockquote>
 
 In this case, B is preferred to A by 501 votes to 499, and B is
 preferred to C by 502 to 498, hence B is preferred to both A and C. So
 according to the Condorcet criteria, B should win. By contrast, according to the rules of IRV, B is ranked first by the fewest voters and is eliminated, and C wins with the transferred voted from B; in plurality voting A wins with the most first choices.
-
-Range voting does not comply because it allows for the difference between 'rankings' to matter.  E.g. 51 people might rate A at 100, and B at 90, while 49 people rate A at 0, and B at 100.  Condorcet would consider this 51 people voting A>B, and 49 voting B>A, and A would win.  Range voting would see this as A having support of 5100/100 = 51%, and B support of (51*90+49*100)/100 = 94.9%; range voting advocates would probably say that in this case the Condorcet winner is not the socially ideal winner.
 
 [[Category:Voting system criteria]]
 
