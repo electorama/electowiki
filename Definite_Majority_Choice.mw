@@ -10,7 +10,7 @@ The main difference between DMC and Condorcet methods such as [[Ranked Pairs]] (
 
 DMC chooses the same winner as (and could be considered equivalent in most respects to) [[Ranked Approval Voting]] (RAV) (also known as Approval Ranked Concorcet), and [[Pairwise Sorted Approval]] (PSA).
 
-The philosophical basis of DMC (also due to [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015144.html Forest Simmons] is to first eliminate candidates that the voters strongly agree should not win, using two different measures, and choose the winner from among those that remain.
+The philosophical basis of DMC (also due to [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015144.html Forest Simmons]) is to first eliminate candidates that the voters strongly agree should not win, using two different measures, and choose the winner from among those that remain.
 
 == Procedure ==
 
