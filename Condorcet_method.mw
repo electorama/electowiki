@@ -4,7 +4,7 @@ Any election method conforming to the [[Condorcet criterion]] is known as a '''C
 
 ===Simple Explanation===
 
-If a candidate defeats all other candidates head-to-head, that candidate is the [[Condorcet Criterion|Condorcet Winner]].  This can be determined through use of ranked ballots.  In rare occasions, each candidate is defeated by at least one other, so there is no Condorcet Winner.  In that case it is necessary to use some tiebreaking procedure.
+If one candidate defeats all other candidates head-to-head, that candidate is the [[Condorcet Criterion|Condorcet Winner]].  This can be determined through use of ranked ballots.  In rare occasions, each candidate is defeated by at least one other, so there is no Condorcet Winner.  In that case it is necessary to use some tiebreaking procedure.
 
 === Casting ballots ===
 
