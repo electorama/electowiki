@@ -13,6 +13,7 @@ DMC chooses the same winner as (and could be considered equivalent in most respe
 The philosophical basis of DMC (also due to [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015144.html Forest Simmons]) is to first eliminate candidates that the voters strongly agree should not win, using two different measures, and choose the winner from among those that remain.
 
 DMC is currently the best candidate for a Condorcet Method that meets the [[Public Acceptability Criterion|Public Acceptability "Criterion"]].
+
 == Procedure ==
 The DMC differs from the [[Condorcet Criterion|Condorcet Winner]] in one crucial respect:
 :The Definite Majority Choice winner is the ''least approved'' candidate who, when compared in turn with each of the other ''higher-approved'' candidates, is preferred over the other candidate.
@@ -58,11 +59,13 @@ To determine the winner:
 DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Step 1 has the effect of successively eliminating the least approved candidate in the Smith set and then recalculating the new Smith set, and repeating until a single winner exists.  But Step 1 also allows higher-approved candidates outside the Smith set, such as the Approval Winner, to remain in the Definite Majority set.
 
 DMC has some interesting properties:
+
 * The DMC winner has the lowest total approval score of any candidate in the Definite Majority set.
-* When defeat strength is measured by the approval of the defeating candidate, there is only one possible immune method, namely DMC.
-* DMC is a [[Majority|Strong Majority rule]] method.
+* When defeat strength is measured by the approval of the defeating candidate, there is  only one possible immune method, namely DMC.
+* DMC is a strong majority rule method.
 
 ==== A more intuitive ballot --- Ranking Candidates using Grades ====
+
 One barrier to public acceptance of DMC is the ballot design.  So how could the process be more intuitive, without sacrificing flexibility and expression?
 
 Many people are familiar with the standard method of giving grades A-plus through F-minus.   Most are also familiar with the Pass/Fail form of grading. A student receives grades from many instructors and on finishing school has a total grade point average or pass/fail total.
