@@ -1,0 +1,26 @@
+The '''weak defensive strategy criterion''' is .... [''Please help complete this article.'']
+
+==Statement of criterion==
+
+<em>If a majority prefers one particular candidate to another, then
+they should have a way of voting that will ensure that the other cannot
+win, without any member of that majority reversing a preference for one
+candidate over another.</em>
+
+==Complying methods==
+
+[[Majority-choice approval]], [[cloneproof Schwartz Sequential Dropping]] and [[approval voting|approval]] methods comply with the weak defensive strategy criterion, while [[Range voting]], [[Borda count]], [[plurality voting]], and [[instant-runoff voting]] do not comply.
+
+==Commentary==
+
+WDSC is identical to the [[Strong Defensive Strategy criterion]] (SDSC), except that the phrase "or falsely voting two candidates equal" is removed from the end. That difference allows the [[approval voting|approval]] method to comply.
+
+''Some parts of this article are derived with permission from text at http://electionmethods.org''
+
+== External links ==
+
+* [http://electionmethods.org/ Election Methods Education and Research Group]
+
+[[Category:Voting system criteria]]
+
+{{fromwikipedia}}
