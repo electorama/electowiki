@@ -1,504 +1,36 @@
-The '''Schulze method''' is a [[voting system]] developed by Markus Schulze that selects a single winner using votes that express preferences. The Schulze method can also be used to create a sorted list of winners. The Schulze method is also known as "Schwartz sequential dropping" (SSD), "cloneproof Schwartz sequential dropping" (CSSD), "beatpath method", "beatpath winner", "path voting", and "path winner".
+'''Cloneproof Schwartz Sequential Dropping''' ('''CSSD''') is a [[voting system]] developed by Markus Schulze that selects a single winner using votes that express preferences.  CSSD can also be used to create a sorted list of winners.  CSSD is also known as "Schwartz Sequential Dropping", "Beatpath Method", "Beatpath Winner", "Path Voting", "Path Winner", and "Schulze Method".
 
-If there is a candidate who is preferred over the other candidates, when compared in turn with each of the others, the Schulze method guarantees that that candidate will win. Because of this property, the Schulze method is (by definition) a [[Condorcet method]]. Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and [[Instant-runoff voting]], which do not make this guarantee.
+If there is a candidate who is preferred over the other candidates,
+when compared in turn with each of the others, CSSD guarantees that that candidate will win.
+Because of this property, CSSD is (by definition) a '''[[Condorcet method]]'''.
+Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and
+[[Instant-runoff voting]], which do not make this guarantee.
 
-Many different heuristics for the Schulze method have been proposed.  The most important heuristics are the path heuristic and the Schwartz set heuristic.
+== The Schwartz Set ==
 
-== The path heuristic ==
-
-Each ballot contains a complete list of all candidates.  Each voter ranks these candidates in order of preference.  The individual voter may give the same preference to more than one candidate and he may keep candidates unranked.  When a given voter does not rank all candidates, then it is presumed that this voter strictly prefers all ranked candidates to all not ranked candidates and that this voter is indifferent between all not ranked candidates.
-
-=== Procedure ===
-
-Suppose d[V,W] is the number of voters who strictly prefer candidate V to candidate W.
-
-A ''path'' from candidate X to candidate Y of ''strength'' p is a sequence of candidates C(1),...,C(n) with the following five properties:
-
-:# C(1) is identical to X.
-:# C(n) is identical to Y.
-:# For all i = 1,...,(n-1): d[C(i),C(i+1)] &gt; d[C(i+1),C(i)].
-:# For all i = 1,...,(n-1): d[C(i),C(i+1)] &ge; p.
-
-p[A,B], the ''strength of the strongest path'' from candidate A to candidate B, is the maximum value such that there is a path from candidate A to candidate B of that strength. If there is no path from candidate A to candidate B at all, then p[A,B] : = 0.
-
-Candidate D is ''better'' than candidate E if and only if p[D,E] &gt; p[E,D].
-
-Candidate D is a ''potential winner'' if and only if p[D,E] &ge; p[E,D] for every other candidate E.
-
-=== Remark ===
-
-It is possible to prove that p[X,Y] &gt; p[Y,X] and p[Y,Z] &gt; p[Z,Y] together imply p[X,Z] &gt; p[Z,X]. Therefore, it is guaranteed (1) that the above definition of "''better''" really defines a transitive relation and (2) that there is always at least one candidate D with p[D,E] &ge; p[E,D] for every other candidate E.
-
-=== Implementation ===
-
-Suppose ''C'' is the number of candidates. Then the strengths of the strongest paths can be calculated with the Floydâ€“Warshall algorithm.
-
-Input: d[i,j] is the number of voters who strictly prefer candidate i to candidate j.
-
-Output: Candidate i is a potential winner if and only if "winner[i] = true".
-
-  1 '''for''' i : = 1 '''to''' ''C''
-  2 '''begin'''
-  3    '''for''' j : = 1 '''to''' ''C''
-  4    '''begin'''
-  5       '''if''' ( i â‰  j ) '''then'''
-  6       '''begin'''
-  7          '''if''' ( d[i,j] > d[j,i] ) '''then'''
-  8          '''begin'''
-  9             p[i,j] : = d[i,j]
- 10          '''end'''
- 11          '''else'''
- 12          '''begin'''
- 13             p[i,j] : = 0
- 14          '''end'''
- 15       '''end'''
- 16    '''end'''
- 17 '''end'''
- 18
- 19 '''for''' i : = 1 '''to''' ''C''
- 20 '''begin'''
- 21    '''for''' j : = 1 '''to''' ''C''
- 22    '''begin'''
- 23       '''if''' ( i â‰  j ) '''then'''
- 24       '''begin'''
- 25          '''for''' k : = 1 '''to''' ''C''
- 26          '''begin'''
- 27             '''if''' ( i â‰  k ) '''then'''
- 28             '''begin'''   
- 29                '''if''' ( j â‰  k ) '''then'''
- 30                '''begin'''
- 31                   p[j,k] : = max { p[j,k]; min { p[j,i]; p[i,k] } }
- 32                '''end'''
- 33             '''end'''
- 34          '''end'''
- 35       '''end'''
- 36    '''end'''
- 37 '''end'''
- 38
- 39 '''for''' i : = 1 '''to''' ''C''
- 40 '''begin'''
- 41    winner[i] : = true
- 42 '''end'''
- 43
- 44 '''for''' i : = 1 '''to''' ''C''
- 45 '''begin'''
- 46    '''for''' j : = 1 '''to''' ''C''
- 47    '''begin'''
- 48       '''if''' ( i â‰  j ) '''then'''
- 49       '''begin'''
- 50          '''if''' ( p[j,i] > p[i,j] ) '''then'''
- 51          '''begin'''
- 52             winner[i] : = false
- 53          '''end'''
- 54       '''end'''
- 55    '''end'''
- 56 '''end'''
-
-=== Examples ===
-
-==== Example 1 ====
-
-Example (45 voters; 5 candidates):
-
-: 5 ACBED
-: 5 ADECB
-: 8 BEDAC
-: 3 CABED
-: 7 CAEBD
-: 2 CBADE
-: 7 DCEBA
-: 8 EBADC
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] !!bgcolor=#ddffdd| d[*,E] 
-|-
-!bgcolor=#ddffdd| d[A,*] 
-|    || 20 || 26 || 30 || 22 
-|-
-!bgcolor=#ddffdd| d[B,*] 
-| 25 ||    || 16 || 33 || 18 
-|-
-!bgcolor=#ddffdd| d[C,*] 
-| 19 || 29 ||    || 17 || 24 
-|-
-!bgcolor=#ddffdd| d[D,*] 
-| 15 || 12 || 28 ||    || 14 
-|-
-!bgcolor=#ddffdd| d[E,*] 
-| 23 || 27 || 21 || 31 ||    
-|-
-|+The matrix of pairwise defeats looks as follows:
-|}
-
-The critical defeats of the strongest paths are <u>underlined</u>.
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D !!bgcolor=#ddffdd| ... to E 
-|-
-! bgcolor=#ddffdd| from A ... 
-| || A-(30)-D-<u>(28)</u>-C-(29)-B || A-(30)-D-<u>(28)</u>-C || A-<u>(30)</u>-D || A-(30)-D-(28)-C-<u>(24)</u>-E 
-|-
-! bgcolor=#ddffdd| from B ... 
-| B-<u>(25)</u>-A || || B-(33)-D-<u>(28)</u>-C || B-<u>(33)</u>-D || B-(33)-D-(28)-C-<u>(24)</u>-E 
-|-
-! bgcolor=#ddffdd| from C ... 
-| C-(29)-B-<u>(25)</u>-A || C-<u>(29)</u>-B || || C-<u>(29)</u>-B-(33)-D || C-<u>(24)</u>-E 
-|-
-! bgcolor=#ddffdd| from D ... 
-| D-(28)-C-(29)-B-<u>(25)</u>-A || D-<u>(28)</u>-C-(29)-B || D-<u>(28)</u>-C || || D-(28)-C-<u>(24)</u>-E 
-|-
-! bgcolor=#ddffdd| from E ... 
-| E-(31)-D-(28)-C-(29)-B-<u>(25)</u>-A || E-(31)-D-<u>(28)</u>-C-(29)-B || E-(31)-D-<u>(28)</u>-C || E-<u>(31)</u>-D || 
-|-
-|+The strongest paths are:
-|}
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] !!bgcolor=#ddffdd| p[*,E] 
-|-
-!bgcolor=#ddffdd| p[A,*] 
-|    || 28 || 28 || 30 || 24 
-|-
-!bgcolor=#ddffdd| p[B,*] 
-| 25 ||    || 28 || 33 || 24 
-|-
-!bgcolor=#ddffdd| p[C,*] 
-| 25 || 29 ||    || 29 || 24 
-|-
-!bgcolor=#ddffdd| p[D,*] 
-| 25 || 28 || 28 ||    || 24 
-|-
-!bgcolor=#ddffdd| p[E,*] 
-| 25 || 28 || 28 || 31 ||    
-|-
-|+The strengths of the strongest paths are:
-|}
-
-Candidate E is a potential winner, because p[E,X] &ge; p[X,E] for every other candidate X.
-
-As 25 = p[E,A] > p[A,E] = 24, candidate E is ''better'' than candidate A.
-
-As 28 = p[E,B] > p[B,E] = 24, candidate E is ''better'' than candidate B.
-
-As 28 = p[E,C] > p[C,E] = 24, candidate E is ''better'' than candidate C.
-
-As 31 = p[E,D] > p[D,E] = 24, candidate E is ''better'' than candidate D.
-
-As 28 = p[A,B] > p[B,A] = 25, candidate A is ''better'' than candidate B.
-
-As 28 = p[A,C] > p[C,A] = 25, candidate A is ''better'' than candidate C.
-
-As 30 = p[A,D] > p[D,A] = 25, candidate A is ''better'' than candidate D.
-
-As 29 = p[C,B] > p[B,C] = 28, candidate C is ''better'' than candidate B.
-
-As 29 = p[C,D] > p[D,C] = 28, candidate C is ''better'' than candidate D.
-
-As 33 = p[B,D] > p[D,B] = 28, candidate B is ''better'' than candidate D.
-
-Therefore, the Schulze ranking is E > A > C > B > D.
-
-==== Example 2 ====
-
-Example (30 voters; 4 candidates):
-
-: 5 ACBD
-: 2 ACDB
-: 3 ADCB
-: 4 BACD
-: 3 CBDA
-: 3 CDBA
-: 1 DACB
-: 5 DBAC
-: 4 DCBA
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] 
-|-
-!bgcolor=#ddffdd| d[A,*] 
-|    || 11 || 20 || 14 
-|-
-!bgcolor=#ddffdd| d[B,*] 
-| 19 ||    || 9 || 12 
-|-
-!bgcolor=#ddffdd| d[C,*] 
-| 10 || 21 ||    || 17 
-|-
-!bgcolor=#ddffdd| d[D,*] 
-| 16 || 18 || 13 ||    
-|-
-|+The matrix of pairwise defeats looks as follows:
-|}
-
-The critical defeats of the strongest paths are <u>underlined</u>.
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D 
-|-
-!bgcolor=#ddffdd| from A ... 
-| || A-<u>(20)</u>-C-(21)-B || A-<u>(20)</u>-C || A-(20)-C-<u>(17)</u>-D 
-|-
-!bgcolor=#ddffdd| from B ... 
-| B-<u>(19)</u>-A || || B-<u>(19)</u>-A-(20)-C || B-(19)-A-(20)-C-<u>(17)</u>-D 
-|-
-!bgcolor=#ddffdd| from C ... 
-| C-(21)-B-<u>(19)</u>-A || C-<u>(21)</u>-B || || C-<u>(17)</u>-D 
-|-
-!bgcolor=#ddffdd| from D ... 
-| D-<u>(18)</u>-B-(19)-A || D-<u>(18)</u>-B || D-<u>(18)</u>-B-(19)-A-(20)-C || 
-|-
-|+The strongest paths are:
-|}
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] 
-|-
-!bgcolor=#ddffdd| p[A,*] 
-|    || 20 || 20 || 17 
-|-
-!bgcolor=#ddffdd| p[B,*] 
-| 19 ||    || 19 || 17 
-|-
-!bgcolor=#ddffdd| p[C,*] 
-| 19 || 21 ||    || 17 
-|-
-!bgcolor=#ddffdd| p[D,*] 
-| 18 || 18 || 18 ||    
-|-
-|+The strengths of the strongest paths are:
-|}
-
-Candidate D is a potential winner, because p[D,X] &ge; p[X,D] for every other candidate X.
-
-As 18 = p[D,A] > p[A,D] = 17, candidate D is ''better'' than candidate A.
-
-As 18 = p[D,B] > p[B,D] = 17, candidate D is ''better'' than candidate B.
-
-As 18 = p[D,C] > p[C,D] = 17, candidate D is ''better'' than candidate C.
-
-As 20 = p[A,B] > p[B,A] = 19, candidate A is ''better'' than candidate B.
-
-As 20 = p[A,C] > p[C,A] = 19, candidate A is ''better'' than candidate C.
-
-As 21 = p[C,B] > p[B,C] = 19, candidate C is ''better'' than candidate B.
-
-Therefore, the Schulze ranking is D > A > C > B.
-
-==== Example 3 ====
-
-Example (30 voters; 5 candidates):
-
-: 3 ABDEC
-: 5 ADEBC
-: 1 ADECB
-: 2 BADEC
-: 2 BDECA
-: 4 CABDE
-: 6 CBADE
-: 2 DBECA
-: 5 DECAB
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] !!bgcolor=#ddffdd| d[*,E] 
-|-
-!bgcolor=#ddffdd| d[A,*] 
-|    || 18 || 11 || 21 || 21 
-|-
-!bgcolor=#ddffdd| d[B,*] 
-| 12 ||    || 14 || 17 || 19 
-|-
-!bgcolor=#ddffdd| d[C,*] 
-| 19 || 16 ||    || 10 || 10 
-|-
-!bgcolor=#ddffdd| d[D,*] 
-| 9 || 13 || 20 ||    || 30 
-|-
-!bgcolor=#ddffdd| d[E,*] 
-| 9 || 11 || 20 || 0 ||    
-|-
-|+The matrix of pairwise defeats looks as follows:
-|}
-
-The critical defeats of the strongest paths are <u>underlined</u>.
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D !!bgcolor=#ddffdd| ... to E 
-|-
-!bgcolor=#ddffdd| from A ... 
-| || A-<u>(18)</u>-B || A-(21)-D-<u>(20)</u>-C || A-<u>(21)</u>-D || A-<u>(21)</u>-E 
-|-
-!bgcolor=#ddffdd| from B ... 
-| B-<u>(19)</u>-E-(20)-C-<u>(19)</u>-A || || B-<u>(19)</u>-E-(20)-C || B-<u>(19)</u>-E-(20)-C-<u>(19)</u>-A-(21)-D || B-<u>(19)</u>-E 
-|-
-!bgcolor=#ddffdd| from C ... 
-| C-<u>(19)</u>-A || C-(19)-A-<u>(18)</u>-B || || C-<u>(19)</u>-A-(21)-D || C-<u>(19)</u>-A-(21)-E 
-|-
-!bgcolor=#ddffdd| from D ... 
-| D-(20)-C-<u>(19)</u>-A || D-(20)-C-(19)-A-<u>(18)</u>-B || D-<u>(20)</u>-C || || D-<u>(30)</u>-E 
-|-
-!bgcolor=#ddffdd| from E ... 
-| E-(20)-C-<u>(19)</u>-A || E-(20)-C-(19)-A-<u>(18)</u>-B || E-<u>(20)</u>-C || E-(20)-C-<u>(19)</u>-A-(21)-D || 
-|-
-|+The strongest paths are:
-|}
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] !!bgcolor=#ddffdd| p[*,E] 
-|-
-!bgcolor=#ddffdd| p[A,*] 
-|    || 18 || 20 || 21 || 21 
-|-
-!bgcolor=#ddffdd| p[B,*] 
-| 19 ||    || 19 || 19 || 19 
-|-
-!bgcolor=#ddffdd| p[C,*] 
-| 19 || 18 ||    || 19 || 19 
-|-
-!bgcolor=#ddffdd| p[D,*] 
-| 19 || 18 || 20 ||    || 30 
-|-
-!bgcolor=#ddffdd| p[E,*] 
-| 19 || 18 || 20 || 19 ||    
-|-
-|+The strengths of the strongest paths are:
-|}
-
-Candidate B is a potential winner, because p[B,X] &ge; p[X,B] for every other candidate X.
-
-As 19 = p[B,A] > p[A,B] = 18, candidate B is ''better'' than candidate A.
-
-As 19 = p[B,C] > p[C,B] = 18, candidate B is ''better'' than candidate C.
-
-As 19 = p[B,D] > p[D,B] = 18, candidate B is ''better'' than candidate D.
-
-As 19 = p[B,E] > p[E,B] = 18, candidate B is ''better'' than candidate E.
-
-As 20 = p[A,C] > p[C,A] = 19, candidate A is ''better'' than candidate C.
-
-As 21 = p[A,D] > p[D,A] = 19, candidate A is ''better'' than candidate D.
-
-As 21 = p[A,E] > p[E,A] = 19, candidate A is ''better'' than candidate E.
-
-As 20 = p[D,C] > p[C,D] = 19, candidate D is ''better'' than candidate C.
-
-As 30 = p[D,E] > p[E,D] = 19, candidate D is ''better'' than candidate E.
-
-As 20 = p[E,C] > p[C,E] = 19, candidate E is ''better'' than candidate C.
-
-Therefore, the Schulze ranking is B > A > D > E > C.
-
-==== Example 4 ====
-
-Example (9 voters; 4 candidates):
-
-: 3 ABCD
-: 2 DABC
-: 2 DBCA
-: 2 CBDA
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] 
-|-
-!bgcolor=#ddffdd| d[A,*] 
-|   || 5 || 5 || 3 
-|-
-!bgcolor=#ddffdd| d[B,*] 
-| 4 ||   || 7 || 5 
-|-
-!bgcolor=#ddffdd| d[C,*] 
-| 4 || 2 ||   || 5 
-|-
-!bgcolor=#ddffdd| d[D,*] 
-| 6 || 4 || 4 ||   
-|-
-|+The matrix of pairwise defeats looks as follows:
-|}
-
-The critical defeats of the strongest paths are <u>underlined</u>.
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D 
-|-
-!bgcolor=#ddffdd| from A ... 
-| || A-<u>(5)</u>-B || A-<u>(5)</u>-C || A-<u>(5)</u>-C-<u>(5)</u>-D 
-|-
-!bgcolor=#ddffdd| from B ... 
-| B-<u>(5)</u>-D-(6)-A || || B-<u>(7)</u>-C || B-<u>(5)</u>-D 
-|-
-!bgcolor=#ddffdd| from C ... 
-| C-<u>(5)</u>-D-(6)-A || C-<u>(5)</u>-D-(6)-A-<u>(5)</u>-B || || C-<u>(5)</u>-D 
-|-
-!bgcolor=#ddffdd| from D ... 
-| D-<u>(6)</u>-A || D-(6)-A-<u>(5)</u>-B || D-(6)-A-<u>(5)</u>-C || 
-|-
-|+The strongest paths are:
-|}
-
-{| border="1"
-|-
-! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] 
-|-
-!bgcolor=#ddffdd| p[A,*] 
-|  || 5 || 5 || 5 
-|-
-!bgcolor=#ddffdd| p[B,*] 
-| 5 ||  || 7 || 5 
-|-
-!bgcolor=#ddffdd| p[C,*] 
-| 5 || 5 ||  || 5 
-|-
-!bgcolor=#ddffdd| p[D,*] 
-| 6 || 5 || 5 ||  
-|-
-|+The strengths of the strongest paths are:
-|}
-
-Candidate B and candidate D are potential winners, because p[B,X] &ge; p[X,B] for every other candidate X and p[D,Y] &ge; p[Y,D] for every other candidate Y.
-
-As 7 = p[B,C] > p[C,B] = 5, candidate B is ''better'' than candidate C.
-
-As 6 = p[D,A] > p[A,D] = 5, candidate D is ''better'' than candidate A.
-
-Possible Schulze rankings are B > C > D > A, B > D > A > C, B > D > C > A, D > A > B > C, D > B > A > C, and D > B > C > A.
-
-== The Schwartz set heuristic ==
-
-=== The Schwartz Set ===
-
-The definition of a [[Schwartz set]], as used in the Schulze method, is as follows:
+The definition of a [[Schwartz set]], as used in CSSD, is as follows:
 
 # An unbeaten set is a set of candidates of whom none is beaten by anyone outside that set. 
 # An innermost unbeaten set is an unbeaten set that doesn't contain a smaller unbeaten set. 
 # The Schwartz set is the set of candidates who are in innermost unbeaten sets.
 
-=== Procedure ===
+== Procedure ==
 
 The voters cast their ballots by ranking the candidates according to their preferences, just like for any other Condorcet election.
 
-The Schulze method uses [[Condorcet method|Condorcet]] pairwise matchups between the candidates and a winner is chosen in each of the matchups.
+CSSD uses [[Condorcet method|Condorcet]] pairwise matchups between the candidates and a winner is chosen in each of the matchups.
 
-From there, the Schulze method operates as follows to select a winner (or create a ranked list):
+From there, CSSD operates as follows to select a winner (or create a ranked list):
 
 # Calculate the Schwartz set based only on undropped defeats. 
 # If there are no defeats among the members of that set then they (plural in the case of a tie) win and the count ends. 
 # Otherwise, drop the weakest defeat among the candidates of that set. Go to 1.
 
-=== An Example ===
+== An Example ==
 
-==== The Situation ====
+=== The Situation ===
 
-Imagine an election for the capital of Tennessee, a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
+Imagine an election for the capital of [[Tennessee]], a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
 <div style="float:right;  padding:2px; text-align:center">
 [[Image:CondorcetTennesee.png]]</div>
 
@@ -570,7 +102,7 @@ The results would be tabulated as follows:
 * [B] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
 * [NP] indicates voters who expressed no preference between either candidate
 
-==== Pairwise Winners ====
+=== Pairwise Winners ===
 
 First, list every pair, and determine the winner:
 {| border="1"
@@ -592,7 +124,7 @@ First, list every pair, and determine the winner:
 Note that absolute counts of votes can be used, or
 percentages of the total number of votes; it makes no difference.
 
-==== Dropping ====
+=== Dropping ===
 
 Next we start with our list of cities and their matchup wins/defeats
 
@@ -605,7 +137,7 @@ Technically, the Schwartz set is simply Nashville as it beat all others 3 to 0.
 
 Therefore, Nashville is the winner.
 
-==== Ambiguity Resolution Example ====
+=== Ambiguity Resolution Example ===
 
 Let's say there was an ambiguity.  For a simple situation involving candidates A, B, and C.
 
@@ -615,7 +147,7 @@ Let's say there was an ambiguity.  For a simple situation involving candidates A
 
 In this situation the Schwartz set is A, B, and C as they all beat someone.
 
-The Schulze method then says to drop the weakest defeat, so we drop C > A and are left with
+CSSD then says to drop the weakest defeat, so we drop C > A and are left with
 
 * A > B 72% (as C has been removed)
 
@@ -624,7 +156,7 @@ Therefore, A is the winner.
 
 (It may be more accessible to phrase that as "drop the weakest win", though purists may complain.)
 
-==== Summary ====
+=== Summary ===
 
 In the (first) example election, the winner is Nashville.
 This would be true for any [[Condorcet method]].
@@ -632,235 +164,53 @@ Using the [[first-past-the-post]] system and some other systems, Memphis would h
 
 == Satisfied Criteria ==
 
-The Schulze method satisfies the following criteria:
+CSSD satisfies the following criteria:
 
-# [[Mutual majority criterion]]
 # [[Monotonicity criterion]]
-# [[Pareto criterion]]
+# [[Pareto efficiency|Pareto criterion]]
 # [[Condorcet Criterion|Condorcet criterion]]
-# [[Smith set|Smith criterion]] (a.k.a. [[Generalized Condorcet criterion]])
+# [[Smith set|Smith criterion]] ([[Aka_(initialism)|aka]] [[Generalized Condorcet criterion]])
 # [[Independence of irrelevant alternatives|local independence from irrelevant alternatives]]
 # [[Schwartz set|Schwartz criterion]]
-# [[Plurality criterion]]
-# the winner is always chosen from the [[Immune set]]
-# the winner is always chosen from the [[CDTT|CDTT set]]
-# [[Minimal Defense criterion]]
 # [[Strategy-Free criterion]]
 # [[Generalized Strategy-Free criterion]]
 # [[Strong Defensive Strategy criterion]]
 # [[Weak Defensive Strategy criterion]]
 # [[Summability criterion]]
 # [[Strategic nomination|Independence of clones]]
-# [[Neutrality of Spoiled Ballots]]
 
-The Schulze method violates the following criteria:
+CSSD violates the following criteria:
 
 # [[Participation criterion]]
 # [[Consistency|Consistency criterion]]
 # [[Tactical voting|invulnerability to compromising]]
 # [[Tactical voting|invulnerability to burying]]
+
+It isn't known whether CSSD satisfies the following criteria:
+
 # [[Favorite Betrayal criterion]]
-# [[Later-no-harm criterion]]
 
-== History of the Schulze method ==
+== Use of CSSD ==
 
-The Schulze method was developed by Markus Schulze in 1997. The first time that the Schulze method was discussed in a public mailing list was in 1998 [http://lists.electorama.com/pipermail/election-methods-electorama.com/1998-July/001856.html] [http://lists.electorama.com/pipermail/election-methods-electorama.com/1998-August/001958.html] [http://lists.electorama.com/pipermail/election-methods-electorama.com/1998-August/002044.html] [http://lists.electorama.com/pipermail/election-methods-electorama.com/1998-September/002055.html] [http://lists.electorama.com/pipermail/election-methods-electorama.com/1998-November/002771.html].  In the following years, the Schulze method has been adopted e.g. by "Software in the Public Interest" (2003), Debian (2003), Gentoo (2005), TopCoder (2005), and "Sender Policy Framework" (2005). The first books on the Schulze method were written by Tideman (2006) and by Stahl and Johnson (2007).
+CSSD is not currently used in government elections.  However, it is starting to receive support in some public organizations. Organizations which currently use CSSD are:
 
-== Use of the Schulze method ==
-
-The Schulze method is not currently used in government elections.  However, it is starting to receive support in some public organizations. Organizations which currently use the Schulze method are:
-
-* [http://www.annodex.org/ Annodex Association] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?id=E_50cfc592ae8f13d9]
-* [http://blitzed.org/ Blitzed] [http://wiki.blitzed.org/Condorcet_method_for_admin_voting]
-* [http://www.boardgamegeek.com/ BoardGameGeek] [http://www.boardgamegeek.com/article/1751580] [http://www.boardgamegeek.com/article/2582330] [http://www.boardgamegeek.com/article/2674153] [http://www.boardgamegeek.com/article/3840078]
-* [http://incubator.apache.org/cassandra/ Cassandra] [http://article.gmane.org/gmane.comp.db.cassandra.devel/424/match=condorcet+schwartz+sequential+dropping+beatpath]
-* [http://www.heroinewarrior.com/cinelerra.php Cinelerra] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?id=E_7df51370797b45d6]
-* [http://0xAA.org Codex Alpe Adria] [http://0xAA.org/competitions/]
-* [http://www.marine.usf.edu/ College of Marine Science] [http://www.marine.usf.edu/fellowships/Guidelines-and-Application-2009-2010.pdf]
-* [http://www.hacksoc.org/ Computer Science Departmental Society for York University (HackSoc)] [http://www.hacksoc.org/HackSocElections.pdf]
-* [http://www.cohp.org/ County Highpointers] [http://www.cohp.org/records/votes/family_affair_voting_scheme.html]
-* [http://www.debian.org/ Debian] [http://www.debian.org/devel/constitution] [http://www.debian.org/vote/] [http://www.debian.org/vote/2003/vote_0002]
-* [http://nw.dfey.org/wiki/Main_Page Digital Freedom in Education and Youth] [http://nw.dfey.org/wiki/Logo_Competition#Voting_Timeline]
-* [http://enmasse.ca/index.php EnMasse Forums]
-* [http://en.eurobilltracker.com/ EuroBillTracker] [http://forum.eurobilltracker.eu/viewtopic.php?t=4920&highlight=condorcet+beatpath+ssd] [http://forum.eurobilltracker.eu/viewtopic.php?t=4921&highlight=condorcet] [http://forum.eurobilltracker.eu/viewtopic.php?t=9353&highlight=condorcet+beatpath] [http://forum.eurobilltracker.eu/viewtopic.php?t=10564&highlight=condorcet+beatpath] [http://forum.eurobilltracker.com/viewtopic.php?f=26&t=17919&start=15#p714947]
-* [http://www.eudec.org/ European Democratic Education Conference] [http://www.eudec.org/forum/index.php?topic=96.msg352#msg352]
-* [http://fairtradenorthwest.org/ Fair Trade Northwest] (see article XI section 2 of their [http://fairtradenorthwest.org/FTNW%20Bylaws.pdf bylaws])
-* [http://fhf.it/ Free Hardware Foundation of Italy] [http://fhf.it/notizie/nuovo-consiglio-nella-fhf] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?id=E_5b6e434828ec547b]
-* [http://www.fsfeurope.org/ Free Software Foundation Europe (FSFE)] (see article 6 section 3 of the [http://www.fsfeurope.org/about/legal/Constitution.en.pdf constitution])
-* [http://www.fsfla.org/ Free Software Foundation Latin America (FSFLA)] [http://wiki.fsfla.org/wiki/index.php/Instrucoes-es] [http://wiki.fsfla.org/wiki/index.php/Instrucoes-pt]
-* [http://www.gentoo.org/ Gentoo Foundation] [http://www.gentoo.org/foundation/en/] [http://article.gmane.org/gmane.linux.gentoo.nfp/252/match=Condorcet+Schwartz+drop+dropped] [http://article.gmane.org/gmane.linux.gentoo.weekly-news/121/match=Condorcet] [http://article.gmane.org/gmane.linux.gentoo.devel/28603/match=Condorcet+Cloneproof+Schwartz+Sequential+Dropping] [http://article.gmane.org/gmane.linux.gentoo.devel/42260/match=Schulze+method] [http://dev.gentoo.org/~fox2mike/elections/council/2007/council2007-results]
-* [http://www.gnupg.org/ GNU Privacy Guard (GnuPG)] [http://logo-contest.gnupg.org/results.html]
-* [http://gbg.hackerspace.se/site/ Gothenburg Hacker Space (GHS)] (see Â§14 of the [http://gbg.hackerspace.se/site/om-ghs/stadgar/ bylaws])
-* [http://gso.cs.binghamton.edu/index.php/GSOCS_Home Graduate Student Organization at the State University of New York: Computer Science (GSOCS)] [http://gso.cs.binghamton.edu/index.php/Voting]
-* [http://haskell.org/ Haskell] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?num_winners=1&id=E_d21b0256a4fd5ed7&algorithm=beatpath]
-* [http://www.wvscrabble.com/ Kanawha Valley Scrabble Club] [http://wvscrabble.blogspot.com/2009/04/club-by-any-other-name.html]
-* [http://www.kde.org/ KDE e.V.] (see section 3.4.1 of the [http://ev.kde.org/rules/online_voting.php Rules of Procedures for Online Voting])
-* [http://kingmanhall.org/ Kingman Hall] [http://www.livejournal.com/users/zestyping/102718.html] [http://www.livejournal.com/users/zestyping/111588.html]
-* [http://www.knightfdn.org/ Knight Foundation] [http://civic.mit.edu/blog/andrew/knight-foundation-awards-5000-to-best-created-on-the-spot-projects]
-* [http://www.kumoricon.org/ Kumoricon] [http://www.kumoricon.org/forums/index.php?topic=2599.45] [http://www.kumoricon.org/forums/index.php?topic=4497.0] [http://www.kumoricon.org/forums/index.php?topic=6653.0] [http://www.kumoricon.org/forums/index.php?topic=10048.0]
-* [http://www.lopsa.org/ League of Professional System Administrators (LOPSA)] (see article 8.3 of the [http://governance.lopsa.org/index.php/LOPSA_Bylaws bylaws])
-* [http://www.libre-entreprise.org/ Libre-Entreprise] [http://www.libre-entreprise.org/index.php/Election:DateReunionSolutionLinux2006] [http://www.libre-entreprise.org/index.php/Election:EntreeLibricks]
-* [http://www.apollonic.info/ Mason Apollonic Society] (see article 5 of the [http://www.apollonic.info/Constitution.pdf constitution])
-* [http://www.mkm-ig.org/ Mathematical Knowledge Management Interest Group (MKM-IG)] (The MKM-IG uses [http://condorcet-dd.sourceforge.net/ Condorcet with dual dropping]. That means: The Schulze ranking and the [[Ranked Pairs|ranked pairs]] ranking are calculated and the winner is the top-ranked candidate of that of these two rankings that has the better Kemeny score.) [http://www.mkm-ig.org/charter.html] [http://lists.jacobs-university.de/pipermail/projects-mkm-ig/2004-November/000041.html] [http://lists.jacobs-university.de/pipermail/projects-mkm-ig/2005-December/000072.html] [http://lists.jacobs-university.de/pipermail/projects-mkm-ig/2007-August/000406.html]
-* [http://metalab.at/ Metalab] [http://metalab.at/wiki/Generalversammlung_2007/Wahlmodus]
-* [http://www.mtv.com/ Music Television (MTV)] [http://en.oreilly.com/oscon2008/public/schedule/detail/3230]
-* [http://netznetz.net/ netznetz] [http://netznetz.net/wiki/index.php?title=Online-Abstimmung&oldid=3867#Wahl_Auswertung] [http://netznetz.net/wiki/index.php?title=Verfassungsentwurf&oldid=3896#Abstimmungsmodus]
-* [https://www.noisebridge.net/ Noisebridge] [https://www.noisebridge.net/index.php?title=2009_Director_Elections&oldid=8778]
-* [http://www.nscyc.org/home North Shore Cyclists (NSC)] [http://www.nscyc.org/JerseyWinner] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?id=E_6c53f2bddb068673]
-* [http://www.opencouchsurfing.org/ OpenCouchSurfing] [http://groups.google.com/group/open-couchsurfing/msg/fe5a2edf9e82931c]
-* [http://www.parkscholars.org/index.php Park Alumni Society (PAS)] [http://www.parkscholars.org/voting.php]
-* [http://www.piratpartiet.se/ Pirate Party of Sweden] [http://forum.piratpartiet.se/FindPost174988.aspx] [http://forum.piratpartiet.se/FindPost176567.aspx]
-* [http://www.pittsburgh-ultimate.org/ Pittsburgh Ultimate] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?id=E_89773564141f0859]
-* [http://rpmrepo.org/ RPMrepo] [http://rpmrepo.org/driesverachtert/LogoVoting]
-* [http://www.openspf.org/ Sender Policy Framework (SPF)] [http://new.openspf.org/Council_Election] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?id=E_1fd503d126aaa609] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?id=E_8e5a1ca7f86a5d5d]
-* [http://www.spi-inc.org/ Software in the Public Interest (SPI)] [http://www.spi-inc.org/corporate/resolutions/2003-01-06-wta.1]
-* [http://freeculture.org/ Students for Free Culture] [http://wiki.freeculture.org/Bylaws] [http://blog.selectricity.org/?p=4]
-* [http://www.sugarlabs.org/ Sugar Labs] [http://lists.sugarlabs.org/archive/iaep/2009-September/008620.html]
-* [http://www.topcoder.com/ TopCoder] [http://www.topcoder.com/tc?module=Static&d1=tournaments&d2=tco06&d3=logo_rules] [http://www.topcoder.com/tc?module=Static&d1=tournaments&d2=tccc06&d3=logo_rules] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2030] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2046] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2047] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2050] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2122] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2127] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2133] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2183]
-* [http://www.ubuntu.com/ Ubuntu] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?id=E_e09bf9bea196cfff]
-* [http://wikimediafoundation.org/ Wikimedia Foundation] [http://lists.wikimedia.org/pipermail/foundation-l/2008-May/043134.html] [http://lists.wikimedia.org/pipermail/foundation-l/2008-June/044361.html] [http://meta.wikimedia.org/wiki/Board_elections/2008/Results] [http://meta.wikimedia.org/wiki/Board_elections/2009/Results]
-* [http://fr.wikipedia.org/wiki/Wikip%C3%A9dia Wikipedia in French] (The Schulze method is one of three methods recommended for decision-making.) [http://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Prise_de_d%C3%A9cision/Choix_dans_les_votes]
-* [http://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%95%D7%93_%D7%A8%D7%90%D7%A9%D7%99 Wikipedia in Hebrew] [http://he.wikipedia.org/w/index.php?title=×•×™×§×™×¤×“×™×”:×¤×¨×œ×ž× ×˜&oldid=7014412#.D7.94.D7.A7.D7.93.D7.9E.D7.94]
-* [http://hu.wikipedia.org/wiki/Wikip%C3%A9dia Wikipedia in Hungarian] [http://hu.wikipedia.org/wiki/Wikip%C3%A9dia:Szavaz%C3%A1s/Az_%E2%80%9EArbitr%C3%A1ci%C3%B3s_Bizotts%C3%A1g%E2%80%9D_magyar_neve] [http://hu.wikipedia.org/wiki/Sablon_vita:F%C5%91/Szavaz%C3%A1s]
-* [http://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F Wikipedia in Russian] [http://toolserver.org/~kalan/arb7/schulze] [http://toolserver.org/~kalan/arb8/schulze] [http://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%92%D1%8B%D0%B1%D0%BE%D1%80%D1%8B_%D0%B0%D1%80%D0%B1%D0%B8%D1%82%D1%80%D0%BE%D0%B2/%D0%92%D0%B5%D1%81%D0%BD%D0%B0_2009]
-* [http://es.wikipedia.org/wiki/Wikipedia Wikipedia in Spanish] [http://es.wikipedia.org/wiki/Wikipedia_Discusi%C3%B3n:Comit%C3%A9_de_Resoluci%C3%B3n_de_Conflictos/Archivo1#Opci.C3.B3n_2:_m.C3.A9todo_Schulze]
-
-=== Wikimedia Foundation, 2008 ===
-
-In June 2008, the Wikimedia Foundation used the Schulze method for the election to its Board of Trustees: One vacant seat had to be filled. There were 15 candidates, about 26,000 eligible voters, and 3,019 valid ballots.
-
-As [http://meta.wikimedia.org/wiki/User:Wing Chen] was a clear Condorcet winner, he won the vacant seat. However, there was a tie for sixth to ninth position between [http://meta.wikimedia.org/wiki/User:Cimon_Avaro Heiskanen], [http://meta.wikimedia.org/wiki/User:Ryan_Postlethwaite Postlethwaite], [http://meta.wikimedia.org/wiki/User:Sarcasticidealist Smith], and [http://meta.wikimedia.org/wiki/User:Eclecticology Saintonge]. [http://meta.wikimedia.org/wiki/User:Cimon_Avaro Heiskanen] beat [http://meta.wikimedia.org/wiki/User:Ryan_Postlethwaite Postlethwaite]; [http://meta.wikimedia.org/wiki/User:Ryan_Postlethwaite Postlethwaite] beat [http://meta.wikimedia.org/wiki/User:Sarcasticidealist Smith]; [http://meta.wikimedia.org/wiki/User:Sarcasticidealist Smith] beat [http://meta.wikimedia.org/wiki/User:Eclecticology Saintonge]; [http://meta.wikimedia.org/wiki/User:Eclecticology Saintonge] beat [http://meta.wikimedia.org/wiki/User:Cimon_Avaro Heiskanen].
-
-{| class="wikitable" style="text-align:center" border="2"
-|-
-! !![http://meta.wikimedia.org/wiki/User:Wing TC]!![http://meta.wikimedia.org/wiki/User:Alex_Bakharev AB]!![http://meta.wikimedia.org/wiki/User:Sj SK]!![http://meta.wikimedia.org/wiki/User:Harel HC]!![http://meta.wikimedia.org/wiki/User:Dedalus AH]!![http://meta.wikimedia.org/wiki/User:Cimon_Avaro JH]!![http://meta.wikimedia.org/wiki/User:Ryan_Postlethwaite RP]!![http://meta.wikimedia.org/wiki/User:Sarcasticidealist SS]!![http://meta.wikimedia.org/wiki/User:Eclecticology RS]!![http://meta.wikimedia.org/wiki/User:Swatjester DR]!![http://meta.wikimedia.org/wiki/User:Cspurrier CS]!![http://meta.wikimedia.org/wiki/User:MBisanz MB]!![http://meta.wikimedia.org/wiki/User:Kmweber KW]!![http://meta.wikimedia.org/wiki/User:Skenmy PW]!![http://meta.wikimedia.org/wiki/User:Thekohser GK]
-|-
-![http://meta.wikimedia.org/wiki/User:Wing Ting Chen]
-| ||bgcolor=#90ff90|1086||bgcolor=#90ff90|1044||bgcolor=#90ff90|1108||bgcolor=#90ff90|1135||bgcolor=#90ff90|1151||bgcolor=#90ff90|1245||bgcolor=#90ff90|1190||bgcolor=#90ff90|1182||bgcolor=#90ff90|1248||bgcolor=#90ff90|1263||bgcolor=#90ff90|1306||bgcolor=#90ff90|1344||bgcolor=#90ff90|1354||bgcolor=#90ff90|1421
-|-
-![http://meta.wikimedia.org/wiki/User:Alex_Bakharev Alex Bakharev]
-|bgcolor=#ff9090|844|| ||bgcolor=#90ff90|932||bgcolor=#90ff90|984||bgcolor=#90ff90|950||bgcolor=#90ff90|983||bgcolor=#90ff90|1052||bgcolor=#90ff90|1028||bgcolor=#90ff90|990||bgcolor=#90ff90|1054||bgcolor=#90ff90|1073||bgcolor=#90ff90|1109||bgcolor=#90ff90|1134||bgcolor=#90ff90|1173||bgcolor=#90ff90|1236
-|-
-![http://meta.wikimedia.org/wiki/User:Sj Samuel Klein]
-|bgcolor=#ff9090|836||bgcolor=#ff9090|910|| ||bgcolor=#90ff90|911||bgcolor=#90ff90|924||bgcolor=#90ff90|983||bgcolor=#90ff90|980||bgcolor=#90ff90|971||bgcolor=#90ff90|941||bgcolor=#90ff90|967||bgcolor=#90ff90|1019||bgcolor=#90ff90|1069||bgcolor=#90ff90|1099||bgcolor=#90ff90|1126||bgcolor=#90ff90|1183
-|-
-![http://meta.wikimedia.org/wiki/User:Harel Harel Cain]
-|bgcolor=#ff9090|731||bgcolor=#ff9090|836||bgcolor=#ff9090|799|| ||bgcolor=#90ff90|896||bgcolor=#90ff90|892||bgcolor=#90ff90|964||bgcolor=#90ff90|904||bgcolor=#90ff90|917||bgcolor=#90ff90|959||bgcolor=#90ff90|1007||bgcolor=#90ff90|1047||bgcolor=#90ff90|1075||bgcolor=#90ff90|1080||bgcolor=#90ff90|1160
-|-
-![http://meta.wikimedia.org/wiki/User:Dedalus Ad Huikeshoven]
-|bgcolor=#ff9090|674||bgcolor=#ff9090|781||bgcolor=#ff9090|764||bgcolor=#ff9090|806|| ||bgcolor=#90ff90|832||bgcolor=#90ff90|901||bgcolor=#90ff90|868||bgcolor=#90ff90|848||bgcolor=#90ff90|920||bgcolor=#90ff90|934||bgcolor=#90ff90|987||bgcolor=#90ff90|1022||bgcolor=#90ff90|1030||bgcolor=#90ff90|1115
-|-
-![http://meta.wikimedia.org/wiki/User:Cimon_Avaro Jussi-Ville Heiskanen]
-|bgcolor=#ff9090|621||bgcolor=#ff9090|720||bgcolor=#ff9090|712||bgcolor=#ff9090|755||bgcolor=#ff9090|714|| ||bgcolor=#90ff90|841||bgcolor=#90ff90|798||bgcolor=#ff9090|737||bgcolor=#90ff90|827||bgcolor=#90ff90|850||bgcolor=#90ff90|912||bgcolor=#90ff90|970||bgcolor=#90ff90|943||bgcolor=#90ff90|1057
-|-
-![http://meta.wikimedia.org/wiki/User:Ryan_Postlethwaite Ryan Postlethwaite]
-|bgcolor=#ff9090|674||bgcolor=#ff9090|702||bgcolor=#ff9090|726||bgcolor=#ff9090|756||bgcolor=#ff9090|772||bgcolor=#ff9090|770|| ||bgcolor=#90ff90|755||bgcolor=#90ff90|797||bgcolor=#90ff90|741||bgcolor=#90ff90|804||bgcolor=#90ff90|837||bgcolor=#90ff90|880||bgcolor=#90ff90|921||bgcolor=#90ff90|1027
-|-
-![http://meta.wikimedia.org/wiki/User:Sarcasticidealist Steve Smith]
-|bgcolor=#ff9090|650||bgcolor=#ff9090|694||bgcolor=#ff9090|654||bgcolor=#ff9090|712||bgcolor=#ff9090|729||bgcolor=#ff9090|750||bgcolor=#ff9090|744|| ||bgcolor=#90ff90|778||bgcolor=#90ff90|734||bgcolor=#90ff90|796||bgcolor=#90ff90|840||bgcolor=#90ff90|876||bgcolor=#90ff90|884||bgcolor=#90ff90|1007
-|-
-![http://meta.wikimedia.org/wiki/User:Eclecticology Ray Saintonge]
-|bgcolor=#ff9090|629||bgcolor=#ff9090|703||bgcolor=#ff9090|641||bgcolor=#ff9090|727||bgcolor=#ff9090|714||bgcolor=#90ff90|745||bgcolor=#ff9090|769||bgcolor=#ff9090|738|| ||bgcolor=#90ff90|789||bgcolor=#90ff90|812||bgcolor=#90ff90|848||bgcolor=#90ff90|879||bgcolor=#90ff90|899||bgcolor=#90ff90|987
-|-
-![http://meta.wikimedia.org/wiki/User:Swatjester Dan Rosenthal]
-|bgcolor=#ff9090|595||bgcolor=#ff9090|654||bgcolor=#ff9090|609||bgcolor=#ff9090|660||bgcolor=#ff9090|691||bgcolor=#ff9090|724||bgcolor=#ff9090|707||bgcolor=#ff9090|699||bgcolor=#ff9090|711|| ||bgcolor=#90ff90|721||bgcolor=#90ff90|780||bgcolor=#90ff90|844||bgcolor=#90ff90|858||bgcolor=#90ff90|960
-|-
-![http://meta.wikimedia.org/wiki/User:Cspurrier Craig Spurrier]
-|bgcolor=#ff9090|473||bgcolor=#ff9090|537||bgcolor=#ff9090|498||bgcolor=#ff9090|530||bgcolor=#ff9090|571||bgcolor=#ff9090|583||bgcolor=#ff9090|587||bgcolor=#ff9090|577||bgcolor=#ff9090|578||bgcolor=#ff9090|600|| ||bgcolor=#90ff90|646||bgcolor=#90ff90|721||bgcolor=#90ff90|695||bgcolor=#90ff90|845
-|-
-![http://meta.wikimedia.org/wiki/User:MBisanz Matthew Bisanz]
-|bgcolor=#ff9090|472||bgcolor=#ff9090|498||bgcolor=#ff9090|465||bgcolor=#ff9090|509||bgcolor=#ff9090|508||bgcolor=#ff9090|534||bgcolor=#ff9090|473||bgcolor=#ff9090|507||bgcolor=#ff9090|531||bgcolor=#ff9090|513||bgcolor=#ff9090|552|| ||bgcolor=#90ff90|653||bgcolor=#90ff90|677||bgcolor=#90ff90|785
-|-
-![http://meta.wikimedia.org/wiki/User:Kmweber Kurt M. Weber]
-|bgcolor=#ff9090|505||bgcolor=#ff9090|535||bgcolor=#ff9090|528||bgcolor=#ff9090|547||bgcolor=#ff9090|588||bgcolor=#ff9090|581||bgcolor=#ff9090|553||bgcolor=#ff9090|573||bgcolor=#ff9090|588||bgcolor=#ff9090|566||bgcolor=#ff9090|595||bgcolor=#ff9090|634|| ||bgcolor=#90ff90|679||bgcolor=#90ff90|787
-|-
-![http://meta.wikimedia.org/wiki/User:Skenmy Paul Williams]
-|bgcolor=#ff9090|380||bgcolor=#ff9090|420||bgcolor=#ff9090|410||bgcolor=#ff9090|435||bgcolor=#ff9090|439||bgcolor=#ff9090|464||bgcolor=#ff9090|426||bgcolor=#ff9090|466||bgcolor=#ff9090|470||bgcolor=#ff9090|471||bgcolor=#ff9090|429||bgcolor=#ff9090|521||bgcolor=#ff9090|566|| ||bgcolor=#90ff90|754
-|-
-![http://meta.wikimedia.org/wiki/User:Thekohser Gregory Kohs]
-|bgcolor=#ff9090|411||bgcolor=#ff9090|412||bgcolor=#ff9090|434||bgcolor=#ff9090|471||bgcolor=#ff9090|461||bgcolor=#ff9090|471||bgcolor=#ff9090|468||bgcolor=#ff9090|461||bgcolor=#ff9090|467||bgcolor=#ff9090|472||bgcolor=#ff9090|491||bgcolor=#ff9090|523||bgcolor=#ff9090|513||bgcolor=#ff9090|541|| 
-|-
-|+elections to Wikimedia's Board of Trustees in 2008:
-|}
-
-Each figure represents the number of voters who ranked the candidate at the left better than the candidate at the top. A figure in green represents a victory in that pairwise comparison by the candidate at the left. A figure in red represents a defeat in that pairwise comparison by the candidate at the left.
+# the [[Debian]] project
+# the [[Software in the Public Interest]] project
+# the [[UserLinux]] project
+# the [http://www.leaderofthefreeworld.com/ Leader of the Free World] project
+# the [http://www.demexp.org/ L'ExpÃƒÂ©rience DÃƒÂ©mocratique] project
+# the [http://glasnost.entrouvert.org/ Glasnost] project
 
 == External Resources ==
+* [http://groups.yahoo.com/group/election-methods-list/ A mailing list containing technical discussions about election methods]
+* [http://electionmethods.org/ electionmethods.org] where CSSD is also called "Schwartz Sequential Dropping" and "Beatpath Winner"
+* [http://www.condorcet.org/emr/index.shtml Election Methods Resource] where CSSD is called "Schulze"
+* [http://accuratedemocracy.com/voting_rules.htm Accurate Democracy] where CSSD is called "Schulze", "Schwartz Sequential Dropping", and "Beatpath"
+* [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)] where CSSD is called "Path Winner"
+* [http://www.mcs.vuw.ac.nz/~ncj/comp303/schulze.pdf A New Monotonic and Clone-Independent Single-Winner Election Method] ('''[[Portable Document Format|PDF]]''') by Markus Schulze ([http://www.citizensassembly.bc.ca/resources/submissions/csharman-10_0409201706-143.pdf mirror1], [http://lists.gnu.org/archive/html/demexp-dev/2003-09/pdflQW7IlpAfC.pdf mirror2])
+* [http://cec.wustl.edu/~rhl1/rbvote/desc.html Descriptions of ranked-ballot voting methods] where CSSD is called "Schulze"
+* [http://fc.antioch.edu/~jarmyta@antioch-college.edu/voting.htm Voting methods resource page] where CSSD is also called "Schwartz Sequential Dropping" and "Beatpath"
 
-=== General ===
-
-* [http://m-schulze.9mail.de/propstat.pdf Proposed Statutory Rules for the Schulze Single-Winner Election Method] by Markus Schulze
-* [http://www.citizensassembly.bc.ca/resources/submissions/csharman-10_0409201706-143.pdf A New Monotonic and Clone-Independent Single-Winner Election Method] by Markus Schulze (mirrors: [http://lists.gnu.org/archive/html/demexp-dev/2003-09/pdflQW7IlpAfC.pdf] [http://www.votingmatters.org.uk/ISSUE17/I17P3.PDF])
-* [http://m-schulze.9mail.de/schulze1.pdf A New Monotonic, Clone-Independent, Reversal Symmetric, and Condorcet-Consistent Single-Winner Election Method] by Markus Schulze
-* [http://m-schulze.9mail.de/schulze2.pdf Free Riding and Vote Management under Proportional Representation by the Single Transferable Vote] by Markus Schulze
-* [http://m-schulze.9mail.de/schulze3.zip Implementing the Schulze STV Method] by Markus Schulze
-* [http://m-schulze.9mail.de/schulze4.pdf A New MMP Method] by Markus Schulze
-* [http://m-schulze.9mail.de/schulze5.pdf A New MMP Method (Part 2)] by Markus Schulze
-
-=== Tutorials ===
-
-* [http://www.informatik.uni-freiburg.de/~ki/teaching/ss09/gametheory/spieltheorie.pdf Spieltheorie] by Bernhard Nebel
-* [http://m-schulze.9mail.de/serie3_9-10.pdf Schulze-Methode] by the University of Stuttgart
-
-=== Advocacy ===
-
-<!-- this section contains a lot of links; please try to keep it organized by the author's last name. -->
-* [http://fc.antioch.edu/~james_green-armytage/vm/survey.htm#beatpath Voting Methods Survey] by James Green-Armytage
-* [http://www.cs.wustl.edu/~legrand/rbvote/desc.html Descriptions of ranked-ballot voting methods] by Rob LeGrand
-* [http://accuratedemocracy.com/voting_rules.htm Accurate Democracy] by Rob Loring
-* [http://rangevoting.org/SchulzeExplan.html Schulze beatpaths method] by Warren D. Smith
-* [http://nodesiege.tripod.com/elections/ Election Methods and Criteria] by Kevin Venzke
-* [http://seehuhn.de/comp/vote.html The Debian Voting System] by Jochen Voss
-* [http://lists.electorama.com/pipermail/election-methods-electorama.com/ election-methods: a mailing list containing technical discussions about election methods]
-
-=== Research papers ===
-
-<!-- this section contains a lot of links; please try to keep it organized by the author's last name. -->
-* [http://arxiv.org/PS_cache/arxiv/pdf/0810/0810.2263v1.pdf A Continuous Rating Method for Preferential Voting] by Rosa Camps, Xavier Mora, and Laia Saumell
-* [http://pj.freefaculty.org/Ukraine/PJ3_VotingSystemsEssay.pdf Voting Systems] by Paul E. Johnson
-* [http://msdn.microsoft.com/en-us/magazine/dd148646.aspx Test Run: Group Determination in Software Testing] by James D. McCaffrey
-* [http://congress.utu.fi/epcs2006/docs/A2_meskanen.pdf Distance from Consensus: a Theme and Variations] by Tommi Meskanen and Hannu Nurmi
-* [http://www.math.temple.edu/~wds/homepage/votedesc.pdf Descriptions of voting systems] by Warren D. Smith
-* [http://home.earthlink.net/~peter.a.taylor/swuusi.pdf Election Systems] by Peter A. Taylor
-* [http://m-schulze.9mail.de/wilke.pdf Personalisierung der VerhÃ¤ltniswahl durch Varianten der Single Transferable Vote] by Martin Wilke
-* [http://dukespace.lib.duke.edu/dspace/bitstream/10161/1278/1/Wright_Barry.pdf Objective Measures of Preferential Ballot Voting Systems] by Barry Wright
-* [http://www.cs.qub.ac.uk/~W.Liu/ecsqaru-paper-46.pdf Approaches to Constructing a Stratified Merged Knowledge Base] by Anbu Yue, Weiru Liu, and Anthony Hunter
-
-=== Books ===
-
-<!-- this section contains a lot of links; please try to keep it organized by the author's last name. -->
-* Christoph BÃ¶rgers (2009), ''[http://books.google.com/books?id=dccBaphP1G4C&pg=PA37#v=onepage&q=&f=false Mathematics of Social Choice: Voting, Compensation, and Division]'', SIAM, ISBN 0-8987-1695-0
-* Saul Stahl and Paul E. Johnson (2006), ''[http://books.google.com/books?id=CMLL9sVGLb8C&pg=PA119#v=onepage&q=&f=false Understanding Modern Mathematics]'', Sudbury:  Jones and Bartlett Publishers, ISBN 0-7637-3401-2
-* Nicolaus Tideman (2006), ''[http://books.google.com/books?id=RN5q_LuByUoC&pg=PA228#v=onepage&q=&f=false Collective Decisions and Voting: The Potential for Public Choice]'' [http://www.ashgate.com/pdf/SamplePages/Collective_Decisions_and_Voting_Index.pdf], Burlington: Ashgate, ISBN 0-7546-4717-X
-
-=== Newspaper articles ===
-
-* [http://www.heise.de/tp/r4/artikel/31/31832/1.html Entscheidungsfindung via Software] by Peter MÃ¼hlbauer (January 2010)
-
-=== Software ===
-
-<!-- this section contains a lot of links; please try to keep it organized by the author's last name. -->
-* [http://vote.sourceforge.net/ Voting Software Project] by Blake Cretney
-* [http://condorcet-dd.sourceforge.net/ Condorcet with Dual Dropping Perl Scripts] by Mathew Goldstein
-* [http://condorcet.ericgorr.net/ Condorcet Voting Calculator] by Eric Gorr
-* [http://selectricity.org/ Selectricity] and [http://rubyvote.rubyforge.org/ RubyVote] by Benjamin Mako Hill [http://web.mit.edu/newsoffice/2008/voting-tt0312.html] [http://labcast.media.mit.edu/?p=56]
-* [http://relet.net/frog/archives/52 Java implementation of the Schulze method] by Thomas Hirsch
-* [https://bitbucket.org/capitol/schulze schulze implementation] implementation in c++ with python bindings by Alexander KjÃ¤ll
-* [http://wiki.electorama.com/wiki/Electowidget Electowidget] by Rob Lanphier
-* [http://www.votator.com Votator.com] by Louis Philippe Lessard [http://www.votator.com/howitworks/]
-* [http://www.livejournal.com/community/evan_tech/124253.html Haskell Condorcet Module] by Evan Martin
-* [http://www.cs.cornell.edu/andru/civs.html Condorcet Internet Voting Service (CIVS)] by Andrew Myers
-* [http://betterpolls.com/ BetterPolls.com] by Brian Olson
-* [http://www.openstv.org/ OpenSTV] by Jeffrey O'Neill
-* [http://github.com/bradbeattie/Election-Web-Service Election Web Service] implements both the Schulze method and Schulze STV, with an associated interface at 
-[http://www.modernballots.com Modern Ballots]
-
-=== Legislative project ===
-
-* [http://groups.yahoo.com/group/Condorcet Condorcet Policy "Think Tank"] moderated by [http://jeffryfisher.net/Statesman Jeffry R. Fisher]
-* [http://www.azsos.gov/election/2008/general/ballotmeasuretext/I-21-2008.pdf Arizonans for Condorcet Ranked Voting] [http://ballotpedia.org/wiki/index.php?title=Arizona_Competitive_Elections_Reform_Act_%282008%29] [http://www.azcentral.com/members/Blog/PoliticalInsider/22368] [http://www.ballot-access.org/2008/04/29/arizona-high-school-student-files-paperwork-for-initiatives-for-irv-and-easier-ballot-access/]
+[[Category:Voting systems]]
 
 {{fromwikipedia}}
-
-[[Category:Single-winner voting methods]]
-[[Category:Condorcet method]]
