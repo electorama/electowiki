@@ -4,21 +4,15 @@ In [[voting system]]s, '''tactical voting''' (or '''strategic voting''') occurs 
 
 There are different types of tactical voting:
 
-'''Compromising''' (sometimes '''favorite-burying''' or '''useful vote''') is a type of tactical voting in which a voter insincerely ranks an alternative higher in the hope of getting it elected.  For example, in the [[first-past-the-post election system|first-past-the-post]] election, a voter may vote for an option they perceive as having a greater chance of winning over an option they prefer (e.g., a left-wing voter voting for a popular moderate candidate over an unpopular leftist candidate).  [[Duverger's law]] suggests that, for this reason, first-past-the-post election systems will lead to two party systems in most cases.  
-
-'''Compromising-compression''' is a compromising strategy that involves insincerely giving two candidates an equal ranking. 
-'''Compromising-reversal''' is a compromising strategy that involves insincerely reversing the order of two candidates on the ballot. 
+'''Compromising''' (sometimes '''favorite-burying''' or '''useful vote''') is a type of tactical voting in which a voter insincerely ranks an alternative higher in the hope of getting it elected.  For example, in the [[first-past-the-post election system|first-past-the-post]] election, a voter may vote for an option they perceive as having a greater chance of winning over an option they prefer (e.g., a [[left-wing politics|left-wing]] voter voting for a popular [[moderate]] candidate over an unpopular leftist candidate).  [[Duverger's law]] suggests that, for this reason, first-past-the-post election systems will lead to [[two party system]]s in most cases.  
 
 '''Burying''' is a type of strategic voting in which a voter insincerely ranks an alternative lower in the hopes of defeating it.  For example, in the [[Borda count]], a voter may insincerely rank a perceived strong alternative last in order to help their preferred alternative beat it. A real-world analogy would be voters of one party crossing over to vote in the other party's [[primary election|primary]] against the candidate they think might beat the candidate of their party.
 
-'''Burying-compression''' is a burying strategy that involves insincerely giving two candidates an equal ranking (or truncating, which generally amounts to the same thing). 
-'''Burying-reversal''' is a burying strategy that involves insincerely reversing the order of two candidates on the ballot. 
-
-'''Push-over''' is a type of strategic voting that is only useful in methods that violate monotonicity. It may involve a voter ranking an alternative lower in the hope of getting it elected, or ranking an alternative higher in the hope of defeating it. Also known as a '''paradoxical''' strategy.
+'''Push-over''' or '''turkey-raising''' is a type of strategic voting in which a voter ranks a perceived weak alternative higher, but not in the hopes of getting it elected.  For example, in a [[bloc voting|bloc vote]] where multiple votes are required, a voter may insincerely vote for a candidate they perceive as unlikely to win, in order to help their preferred candidate win.
 
 == Strategy-free voting methods ==
 
-It has been shown by the [[Gibbard-Satterthwaite theorem]] that it is impossible for a voting method to be both strategy-free and deterministic (that is, select the same outcome every time it is applied to the same set of ballots).  The [[Random Ballot]] voting method, which selects the ballot of a random voter and uses this to determine the outcome, is strategy-free, but may result in different choices being selected if applied multiple times to the same set of ballots.
+It has been shown by the [[Gibbard-Satterthwaite theorem]] that it is impossible for a voting method to be both strategy-free and deterministic (that is, select the same outcome every time it is applied to the same set of ballots).  The [[random ballot]] voting method, which selects the ballot of a random voter and uses this to determine the outcome, is strategy-free, but may result in different choices being selected if applied multiple times to the same set of ballots.
 
 However, the extent to which tactical voting affects the timbre and results of the campaign varies dramatically from system to system: see below.
 
@@ -27,8 +21,6 @@ However, the extent to which tactical voting affects the timbre and results of t
 In [[United Kingdom]] elections, there are three main parties represented in the Parliament: the [[British Labour Party|Labour party]], the [[Conservative Party (UK)|Conservative party]] and the [[Liberal Democrats (UK)|Liberal Democrats]].
 Of these three, Labour and the Liberal Democrats are most similar. Many people who prefer the Liberal Democrats vote for the Labour candidate
 where Labour is stronger and vice-versa where the Liberal Democrats are stronger, in order to prevent the Conservative candidate from winning.
-
-In 2010, Liberal and Conservative governments shared the vote of the UK voters creating a hung government, it was decided that Conservatives and Liberal Democrats will perform as a power-sharing government. However this was not the first time the country has been run in a similar fashion as Liberal and Conservative governments alternated in power until World War I and Labour formed two short-lived minority governments in 1923-24 and 1929-31.
 
 In the 1997 UK General Election, the [[Democratic Left (United Kingdom)|Democratic Left]] organised GROT - Get Rid Of Them - a tactical voter campaign.  In 2001, the Democratic Left's successor organisation the [[New Politics Network]] organised a similar campaign [http://www.tacticalvoter.net tacticalvoter.net]. Since then tactical voting has become a real consideration in British politics as is reflected in by-elections and by the growth in sites such as www.tacticalvoting.com who encourage tactical voting as a way of defusing the two party system and empowering the individual voter.
 
@@ -59,25 +51,29 @@ The problem is that such tactical voting would tend to overshoot and give undesi
 Due to the especially deep impact of tactical voting in [[first past the post]] electoral systems, some argue that systems with three or more strong or persistent parties become in effect forms of [[disapproval voting]], where the expression of disapproval, to keep an opponent out of office overwhelms the expression of approval, to approve a desirable candidate. [[Ralph Nader]] refers to this as the "least worst" choice, and argues that the similarity of parties and the candidates grows stronger due to the need to avoid this disapproval.
 
 ==See also==
+* [[List of democracy and elections-related topics]] 
 *[[primary election]]
+*[[political party]]
 *[[strategic nomination]]
 *[[vote swapping]]
 *[[electoral fusion]]
-*[[First Past the Post electoral system]] entry, in the subheading on ''3.2 Tactical voting''.
 
 == External links ==
 
+*[http://emptymoat.blogspot.com/2004/07/tactical-voting-can-be-weak-strategy.html Tactical Voting Can Be a Weak Strategy] -- Article on tactical voting within larger strategic considerations
+
 *[http://tacticalvoter.net/?show=about&PHPSESSID=db7f6a5f3610d425c2094608542e1e1d tacticalvoter.net] -- UK Tactical Voting 
+
 *[http://www.votepair.org VotePair.org] VotePair is a banding together of the people who started tactical voting online in the 2000 elections..
-*[http://www.voteroll.com VoteRoll] VoteRoll is a vote blog roll system developing statistics for people voting online.
-*[http://www.tacticalvoting.org tacticalvoting.org] Info on tactical voting for the 2010 UK General Election
+
+
 === Sources ===
 
 *''Making Votes Count'', Gary Cox (1997)
 *[http://swopec.hhs.se/lunewp/abs/lunewp1999_001.htm The Proof of the Gibbard-Satterthwaite Theorem Revisited], Lars-Gunnar Svensson (1999)
 * Brams, Herschbach, "The Mathematics of Elections" (sic?), ''Science'' (2000)
 * [http://www.crest.ox.ac.uk/papers/p94.pdf Extending the Rational Voter Theory of Tactical Voting], Stephen Fisher (2001)
-* [http://fc.antioch.edu/~james_green-armytage/vm/define.htm#strategy Strategy definitions] by James Green-Armytage
 
 [[Category:Voting theory]]
+
 {{fromwikipedia}}
