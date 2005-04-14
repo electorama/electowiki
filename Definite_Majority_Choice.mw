@@ -109,13 +109,13 @@ As an example, say a voter ranked candidates as follows:
 This ballot could be summarized briefly using the notation
   X2 > X4 >> X1 > X3
 where the ">>" indicates the approval cutoff --- candidates to the right of that sign receive no approval votes.  This ballot is counted as
+  X2 > X2  (approval point)
   X2 > X4
   X2 > X1
   X2 > X3
-  X2 > X2  (approval point)
+  X4 > X4  (approval point)
   X4 > X1
   X4 > X3
-  X4 > X4  (approval point)
   X1 > X3
 
 === Tallying Votes ===
@@ -140,10 +140,12 @@ For example, the single example ballot above,
 
 For example, the X2>X4 ("for X2 over X4") vote is entered in {row 2, column 4}.
 
-When pairwise totals are completed, we determine the outcome of a particular pairwise contest as described [[Condorcet_method#Counting_with_Matrices|elsewhere]].  But in DMC, X2 definitively defeats X4 if the {row 2, column 4} (X2>X4) total votes exceed the {row 4, column 2} (X4>X2) total votes, and {row 2, column 2} (X2>X2 total approval score) exceeds {row 4, column 4} (X4>X4 total approval score).
+When pairwise totals are completed, we determine the outcome of a particular pairwise contest as described [[Condorcet_method#Counting_with_Matrices|elsewhere]].  But in DMC, X2 ''definitively defeats'' X4 if
+* the {row 2, column 4} (X2>X4) total votes exceed the {row 4, column 2} (X4>X2) total votes, and
+* the {row 2, column 2} (X2>X2) total approval score exceeds the {row 4, column 4} (X4>X4) total approval score.
 The winner is then determined as described above.
 
-DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Eliminating the definitively defeated candidates from consideration has the effect of successively eliminating the least approved candidate in the Smith set and then recalculating the new Smith set until a single winner exists.  But the definite majority set may also contain higher-approved candidates outside the Smith set.  For example, the Approval Winner will always be a member of the definite majority set, because it cannot be definitively defeated.
+DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Eliminating the definitively defeated candidates from consideration has the effect of successively eliminating the least approved candidate in the Smith set and then recalculating the new Smith set until a single winner exists, which is why DMC is equivalent to RAV.  But the definite majority set may also contain higher-approved candidates outside the Smith set.  For example, the [[Approval]] Winner will always be a member of the definite majority set, because it cannot be definitively defeated.
 
 DMC has some interesting properties:
 * The DMC winner has the lowest total approval score of any candidate in the Definite Majority set.
