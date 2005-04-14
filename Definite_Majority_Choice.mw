@@ -15,11 +15,17 @@ The DMC winner satisifies this variant of the [[Condorcet Criterion]]:
 
 :The Definite Majority Choice winner is the ''least-approved'' candidate who, when compared in turn with each of the other ''higher-approved'' candidates, is preferred over the other candidate.
 
+DMC has other useful properties:
+* DMC is a strong majority rule method.
+* When defeat strength is measured by the approval of the defeating candidate,
+DMC is the only one possible immune ([[Condorcet_method#Key_terms_in_ambiguity_resolution|cloneproof]])method.
+
 The main difference between DMC and Condorcet methods such as [[Ranked Pairs]] (RP), [[Cloneproof Schwartz Sequential Dropping]] (Beatpath or Schulze) and [[River]] is the use of the additional Approval score to break cyclic ambiguities.  If defeat strength is measured by the Total Approval score of the pairwise winner, all three other methods become equivalent to DMC (See [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015405.html proof]).
 
-DMC is also equivalent to [[Ranked Approval Voting]] (RAV) (also known as Approval Ranked Concorcet), and [[Pairwise Sorted Approval]] (PSA).
+DMC is also equivalent to [[Ranked Approval Voting]] (RAV) (also known as
+Approval Ranked Concorcet), and [[Pairwise Sorted Approval]] (PSA):  DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Eliminating the definitively defeated candidates from consideration has the effect of successively eliminating the least approved candidate in the Smith set and then recalculating the new Smith set until a single winner exists, which is why DMC is equivalent to RAV.  But the definite majority set may also contain higher-approved candidates outside the Smith set.  For example, the [[Approval_voting|Approval]] winner will always be a member of the definite majority set, because it cannot be definitively defeated.
 
-Some people believe that DMC is currently the best candidate for a Condorcet Method that meets the [[Public Acceptability Criterion|Public Acceptability "Criterion"]].
+Some believe that DMC is currently the best candidate for a Condorcet Method that meets the [[Public Acceptability Criterion|Public Acceptability "Criterion"]].
 
 == Procedure ==
 Before explaining how the ballots elicit the approval and pairwise preference information from the voters, let's consider a simple example of how that information is used to determine the DMC winner.
@@ -144,13 +150,6 @@ When pairwise totals are completed, we determine the outcome of a particular pai
 * the {row 2, column 4} (X2>X4) total votes exceed the {row 4, column 2} (X4>X2) total votes, and
 * the {row 2, column 2} (X2>X2) total approval score exceeds the {row 4, column 4} (X4>X4) total approval score.
 The winner is then determined as described above.
-
-DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Eliminating the definitively defeated candidates from consideration has the effect of successively eliminating the least approved candidate in the Smith set and then recalculating the new Smith set until a single winner exists, which is why DMC is equivalent to RAV.  But the definite majority set may also contain higher-approved candidates outside the Smith set.  For example, the [[Approval]] Winner will always be a member of the definite majority set, because it cannot be definitively defeated.
-
-DMC has some interesting properties:
-* The DMC winner has the lowest total approval score of any candidate in the Definite Majority set.
-* When defeat strength is measured by the approval of the defeating candidate, there is  only one possible immune method, namely DMC.
-* DMC is a strong majority rule method.
 
 ==== A more intuitive ballot --- Ranking Candidates using Grades ====
 
