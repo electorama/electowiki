@@ -247,7 +247,7 @@ When there are no ties, the winner is the least approved member of the definite 
 
 When the least-approved member of the definite majority set has a pairwise tie or disputed contest (say, margin within 0.01%) with another member of the definite majority set, there is no clear winner.  In that case, pairwise ties could be handled using the same [[Maximize_Affirmed_Majorities#Compute_Tiebreak|Random Ballot]] procedure as in [[Maximize Affirmed Majorities]].
 
-Alternatively, the winner could be decided by using a random ballot to choose the winner from among the definite majority set, as in [[Imagine_Democratic_Fair_Choice|Imagine Democratic Fair Choice]].
+Alternatively, the winner could be decided by using a random ballot to choose the winner from among the definite majority set, as in [[Imagine_Democratic_Fair_Choice|Democratic Fair Choice]].
 
 == See Also ==
 
