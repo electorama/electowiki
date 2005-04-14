@@ -135,11 +135,12 @@ For example, the single example ballot above,
 
 We call a candidate [[Techniques_of_method_design#Defeats_and_defeat_strength|definitively defeated]] when that candidate is defeated in a head-to-head contest against any other candidate with higher Approval score.  This kind of defeat is also called an ''Approval-consistent defeat''.
 
-To determine the winner,
-# Eliminate all definitively defeated candidates.  We call the remaining candidates the '''definite majority set'''.
-# The winner is the single candidate who pairwise defeats (wins head-to-head contests with) all other candidates in the definite majority set.
+To determine the winner, the candidates are divided into two groups:
+# Definitively defeated candidates.
+# Candidates that pairwise defeat all higher-approved candidates.  We call this group the '''definite majority set'''.
+The least-approved candidate in the definite majority set pairwise defeats ''all'' higher-approved candidates, including all other members of the definite majority set, and is declared the winner.
 
-DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Step 1 has the effect of successively eliminating the least approved candidate in the Smith set and then recalculating the new Smith set until a single winner exists.  But the definite majority set may also contain higher-approved candidates outside the Smith set.  For example, the Approval Winner will always be a member of the definite majority set.
+DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Eliminating the definitively defeated candidates from consideration has the effect of successively eliminating the least approved candidate in the Smith set and then recalculating the new Smith set until a single winner exists.  But the definite majority set may also contain higher-approved candidates outside the Smith set.  For example, the Approval Winner will always be a member of the definite majority set, because it cannot be definitively defeated.
 
 DMC has some interesting properties:
 * The DMC winner has the lowest total approval score of any candidate in the Definite Majority set.
