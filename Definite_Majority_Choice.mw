@@ -233,18 +233,21 @@ Grading candidate X below the LPG gives the voter a chance to say "I don't want 
 
 During the initial ranking of candidates, two candidates may have the same approval score.
 
-If equal Approval scores affect the outcome, there are several alternatives for Approval-tie-breaking.  The procedure that would be most in keeping with the spirit of DMC, however would be to initially rank candidates
-# In descending order of Approval
-# If equal, in descending order of "Grade Point Average" (i.e., total Cardinal Rating)
+If equal approval scores affect the outcome (which only occurs when there is no candidate who defeats all others), there are several alternatives for approval-tie-breaking.  The procedure that would be most in keeping with the spirit of DMC, however would be to initially rank candidates
+# In descending order of approval score
+# If equal, in descending order of Bucklin count
+# If equal, in descending order of total first-, second- and third-place votes
 # If equal, in descending order of total first- and second-place votes
-# If equal, in descending order of total first-, second- and third-place votes.
+# If equal, in descending order of total first-place votes
+# If equal, in descending order of "Grade Point Average" (i.e., total Cardinal Rating)
+With ranked choice ballots, the Bucklin count is determined by first counting all first place votes, then successively adding in lower preference votes until one candidate has more than 50%.  This is a graduated form of approval.  When an approval cutoff is added to the ballot, however, we make this additional change -- the lower preference votes are not added into the Bucklin scores if they are below the cutoff.
 
 ==== Pairwise Ties ====
-When there are no ties, the winner is the least approved candidate in the [[Techniques_of_method_design#Special_sets|P]]) set.
+When there are no ties, the winner is the least approved member of the definite majority ([[Techniques_of_method_design#Special_sets|P]]) set.
 
-In the event of a pairwise tie or a disputed pairwise contest (say, margin within 0.01%) among two members of the definite majority set, one of which is the least-approved member of the definite majority set, there is no clear winner.  In that case, the tied contest could be handled using the same [http://wiki.electorama.com/wiki/Maximize_Affirmed_Majorities#Compute_Tiebreak Random Ballot] procedure as in [[Maximize Affirmed Majorities]].
+When the least-approved member of the definite majority set has a pairwise tie or disputed contest (say, margin within 0.01%) with another member of the definite majority set, there is no clear winner.  In that case, pairwise ties could be handled using the same [[Maximize_Affirmed_Majorities#Compute_Tiebreak|Random Ballot]] procedure as in [[Maximize Affirmed Majorities]].
 
-Or the election could be decided in that case using [[Imagine_Democratic_Fair_Choice|Democratic Fair Choice]], which chooses a winner by random ballot from among the definite majority set.
+Alternatively, the winner could be decided by using a random ballot to choose the winner from among the definite majority set, as in [[Imagine_Democratic_Fair_Choice}Imagine Democratic Fair Choice]].
 
 == See Also ==
 
