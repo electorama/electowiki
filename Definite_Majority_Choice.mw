@@ -18,7 +18,7 @@ The DMC winner satisifies this variant of the [[Condorcet Criterion]]:
 DMC has other useful properties:
 * DMC is a strong majority rule method.
 * When defeat strength is measured by the approval of the defeating candidate,
-DMC is the only one possible immune ([[Condorcet_method#Key_terms_in_ambiguity_resolution|cloneproof]])method.
+DMC is the only one possible immune [[Condorcet_method#Key_terms_in_ambiguity_resolution|cloneproof]]) method.
 
 The main difference between DMC and Condorcet methods such as [[Ranked Pairs]] (RP), [[Cloneproof Schwartz Sequential Dropping]] (Beatpath or Schulze) and [[River]] is the use of the additional Approval score to break cyclic ambiguities.  If defeat strength is measured by the Total Approval score of the pairwise winner, all three other methods become equivalent to DMC (See [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015405.html proof]).
 
