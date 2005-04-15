@@ -1,0 +1,17 @@
+'''Marginal Ranked Approval Voting''' (MRAV) is a refinement of [[Definite Majority Choice]].  It will choose the same winner most of the time, but will eliminate the DMC winner under certain circumstances.  It satisfies all the other criteria satisfied by DMC and is implemented in exactly the same manner.  The only difference is how the final vote tally is interpreted.
+
+== Definitions ==
+* '''Strong defeat''': Pairwise defeat by higher-approved candidate
+* '''Strong losers''': Set of all strongly defeated candidates
+* '''Provisional set''': Set of non-strongly-defeated candidates
+** Each provisional winner defeats all higher-approved members of the set.  This is Forest's "P" set.  Convenient that Provisional starts with P, isn't it? ;-)
+* '''Marginal defeat''': Pairwise defeat of provisional candidate X by strong loser Y under these conditions:
+** Z = the least-approved provisional winner who strongly defeats Y.
+** Approval(X) - Approval(Y) < Approval(Z) - Approval(X)
+*** ''TODO:  Need a more succinct description here!''
+*'''Marginal losers''': Set of all marginally defeated candidates
+*'''Strong set''': set of candidates neither strongly nor marginally defeated
+
+The least-approved member of the strong set defeats all higher strong candidates and wins the election.
+
+The MRAV winner will differ from the DMC winner only when the DMC winner is marginally defeated.  This can occur only when there is a cyclic ambiguity in the pairwise preferences and the DMC winner is defeated by a lower-approved candidate.
