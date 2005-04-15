@@ -8,10 +8,15 @@
 * '''Marginal defeat''': Pairwise defeat of provisional candidate X by strong loser Y under these conditions:
 ** Z = the least-approved provisional winner who strongly defeats Y.
 ** Approval(X) - Approval(Y) < Approval(Z) - Approval(X)
-*** ''TODO:  Need a more succinct description here!''
+*** ''TODO:  Need a more succinct description/interpretation here!''
 *'''Marginal losers''': Set of all marginally defeated candidates
 *'''Strong set''': set of candidates neither strongly nor marginally defeated
 
-The least-approved member of the strong set defeats all higher strong candidates and wins the election.
+The least-approved member of the strong set defeats all higher-approved
+candidates (whether in the strong set or not) and wins the election.
 
 The MRAV winner will differ from the DMC winner only when the DMC winner is marginally defeated.  This can occur only when there is a cyclic ambiguity in the pairwise preferences and the DMC winner is defeated by a lower-approved candidate.
+
+The Approval winner and the highest-approved member of the [[Smith set]] are always members of the strong set.
+
+The philosophical motivation for removing marginally defeated candidates from consideration is that their approval "buoyancy" is smaller than that of the lower-ranked candidates who defeat them.
