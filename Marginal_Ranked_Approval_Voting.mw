@@ -15,7 +15,7 @@
 The least-approved member of the strong set defeats all higher-approved
 candidates (whether in the strong set or not) and wins the election.
 
-The MRAV winner will differ from the DMC winner only when the DMC winner is marginally defeated.  This can occur only when there is a cyclic ambiguity in the pairwise preferences and the DMC winner is defeated by a lower-approved candidate.
+The MRAV winner will differ from the DMC winner only when the DMC winner is marginally defeated.  This can occur only when there is a cyclic ambiguity in the pairwise preferences and the DMC winner is defeated by a strongly defeated candidate.
 
 The Approval winner and the highest-approved member of the [[Smith set]] are always members of the strong set.
 
