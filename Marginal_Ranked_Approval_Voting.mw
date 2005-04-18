@@ -5,21 +5,38 @@
 * '''Strong losers''': Set of all strongly defeated candidates
 * '''Provisional set''': Set of non-strongly-defeated candidates
 ** Each provisional winner defeats all higher-approved members of the set.  This is Forest's "P" set.  Convenient that Provisional starts with P, isn't it? ;-)
+* '''Clear upward defeat''': Y has a clear upward defeat over X when lower-approved candidate Y pairwise defeats higher-approved candidate X and also pairwise defeats every other candidate with lower approval than X and higher approval than Y.
 * '''Marginal defeat''': Pairwise defeat of provisional candidate X by strong loser Y under these conditions:
-** Z = the least-approved provisional winner who strongly defeats Y.
+** Y has a clear upward defeat over X.
+** Z = the least-approved candidate with approval greater than that of X who strongly defeats Y.
 ** Approval(X) - Approval(Y) < Approval(Z) - Approval(X)
 *** ''TODO:  Need a more succinct description/interpretation here!''
 *'''Marginal losers''': Set of all marginally defeated candidates
 *'''Strong set''': set of candidates neither strongly nor marginally defeated
 
+== Procedure ==
 The least-approved member of the strong set defeats all higher-approved
 candidates (whether in the strong set or not) and wins the election.
 
-The philosophical motivation for removing marginally defeated candidates from consideration is that their approval "buoyancy" is smaller than that of the lower-ranked candidates who defeat them, and so they are dragged down.
+The philosophical motivation for removing marginally defeated candidates from consideration is that their approval "buoyancy" is smaller than the "ballast" of lower-ranked candidates who defeat them, and so they are dragged down.
 
 The MRAV winner will differ from the DMC winner only when the DMC winner is marginally defeated.  This can occur only when
 * There is a cyclic ambiguity in the pairwise preferences
 * The DMC winner is defeated by a strongly defeated candidate Y
-* The DMC's "buoyancy" from defeating a candidate Z who defeats Y isn't large enough to float the DMC winner past Z before Y defeats the DMC winner.
+* The DMC's buoyancy from defeating a candidate Z who defeats Y isn't large enough to overcome the ballast of Y's clear upward defeat of X.
 
 The Approval winner and the highest-approved member of the [[Smith set]] are always members of the strong set.
+
+If desired, the secondary defeat strength used to measure buoyancy,
+:Approval(X) - Approval(Y) < Approval(Z) - Approval(X),
+could be replaced by other metrics.  For example, winning votes,
+: wv(X>Y) > wv(Z>X),
+or Approval-Weighted Pairwise's "strong preference":
+: sp(X>Y) > sp(Z>X)
+
+<!--
+(Emacs settings)
+Local variables:
+comment-column: 1024
+End:
+-->
