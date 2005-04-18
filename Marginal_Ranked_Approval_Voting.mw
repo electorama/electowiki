@@ -170,8 +170,11 @@ To find the winner,
 * Starting at Brad's diagonal '''Brad>Brad''' approval score, we continue up the diagonal, looking for another candidate with a solid row of victories to the left of the diagonal.
 * Abby is the next candidate encountered.
 * Looking down the 2nd column from Abby's approval score in '''Abby>Abby''', the only loss is to Brad, an already-eliminated marginal loser.  Note that Abby has the beatpath '''Abby>Dave>Brad''' to Brad through a strong loser.
-* Abby is the least-approved member of the strong set and wins the election.
+* By a quick inspection, we see that the only remaining strong candidate is Erin.
+* The strong set contains candidates Erin and Abby.
+* Since Abby is the least-approved strong candidate, she defeats Erin directly and is the MRAV winner.
 
+== Alternate secondary defeat strength methods ==
 What if the secondary defeat strength used in the marginal defeat calculation were calculated by a different measure?
 
 If winning votes are used, wv(Dave>Brad)=609 > wv(Brad>Abby)=463, so Brad is still marginally defeated by Dave and Abby still wins.
