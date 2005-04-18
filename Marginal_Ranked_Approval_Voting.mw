@@ -8,9 +8,8 @@
 * '''Clear upward defeat''': Y has a clear upward defeat over X when lower-approved candidate Y pairwise defeats higher-approved candidate X and also pairwise defeats every other candidate with lower approval than X and higher approval than Y.
 * '''Marginal defeat''': Pairwise defeat of provisional candidate X by strong loser Y under these conditions:
 ** Y has a clear upward defeat over X.
-** Z = the least-approved candidate with approval greater than that of X who strongly defeats Y.
+** Let Z be the least-approved candidate who strongly defeats Y.  Note that if Y has a clear upward defeat over X, Z must have greater approval than X.
 ** Approval(X) - Approval(Y) < Approval(Z) - Approval(X)
-*** ''TODO:  Need a more succinct description/interpretation here!''
 *'''Marginal losers''': Set of all marginally defeated candidates
 *'''Strong set''': set of candidates neither strongly nor marginally defeated
 
@@ -34,9 +33,154 @@ could be replaced by other metrics.  For example, winning votes,
 or Approval-Weighted Pairwise's "strong preference":
 : sp(X>Y) > sp(Z>X)
 
+== Example ==
+Here's a set of preferences taken from Rob LeGrand's [http://cec.wustl.edu/~rhl1/rbvote/calc.html online voting calculator]:
+
+The ranked ballots:
+<pre>
+ 98: Abby >  Cora >  Erin >> Dave > Brad
+ 64: Brad >  Abby >  Erin >> Cora > Dave
+ 12: Brad >  Abby >  Erin >> Dave > Cora
+ 98: Brad >  Erin >  Abby >> Cora > Dave
+ 13: Brad >  Erin >  Abby >> Dave > Cora
+125: Brad >  Erin >> Dave >  Abby > Cora
+124: Cora >  Abby >  Erin >> Dave > Brad
+ 76: Cora >  Erin >  Abby >> Dave > Brad
+ 21: Dave >  Abby >> Brad >  Erin > Cora
+ 30: Dave >> Brad >  Abby >  Erin > Cora
+ 98: Dave >  Brad >  Erin >> Cora > Abby
+139: Dave >  Cora >  Abby >> Brad > Erin
+ 23: Dave >  Cora >> Brad >  Abby > Erin
+</pre>
+
+The pairwise matrix, with the victorious scores highlighted:
+<table border cellpadding=3>
+<tr align="center"><td colspan=2 rowspan=2></td><th colspan=5>against</th></tr>
+<tr align="center"><td class="against"><span class="cand">Abby</span></td><td class="against"><span class="cand">Brad</span></td><td class="against"><span class="cand">Cora</span></td><td class="against"><span class="cand">Dave</span></td><td class="against"><span class="cand">Erin</span></td></tr>
+<tr align="center">
+<th rowspan=5>for</th>
+<td class="for"><span class="cand">Abby</span></td>
+<td bgcolor="yellow">645</td>
+<td class="loss">458</td>
+<td bgcolor="yellow">461</td>
+<td bgcolor="yellow">485</td>
+<td bgcolor="yellow">511</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Brad</span></td>
+<td bgcolor="yellow">463</td>
+<td bgcolor="yellow">410</td>
+<td bgcolor="yellow">461</td>
+<td class="loss">312</td>
+<td bgcolor="yellow">623</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Cora</span></td>
+<td class="loss">460</td>
+<td class="loss">460</td>
+<td bgcolor="yellow">460</td>
+<td class="loss">460</td>
+<td class="loss">460</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Dave</span></td>
+<td class="loss">436</td>
+<td bgcolor="yellow">609</td>
+<td bgcolor="yellow">461</td>
+<td bgcolor="yellow">311</td>
+<td class="loss">311</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Erin</span></td>
+<td class="loss">410</td>
+<td class="loss">298</td>
+<td bgcolor="yellow">461</td>
+<td bgcolor="yellow">610</td>
+<td bgcolor="yellow">708</td>
+</tr>
+</table>
+
+The candidates in descending order of approval are Erin, Abby, Cora, Brad, Dave.
+
+After reordering the pairwise matrix, it looks like this:
+
+<table border cellpadding=3>
+<tr align="center"><td colspan=2 rowspan=2></td><th colspan=5>against</th></tr>
+<tr align="center">
+<td class="against"><span class="cand">Erin</span></td>
+<td class="against"><span class="cand">Abby</span></td>
+<td class="against"><span class="cand">Cora</span></td>
+<td class="against"><span class="cand">Brad</span></td>
+<td class="against"><span class="cand">Dave</span></td>
+</tr>
+<tr align="center">
+<th rowspan=5>for</th>
+<td class="for"><span class="cand">Erin</span></td>
+<td bgcolor="yellow">708</td>
+<td class="loss">410</td>
+<td bgcolor="yellow">461</td>
+<td class="loss">298</td>
+<td bgcolor="yellow">610</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Abby</span></td>
+<td bgcolor="yellow">511</td>
+<td bgcolor="yellow">645</td>
+<td bgcolor="yellow">461</td>
+<td class="loss">458</td>
+<td bgcolor="yellow">485</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Cora</span></td>
+<td class="loss">460</td>
+<td class="loss">460</td>
+<td bgcolor="yellow">460</td>
+<td class="loss">460</td>
+<td class="loss">460</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Brad</span></td>
+<td bgcolor="yellow">623</td>
+<td bgcolor="yellow">463</td>
+<td bgcolor="yellow">461</td>
+<td bgcolor="yellow">410</td>
+<td class="loss">312</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Dave</span></td>
+<td class="loss">311</td>
+<td class="loss">436</td>
+<td bgcolor="yellow">461</td>
+<td bgcolor="yellow">609</td>
+<td bgcolor="yellow">311</td>
+</tr>
+</table>
+
+To find the winner,
+* We start at the lower right diagonal entry, and start moving upward and leftward along the diagonal.
+* We're looking for a candidate who has a solid row of victories to the left of the diagonal.
+* Brad is the first such candidate encountered.  Under DMC, Brad would be the winner.
+* Starting at Brad's approval score in the {4,4} cell, we start looking down the 4th column to see if any lower-approved candidates defeat Brad.
+* We see a defeating score of 609 in the '''Dave>Brad''' cell.
+* Dave has a clear upward defeat over Brad, since there are no other candidates with approval scores between Brad and Dave.
+* From the '''Dave>Brad''' cell, we move left along Dave's row until we find a losing score against a candidate with higher approval than Brad.
+* The least-approved candidate who defeats Dave is Abby.
+* Approval(Brad) - Approval(Dave) = 99.  Approval(Abby) - Approval(Brad) = 235.
+* Brad is therefore marginally defeated by Dave and is a marginal loser.
+* Starting at Brad's diagonal entry {4,4}, we continue up the diagonal, looking for another candidate with a solid row of victories to the left of the diagonal.
+* Abby is the next candidate encountered.
+* Looking down the 2nd column from Abby's approval score in {2,2}, the only loss is to Brad, an already eliminated marginal loser.
+* Abby is the least-approved member of the strong set and wins the election.
+
+What if the secondary defeat strength were calculated by a different measure?
+
+If winning votes are used, wv(Dave>Brad)=609 > wv(Brad>Abby)=463, so Brad is still marginally defeated by Dave and Abby still wins.
+
+Strong preference votes are those that span the approval cutoff.  So sp(Dave>Brad)=213 > sp(Brad>Abby)=98.  Brad is still marginally defeated by Dave and Abby still wins.
+
 <!--
 (Emacs settings)
 Local variables:
-comment-column: 1024
+fill-column: 1024
 End:
 -->
