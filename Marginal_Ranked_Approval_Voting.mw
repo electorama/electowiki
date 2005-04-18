@@ -174,13 +174,14 @@ To find the winner,
 * The strong set contains candidates Erin and Abby.
 * Since Abby is the least-approved strong candidate, she defeats Erin directly and is the MRAV winner.
 
-== Alternate secondary defeat strength methods ==
+== Marginal defeat alternatives ==
 What if the secondary defeat strength used in the marginal defeat calculation were calculated by a different measure?
 
-If winning votes are used, wv(Dave>Brad)=609 > wv(Brad>Abby)=463, so Brad is still marginally defeated by Dave and Abby still wins.
+In the example above, if winning votes are used, wv(Dave>Brad)=609 > wv(Brad>Abby)=463.  Brad is still marginally defeated by Dave and Abby still wins.
 
 We find strong preference votes by totaling only those winning votes that cross the approval cutoff.  So sp(Dave>Brad)=213 > sp(Brad>Abby)=98.  Brad is still marginally defeated by Dave and Abby still wins.
 
+[[Category:Condorcet method]]
 <!--
 (Emacs settings)
 Local variables:
