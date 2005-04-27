@@ -12,7 +12,9 @@
 ** There is a candidate Z with greater approval than X who strongly defeats Y.
 *** If no such Z exists, X is not marginally defeated by Y.
 ** Approval(Y) - Approval(X) > Approval(X) - Approval(Z)
+*** This means that Y's approval-margin defeat strength over X is bigger than X's over Z.
 *** Note that both sides of the inequality are negative.
+*** The inequality can be arranged to Approval(X) < (Approval(Z)+Approval(Y))/2; that is, X is below the average approval of Y and Z.
 *'''Marginal losers''': Set of all marginally defeated candidates
 *'''Strong set''': set of candidates neither strongly nor marginally defeated
 
@@ -20,18 +22,18 @@
 The least-approved member of the strong set defeats all higher-approved
 candidates (whether in the strong set or not) and wins the election.
 
-The philosophical motivation for removing marginally defeated candidates from consideration is that their approval "buoyancy" is smaller than the "ballast" of lower-ranked candidates who defeat them, and so they are dragged down.
+The philosophical motivation for removing marginally defeated candidates from consideration is that their approval "lift" is smaller than the "drag" of lower-ranked candidates who defeat them, and so they are dragged down.
 
 The MRAV winner will differ from the DMC winner only when the DMC winner is marginally defeated.  This can occur only when
 * There is a cyclic ambiguity in the pairwise preferences
 * The DMC winner is defeated by a strongly defeated candidate Y
-* The DMC's buoyancy from defeating a candidate Z who defeats Y isn't large enough to overcome the ballast of Y's clear upward defeat of X.
+* The DMC's lift from defeating a candidate Z who defeats Y isn't large enough to overcome the drag of Y's clear upward defeat of X.
 
 The Approval winner and the highest-approved member of the [[Smith set]] are always members of the strong set.
 
-If desired, the secondary defeat strength used to measure buoyancy,
-:Approval(X) - Approval(Y) < Approval(Z) - Approval(X),
-could be replaced by other metrics.  For example, winning votes,
+The secondary defeat strength used to measure lift is the approval margin:
+:Approval(Y) - Approval(X) > Approval(X) - Approval(Z)
+Approval margin could be replaced by other metrics.  For example, winning votes,
 : wv(X>Y) > wv(Z>X),
 or Approval-Weighted Pairwise's "strong preference":
 : sp(X>Y) > sp(Z>X)
