@@ -1,0 +1,19 @@
+The '''approval cutoff''' or '''neutral preference''' level is an option that may be used with a [[Preferential_voting|ranked ballot]].
+
+Specifying a neutral preference level indicates that candidates above a certain rank have positive preference, while candidates below that rank have negative preference.  Positive preference is equivalent to an approval vote, while negative preference receives no approval vote.
+
+When a method uses a ranked ballot with approval cutoff, the usual procedure is that the neutral preference level is set below all ranked candidates, and above unranked candidates.
+
+A voter can set the approval cutoff above the default level by ranking an extra "Neutral Preference" candidate.
+
+A voter may decide to set the neutral preference level between some ranked candidates in order to indicate that
+* among the non-approved candidates, some are more preferred than others.
+* the ranking of candidates above and below the line is not as important as having a candidate above the line defeat all candidates below the line.
+
+[[Category:Ballot type]]
+<!--
+(Emacs settings)
+Local variables:
+fill-column: 1024
+End:
+-->
