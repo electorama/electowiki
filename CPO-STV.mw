@@ -1,0 +1,117 @@
+CPO-STV (Comparison of Pairs of Outcomes by Single Transferable Vote) is a [[preference voting|preference]] [[voting system]] designed to provide [[proportional representation]] in multi-seat elections while electing the [[Condorcet winner]] in single-winner elections.
+
+== Voting ==
+
+Each voter ranks all candidates in order of preference. For example:
+
+#Andrea
+#Carter
+#Brad
+#Delilah
+
+=== Setting the Quota ===
+
+When all the votes have been cast, a winning quota is set.  Possible formulas for the quota include the [[Droop Quota]], the [[Hare Quota]], and the [[Imperiali Quota]].
+
+=== Comparison of Pairs of Outcomes ===
+
+In CPO-STV, each possible outcome (set of candidates) is compared with every other possible
+outcome in a pairwise competition.  The pairwise competition is performed as follows:
+
+# Eliminate all candidates who are not in either outcome.
+# Transfer excess votes from candidates who are in both outcomes.
+# The number of pairwsie votes for an outcome is equal to the sum of votes for the candidates in that outcome.
+
+'''Example''': Compare {Escher, Andre, Gore} versus {Escher, Nader, Gore} given a quota of 100 and the ballots
+
+* 100: Escher
+* 110: Andre>Nader>Gore
+* 18: Nader>Gore
+* 21: Gore>Nader
+* 6: Gore>Bush
+* 45: Bush>Gore
+
+First, eliminate Bush, who is in neither outcome.
+
+* 100: Escher
+* 110: Andre>Nader>Gore
+* 18: Nader>Gore
+* 21: Gore>Nader
+* 51: Gore
+
+Next, transfer the excess votes for Escher, who is in both outcomes.  (Do not transfer the votes for Andre, who is only in one outcome.)  Because Echer happens to meet the quota exactly, there is nothing to do here.
+
+The number of first-choice votes for each candidate is now
+
+* 100: Escher
+* 110: Andre
+* 18: Nader
+* 72: Gore
+
+Finally, add up the votes in each outcome.
+
+* Escher + Andre + Gore = 100 + 110 + 72 = 282
+* Escher + Nader + Gore = 100 + 18 + 72 = 190
+
+Thus, {Escher, Andre, Gore} pairwise beats {Escher, Nader, Gore}, 282 to 190.
+
+=== Counting The Votes ===
+
+Process A: If any candidate has a quota of top-preference votes, declare them elected.  Distribute excess votes (determined by random selection or by fractional transfer) for the winning candidates to the next-highest ranked candidates on the ballots.  Repeat this process until there there are no more candidates who meet the quota.  (This process is optional, but can greatly simplify Process B.)
+
+Process B: Conduct a pairwise comparison between every possible set of candidates that includes all of the elected candidates from Process A.  Choose the winning outcome with a [[Condorcet method]].
+
+== Example ==
+
+2 seats to be filled, four candidates: Andrea (A), Brad (B), Carter (C), and Delilah (D).  The ballots are:
+
+* 5: A>B>C>D
+* 17: A>C>B>D
+* 8: D
+
+The Droop Quota is floor(22/3)+1 = 11.
+
+Andrea has 22 first-choice votes, and is declared elected.  Her 11 excess votes are reallocated to their second preferences.  If this is done by fractional transfer, the resulting ballots are:
+
+* 2.5: B>C>D
+* 8.5: C>B>D
+* 8: D
+
+No more candidates meet the quota, so Process A is completed.
+
+Since Andrea must be elected, there are only 3 possible outcomes to consider: {A, B}, {A, C}, and {A, D}.
+
+To compare {A, B} and {A, C}, first eliminate D:
+
+* 5: A>B>C
+* 17: A>C>B
+* 8: (blank)
+
+Andrea is elected with 11 excess votes.  After transferring these, the ballots become:
+
+* 11: A
+* 2.5: B>C
+* 8.5: C>B
+* 8: (blank)
+
+and so {A, C} beats {A, B}, 19.5 to 13.5.
+
+Similarly, to compare {A, C} and {A, D}, first eliminate B:
+
+* 22: A>C>D
+* 8: D
+
+Andrea is elected with 11 excess votes, which all transfer to C, producing:
+
+* 11: A
+* 11: C
+* 8: D
+
+and so {A, C} beats {A, D}, 22 to 19.
+
+At this point, we know that {A, C} is the Condorcet winner.  Therefore, CPO-STV elects Andrea and Carter.
+
+== See also ==
+
+* [[Single Transferable Vote]]
+* [[Proportional Ordering]]
