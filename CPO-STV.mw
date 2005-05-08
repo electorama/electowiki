@@ -50,8 +50,8 @@ The number of first-choice votes for each candidate is now
 
 Finally, add up the votes in each outcome.
 
-* Escher   Andre   Gore = 100   110   72 = 282
-* Escher   Nader   Gore = 100   18   72 = 190
+* Escher + Andre + Gore = 100 + 110 + 72 = 282
+* Escher + Nader + Gore = 100 + 18 + 72 = 190
 
 Thus, {Escher, Andre, Gore} pairwise beats {Escher, Nader, Gore}, 282 to 190.
 
@@ -69,7 +69,7 @@ Process B: Conduct a pairwise comparison between every possible set of candidate
 * 17: A>C>B>D
 * 8: D
 
-The Droop Quota is floor(22/3) 1 = 11.
+The Droop Quota is floor(22/3)+1 = 11.
 
 Andrea has 22 first-choice votes, and is declared elected.  Her 11 excess votes are reallocated to their second preferences.  If this is done by fractional transfer, the resulting ballots are:
 
@@ -115,10 +115,3 @@ At this point, we know that {A, C} is the Condorcet winner.  Therefore, CPO-STV 
 
 * [[Single Transferable Vote]]
 * [[Proportional Ordering]]
-
-== External Resources ==
-
-* [http://www.econ.vt.edu/tideman/rmt.pdf Better voting methods through technology: The refinement-manageability trade-off in the single transferable vote] by Nicolaus Tideman and Daniel Richardson (Public Choice, vol. 103, pp. 13--34, 2000)
-* [http://fc.antioch.edu/~james_green-armytage/vm/survey.htm#cpostv Explanation and example for CPO-STV] by James Green-Armytage
-
-[[Category:Multi-winner voting systems]]
