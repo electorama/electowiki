@@ -8,7 +8,7 @@ We call a candidate [[Techniques_of_method_design#Defeats_and_defeat_strength|de
 To find the DMC winner, the candidates are divided into two groups:
 # Definitively defeated candidates.
 # Candidates that pairwise defeat all higher-approved candidates.  We call this group the '''definite majority set'''.
-The most-approved candidate in the definite majority set pairwise defeats ''all'' higher-approved candidates, including all other members of the definite majority set, and is the DMC winner.
+The least-approved candidate in the definite majority set pairwise defeats ''all'' higher-approved candidates, including all other members of the definite majority set, and is the DMC winner.
 
 If there is a candidate who, when compared in turn with each of the others, is preferred over the other candidate, DMC guarantees that candidate will win.  Because of this property, DMC is (by definition) a '''[[Condorcet method]]'''.  Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and [[Instant-runoff voting]], which do not make this guarantee.
 
@@ -256,3 +256,9 @@ Alternatively, the winner could be decided by using a random ballot to choose th
 * [[Marginal Ranked Approval Voting]]:  chooses the winner from a subset of the definite majority set.
 
 [[Category:Condorcet method]]
+<!--
+(Emacs settings)
+Local variables:
+fill-column: 1024
+End:
+-->
