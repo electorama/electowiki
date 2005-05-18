@@ -185,9 +185,6 @@ CSSD violates the following criteria:
 # [[Consistency|Consistency criterion]]
 # [[Tactical voting|invulnerability to compromising]]
 # [[Tactical voting|invulnerability to burying]]
-
-It isn't known whether CSSD satisfies the following criteria:
-
 # [[Favorite Betrayal criterion]]
 
 == Use of CSSD ==
