@@ -4,7 +4,10 @@
 
 '''Minmax(margins)''' is the same, except that the strength of a pairwise loss is measured as the number of votes for the winning side ''minus'' the number of votes for the losing side.
 
-Both of these methods satisfy the [[Condorcet criterion]], and both fail the [[Smith set|Smith criterion]]. Minmax(winning votes) also satisfies the [[Plurality criterion]]. In the three-candidate case, Minmax(margins) satisfies the [[Participation criterion]].
+Criteria passed by both methods: [[Condorcet criterion]], [[majority criterion]]
+Criteria failed by both methods: [[Smith set|Smith criterion]], the [[mutual majority criterion]], and the Condorcet loser criterion. 
+
+Minmax(winning votes) also satisfies the [[Plurality criterion]]. In the three-candidate case, Minmax(margins) satisfies the [[Participation criterion]].
 
 '''Minmax(pairwise opposition)''' or '''MMPO''' elects the candidate whose greatest ''opposition'' from another candidate is minimal. Pairwise wins or losses are not considered; all that matters is the number of votes for one candidate over another.
 
