@@ -5,7 +5,8 @@
 '''Minmax(margins)''' is the same, except that the strength of a pairwise loss is measured as the number of votes for the winning side ''minus'' the number of votes for the losing side.
 
 Criteria passed by both methods: [[Condorcet criterion]], [[majority criterion]]
-Criteria failed by both methods: [[Smith set|Smith criterion]], the [[mutual majority criterion]], and the Condorcet loser criterion. 
+
+Criteria failed by both methods: [[Smith set|Smith criterion]], [[mutual majority criterion]], Condorcet loser criterion. 
 
 Minmax(winning votes) also satisfies the [[Plurality criterion]]. In the three-candidate case, Minmax(margins) satisfies the [[Participation criterion]].
 
