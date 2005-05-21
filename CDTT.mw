@@ -20,3 +20,7 @@ Some methods which can be paired in this way with the CDTT:
 *'''[[Minmax|MinMax (Pairwise Opposition)]]''': This has the advantage that it is calculated based on the pairwise matrix, just as the CDTT itself is. However, it is somewhat indecisive and fails Clone Independence. It satisfies [[Monotonicity criterion|Mono-raise]].
 
 Regardless of the method paired with the CDTT, it should be noted that the combined method necessarily fails the [[Plurality criterion]] and [[Condorcet criterion]].
+
+== References ==
+
+* Woodall, Douglas R. (2003). "Properties of single-winner preferential election rules II: examples and problems". (Draft.)
