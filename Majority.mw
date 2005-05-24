@@ -28,7 +28,7 @@ Many methods claim to elect the "majority winner" or work by "majority rule" (Se
 *'''Pseudomajority methods:''' [[Plurality]], [[Approval voting |approval]], [[Cardinal Ratings | range voting]], [[Borda count|Borda]]
 *'''Weak majority rule methods:''' single-winner [[Single transferable vote|STV]]
 *'''Intermediate majority rule methods:''' [[Minmax|Minimax]] (aka Simpson-Kramer, PC, etc.), [[Nanson]], [[Black]], etc.
-*'''Strong majority rule methods:''' [[ranked pairs]], [[beatpath]], [[river]], cardinal pairwise (assuming that a strong-majority base method is used)
+*'''Strong majority rule methods:''' [[ranked pairs]], [[Schulze method|beatpath]], [[river]], cardinal pairwise (assuming that a strong-majority base method is used)
 </div>
 
 In pseudo-majority methods (like plurality and range voting), a given majority of the electorate '''can''' coordinate their intentions and decide the winner, but this merely postpones the question of how they do this. The stronger majority methods not only enable firmly coordinated majorities to assert themselves, but they allow un-coordinated majorities to '''reveal''' themselves, without any need for prior coordination. Voting methods that facilitate this process of revelation are considered superior to those that do not.
@@ -66,7 +66,7 @@ Methods that pass the Condorcet criterion would always elect B, the Condorcet wi
 
 === Criteria 1,2,3, and 4 - Strong Majority Rule Methods===
 
-[[ranked pairs]], [[beatpath]], [[river]], 
+[[ranked pairs]], [[Schulze method|beatpath]], [[river]], 
 
 ''Derived from an e-mail by James Green-Armytage''
 
