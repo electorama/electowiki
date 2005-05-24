@@ -10,7 +10,7 @@ A voter optimizes the outcome (from his own perspective) if his vote causes the 
 
 ==Complying methods==
 
-The [[approval voting|approval]] method complies with the favorite betrayal criterion, while [[cardinal ratings]], [[Borda count]], [[plurality voting]], and [[instant-runoff voting]] do not comply. It is not known whether [[Cloneproof Schwartz Sequential Dropping]] complies.  One form of [[majority-choice approval]] does not comply, the other form does.
+The [[approval voting|approval]] method complies with the favorite betrayal criterion, while [[cardinal ratings]], [[Borda count]], [[plurality voting]], and [[instant-runoff voting]] do not comply. It is not known whether [[Schulze method|Cloneproof Schwartz Sequential Dropping]] complies.  One form of [[majority-choice approval]] does not comply, the other form does.
 
 ==Commentary==
 
