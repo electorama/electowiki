@@ -2,7 +2,7 @@ In [[voting system]]s, '''independence of irrelevant alternatives''' is the prop
 
 A less strict property is sometimes called '''local independence of irrelevant alternatives'''.  It says that if one option (X) wins an election, and a new alternative (Y) is added, X will win the election if Y is not in the [[Smith set]].  
 
-All [[Condorcet method]]s fail the former criterion, but some (e.g. [[Cloneproof Schwartz Sequential Dropping]]) satisfy the latter.
+All [[Condorcet method]]s fail the former criterion, but some (e.g. [[Schulze method|Cloneproof Schwartz Sequential Dropping]]) satisfy the latter.
 
 None of the [[Borda count]], [[Coombs' method]] or [[Instant-runoff voting]] meet either criterion.
 
