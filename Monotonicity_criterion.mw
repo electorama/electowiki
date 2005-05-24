@@ -6,7 +6,7 @@ This criterion is also called '''Mono-raise'''.
 
 A looser way of phrasing this is that in a non-monotonic system, voting for a candidate can cause that candidate to lose. Systems which fail the monotonicity criterion suffer a form of [[tactical voting]] where voters might try to elect their candidate by voting against that candidate.
 
-[[Plurality voting]], [[Majority Choice Approval]], [[Borda count]], [[Cloneproof Schwartz Sequential Dropping]], [[Maximize Affirmed Majorities]], and [[Descending Solid Coalitions]] are monotonic, while [[Coombs' method]] and [[Instant-runoff voting]] are not. [[Approval voting]] is monotonic, using a slightly different definition, because it is not a preferential system: you can never help a candidate by not voting for them.
+[[Plurality voting]], [[Majority Choice Approval]], [[Borda count]], [[Schulze method|Cloneproof Schwartz Sequential Dropping]], [[Maximize Affirmed Majorities]], and [[Descending Solid Coalitions]] are monotonic, while [[Coombs' method]] and [[Instant-runoff voting]] are not. [[Approval voting]] is monotonic, using a slightly different definition, because it is not a preferential system: you can never help a candidate by not voting for them.
 
 ''Some parts of this article are derived from text at http://condorcet.org/emr/criteria.shtml''
 {{fromwikipedia}}
