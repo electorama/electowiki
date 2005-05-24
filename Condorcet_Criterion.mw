@@ -4,7 +4,7 @@ The '''Condorcet criterion''' for a [[voting system]] is that it chooses the Con
 
 ==Complying methods==
 
-Black, Smith/IRV, [[Copeland's method|Copeland]], [[Minmax]], Smith/Minmax, [[ranked pairs]] and variations ([[maximize affirmed majorities]], [[maximum majority voting]]), [[Cloneproof Schwartz Sequential Dropping|Schulze]] and variations ([[Cloneproof Schwartz Sequential Dropping|Schwartz sequential dropping]], [[Cloneproof Schwartz Sequential Dropping|cloneproof Schwartz sequential dropping]]) comply with the Condorcet criterion.
+Black, Smith/IRV, [[Copeland's method|Copeland]], [[Minmax]], Smith/Minmax, [[ranked pairs]] and variations ([[maximize affirmed majorities]], [[maximum majority voting]]), [[Schulze method|Schulze]] and variations ([[Schulze method|Schwartz sequential dropping]], [[Schulze method|cloneproof Schwartz sequential dropping]]) comply with the Condorcet criterion.
 
 [[Approval voting]], [[Range voting]], [[Borda count]], [[plurality voting]], and [[instant-runoff voting]] do not.
 
