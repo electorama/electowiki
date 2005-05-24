@@ -9,7 +9,7 @@ Note that this is different from some other preference voting systems such as [[
 MAM is a variation of the [[Ranked Pairs]] (RP) voting method, with additional
 refinements to break ties using as much information as available from a set of votes.
 Another voting method that is a variation of ranked pairs is [[Maximum Majority Voting]] (MMV).
-One of the primary "competing" Condorcet methods is [[Cloneproof Schwartz Sequential Dropping]] (CSSD).
+One of the primary "competing" Condorcet methods is [[Schulze method|Cloneproof Schwartz Sequential Dropping]] (CSSD).
 
 == Procedure ==
 
