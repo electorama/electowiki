@@ -1,13 +1,13 @@
-
 "'''Cardinal pairwise'''" and "'''CWP'''" are shorter names for "cardinal-weighted pairwise comparison", a method first proposed by James Green-Armytage in June of 2004.
 
 Cardinal pairwise differs from traditional pairwise count methods ([[Condorcet method|Condorcet methods]]) in that it uses cardinal (ratings) information in addition to ordinal information.
 
-CWP uses the '''ordinal''' information to determine the '''direction''' of pairwise defeats, exactly as most Condorcet methods do. However, it uses the '''cardinal''' information to determine the '''strength''' of the pairwise defeats.
+CWP uses the ''ordinal'' information to determine the ''direction'' of pairwise defeats, exactly as most Condorcet methods do. However, it uses the ''cardinal'' information to determine the ''strength'' of the pairwise defeats.
 
 Thus in essence, CWP can be thought of as a definition of defeat strength.
 
 If A pairwise defeats B, the strength of the defeat is defined as follows:
+
 '''For each A>B voter, and only for A>B voters, subtract BÃ¢â‚¬â„¢s rating from AÃ¢â‚¬â„¢s rating, to get the rating differential. Sum the A>B rating differentials to get the A>B defeat strength.'''
 
 The name "cardinal pairwise" also implies that a Smith-efficient, defeat-dropping base method will be used, for example [[beatpath]], [[ranked pairs]], or [[river]].
@@ -15,5 +15,5 @@ The name "cardinal pairwise" also implies that a Smith-efficient, defeat-droppin
 
 == External resources ==
 
-Cardinal pairwise paper in [http://fc.antioch.edu/~james_green-armytage/cwp13.htm html] or [http://www.mcdougall.org.uk/VM/ISSUE19/I19P2.PDF pdf]. (The latter as published by Voting Matters.)
-[http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-June/013239.html Initial proposal] on election methods list.
+* Cardinal pairwise paper in [http://fc.antioch.edu/~james_green-armytage/cwp13.htm html] or [http://www.mcdougall.org.uk/VM/ISSUE19/I19P2.PDF pdf]. (The latter as published by Voting Matters.)
+* [http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-June/013239.html Initial proposal] on election methods list.
