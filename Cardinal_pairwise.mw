@@ -4,11 +4,9 @@ Cardinal pairwise differs from traditional pairwise count methods ([[Condorcet m
 
 CWP uses the ''ordinal'' information to determine the ''direction'' of pairwise defeats, exactly as most Condorcet methods do. However, it uses the ''cardinal'' information to determine the ''strength'' of the pairwise defeats.
 
-Thus in essence, CWP can be thought of as a definition of defeat strength.
+Thus in essence, CWP can be thought of as a definition of defeat strength. If A pairwise defeats B, the strength of the defeat is defined as follows:
 
-If A pairwise defeats B, the strength of the defeat is defined as follows:
-
-'''For each voter who ranks A over B, and only for those voters, subtract BÃ¢â‚¬â„¢s rating from AÃ¢â‚¬â„¢s rating, to get the rating differential. Sum these rating differentials to get the defeat strength.'''
+'''For each voter who ranks A over B, and only for these voters, subtract BÃ¢â‚¬â„¢s rating from AÃ¢â‚¬â„¢s rating, to get the rating differential. Sum these rating differentials to get the defeat strength.'''
 
 The name "cardinal pairwise" also implies that a Smith-efficient, defeat-dropping base method will be used, for example [[beatpath]], [[ranked pairs]], or [[river]].
 
