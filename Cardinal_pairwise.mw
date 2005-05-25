@@ -8,7 +8,7 @@ Thus in essence, CWP can be thought of as a definition of defeat strength.
 
 If A pairwise defeats B, the strength of the defeat is defined as follows:
 
-'''For each A>B voter, and only for A>B voters, subtract BÃ¢â‚¬â„¢s rating from AÃ¢â‚¬â„¢s rating, to get the rating differential. Sum the A>B rating differentials to get the A>B defeat strength.'''
+'''For each voter who ranks A over B, and only for those voters, subtract BÃ¢â‚¬â„¢s rating from AÃ¢â‚¬â„¢s rating, to get the rating differential. Sum these rating differentials to get the defeat strength.'''
 
 The name "cardinal pairwise" also implies that a Smith-efficient, defeat-dropping base method will be used, for example [[beatpath]], [[ranked pairs]], or [[river]].
 
