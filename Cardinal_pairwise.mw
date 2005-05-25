@@ -1,34 +1,19 @@
-== Cardinal-weighted pairwise ==
 
 "'''Cardinal pairwise'''" and "'''CWP'''" are shorter names for "cardinal-weighted pairwise comparison", a method first proposed by James Green-Armytage in June of 2004.
 
-Cardinal pairwise differs from traditional pairwise count methods ([[Condorcet method|Condorcet methods]]) in that it uses [[ratings ballot|cardinal (rating)]] information in addition to [[ranked ballot|ordinal (ranking)]] information.
+Cardinal pairwise differs from traditional pairwise count methods ([[Condorcet method|Condorcet methods]]) in that it uses cardinal (ratings) information in addition to ordinal information.
 
-CWP uses the ''ordinal'' information to determine the ''direction'' of pairwise defeats, exactly as most Condorcet methods do. However, it uses the ''cardinal'' information to determine the ''strength'' of the pairwise defeats.
+CWP uses the '''ordinal''' information to determine the '''direction''' of pairwise defeats, exactly as most Condorcet methods do. However, it uses the '''cardinal''' information to determine the '''strength''' of the pairwise defeats.
 
-Thus, in essence, CWP can be thought of as a defeat strength definition. If A pairwise defeats B, CWP finds the strength of the defeat as follows:
+Thus in essence, CWP can be thought of as a definition of defeat strength.
 
-'''For each voter who ranks A over B, and only for these voters, subtract B's rating from A's rating, to get the rating differential. Sum these rating differentials to get the defeat strength.'''
+If A pairwise defeats B, the strength of the defeat is defined as follows:
+'''For each A>B voter, and only for A>B voters, subtract BÃ¢â‚¬â„¢s rating from AÃ¢â‚¬â„¢s rating, to get the rating differential. Sum the A>B rating differentials to get the A>B defeat strength.'''
 
-The name "cardinal pairwise" also implies that a Smith-efficient, defeat-dropping base method will be used, for example [[Schulze method|Schulze]], [[ranked pairs]], or [[river]].
+The name "cardinal pairwise" also implies that a Smith-efficient, defeat-dropping base method will be used, for example [[beatpath]], [[ranked pairs]], or [[river]].
 
-
-=== Ballot types ===
-
-1. One way to ballot for CWP is to have a separate ordinal and cardinal ballot, and to require that if a voter gives candidate R a higher rating than candidate S, then that voter must also give candidate R a higher ranking than candidate S.
-
-2. A simpler way to ballot for CWP is to use only a cardinal ballot, and to derive the ordinal information from the cardinal information. The only disadvantage of this is that it creates an additional [[tactical voting|compromising-compression]] incentive not found in the first version. However, this additional incentive should be extremely minor if the scale is sufficiently fine. 
-
-For example, assume that the scale consists of integers from 0 to 100. If my sincere preferences are J>K>L, and I want to make the J>K defeat as weak as possible while making the K>L defeat as strong as possible, I can vote J:100, K:99, L:0. There is only a very small temptation to vote J: 100, K:100, L:0. This temptation can be reduced even further by allowing decimal ratings, e.g. J:100, K:99.99, L:0.
-
-== Approval-weighted pairwise ==
-
-"'''Approval weighted pairwise'''", "'''AWP'''", or "'''approval pairwise'''" is the special case of cardinal pairwise in which the only available ratings are 0 and 1. AWP can use a ranked ballot with an approval cutoff.
 
 == External resources ==
 
-* [http://www.mcdougall.org.uk/VM/ISSUE19/I19P2.PDF Cardinal pairwise paper], as published by [http://www.mcdougall.org.uk/VM/INDEX.HTM Voting Matters].
-* [http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-June/013280.html Initial proposal] on election methods list.
-
-[[Category:Single-winner voting methods]]
-[[Category:Condorcet method]]
+Cardinal pairwise paper in [http://fc.antioch.edu/~james_green-armytage/cwp13.htm html] or [http://www.mcdougall.org.uk/VM/ISSUE19/I19P2.PDF pdf]. (The latter as published by Voting Matters.)
+[http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-June/013239.html Initial proposal] on election methods list.
