@@ -8,9 +8,7 @@ If one candidate is preferred over each of the other candidates, that candidate 
 
 == Statement of Criterion ==
 
-''If a Condorcet candidate exists, and if a majority
-prefers this candidate to another candidate, then the other candidate should
-not win if that majority votes sincerely and no other voter falsifies
+''If a Condorcet candidate exists, and if a majority prefers this candidate to another candidate, then the other candidate should not win if that majority votes sincerely and no other voter falsifies
 any preferences.''
 
 == Complying Methods ==
