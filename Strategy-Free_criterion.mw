@@ -1,6 +1,6 @@
 == Definitions ==
 
-A [[sincere vote]] is one with no falsified preferences or preferences left unspecified when the election method allows them to be specified (in addition to the preferences already specified).
+A sincere vote is one with no falsified preferences or preferences left unspecified when the election method allows them to be specified (in addition to the preferences already specified).
 
 One candidate is preferred over another candidate if, in a one-on-one competition, more voters prefer the first candidate than prefer the other candidate.
 
