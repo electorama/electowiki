@@ -1,6 +1,8 @@
-A ratings ballot is a ballot in which, for each candidate, a voter is asked to "rate" the candidate on a scale, for example, of integers 1 to 100.  If the scale is simply yes or no, then this is an [[approval ballot]].
 
-[[Voting system]]s which use a ratings ballot include [[Cardinal Ratings]] and [[Instant Runoff Normalized Ratings]].
+A '''ratings ballot''', or '''cardinal ballot''', is a ballot in which, for each candidate, a voter is asked to "rate" the candidate on a scale, for example from 0 to 100 or from -5 to 5. Ratings are usually (though not always) restricted to integer values.
 
-{{stub}}
+An [[approval ballot]] can be thought of as a ratings ballot with an integer scale from 0 to 1 (inclusive).
+
+[[Voting system]]s which use a ratings ballot include [[range voting]], [[instant runoff normalized ratings]], and [[cardinal pairwise]]. 
+
 [[Category:Ballot type]]
