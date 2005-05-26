@@ -2,6 +2,6 @@ A '''ratings ballot''', or '''cardinal ballot''', is a ballot in which, for each
 
 An [[approval ballot]] can be thought of as a ratings ballot with an integer scale from 0 to 1 (inclusive).
 
-[[Voting system]]s which use a ratings ballot include [[range voting]], [[Instant Runoff Normalized Ratings|instant runoff normalized ratings]], and [[cardinal pairwise]]. 
+[[Voting system]]s that use a ratings ballot include [[range voting]], [[Instant Runoff Normalized Ratings|instant runoff normalized ratings]], and [[cardinal pairwise]]. 
 
 [[Category:Ballot type]]
