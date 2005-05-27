@@ -1,0 +1,40 @@
+DELEGABLE PROXY ELECTION PROCEDURE.
+
+This describes an election procedure using delegable proxy.
+
+SECRET BALLOT. It uses secret ballot at the primary level and avoids proxy loops, which can otherwise be expected to occur in free and unrestricted proxy assignment systems.
+
+ELECTORAL COLLEGE. It uses a post-ballot process analogous to the electoral college. The difference between it and the electoral college is that proxies (electors) are personally elected, it is their names which are on a ballot, not the names of candidates which they might support. (The ballot might be quite long; however, ballots might be regional even in a large-scale election, and only one proxy is named.)
+
+REGISTRATION OF PROXIES. Prior to an election, persons willing to serve as proxies register. By registration, they agree to accept proxy assignments from the public. As part of this registration, they provide a means for the public to identify and communicate with them.
+
+PLATFORMS AND PLEDGES. Proxies may publish platorms or promises to vote a certain way in the election, but such promises, if made, may not be considered binding beyond the first college ballot, which may have a supermajority requirement to win. Other proxies may choose not to publish a platform, but to run solely based on personal reputation or relationships.
+
+SECRET ASSIGNMENT OF PROXIES. By secret ballot, in a process which ensures that each voter may assign his or her proxy to one and only one person, voters choose and register their proxies. Registered proxies may not participate in this secret ballot.
+
+PUBLIC ASSIGNMENT OF PROXIES BY REGISTERED PROXIES. Proxies also assign their own proxies to other registered proxies, however, such proxy assignments are made publicly, not by secret ballot. These assignments are revocable at any time, subject only to practical limitations.
+
+MEETING OF THE COLLEGE, RULES. Then a meeting is held of the college and the election proceeds at that meeting according to established rules. The authority of the college extends over its own rules as well as recommendation of rules changes regarding the process of its own election, to be submitted to the public by referendum.
+
+COMPOSITION OF THE COLLEGE. The college would consist of all registered proxies, even those who did not receive any votes, for each proxy has at least one vote, his or her own.
+
+FULLY QUALIFIED MEMBERSHIP IN THE COLLEGE. However, if including all registered proxies would produce a meeting size considered too cumbersome, a maximum meeting size, N, is chosen (as a standing rule) and the top N proxies, in terms of votes held (see below), become fully qualified members, and all others are voting members, but may not enter motions or address the college without the permission of the qualified members. Ties, if not moot, result in the preliminary non-qualification of tied members.  
+
+ALL ELECTORS MAY VOTE DIRECTLY. If possible, a means is provided for non-qualified members to vote, but if they are unable to vote, their proxies are exercised by a qualified proxy chosen by them. Registered proxies may change their own proxy assignment at any time, provided that a proxy assignment may not be changed while a vote is in the process of being counted. The immediate remedy available, if a registered proxy wants to change his or her chosen proxy, while a vote is being collected, is to vote personally, which effectively invalidates the proxy for that vote. During the period when qualification is being determined, as described below, proxy assignments would also be fixed.
+
+DELEGABLE PROXY. Proxy assignments are automatically delegable. That is, if A chooses B, who chooses C, then, for purposes of determining qualification for full membership in the college, C holds three votes, B holds two, and A holds one. For actual voting, if both A and B do not vote, C's vote counts as three. If A votes and B does not vote, C's vote counts as as two. If A does not vote and B votes, C's vote counts as one and B's vote counts as two.
+
+QUALIFYING VOTES. Qualifying votes are determined for each elector by assuming that no other elector votes; neglecting loops, the number of qualifying votes is then the number of votes that the elector would exercise.
+
+PROXY LOOPS. A proxy loop is created when proxy assignments create a closed ring. The simplest example is A chooses B, who chooses A. If any member of a proxy loop does not vote, the member chosen by that person becomes, potentially, the representative of all members of the loop. So all members of a proxy loop, if there is no other rule, would have the same number of qualifying votes. In the case mentioned, each would have 2 qualifying votes. If eight other people chose B as proxy, A and B would each have ten qualifying votes. However, if both A and B were present, A would have one vote and B would have nine. So A and B are not equal in rank, and B would be given preference in qualification. An unresolvable tie would exist in the simple example of mutual assignment given above; however, this is not different in kind from the tie with other proxies who have two qualifying votes.
+
+FILLING OUT THE COLLEGE. Various processes might be used to fill out the allotment of N members of the college; perhaps some reassignment of proxies would be allowed at this point, and additional members determined from that. Alternatively, the remaining member(s) might be chosen by lot from the highest qualified members remaining.
+
+CAUSE AND EFFECT OF LOOPS. Most loops will be moot for the purposes of determining qualification. Some have suggested that loops be prohibited; however, it would be expected that a tip proxy, the highest-rank member of a proxy tree, would commonly name a proxy within the tree. Indeed, the rules may require the naming of a proxy by all electors. Thus loops would be normal. However, such a loop, where a tip proxy names someone of lower rank as a second, does not create a tie in the determination of qualifying votes. The rules might indeed permit the proxy named by the tip proxy to serve as a qualified member of the college in the absence of the tip proxy. If loops are not permitted, then tip proxies will not name a proxy at all, or they would be forced to name a proxy whom they might not trust. Neither of these conditions is desireable.
+
+PROXY REASSIGNMENTS, EFFECT ON QUALIFICATION. Proxy reassignments during a session of the college, while permitted for the purpose of voting, would cause uncertainty in qualified membership in the college; because qualification exists only for the purpose of facilitating efficient meeting process, and does not reduce the voting rights of individual members, qualified or otherwise, and because it is expected that normal meeting size will be such as to create substantial diversity within the college, it may be the rule that qualification remains unchanged during a session. Any 
+non-qualified member who wishes a motion entered before the college may do so simply by convincing any qualified member to introduce it.
+
+ELECTION. The College proceeds with the election for which it was formed, following its own rules, as established by law or by its own determination. In this phase of its activity, it may use any of various election methods. It is a deliberative body.
+
+COMPARISON WITH STANDARD DELEGABLE PROXY. This election method is a form of delegable proxy modified only to make the base level of proxies be assigned by secret ballot, allowing ordinary voters to keep their anonymity.
