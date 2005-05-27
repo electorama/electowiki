@@ -14,7 +14,7 @@ The CDTT's [[Later-no-harm criterion|Later-no-harm]] performance can be preserve
 
 Some methods which can be paired in this way with the CDTT:
 *'''[[Random Ballot]]''': This can be very indecisive, but it is conceptually simple, and it satisfies [[Monotonicity criterion|Mono-raise]] and Clone Independence.
-*'''[[Plurality voting|First-Preference Plurality]]''': This is decisive, simple, and [[Monotonicity criterion|monotonic]], but fails Clone Independence.
+*'''[[Plurality voting|First-Preference Plurality]]''': This is decisive, simple, and [[Monotonicity criterion|monotone]], but fails Clone Independence.
 *'''[[Instant-runoff voting|Instant Runoff Voting]]''': This is more complicated. It satisfies Clone Independence but not [[Monotonicity criterion|monotonicity]]. The IRV ranking would be the reverse of the candidates' elimination order.
 *'''[[Descending Solid Coalitions]]''': This is also somewhat complicated, but it's the only non-random option which satisfies Clone Independence and [[Monotonicity criterion|Mono-raise]].
 *'''[[Minmax|MinMax (Pairwise Opposition)]]''': This has the advantage that it is calculated based on the pairwise matrix, just as the CDTT itself is. However, it is somewhat indecisive and fails Clone Independence. It satisfies [[Monotonicity criterion|Mono-raise]].
