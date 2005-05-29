@@ -1,4 +1,4 @@
-The '''Condorcet doubly-augmented top tier''' or '''CDTT''' is defined by Douglas Woodall as the union of all minimal nonempty sets of candidates such that no candidate in each set has a majority-strength pairwise loss to any candidate outside of the set.
+The '''Condorcet (doubly-augmented gross) top tier''' or '''CDTT''' is defined by Douglas Woodall as the union of all minimal nonempty sets of candidates such that no candidate in each set has a majority-strength pairwise loss to any candidate outside of the set.
 
 Equivalently it can be defined as the set containing each candidate ''A'' who has a majority-strength beatpath to every other candidate ''B'' who has a majority-strength beatpath to ''A''. That is, a candidate ''A'' is in the CDTT unless some candidate ''B'' has a majority-strength beatpath to ''A'' while ''A'' has no such beatpath to ''B''.
 
