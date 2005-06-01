@@ -1,3 +1,5 @@
+== Cardinal-weighted pairwise ==
+
 "'''Cardinal pairwise'''" and "'''CWP'''" are shorter names for "cardinal-weighted pairwise comparison", a method first proposed by James Green-Armytage in June of 2004.
 
 Cardinal pairwise differs from traditional pairwise count methods ([[Condorcet method|Condorcet methods]]) in that it uses cardinal (ratings) information in addition to ordinal information.
@@ -10,6 +12,9 @@ Thus in essence, CWP can be thought of as a definition of defeat strength. If A 
 
 The name "cardinal pairwise" also implies that a Smith-efficient, defeat-dropping base method will be used, for example [[beatpath]], [[ranked pairs]], or [[river]].
 
+== Approval-weighted pairwise ==
+
+"'''Approval weighted pairwise''', or '''AWP''', is the special case of cardinal pairwise in which the only available ratings are 0 and 1. AWP can use a ranked ballot with an approval cutoff.
 
 == External resources ==
 
