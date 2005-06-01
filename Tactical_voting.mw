@@ -6,9 +6,15 @@ There are different types of tactical voting:
 
 '''Compromising''' (sometimes '''favorite-burying''' or '''useful vote''') is a type of tactical voting in which a voter insincerely ranks an alternative higher in the hope of getting it elected.  For example, in the [[first-past-the-post election system|first-past-the-post]] election, a voter may vote for an option they perceive as having a greater chance of winning over an option they prefer (e.g., a [[left-wing politics|left-wing]] voter voting for a popular [[moderate]] candidate over an unpopular leftist candidate).  [[Duverger's law]] suggests that, for this reason, first-past-the-post election systems will lead to [[two party system]]s in most cases.  
 
+''Compromising-compression'' is a compromising strategy that involves insincerely giving two candidates an equal ranking. 
+''Compromising-reversal'' is a compromising strategy that involves insincerely reversing the order of two candidates on the ballot. 
+
 '''Burying''' is a type of strategic voting in which a voter insincerely ranks an alternative lower in the hopes of defeating it.  For example, in the [[Borda count]], a voter may insincerely rank a perceived strong alternative last in order to help their preferred alternative beat it. A real-world analogy would be voters of one party crossing over to vote in the other party's [[primary election|primary]] against the candidate they think might beat the candidate of their party.
 
-'''Push-over''' is a type of strategic voting that is only useful in methods that violate monotonicity. It may involve a voter ranking an alternative lower in the hope of getting it elected, or ranking an alternative higher in the hope of defeating it.
+''Burying-compression'' is a burying strategy that involves insincerely giving two candidates an equal ranking (or truncating, which generally amounts to the same thing). 
+''Burying-reversal'' is a burying strategy that involves insincerely reversing the order of two candidates on the ballot. 
+
+'''Push-over''' is a type of strategic voting that is only useful in methods that violate monotonicity. It may involve a voter ranking an alternative lower in the hope of getting it elected, or ranking an alternative higher in the hope of defeating it. Also known as a '''paradoxical''' strategy.
 
 == Strategy-free voting methods ==
 
