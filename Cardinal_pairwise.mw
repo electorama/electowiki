@@ -14,7 +14,7 @@ The name "cardinal pairwise" also implies that a Smith-efficient, defeat-droppin
 
 == Approval-weighted pairwise ==
 
-"'''Approval weighted pairwise''', or '''AWP''', is the special case of cardinal pairwise in which the only available ratings are 0 and 1. AWP can use a ranked ballot with an approval cutoff.
+"'''Approval weighted pairwise'''", or "'''AWP'''", is the special case of cardinal pairwise in which the only available ratings are 0 and 1. AWP can use a ranked ballot with an approval cutoff.
 
 == External resources ==
 
