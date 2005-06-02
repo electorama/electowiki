@@ -1,0 +1,13 @@
+
+'''Immune set''':  ''The set of candidates such that any defeat against a candidate within the set is countered by a string of stronger (or equally strong) defeats leading back to the defeating candidate.'' 
+
+There is an immune set definition for various possible defeat strength definition, e.g. the [[winning votes|WV]]-defined immune set, the [[margins]]-defined immune set, the [[CWP]]-defined immune set.
+
+If there is a [[Condorcet method|Condorcet winner]], he or she is the only member of the immune set. In a three candidate cycle with unequal defeat strengths, the immune set has one member, i.e. the candidate with the weakest defeat against him or her. When defeats in a cycle have equal strength, or when the cycle is between more than three candidates, the immune set can have multiple members.
+
+The immune set was proposed by Jobst Heitzig.
+
+=== External links ===
+
+* [http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-May/012801.html Examples with 4 options for immune methods] Discussion list entry by Jobst Heitzig which may have been the first recorded mention of the immune set.
+* [http://fc.antioch.edu/~james_green-armytage/vm/define.htm#immune Immune set definition] by James Green-Armytage
