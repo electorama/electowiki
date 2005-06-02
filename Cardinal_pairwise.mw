@@ -2,11 +2,11 @@
 
 "'''Cardinal pairwise'''" and "'''CWP'''" are shorter names for "cardinal-weighted pairwise comparison", a method first proposed by James Green-Armytage in June of 2004.
 
-Cardinal pairwise differs from traditional pairwise count methods ([[Condorcet method|Condorcet methods]]) in that it uses cardinal (rating) information in addition to ordinal (ranking) information.
+Cardinal pairwise differs from traditional pairwise count methods ([[Condorcet method|Condorcet methods]]) in that it uses [[ratings ballot|cardinal (rating)]] information in addition to [[ranked ballot|ordinal (ranking)]] information.
 
 CWP uses the ''ordinal'' information to determine the ''direction'' of pairwise defeats, exactly as most Condorcet methods do. However, it uses the ''cardinal'' information to determine the ''strength'' of the pairwise defeats.
 
-Thus in essence, CWP can be thought of as a definition of defeat strength. If A pairwise defeats B, the strength of the defeat is defined as follows:
+Thus, in essence, CWP can be thought of as a defeat strength definition. If A pairwise defeats B, CWP finds the strength of the defeat as follows:
 
 '''For each voter who ranks A over B, and only for these voters, subtract BÃ¢â‚¬â„¢s rating from AÃ¢â‚¬â„¢s rating, to get the rating differential. Sum these rating differentials to get the defeat strength.'''
 
