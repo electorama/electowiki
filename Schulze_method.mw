@@ -164,9 +164,8 @@ Using the [[first-past-the-post]] system and some other systems, Memphis would h
 
 == Satisfied Criteria ==
 
-CSSD satisfies the following criteria:
+The Schulze method satisfies the following criteria:
 
-# [[Majority criterion]]
 # [[Mutual majority criterion]]
 # [[Monotonicity criterion]]
 # [[Pareto criterion]]
@@ -186,7 +185,7 @@ CSSD satisfies the following criteria:
 # [[Strategic nomination|Independence of clones]]
 # [[Neutrality of Spoiled Ballots]]
 
-CSSD violates the following criteria:
+The Schulze method violates the following criteria:
 
 # [[Participation criterion]]
 # [[Consistency|Consistency criterion]]
