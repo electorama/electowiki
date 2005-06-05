@@ -166,18 +166,25 @@ Using the [[first-past-the-post]] system and some other systems, Memphis would h
 
 CSSD satisfies the following criteria:
 
+# [[Majority criterion]]
+# [[Mutual majority criterion]]
 # [[Monotonicity criterion]]
 # [[Pareto criterion]]
 # [[Condorcet Criterion|Condorcet criterion]]
-# [[Smith set|Smith criterion]] ([[Aka_(initialism)|aka]] [[Generalized Condorcet criterion]])
+# [[Smith set|Smith criterion]] (a.k.a. [[Generalized Condorcet criterion]])
 # [[Independence of irrelevant alternatives|local independence from irrelevant alternatives]]
 # [[Schwartz set|Schwartz criterion]]
+# [[Plurality criterion]]
+# the winner is always chosen from the [[Immune set]]
+# the winner is always chosen from the [[CDTT|CDTT set]]
+# [[Minimal Defense criterion]]
 # [[Strategy-Free criterion]]
 # [[Generalized Strategy-Free criterion]]
 # [[Strong Defensive Strategy criterion]]
 # [[Weak Defensive Strategy criterion]]
 # [[Summability criterion]]
 # [[Strategic nomination|Independence of clones]]
+# [[Neutrality of Spoiled Ballots]]
 
 CSSD violates the following criteria:
 
@@ -186,6 +193,7 @@ CSSD violates the following criteria:
 # [[Tactical voting|invulnerability to compromising]]
 # [[Tactical voting|invulnerability to burying]]
 # [[Favorite Betrayal criterion]]
+# [[Later-no-harm criterion]]
 
 == Use of CSSD ==
 
