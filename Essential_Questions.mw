@@ -1,18 +1,37 @@
 This is under construction and will be announced soon on EM-list.
 
-{|
-! 
-! Degree of agreement by...
-|-
-! Statement
-! JH AA BB
-|- 
-! Pairwise preference information should be used
-| 2  2  1 
-|- 
-! Approval information should be used
-| 2  1  1 
-|- 
-! Condorcet winners should win with certainty
-| 0  1  2 
-|}
+ ++  I agree strongly
+  +  I rather agree
+  0  I am indifferent about this
+  -  I rather disagree
+ --  I disagree strongly
+  ?  I am undecided about this
+
+ Statement
+   Degree of agreement by... (initials)
+   JH ??
+ 
+ Pairwise preference information should be used
+    +  ?
+ Approval information should be used
+   ++  ?
+ Cardinal ratings information should be used
+    -  ?
+ 
+ Condorcet Winners should win with certainty
+    -  ? 
+ Condorcet Winners must not lose with certainty
+   ++  ?
+ The Approval Winner must not lose with certainty
+    +  ?
+
+ Condorcet Losers must not win
+    ?  ?
+ A Condorcet Loser must not win unless s/he is an Approval Winner
+   ++  ? 
+ A Condorcet Loser must have winning probability less than 1/2
+    +  ?
+ Approval Losers must not win
+    -  ?
+ An Approval Loser must not win unless s/he is a Condorcet Winner
+    +  ?
