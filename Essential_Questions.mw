@@ -1,0 +1,18 @@
+This is under construction and will be announced soon on EM-list.
+
+{|
+! 
+! Degree of agreement by...
+|-
+! Statement
+! JH AA BB
+|- 
+! Pairwise preference information should be used
+| 2  2  1 
+|- 
+! Approval information should be used
+| 2  1  1 
+|- 
+! Condorcet winners should win with certainty
+| 0  1  2 
+|}
