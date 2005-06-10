@@ -1,14 +1,19 @@
 This is under construction and will be announced soon on EM-list.
 
+
+ LEGEND
+ 
  ++  I agree strongly
   +  I rather agree
   0  I am indifferent about this
   -  I rather disagree
  --  I disagree strongly
+ 
   ?  I am undecided about this
 
- Statement
-   Degree of agreement by... (initials)
+
+ STATEMENT
+   DEGREE OF AGREEMENT BY... (INITIALS)
    JH ??
  
  Pairwise preference information should be used
@@ -18,7 +23,7 @@ This is under construction and will be announced soon on EM-list.
  Cardinal ratings information should be used
     -  ?
  
- Condorcet Winners should win with certainty
+ Condorcet Winners must win with certainty
     -  ? 
  Condorcet Winners must not lose with certainty
    ++  ?
@@ -35,3 +40,9 @@ This is under construction and will be announced soon on EM-list.
     -  ?
  An Approval Loser must not win unless s/he is a Condorcet Winner
     +  ?
+ 
+ The winner must belong to the Smith/Gotcha/Getcha/Top Set
+    -  ?
+ 
+ Cloning must not affect the other candidates' winning probabilities
+   ++  ?
