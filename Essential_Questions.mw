@@ -1,6 +1,6 @@
 ''This is under construction and will be announced soon on EM-list.''
 
-This is a dynamic list of possible statements about what election methods should be like.
+This is a dynamic list of possible statements about what single-winner election methods should be like.
 It is meant to give a survey of the EM list members' basic opinions.
 
 Each person can add their own column and express their degree of agreement below each of the statements. For reasons of space, please just put your initials in the column's head. 
@@ -24,26 +24,60 @@ Please do not change the wording of statements as soon as someone expressed a de
  STATEMENT
    DEGREE OF AGREEMENT BY... (INITIALS)
 
-* What information should be used?
+* What are the tasks of single-winner election methods?
+
+   JK ??
+ to elect a winner
+   ++  ?
+ to provide a social order (=ranking)
+   --  ?
+ to make people vote "honestly"
+    +  ? 
+ to gain detailed information about voters' preferences
+    +  ?
+ to give voters with no information about others' preferences equal power
+    +  ?
+
+* What information should be asked for and used?
 
    JH ??
- Pairwise preference information should be used
+ Pairwise preference information (e.g. rankings) should be used
     +  ?
- Approval information should be used
+ Approval information (e.g. cutoffs) should be used
    ++  ?
  Cardinal ratings information should be used
     -  ?
+ Strategic information (e.g. AERLO) should be used
+   --  ?
+ It should be possible to rank X and Y equal independently of whether they are approved
+   ++  ? 
+ It should be possible to rank X over Y without the need to either rank Z over Y or X over Z
+   ++  ?
+ It should be possible to rank X over Y and Y over Z without the need to rank X over Z
+    +  ?
+
+* How should this information be interpreted?
+
+   JH ??
+ Approval information should be interpreted as cardinal rates of, say, 0 or 1
+    -  ?
+ Ranking X and Y equal means X and Y should get the same probability of winning
+    +  ?
+ Ranking X and Y equal means the decision about X and Y should be delegated to the other voters
+    -  ?
+ Expressing undecidedness between X and Y means this decision should be delegated to the others
+   ++  ?
 
 * What about certain types of "winners" and "losers"?
 
    JH ??
- Beats-All Winners must win with certainty
+ Beats-All Winners (=Condorcet Winners) must win with certainty
     -  ? 
  Beats-All Winners must not lose with certainty
    ++  ?
  Approval Winners must not lose with certainty
     +  ?
- Beaten-By-All Losers must not win
+ Beaten-By-All Losers (=Condorcet Losers) must not win
     ?  ?
  A Beaten-By-All Loser must not win unless s/he is an Approval Winner
    ++  ? 
@@ -65,8 +99,6 @@ Please do not change the wording of statements as soon as someone expressed a de
 * What effects should certain manipulations have?
  
    JH ??
- Cloning must not affect the other candidates' winning probabilities
-   ++  ?
  Raising X on one ballot without changing anything else must not decrease X's winning probability
    ++  ?
  Adding a ballot which only ranks X must not decrease X's winning probability
@@ -75,3 +107,7 @@ Please do not change the wording of statements as soon as someone expressed a de
     ?  ?
  Changing a ballot which only ranks X to "X>(whatever)" must not decrease X's winning probability
     -  ?
+ Cloning must not affect the other candidates' winning probabilities
+   ++  ?
+ Nominating "noise" candidates which are not liked much should be unlikely to change the outcome
+    +  ?
