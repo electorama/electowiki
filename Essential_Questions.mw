@@ -107,7 +107,7 @@ Please do not change the wording of statements as soon as someone expressed a de
     ?  ?
  Changing a ballot which only ranks X to "X>(whatever)" must not decrease X's winning probability
     -  ?
- Changing a detail "X>Y" to "X>Y" on one ballot should be unlikely to change the winner from W to Z
+ Changing a detail "X>Y" to "Y>X" on one ballot should be unlikely to change the winner from W to Z
     +  ?
  Cloning must not affect the other candidates' winning probabilities
    ++  ?
