@@ -23,18 +23,18 @@ This is under construction and will be announced soon on EM-list.
  Cardinal ratings information should be used
     -  ?
  
- Condorcet Winners must win with certainty
+ Beats-All Winners must win with certainty
     -  ? 
- Condorcet Winners must not lose with certainty
+ Beats-All Winners must not lose with certainty
    ++  ?
  Approval Winners must not lose with certainty
     +  ?
  
- Condorcet Losers must not win
+ Beaten-By-All Losers must not win
     ?  ?
- A Condorcet Loser must not win unless s/he is an Approval Winner
+ A Beaten-By-All Loser must not win unless s/he is an Approval Winner
    ++  ? 
- Condorcet Losers must have winning probability less than 1/2
+ Beaten-By-All Losers must have winning probability less than 1/2
     +  ?
  Approval Losers must not win
     -  ?
