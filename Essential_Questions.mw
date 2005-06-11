@@ -3,7 +3,7 @@
 This is a dynamic list of possible statements about what election methods should be like.
 It is meant to give a survey of the EM list members' basic opinions.
 
-Each person can add their own column and express their degree of agreement for each of the statements. For reasons of space, please just put your initials in the column's head. 
+Each person can add their own column and express their degree of agreement below each of the statements. For reasons of space, please just put your initials in the column's head. 
 
 When you add a new statement about some essential property of election methods, please try to formulate it as clear as possible, using as few ambiguous terms as possible, and keep the list sorted by groups of related statements.
 
@@ -23,8 +23,10 @@ Please do not change the wording of statements as soon as someone expressed a de
 
  STATEMENT
    DEGREE OF AGREEMENT BY... (INITIALS)
+
+* What information should be used?
+
    JH ??
- 
  Pairwise preference information should be used
     +  ?
  Approval information should be used
@@ -32,13 +34,15 @@ Please do not change the wording of statements as soon as someone expressed a de
  Cardinal ratings information should be used
     -  ?
  
+* What about certain types of "winners" and "losers"?
+
+   JH ??
  Beats-All Winners must win with certainty
     -  ? 
  Beats-All Winners must not lose with certainty
    ++  ?
  Approval Winners must not lose with certainty
     +  ?
- 
  Beaten-By-All Losers must not win
     ?  ?
  A Beaten-By-All Loser must not win unless s/he is an Approval Winner
@@ -49,13 +53,20 @@ Please do not change the wording of statements as soon as someone expressed a de
     -  ?
  An Approval Loser must not win unless s/he is a Condorcet Winner
     +  ?
- 
+
+* What other special properties should the winner have?
+
+   JH ??
  The winner must belong to the Smith/Gotcha/Getcha/Top Set
     -  ?
+ The winner must be top on at least one ballot
+    ?  ?
+
+* What effects should certain manipulations have?
  
+   JH ??
  Cloning must not affect the other candidates' winning probabilities
    ++  ?
- 
  Raising X on one ballot without changing anything else must not decrease X's winning probability
    ++  ?
  Adding a ballot which only ranks X must not decrease X's winning probability
