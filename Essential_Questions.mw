@@ -27,14 +27,14 @@ This is under construction and will be announced soon on EM-list.
     -  ? 
  Condorcet Winners must not lose with certainty
    ++  ?
- The Approval Winner must not lose with certainty
+ Approval Winners must not lose with certainty
     +  ?
  
  Condorcet Losers must not win
     ?  ?
  A Condorcet Loser must not win unless s/he is an Approval Winner
    ++  ? 
- A Condorcet Loser must have winning probability less than 1/2
+ Condorcet Losers must have winning probability less than 1/2
     +  ?
  Approval Losers must not win
     -  ?
@@ -46,3 +46,12 @@ This is under construction and will be announced soon on EM-list.
  
  Cloning must not affect the other candidates' winning probabilities
    ++  ?
+ 
+ Raising X on one ballot without changing anything else must not decrease X's winning probability
+   ++  ?
+ Adding a ballot which only ranks X must not decrease X's winning probability
+   ++  ?
+ Adding a ballot saying "X>(whatever)" must not decrease X's winning probability
+    ?  ?
+ Changing a ballot which only ranks X to "X>(whatever)" must not decrease X's winning probability
+    -  ?
