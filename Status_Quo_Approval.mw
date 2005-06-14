@@ -20,7 +20,7 @@ If you were asked to put down an approval list on all candidates you regard as b
  C[ ][ ][ ]
  D[ ][ ][ ]
 
-Those you consider better than the status quo get in the first (>Q) column, as good second, worse third. Like in MCA, the third slot is optional. If a candidate doesn't get any mark or several marks that is recognized at meaning the worst mark.
+Those you consider better than the status quo get in the first (>Q) column, as good second, worse third. Like in MCA, the third slot is optional. If a candidate doesn't get any mark or several marks that is recognized as meaning the worst mark.
 
 ==Calculating Results==
 First we count who gets the most marks in the first and second column added together. That's the challenger. Then we look how often the challenger is ranked better than the status quo. Only if that happened more often than the "same as status quo" and "worse than status quo" ranking added together the challenger wins to the status quo.
