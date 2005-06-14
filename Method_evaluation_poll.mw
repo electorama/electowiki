@@ -1,159 +1,98 @@
-Please rate the following single-winner methods on a scale from 0 to 10, on '''functional merit alone'''. That is, leaving the issue of public salability aside, how well will the method perform in a large, contentious electorate? Decimal ratings are allowed.
 
-The answers you give on your first pass through the survey need not be final. Please feel free to change/update your answers as many times as you like. You may leave a question mark next to your score for a given method if you are particularly uncertain about that score, and you may also substitute a question mark for the number if you feel unable to evalute the method. 
+== Particlar methods ==
 
-Feel free to add more methods to the poll, especially interesting ones! This goes without saying, but please don't change other people's ratings! Try to keep the columns tidy so that it's clear whose scores are whose. The format of this poll is based on that of the [[Essential Questions|essential questions]] poll. Please identify yourself by your initials in the body of the poll, and in the participants section at the top of the poll. This poll will be ongoing; that is, it has no closing date. Also, there is no official tally method, and no official winner will be declared.
-
-== the participants ==
- JG James Green-Armytage
- CB Chris Benham
- KV Kevin Venzke
- DK Dave Ketchum
- MO Mike Ossipoff 
- RL Rob Lanphier
- JF Jeff Fisher
-
-== the methods ==
+Please rate the following methods on a scale from 0 to 10, on '''merit alone''' (That is, leaving the issue of public salability aside, how well will the method perform in a large, contentious electorate?)
 
 === binary input ===
 
-    JG   CB   KV   DK   MO   RL   JF
- [[Plurality]]
-     2    0    2    2    0    0    0
- [[Runoff voting|Two round runoff]]
-     3    3    3    3    0    2    2
- [[Approval voting|Approval]]
-     6    4    8    5    9    5    9
- [[Random Ballot|Random Ballot]]
-     0    0    1    1    0    0    2
+    SR  JH  JG  KV MO
+
+[[Plurality]]
+
+[[runoff|Two round runoff]]
+
+[[Approval]]
 
 === ranking input ===
 
 ==== not Condorcet-efficient ====
 
-    JG   CB   KV   DK   MO   RL   JF
- [[Borda count]]     
-    1     0    0    0    0    0    4
- [[IRV]] without equal rankings
-    4     7    3    3    0    4    2
- ER-IRV(whole)
-    6     4    ?    ?    0    ?    2
- ER-IRV(fractional)
-    6     6    3    ?    0    ?    2
- [[Bucklin voting|Bucklin]] without equal rankings
-   3?     5    6    0         ?     6
- [[ER-Bucklin|ER-Bucklin(whole)]]
- 5.5?    6.5   7         2    ?    4
- [[ER-Bucklin|ER-Bucklin(fractional)]]
-    ?    5?    5              ?    5
- [[Descending Acquiescing Coalitions]] (DAC)
-         3?    4                     
- [[Descending Solid Coalitions]]
-         2?    2
+    SR  JH  JG  KV MO
+
+[[Borda count]]
+
+[[IRV]] without equal rankings
+
+ER-IRV(whole)
+
+ER-IRV(fractional)
 
 ==== nearly Condorcet-efficient ====
 
-    JG   CB   KV   DK   MO   RL   JF
- [[MMPO|minmax(pairwise opposition)]]
-     5    3?   4    ?    0   ?    4
- [[CDTT|CDTT,IRV]]
-     7    5?   5    ?    ?   ?    4
- [[CDTT|CDTT,minmax(pairwise opposition)]]
-     ?    3?   6    ?    ?   ?    5
- [[Improved Condorcet Approval]] ([[ICA]]), a.k.a. [[Condorcet//Approval]] with [[FBC]] tweak)
-    6?    6?   9    ?    ?   ?    5
- [[Majority Defeat Disqualification Approval]] ([[MDDA]])
-    6?    5?   8        10   ?    6
- [[MDD,ER-Bucklin(whole)]]
-          8?
+    SR  JH  JG  KV MO
+
+[[MMPO|minmax(pairwise opposition)]]
+
+[[CDTT,IRV]]
 
 ==== Condorcet-efficient ====
 
-    JG   CB   KV   DK   MO   RL   JF
- [[ranked pairs]](WV)
-     7    7    8    8    8    9    8
- [[ranked pairs]](margins)
-     2    4    3    3    0    6    ?
- [[river]](wv)
-     7    7     8    7    8    ?    9
- [[Schulze method|Schulze]](WV)
-     7    7    8    7    8    9    8
- [[Schulze method|Schulze]](margins)  
-     2    4    3    3    0    5    ?
- [[sequential dropping]](WV)
-     7    ?    7    ?    5    ?    8
- [[minmax]](WV)                  
-     4   ?     7    7    4    5    7
- [[minmax]](margins)     
-     1    ?    3    3    0    5    ?
- [[Smith//minmax]](WV)    
-     6    ?    7    ?  4.5    9    8
- [[Smith//minmax]](margins)
-     2    ?    3    ?    0    5    ?
- [[Nanson]]
-   5.5?   ?    3    ?    0    ?    5
- [[Raynaud]]
-    6?    3?    3    3    0    ?    6
- [[Smith,IRV]] or [[Schwartz,IRV]]
-          8
+    SR  JH  JG  KV MO
+
+[[ranked pairs]](WV)
+
+[[ranked pairs]](margins)
+
+[[beatpath]](WV)
+
+[[beatpath]](margins)
+
+[[sequential dropping]](WV)
+
+[[minmax]](WV)
+
+    SR  JH  JG  KV MO
+
+[[minmax]](margins)
+
+[[Smith//minmax]](WV)
+
+[[Smith//minmax]](margins)
+
+[[Nanson]]
+
+[[Raynaud]]
 
 === ranking input with approval cutoff ===
 
-    JG   CB   KV   DK    MO   RL   JF
- [[Definite Majority Choice|definite majority choice]] a.k.a. [[Ranked Approval Voting|ranked approval voting]]
-   6.5  9.5    6    3     1     ?    5
- [[CWP|approval weighted pairwise]] (e.g. with ranked pairs base)
-     9    8?    7    3     1    ?    4
- [[approval margins]]
-   5.5   8.5    ?    3     1    ?    ?
- [[Imagine Democratic Fair Choice|democratic fair choice (DFC)]]
-    ?    5?     3    3      1     ?    4
- Schwartz//Approval or Smith//Approval (See [[Condorcet//Approval]])
-         5?      4           1        10
- [[Condorcet//Approval]]     
-         4?      4            1        10
- [[Definite Majority,IRV]]
-         8
+    SR  JH  JG  KV MO
+
+[[Definite majority choice]]
+
+[[CWP|Approval weighted pairwise]]
+
+[[Approval margins]]
 
 === rating input ===
 
-    JG  CB   KV   DK   MO    RL
- [[range voting]] (ratings summation)
-   5.5       5    2   9.1
- [[Median Ratings|median ratings]]
-     3       4    2    2
- ranked pairs([[cardinal pairwise]])
-   9.5  8?   5    2    5
- [[Schulze method|Schulze]]([[cardinal pairwise]])
-   9.5  8?   5    2    5
- [[Automated DMC]]
-       10
+    SR  JH  JG  KV MO
+
+[[range voting]]
+
+[[ranked pairs]](cardinal pairwise)
+
+[[beatpath]](cardinal pairwise)
 
 === other ===
 
-    JG  CB   DK   MO
- [[candidate withdrawal option|CWO]]-ER-IRV(whole)
-     7  2?    1    4
- [[candidate withdrawal option|CWO]]-ER-IRV(fractional)
-     8  3?    1    3
- [[candidate withdrawal option|CWO]]-ranked pairs(WV)
-     8        1    5
- [[candidate withdrawal option|CWO]]-ranked ballot plurality
-     6  1?    1     1
- [[MMPO|minmax(pairwise opposition)]] with [[AERLO]] and [[ATLO]]
-     4  3?     ?     0
- [[MMPO]] with AERLO, ATLO, & [[Power Truncation]]
-     ?  0??          0
- [[MMPO]] with (only) [[Power Truncation]] 
-     ?  0??          10
- [[Schulze method|Schulze]](WV) with AERLO and ATLO
-     8  3?      ?    8.5
- [[Schulze method|Schulze]](WV) with [[strong/weak preference option]]
-   7.5  5?      ?       ?
- [[random jury]] method
-     ?  0      1   1
+[[candidate withdrawal option|CWO]]-ER-IRV(whole)
 
-== See also ==
+[[candidate withdrawal option|CWO]]-ER-IRV(fractional)
 
-*[[Essential Questions]] poll
-*[[Method support poll]]
+[[candidate withdrawal option|CWO]]-ranked pairs(WV)
+
+[[candidate withdrawal option|CWO]]-ranked ballot plurality
+
+[[MMPO|minmax(pairwise opposition)]] with AERLO and ATLO
+
+[[beatpath]](WV)with AERLO and ATLO
