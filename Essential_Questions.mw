@@ -109,17 +109,17 @@ MO Mike Ossipoff
 === What effects should certain manipulations have? ===
  
    SR  JH  JG  KV MO
- Raising X on one ballot without changing anything else must not decrease X's winning probability
+ Raising X on one ballot without changing anything else should never decrease X's winning probability
    ++  ++   +  ++  +
- Adding a ballot which only ranks X must not decrease X's winning probability
+ Adding a ballot which only ranks X should never decrease X's winning probability
    ++  ++   ?   +  +
- Adding a ballot saying "X>(whatever)" must not decrease X's winning probability
+ Adding a ballot saying "X>(whatever)" should never decrease X's winning probability
    ++   ?   ?   + --
- Changing a ballot which only ranks X to "X>(whatever)" must not decrease X's winning probability
+ Changing a ballot which only ranks X to "X>(whatever)" should never decrease X's winning probability
    --   -   ?   +  -
  Changing a detail "X>Y" to "Y>X" on one ballot should be unlikely to change the winner from W to Z
    ++   +   ?   0  +
- Cloning must not affect the other candidates' winning probabilities
+ Cloning should never affect the other candidates' winning probabilities
    ++  ++   +   +  -
  Nominating "noise" candidates which are not liked much should be unlikely to change the outcome
    ++   +   +  ++  +
