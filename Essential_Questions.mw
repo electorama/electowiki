@@ -80,7 +80,7 @@ MO Mike Ossipoff
 
 === What about certain types of "winners" and "losers"? ===
 
-   SR  JH  JG  KV MO
+   SR  JH  JG  KV  MO
  Beats-All Winners (=Condorcet Winners) should always win with certainty
    ++   -  ++   0  --
  Beats-All Winners should never lose with certainty
@@ -88,15 +88,15 @@ MO Mike Ossipoff
  Approval Winners should never lose with certainty
     -   +  --  --  ?
  Beaten-By-All Losers (=Condorcet Losers) should never win
-   ++   ?  ++   + --
+   ++   ?  ++   +  --
  A Beaten-By-All Loser should never win unless s/he is an Approval Winner
    --  ++   -   --
  Beaten-By-All Losers should always have winning probability less than 1/2
-    +   +   +   + --
+    +   +   ++  +  --
  Approval Losers should not win
-    -   -  --  -- --
+    -   -  --  --  --
  An Approval Loser should not win unless s/he is a Condorcet Winner
-    +   +  --  -- --
+    +   +  --  --  --
 
 === What other special properties should the winner have? ===
 
