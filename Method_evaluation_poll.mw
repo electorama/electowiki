@@ -4,98 +4,108 @@ Please rate the following methods on a scale from 0 to 10, on '''merit alone'''.
 
 The answers you give on your first pass through the survey need not be final. Please feel free to change/update your answers as many times as you like.
 
+
 === binary input ===
-    ??  ??  ??  ??  ??
+
+    JG   ??   ??   ??   ??
  [[Plurality]]
-            ?
+     2       ?
  [[runoff|Two round runoff]]
-            ?
+     3       ?
  [[Approval]]
-            ?
+     5       ?
 
 === ranking input ===
 
 ==== not Condorcet-efficient ====
 
-    ??  ??  ??  ??  ??
+    JG   ??   ??   ??   ??
  [[Borda count]]
-            ? 
+     1       ? 
  [[IRV]] without equal rankings
-            ? 
+     4      ? 
  ER-IRV(whole)
-            ?   
+     6      ?   
  ER-IRV(fractional)
-            ?
+     6       ?
  [[Bucklin]]
             ?
 
+
 ==== nearly Condorcet-efficient ====
 
-    ??  ??  ??  ??  ??
+    JG   ??   ??   ??   ??
  [[MMPO|minmax(pairwise opposition)]]
-            ?
+     3       ?
  [[CDTT,IRV]]
-            ?
+     7       ?
+
 
 ==== Condorcet-efficient ====
 
-    ??  ??  ??  ??  ??
+    JG   ??   ??   ??   ??
  [[ranked pairs]](WV)
-            ? 
+     8       ? 
  [[ranked pairs]](margins)
-            ?  
+     2       ?  
  [[beatpath]](WV)
-            ? 
+     8       ? 
  [[beatpath]](margins)
-            ? 
+     2       ? 
  [[sequential dropping]](WV)
-            ? 
+     7       ? 
  [[minmax]](WV)
-            ? 
+     3       ? 
  [[minmax]](margins)
-            ? 
+     1       ? 
  [[Smith//minmax]](WV)
-            ? 
+     7       ? 
  [[Smith//minmax]](margins)
-            ? 
+     2       ? 
  [[Nanson]]
-            ? 
+     4       ? 
  [[Raynaud]]
-            ?
+     5       ?
+
 
 === ranking input with approval cutoff ===
 
-    ??  ??  ??  ??  ??
+    JG   ??   ??   ??   ??
  [[definite majority choice]]
-            ? 
+     7       ? 
  [[CWP|approval weighted pairwise]]
-            ? 
+     9       ? 
  [[approval margins]]
-            ?
+     4       ?
+
 
 === rating input ===
 
-    ??  ??  ??  ??  ??
+    JG   ??   ??   ??   ??
  [[range voting]] (ratings summation)
-            ? 
+     6       ? 
  [[median rating]]
-            ? 
+     3       ? 
  [[ranked pairs]](cardinal pairwise)
-            ? 
+    10       ? 
  [[beatpath]](cardinal pairwise)
-            ?
+    10        ?
+
 
 === other ===
-    ??  ??  ??  ??  ??
+
+    JG   ??   ??   ??   ??
  [[candidate withdrawal option|CWO]]-ER-IRV(whole)
-            ? 
+     7       ? 
  [[candidate withdrawal option|CWO]]-ER-IRV(fractional)
-            ? 
+     7       ? 
  [[candidate withdrawal option|CWO]]-ranked pairs(WV)
-            ? 
+     9       ? 
  [[candidate withdrawal option|CWO]]-ranked ballot plurality
-            ? 
+     4       ? 
  [[MMPO|minmax(pairwise opposition)]] with AERLO and ATLO
-            ? 
- [[beatpath]](WV)with AERLO and ATLO
-            ?
+     ?       ? 
+ [[beatpath]](WV) with AERLO and ATLO
+     8       ?
+ [[beatpath]](WV) with strong/weak preference option
+     8
