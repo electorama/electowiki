@@ -22,37 +22,37 @@ Feel free to add new methods, especially interesting ones!
 
 ==== not Condorcet-efficient ====
 
-    JG   ??   ??   ??   ??
+    JG     CB   ??   ??   ??
  [[Borda count]]
-    1       ? 
+    1       4 
  [[IRV]] without equal rankings
-    4      ? 
+    4       7 
  ER-IRV(whole)
-    6      ?   
+    6       4   
  ER-IRV(fractional)
-    6       ?
+    6       6
  [[Bucklin]]
-    3       ?
+    3       6
 
 ==== nearly Condorcet-efficient ====
 
-    JG   ??   ??   ??   ??
+    JG      CB   ??   ??   ??
  [[MMPO|minmax(pairwise opposition)]]
-     3       ?
+     3       8
  [[CDTT|CDTT,IRV]]
-     7       ?
+     7       9.5
 
 ==== Condorcet-efficient ====
 
-    JG   ??   ??   ??   ??
+    JG      CB   ??   ??   ??
  [[ranked pairs]](WV)
-     8       ? 
+     8       7 
  [[ranked pairs]](margins)
-     2       ?  
+     2       4  
  [[beatpath]](WV)
-     8       ? 
+     8       7 
  [[beatpath]](margins)
-     2       ? 
+     2       4 
  [[sequential dropping]](WV)
      7       ? 
  [[minmax]](WV)
