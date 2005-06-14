@@ -70,13 +70,13 @@ Feel free to add new methods, especially interesting ones!
 
 === ranking input with approval cutoff ===
 
-    JG   ??   ??   ??   ??
+    JG      CB   ??   ??   ??
  [[definite Majority Choice|definite majority choice]]
-     7       ? 
+     7       8.5 
  [[CWP|approval weighted pairwise]]
-     9       ? 
+     9       8 
  [[approval margins]]
-     4       ?
+     4       9
 
 === rating input ===
 
