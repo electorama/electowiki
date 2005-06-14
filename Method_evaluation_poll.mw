@@ -96,17 +96,17 @@ Feel free to add new methods, especially interesting ones!
  [[candidate withdrawal option|CWO]]-ER-IRV(whole)
      7        
  [[candidate withdrawal option|CWO]]-ER-IRV(fractional)
-     7        
+     8        
  [[candidate withdrawal option|CWO]]-ranked pairs(WV)
-     9        
+     8        
  [[candidate withdrawal option|CWO]]-ranked ballot plurality
-     4        
+     6        
  [[MMPO|minmax(pairwise opposition)]] with AERLO and ATLO
-     ?        
+     4        
  [[beatpath]](WV) with AERLO and ATLO
      8       
  [[beatpath]](WV) with strong/weak preference option
-     8
+   7.5
 
 == See also ==
 
