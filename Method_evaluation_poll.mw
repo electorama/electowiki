@@ -13,14 +13,10 @@ Please rate the following methods on a scale from 0 to 10, on '''merit alone''' 
 ==== not Condorcet-efficient ====
 
     SR  JH  JG  KV MO
-
-[[Borda count]]
-
-[[IRV]] without equal rankings
-
-ER-IRV(whole)
-
-ER-IRV(fractional)
+ [[Borda count]]
+ [[IRV]] without equal rankings
+ ER-IRV(whole)
+ ER-IRV(fractional)
 
 ==== nearly Condorcet-efficient ====
 
