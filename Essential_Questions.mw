@@ -69,10 +69,10 @@ Please do not change the wording of statements as soon as someone expressed a de
     +  ++   ?  --   ?   0    +
  It should be possible to rank X over Y and Y over Z without the need to rank X over Z
     --  +  --  --  --   0    --
- [[candidate withdrawal option|Candidate withdrawal options]] should be used with some methods.
-            +           -    --
+ [[candidate withdrawal option|Candidate withdrawal options]] should be used with some methods
+       --   +           -    --
  Two or more rounds of voting should be used in some cases
-            ?           0    -
+        ?   ?           0    -
 
 === How should this information be interpreted? ===
 
