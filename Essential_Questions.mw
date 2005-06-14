@@ -38,11 +38,11 @@ Please do not change the wording of statements as soon as someone expressed a de
    ++  ++  ++  ++  ++  ++
  to provide a social order (=ranking)
    ++  --  0   0    0   +
- to make people vote "honestly"
-   ++   +  ?   ++   0  ++
- 
+ to make it probable that voters vote honestly
+        +
+ ( ++   +  ?   ++   0  ++ )
  to get rid of the lesser-of-2-evils problem
-           +       ++   +
+        +  +       ++   +
  to gain detailed information about voters' preferences
     +   +  +   +   ++  ++
  to give voters with no information about others' preferences equal power
@@ -50,7 +50,7 @@ Please do not change the wording of statements as soon as someone expressed a de
  to give both majorities and minorities a fair amount of power
    ++  ++  -   ?    -  ++
  to provide majority rule when broader consensus cannot be reached
-           +            0
+        -  +            0
 
 === What information should be asked for and used? ===
 
