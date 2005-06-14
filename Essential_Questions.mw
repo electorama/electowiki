@@ -23,6 +23,7 @@ Please do not change the wording of statements as soon as someone expressed a de
  JG James Green-Armytagae
  KV Kevin Venzke
  MO Mike Ossipoff
+ JL Juho Laatu
 
 == Statements and agreement by category ==
 
@@ -31,116 +32,116 @@ Please do not change the wording of statements as soon as someone expressed a de
 
 === What are the goals of single-winner election methods? ===
 
-   SR  JH  JG  KV MO
+   SR  JH  JG  KV  MO  JL
  to elect a winner
-   ++  ++  ++  ++ ++
+   ++  ++  ++  ++  ++  ++
  to provide a social order (=ranking)
-   ++  --  0   0   0
+   ++  --  0   0    0   +
  to make people vote "honestly"
-   ++   +  ?   ++  0
+   ++   +  ?   ++   0  ++
  
  to get rid of the lesser-of-2-evils problem
-           +       ++
+           +       ++   +
  to gain detailed information about voters' preferences
-    +   +  +   +  ++
+    +   +  +   +   ++  ++
  to give voters with no information about others' preferences equal power
-   ++   +  +   +   +
+   ++   +  +   +    +  ++
  to give both majorities and minorities a fair amount of power
-   ++  ++  -   ?   -
+   ++  ++  -   ?    -  ++
  to provide majority rule when broader consensus cannot be reached
-           +
+           +            0
 
 === What information should be asked for and used? ===
 
-   SR  JH  JG  KV MO
+   SR  JH  JG  KV  MO  JL
  Pairwise preference information (e.g. rankings) should be used
-   ++   +  ++   +  ++
+   ++   +  ++   +  ++   +
  Approval information (e.g. cutoffs) should be used
-    +  ++   ?   -  +
+    +  ++   ?   -   +   0
  Cardinal ratings information should be used
-    -   -   +  --  +
+    -   -   +  --   +   0
  Strategic information (e.g. AERLO) should be used
-   --  --   ?  --   ++
+   --  --   ?  --  ++   -
  It should be possible to rank X and Y equal independently of whether they are approved
-    +  ++   +   ?    +
+    +  ++   +   ?   +   0
  It should be possible to rank X over Y without the need to either rank Z over Y or X over Z
-    +  ++   ?  --    ?
+    +  ++   ?  --   ?   0
  It should be possible to rank X over Y and Y over Z without the need to rank X over Z
-    --  +  --  --    --
+    --  +  --  --  --   0
  [[candidate withdrawal option|Candidate withdrawal options]] should be used with some methods.
-            +
+            +           -
  Two or more rounds of voting should be used in some cases
-            ?
+            ?           0
 
 === How should this information be interpreted? ===
 
-   SR  JH  JG  KV MO
+   SR  JH  JG  KV  MO  JL
  Approval information should be interpreted as cardinal rates of, say, 0 or 1
-    +   -   +   +  +
+    +   -   +   +   +   0
  Ranking X and Y equal means X and Y should get the same probability of winning
-   ++   +   ?   ? -
+   ++   +   ?   ?   -   +
  Ranking X and Y equal means the decision about X and Y should be delegated to the other voters
-    -   -   -   -  +
+    -   -   -   -   +   0
  Expressing undecidedness between X and Y means this decision should be delegated to the others
-   ++  ++   -   -  +
+   ++  ++   -   -   +   +
  It is preferable to measure defeat strength in pairwise methods by winning votes rather than margins
-           ++
+           ++           -
 
 === What about certain types of "winners" and "losers"? ===
 
-   SR  JH  JG  KV  MO
+   SR  JH  JG  KV  MO  JL
  Beats-All Winners (=Condorcet Winners) should always win with certainty
-   ++   -  ++   0  --
+   ++   -  ++   0  --   +
  Beats-All Winners should never lose with certainty
-   ++  ++  ++   0  ?
+   ++  ++  ++   0   ?   +
  Approval Winners should never lose with certainty
-    -   +  --  --  ?
+    -   +  --  --   ?   0
  Beaten-By-All Losers (=Condorcet Losers) should never win
-   ++   ?  ++   +  --
+   ++   ?  ++   +  --   -
  A Beaten-By-All Loser should never win unless s/he is an Approval Winner
-   --  ++   -   --
+   --  ++   -   --      -
  Beaten-By-All Losers should always have winning probability less than 1/2
-    +   +   ++  +  --
+    +   +   ++  +  --   -
  Approval Losers should not win
-    -   -  --  --  --
+    -   -  --  --  --   0
  An Approval Loser should not win unless s/he is a Condorcet Winner
-    +   +  --  --  --
+    +   +  --  --  --   ?
 
 === What other special properties should the winner have? ===
 
-   SR  JH  JG  KV MO
+   SR  JH  JG  KV  MO  JL
  The winner should always belong to the Smith/GeTChA/Top Set
-   ++   -  ++   -  --
+   ++   -  ++   -  --   -
  The winner should always be top on at least one ballot
-   --   ?   -   0  --
+   --   ?   -   0  --   -
 
 === What effects should certain manipulations have? ===
  
-   SR  JH  JG  KV MO
+   SR  JH  JG  KV  MO  JL
  Raising X on one ballot without changing anything else should never decrease X's winning probability
-   ++  ++   +  ++  +
+   ++  ++   +  ++   +   +
  Adding a ballot which only ranks X should never decrease X's winning probability
-   ++  ++   ?   +  +
+   ++  ++   ?   +   +   0
  Adding a ballot saying "X>(whatever)" should never decrease X's winning probability
-   ++   ?   ?   + --
+   ++   ?   ?   +  --   +
  Changing a ballot which only ranks X to "X>(whatever)" should never decrease X's winning probability
-   --   -   ?   +  -
+   --   -   ?   +   -   +
  Changing a detail "X>Y" to "Y>X" on one ballot should be unlikely to change the winner from W to Z
-   ++   +   ?   0  +
+   ++   +   ?   0   +   0
  Cloning should never affect the other candidates' winning probabilities
-   ++  ++   +   +  -
+   ++  ++   +   +   -   +
  Nominating "noise" candidates which are not liked much should be unlikely to change the outcome
-   ++   +  ++  ++  +
+   ++   +  ++  ++   +   +
 
 === Questions of trade-off ===
 
-    SR  JH  JG  KV MO
+    SR  JH  JG  KV  MO  JL
   Freedom of preference expression is more important than anti-strategic properties
-     -   +   ?   ? --
+     -   +   ?   ?  --   ?
   Reduced need for strategy is more important than methods' "vulnerability to strategy".
-             -     ++ 
+             -      ++   ?
   Efficiency is more important than simplicity
-     ++  ?   +   ? --
+     ++  ?   +   ?  --   ?
 
 
 == See also ==
