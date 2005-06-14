@@ -29,7 +29,7 @@ MO Mike Ossipoff
  STATEMENT
    DEGREE OF AGREEMENT BY... (INITIALS)
 
-* What are the goals of single-winner election methods?
+=== What are the goals of single-winner election methods? ===
 
    SR  JH  JG  KV MO
  to elect a winner
@@ -48,7 +48,7 @@ MO Mike Ossipoff
  to give both majorities and minorities a fair amount of power
    ++  ++  -   ?   -
 
-* What information should be asked for and used?
+=== What information should be asked for and used? ===
 
    SR  JH  JG  KV MO
  Pairwise preference information (e.g. rankings) should be used
@@ -66,7 +66,7 @@ MO Mike Ossipoff
  It should be possible to rank X over Y and Y over Z without the need to rank X over Z
     --  +  --  --    --
 
-* How should this information be interpreted?
+=== How should this information be interpreted? ===
 
    SR  JH  JG  KV MO
  Approval information should be interpreted as cardinal rates of, say, 0 or 1
@@ -78,7 +78,7 @@ MO Mike Ossipoff
  Expressing undecidedness between X and Y means this decision should be delegated to the others
    ++  ++   -   -  +
 
-* What about certain types of "winners" and "losers"?
+=== What about certain types of "winners" and "losers"? ===
 
    SR  JH  JG  KV MO
  Beats-All Winners (=Condorcet Winners) must win with certainty
@@ -98,7 +98,7 @@ MO Mike Ossipoff
  An Approval Loser must not win unless s/he is a Condorcet Winner
     +   +  --  -- --
 
-* What other special properties should the winner have?
+=== What other special properties should the winner have? ===
 
    SR  JH  JG  KV MO
  The winner must belong to the Smith/GeTChA/Top Set
@@ -106,7 +106,7 @@ MO Mike Ossipoff
  The winner must be top on at least one ballot
    --   ?   0   0 --
 
-* What effects should certain manipulations have?
+=== What effects should certain manipulations have? ===
  
    SR  JH  JG  KV MO
  Raising X on one ballot without changing anything else must not decrease X's winning probability
@@ -124,7 +124,7 @@ MO Mike Ossipoff
  Nominating "noise" candidates which are not liked much should be unlikely to change the outcome
    ++   +   +  ++  +
 
-* Questions of trade-off
+=== Questions of trade-off ===
 
     SR  JH  JG  KV MO
   Freedom of preference expression is more important than anti-strategic properties
