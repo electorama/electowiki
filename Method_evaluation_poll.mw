@@ -8,15 +8,15 @@ Feel free to add new methods, especially interesting ones!
 
 === binary input ===
 
-    JG   ??   ??   ??   ??
+    JG       CB    ??   ??   ??
  [[Plurality]]
-     2       ?
+     2       2
  [[runoff|Two round runoff]]
-     3       ?
+     3       5
  [[Approval voting|Approval]]
-     5       ?
+     5       6
  [[Random ballot]]
-     1
+     1       1
 
 === ranking input ===
 
