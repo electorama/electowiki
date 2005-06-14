@@ -21,10 +21,8 @@ Please rate the following methods on a scale from 0 to 10, on '''merit alone''' 
 ==== nearly Condorcet-efficient ====
 
     SR  JH  JG  KV MO
-
-[[MMPO|minmax(pairwise opposition)]]
-
-[[CDTT,IRV]]
+ [[MMPO|minmax(pairwise opposition)]]
+ [[CDTT,IRV]]
 
 ==== Condorcet-efficient ====
 
