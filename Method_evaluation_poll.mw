@@ -15,7 +15,7 @@ Please rate the following methods on a scale from 0 to 10, on '''merit alone'''.
 
 ==== not Condorcet-efficient ====
 
-    SR  JH  JG  KV MO
+    ??  ??  ??  ??  ??
  [[Borda count]]
             ? 
  [[IRV]] without equal rankings
@@ -26,7 +26,7 @@ Please rate the following methods on a scale from 0 to 10, on '''merit alone'''.
 
 ==== nearly Condorcet-efficient ====
 
-    SR  JH  JG  KV MO
+    ??  ??  ??  ??  ??
  [[MMPO|minmax(pairwise opposition)]]
             ?
  [[CDTT,IRV]]
@@ -34,7 +34,7 @@ Please rate the following methods on a scale from 0 to 10, on '''merit alone'''.
 
 ==== Condorcet-efficient ====
 
-    SR  JH  JG  KV MO
+    ??  ??  ??  ??  ??
  [[ranked pairs]](WV)
             ? 
  [[ranked pairs]](margins)
@@ -47,7 +47,7 @@ Please rate the following methods on a scale from 0 to 10, on '''merit alone'''.
             ? 
  [[minmax]](WV)
             ? 
-    SR  JH  JG  KV MO
+    ??  ??  ??  ??  ??
  [[minmax]](margins)
             ? 
  [[Smith//minmax]](WV)
@@ -61,7 +61,7 @@ Please rate the following methods on a scale from 0 to 10, on '''merit alone'''.
 
 === ranking input with approval cutoff ===
 
-    SR  JH  JG  KV MO
+    ??  ??  ??  ??  ??
  [[Definite majority choice]]
             ? 
  [[CWP|Approval weighted pairwise]]
@@ -71,7 +71,7 @@ Please rate the following methods on a scale from 0 to 10, on '''merit alone'''.
 
 === rating input ===
 
-    SR  JH  JG  KV MO
+    ??  ??  ??  ??  ??
  [[range voting]]
             ? 
  [[ranked pairs]](cardinal pairwise)
@@ -80,7 +80,7 @@ Please rate the following methods on a scale from 0 to 10, on '''merit alone'''.
             ? 
 
 === other ===
-   SR  JH  JG  KV  MO
+    ??  ??  ??  ??  ??
  [[candidate withdrawal option|CWO]]-ER-IRV(whole)
             ? 
  [[candidate withdrawal option|CWO]]-ER-IRV(fractional)
