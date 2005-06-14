@@ -46,11 +46,11 @@ Feel free to add new methods, especially interesting ones!
 
     JG      CB   ??   ??   ??
  [[ranked pairs]](WV)
-     8       7 
+     7       7 
  [[ranked pairs]](margins)
      2       4  
  [[beatpath]](WV)
-     8       7 
+     7       7 
  [[beatpath]](margins)
      2       4 
  [[sequential dropping]](WV)
@@ -60,13 +60,13 @@ Feel free to add new methods, especially interesting ones!
  [[minmax]](margins)
      1       ? 
  [[Smith//minmax]](WV)
-     7       ? 
+     6       ? 
  [[Smith//minmax]](margins)
      2       ? 
  [[Nanson]]
-     5       ? 
+    4?       ? 
  [[Raynaud]]
-     5       ?
+    5?       ?
 
 === ranking input with approval cutoff ===
 
