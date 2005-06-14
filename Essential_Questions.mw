@@ -143,3 +143,102 @@ MO Mike Ossipoff
              -     ++ 
   Efficiency is more important than simplicity
      ++  ?   +   ? --
+
+
+== Particlar methods ==
+
+Please rate the following methods on a scale from 0 to 10, on '''merit alone''' (That is, leaving the issue of public salability aside, how well will the method perform in a large, contentious electorate?)
+
+=== binary input ===
+
+    SR  JH  JG  KV MO
+
+[[Plurality]]
+
+[[runoff|Two round runoff]]
+
+[[Approval]]
+
+=== ranking input ===
+
+==== not Condorcet-efficient ====
+
+    SR  JH  JG  KV MO
+
+[[Borda count]]
+
+[[IRV]] without equal rankings
+
+ER-IRV(whole)
+
+ER-IRV(fractional)
+
+==== nearly Condorcet-efficient ====
+
+    SR  JH  JG  KV MO
+
+[[MMPO|minmax(pairwise opposition)]]
+
+[[CDTT,IRV]]
+
+==== Condorcet-efficient ====
+
+    SR  JH  JG  KV MO
+
+[[ranked pairs]](WV)
+
+[[ranked pairs]](margins)
+
+[[beatpath]](WV)
+
+[[beatpath]](margins)
+
+[[sequential dropping]](WV)
+
+[[minmax]](WV)
+
+    SR  JH  JG  KV MO
+
+[[minmax]](margins)
+
+[[Smith//minmax]](WV)
+
+[[Smith//minmax]](margins)
+
+[[Nanson]]
+
+[[Raynaud]]
+
+=== ranking input with approval cutoff ===
+
+    SR  JH  JG  KV MO
+
+[[Definite majority choice]]
+
+[[CWP|Approval weighted pairwise]]
+
+[[Approval margins]]
+
+=== rating input ===
+
+    SR  JH  JG  KV MO
+
+[[range voting]]
+
+[[ranked pairs]](cardinal pairwise)
+
+[[beatpath]](cardinal pairwise)
+
+=== other ===
+
+[[candidate withdrawal option|CWO]]-ER-IRV(whole)
+
+[[candidate withdrawal option|CWO]]-ER-IRV(fractional)
+
+[[candidate withdrawal option|CWO]]-ranked pairs(WV)
+
+[[candidate withdrawal option|CWO]]-ranked ballot plurality
+
+[[MMPO|minmax(pairwise opposition)]] with AERLO and ATLO
+
+[[beatpath]](WV)with AERLO and ATLO
