@@ -1,6 +1,6 @@
 Please rate the following single-winner methods on a scale from 0 to 10, on '''functional merit alone'''. That is, leaving the issue of public salability aside, how well will the method perform in a large, contentious electorate? Decimal ratings are allowed.
 
-The answers you give on your first pass through the survey need not be final. Please feel free to change/update your answers as many times as you like. 
+The answers you give on your first pass through the survey need not be final. Please feel free to change/update your answers as many times as you like. You may leave a question mark next to your score for a given method if you are particularly uncertain about that score, and you may also substitute a question mark for the number if you feel unable to evalute the method. 
 
 Feel free to add more methods to the poll, especially interesting ones! This goes without saying, but please don't change other people's ratings! The format of this poll is based on that of the [[Essential Questions|essential questions]] poll. Please identify yourself by your initials in the body of the poll, and in the participants section at the top of the poll. This poll will be ongoing; that is, it has no closing date.
 
@@ -18,7 +18,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  [[Runoff voting|Two round runoff]]
      3       5
  [[Approval voting|Approval]]
-     5       6
+    5?       6
  [[Random Ballot|Random Ballot]]
      1       1
 
@@ -36,13 +36,13 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  ER-IRV(fractional)
     6       6
  [[Bucklin voting|Bucklin]]
-    3       6
+   3?       6
 
 ==== nearly Condorcet-efficient ====
 
     JG      CB   ??   ??   ??
  [[MMPO|minmax(pairwise opposition)]]
-     3       8
+     5       8
  [[CDTT|CDTT,IRV]]
      7      9.5
 
@@ -62,7 +62,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  [[sequential dropping]](WV)
      7       ? 
  [[minmax]](WV)
-     3       ? 
+     4       ? 
  [[minmax]](margins)
      1       ? 
  [[Smith//minmax]](WV)
@@ -70,7 +70,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  [[Smith//minmax]](margins)
      2       ? 
  [[Nanson]]
-     4       ? 
+    4?       ? 
  [[Raynaud]]
      5       ?
 
