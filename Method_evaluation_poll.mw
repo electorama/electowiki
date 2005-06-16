@@ -27,17 +27,17 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 ==== not Condorcet-efficient ====
 
-    JG     CB   ??   ??   ??
+    JG     CB   KV   ??   ??
  [[Borda count]]
-    1       4 
+    1       4    0
  [[IRV]] without equal rankings
-    4       7 
+    4       7    3
  ER-IRV(whole)
-    6       4   
+    6       4    ?
  ER-IRV(fractional)
-    6       6
+    6       6    3
  [[Bucklin voting|Bucklin]]
-   3?       6
+   3?       6    6
 
 ==== nearly Condorcet-efficient ====
 
