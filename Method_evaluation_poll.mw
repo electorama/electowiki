@@ -82,7 +82,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 === ranking input with approval cutoff ===
 
-    JG      CB    KV   ??   ??
+    JG      CB    KV   DK   ??   ??
  [[Definite Majority Choice|definite majority choice]] a.k.a. [[Ranked Approval Voting|ranked approval voting]]
    6.5      8.5   6
  [[CWP|approval weighted pairwise]] (e.g. with ranked pairs base)
