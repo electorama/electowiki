@@ -41,11 +41,13 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 ==== nearly Condorcet-efficient ====
 
-    JG      CB   ??   ??   ??
+    JG      CB    KV   ??   ??
  [[MMPO|minmax(pairwise opposition)]]
-     5       8
+     5       8     7
  [[CDTT|CDTT,IRV]]
-     7      9.5
+     7      9.5    7
+ [[CDTT|CDTT,MMPO]]
+                   8
 
 ==== Condorcet-efficient ====
 
