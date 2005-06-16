@@ -91,15 +91,15 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 === rating input ===
 
-    JG   ??   ??   ??   ??
+    JG   KV   ??   ??   ??
  [[range voting]] (ratings summation)
-   5.5        
+   5.5    4
  [[Median Ratings|median ratings]]
-     3        
+     3    4    
  [[ranked pairs]]([[cardinal pairwise]])
-    10        
+    10    4    
  [[beatpath]]([[cardinal pairwise]])
-    10
+    10    4
 
 === other ===
 
