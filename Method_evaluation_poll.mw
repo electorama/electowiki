@@ -28,7 +28,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 ==== not Condorcet-efficient ====
 
-    JG     CB   KV   ??   ??
+    JG     CB   KV   DK   ??   ??
  [[Borda count]]
     1       4    0
  [[IRV]] without equal rankings
