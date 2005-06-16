@@ -79,15 +79,15 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 === ranking input with approval cutoff ===
 
-    JG      CB   ??   ??   ??
+    JG      CB    KV   ??   ??
  [[definite Majority Choice|definite majority choice]]
-   6.5      8.5 
+   6.5      8.5   6
  [[CWP|approval weighted pairwise]] (e.g. with ranked pairs base)
-     9       8 
+     9       8    8
  [[approval margins]]
-   5.5       9
+   5.5       9    ?
  [[Imagine Democratic Fair Choice|democratic fair choice (DFC)]]
-    ?
+    ?             3
 
 === rating input ===
 
