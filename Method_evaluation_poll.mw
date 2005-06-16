@@ -30,15 +30,15 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
     JG     CB   KV   DK   ??   ??
  [[Borda count]]
-    1       4    0
+    1       4    0    0
  [[IRV]] without equal rankings
-    4       7    3
+    4       7    3    3
  ER-IRV(whole)
-    6       4    ?
+    6       4    ?    ?
  ER-IRV(fractional)
-    6       6    3
+    6       6    3    ?
  [[Bucklin voting|Bucklin]]
-   3?       6    6
+   3?       6    6    0
 
 ==== nearly Condorcet-efficient ====
 
