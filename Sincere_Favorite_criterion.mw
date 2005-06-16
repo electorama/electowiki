@@ -1,0 +1,23 @@
+The '''Sincere Favorite''' criterion is a criterion proposed by Kevin Venzke as an approximation and simplification of the [[Favorite Betrayal criterion]]. '''Sincere Favorite''' is a [[relative criterion]] defined on cast votes, whereas [[FBC]] is defined on sincere preferences and incentives.
+
+==Assumptions==
+
+It is assumed that the used election method permits the voter to tie any number of candidates in the top position. When this is not the case, as in standard [[Instant-runoff voting]], it is simplest to say that '''Sincere Favorite''' is failed. Alternatively, one can require that the method satisfy the criterion when the candidates are given the top positions in an arbitrary order. This interpretation allows [[Random Ballot]] (with equal ranking disallowed) to comply.
+
+==Definition==
+
+''Suppose a subset of the ballots, all identical, rank every candidate in S (where S contains at least two candidates) equal to each other, and above every other candidate. Then, arbitrarily lowering some candidate X from S on these ballots must not increase the probability that the winner comes from S.''
+
+Or more simply: ''The voter must not be able to help his favorite candidates by not voting for some of them.''
+
+==Complying methods==
+
+'''Sincere Favorite''' is satisfied by [[Approval voting]] and [[Minmax|Minmax(pairwise opposition)]]. Other [[Minmax]] methods and [[Condorcet criterion|Condorcet]]//[[Approval voting|Approval]] can be modified to satisfy it.
+
+==Commentary==
+
+If a voter believes there are situations under the used election method where giving his favorite candidate the top position may harm his compromise choice's chances of winning, even when the favorite and compromise are tied together in the top position, the voter might decide it is a safer strategy to not vote for his favorite candidate at all. In particular, the voter might make this decision when the favorite candidate is not expected to win the election.
+
+Methods which satisfy '''Sincere Favorite''' never enable a voter to help his favorite candidates by not voting for one of them.
+
+[[Category:Voting system criteria]]
