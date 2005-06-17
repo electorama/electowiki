@@ -42,15 +42,15 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 ==== nearly Condorcet-efficient ====
 
-    JG      CB    KV   DK   ??   ??
+    JG   CB   KV   DK   
  [[MMPO|minmax(pairwise opposition)]]
-     5       8     7    ?
+     5    8    7    ?
  [[CDTT|CDTT,IRV]]
-     7      9.5    7    ?
+     7   9.5   7    ?
  [[CDTT|CDTT,MMPO]]
-     ?             8    ?
+     ?         8    ?
  [[Condorcet criterion|Condorcet]]//[[Approval voting|Approval]] with [[FBC]] patch ("tied at the top" rule)
-     ?             9    ?
+     ?         9    ?
 
 ==== Condorcet-efficient ====
 
