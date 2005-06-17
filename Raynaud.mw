@@ -5,3 +5,5 @@ Raynaud fails the [[Monotonicity criterion]]. Even when winning votes are used a
 A variant called ''Raynaud(Gross Loser)'' does satisfy the [[Plurality criterion]]. It successively eliminates the candidate with the fewest votes for him in any pairwise contest. In this way, it is not possible to eliminate candidate ''A'' before candidate ''B'' when ''A'' has more first preferences than ''B'' has any preferences, since this situation means that the minimum number of votes for ''A'' in any contest is greater than the maximum number of votes for ''B'' in any contest. This variant was devised by Chris Benham.
 
 Raynaud does satisfy the [[Smith set|Smith criterion]].
+
+[[Category:Condorcet method]]
