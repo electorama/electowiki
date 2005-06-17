@@ -106,21 +106,21 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 === other ===
 
-    JG   ??   ??   ??   ??
+    JG   ??   ??   DK   ??   ??
  [[candidate withdrawal option|CWO]]-ER-IRV(whole)
-     7        
+     7              1
  [[candidate withdrawal option|CWO]]-ER-IRV(fractional)
-     8        
+     8              1
  [[candidate withdrawal option|CWO]]-ranked pairs(WV)
-     8        
+     8              1
  [[candidate withdrawal option|CWO]]-ranked ballot plurality
-     6        
+     6              1
  [[MMPO|minmax(pairwise opposition)]] with AERLO and ATLO
-     4        
+     4              ?
  [[beatpath]](WV) with AERLO and ATLO
-     8       
+     8              ?
  [[beatpath]](WV) with strong/weak preference option
-   7.5
+   7.5              ?
 
 == See also ==
 
