@@ -1,26 +1,5 @@
-==Considering the Status Quo==
-One criticism of any form of [[Range voting]] (Average or Median, and also the related [[Approval voting]] and Majority Choice Approval methods) is that they refer to some imaginary "What's okay?" point and not to some precise point. That precise point of reference could be the status quo. 
+Most voting systems with a status quo bias (such as decisions about constitutions) have that bias in form of a requirement to get much more than 50% for a change proposal to pass, for example 75%. Status Quo Approval has a bias, while it is still possible for a change to happen that has simply more than 50%.
 
-==Solving this in 2 rounds==
-If the voters are asked first "Should the old ruler MsQ go and a new elected?" and after that "Who should be it then?" a majority might say "yes" and then someone gets elected who is even less liked by the majority than the status quo because of splitted preferences. Consider the voters true preferences are: 
-    1st 2nd 3rd
- 40%  A   Q   B
- 32%  B   Q   A
- 28%  Q   B   A
+The ballot is like an approval ballot, which means the voter can make one mark per candidate, but mark as many candidates as approved as the voter wants.
 
-There is a 72% preference for other candidates over Q , yet she has broader support than A or B and would even be the [[Condorcet winner]]. But if we first vote on "Who should be the ruler if MsQ goes" and then on "Is that one really better than the current one?" there won't be a winner that is regarded by the majority as worse than the status quo.
-
-==Solving this on one Ballot==
-If you were asked to put down an approval list on all candidates you regard as better than the status quo, unlike with real Approval Voting the [[Favorite Betrayal criterion]] would be violated. Consider a situation where the status quo ruler is your favorite ruler but recent polls suggest that she has no chance this time. You would have a good reason to put some compromise candidates above her. So we will use a slightly more complicated ballot.
-
- compare to status quo
-  >Q  Q  Q>
- A[ ][ ][ ]
- B[ ][ ][ ]
- C[ ][ ][ ]
- D[ ][ ][ ]
-
-Those you consider better than the status quo get in the first (>Q) column, as good second, worse third. Like in MCA, the third slot is optional. If a candidate doesn't get any mark or several marks that is recognized as meaning the worst mark.
-
-==Calculating Results==
-First we count who gets the most marks in the first and second column added together. That's the challenger. Then we look how often the challenger is ranked better than the status quo. Only if that happened more often than the "same as status quo" and "worse than status quo" ranking added together the challenger wins to the status quo. If the challenger doesn't win, we pretend he never existed and look who the challenger is then etc.
+Only if the status quo gets less than 50% approval a change is considered. That's status quo bias and there is more of that. We then look if the candidate with most approval has more than 50% and only if that requirement is also met the SQ gets changed and the one with most approval is the winner.
