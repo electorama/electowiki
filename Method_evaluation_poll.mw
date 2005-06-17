@@ -54,31 +54,31 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 ==== Condorcet-efficient ====
 
-    JG      CB    KV  DK   ??   ??
+    JG      CB    KV   DK   ??   ??
  [[ranked pairs]](WV)
-     7       7     8
+     7       7     8    8
  [[ranked pairs]](margins)
-     2       4     3
+     2       4     3    3
  [[river]](wv)
-     7             8
+     7             8    7
  [[beatpath]](WV)
-     7       7     8
- [[beatpath]](margins)
-     2       4     3
+     7       7     8    7
+ [[beatpath]](margins)  
+     2       4     3    3
  [[sequential dropping]](WV)
-     7       ?     7
+     7       ?     7    ?
  [[minmax]](WV)
-     4       ?     7
+     4       ?     7    7
  [[minmax]](margins)
-     1       ?     3
+     1       ?     3    3
  [[Smith//minmax]](WV)
-     6       ?     7
+     6       ?     7    ?
  [[Smith//minmax]](margins)
-     2       ?     3
+     2       ?     3    ?
  [[Nanson]]
-   5.5?      ?     3
+   5.5?      ?     3    ?
  [[Raynaud]]
-    6?       ?     3
+    6?       ?     3    3
 
 === ranking input with approval cutoff ===
 
