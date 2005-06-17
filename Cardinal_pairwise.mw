@@ -15,12 +15,11 @@ The name "cardinal pairwise" also implies that a Smith-efficient, defeat-droppin
 
 === Ballot types ===
 
-One way to ballot for CWP is to have a separate ordinal and cardinal ballot, and to require that if a voter gives candidate R a higher rating than candidate S, then that voter must also give candidate R a higher ranking than candidate S.
+1. One way to ballot for CWP is to have a separate ordinal and cardinal ballot, and to require that if a voter gives candidate R a higher rating than candidate S, then that voter must also give candidate R a higher ranking than candidate S.
 
-A simpler way to ballot for CWP is to use only a cardinal ballot, and to derive the ordinal information from the cardinal information. The only disadvantage of this is that it creates an additional [[tactical voting|compromising-compression]] incentive not found in the first version. However, this additional incentive should be extremely minor if the scale is sufficiently fine. 
+2. A simpler way to ballot for CWP is to use only a cardinal ballot, and to derive the ordinal information from the cardinal information. The only disadvantage of this is that it creates an additional [[tactical voting|compromising-compression]] incentive not found in the first version. However, this additional incentive should be extremely minor if the scale is sufficiently fine. 
 
-For example, assume that the scale consists of integers from 0 to 100. If my sincere preferences are J>K>L, and I want to make the J>K defeat as weak as possible while making the K>L defeat as strong as possible, I can vote J:100, K:99, L:0. There is only a very small temptation to vote J: 100, K:100, L:0. This temptation can be reduced even further by allowing decimal ratings, e.g. J:100, K:99.99, L:0. 
-
+For example, assume that the scale consists of integers from 0 to 100. If my sincere preferences are J>K>L, and I want to make the J>K defeat as weak as possible while making the K>L defeat as strong as possible, I can vote J:100, K:99, L:0. There is only a very small temptation to vote J: 100, K:100, L:0. This temptation can be reduced even further by allowing decimal ratings, e.g. J:100, K:99.99, L:0.
 
 == Approval-weighted pairwise ==
 
