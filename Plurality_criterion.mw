@@ -8,6 +8,10 @@
 
 <h4 class=left>Commentary</h4>
 
-It is difficult to imagine that a method could have a good reason to elect ''B'' over ''A'' when the voters giving ''B'' any ranking at all are outnumbered by the voters who ranked ''A'' as being the best candidate. The Plurality criterion is about avoiding such unintuitive results.
+When the Plurality criterion requires that ''B'' not be elected, it means that even if all the voters who gave ''B some'' ranking were to elevate him to the top position, he would still not be the [[Plurality voting|First Preference Plurality]] winner.
+
+It also means that ''A'' has a stronger pairwise victory over ''B'' than ''B'' has even a path of victories to any other candidate.
+
+It is conceivable that if ''B'' were elected, voters might not consider this a legitimate result.
 
 [[Category:Voting system criteria]]
