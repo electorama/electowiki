@@ -9,18 +9,18 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  CB Chris Benham
  KV Kevin Venzke
  DK Dave Ketchum
-
+ MO Mike Ossipoff 
 == the methods ==
 
 === binary input ===
 
-    JG   CB   KV   DK
+    JG   CB   KV   DK  MO
  [[Plurality]]
      2    2    2    2
  [[Runoff voting|Two round runoff]]
      3    5    3    3
  [[Approval voting|Approval]]
-    5?    6    8    5
+    5?    6    8    5  7
  [[Random Ballot|Random Ballot]]
      1    1    1    1
 
@@ -42,9 +42,9 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 ==== nearly Condorcet-efficient ====
 
-    JG   CB   KV   DK   
+    JG   CB   KV   DK  MO 
  [[MMPO|minmax(pairwise opposition)]]
-     5    8    7    ?
+     5    8    7    ?  6
  [[CDTT|CDTT,IRV]]
      7   9.5   7    ?
  [[CDTT|CDTT,minmax(pairwise opposition)]]
@@ -54,31 +54,31 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 ==== Condorcet-efficient ====
 
-    JG   CB   KV   DK
+    JG   CB   KV   DK  MO
  [[ranked pairs]](WV)
-     7    7    8    8
+     7    7    8    8   4
  [[ranked pairs]](margins)
-     2    4    3    3
+     2    4    3    3   0
  [[river]](wv)
-     7         8    7
+     7         8    7   4
  [[beatpath]](WV)
-     7    7    8    7
+     7    7    8    7   4
  [[beatpath]](margins)  
-     2    4    3    3
+     2    4    3    3   0
  [[sequential dropping]](WV)
-     7    ?    7    ?
- [[minmax]](WV)
+     7    ?    7    ?    4
+ [[minmax]](WV)          3
      4    ?    7    7
- [[minmax]](margins)
+ [[minmax]](margins)     0
      1    ?    3    3
- [[Smith//minmax]](WV)
+ [[Smith//minmax]](WV)   3.5 
      6    ?    7    ?
  [[Smith//minmax]](margins)
-     2    ?    3    ?
+     2    ?    3    ?     0
  [[Nanson]]
-   5.5?   ?    3    ?
+   5.5?   ?    3    ?     0
  [[Raynaud]]
-    6?    ?    3    3
+    6?    ?    3    3     0
 
 === ranking input with approval cutoff ===
 
@@ -106,7 +106,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 === other ===
 
-    JG   DK
+    JG   DK  MO
  [[candidate withdrawal option|CWO]]-ER-IRV(whole)
      7    1
  [[candidate withdrawal option|CWO]]-ER-IRV(fractional)
@@ -116,8 +116,12 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  [[candidate withdrawal option|CWO]]-ranked ballot plurality
      6    1
  [[MMPO|minmax(pairwise opposition)]] with AERLO and ATLO
-     4    ?
- [[beatpath]](WV) with AERLO and ATLO
+     4    ?   9
+  MMPO with AERLO, ATLO, & Power Truncation
+             10
+  MMPO with (only) Power Truncation 
+              8
+[[beatpath]](WV) with AERLO and ATLO
      8    ?
  [[beatpath]](WV) with strong/weak preference option
    7.5    ?
