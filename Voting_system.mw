@@ -72,7 +72,7 @@ They can also be classified on how many times votes can be counted. Methods like
 
 *[[First-past-the-post election system|First-past-the-post]] (also called Plurality or Relative Majority or Winner-Take-All) - vote for at most one candidate.  Most votes wins, even if this is less than a majority.
 *Runoff systems
-**[[Runoff voting]] - Two Round System - if no majority, hold a new election with only the top two candidates. This system is used for most single-winner elections in [[France]].
+**[[Runoff voting]] - Two Round System - if no majority, hold a new election with only the top two candidates. This system is used for most single-winner elections in France.
 **Elimination runoff - if no majority, hold a new election with the weakest candidate eliminated.  Repeat until there is a majoirty.
 **Exhaustive runoff - no eliminations, repeat balloting until there is a majority.  Common in committees.
 *[[Approval voting]] (AV) - Voters may for vote for as many candidates as they like.  Candidate with most votes wins.  Sometimes considered a version of Cardinal Rankings (see below) with a point range of [0,1]
