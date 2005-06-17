@@ -1,3 +1,5 @@
 '''Drop the weakest pairwise defeat ''that's in a cycle'' until a candidate is unbeaten.'''
 
 Differs from minmax only in the "that's in a cycle" proviso. As a result of that proviso, sequential dropping is Smith-efficient. Unlike [[beatpath]], [[ranked pairs]], and [[river]], sequential dropping fails monotonicity and clone independence.
+
+[[Category:Condorcet method]]
