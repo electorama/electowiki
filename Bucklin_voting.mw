@@ -14,6 +14,10 @@ For multi-member districts, voters mark as many first choices as there are seats
 
 This method was used in many political elections in the United States in the early 20th Century.  In most states it was repealed and in a few states it was found to violate the state constitution.
 
+== Satisfied criteria ==
+
+Bucklin satisfies the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], [[Monotonicity criterion|Monotonicity]], ''Later-no-help'', and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). It fails the [[Condorcet criterion]], [[Strategic nomination|Clone Independence]], [[Participation criterion|Participation]], and [[Later-no-harm criterion|Later-no-harm]].
+
 === An example ===
 
 {{Tenn_voting_example}}
