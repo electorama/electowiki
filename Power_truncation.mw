@@ -1,2 +1,4 @@
-
 With a pairwise-count method, when a voter chooses the power truncation option, that means that s/he wants, for any candidate s/he doesn't rank, that his/her ballot be counted as voting every one of the other candidates against that one.
+
+So every candidate s/he doesn't rank is treated as if it were last-ranked on 
+his-her ballot, with all the others ranked over that candidate.
