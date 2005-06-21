@@ -117,13 +117,13 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
      6    1
  [[MMPO|minmax(pairwise opposition)]] with AERLO and ATLO
      4    ?    9
- [[MMPO]] with AERLO, ATLO, & Power Truncation
+ [[MMPO]] with AERLO, ATLO, & [[Power Truncation]]
      ?        10
- [[MMPO]] with (only) Power Truncation 
+ [[MMPO]] with (only) [[Power Truncation]] 
      ?         8
  [[beatpath]](WV) with AERLO and ATLO
      8    ?
- [[beatpath]](WV) with strong/weak preference option
+ [[beatpath]](WV) with [[strong/weak preference option]]
    7.5    ?
 
 == See also ==
