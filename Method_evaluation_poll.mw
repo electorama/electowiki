@@ -44,11 +44,11 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
     JG   CB   KV   DK   MO 
  [[MMPO|minmax(pairwise opposition)]]
-     5    4    7    ?    6
+     5    4    5    ?    6
  [[CDTT|CDTT,IRV]]
-     7    9    7    ?
+     7    9    6    ?
  [[CDTT|CDTT,minmax(pairwise opposition)]]
-     ?    5    8    ?
+     ?    5    7    ?
  [[Condorcet criterion|Condorcet]]//[[Approval voting|approval]] with [[FBC]] patch ("tied at the top" rule)
     6?         9    ?
 
