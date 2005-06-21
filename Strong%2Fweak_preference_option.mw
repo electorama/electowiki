@@ -1,18 +1,2 @@
 
-== Ballot ==
-
-Voters can express both strong and weak preferences. 
-
-E.g. A ballot can be marked A>B>C>>D>E>F>>G.
-
-
-== Tally ==
-
-The direction of pairwise defeats are determined by both strong and weak preferences, and the strength of pairwise defeats are determined only by strong preferences. 
-
-E.g. the A>B preference above is weak, the A>>D preference in the example above is strong, the D>F preference is weak, the F>>G preference is strong, etc.
-
-
-== External links ==
-
-* [http://fc.antioch.edu/~james_green-armytage/vm/antistratsum.htm List of anti-strategy enhancements]
+Voters can express both strong and weak preferences. The direction of pairwise defeats are determined by both strong and weak preferences, and the strength of pairwise defeats are determined only by strong preferences.
