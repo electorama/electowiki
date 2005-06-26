@@ -51,6 +51,8 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
      ?    5    7    ?
  [[Condorcet criterion|Condorcet]]//[[Approval voting|approval]] with [[FBC]] patch ("[[tied at the top]]" rule)
     6?         9    ?
+ [[Majority Defeat Disqualification Approval]] ([[MDDA]])
+               9
 
 ==== Condorcet-efficient ====
 
