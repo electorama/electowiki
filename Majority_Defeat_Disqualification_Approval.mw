@@ -1,25 +1,17 @@
 '''Majority Defeat Disqualification Approval''' or '''MDDA''' is a method devised by Kevin Venzke for the purpose of showing that the [[Favorite Betrayal criterion]], [[Strategy-Free criterion]], and [[Strong Defensive Strategy criterion]] are mutually compatible. The name was given by Mike Ossipoff.
 
-This method can be viewed as a variant of [[Improved Condorcet Approval]].
-
-Another method with the above properties is [[Majority Approval, Minimum Pairwise Opposition]] ([[MAMPO]]).
-
 ==Procedure==
 The voter submits a ranking of the candidates. The candidates explicitly ranked are considered ''approved'' by that voter.
 
 A candidate is ''dominated'' if more than half of the voters rank some other candidate strictly above him.
 
-All dominated candidates are eliminated, unless this would eliminate all the candidates.
+Sort the candidates so that all undominated candidates, if any exist, come before all dominated candidates. Within each group, sort of the candidates in descending order of approval.
 
-Of remaining candidates, the one approved by the most voters is elected.
+Elect the first candidate in the resulting ranking.
 
 ==Criteria==
-'''MDDA''' satisfies the [[Favorite Betrayal criterion]], [[Strategy-Free criterion]], the [[Strong Defensive Strategy criterion]] (and [[Minimal Defense criterion]]), and [[Monotonicity criterion|monotonicity]].
+'''MDDA''' satisfies the [[Favorite Betrayal criterion]], [[Strategy-Free criterion]], the [[Strong Defensive Strategy criterion]] (and [[Minimal Defense criterion]]), [[Monotonicity criterion|monotonicity]], and (''check this'') the [[Plurality criterion]].
 
-It fails [[Strategic nomination|Clone-Winner]], the [[Plurality criterion]], the [[Generalized Strategy-Free criterion]], the [[Condorcet criterion]], the [[Smith set|Smith criterion]], [[Participation criterion|Participation]], the [[Majority criterion|Majority criterion for solid coalitions]], and [[Later-no-harm criterion|Later-no-harm]].
+It fails [[Strategic nomination|Clone-Winner]], the [[Generalized Strategy-Free criterion]], the [[Condorcet criterion]], the [[Smith set|Smith criterion]], [[Participation criterion|Participation]], the [[Majority criterion|Majority criterion for solid coalitions]], and [[Later-no-harm criterion|Later-no-harm]].
 
-==Links==
-*[http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-June/016374.html Method is first proposed on EM, with properties proven (Jun 21 2005)]
-*[http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-June/016381.html Mike Ossipoff names the method]
-
-[[Category:Single-winner voting methods]]
+''Work in progress.''
