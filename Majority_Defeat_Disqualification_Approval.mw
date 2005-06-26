@@ -1,0 +1,17 @@
+'''Majority Defeat Disqualification Approval''' or '''MDDA''' is a method devised by Kevin Venzke for the purpose of showing that the [[Favorite Betrayal criterion]], [[Strategy-Free criterion]], and [[Strong Defensive Strategy criterion]] are mutually compatible. The name was given by Mike Ossipoff.
+
+==Procedure==
+The voter submits a ranking of the candidates. The candidates explicitly ranked are considered ''approved'' by that voter.
+
+A candidate is ''dominated'' if more than half of the voters rank some other candidate strictly above him.
+
+Sort the candidates so that all undominated candidates, if any exist, come before all dominated candidates. Within each group, sort of the candidates in descending order of approval.
+
+Elect the first candidate in the resulting ranking.
+
+==Criteria==
+'''MDDA''' satisfies the [[Favorite Betrayal criterion]], [[Strategy-Free criterion]], the [[Strong Defensive Strategy criterion]] (and [[Minimal Defense criterion]]), [[Monotonicity criterion|monotonicity]], and (''check this'') the [[Plurality criterion]].
+
+It fails [[Strategic nomination|Clone-Winner]], the [[Generalized Strategy-Free criterion]], the [[Condorcet criterion]], the [[Smith set|Smith criterion]], [[Participation criterion|Participation]], the [[Majority criterion|Majority criterion for solid coalitions]], and [[Later-no-harm criterion|Later-no-harm]].
+
+''Work in progress.''
