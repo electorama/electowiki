@@ -47,6 +47,7 @@ Note: A candidate is ranked in kth place on a given ballot if there are k-1 cand
 |
 |}
 
+
 === ER-Bucklin(whole) tally ===
 
 {| border=1
@@ -73,6 +74,7 @@ Note: A candidate is ranked in kth place on a given ballot if there are k-1 cand
 
 
 There is a tie between B1 and B2.
+
 
 === ER-Bucklin(fractional) tally ===
 
