@@ -15,9 +15,9 @@ Note: A candidate is ranked in kth place on a given ballot if there are k-1 cand
 
 == Example ==
 
-:36: A>B1=B2>C
-:34: B1=B2>C>A
-:30: C>A>B1=B2
+:36 voters: A>B1=B2>C
+:34 voters: B1=B2>C>A
+:30 voters: C>A>B1=B2
 
 :::''or'':
 
