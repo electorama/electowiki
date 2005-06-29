@@ -1,0 +1,48 @@
+
+ER-Bucklin is a versions of [[Bucklin voting]] that allows voters to give equal rankings to some candidates.
+
+
+== ER-Bucklin(whole) ==
+
+''If a ballot lists n candidates as tied in kth place, count that ballot as a whole point for all n candidates in the kth round.''
+
+Note: A candidate is ranked in kth place on a given ballot if there are k-1 candidates who are ranked strictly higher. For exampe, a ballot marked A>B=C=D>E>F=G=H=I>J should be considered to rank A to in 1st place, B, C, and D in 2nd place, E in 5th place, F, G, H, and I in 6th place, and J in 10th place. Thus, the ballot would not count in favor of E until the 5th round, and it would not count in favor of J until the 10th round.
+
+
+== ER-Bucklin(fractional) ==
+
+''If a ballot lists n candidates as tied in kth place, count that ballot as 1/n point for all n candidates in the kth round, adding another 1/n point in each subsequent round until the ballot has contributed 1 point to all n candidates.''
+
+
+== Example ==
+
+:36: A>B1=B2>C
+:34: B1=B2>C>A
+:30: C>A>B1=B2
+
+=== ER-Bucklin(whole) tally ===
+
+candidate  round 1  round 2 
+A          36       +30 = 66
+B1         34       +36 = 70
+B2         34       +36 = 70
+C          30
+
+There is a tie between B1 and B2.
+
+=== ER-Bucklin(fractional) tally ===
+
+candidate  round 1  round 2 
+A          36       +30 = 66
+B1         17       +17+18 = 52
+B2         17       +17+18 = 52
+C          30
+
+A wins.
+
+''work in progress''
+
+== See also ==
+[[Bucklin voting]]
+
+[[Category:Single-winner voting systems]]
