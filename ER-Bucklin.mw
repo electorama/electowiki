@@ -1,16 +1,13 @@
-ER-Bucklin is an old name for [[Majority Choice Approval]] (MCA). Please see that article, which mostly supersedes the following.
 
-== Definition ==
-It is a rated version of [[Bucklin voting]] that allows voters to give equal rankings to some candidates. There are at least two main versions of ER-Bucklin; these are '''ER-Bucklin(whole)''' and '''ER-Bucklin(fractional)'''.
+ER-Bucklin is a versions of [[Bucklin voting]] that allows voters to give equal rankings to some candidates.
 
 
 == ER-Bucklin(whole) ==
 
-''If a ballot lists n candidates as tied in kth place, count that ballot as a whole point for all n candidates beginning in the kth round.''
+''If a ballot lists n candidates as tied in kth place, count that ballot as a whole point for all n candidates in the kth round.''
 
 Note: A candidate is ranked in kth place on a given ballot if there are k-1 candidates who are ranked strictly higher. For exampe, a ballot marked A>B=C=D>E>F=G=H=I>J should be considered to rank A to in 1st place, B, C, and D in 2nd place, E in 5th place, F, G, H, and I in 6th place, and J in 10th place. Thus, the ballot would not count in favor of E until the 5th round, and it would not count in favor of J until the 10th round.
 
-This rule is perhaps unique in that it satisfies both the "[[favorite betrayal]]" criterion and the [[Majority criterion for solid coalitions]].
 
 == ER-Bucklin(fractional) ==
 
@@ -19,90 +16,27 @@ This rule is perhaps unique in that it satisfies both the "[[favorite betrayal]]
 
 == Example ==
 
-:36 voters: A>B1=B2>C
-:34 voters: B1=B2>C>A
-:30 voters: C>A>B1=B2
-
-:::''or'':
-
-{| border=1
-!#
-!1st
-!2nd
-!3rd
-!4th
-|-
-|36
-|A
-|B1&B2
-|
-|C
-|-
-|34
-|B1&B2
-|
-|C
-|A
-|-
-|30
-|C
-|A
-|B1&B2
-|
-|}
-
+:36: A>B1=B2>C
+:34: B1=B2>C>A
+:30: C>A>B1=B2
 
 === ER-Bucklin(whole) tally ===
 
-{| border=1
-!candidate
-!round 1
-!round 2
-|-
-|A
-|36
-|66
-|-
-|B1
-|34
-|70
-|-
-|B2
-|34
-|70
-|-
-|C
-|30
-|30
-|}
-
+candidate  round 1  round 2 
+A          36       +30 = 66
+B1         34       +36 = 70
+B2         34       +36 = 70
+C          30
 
 There is a tie between B1 and B2.
 
-
 === ER-Bucklin(fractional) tally ===
 
-{| border=1
-!candidate
-!round 1
-!round 2
-|-
-|A
-|36
-|66
-|-
-|B1
-|17
-|52
-|-
-|B2
-|17
-|52
-|-
-|C
-|30
-|30
-|}
+candidate  round 1  round 2 
+A          36       +30 = 66
+B1         17       +17+18 = 52
+B2         17       +17+18 = 52
+C          30
 
 A wins.
 
@@ -111,4 +45,4 @@ A wins.
 == See also ==
 [[Bucklin voting]]
 
-[[Category:Graded Bucklin systems]]
+[[Category:Single-winner voting systems]]
