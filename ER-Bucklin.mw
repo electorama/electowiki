@@ -22,12 +22,6 @@ Note: A candidate is ranked in kth place on a given ballot if there are k-1 cand
 
 === ER-Bucklin(whole) tally ===
 
-candidate  round 1  round 2 
-A          36       30, 66
-B1         34       +36=70
-B2         34       +36=70
-C          30
-
 {| border=1
 !candidate
 !round 1
