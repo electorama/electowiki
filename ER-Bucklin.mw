@@ -19,6 +19,32 @@ Note: A candidate is ranked in kth place on a given ballot if there are k-1 cand
 :34: B1=B2>C>A
 :30: C>A>B1=B2
 
+{| border=1
+!voters
+!1st choice
+!2nd choice
+!3rd choice
+!4th choice
+|-
+|36
+|A
+|B1&B2
+|
+|C
+|-
+|34
+|B1&B2
+|
+|C
+|A
+|-
+|30
+|C
+|A
+|B1&B2
+|
+|-
+
 === ER-Bucklin(whole) tally ===
 
 {| border=1
@@ -73,7 +99,6 @@ There is a tie between B1 and B2.
 A wins.
 
 ''work in progress''
-
 
 == See also ==
 [[Bucklin voting]]
