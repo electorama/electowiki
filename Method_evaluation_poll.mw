@@ -16,31 +16,31 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
     JG   CB   KV   DK   MO
  [[Plurality]]
-     2    2    2    2
+     2    2    2    2    0
  [[Runoff voting|Two round runoff]]
-     3    5    3    3
+     3    5    3    3     0
  [[Approval voting|Approval]]
-    5?    6    8    5    7
+    5?    6    8    5    9
  [[Random Ballot|Random Ballot]]
-     1    1    1    1
+     1    1    1    1     0 
 
 === ranking input ===
 
 ==== not Condorcet-efficient ====
 
-    JG   CB   KV   DK   
- [[Borda count]]
-    1     3    0    0
+    JG   CB   KV   DK   MO
+ [[Borda count]]     
+    1     3    0    0     0
  [[IRV]] without equal rankings
-    4     7    3    3
+    4     7    3    3     0
  ER-IRV(whole)
-    6     4    ?    ?
+    6     4    ?    ?      0
  ER-IRV(fractional)
-    6     6    3    ?
+    6     6    3    ?      0
  [[Bucklin voting|Bucklin]] without equal rankings
-   3?    6.5   6    0
+   3?    6.5   6    0       
  [[ER-Bucklin|ER-Bucklin(whole)]]
- 5.5?
+ 5.5?                      2
  [[ER-Bucklin|ER-Bucklin(fractional)]]
     ?
 
@@ -48,7 +48,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
     JG   CB   KV   DK   MO 
  [[MMPO|minmax(pairwise opposition)]]
-     5    4    5    ?    6
+     5    4    5    ?    
  [[CDTT|CDTT,IRV]]
      7    9    6    ?
  [[CDTT|CDTT,minmax(pairwise opposition)]]
@@ -56,7 +56,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  [[Condorcet criterion|Condorcet]]//[[Approval voting|approval]] with [[FBC]] patch ("[[tied at the top]]" rule)
     6?         9    ?
  [[Majority Defeat Disqualification Approval]] ([[MDDA]])
-    6?   7.5?   9
+    6?   7.5?   9        10
 
 ==== Condorcet-efficient ====
 
@@ -92,7 +92,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  [[Definite Majority Choice|definite majority choice]] a.k.a. [[Ranked Approval Voting|ranked approval voting]]
    6.5  8.5    6    3
  [[CWP|approval weighted pairwise]] (e.g. with ranked pairs base)
-     9    8    7    3
+     9    8    7    3     3
  [[approval margins]]
    5.5    9    ?    3
  [[Imagine Democratic Fair Choice|democratic fair choice (DFC)]]
@@ -100,39 +100,39 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 === rating input ===
 
-    JG   KV   DK
+    JG   KV   DK   MO
  [[range voting]] (ratings summation)
-   5.5    5    2
+   5.5    5    2   8.75
  [[Median Ratings|median ratings]]
      3    4    2
  ranked pairs([[cardinal pairwise]])
-   9.5    5    2
+   9.5    5    2    4
  beatpath([[cardinal pairwise]])
-   9.5    5    2
+   9.5    5    2    4
 
 === other ===
 
     JG   DK   MO
  [[candidate withdrawal option|CWO]]-ER-IRV(whole)
-     7    1
+     7    1    4
  [[candidate withdrawal option|CWO]]-ER-IRV(fractional)
-     8    1
+     8    1    4
  [[candidate withdrawal option|CWO]]-ranked pairs(WV)
-     8    1
+     8    1    5
  [[candidate withdrawal option|CWO]]-ranked ballot plurality
      6    1
  [[MMPO|minmax(pairwise opposition)]] with [[AERLO and ATLO]]
-     4    ?    9
+     4    ?    
  [[MMPO]] with AERLO, ATLO, & [[Power Truncation]]
-     ?        10
+     ?        
  [[MMPO]] with (only) [[Power Truncation]] 
-     ?         8
+     ?         
  [[beatpath]](WV) with AERLO and ATLO
-     8    ?
+     8    ?    4
  [[beatpath]](WV) with [[strong/weak preference option]]
-   7.5    ?
+   7.5    ?    4
  [[random jury]] method
-     ?
+     ?         1
 
 == See also ==
 
