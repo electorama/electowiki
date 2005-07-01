@@ -18,11 +18,11 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  [[Plurality]]
      2    2    2    2    0
  [[Runoff voting|Two round runoff]]
-     3    5    3    3     0
+     3    5    3    3    0
  [[Approval voting|Approval]]
     5?    6    8    5    9
  [[Random Ballot|Random Ballot]]
-     1    1    1    1     0 
+     1    1    1    1    0 
 
 === ranking input ===
 
@@ -120,9 +120,9 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  [[candidate withdrawal option|CWO]]-ranked pairs(WV)
      8    1    5
  [[candidate withdrawal option|CWO]]-ranked ballot plurality
-     6    1
+     6    1     1
  [[MMPO|minmax(pairwise opposition)]] with [[AERLO and ATLO]]
-     4    ?    
+     4    ?    4
  [[MMPO]] with AERLO, ATLO, & [[Power Truncation]]
      ?        
  [[MMPO]] with (only) [[Power Truncation]] 
