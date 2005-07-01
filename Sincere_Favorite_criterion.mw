@@ -12,7 +12,7 @@ Or more simply: ''The voter must not be able to help his favorite candidates by 
 
 ==Complying methods==
 
-'''Sincere Favorite''' is satisfied by [[Approval voting]] and [[Minmax|Minmax(pairwise opposition)]]. Other [[Minmax]] methods and [[Condorcet criterion|Condorcet]]//[[Approval voting|Approval]] can be modified to satisfy it.
+'''Sincere Favorite''' is satisfied by [[Approval voting]], [[MDDA]], [[Minmax|Minmax(pairwise opposition)]]. Other [[Minmax]] methods and [[Condorcet criterion|Condorcet]]//[[Approval voting|Approval]] can be modified to satisfy it.
 
 ==Commentary==
 
