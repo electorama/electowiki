@@ -25,6 +25,29 @@ This was developed by the Danish polymath Thorvald N. Thiele, and used (with ada
 
 The system disadvantages minority groups who share some preferences with the majority.  In terms of [[tactical voting]], it is therefore highly desirable to withhold approval from candidates who are likely to be elected in any case, as with [[cumulative voting]] and the [[single non-transferable vote]].
 
+== Example ==
+
+2 seats to be filled, four candidates: Andrea (A), Brad (B), Carter (C), and Delilah (D).  The ballots are:
+
+* 5: AB
+* 17: AC
+* 8: D
+
+There are 6 possible results: AB, AC, AD, BC, BD, and CD.
+
+{| border
+!  !! AB !! AC !! AD !! BC !! BD !! CD
+|-
+| voters approving 2 successful candidates (satisfaction of 1+1/2) || 5 || 17 || 0 || 0 || 0 || 0
+|-
+| voters approving 1 successful candidate (satisfaction of 1) || 17 || 5 || 30 || 22 || 13 || 25
+|-
+| voters approving no successful candidates (satisfaction of 0) || 8 || 8 || 0 || 8 || 17 || 5
+|-
+| total satisfaction || 24.5 || '''30.5''' || 30 || 22 || 13 || 25
+|}
+
+Andrea and Carter are elected.
 
 {{fromwikipedia}}
 
