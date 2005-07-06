@@ -10,9 +10,9 @@ A voter optimizes the outcome (from his own perspective) if his vote causes the 
 
 ==Complying methods==
 
-[[Approval voting]], [[MMPO|MinMax(pairwise opposition)]], [[ER-Bucklin|ER-Bucklin(whole)]], and [[MDDA]] comply with the favorite betrayal criterion. 
+[[Approval voting]], [[range voting]], [[MMPO|MinMax(pairwise opposition)]], [[ER-Bucklin|ER-Bucklin(whole)]], and [[MDDA]] comply with the favorite betrayal criterion. 
 
-[[Cardinal ratings]], [[Borda count]], [[plurality voting]], [[Condorcet criterion|Condorcet methods]], and [[instant-runoff voting]] do not comply.
+[[Borda count]], [[plurality voting]], [[Condorcet criterion|Condorcet methods]], and [[instant-runoff voting]] do not comply.
 
 ==Commentary==
 
