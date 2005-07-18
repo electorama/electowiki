@@ -1,4 +1,4 @@
-PSC-CLE ([[Proportionality of Solid Coalitions]] by [[Condorcet method#Related terms|Condorcet Loser]] Elimination) is a [[preference voting|preference]] [[voting system]] for multi-winner elections.
+PSC-CLE ([[Proportionality of Solid Coalitions]] by [[Condorcet Loser]] Elimination) is a [[preference voting|preference]] [[voting system]] for multi-winner elections.
 
 == Voting ==
 
@@ -36,9 +36,9 @@ Step 3: Using the elimination order found in Step 1, eliminate candidates one-by
 
 The pairwise victories are:
 
-* 78-12: A>B, A>C
-* 66-24: A>D, B>D, C>D
-* 63-27: C>B
+78-12: A>B, A>C
+66-24: A>D, B>D, C>D
+63-27: C>B
 
 The Condorcet ranking is A>C>B>D, so the elimination order is D,B,C,A.
 
@@ -50,8 +50,8 @@ The sets of candidates with solidly-committed voters are:
       <th>Solidly Committed</th>
       <th>Quotas</th>
       <th>Int. Quotas</th>
-      <th># Candidates</th>
-      <th>Min. Seats</th>
+      <th># candidates</th>
+      <th>min. seats</th>
    </tr>
    <tr align="center">
       <td>{A}</td>
