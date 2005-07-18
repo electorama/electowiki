@@ -1,0 +1,170 @@
+PSC-CLE ([[Proportionality of Solid Coalitions]] by [[Condorcet Loser]] Elimination) is a [[preference voting|preference]] [[voting system]] for multi-winner elections.
+
+== Voting ==
+
+Each voter ranks all candidates in order of preference. For example:
+
+#Andrea
+#Carter
+#Brad
+#Delilah
+
+== Procedure ==
+
+Step 1: Compute the elimination order.
+
+The elimination order is determined using a [[Condorcet ranking method]].  The ranking is inverted so that the Condorcet Winner, if one exists, will be last in the elimination order.
+
+Step 2: Compute the proportionality rules.
+
+Each possible set of candidates is entitled to a number of seats equal to either the greatest integer less than (proportion of voters solidly committed to that set) Ãƒâ€” (seats + 1), or the number of candidates in that set, whichever is lower.  ("Solidly committed" is defined as in [[Descending Solid Coalitions]].)
+
+Step 3: Using the elimination order found in Step 1, eliminate candidates one-by-one until the number of candidates remaining is equal to the number of seats.  But if the elimination of a candidate would cause a proportionality rule to be violated, then do not eliminate that candidate.
+
+== Example ==
+
+2 seats to be filled, 4 candidates: Andrea (A), Brad (B), Carter (C), and Delilah (D).  The ballots are:
+
+* 15: A>B>C>D
+* 51: A>C>B>D
+* 4: D>A>B>C
+* 4: D>A>C>B
+* 4: D>B>A>C
+* 4: D>B>C>A
+* 4: D>C>A>B
+* 4: D>C>B>A
+
+The pairwise victories are:
+
+78-12: A>B, A>C
+66-24: A>D, B>D, C>D
+63-27: C>B
+
+The Condorcet ranking is A>C>B>D, so the elimination order is D,B,C,A.
+
+The sets of candidates with solidly-committed voters are:
+
+<table border>
+   <tr align="center">
+      <th>Set</th>
+      <th>Solidly Committed</th>
+      <th>Quotas</th>
+      <th>Int. Quotas</th>
+      <th># candidates</th>
+      <th>min. seats</th>
+   </tr>
+   <tr align="center">
+      <td>{A}</td>
+      <td>66/90 = 11/15</td>
+      <td>(11/15)Ãƒâ€”(2+1) = 2+1/5</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+   </tr>
+   <tr align="center">
+      <td>{D}</td>
+      <td>24/90 = 4/15</td>
+      <td>(4/15)Ãƒâ€”(2+1) = 4/5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+   </tr>
+   <tr align="center">
+      <td>{A, B}</td>
+      <td>15/90 = 1/6</td>
+      <td>(1/6)Ãƒâ€”(2+1) = 1/2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+   </tr>
+   <tr align="center">
+      <td>{A, C}</td>
+      <td>51/90 = 17/30</td>
+      <td>17/30Ãƒâ€”(2+1) = 1+7/10</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+   </tr>
+   <tr align="center">
+      <td>{A, D}</td>
+      <td>8/90 = 4/45</td>
+      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+   </tr>
+   <tr align="center">
+      <td>{B, D}</td>
+      <td>8/90 = 4/45</td>
+      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+   </tr>
+   <tr align="center">
+      <td>{C, D}</td>
+      <td>8/90 = 4/45</td>
+      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+   </tr>
+   <tr align="center">
+      <td>{A, B, C}</td>
+      <td>66/90 = 11/15</td>
+      <td>(11/15)Ãƒâ€”(2+1) = 2+1/5</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+   </tr>
+   <tr align="center">
+      <td>{A, B, D}</td>
+      <td>8/90 = 4/45</td>
+      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+   </tr>
+   <tr align="center">
+      <td>{A, C, D}</td>
+      <td>8/90 = 4/45</td>
+      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+   </tr>
+   <tr align="center">
+      <td>{B, C, D}</td>
+      <td>8/90 = 4/45</td>
+      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+   </tr>
+   <tr align="center">
+      <td>{A, B, C, D}</td>
+      <td>90/90 = 1</td>
+      <td>1Ãƒâ€”(2+1) = 3</td>
+      <td>2</td>
+      <td>4</td>
+      <td>2</td>
+   </tr>
+</table>
+
+Thus, the proportionality rules are:
+
+* Elect A.
+* Elect at least 1 candidate from {A, C}.
+* Elect at least 2 candidates from {A, B, C}.
+* Elect at least 2 candidates from {A, B, C, D}.
+
+or, equivalently:
+
+* Elect A.
+* Elect either B or C.
+
+The first 2 candidates in the elimination order, D and B, can be removed without violating the proportionality rules.  We're now left with the required 2 candidates, and so are finished.
+
+The winners are Andrea and Carter.
+
+[[Category:Multi-winner voting systems]]
