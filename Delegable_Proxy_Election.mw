@@ -1,6 +1,6 @@
-DELEGABLE PROXY ELECTION PROCEDURE.
+A DELEGABLE PROXY ELECTION INSTITUTION.
 
-This describes an election procedure using delegable proxy.
+The fundamental principles of the delegable proxy election procedure are described in [[DPE]]. This page describes a decision-making institution based on these principles.
 
 SECRET BALLOT. It uses secret ballot at the primary level and avoids proxy loops, which can otherwise be expected to occur in free and unrestricted proxy assignment systems.
 
@@ -38,3 +38,5 @@ non-qualified member who wishes a motion entered before the college may do so si
 ELECTION. The College proceeds with the election for which it was formed, following its own rules, as established by law or by its own determination. In this phase of its activity, it may use any of various election methods. It is a deliberative body.
 
 COMPARISON WITH STANDARD DELEGABLE PROXY. This election method is a form of delegable proxy modified only to make the base level of proxies be assigned by secret ballot, allowing ordinary voters to keep their anonymity.
+
+See also [[DPE]].
