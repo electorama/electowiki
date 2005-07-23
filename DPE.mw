@@ -1,0 +1,33 @@
+'''Delegable Proxy Election''' ('''DPE''') is a procedure that generalizes the concepts of direct and representative democracy by generating a set of electors each having a voting power determined by a proxy aggregation process. DPE operates at a different level from voting systems (''e.g.,'' [[Approval voting]], [[Instant-runoff voting]], ''etc.'') in that any of these voting systems could be used in its decision-making stage. The merit of DPE procedures therefore must be judged on grounds other than those applicable to voting systems.
+
+To see the importance of procedures prior to voting systems ''per se,'' consider the institution of the secret ballot. This addresses a fundamental problem of democratic systems (potential corruption through vote-buying or coercion) but is orthogonal to both the structure of ballots and the algorithms used to extract decisions from those ballots.
+
+The DPE procedure addresses a different but equally fundamental problem of democratic systems: the well-known absence of a direct, rational incentive to become informed about an issue or candidate, given that one's vote typically has a negligible probability of affecting the related decision. DPE addresses this problem by enabling voters to delegate their powers to individuals whom they trust regarding the issues in question. These individuals may be (for example) public figures, relevant experts, or respected friends. Delegation requires no direct knowledge of the issues relevant to a decision, yet it can select and empower a person with greater knowledge, or the motivation to acquire it. The expected results are discussed below.
+
+== Procedure ==
+
+'''Proxies and proxy-agents''' A proxy is the power to cast a vote in a decision-making procedure. A proxy-agent is an individual who may hold more than one proxy. At the beginning of the procedure, each member of the electorate holds a single proxy.
+
+'''Registration of proxies.''' Prior to an election, persons willing to serve as proxy-agents register with a public authority. By registering, they agree both to hold their own primary-phase proxies and to accept additional proxy assignments from other members of the primary electorate. As part of this registration, proxy-agents provide a means for the public to identify and communicate with them.
+
+'''Primary assignment of proxies via secret ballot.''' At the primary level, voters (other than registered proxy-agents) use secret ballots to assign their proxies to proxy-agents of their choice. The ballot process ensures that each voter may assign his or her proxy to one and only one person. The constraint that proxy-agents not assign their proxies to other persons in this primary-level process ensures simple aggregation of proxies, with no possibility of looped assignment patterns.
+
+'''Secondary assignment of proxies.''' After the primary-level assignment process, proxy-agents may assign their aggregated proxies to other proxy-agents; such proxy assignments are made publicly, rather than by secret ballot.
+
+'''Avoiding secondary proxy-assignment loops.''' One can imagine agent A assigning proxies to B, B to C, and C to A, creating a loop in proxy assignment. Loops would violate the requirements of the system, but they can be precluded by simple means. For example, each set of proxies can be associated with the set of proxy-agents from which its elements are ultimately derived. If a collection cannot be assigned to an agent already in this set, then no loops can be formed. Since secondary assignments are matters of public record, keeping records in this form is merely a matter of convenience in implementing the constraint.
+
+== Expected results of a DPE procedure ==
+
+The output of a DPE procedure would be a decision-phase electorate consisting of individuals with some empowered to cast multiple votes. Any of the alternative procedures for voting could then be employed in the obvious fashion.
+
+The chief difference is in the anticipated quality of the decisions made by voters. First, note that participants in the primary stage are not voting: they are choosing a proxy agent, and their choice is entirely effective in achieving its aim. Further, good choices can be made on grounds that do not require knowledge of either issues or unknown candidates.
+
+In the voting stage, the aggregation of voting power would give typical proxy-agents a greater incentive to gain knowledge regarding decisions, because their greater voting weight would make their choices more likely to determine the outcome. Further, because the registration and proxy-assignment processes would naturally tend to transfer voting power to persons having greater-than-average interest, knowledge, and motivation, a delegable proxy election can reasonably be expected to provide a better-informed decision-phase electorate.
+
+== Alternative implementation choices ==
+
+Specific choices within the framework of a DPE procedure include the frequency of primary elections and of secondary assignments. In the more conventional form of a DPE institution, these would occur on a regular cycle. In a more radical form of a DPE institution, one or both could occur on an ongoing basis.
+
+The DPE procedure does not ''require'' that proxies be assigned to others. Accordingly, in its purely democratic form DPE would allow individuals to vote alongside proxy agents holding greater voting power. In a representative form, by contrast, only proxy agents holding sufficient voting power would serve as electors in a relatively conventional legislative body.
+
+A more specific a set of alternatives is discussed in [[Delegable Proxy Election]].
