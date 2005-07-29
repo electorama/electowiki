@@ -8,4 +8,10 @@ When all explicitly ranked candidates are considered approved, Condorcet//Approv
 ===Favorite Betrayal criterion compliance===
 [[Approval voting]]'s satisfaction of the [[Favorite Betrayal criterion]] can be preserved in Condorcet//Approval by using the [[tied at the top]] rule. This results in the [[Improved Condorcet Approval]] method. However, this variant technically isn't [[Condorcet criterion|Condorcet]]-compliant.
 
+==Satisfied criteria==
+
+Condorcet//Approval satisfies [[Condorcet criterion|Condorcet]] and always elects a majority favorite, but doesn't satisfy [[Smith set|Smith]] or the [[Majority criterion for solid coalitions]]. It satisfies [[Minimal Defense criterion|Minimal Defense]] (and the [[Strong Defensive Strategy criterion]]), the [[Plurality criterion]], and [[Monotonicity criterion|monotonicity]].
+
+It fails [[Strategic nomination|Clone-Winner]], [[Participation criterion|Participation]], and [[Later-no-harm]].
+
 [[Category:Condorcet method]]
