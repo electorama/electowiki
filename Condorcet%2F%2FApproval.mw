@@ -6,6 +6,6 @@
 When all explicitly ranked candidates are considered approved, Condorcet//Approval makes burying strategy less likely to succeed than in other Condorcet methods. Burying is only effective when it prevents the targeted candidate from being the Condorcet winner. But a faction can't succeed in this task without then being counted as approving the candidate(s) beneath which the targeted candidate was insincerely ranked. This makes it quite likely that burying strategy will backfire, and cause a candidate to be elected who is actually liked less than the targeted candidate.
 
 ===Favorite Betrayal criterion compliance===
-[[Approval voting]]'s satisfaction of the [[Favorite Betrayal criterion]] can be preserved in Condorcet//Approval by using the [[tied at the top]] rule. This results in the [[Improved Condorcet Approval]] method devised by Kevin Venzke.
+[[Approval voting]]'s satisfaction of the [[Favorite Betrayal criterion]] can be preserved in Condorcet//Approval by using the [[tied at the top]] rule. This results in the [[Improved Condorcet Approval]] method. However, this variant technically isn't [[Condorcet criterion|Condorcet]]-compliant.
 
 [[Category:Condorcet method]]
