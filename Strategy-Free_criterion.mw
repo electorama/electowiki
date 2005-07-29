@@ -13,7 +13,7 @@ any preferences.''
 
 == Complying Methods ==
 
-*'''Complies''': [[Schulze method|Cloneproof Schwartz Sequential Dropping]]
+*'''Complies''': [[Schulze method]] (with winning votes as the measure of defeat strength), [[MDDA]]
 *'''Fails''': [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], [[Plurality voting]], [[Instant-Runoff Voting]]
 
 == Commentary ==
