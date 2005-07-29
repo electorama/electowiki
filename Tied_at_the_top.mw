@@ -1,5 +1,5 @@
 The '''tied at the top''' rule for pairwise count methods says that when two candidates X and Y are ranked equal at the top of a ballot, both candidates are counted as receiving a vote for them against the other. Also, when pairwise wins (and not just "votes for") are determined, if adding the number of votes tying X and Y "tied at the top" to one side or the other can determine which candidate wins pairwise against the other, then this contest is interpreted to be a pairwise tie.
 
-In some cases, use of the ''tied at the top'' rule can allow a method to satisfy the [[Favorite Betrayal criterion|Favorite Betrayal Criterion (FBC)]]. Kevin Venzke devised the rule to be used with [[Condorcet criterion|Condorcet]]//[[Approval voting|Approval]] and [[Minmax|Minmax (winning votes)]].
+In some cases, use of the ''tied at the top'' rule can allow a method to satisfy the [[Favorite Betrayal criterion|Favorite Betrayal Criterion (FBC)]]. Kevin Venzke devised the rule to be used with [[Condorcet//Approval]] and [[Minmax|Minmax (winning votes)]].
 
 [[Category:Single-winner voting systems]]
