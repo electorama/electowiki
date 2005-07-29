@@ -15,3 +15,5 @@ Otherwise, the candidate with the lowest max score, who is approved by more than
 '''MAMPO''' satisfies the [[Favorite Betrayal criterion]], [[Strategy-Free criterion]], the [[Strong Defensive Strategy criterion]] (and [[Minimal Defense criterion]]), [[Monotonicity criterion|monotonicity]], and the [[Plurality criterion]].
 
 It fails [[Strategic nomination|Clone-Winner]], the [[Generalized Strategy-Free criterion]], the [[Condorcet criterion]], the [[Smith set|Smith criterion]], [[Participation criterion|Participation]], the [[Majority criterion|Majority criterion for solid coalitions]], and [[Later-no-harm criterion|Later-no-harm]].
+
+[[Category:Single-winner voting systems]]
