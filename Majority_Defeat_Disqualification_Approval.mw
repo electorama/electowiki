@@ -5,9 +5,9 @@ The voter submits a ranking of the candidates. The candidates explicitly ranked 
 
 A candidate is ''dominated'' if more than half of the voters rank some other candidate strictly above him.
 
-Sort the candidates so that all undominated candidates, if any exist, come before all dominated candidates. Within each group, sort of the candidates in descending order of approval.
+All dominated candidates are eliminated, unless this would eliminate all the candidates.
 
-Elect the first candidate in the resulting ranking.
+Of remaining candidates, the one approved by the most voters is elected.
 
 ==Criteria==
 '''MDDA''' satisfies the [[Favorite Betrayal criterion]], [[Strategy-Free criterion]], the [[Strong Defensive Strategy criterion]] (and [[Minimal Defense criterion]]), [[Monotonicity criterion|monotonicity]], and (''check this'') the [[Plurality criterion]].
