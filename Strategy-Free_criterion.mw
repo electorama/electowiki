@@ -11,9 +11,11 @@ If one candidate is preferred over each of the other candidates, that candidate 
 ''If a Condorcet candidate exists, and if a majority prefers this candidate to another candidate, then the other candidate should not win if that majority votes sincerely and no other voter falsifies
 any preferences.''
 
+In a ranked method, it is nearly equivalent to say: ''If more than half of the voters rank ''x'' above ''y'', and there is no candidate ''z'' whom more than half of the voters rank above ''x'', then ''y'' must not be elected.''
+
 == Complying Methods ==
 
-*'''Complies''': [[Schulze method]] (with winning votes as the measure of defeat strength), [[MDDA]]
+*'''Complies''': [[Schulze method]] (with winning votes as the measure of defeat strength), [[MDDA]], [[MAMPO]]
 *'''Fails''': [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], [[Plurality voting]], [[Instant-Runoff Voting]]
 
 == Commentary ==
