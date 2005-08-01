@@ -14,4 +14,6 @@
 
 As a result of this tweaking, ICA does not strictly satisfy the [[Condorcet criterion]]. It is possible that the voted Condorcet winner could lose to another candidate, due to voters tying both candidates at the top, and the Condorcet winner having lower approval.
 
+When ''q'' is set to 50%, then the method is equivalent to [[Majority Defeat Disqualification Approval]], and all values of t[a,b] (for any candidates ''a'' and ''b'') can be assumed to be zero without affecting the result.
+
 [[Category:Single-winner voting systems]]
