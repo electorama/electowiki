@@ -1,10 +1,11 @@
 '''Improved Condorcet Approval''' or '''ICA''' or '''tCA''' is a variant of [[Condorcet//Approval]] devised by Kevin Venzke to satisfy the [[Favorite Betrayal criterion]]. It uses the [[tied at the top]] rule.
 
 ==Definition==
+#Optionally define a proportion of the votes ''q'' as the minimum necessary on the winning side of a pairwise comparison for this win to be counted. Set it to zero to do without ''q''.
 #The voter submits a ranked ballot, with equal-ranking and truncation permitted.
 #A voter ''approves'' every candidate whom he explicitly ranks.
 #Let v[a,b] signify the number of voters ranking candidate ''a'' above candidate ''b'', and let t[a,b] signify the number of voters ranking ''a'' and ''b'' equally at the top of the ranking (possibly tied with other candidates).
-#Define a set ''S'' of candidates, which contains every candidate ''x'' for whom there is no other candidate ''y'' such that v[x,y]+t[x,y]<v[y,x].
+#Define a set ''S'' of candidates, which contains every candidate ''x'' for whom there is no other candidate ''y'' such that v[x,y]+t[x,y]<v[y,x] ''and'' v[y,x]>''q''.
 #If ''S'' is empty, then let ''S'' contain all the candidates.
 #Elect the candidate in ''S'' with the greatest approval.
 
