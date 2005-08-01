@@ -16,4 +16,6 @@ As a result of this tweaking, ICA does not strictly satisfy the [[Condorcet crit
 
 When ''q'' is set to 50%, then the method is equivalent to [[Majority Defeat Disqualification Approval]], and all values of t[a,b] (for any candidates ''a'' and ''b'') can be assumed to be zero without affecting the result.
 
+When ''q'' is left at 0%, and no voter uses equal ranking in the top position, then the method is equivalent to ordinary [[Condorcet//Approval]].
+
 [[Category:Single-winner voting systems]]
