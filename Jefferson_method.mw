@@ -1,0 +1,133 @@
+Jefferson's method was used to apportion the U.S. House of Representatives between 1792 and 1840.
+
+==Procedure==
+
+Choose a divisor D.  A state with population N (or a political party with N seats) is entitled to floor(N/D) seats.  If the number of seats allocated equals the size of the legislative body, then use the apportionment just calculated.  Otherwise, choose a new value for D and try again.
+
+==Example==
+
+{{US House apportionment example}}
+
+If a divisor of 55 000 is used, the resulting apportionment is
+
+<table border>
+   <tr>
+      <th>State</th>
+      <th>Quotas</th>
+      <th>Seats</th>
+      <th>District size</th>
+      <th>Rel. rep.</th>
+   </tr>
+   <tr>
+      <td>Virginia</td>
+      <td align="right">11.46</td>
+      <td align="right">11</td>
+      <td align="right">57 324</td>
+      <td align="right">1.0513</td>
+   </tr>
+   <tr>
+      <td>Massachusetts</td>
+      <td align="right">8.64</td>
+      <td align="right">8</td>
+      <td align="right">59 416</td>
+      <td align="right">1.0143</td>
+   </tr>
+   <tr>
+      <td>Pennsylvania</td>
+      <td align="right">7.87</td>
+      <td align="right">7</td>
+      <td align="right">61 840</td>
+      <td align="right">0.9745</td>
+   </tr>
+   <tr>
+      <td>North Carolina</td>
+      <td align="right">6.43</td>
+      <td align="right">6</td>
+      <td align="right">58 920</td>
+      <td align="right">1.0228</td>
+   </tr>
+   <tr>
+      <td>New York</td>
+      <td align="right">6.03</td>
+      <td align="right">6</td>
+      <td align="right">55 265</td>
+      <td align="right">1.0905</td>
+   </tr>
+   <tr>
+      <td>Maryland</td>
+      <td align="right">5.06</td>
+      <td align="right">5</td>
+      <td align="right">55 703</td>
+      <td align="right">1.0819</td>
+   </tr>
+   <tr>
+      <td>Connecticut</td>
+      <td align="right">4.31</td>
+      <td align="right">4</td>
+      <td align="right">59 210</td>
+      <td align="right">1.0178</td>
+   </tr>
+   <tr>
+      <td>South Carolina</td>
+      <td align="right">3.75</td>
+      <td align="right">3</td>
+      <td align="right">68 745</td>
+      <td align="right">0.8766</td>
+   </tr>
+   <tr>
+      <td>New Jersey</td>
+      <td align="right">3.26</td>
+      <td align="right">3</td>
+      <td align="right">59 857</td>
+      <td align="right">1.0068</td>
+   </tr>
+   <tr>
+      <td>New Hampshire</td>
+      <td align="right">2.58</td>
+      <td align="right">2</td>
+      <td align="right">70 911</td>
+      <td align="right">0.8499</td>
+   </tr>
+   <tr>
+      <td>Vermont</td>
+      <td align="right">1.56</td>
+      <td align="right">1</td>
+      <td align="right">85 533</td>
+      <td align="right">0.7046</td>
+   </tr>
+   <tr>
+      <td>Georgia</td>
+      <td align="right">1.29</td>
+      <td align="right">1</td>
+      <td align="right">70 835</td>
+      <td align="right">0.8508</td>
+   </tr>
+   <tr>
+      <td>Kentucky</td>
+      <td align="right">1.25</td>
+      <td align="right">1</td>
+      <td align="right">68 705</td>
+      <td align="right">0.8772</td>
+   </tr>
+   <tr>
+      <td>Rhode Island</td>
+      <td align="right">1.24</td>
+      <td align="right">1</td>
+      <td align="right">68 446</td>
+      <td align="right">0.8805</td>
+   </tr>
+   <tr>
+      <td>Delaware</td>
+      <td align="right">1.01</td>
+      <td align="right">1</td>
+      <td align="right">55 540</td>
+      <td align="right">1.0851</td>
+   </tr>
+   <tr>
+      <th>Total</th>
+      <th align="right">65.74</th>
+      <th align="right">60</th>
+   </tr>
+</table>
+
+[[Category:Apportionment methods]]
