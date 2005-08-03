@@ -1,9 +1,207 @@
 The '''Hamilton method''' is a version of the [[largest remainder method]] for allocating seats [[proportional representation|proportionally]] for representative assemblies with [[Party-list proportional representation|party list]] [[voting system]]s. It uses the [[Hare quota]] as the initial quota.
 
+==Example==
+
+{{US_House_apportionment_example}}
+
+The quota is 3 615 920 ÃƒÂ· 60 = 60 265.333.   Dividing the state populations by the quota gives
+
+<table border>
+   <tr>
+      <th>State</th>
+      <th>Quotient</th>
+      <th>Remainder</th>
+   </tr>
+   <tr>
+      <td>Virginia</td>
+      <td align="right">10</td>
+      <td align="right">27 906.7</td>
+   </tr>
+   <tr>
+      <td>Massachusetts</td>
+      <td align="right">7</td>
+      <td align="right">53 469.7</td>
+   </tr>
+   <tr>
+      <td>Pennsylvania</td>
+      <td align="right">7</td>
+      <td align="right">11 021.7</td>
+   </tr>
+   <tr>
+      <td>North Carolina</td>
+      <td align="right">5</td>
+      <td align="right">52 196.3</td>
+   </tr>
+   <tr>
+      <td>New York</td>
+      <td align="right">5</td>
+      <td align="right">30 262.3</td>
+   </tr>
+   <tr>
+      <td>Maryland</td>
+      <td align="right">4</td>
+      <td align="right">37 452.7</td>
+   </tr>
+   <tr>
+      <td>Connecticut</td>
+      <td align="right">3</td>
+      <td align="right">56 045.0</td>
+   </tr>
+   <tr>
+      <td>South Carolina</td>
+      <td align="right">3</td>
+      <td align="right">25 440.0</td>
+   </tr>
+   <tr>
+      <td>New Jersey</td>
+      <td align="right">2</td>
+      <td align="right">59 039.3</td>
+   </tr>
+   <tr>
+      <td>New Hampshire</td>
+      <td align="right">2</td>
+      <td align="right">21 291.3</td>
+   </tr>
+   <tr>
+      <td>Vermont</td>
+      <td align="right">1</td>
+      <td align="right">25 267.7</td>
+   </tr>
+   <tr>
+      <td>Georgia</td>
+      <td align="right">1</td>
+      <td align="right">10 569.7</td>
+   </tr>
+   <tr>
+      <td>Kentucky</td>
+      <td align="right">1</td>
+      <td align="right">8 439.7</td>
+   </tr>
+   <tr>
+      <td>Rhode Island</td>
+      <td align="right">1</td>
+      <td align="right">8 180.7</td>
+   </tr>
+   <tr>
+      <td>Delaware</td>
+      <td align="right">0</td>
+      <td align="right">55 540.0</td>
+   </tr>
+   <tr>
+      <th>Total</th>
+      <th align="right">52</th>
+   </tr>
+</table>
+
+Each state receives a number of seats equal to the integer part of the quotient.  The remaining 8 seats are given to the states with the largest remainders: New Jersey, Connecticut, Delaware, Massachusetts, North Carolina, Maryland, New York, and Virginia.  The final apportionment is:
+
+<table border>
+   <tr>
+      <th>State</th>
+      <th>Seats</th>
+      <th>District size</th>
+      <th>Rel. rep.</th>
+   </tr>
+   <tr>
+      <td>Virginia</td>
+      <td align="right">11</td>
+      <td align="right">57 324</td>
+      <td align="right">1.0513</td>
+   </tr>
+   <tr>
+      <td>Massachusetts</td>
+      <td align="right">8</td>
+      <td align="right">59 416</td>
+      <td align="right">1.0143</td>
+   </tr>
+   <tr>
+      <td>Pennsylvania</td>
+      <td align="right">7</td>
+      <td align="right">61 840</td>
+      <td align="right">0.9745</td>
+   </tr>
+   <tr>
+      <td>North Carolina</td>
+      <td align="right">6</td>
+      <td align="right">58 920</td>
+      <td align="right">1.0228</td>
+   </tr>
+   <tr>
+      <td>New York</td>
+      <td align="right">6</td>
+      <td align="right">55 265</td>
+      <td align="right">1.0905</td>
+   </tr>
+   <tr>
+      <td>Maryland</td>
+      <td align="right">5</td>
+      <td align="right">55 703</td>
+      <td align="right">1.0819</td>
+   </tr>
+   <tr>
+      <td>Connecticut</td>
+      <td align="right">4</td>
+      <td align="right">59 210</td>
+      <td align="right">1.0178</td>
+   </tr>
+   <tr>
+      <td>South Carolina</td>
+      <td align="right">3</td>
+      <td align="right">68 745</td>
+      <td align="right">0.8766</td>
+   </tr>
+   <tr>
+      <td>New Jersey</td>
+      <td align="right">3</td>
+      <td align="right">59 857</td>
+      <td align="right">1.0068</td>
+   </tr>
+   <tr>
+      <td>New Hampshire</td>
+      <td align="right">2</td>
+      <td align="right">70 911</td>
+      <td align="right">0.8499</td>
+   </tr>
+   <tr>
+      <td>Vermont</td>
+      <td align="right">1</td>
+      <td align="right">85 533</td>
+      <td align="right">0.7046</td>
+   </tr>
+   <tr>
+      <td>Georgia</td>
+      <td align="right">1</td>
+      <td align="right">70 835</td>
+      <td align="right">0.8562</td>
+   </tr>
+   <tr>
+      <td>Kentucky</td>
+      <td align="right">1</td>
+      <td align="right">68 705</td>
+      <td align="right">0.8772</td>
+   </tr>
+   <tr>
+      <td>Rhode Island</td>
+      <td align="right">1</td>
+      <td align="right">68 446</td>
+      <td align="right">0.8805</td>
+   </tr>
+   <tr>
+      <td>Delaware</td>
+      <td align="right">1</td>
+      <td align="right">55 540</td>
+      <td align="right">1.0851</td>
+   </tr>
+   <tr>
+      <th>Total</th>
+      <th align="right">60</th>
+   </tr>
+</table>
+
 ==See also==
 *[[Thomas Hare]]
 *[[Alabama paradox]]
 
-[[Category:Party list theory]]
+[[Category:Apportionment methods]]
 
 {{fromwikipedia}}
