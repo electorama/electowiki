@@ -1,0 +1,10 @@
+The '''Smith//Minimax''' method is a version of [[Minimax]] where the winner of the election is limited to the [[Smith set]].
+
+To determine the winner of an election, use the following algorithm:
+
+*  Determine the smallest set of candidates in a particular election who, when paired off in pairwise elections, can beat all other candidates outside the set.  This is known as the ''Smith set''  This set might consist of only one candidate, the [[Condorcet winner]].  However, when the electorate is conflicted (as in [[Voting paradox|Condorcet's paradox]]), the set has at least one [[cycle]] of candidates for whom A beats B, B beats C, and C beats A.
+*  If there is more than one candidate remaining, determine the winner using one of the two following methods:
+** "winning votes": elects the candidate whose greatest pairwise loss to another candidate is the least, when the strength of a pairwise loss is measured as the number of voters who voted for the winning side.
+** "margins": elects the candidate whose greatest pairwise loss is measured as the number of votes for the winning side ''minus'' the number of votes for the losing side.
+
+{{stub}}
