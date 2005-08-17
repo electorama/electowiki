@@ -10,97 +10,99 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  KV Kevin Venzke
  DK Dave Ketchum
  MO Mike Ossipoff 
+ RL Rob Lanphier
+
 == the methods ==
 
 === binary input ===
 
-    JG   CB   KV   DK   MO
+    JG   CB   KV   DK   MO   RL
  [[Plurality]]
-     2    2    2    2    0
+     2    2    2    2    0    0
  [[Runoff voting|Two round runoff]]
-     3    5    3    3    0
+     3    5    3    3    0    2
  [[Approval voting|Approval]]
-    5?    6    8    5    9
+    5?    6    8    5    9    5
  [[Random Ballot|Random Ballot]]
-     0    1    1    1    0
+     0    1    1    1    0    0
 
 === ranking input ===
 
 ==== not Condorcet-efficient ====
 
-    JG   CB   KV   DK   MO
+    JG   CB   KV   DK   MO   RL
  [[Borda count]]     
-    1     3    0    0    0
+    1     3    0    0    0    0
  [[IRV]] without equal rankings
-    4     7    3    3    0
+    4     7    3    3    0    4
  ER-IRV(whole)
-    6     4    ?    ?    0
+    6     4    ?    ?    0    ?
  ER-IRV(fractional)
-    6     6    3    ?    0
+    6     6    3    ?    0    ?
  [[Bucklin voting|Bucklin]] without equal rankings
-   3?    6.5   6    0       
+   3?    6.5   6    0         ?
  [[ER-Bucklin|ER-Bucklin(whole)]]
- 5.5?          7         2
+ 5.5?          7         2    ?
  [[ER-Bucklin|ER-Bucklin(fractional)]]
-    ?          5
+    ?          5              ?
 
 ==== nearly Condorcet-efficient ====
 
-    JG   CB   KV   DK   MO 
+    JG   CB   KV   DK   MO   RL
  [[MMPO|minmax(pairwise opposition)]]
-     5    4    4    ?    
+     5    4    4    ?         ?
  [[CDTT|CDTT,IRV]]
-     7    9    5    ?
+     7    9    5    ?         ?
  [[CDTT|CDTT,minmax(pairwise opposition)]]
-     ?    5    6    ?
+     ?    5    6    ?         ?
  [[ICA]], a.k.a. [[Condorcet//Approval]] with [[FBC]] patch ("[[tied at the top]]" rule)
-    6?         9    ?
+    6?         9    ?         ?
  [[Majority Defeat Disqualification Approval]] ([[MDDA]])
-    6?   7.5?  9        10
+    6?   7.5?  9        10    ?
 
 ==== Condorcet-efficient ====
 
-    JG   CB   KV   DK   MO
+    JG   CB   KV   DK   MO   RL
  [[ranked pairs]](WV)
-     7    7    8    8    4
+     7    7    8    8    4    9
  [[ranked pairs]](margins)
-     2    4    3    3    0
+     2    4    3    3    0    6
  [[river]](wv)
-     7         8    7    4
+     7         8    7    4    ?
  [[beatpath]](WV)
-     7    7    8    7    4
+     7    7    8    7    4    9
  [[beatpath]](margins)  
-     2    4    3    3    0
+     2    4    3    3    0    5
  [[sequential dropping]](WV)
-     7    ?    7    ?    4
+     7    ?    7    ?    4    ?
  [[minmax]](WV)                  
-     4   ?     7    7    3
+     4   ?     7    7    3    5
  [[minmax]](margins)     
-     1    ?    3    3    0
+     1    ?    3    3    0    5
  [[Smith//minmax]](WV)    
-     6    ?    7    ?  3.5
+     6    ?    7    ?  3.5    9
  [[Smith//minmax]](margins)
-     2    ?    3    ?    0
+     2    ?    3    ?    0    5
  [[Nanson]]
-   5.5?   ?    3    ?    0
+   5.5?   ?    3    ?    0    ?
  [[Raynaud]]
-    6?    ?    3    3    0
+    6?    ?    3    3    0    ?
 
 === ranking input with approval cutoff ===
 
-    JG   CB   KV   DK    MO  
+    JG   CB   KV   DK    MO   RL
  [[Definite Majority Choice|definite majority choice]] a.k.a. [[Ranked Approval Voting|ranked approval voting]]
-   6.5  8.5    6    3
+   6.5  8.5    6    3          ?
  [[CWP|approval weighted pairwise]] (e.g. with ranked pairs base)
-     9    8    7    3     3
+     9    8    7    3     3    ?
  [[approval margins]]
-   5.5    9    ?    3
+   5.5    9    ?    3          ?
  [[Imagine Democratic Fair Choice|democratic fair choice (DFC)]]
-    ?          3    3
+    ?          3    3          ?
 
 === rating input ===
 
-    JG   KV   DK   MO
+    JG   KV   DK   MO    RL
  [[range voting]] (ratings summation)
    5.5    5    2   8.75
  [[Median Ratings|median ratings]]
