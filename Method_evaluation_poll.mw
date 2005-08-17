@@ -16,15 +16,15 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
 === binary input ===
 
-    JG   CB   KV   DK   MO   RL
+    JG   CB   KV   DK   MO   RL   JF
  [[Plurality]]
-     2    2    2    2    0    0
+     2    2    2    2    0    0    0
  [[Runoff voting|Two round runoff]]
-     3    5    3    3    0    2
+     3    5    3    3    0    2    2
  [[Approval voting|Approval]]
-    5?    6    8    5    9    5
+    5?    6    8    5    9    5    8
  [[Random Ballot|Random Ballot]]
-     0    1    1    1    0    0
+     0    1    1    1    0    0    1
 
 === ranking input ===
 
