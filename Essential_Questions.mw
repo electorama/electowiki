@@ -80,19 +80,19 @@ Please do not change the wording of statements as soon as someone expressed a de
 
 === How should this information be interpreted? ===
 
-   SR  JH  JG  KV  MO  JL  RL
+   SR  JH  JG  KV  MO  JL  RL  JF
  Approval information should be interpreted as cardinal rates of, say, 0 or 1
-    +   -   +   +   +   0   +
+    +   -   +   +   +   0   +  ++
  Ranking X and Y equal means X and Y should get the same probability of winning
-   ++   +   ?   ?   -   +   +
+   ++   +   ?   ?   -   +   +  ? 
  Ranking X and Y equal means the decision about X and Y should be delegated to the other voters
-    -   -   -   -   +   0   +
+    -   -   -   -   +   0   +  + 
  Expressing undecidedness between X and Y means this decision should be delegated to the others
-   ++  ++   -   -   +   +   +
+   ++  ++   -   -   +   +   +  + 
  It is preferable to measure defeat strength in pairwise methods by winning votes rather than margins
-           ++  ++       -  ++
+           ++  ++       -  ++  + 
  Ranking X and Y equal in first-place means neither should lose to the other pairwise
-            ?  ++           ?
+            ?  ++           ?  -
 
 === What about certain types of "winners" and "losers"? ===
 
