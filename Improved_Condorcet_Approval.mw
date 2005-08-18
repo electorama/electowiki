@@ -8,7 +8,7 @@
 #If ''S'' is empty, then let ''S'' contain all the candidates.
 #Elect the candidate in ''S'' with the greatest approval.
 
-In other words, every candidate ''a'' is disqualified who pairwise loses to some other candidate ''b'', even when the voters supporting both equally as the first preference are counted in favor of ''a''. If everyone is disqualified, then no one is. Then the most approved candidate who isn't disqualified is elected.
+In other words, every candidate ''a'' is disqualified who pairwise loses to some other candidate ''b'', and would still lose to ''b'' even when the voters supporting both equally as first preferences are counted in favor of ''a''. If everyone is disqualified, then no one is. Then the most approved candidate who isn't disqualified is elected.
 
 ==Comments==
 '''ICA''' satisfies the [[Favorite Betrayal criterion]] by treating voters ranking ''x'' and ''y'' equally at the top as attempting to create a pairwise tie between the two candidates. Then instead of looking first for a candidate with only pairwise wins (the [[Condorcet criterion|Condorcet winner]]), ICA selects as finalists every candidate with no pairwise losses.
