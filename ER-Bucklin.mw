@@ -7,6 +7,7 @@ ER-Bucklin is a version of [[Bucklin voting]] that allows voters to give equal r
 
 Note: A candidate is ranked in kth place on a given ballot if there are k-1 candidates who are ranked strictly higher. For exampe, a ballot marked A>B=C=D>E>F=G=H=I>J should be considered to rank A to in 1st place, B, C, and D in 2nd place, E in 5th place, F, G, H, and I in 6th place, and J in 10th place. Thus, the ballot would not count in favor of E until the 5th round, and it would not count in favor of J until the 10th round.
 
+This rule is perhaps unique in that it simultaneously satisfies the "[[favorite betrayal]]" criterion and the [[Majority criterion for solid coalitions]].
 
 == ER-Bucklin(fractional) ==
 
