@@ -132,7 +132,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
      8    1    5
  [[candidate withdrawal option|CWO]]-ranked ballot plurality
      6    1     1
- [[MMPO|minmax(pairwise opposition)]] with [[AERLO and ATLO]]
+ [[MMPO|minmax(pairwise opposition)]] with [[AERLO]] and [[ATLO]]
      4    ?    
  [[MMPO]] with AERLO, ATLO, & [[Power Truncation]]
      ?        
