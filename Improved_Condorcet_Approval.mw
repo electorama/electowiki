@@ -1,21 +1,44 @@
 '''Improved Condorcet Approval''' or '''ICA''' or '''tCA''' is a variant of [[Condorcet//Approval]] devised by Kevin Venzke to satisfy the [[Favorite Betrayal criterion]]. It uses the [[tied at the top]] rule.
 
 ==Definition==
-#Optionally define a proportion of the votes ''q'' as the minimum necessary on the winning side of a pairwise comparison for this win to be counted. Set it to zero to do without ''q''.
-#The voter submits a ranked ballot, with equal-ranking and truncation permitted. Let ''v'' signify the total number of voters.
+#The voter submits a ranked ballot, with equal-ranking and truncation permitted.
 #A voter implicitly ''approves'' every candidate whom he explicitly ranks.
 #Let v[a,b] signify the number of voters ranking candidate ''a'' above candidate ''b'', and let t[a,b] signify the number of voters ranking ''a'' and ''b'' equally at the top of the ranking (possibly tied with other candidates).
-#Define a set ''S'' of candidates, which contains every candidate ''x'' for whom there is no other candidate ''y'' such that v[x,y]+t[x,y]<v[y,x] ''and'' v[y,x]>''qv''.
+#Define a set ''S'' of candidates, which contains every candidate ''x'' for whom there is no other candidate ''y'' such that v[x,y]+t[x,y]<v[y,x].
 #If ''S'' is empty, then let ''S'' contain all the candidates.
 #Elect the candidate in ''S'' with the greatest approval.
+
+In other words, every candidate ''a'' is disqualified who pairwise loses to some other candidate ''b'', even when the voters supporting both equally as the first preference are counted in favor of ''a''. If everyone is disqualified, then no one is. Then the most approved candidate who isn't disqualified is elected.
 
 ==Comments==
 '''ICA''' satisfies the [[Favorite Betrayal criterion]] by treating voters ranking ''x'' and ''y'' equally at the top as attempting to create a pairwise tie between the two candidates. Then instead of looking first for a candidate with only pairwise wins (the [[Condorcet criterion|Condorcet winner]]), ICA selects as finalists every candidate with no pairwise losses.
 
 As a result of this tweaking, ICA does not strictly satisfy the [[Condorcet criterion]]. It is possible that the voted Condorcet winner could lose to another candidate, due to voters tying both candidates at the top, and the Condorcet winner having lower approval.
 
+Here is an example. Suppose there are at least three candidates:
+
+ 40 A>B
+ 35 A=B
+ 25 B
+
+The [[Condorcet criterion|Condorcet winner]] is A, but ICA elects B. Both A and B make it into the set of finalists. The Condorcet winner is always a finalist, and B is a finalist because although A defeats B pairwise, A would not be able to do so if the 35 A=B voters were to side with B, so that this defeat isn't counted. Then B has greater approval than A and is elected.
+
+In ordinary [[Condorcet//Approval]], A's win over B is counted. This creates problems with the "[[Favorite Betrayal criterion|favorite betrayal]]" criterion (or the [[Sincere Favorite criterion]]) since it could happen that the 35 A=B voters are preventing either A or B from being the decisive winner, and that in trying to support both equally, the win is instead moved to the approval winner, who might be someone worse. This never happens under ICA.
+
+When no voter uses equal ranking in the first position, ICA is equivalent to ordinary [[Condorcet//Approval]].
+
+==Variant: Defeat strength minimum==
+It is possible to disregard defeats below a certain strength without harming the method's properties. This could be done if it were thought undesirable to find that the set ''S'' is empty, when one candidate would have made it into the set except for one very weak defeat.
+
+Define ''q'' to be the minimum percentage of the vote which must be on the winning side of a pairwise defeat in order for it to be counted. Let ''v'' signify the total number of voters. Then change step #4 above to:
+
+:Define a set ''S'' of candidates, which contains every candidate ''x'' for whom there is no other candidate ''y'' such that v[x,y]+t[x,y]<v[y,x] ''and'' v[y,x]>''qv''.
+
 When ''q'' is set to 50%, then the method is equivalent to [[Majority Defeat Disqualification Approval]], and all values of t[a,b] (for any candidates ''a'' and ''b'') can be assumed to be zero without affecting the result.
 
-When ''q'' is left at 0%, and no voter uses equal ranking in the top position, then the method is equivalent to ordinary [[Condorcet//Approval]].
+==Variant: "Tied and approved" rather than "Tied at the top"==
+The above definition defines t[a,b] to be the number of voters tying ''a'' and ''b'' in the top position. This is the most conservative change from [[Condorcet//Approval]], since it's only in this case that we can be sure the voter would like to do whatever is necessary to ensure that the winner is either ''a'' or ''b''.
+
+However, it might be more intuitive, and preferred, if t[a,b] were defined rather as the number of voters ranking ''a'' equal to ''b'' and explicitly voting for both. This requires a change to step #3 only.
 
 [[Category:Single-winner voting systems]]
