@@ -60,7 +60,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
      7    9    5    ?         ?    4
  [[CDTT|CDTT,minmax(pairwise opposition)]]
      ?    5    6    ?         ?    5
- [[ICA]], a.k.a. [[Condorcet//Approval]] with [[FBC]] patch ("[[tied at the top]]" rule)
+ [[Improved Condorcet Approval]] ([[ICA]]), a.k.a. [[Condorcet//Approval]] with [[FBC]] tweak)
     6?         9    ?         ?    5
  [[Majority Defeat Disqualification Approval]] ([[MDDA]])
     6?   7.5?  9        10    ?    6
