@@ -1,0 +1,3 @@
+'''Power Truncation''', in a method which considers [[Minmax|pairwise opposition]], means that for every pair of candidates ''a'' and ''b'' truncated (not ranked) on a given ballot, a full vote of opposition is scored for ''each'' over the other, with the goal being to increase the maximum opposition sustained by those candidates even more than a random ordering would. Power Truncation could be an option that the voter may choose to use, or it could be built into a method's rules that this is how truncation is treated.
+
+Mike Ossipoff proposed and named this option. It was thought mainly to be usable with [[MMPO|Minmax (pairwise opposition)]] specifically.
