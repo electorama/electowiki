@@ -27,7 +27,8 @@ In ordinary [[Condorcet//Approval]], A's win over B is counted. This creates pro
 
 When no voter uses equal ranking in the first position, ICA is equivalent to ordinary [[Condorcet//Approval]].
 
-==Variant: Defeat strength minimum==
+==Variants==
+===Variant: Defeat strength minimum===
 It is possible to disregard defeats below a certain strength without harming the method's properties. This could be done if it were thought undesirable to find that the set ''S'' is empty, when one candidate would have made it into the set except for one very weak defeat.
 
 Define ''q'' to be the minimum percentage of the vote which must be on the winning side of a pairwise defeat in order for it to be counted. Let ''v'' signify the total number of voters. Then change step #4 above to:
@@ -36,7 +37,7 @@ Define ''q'' to be the minimum percentage of the vote which must be on the winni
 
 When ''q'' is set to 50%, then the method is equivalent to [[Majority Defeat Disqualification Approval]], and all values of t[a,b] (for any candidates ''a'' and ''b'') can be assumed to be zero without affecting the result.
 
-==Variant: "Tied and approved" rather than "Tied at the top"==
+===Variant: "Tied and approved" rather than "Tied at the top"===
 The above definition defines t[a,b] to be the number of voters tying ''a'' and ''b'' in the top position. This is the most conservative change from [[Condorcet//Approval]], since it's only in this case that we can be sure the voter would like to do whatever is necessary to ensure that the winner is either ''a'' or ''b''.
 
 However, it might be more intuitive, and preferred, if t[a,b] were defined rather as the number of voters ranking ''a'' equal to ''b'' and explicitly voting for both. This requires a change to step #3 only.
