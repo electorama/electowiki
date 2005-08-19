@@ -70,7 +70,7 @@ Methods that pass the Condorcet criterion would always elect B, the Condorcet wi
 
 ''Derived from an e-mail by James Green-Armytage''
 
-== An alternate perspective ==
+== Criticism, and an alternate scheme ==
 
 While criteria 2-4 above are popular, only criterion 2 (the [[Majority criterion for solid coalitions]] a.k.a. the [[Mutual majority criterion]]) deals with "majority" in the sense of "more than half of the voters," and even this criterion applies only in the peculiar special case that more than half of the voters rank the same set of candidates uninterrupted, in some order, in the top positions of the ballot.
 
@@ -81,6 +81,12 @@ Criteria 3 and 4 (the [[Condorcet criterion]] and [[Smith set|Smith criterion]])
 An alternative criterion to these four might guarantee that a majority of the voters (in the sense of "more than half of the voters") with a given preference (such as, "candidate A is preferable to candidate B") can always prevail over the other voters, simply by voting sincerely, without having to use a strategic vote.
 
 For instance, one wording of the [[Minimal Defense criterion]] guarantees that if such a majority ranks A sincerely, and simply doesn't rank B above anyone (by leaving B out of the ranking), then B can't win. If we assume that B is a rival frontrunner to A, then very little strategy is demanded of the A voters, since they will likely be inclined to not vote for B, anyway.
+
+This property doesn't imply satisfaction of any of the above criteria except for criterion 1, and none of the above criteria implies this property.
+
+In the following methods, a majority sincerely preferring A to B can ensure that B loses merely by voting for A and not voting for B: [[Approval voting]], [[Bucklin voting]], the [[River]] method, the [[Schulze method]] and [[Ranked Pairs]] (assuming with these that defeat strength is measured as the number of voters favoring the winning side). Most methods with an [[Approval voting|approval]] base also satisfy it.
+
+The following methods lack this property: [[Plurality voting|Plurality]], [[Borda count]], [[IRV|instant runoff voting]], and [[Minimax|Minmax]]. Also, methods which don't allow voters to "not vote for" some candidates would lack this property.
 
 == Majority rule definitions based on beatpaths ==
 
