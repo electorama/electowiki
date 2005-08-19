@@ -103,7 +103,9 @@ At least two all-in-one majority rule criteria have been proposed which use the 
 
 Satisfaction of either of these criteria also implies satisfaction of the [[Minimal Defense criterion]] and the [[Majority criterion for solid coalitions]].
 
-When criterion #2 is used, this is equivalent to requiring that the winner always comes from the [[CDTT|Condorcet (doubly-augmented gross) top tier]] or [[CDTT]].<br><br>
+When criterion #2 is used, this is equivalent to requiring that the winner always comes from the [[CDTT|Condorcet (doubly-augmented gross) top tier]] or [[CDTT]].
+
+The most popular method which satisfies these properties is the [[Schulze method]].<br><br>
 
 [[Category:Voting theory]]
 {{fromwikipedia}}
