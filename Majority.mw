@@ -86,7 +86,7 @@ For instance, one wording of the [[Minimal Defense criterion]] guarantees that i
 
 This property doesn't imply satisfaction of any of the above criteria except for criterion 1, and none of the above criteria implies this property.
 
-In the following methods, a majority sincerely preferring A to B can ensure that B loses merely by voting for A and not voting for B: [[Approval voting]], [[Bucklin voting]], the [[River]] method, the [[Schulze method]] and [[Ranked Pairs]] (assuming with these that defeat strength is measured as the number of voters favoring the winning side). Most methods with an [[Approval voting|approval]] base also possess it.
+In the following methods, a majority sincerely preferring A to B can ensure that B loses merely by voting for A and not voting for B: [[Approval voting]], [[Bucklin voting]], the [[River]] method, the [[Schulze method]] and [[Ranked Pairs]] (assuming with these that defeat strength is measured as the number of voters favoring the winning side). Most methods with an [[Approval voting|approval]] base also guarantee this.
 
 The following methods lack this property: [[Plurality voting|Plurality]], [[Borda count]], [[IRV|instant runoff voting]], and [[Minimax|Minmax]]. Also, methods which don't allow voters to "not vote for" some candidates would lack this property.
 
