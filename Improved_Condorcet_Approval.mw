@@ -11,11 +11,13 @@
 In other words, every candidate ''a'' is disqualified who pairwise loses to some other candidate ''b'', and would still lose to ''b'' even when the voters supporting both equally as first preferences are counted in favor of ''a''. If everyone is disqualified, then no one is. Then the most approved candidate who isn't disqualified is elected.
 
 ==Comments==
-'''ICA''' satisfies the [[Favorite Betrayal criterion]] by treating voters ranking ''x'' and ''y'' equally at the top as attempting to create a pairwise tie between the two candidates. Then instead of looking first for a candidate with only pairwise wins (the [[Condorcet criterion|Condorcet winner]]), ICA selects as finalists every candidate with no pairwise losses.
+'''ICA''' satisfies the [[Favorite Betrayal criterion|favorite betrayal criterion]] by treating voters ranking ''x'' and ''y'' equally at the top as attempting to create a pairwise tie between the two candidates. Then instead of looking first for a candidate with only pairwise wins (the [[Condorcet criterion|Condorcet winner]]), ICA selects as finalists every candidate with no pairwise losses.
+
+Satisfying this criterion is desirable because it means that, unlike in ordinary [[Condorcet//Approval]], voters in an ICA election can always vote ''at least'' as sincerely as under [[Approval voting]], without worsening the outcome of the election from their own perspective.
 
 As a result of this tweaking, ICA does not strictly satisfy the [[Condorcet criterion]]. It is possible that the voted Condorcet winner could lose to another candidate, due to voters tying both candidates at the top, and the Condorcet winner having lower approval.
 
-Here is an example. Suppose there are at least three candidates:
+Here is an example:
 
  40 A>B
  35 A=B
@@ -23,7 +25,18 @@ Here is an example. Suppose there are at least three candidates:
 
 The [[Condorcet criterion|Condorcet winner]] is A, but ICA elects B. Both A and B make it into the set of finalists. The Condorcet winner is always a finalist, and B is a finalist because although A defeats B pairwise, A would not be able to do so if the 35 A=B voters were to side with B, so that this defeat isn't counted. Then B has greater approval than A and is elected.
 
-In ordinary [[Condorcet//Approval]], A's win over B is counted. This creates problems with the "[[Favorite Betrayal criterion|favorite betrayal]]" criterion (or the [[Sincere Favorite criterion]]) since it could happen that the 35 A=B voters are preventing either A or B from being the decisive winner, and that in trying to support both equally, the win is instead moved to the approval winner, who might be someone worse. This never happens under ICA.
+In ordinary [[Condorcet//Approval]], A's win over B is counted. This creates problems with the [[Favorite Betrayal criterion|favorite betrayal]] criterion (or the [[Sincere Favorite criterion]]) since it could happen that the 35 A=B voters are preventing either A or B from being the decisive winner, and that in trying to support both equally, the win is instead moved to the approval winner, who might be someone worse. Here is an example:
+
+ 25 A>B
+ 20 A=B
+ 15 B>C
+ 40 C
+
+There is a [[Condorcet method|Condorcet cycle]], and ordinary [[Condorcet//Approval]] elects C as the approval winner. But if the 20 A=B voters change their vote to B>A, this turns B into the decisive, Condorcet winner, which is a result that these voters prefer.
+
+This is problematic because it could be that the 20 A=B voters actually prefer A to B, so that if they can benefit from voting B>A, they have [[favorite betrayal]] incentive. If these voters don't believe that A is likely to win the election, anyway, they may vote B>A just to be cautious. This could cause A to lose an election solely because A's supporters didn't believe A could win it.
+
+Improved Condorcet Approval fixes this problem by anticipating the A=B voters' dilemma. In this scenario, ICA already elects B when the 20 voters vote A=B.
 
 When no voter uses equal ranking in the first position, ICA is equivalent to ordinary [[Condorcet//Approval]].
 
