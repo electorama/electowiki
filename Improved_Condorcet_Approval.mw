@@ -36,7 +36,7 @@ There is a [[Condorcet method|Condorcet cycle]], and ordinary [[Condorcet//Appro
 
 This is problematic because it could be that the 20 A=B voters actually prefer A to B, so that if they can benefit from voting B>A, they have [[favorite betrayal]] incentive. If these voters don't believe that A is likely to win the election, anyway, they may vote B>A just to be cautious. This could cause A to lose an election solely because A's supporters didn't believe A could win it.
 
-Improved Condorcet Approval fixes this problem by anticipating the A=B voters' dilemma. In this scenario, ICA already elects B when the 20 voters vote A=B.
+Improved Condorcet Approval fixes this problem by anticipating the A=B voters' dilemma. In this scenario, ICA already elects B when the 20 voters vote A=B. A's pairwise win over B is disregarded, and B is considered the decisive winner.
 
 When no voter uses equal ranking in the first position, ICA is equivalent to ordinary [[Condorcet//Approval]].
 
