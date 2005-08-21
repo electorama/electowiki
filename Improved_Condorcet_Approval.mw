@@ -13,7 +13,7 @@ In other words, every candidate ''a'' is disqualified who pairwise loses to some
 ==Comments==
 '''ICA''' satisfies the [[Favorite Betrayal criterion|favorite betrayal criterion]] by treating voters ranking ''x'' and ''y'' equally at the top as attempting to create a pairwise tie between the two candidates. Then instead of looking first for a candidate with only pairwise wins (the [[Condorcet criterion|Condorcet winner]]), ICA selects as finalists every candidate with no pairwise losses.
 
-Satisfying this criterion is desirable because it means that, unlike in ordinary [[Condorcet//Approval]], voters in an ICA election can always vote ''at least'' as sincerely as under [[Approval voting]], without worsening the outcome of the election from their own perspective.
+Satisfying this criterion is desirable because it means that, unlike in ordinary [[Condorcet//Approval]], voters in an ICA election can always vote ''at least'' as sincerely as under [[Approval voting]] (by ranking some candidates equally at the top, and the other candidates not at all), without forfeiting a preferable outcome that might be obtained by voting less sincerely than this.
 
 As a result of this tweaking, ICA does not strictly satisfy the [[Condorcet criterion]]. It is possible that the voted Condorcet winner could lose to another candidate, due to voters tying both candidates at the top, and the Condorcet winner having lower approval.
 
