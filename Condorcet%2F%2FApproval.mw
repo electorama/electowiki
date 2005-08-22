@@ -1,6 +1,8 @@
-'''Condorcet//Approval''' is an election method by which the [[Condorcet criterion|Condorcet]] winner is elected if one exists, otherwise the [[Approval voting]] winner is elected. The approval winner may (Smith//Approval) or may not be limited to the [[Smith set]].
+'''Condorcet//Approval''' is an election method by which the [[Condorcet criterion|Condorcet]] winner is elected if one exists, otherwise the [[Approval voting|approval]] winner is elected. Also see Smith//Approval below.
 
-Approval could be designated by a cutoff ranked among alternatives by the voter (explicit approval). Alternatively, if truncation is allowed, all explicitly ranked candidates could be considered to be approved (implicit approval).
+===Explicit/Implicit Approval===
+
+Approval can be designated by a cutoff ranked among alternatives (explicit approval). Alternatively, if truncation is allowed, all explicitly ranked candidates could be considered to be approved (implicit approval).
 
 ===Burial resistance===
 [[Condorcet method|Condorcet methods]] are generally vulnerable to [[Tactical voting|burying strategy]]. One faction ''buries'' a candidate by ranking him insincerely below other candidates. This is an attempt to give this candidate new or stronger pairwise defeats.
@@ -12,10 +14,32 @@ One drawback in proposing implicit approval of all explicitly ranked alternative
 ===Favorite Betrayal criterion compliance===
 [[Approval voting]]'s satisfaction of the [[Favorite Betrayal criterion]] can be preserved in Condorcet//Approval by using the [[tied at the top]] rule. This results in the [[Improved Condorcet Approval]] method. However, this variant technically isn't [[Condorcet criterion|Condorcet]]-compliant.
 
-==Satisfied criteria==
+==Satisfied Criteria==
 
 Condorcet//Approval satisfies [[Condorcet criterion|Condorcet]] and always elects a majority favorite, but doesn't satisfy [[Smith set|Smith]] or the [[Majority criterion for solid coalitions]]. It satisfies [[Minimal Defense criterion|Minimal Defense]] (and the [[Strong Defensive Strategy criterion]]), the [[Plurality criterion]], and [[Monotonicity criterion|monotonicity]].
 
 It fails [[Strategic nomination|Clone-Winner]], [[Participation criterion|Participation]], and [[Later-no-harm]].
 
 [[Category:Condorcet method]]
+
+== Smith//Approval ==
+
+The approval winner may be limited to the [[Smith set]]. This variation perforce satisfies the [[Smith set|Smith]] criterion.
+
+== Explicit, Fully Ranked Smith//Approval ==
+
+: If this deserves a name, then use mine [[User:Jrfisher|Jrfisher]]
+
+::Voters ''must'' rank all but one alternative, (disallow ties or truncation).
+
+::Therefore, use an approval cutoff (explicit approval).
+
+::Pick the [[Condorcet Criterion|Condorcet Winner]] (CW) if there is one. Otherwise...
+
+::Find the smallest set of alternatives having no defeats outside the set ([[Smith set]]).
+
+::Within that set, the alternative with the most winning votes against the approval bar is the winner.
+
+== See Also ==
+
+[[Definite Majority Choice]] (DMC)
