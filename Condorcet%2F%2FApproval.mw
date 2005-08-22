@@ -1,4 +1,6 @@
-'''Condorcet//Approval''' is an election method according to which the [[Condorcet criterion|Condorcet]] winner is elected if one exists, otherwise the [[Approval voting]] winner is elected. Approval can be designated by a cutoff placed within the ranking by the voter. Alternatively, all explicitly ranked candidates on a ballot could be considered approved.
+'''Condorcet//Approval''' is an election method by which the [[Condorcet criterion|Condorcet]] winner is elected if one exists, otherwise the [[Approval voting]] winner is elected. The approval winner may (Smith//Approval) or may not be limited to the [[Smith set]].
+
+Approval could be designated by a cutoff ranked among alternatives by the voter (explicit approval). Alternatively, if truncation is allowed, all explicitly ranked candidates could be considered to be approved (implicit approval).
 
 ===Burial resistance===
 [[Condorcet method|Condorcet methods]] are generally vulnerable to [[Tactical voting|burying strategy]]. One faction ''buries'' a candidate by ranking him insincerely below other candidates. This is an attempt to give this candidate new or stronger pairwise defeats.
