@@ -24,7 +24,7 @@ It fails [[Strategic nomination|Clone-Winner]], [[Participation criterion|Partic
 
 == Smith//Approval ==
 
-The approval winner may be limited to the [[Smith set]]. This variation perforce satisfies the [[Smith set|Smith]] criterion.
+The approval winner may be limited to the [[Smith set]]. This variation perforce satisfies the [[Smith set|Smith criterion]] and the [[Majority criterion for solid coalitions]]. It satisfies [[strategic nomination|clone independence]] at least when clones are defined such that every voter approves either all or no members of a clone set.
 
 == Explicit, Fully Ranked Smith//Approval ==
 
