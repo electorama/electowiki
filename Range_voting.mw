@@ -27,10 +27,7 @@ The scores for each candidate are summed, and the candidate with the highest sum
 average score (where only nonblank scores are incorporated into the average)
 is the winner.
 
-(Another method of counting is to find the [[median]] score of each candidate, and elect the candidate with the highest median score - see [[Median Ratings]].  This idea
-is not recommended because with strategic voting it will typically 
-lead to a vast number of
-tied winners.)
+(Another method of counting is to find the [[median]] score of each candidate, and elect the candidate with the highest median score - see [[Median Ratings]]. Because strategic voting will typically lead to a vast number of candidates with the same median, a rule to resolve ties is needed. Using the median is much more complicated than using the average.)
 
 ==Example==
 {{Tenn_voting_example}}
