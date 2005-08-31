@@ -7,7 +7,7 @@ in the Olympics to award gold medals to gymnasts.
 
 == Voting ==
 
-Range voting uses a [[ratings ballot]]; that is, each voter rates each candidate with a number.  In "pure numerical voting", each voter may give any candidate any real number
+Range voting uses a [[ratings ballot]]; that is, each voter rates each candidate with a number.  In "pure numerical voting," each voter may give any candidate any real number
 (i.e. not restricted to any finite range), 
 but as the potential for [[tactical voting]] would then be
 huge, most systems use upper and lower bounds.  For example, each voter might give a real number between -1 and 1, or 
