@@ -1,18 +1,36 @@
-'''Range voting''', or '''ratings summation''', or '''average voting''', or '''cardinal ratings''' is a [[voting system]] used for single or multiple-seat elections.  It is also used on the web - for rating movies (Internet Movie Database), comments (Kuro5hin), and many other things.
+'''Range voting''', or '''ratings summation''', or '''average voting''', or '''cardinal ratings''' is a [[voting system]] used for single-seat elections.  
+(It could also be used for multi-seat elections, but that is a poor idea
+since it would lead to massive proportionality failures, where, e.g. a 51%
+Whig electorate could elect a 100% Whig slate of winners.)
+It is also used on the web - for rating movies (Internet Movie Database), comments (Kuro5hin), and many other things - and something very similar to it is used
+in the Olympics to award gold medals to gymnasts.
 
 == Voting ==
 
-Range voting uses a [[ratings ballot]]; that is, each voter rates each candidate with a number.  In "pure range voting", each voter may give any candidate any real number, but as the potential for [[tactical voting]] is huge, most systems use upper and lower bounds.  For example, each voter might give a real number between -1 and 1, or an integer between 1 and 10.
+Range voting uses a [[ratings ballot]]; that is, each voter rates each candidate with a number.  In "pure numerical voting", each voter may give any candidate any real number
+(i.e. not restricted to any finite range), 
+but as the potential for [[tactical voting]] would then be
+huge, most systems use upper and lower bounds.  For example, each voter might give a real number between -1 and 1, or 
+between 0 and 99; in the latter case little is lost by also demanding that the
+scores be integers.
 
 Range voting in which only two different votes may be submitted (0 and 1, for example) is equivalent to [[approval voting]].
+In range (or approval) voting <i>with blanks</i>, 
+the voter is allowed to leave some scores blank to denote <i>ignorance</i>
+about those candidates.
 
 Range voting satisfies the [[monotonicity criterion]].
 
 == Counting the Votes ==
 
-The scores for each candidate are summed, and the candidates with the highest sums are declared the winners.
+The scores for each candidate are summed, and the candidate with the highest sum is declared the winner.  In [[range voting with blanks]] the candidate with the highest
+average score (where only nonblank scores are incorporated into the average)
+is the winner.
 
-Another method of counting is to find the [[median]] score of each candidate, and elect the candidate with the highest median score.  (See [[Median Ratings]])
+(Another method of counting is to find the [[median]] score of each candidate, and elect the candidate with the highest median score - see [[Median Ratings]].  This idea
+is not recommended because with strategic voting it will typically 
+lead to a vast number of
+tied winners.)
 
 ==Example==
 {{Tenn_voting_example}}
@@ -68,7 +86,9 @@ Nashville wins.
 
 In general, the optimal strategy for range voting is to vote it identically to approval voting, so that all candidates are given either the maximum score or the minimum score. For more detailed strategies, see [[approval voting]].
 
-Range voting assumes that voters are actually expressing their personal feelings rather than doing everything they can to cause their most favored outcomes.
+Range voting has an advantage over approval voting if
+voters are actually expressing their personal feelings rather 
+than doing everything they can to cause their most favored outcomes.
 
 
 {{fromwikipedia}}
