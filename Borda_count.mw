@@ -55,7 +55,7 @@ Voting systems are often compared using mathematically-defined criteria. See [[v
 
 The Borda count satisfies the [[monotonicity criterion]], the [[summability criterion]], the [[consistency criterion]], the [[participation criterion]],  the [[Plurality criterion]] (trivially), [[Reversal symmetry]], [[Intensity of Binary Independence]] and the [[Condorcet loser criterion]]. 
 
-It does not satisfy the [[Condorcet criterion]], the [[Independence of irrelevant alternatives]] criterion, or the [[Strategic nomination|Independence of Clones criterion]]. 
+It does not satisfy the [[Condorcet criterion]], the [[Independence of irrelevant alternatives]] criterion, the [[Non-compulsory support criterion]], or the [[Strategic nomination|Independence of Clones criterion]]. 
 
 The Borda count also does not satisfy the [[majority criterion]], which means that if a majority of voters rank one candidate in first place, that candidate is not guaranteed to win. This could be considered a disadvantage for Borda count in political elections, but it also could be considered an advantage if the favorite of a slight majority is strongly disliked by most voters outside the majority, in which case the Borda winner could have a higher overall utility than the majority winner.
 
