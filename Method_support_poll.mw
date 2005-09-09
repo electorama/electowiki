@@ -28,6 +28,24 @@ Support for legislatures only: [[CDTT]]-[[Later-no-harm criterion|Later-no-harm]
 
 Oppose: [[plurality voting|plurality]], [[IRV]], [[ER-IRV]], margins, [[Borda count|Borda]], [[DSC]], rating ballots
 
+*'''Juho Laatu'''
+Support:
+*[[Condorcet Criterion|Condorcet]]: best for contentious elections if burying threat considered not too bad
+*[[Minmax|Minmax(margins)]]: my default reference point, good utility function, strategy resistance maybe not that bad
+*Path based ([[Schulze method|Schulze]] etc.) and winning votes: ok but lots of work for small improvements/changes (that are not all positive)
+*Pairwise comparison methods enhanced with additional approval or rating information: ok as well if not too complex for the voters
+*[[Approval voting|Approval]]: clean method and at least some improvement to the commonly user methods
+*[[IRV]] methods (if Condorcet is out of question)
+
+Close to supporting: [[Runoff voting|Two round system]] (not that bad for multiparty countries)
+
+Not supporting: Rating based methods (maybe not feasible for contentious elections like the government official elections of this query, but good for non-contentious elections)
+
+Oppose:
+*[[plurality voting|Plurality]] (except that it is ok for two party countries IF they want to stay that way)
+*Regional winner gets all votes of that region
+*[[Borda count|Borda]] and many other ("more heuristic") methods
+
 ==Legislative election methods==
 
 '''Which legislative (multi-winner) election methods do you support for the election of government officials?''' Unless otherwise indicated, it will be assumed that you support the method for local, state, and federal elections.
