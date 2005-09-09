@@ -2,7 +2,7 @@
 
 This method can be viewed as a variant of [[Improved Condorcet Approval]].
 
-Another method with these properties is [[Majority Approval, Minimum Pairwise Opposition]].
+Another method with the above properties is [[Majority Approval, Minimum Pairwise Opposition]] ([[MAMPO]]).
 
 ==Procedure==
 The voter submits a ranking of the candidates. The candidates explicitly ranked are considered ''approved'' by that voter.
