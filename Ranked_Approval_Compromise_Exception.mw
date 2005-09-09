@@ -3,7 +3,7 @@ The Ranked Approval Compromise Exception is a modification that can be applied t
 The motivation for its development was consideration of cases where "Everybody's Second Choice" seems to have more of a mandate than a frontrunning, polarized winner.  Consider an election among candidates L, C, and R (Left, Center, and Right).  We will use the pipe symbol to indicate the approval cutoff:
 
 <table><tr><td>50001</td><td>LC|R</td></tr>
-<tr><td>49999</td><td><td>RC|L</td></tr></table>
+<tr><td>49999</td><td>RC|L</td></tr></table>
 
 In this circumstance, some will see C as having a better mandate, and a better chance of governing effectively.
 
