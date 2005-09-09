@@ -8,15 +8,23 @@ Feel free to rank your supported methods in order of preference, or supply some 
 '''Which single-winner election methods do you support for the election of government officials?''' Unless otherwise indicated, it will be assumed that you support the method for local, state, and federal elections.
 
 
-*James Green-Armytage
+*'''James Green-Armytage'''
 Support: [[cardinal pairwise]] with [[beatpath]], [[ranked pairs]], [[river]], or [[sequential dropping]], [[CWP|AWP]], [[Candidate withdrawal option|CWO-IRV]], [[ER-IRV|ER-IRV(whole)]], [[Approval voting]], [[ER-IRV|ER-IRV(fractional)]], [[IRV]]
 
-Close to supporting: [[DMC]], [[CDTT, IRV]], [[Smith//minimax]]
+Close to supporting: [[DMC]], [[CDTT|CDTT, IRV]], [[Smith//minimax]]
 
 Oppose: [[Borda count]]
 
 Close to opposing: [[Minimax|minmax]], [[MMPO]], [[Bucklin]], [[Descending Acquiescing Coalitions]]
 
+*'''Kevin Venzke'''
+Support: [[ICA]], [[Approval voting]]
+
+Close to supporting: [[Schulze method|Schulze]], Tideman, or River using winning votes or possibly [[cardinal pairwise|approval opposition (i.e. AWP)]], [[ER-Bucklin]](whole), [[MAMPO]]
+
+Support for legislatures: [[CDTT|CDTT,MMPO]], [[MMPO]]
+
+Oppose: [[IRV]], margins, [[Borda count|Borda]], [[DSC]]
 
 ==Legislative election methods==
 
