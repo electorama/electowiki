@@ -2,17 +2,17 @@ The Ranked Approval Compromise Exception is a modification that can be applied t
 
 The motivation for its development was consideration of cases where "Everybody's Second Choice" seems to have more of a mandate than a frontrunning, polarized winner.  Consider an election among candidates L, C, and R (Left, Center, and Right).  We will use the pipe symbol to indicate the approval cutoff:
 
-50001 LC|R
-49999 RC|L
+<table><tr><td>50001</td><td>LC|R</td></tr>
+<tr><td>49999</td><td><td>RC|L</td></tr></table>
 
 In this circumstance, some will see C as having a better mandate, and a better chance of governing effectively.
 
 A slightly more complex case might look like:
 
-15 L|CR
-36 LC|R
-35 RC|L
-14 R|CL
+<table><tr><td>15</td><td>L|CR</td></tr>
+<tr><td>36</td><td>LC|R</td></tr>
+<tr><td>35</td><td>RC|L</td></tr>
+<tr><td>14</td><td>R|CL</td></tr></table>
 
 In order to quantify what it means to be a compromise candidate, we start by simply identifying the winner of the election by its standard definition; we'll call this Standard Winner S.  Next, identify the candidate with the highest approval score; we'll call the Approval Winner A.  (In the above case, A is clearly C; S is presumably L, who would win under IRV, Borda, and any Condorcet method.)
 
@@ -29,3 +29,5 @@ Thus, in the example, C will win.
 The logic here is that even though a slim majority might prefer the standard winner, we can tell because of their high approval level for the compromise, that they will not, as a group, be too upset if that compromise wins; we check the approval level among the remainder of the population -- those who ranked the proposed compromise over the standard winner -- to see whether they are sufficiently enthusiastic about the compromise to make it worthwhile.
 
 One side effect of the compromise exception is to discourage one form of [[strategic voting]] in [[Definite Majority Choice]], and potentially other methods based on ranking and approval data.  It has been suggested by Jeff Fisher that voters in DMC would come to routinely approve any candidate they expect their favorite to defeat in pairwise rankings, because even if this leads the candidate to have no double-defeats, they will be beaten in the final selection by the favorite, and in the meantime they may produce a double-defeat against some other candidate that threatened the favorite.  With the compromise exception, voters opting for this strategy would run a serious risk of inflating the dishonestly approved candidate's approval score to the point that the exception would come into play.  Thus, it acts as a strong disincentive to approve dishonestly.
+
+This concept was originally proposed by David Scotese, as a refinement of a method equivalent to [[Smith//Approval]] that had been suggested by R.M. "Auros" Harman.  Scotese's proposal, "Condorcet Versus Approval", was refined by Harman to produce the version described above.
