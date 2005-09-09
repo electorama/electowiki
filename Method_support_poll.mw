@@ -20,11 +20,11 @@ Close to opposing: [[Minimax|minmax]], [[MMPO]], [[Bucklin]], [[Descending Acqui
 *'''Kevin Venzke'''
 Support: [[ICA]], [[Approval voting]]
 
-Close to supporting: [[Schulze method|Schulze]], Tideman, or River using winning votes or possibly [[cardinal pairwise|approval opposition (i.e. AWP)]], [[ER-Bucklin]](whole), [[MAMPO]]
+Close to supporting: [[Schulze method|Schulze]], Tideman, or River (using winning votes or possibly [[cardinal pairwise|AWP]]), [[ER-Bucklin]](whole), [[MAMPO]]
 
-Support for legislatures: [[CDTT|CDTT,MMPO]], [[MMPO]]
+Support for legislatures only: [[CDTT]]-[[Later-no-harm criterion|Later-no-harm]] combination methods
 
-Oppose: [[IRV]], margins, [[Borda count|Borda]], [[DSC]]
+Oppose: [[plurality voting|plurality]], [[IRV]], [[ER-IRV]], margins, [[Borda count|Borda]], [[DSC]], rating ballots
 
 ==Legislative election methods==
 
