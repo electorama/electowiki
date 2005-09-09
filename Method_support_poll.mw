@@ -7,6 +7,7 @@ Feel free to rank your supported methods in order of preference, or supply some 
 
 '''Which single-winner election methods do you support for the election of government officials?''' Unless otherwise indicated, it will be assumed that you support the method for local, state, and federal elections.
 
+
 *James Green-Armytage
 Support: [[cardinal pairwise]] with [[beatpath]], [[ranked pairs]], [[river]], or [[sequential dropping]], [[CWP|AWP]], [[Candidate withdrawal option|CWO-IRV]], [[ER-IRV|ER-IRV(whole)]], [[Approval voting]], [[ER-IRV|ER-IRV(fractional)]], [[IRV]]
 
@@ -16,14 +17,17 @@ Oppose: [[Borda count]]
 
 Close to opposing: [[Minimax|minmax]], [[MMPO]], [[Bucklin]], [[Descending Acquiescing Coalitions]]
 
+
 ==Legislative election methods==
 
 '''Which legislative (multi-winner) election methods do you support for the election of government officials?''' Unless otherwise indicated, it will be assumed that you support the method for local, state, and federal elections.
+
 
 *James Green-Armytage
 Support [[CPO-STV]], [[single transferable vote]]
 
 Close to opposing: [[Cumulative voting]], [[limited voting]], [[SNTV]]
+
 
 == See also ==
 *[[Method evaluation poll]]
