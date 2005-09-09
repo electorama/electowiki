@@ -1,111 +1,26 @@
 Method support poll. Anyone with an interest in voting methods is welcome to participate. Do not alter the entries of any other participant.
-In this context, "supporting" a method means that you would support an effort to adopt this method in the place of a method that you don't "support". If you oppose a method, that means that you might attempt to prevent the adoption of that method, even as a replacement for a method not on your "support" list. There is no need to list ''every'' method that you oppose; just those that you think are worth mentioning, i.e. at least somewhat controversial.
-Feel free to rank your supported methods in order of preference, or supply some other kind of comparison between them. Feel free also to modify your answers at any time; there is no closing date for the poll.
+In this context, "supporting" a method means that you would an effort to adopt this method in the place of a method that you don't "support". If you oppose a method, that means that you might attempt to prevent the adoption of that method, even as a replacement for a method not on your "support" list. There is no need to list ''every'' method that you oppose; just those that you think are worth mentioning, i.e. at least somewhat controversial.
+Feel free to rank your supported methods in order of preference, or supply some other kind of comparison between them.
 
 
 ==Single winner election methods==
 
 '''Which single-winner election methods do you support for the election of government officials?''' Unless otherwise indicated, it will be assumed that you support the method for local, state, and federal elections.
 
+*James Green-Armytage
+Support: [[cardinal pairwise]] with [[beatpath]], [[ranked pairs]], [[river]], or [[sequential dropping]], [[CWP|AWP]], [[Candidate withdrawal option|CWO-IRV]], [[ER-IRV|ER-IRV(whole)]], [[Approval voting]], [[ER-IRV|ER-IRV(fractional)]], [[IRV]]
 
-*'''James Green-Armytage'''
- '''Support:''' [[cardinal pairwise]] with [[beatpath]], [[ranked pairs]], 
- [[river]], or [[sequential dropping|Smith sequential dropping]], [[CWP|AWP]], [[Candidate withdrawal option|CWO-IRV]],
- [[ER-IRV|ER-IRV(whole)]], [[Approval voting]], [[ER-IRV|ER-IRV(fractional)]], [[IRV]]
- '''Close to supporting:''' [[Definite Majority Choice|DMC]]/[[Ranked Approval Voting|RAV]], [[Smith//IRV]], [[CDTT|CDTT,IRV]], [[Smith//Minimax|Smith//minimax]]
- '''Oppose:''' [[Borda count]]
- '''Close to opposing:''' [[Minimax|minmax]], [[MMPO]], [[Bucklin voting|Bucklin]], [[Descending Acquiescing Coalitions]]
+Close to supporting: [[DMC]], [[CDTT, IRV]], [[Smith//minimax]]
 
-*'''Kevin Venzke'''
- ''In general I prefer methods without [[favorite betrayal]] incentive. I ''
- ''insist on [[Minimal Defense criterion|minimal defense]] or something similar.''
- '''Support:''' [[ICA]], [[Approval voting]]
- '''Close to supporting:''' [[Schulze method|Schulze]], Tideman, or River (using winning votes 
-  or possibly [[cardinal pairwise|AWP]]), [[ER-Bucklin]](whole), [[MAMPO]], [[MDDA]]
- '''Support for legislatures only:''' [[CDTT]]-[[Later-no-harm criterion|Later-no-harm]] combination methods
- '''Oppose:''' [[plurality voting|plurality]], [[IRV]], [[ER-IRV]], margins, [[Borda count|Borda]],
-  [[DSC]], rating ballots
+Oppose: [[Borda count]]
 
-*'''Juho Laatu'''
- '''Support:'''
- [[Condorcet Criterion|Condorcet]]: best for contentious elections if burying threat considered not too bad
- [[Minmax|Minmax(margins)]]: my default reference point, good utility function, strategy resistance 
- maybe not that bad
- Path based ([[Schulze method|Schulze]] etc.) and winning votes: ok but lots of work for small 
- improvements/changes (that are not all positive)
- Pairwise comparison methods enhanced with additional approval or rating information: ok as well if 
- not too complex for the voters
- [[Approval voting|Approval]]: clean method and at least some improvement to the commonly user 
- methods
- Best [[IRV]] methods (if pairwise comparison based methods are out of question)
- '''Close to supporting:''' [[Runoff voting|Two round system]] (not that bad for multiparty countries)
- '''Not supporting:''' Rating based methods (maybe not feasible for contentious elections like the 
- government official elections of this query, but good for non-contentious elections)
- '''Oppose:'''
- [[plurality voting|Plurality]] (except that it is ok for two party countries IF they want to stay 
- that way)
- Regional winner gets all votes of that region
- [[Borda count|Borda]] and many other ("more heuristic") methods
-
-*'''David Gamble'''
-  '''Support:''' [[IRV]]
-  '''Close to supporting:'''[[Condorcet Criterion|Condorcet]]- any completion method, [[top-two runoff]].
-  '''An improvement on [[Plurality]]:''' [[Approval voting]], [[Bucklin voting|Bucklin]], [[Range voting]].
-  '''Close to opposing:''' [[Borda count|Borda]].
-  '''Oppose:''' [[Plurality]], the use of single seat methods in multi-member districts.
-
-*'''Mike Ossipoff'''
- '''Support:''' [[SSD]], and Methods that meet [[Favorite Betrayal criterion|FBC]]. These include [[Approval voting|Approval]], [[Range voting|Range Voting]], [[MDDA]], [[MDDB]],
- [[MDD]], [[ER-Bucklin|ER-Bucklin(whole)]], and [[MAMPO]].
- 
- '''Oppose:''' methods other than [[SSD]] that don't meet [[Favorite Betrayal criterion|FBC]]
- 
- (I'm referring to what I'd support or propose when a proposal is being chosen, not what I'd
- support or oppose after it has been put to the public).
-
-
-*'''[[User:Allens|Allen Smith]]'''
- '''Support:''' [[Approval voting]], [[Approval-Condorcet Hybrids]], [[Condorcet//Approval]] and variants (e.g.,
- [[Improved Condorcet Approval]]).
- '''Close to supporting:''' [[Condorcet Criterion|Condorcet]] - any completion method, provided the result is a member
- of the [[Schwartz set]].
- '''Close to opposing:''' [[Borda count|Borda]]
- '''Oppose:''' [[Plurality]], [[Random Ballot]]
+Close to opposing: [[Minimax|minmax]], [[MMPO]], [[Bucklin]], [[Descending Acquiescing Coalitions]]
 
 ==Legislative election methods==
 
 '''Which legislative (multi-winner) election methods do you support for the election of government officials?''' Unless otherwise indicated, it will be assumed that you support the method for local, state, and federal elections.
 
+*James Green-Armytage
+Support [[CPO-STV]], [[single transferable vote]]
 
-*'''James Green-Armytage'''
- '''Support:''' [[CPO-STV]], [[single transferable vote]]
- '''Close to opposing:''' [[Cumulative voting]], [[limited voting]], [[SNTV]]
- '''Conditional support:''' Support [[Party-list proportional representation|party list]] as a transitional system in some cases where 
- infrastructure is limited, and where a large part of the population lacks the numerical 
- literacy skills need for an STV vote.
-
-*'''Kevin Venzke'''
- '''Support:''' open party list (approval component), closed party list, 
- possibly a proportional approval scheme
-
-*'''Juho Laatu'''
- '''Support:'''
- Open party list enhanced with hierarchical structure
- [[Open list|Open party list]]
- [[STV]] (non-party-based votes are both good and bad)
- Regional representation (various styles to complement other methods)
- '''Close to supporting:''' [[Closed list|Closed party list]], [[CPO-STV]] (complexity problems)
- '''Not supporting:''' Two party methods (ok if kept intentionally, not just because of fear of 
- changes or to stay in power)
-
-*'''David Gamble'''
- '''Support:''' [[single transferable vote]], [[CPO-STV]].
- '''Close to supporting:''' Any other proportional method - open party list,
-  closed party list, semi-open party list, [[MMP]].
- '''Improvement on single seats methods for multi-member
- bodies:'''[[SNTV]], [[Limited vote]], [[Cumulative voting]].
- '''Oppose:''' Single seat methods for multi-member bodies in single 
-  seats,single seat methods in multi-member districts.
-
-== See also ==
-*[[Method evaluation poll]]
+Close to opposing: [[Cumulative voting]], [[limited voting]], [[SNTV]]
