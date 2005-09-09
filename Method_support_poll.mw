@@ -35,7 +35,7 @@ Support:
 *Path based ([[Schulze method|Schulze]] etc.) and winning votes: ok but lots of work for small improvements/changes (that are not all positive)
 *Pairwise comparison methods enhanced with additional approval or rating information: ok as well if not too complex for the voters
 *[[Approval voting|Approval]]: clean method and at least some improvement to the commonly user methods
-*[[IRV]] methods (if Condorcet is out of question)
+*Best [[IRV]] methods (if pairwise comparison based methods are out of question)
 
 Close to supporting: [[Runoff voting|Two round system]] (not that bad for multiparty countries)
 
@@ -58,6 +58,17 @@ Close to opposing: [[Cumulative voting]], [[limited voting]], [[SNTV]]
 
 *'''Kevin Venzke'''
 Support open party list (approval component), closed party list, possibly a proportional approval scheme
+
+*'''Juho Laatu'''
+Support:
+*Open party list enhanced with hierarchical structure
+*[[Open list|Open party list]]
+*[[STV]] (non-party-based votes are both good and bad)
+*Regional representation (various styles to complement other methods)
+
+Close to supporting: [[Closed list|Closed party list]], [[CPO-STV]] (complexity problems)
+
+Not supporting: Two party methods (ok if kept intentionally, not just because of fear of changes or to stay in power)
 
 == See also ==
 *[[Method evaluation poll]]
