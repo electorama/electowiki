@@ -17,8 +17,8 @@ Feel free to rank your supported methods in order of preference, or supply some 
  '''Close to opposing:''' [[Minimax|minmax]], [[MMPO]], [[Bucklin]], [[Descending Acquiescing Coalitions]]
 
 *'''Kevin Venzke'''
- ''In general I prefer methods without [[favorite betrayal]] incentive. I 
- insist on [[Minimal Defense criterion|minimal defense]] or something similar.''
+ ''In general I prefer methods without [[favorite betrayal]] incentive. I ''
+ ''insist on [[Minimal Defense criterion|minimal defense]] or something similar.''
  '''Support:''' [[ICA]], [[Approval voting]]
  '''Close to supporting:''' [[Schulze method|Schulze]], Tideman, or River (using winning votes 
  or possibly [[cardinal pairwise|AWP]]), [[ER-Bucklin]](whole), [[MAMPO]]
