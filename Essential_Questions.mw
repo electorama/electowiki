@@ -122,11 +122,11 @@ Please do not change the wording of statements as soon as someone expressed a de
 
 === What other special properties should the winner have? ===
 
-   SR  JH  JG  KV  MO  JL  RL
+   SR  JH  JG  KV  MO  JL  RL  JF
  The winner should always belong to the Smith/GeTChA/Top Set
-   ++   -  ++   -  --   -  ++
+   ++   -  ++   -  --   -  ++   +
  The winner should always be top on at least one ballot
-   --   ?   -   0  --   -   0
+   --   ?   -   0  --   -   0  --
 
 === What effects should certain manipulations have? ===
  
