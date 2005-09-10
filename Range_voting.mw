@@ -19,7 +19,7 @@ In range (or approval) voting <i>with blanks</i>,
 the voter is allowed to leave some scores blank to denote <i>ignorance</i>
 about those candidates.
 
-Range voting satisfies the [[monotonicity criterion]], the [[participation criterion]], the [[consistency criterion]], the summarbility criterion]], the [[Favorite betrayal criterion]], [[Independence of irrelevant alternatives]], the [[Non-compulsory support criterion]] and the [[Independence of correlated candidates criterion]].
+Range voting satisfies the [[monotonicity criterion]], the [[participation criterion]], the [[Consistency criterion]], the [[summability criterion]], the [[favorite betrayal criterion]], [[Independence of irrelevant alternatives]], the [[Non-compulsory support criterion]] and the [[Independence of correlated candidates criterion]].
 
 == Counting the Votes ==
 
