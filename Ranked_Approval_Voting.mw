@@ -1,6 +1,4 @@
-'''Ranked Approval Voting''' (RAV) is an election method combining a ranked ballot with an approval measure. Kevin Venzke may have been the first to suggest it on the election methods mailing list, in 2003 (''need to provide link to list posting here --Araucaria'').  It was given the name "Ranked Approval Voting" by Russ Paielli.
-
-RAV finds the same winner as [[Definite Majority Choice]].
+'''Ranked Approval Voting''' (RAV) is one heuristic for finding the [[Definite Majority Choice]] winner. Kevin Venzke may have been the first to suggest it on the election methods mailing list, in September 2003. It was given the name "Ranked Approval Voting" by Russ Paielli.
 
 == Ballot Format ==
 
