@@ -9,42 +9,43 @@ Feel free to rank your supported methods in order of preference, or supply some 
 
 
 *'''James Green-Armytage'''
-Support: [[cardinal pairwise]] with [[beatpath]], [[ranked pairs]], [[river]], or [[sequential dropping]], [[CWP|AWP]], [[Candidate withdrawal option|CWO-IRV]], [[ER-IRV|ER-IRV(whole)]], [[Approval voting]], [[ER-IRV|ER-IRV(fractional)]], [[IRV]]
-
-Close to supporting: [[DMC]], [[CDTT|CDTT, IRV]], [[Smith//minimax]]
-
-Oppose: [[Borda count]]
-
-Close to opposing: [[Minimax|minmax]], [[MMPO]], [[Bucklin]], [[Descending Acquiescing Coalitions]]
+ '''Support:''' [[cardinal pairwise]] with [[beatpath]], [[ranked pairs]], 
+ [[river]], or [[sequential dropping]], [[CWP|AWP]], [[Candidate withdrawal option|CWO-IRV]],
+ [[ER-IRV|ER-IRV(whole)]], [[Approval voting]], [[ER-IRV|ER-IRV(fractional)]], [[IRV]]
+ '''Close to supporting:''' [[DMC]], [[CDTT|CDTT, IRV]], [[Smith//minimax]]
+ '''Oppose:''' [[Borda count]]
+ '''Close to opposing:''' [[Minimax|minmax]], [[MMPO]], [[Bucklin]], [[Descending Acquiescing Coalitions]]
 
 *'''Kevin Venzke'''
-''In general I prefer methods without [[favorite betrayal]] incentive. I insist on [[Minimal Defense criterion|minimal defense]] or something similar.''
-
-Support: [[ICA]], [[Approval voting]]
-
-Close to supporting: [[Schulze method|Schulze]], Tideman, or River (using winning votes or possibly [[cardinal pairwise|AWP]]), [[ER-Bucklin]](whole), [[MAMPO]]
-
-Support for legislatures only: [[CDTT]]-[[Later-no-harm criterion|Later-no-harm]] combination methods
-
-Oppose: [[plurality voting|plurality]], [[IRV]], [[ER-IRV]], margins, [[Borda count|Borda]], [[DSC]], rating ballots
+ ''In general I prefer methods without [[favorite betrayal]] incentive. I 
+ insist on [[Minimal Defense criterion|minimal defense]] or something similar.''
+ '''Support:''' [[ICA]], [[Approval voting]]
+ '''Close to supporting:''' [[Schulze method|Schulze]], Tideman, or River (using winning votes 
+ or possibly [[cardinal pairwise|AWP]]), [[ER-Bucklin]](whole), [[MAMPO]]
+ '''Support for legislatures only:''' [[CDTT]]-[[Later-no-harm criterion|Later-no-harm]] combination methods
+ '''Oppose:''' [[plurality voting|plurality]], [[IRV]], [[ER-IRV]], margins, [[Borda count|Borda]],
+ [[DSC]], rating ballots
 
 *'''Juho Laatu'''
-Support:
-*[[Condorcet Criterion|Condorcet]]: best for contentious elections if burying threat considered not too bad
-*[[Minmax|Minmax(margins)]]: my default reference point, good utility function, strategy resistance maybe not that bad
-*Path based ([[Schulze method|Schulze]] etc.) and winning votes: ok but lots of work for small improvements/changes (that are not all positive)
-*Pairwise comparison methods enhanced with additional approval or rating information: ok as well if not too complex for the voters
-*[[Approval voting|Approval]]: clean method and at least some improvement to the commonly user methods
-*Best [[IRV]] methods (if pairwise comparison based methods are out of question)
-
-Close to supporting: [[Runoff voting|Two round system]] (not that bad for multiparty countries)
-
-Not supporting: Rating based methods (maybe not feasible for contentious elections like the government official elections of this query, but good for non-contentious elections)
-
-Oppose:
-*[[plurality voting|Plurality]] (except that it is ok for two party countries IF they want to stay that way)
-*Regional winner gets all votes of that region
-*[[Borda count|Borda]] and many other ("more heuristic") methods
+ '''Support:'''
+ [[Condorcet Criterion|Condorcet]]: best for contentious elections if burying threat considered not too bad
+ [[Minmax|Minmax(margins)]]: my default reference point, good utility function, strategy resistance 
+ maybe not that bad
+ Path based ([[Schulze method|Schulze]] etc.) and winning votes: ok but lots of work for small 
+ improvements/changes (that are not all positive)
+ Pairwise comparison methods enhanced with additional approval or rating information: ok as well if 
+ not too complex for the voters
+ [[Approval voting|Approval]]: clean method and at least some improvement to the commonly user 
+ methods
+ Best [[IRV]] methods (if pairwise comparison based methods are out of question)
+ '''Close to supporting:''' [[Runoff voting|Two round system]] (not that bad for multiparty countries)
+ '''Not supporting:''' Rating based methods (maybe not feasible for contentious elections like the 
+ government official elections of this query, but good for non-contentious elections)
+ '''Oppose:'''
+ [[plurality voting|Plurality]] (except that it is ok for two party countries IF they want to stay 
+ that way)
+ Regional winner gets all votes of that region
+ [[Borda count|Borda]] and many other ("more heuristic") methods
 
 ==Legislative election methods==
 
@@ -52,23 +53,22 @@ Oppose:
 
 
 *'''James Green-Armytage'''
-Support [[CPO-STV]], [[single transferable vote]]
-
-Close to opposing: [[Cumulative voting]], [[limited voting]], [[SNTV]]
+ '''Support:''' [[CPO-STV]], [[single transferable vote]]
+ '''Close to opposing:''' [[Cumulative voting]], [[limited voting]], [[SNTV]]
 
 *'''Kevin Venzke'''
-Support open party list (approval component), closed party list, possibly a proportional approval scheme
+ '''Support:''' open party list (approval component), closed party list, 
+ possibly a proportional approval scheme
 
 *'''Juho Laatu'''
-Support:
-*Open party list enhanced with hierarchical structure
-*[[Open list|Open party list]]
-*[[STV]] (non-party-based votes are both good and bad)
-*Regional representation (various styles to complement other methods)
-
-Close to supporting: [[Closed list|Closed party list]], [[CPO-STV]] (complexity problems)
-
-Not supporting: Two party methods (ok if kept intentionally, not just because of fear of changes or to stay in power)
+ '''Support:'''
+ Open party list enhanced with hierarchical structure
+ [[Open list|Open party list]]
+ [[STV]] (non-party-based votes are both good and bad)
+ Regional representation (various styles to complement other methods)
+ '''Close to supporting:''' [[Closed list|Closed party list]], [[CPO-STV]] (complexity problems)
+ '''Not supporting:''' Two party methods (ok if kept intentionally, not just because of fear of 
+ changes or to stay in power)
 
 == See also ==
 *[[Method evaluation poll]]
