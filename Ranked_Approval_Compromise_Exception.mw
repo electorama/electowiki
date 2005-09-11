@@ -22,7 +22,7 @@ We break the electorate into two groups: those whose ballots rank S>A, and those
 
 Among voters who say L>C, A receives 36/51 = 70.6% approval, which exceeds the 51% Compromise Level.
 
-Among voters who say C<=L, A receives 35/49 = 71.4% approval, which exceeds the 51% Compromise Level.
+Among voters who say C<L, A receives 35/49 = 71.4% approval, which exceeds the 51% Compromise Level.
 
 Thus, in the example, C will win.
 
