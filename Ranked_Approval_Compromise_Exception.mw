@@ -18,7 +18,7 @@ In order to quantify what it means to be a compromise candidate, we start by sim
 
 Look at the pairwise race between S and A.  The percentage of votes received by S in this race will be the Compromise Level.  In this case, in the race between L and C, L receives 51% of the votes.  (In races where equal rankings are allowed, we must choose whether to count 1, 0.5, or 0 votes for S when a ballot says S=A; no examination has been made of how this choice affects outcomes.)
 
-We break the electorate into two groups: those whose ballots rank S>A, and those who rank S<=A.  To win, A must receive approval from a percentage exceeding the Compromise Level.  In the example above, we see...
+We break the electorate into two groups: those whose ballots rank S>A, and those who rank S<A.  (Again, if equal rankings are permitted we must decide whether to include voters saying S=A in one of the groups, count them half-and-half towards each, or not count them in this phase at all.)  To win, A must receive approval from a percentage exceeding the Compromise Level.  In the example above, we see...
 
 Among voters who say L>C, A receives 36/51 = 70.6% approval, which exceeds the 51% Compromise Level.
 
