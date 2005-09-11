@@ -16,7 +16,7 @@ A slightly more complex case might look like:
 
 In order to quantify what it means to be a compromise candidate, we start by simply identifying the winner of the election by its standard definition; we'll call this Standard Winner S.  Next, identify the candidate with the highest approval score; we'll call the Approval Winner A.  (In the above case, A is clearly C; S is presumably L, who would win under IRV, Borda, and any Condorcet method.)
 
-Look at the pairwise race between S and A.  The percentage of votes received by S in this race will be the Compromise Level.  In this case, in the race L>A, L receives 51% of the votes.  (In races where equal rankings are allowed, we must choose whether to count 1, 0.5, or 0 votes for S when a ballot says S=A; no examination has been made of how this choice affects outcomes.)
+Look at the pairwise race between S and A.  The percentage of votes received by S in this race will be the Compromise Level.  In this case, in the race between L and C, L receives 51% of the votes.  (In races where equal rankings are allowed, we must choose whether to count 1, 0.5, or 0 votes for S when a ballot says S=A; no examination has been made of how this choice affects outcomes.)
 
 We break the electorate into two groups: those whose ballots rank S>A, and those who rank S<=A.  To win, A must receive approval from a percentage exceeding the Compromise Level.  In the example above, we see...
 
