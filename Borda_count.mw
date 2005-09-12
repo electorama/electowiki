@@ -41,7 +41,7 @@ Like most voting methods, The Borda count is vulnerable to [[tactical voting|com
 
 The Borda count is also vulnerable to [[tactical voting|burying]]. That is, voters can help a more-preferred candidate by insincerely lowering the position of a less-preferred candidate on their ballot.
 
-For example, if there are two candidates whom a voter considers to be the most likely to win, the voter can maximize their impact on the contest between these candidates by ranking the candidate whom they like more in first place, and ranking the candidate whom they like less in last place. If neither candidate is their sincere first or last choice, the voter is employing both the compromising and burying strategies at once.
+The effects of tactical voting decrease as the number of voters increases.
 
 ==Effect on factions and candidates==
 
