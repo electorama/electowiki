@@ -45,7 +45,7 @@ For example, if there are two candidates whom a voter considers to be the most l
 
 ==Effect on factions and candidates==
 
-The Borda count is vulnerable to [[Strategic nomination|teaming]]: when more candidates run with similar ideologies, the probability of one of those candidates winning increases. Therefore, under the Borda count, it is to a faction's advantage to run as many candidates in that faction as they can, creating the opposite of the [[spoiler effect]].  The teaming or "clone" effect is significant only in elections with a small number of voters.  As the electorate increases, the teaming or "clone" effects decrease towards zero.
+The Borda count is vulnerable to [[Strategic nomination|teaming]]: when more candidates run with similar ideologies, the probability of one of those candidates winning increases. Therefore, under the Borda count, it is to a faction's advantage to run as many candidates in that faction as they can, creating the opposite of the [[spoiler effect]].  The teaming or "clone" effect is significant only where restrictions are placed on the candidate set.
 
 ==Criteria passed and failed==
 
