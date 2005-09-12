@@ -1,14 +1,17 @@
 '''Definite Majority Choice''' (DMC) is a single-winner [[voting method]] that
-uses ballots expressing both ranked preferences and approval. The name "DMC" was first suggested [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015164.html here]. The method was [http://lists.electorama.com/pipermail/election-methods-electorama.com/2001-March/005448.html first suggested] on the EM list by Forest Simmons in March 2001.
+uses ballots expressing both ordinal rank and approval rating. The name "DMC" was first suggested [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015164.html here]. Equivlalent methods have been suggested several times on the EM mailing list:
+* The [[Pairwise Sorted Approval]] equivalent was first proposed by Forest Simmons in  [http://lists.electorama.com/pipermail/election-methods-electorama.com/2001-March/005448.html March 2001].
+* The [[Ranked Approval Voting]] equivalent was first proposed by Kevin Venzke in [http://lists.electorama.com/pipermail/election-methods-electorama.com/2003-September/010799.html September 2003].
 
-The [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015144.html philosophical basis]) of DMC is to eliminate candidates that the voters strongly agree should ''not'' win, using two different strong measures, and choose the winner from among those that remain.
+The [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015144.html philosophical basis] of DMC is to eliminate candidates that the voters strongly agree should ''not'' win, using two different strong measures, and choose the undefeated candidate from those remaining.
 
-We call a candidate [[Techniques_of_method_design#Defeats_and_defeat_strength|definitively defeated]] when that candidate is defeated in a head-to-head contest against any other candidate with higher Approval score.  This kind of defeat is also called an ''Approval-consistent defeat''.
+We call a candidate [[Techniques_of_method_design#Defeats_and_defeat_strength|definitively defeated]] when that candidate is defeated in a head-to-head contest against any other candidate with higher Approval rating.  This kind of defeat is also called an ''Approval-consistent defeat''.
 
-To find the DMC winner, the candidates are divided into two groups:
-# Definitively defeated candidates.
-# Candidates that pairwise defeat all higher-approved candidates.  We call this group the '''definite majority set'''.
-The least-approved candidate in the definite majority set pairwise defeats ''all'' higher-approved candidates, including all other members of the definite majority set, and is the DMC winner.
+To find the DMC winner:
+# Eliminate all definitively defeated candidates.  The remaining candidates are called the '''definite majority set'''.  We also call these candidates the '''provisional set''' (or '''P-set'''), since the winner will be found from among that set.
+# Among P-set candidates, eliminate any candidate who is defeated by a lower-rated P-set opponent.
+# When there are no pairwise ties, there will be one remaining candidate.
+Note that the least-approved candidate in the P-set pairwise defeats ''all'' higher-approved candidates, including all other members of the definite majority set, and is the DMC winner.
 
 If there is a candidate who, when compared in turn with each of the others, is preferred over the other candidate, DMC guarantees that candidate will win.  Because of this property, DMC is (by definition) a '''[[Condorcet method]]'''.  Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and [[Instant-runoff voting]], which do not make this guarantee.
 
@@ -16,12 +19,12 @@ The DMC winner satisifies this variant of the [[Condorcet Criterion]]:
 
 :The Definite Majority Choice winner is the ''least-approved'' candidate who, when compared in turn with each of the other ''higher-approved'' candidates, is preferred over the other candidate.
 
-The main difference between DMC and Condorcet methods such as [[Ranked Pairs]] (RP), [[Schulze method|Cloneproof Schwartz Sequential Dropping]] (Beatpath or Schulze) and [[River]] is the use of the additional Approval score to break cyclic ambiguities.  If defeat strength is measured by the Total Approval score of the pairwise winner, all three other methods become equivalent to DMC (See [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015405.html proof]).  Therefore,
+The main difference between DMC and Condorcet methods such as [[Ranked Pairs]] (RP), [[Schulze method|Cloneproof Schwartz Sequential Dropping]] (Beatpath or Schulze) and [[River]] is the use of the additional Approval rating to break cyclic ambiguities.  If defeat strength is measured by the Total Approval rating of the pairwise winner, all three other methods become equivalent to DMC (See [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015405.html proof]).  Therefore,
 * DMC is a strong majority rule method.
-* When defeat strength is measured by the approval of the defeating candidate, DMC is the only possible immune ([[Condorcet_method#Key_terms_in_ambiguity_resolution|cloneproof]]) method.
+* When defeat strength is measured by the approval rating of the defeating candidate, DMC is the only possible immune ([[Condorcet_method#Key_terms_in_ambiguity_resolution|cloneproof]]) method.
 
 DMC is also equivalent to [[Ranked Approval Voting]] (RAV) (also known as
-Approval Ranked Concorcet), and [[Pairwise Sorted Approval]] (PSA):  DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Eliminating the definitively defeated candidates from consideration has the effect of successively eliminating the least approved candidate in the Smith set and then recalculating the new Smith set until a single winner exists, which is why DMC is equivalent to RAV.  But the definite majority set may also contain higher-approved candidates outside the Smith set.  For example, the [[Approval_voting|Approval]] winner will always be a member of the definite majority set, because it cannot be definitively defeated.
+Approval Ranked Concorcet), and [[Pairwise Sorted Approval]] (PSA):  DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Eliminating the definitively defeated candidates from consideration has the effect of successively eliminating the least approved candidate until a single undefeated candidate exists, which is why DMC is equivalent to RAV.  But the definite majority set may also contain higher-approved candidates outside the Smith set.  For example, the [[Approval_voting|Approval]] winner will always be a member of the definite majority set, because it cannot be definitively defeated.
 
 Some believe that DMC is currently the best candidate for a Condorcet Method that meets the [[Public Acceptability Criterion|Public Acceptability "Criterion"]].
 
