@@ -6,7 +6,7 @@ uses ballots expressing both ordinal rank and approval rating. The name "DMC" wa
 The [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015144.html philosophical basis] of DMC is to eliminate candidates that the voters strongly agree should ''not'' win, using two different strong measures, and choose the undefeated candidate from those remaining.
 
 The one-line ([[Ranked Approval Voting]]) heuristic for determining the DMC winner is:
-* While no undefeated candidates exist, eliminate the least-approved candidate.
+:'''While no undefeated candidates exist, eliminate the least-approved candidate.'''
 
 An equivalent, more technical explanation follows.
 
