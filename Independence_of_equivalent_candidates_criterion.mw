@@ -4,6 +4,6 @@ Equivalent candidates are a group of candidates that are supportively ranked in 
 
 A voting method is said to be independent of equivalent candidates if the addition or removal of a equivalent candidate from a particular set of equivalent candidates in the tally, would only change the winner to another member of the set, if the original winner was a member of that set.
 
-Methods that satisfy this criterion are [[approval voting]], [[range voting]], [[Bucklin voting]], [[Schulze method]], and [[Instant-runoff voting]].
+Methods that satisfy this criterion are [[approval voting]], [[range voting]], [[Schulze method]], and [[Instant-runoff voting]].
 
 Independence of equivalent candidates is a weakened form of the [[independence of irrelevant alternatives]] criterion.
