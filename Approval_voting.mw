@@ -14,7 +14,7 @@ Supposing that voters voted for their two favorite candidates, the results would
 *Knoxville: 32 total votes
 
 ==Potential for tactical voting==
-Approval voting passes a form of the [[monotonicity criterion]], in that voting for a candidate never lowers that candidate's chance of winning.  Indeed, there is never a reason for a voter to [[tactical voting|tactically vote]] for a candidate X without voting for all candidates he or she prefers to candidate X.  Approval voting satisfies the [[monotonicity criterion]], the [[participation criterion]], the [[Consistency Criterion]], the [[summability criterion]], the [[weak defensive strategy criterion]], [[Independence of irrelevant alternatives]], the [[Non-compulsory support criterion]] and the [[Independence of equivalent candidates criterion]].
+Approval voting passes a form of the [[monotonicity criterion]], in that voting for a candidate never lowers that candidate's chance of winning.  Indeed, there is never a reason for a voter to [[tactical voting|tactically vote]] for a candidate X without voting for all candidates he or she prefers to candidate X.  Approval voting satisfies the [[monotonicity criterion]], the [[participation criterion]], the [[Consistency Criterion]], the [[summability criterion]], the [[Weak defensive strategy criterion]], [[Independence of irrelevant alternatives]], the [[Non-compulsory support criterion]] and the [[Independence of equivalent candidates criterion]].
 .
 
 ===Proper strategy for voters ===
