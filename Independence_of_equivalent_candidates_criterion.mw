@@ -7,3 +7,5 @@ A voting method is said to be independent of equivalent candidates if the additi
 Methods that satisfy this criterion are [[approval voting]], [[range voting]], [[Schulze method]], and [[Instant-runoff voting]].
 
 Independence of equivalent candidates is a weakened form of the [[independence of irrelevant alternatives]] criterion.
+
+[[Binary independence condition]]
