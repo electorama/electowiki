@@ -1,0 +1,10 @@
+'''Binary independence''' is a condition in [[Arrow's theorem]].
+A [[voting method]] F satisfies binary independence if and only if the
+following condition holds; Let A and B be two candidates, and let p1 and p2 be
+two profiles where each voter's preference for A vs. B in p1 agrees with her A vs. B
+preference in p2. Then F gives the same A vs. B ranking for both p1 and p2.
+
+The Binary Independence condition requires that in determining the A vs. B outcome, we
+cannot consider the voter's preferences for B vs. C or C vs. A.
+
+Rated methods such as [[Approval voting]] and [[Range voting]] do satisfy binary independence.
