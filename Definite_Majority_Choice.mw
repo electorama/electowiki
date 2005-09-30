@@ -1,12 +1,27 @@
-'''Definite Majority Choice''' (DMC) is a single-winner [[voting method]] that
-uses ballots expressing both ordinal rank and approval rating. The name "DMC" was first suggested [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015164.html here]. Equivlalent methods have been suggested several times on the EM mailing list:
+'''Definite Majority Choice''' (DMC), also known as '''Ranked Approval Voting''' (RAV) is a single-winner [[voting method]] which uses a hybrid ballot combining both ordinal ranking and approval rating.  The method is summarized as
+'''While no undefeated candidates exist, eliminate the least-approved candidate.'''
+
+''Page refactoring in progress.  Comments welcome.--[[User:Araucaria|Araucaria]] 11:41, 30 Sep 2005 (PDT)''
+
+== Procedure ==
+# Voters cast [[Preferential voting|ranked ballots]], ranking as many candidates as they like.  Equal ranking of candidates is allowed.
+# By default, all ranked candidates are considered [[Approval voting|approved]].  If the voter doesn't approve of some of the ranked candidates, an [[Approval Cutoff|approval cutoff]] can be placed at some rank, indicating that all candidates at that rank and below are disapproved.
+# Ballots are tabulated into a pairwise array containing results for each head-to-head contest (see [[Definite_Majority_Choice#Tallying_Votes|example]] below).  Total approval rating for each candidate is also tabulated.
+# The winner is the candidate who, when compared with every other (un-dropped) candidate, is preferred over the other candidate.
+# If no undefeated candidates exist, the least-approved candidate is dropped, and we return to step 4.
+
+== Properties ==
+DMC satisfies the following properties:
+* DMC satisfies the four [[Majority#Majority_rule.2FMajority_winner_-_Four_Criteria|strong majority rule]] criteria.
+* When defeat strength is measured by the pairwise winner's approval rating, DMC is equivalent to [[Ranked Pairs]], [[Schulze method|Cloneproof Schwarz Sequential Dropping]] and [[River]], and is the only strong majority method.
+* No candidate can win under DMC if defeated by a higher-approved candidate.
+
+== Background ==
+The name "DMC" was first suggested [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015164.html here]. Equivlalent methods have been suggested several times on the EM mailing list:
 * The [[Pairwise Sorted Approval]] equivalent was first proposed by Forest Simmons in  [http://lists.electorama.com/pipermail/election-methods-electorama.com/2001-March/005448.html March 2001].
-* The [[Ranked Approval Voting]] equivalent was first proposed by Kevin Venzke in [http://lists.electorama.com/pipermail/election-methods-electorama.com/2003-September/010799.html September 2003].
+* The Ranked Approval Voting equivalent was first proposed by Kevin Venzke in [http://lists.electorama.com/pipermail/election-methods-electorama.com/2003-September/010799.html September 2003].  The name was suggested by Russ Paielli in 2005.
 
-The [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015144.html philosophical basis] of DMC is to eliminate candidates that the voters strongly agree should ''not'' win, using two different strong measures, and choose the undefeated candidate from those remaining.
-
-The one-line ([[Ranked Approval Voting]]) heuristic for determining the DMC winner is:
-:'''While no undefeated candidates exist, eliminate the least-approved candidate.'''
+The [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015144.html philosophical basis] of DMC is to eliminate candidates that the voters strongly agree should ''not'' win, using two strong measures, and choose the undefeated candidate from those remaining.
 
 An equivalent, more technical explanation follows.
 
@@ -18,7 +33,7 @@ To find the DMC winner:
 # When there are no pairwise ties, there will be one remaining candidate.
 Note that the least-approved candidate in the P-set pairwise defeats ''all'' higher-approved candidates, including all other members of the definite majority set, and is the DMC winner.
 
-If there is a candidate who, when compared in turn with each of the others, is preferred over the other candidate, DMC guarantees that candidate will win.  Because of this property, DMC is (by definition) a '''[[Condorcet method]]'''.  Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and [[Instant-runoff voting]], which do not make this guarantee.
+If there is a candidate who, when compared in turn with each of the others, is preferred over the other candidate, DMC guarantees that candidate will win. Because of this property, DMC is (by definition) a '''[[Condorcet method]]'''. Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and [[Instant-runoff voting]], which do not make this guarantee.
 
 The DMC winner satisifies this variant of the [[Condorcet Criterion]]:
 
@@ -31,10 +46,8 @@ The main difference between DMC and Condorcet methods such as [[Ranked Pairs]] (
 DMC is also equivalent to [[Ranked Approval Voting]] (RAV) (also known as
 Approval Ranked Concorcet), and [[Pairwise Sorted Approval]] (PSA):  DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Eliminating the definitively defeated candidates from consideration has the effect of successively eliminating the least approved candidate until a single undefeated candidate exists, which is why DMC is equivalent to RAV.  But the definite majority set may also contain higher-approved candidates outside the Smith set.  For example, the [[Approval_voting|Approval]] winner will always be a member of the definite majority set, because it cannot be definitively defeated.
 
-Some believe that DMC is currently the best candidate for a Condorcet Method that meets the [[Public Acceptability Criterion|Public Acceptability "Criterion"]].
-
-== Procedure ==
-Before explaining how the ballots elicit the approval and pairwise preference information from the voters, let's consider a simple example of how that information is used to determine the DMC winner.
+== Example ==
+Here is a simple example of how ranking and approval information is used to determine the DMC winner.
 
 Suppose that the candidates (in order of approval) are
 
@@ -75,50 +88,45 @@ The ideal state of affairs is that the highest approval candidate pairwise defea
 Now for the nitty gritty of collecting approval and pairwise preference information from the voters. First we'll illustrate how the method works with a deliberately crude ballot and then explore other ballot formats.
 
 === Simple ballot example ===
-A voter ranks candidates in order of preference, additionally giving approval points to some or all of those ranked, using a ballot like the following:
+A voter ranks candidates in order of preference, additionally indicating approval cutoff, using a ballot like the following:
 <pre>
-         +-----------------------+---------------+
-         |<-- Favorite        Least Preferred -->|
-         +-----------------------+---------------+
-         |<--    Approved     -->|  Not Approved |
-         +-------+-------+-------+-------+-------+
-         |   1   |   2   |   3   |   4   |   5   |
-  -------+-------+-------+-------+-------+-------+
-      X1 |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
-         |       |       |       |       |       |
-      X2 |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
-         |       |       |       |       |       |
-      X3 |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
-         |       |       |       |       |       |
-      X4 |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
-  -------+-------+-------+-------+-------+-------+
+             +-----------------------+---------------+
+             |                RANKING                |
+             +-------+-------+-------+-------+-------+
+             |   1   |   2   |   3   |   4   |   5   |
+ ------------+-------+-------+-------+-------+-------+
+          X1 |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
+             |       |       |       |       |       |
+          X2 |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
+             |       |       |       |       |       |
+          X3 |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
+             |       |       |       |       |       |
+          X4 |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
+             |       |       |       |       |       |
+ DISAPPROVED |  ( )  |  ( )  |  ( )  |  ( )  |  ( )  |
+ ------------+-------+-------+-------+-------+-------+
 </pre>
-
-On this ballot,
-# Candidates ranked at 1st through 3rd choice get 1 approval point each.
-# Candidates ranked fourth, fifth and unranked receive no approval points.
-# A higher-ranked candidate is given one vote in each of its head-to-head contests with lower-ranked candidates.  In particular, all explicitly ranked candidates are given 1 vote in each of their contests with unranked candidates.
 
 As an example, say a voter ranked candidates as follows:
 <pre>
-         +-----------------------+---------------+
-         |<-- Favorite        Least Preferred -->|
-         +-----------------------+---------------+
-         |<--    Approved     -->|  Not Approved |
-         +-------+-------+-------+-------+-------+
-         |   1   |   2   |   3   |   4   |   5   |
-  -------+-------+-------+-------+-------+-------+
-      X1 |  ( )  |  ( )  |  ( )  |  (X)  |  ( )  |
-         |       |       |       |       |       |
-      X2 |  (X)  |  ( )  |  ( )  |  ( )  |  ( )  |
-         |       |       |       |       |       |
-      X3 |  ( )  |  ( )  |  ( )  |  ( )  |  (X)  |
-         |       |       |       |       |       |
-      X4 |  ( )  |  (X)  |  ( )  |  ( )  |  ( )  |
-  -------+-------+-------+-------+-------+-------+
+             +-----------------------+---------------+
+             |                RANKING                |
+             +-------+-------+-------+-------+-------+
+             |   1   |   2   |   3   |   4   |   5   |
+ ------------+-------+-------+-------+-------+-------+
+          X1 |  ( )  |  ( )  |  ( )  |  (X)  |  ( )  |
+             |       |       |       |       |       |
+          X2 |  (X)  |  ( )  |  ( )  |  ( )  |  ( )  |
+             |       |       |       |       |       |
+          X3 |  ( )  |  ( )  |  ( )  |  ( )  |  (X)  |
+             |       |       |       |       |       |
+          X4 |  ( )  |  (X)  |  ( )  |  ( )  |  ( )  |
+             |       |       |       |       |       |
+ DISAPPROVED |  ( )  |  ( )  |  (X)  |  ( )  |  ( )  |
+ ------------+-------+-------+-------+-------+-------+
 </pre>
 
-This ballot could be summarized briefly using the notation
+We summarize this ballot as
   X2 > X4 >> X1 > X3
 where the ">>" indicates the approval cutoff --- candidates to the right of that sign receive no approval votes.  This ballot is counted as
   X2 > X2  (approval point)
@@ -129,6 +137,8 @@ where the ">>" indicates the approval cutoff --- candidates to the right of that
   X4 > X1
   X4 > X3
   X1 > X3
+
+Alternatively, we treat '''Disapproved''' (D) as another candidate, and treat votes against D as approval points.
 
 === Tallying Votes ===
 As in other [[Condorcet method]]s, the rankings on a single ballot are added into a round-robin table using the standard [[Condorcet_method#Counting_with_matrices|Condorcet pairwise matrix]]:  when a ballot ranks / grades one candidate higher than another, it means the higher-ranked candidate receives one vote in the head-to-head contest against the other.
@@ -248,7 +258,7 @@ If equal approval scores affect the outcome (which only occurs when there is no 
 # If equal, in descending order of total first- and second-place votes
 # If equal, in descending order of total first-place votes
 # If equal, in descending order of "Grade Point Average" (i.e., total Cardinal Rating)
-With ranked choice ballots, the Bucklin count is determined by first counting all first place votes, then successively adding in lower preference votes until one candidate has more than 50%.  This is a graduated form of approval.  When an approval cutoff is added to the ballot, however, we make this additional change -- the lower preference votes are not added into the Bucklin scores if they are below the cutoff.
+With ranked choice ballots, the Bucklin count is determined by first counting all first place votes, then successively adding in lower preference votes until one candidate has more than 50%.  This is a graduated form of approval. When an approval cutoff is added to the ballot, however, we make this additional change -- the lower preference votes are not added into the Bucklin scores if they are below the cutoff.
 
 ==== Pairwise Ties ====
 When there are no ties, the winner is the least approved member of the definite majority ([[Techniques_of_method_design#Special_sets|P]]) set.
