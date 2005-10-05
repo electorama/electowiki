@@ -1,14 +1,14 @@
-'''Cloneproof Schwartz Sequential Dropping''' ('''CSSD''') is a [[voting system]] developed by Markus Schulze that selects a single winner using votes that express preferences.  CSSD can also be used to create a sorted list of winners.  CSSD is also known as "Schwartz Sequential Dropping", "Beatpath Method", "Beatpath Winner", "Path Voting", "Path Winner", and "Schulze Method".
+The '''Schulze method''' is a [[voting system]] developed by Markus Schulze that selects a single winner using votes that express preferences. The Schulze method can also be used to create a sorted list of winners. The Schulze method is also known as "cloneproof Schwartz sequential dropping" (CSSD), "Schwartz sequential dropping" (SSD), "beatpath method", "beatpath winner", "path voting", and "path winner".
 
 If there is a candidate who is preferred over the other candidates,
-when compared in turn with each of the others, CSSD guarantees that that candidate will win.
-Because of this property, CSSD is (by definition) a '''[[Condorcet method]]'''.
+when compared in turn with each of the others, the Schulze method guarantees that that candidate will win.
+Because of this property, the Schulze method is (by definition) a [[Condorcet method]].
 Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and
 [[Instant-runoff voting]], which do not make this guarantee.
 
 == The Schwartz Set ==
 
-The definition of a [[Schwartz set]], as used in CSSD, is as follows:
+The definition of a [[Schwartz set]], as used in the Schulze method, is as follows:
 
 # An unbeaten set is a set of candidates of whom none is beaten by anyone outside that set. 
 # An innermost unbeaten set is an unbeaten set that doesn't contain a smaller unbeaten set. 
@@ -18,9 +18,9 @@ The definition of a [[Schwartz set]], as used in CSSD, is as follows:
 
 The voters cast their ballots by ranking the candidates according to their preferences, just like for any other Condorcet election.
 
-CSSD uses [[Condorcet method|Condorcet]] pairwise matchups between the candidates and a winner is chosen in each of the matchups.
+The Schulze method uses [[Condorcet method|Condorcet]] pairwise matchups between the candidates and a winner is chosen in each of the matchups.
 
-From there, CSSD operates as follows to select a winner (or create a ranked list):
+From there, the Schulze method operates as follows to select a winner (or create a ranked list):
 
 # Calculate the Schwartz set based only on undropped defeats. 
 # If there are no defeats among the members of that set then they (plural in the case of a tie) win and the count ends. 
@@ -147,7 +147,7 @@ Let's say there was an ambiguity.  For a simple situation involving candidates A
 
 In this situation the Schwartz set is A, B, and C as they all beat someone.
 
-CSSD then says to drop the weakest defeat, so we drop C > A and are left with
+The Schulze method then says to drop the weakest defeat, so we drop C > A and are left with
 
 * A > B 72% (as C has been removed)
 
@@ -164,7 +164,7 @@ Using the [[first-past-the-post]] system and some other systems, Memphis would h
 
 == History ==
 
-See http://lists.electorama.com/pipermail/election-methods-electorama.com/2003-December/011477.html
+The Schulze method has been proposed by Markus Schulze in 1997. See e.g. [http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/1998-August/001958.html here], [http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/1998-August/002044.html here], and [http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/1998-November/002771.html here]!
 
 == Satisfied Criteria ==
 
@@ -226,6 +226,7 @@ The Schulze method is not currently used in government elections.  However, it i
 Furthermore, the fact that the Schulze method is a part of [http://www.debian.org/ Debian's] voting software ("Debian Vote Engine", Devotee) means that it is the standard voting system in all Debian user groups (DUGs).
 
 == External Resources ==
+
 * [http://groups.yahoo.com/group/election-methods-list/ A mailing list containing technical discussions about election methods]
 * [http://electionmethods.org/ electionmethods.org] where CSSD is also called "Schwartz Sequential Dropping" and "Beatpath Winner"
 * [http://www.condorcet.org/emr/index.shtml Election Methods Resource] where CSSD is called "Schulze"
