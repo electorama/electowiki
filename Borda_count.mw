@@ -35,13 +35,13 @@ The points are added up across all the ballots, and the candidate with the most 
 
 Nashville is the winner in this election, as it has the most points.  Nashville also happens to be the [[Condorcet winner]] in this case. While the Borda count does not always select the Condorcet winner as the Borda Count winner, it always ranks the Condorcet winner above the Condorcet loser.  No other positional method can guarantee such a relationship.
 
-==Potential for tactical voting==
+Like most voting methods, The Borda count is vulnerable to compromising. That is, voters can help avoid the election of a less-preferred candidate by insincerely raising the position of a more-preferred candidate on their ballot.
 
-Like most voting methods, The Borda count is vulnerable to [[tactical voting|compromising]]. That is, voters can help avoid the election of a less-preferred candidate by insincerely raising the position of a more-preferred candidate on their ballot.
+The Borda count is also vulnerable to burying. That is, voters can help a more-preferred candidate by insincerely lowering the position of a less-preferred candidate on their ballot.
 
-The Borda count is also vulnerable to [[tactical voting|burying]]. That is, voters can help a more-preferred candidate by insincerely lowering the position of a less-preferred candidate on their ballot.
+For example, if there are two candidates whom a voter considers to be the most likely to win, the voter can maximize their impact on the contest between these candidates by ranking the candidate whom they like more in first place, and ranking the candidate whom they like less in last place. If neither candidate is their sincere first or last choice, the voter is employing both the compromising and burying strategies at once. If many voters employ such strategies, then the result will no longer reflect the sincere preferences of the electorate.
 
-The effects of tactical voting decrease as the number of voters increases.
+In response to the issue of strategic manipulation in the Borda count, M. de Borda said "My scheme is only intended for honest men."
 
 ==Effect on factions and candidates==
 
