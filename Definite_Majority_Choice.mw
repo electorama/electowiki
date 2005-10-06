@@ -1,10 +1,11 @@
-'''Definite Majority Choice''' (DMC), also known as '''Ranked Approval Voting''' (RAV) is a single-winner [[voting method]] which uses a hybrid ballot combining both ordinal ranking and approval rating.  The method is summarized as
+'''Definite Majority Choice''' (DMC), also known as '''Ranked Approval Voting''' (RAV) is a single-winner [[voting method]] which uses a hybrid ballot combining both ordinal ranking and approval rating. The method is summarized as
 :'''While no undefeated candidates exist, eliminate the least-approved candidate.'''
+See also [[Proposed Statutory Rules for DMC]].
 
 ''Page refactoring in progress.  Comments welcome.--[[User:Araucaria|Araucaria]] 11:41, 30 Sep 2005 (PDT)''
 
 == Procedure ==
-# Voters cast [[Preferential voting|ranked ballots]], ranking as many candidates as they like.  Equal ranking of candidates is allowed.
+# Voters cast [[Preferential voting|ranked ballots]], ranking as many candidates as they like.  Equal ranking of candidates is allowed.  Write-in candidates are allowed.  Unranked candidates are allowed.  There are sufficient ranks to allow ranking each candidate separately, ranking all candidates approved, or all candidates disapproved.
 # By default, all ranked candidates are considered [[Approval voting|approved]].  If the voter doesn't approve of some of the ranked candidates, an [[Approval Cutoff|approval cutoff]] can be placed at some rank, indicating that all candidates at that rank and below are disapproved.
 # Ballots are tabulated into a pairwise array containing results for each head-to-head contest (see [[Definite_Majority_Choice#Tallying_Votes|example]] below).  Total approval rating for each candidate is also tabulated.
 # The winner is the candidate who, when compared with every other (un-dropped) candidate, is preferred over the other candidate.
@@ -18,7 +19,7 @@ DMC satisfies the following properties:
 
 == Background ==
 The name "DMC" was first suggested [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015164.html here]. Equivlalent methods have been suggested several times on the EM mailing list:
-* The [[Pairwise Sorted Approval]] equivalent was first proposed by Forest Simmons in  [http://lists.electorama.com/pipermail/election-methods-electorama.com/2001-March/005448.html March 2001].
+* The [[Pairwise Sorted Approval]] equivalent was first proposed by Forest Simmons in [http://lists.electorama.com/pipermail/election-methods-electorama.com/2001-March/005448.html March 2001].
 * The Ranked Approval Voting equivalent was first proposed by Kevin Venzke in [http://lists.electorama.com/pipermail/election-methods-electorama.com/2003-September/010799.html September 2003].  The name was suggested by Russ Paielli in 2005.
 
 The [http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-March/015144.html philosophical basis] of DMC is to eliminate candidates that the voters strongly agree should ''not'' win, using two strong measures, and choose the undefeated candidate from those remaining.
@@ -269,6 +270,7 @@ Alternatively, the winner could be decided by using a random ballot to choose th
 
 == See Also ==
 
+*[[Proposed Statutory Rules for DMC]]: The rules for DMC in a form that would be suitable for adoption by a state legislature.
 * [[Imagine Democratic Fair Choice]]:  a method that picks its winner from the same P set as DMC.  It currently uses a 'slate' ballot similar to the one suggested above.
 * [[Pairwise Sorted Methods]]
 * [[Marginal Ranked Approval Voting]]:  chooses the winner from a subset of the definite majority set.
