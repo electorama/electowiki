@@ -20,7 +20,7 @@ the voter is allowed to leave some scores blank to denote <i>ignorance</i>
 about those candidates.
 
 Range voting satisfies the [[monotonicity criterion]], the [[participation criterion]], the [[Consistency Criterion]], the [[summability criterion]], the [[Favorite Betrayal criterion]], [[Independence of irrelevant alternatives]], the [[Non-compulsory support criterion]] and the [[Independence of clones criterion]].
-Range voting is a [[Smith method]] and elects the [[Smith winner]].
+Range voting is a [[Smith method]] and elects the [[Smith winner]] if one exists.
 
 == Counting the Votes ==
 
