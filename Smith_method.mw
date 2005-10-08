@@ -1,3 +1,1 @@
-A '''Smith method''' elects the "beats-all-winner" who would beat every other candidate in the two-choice head-to-head election got by erasing every other candidate from all votes. Smith method is a generalization of [[Condorcet method]] to encompass rated voting methods. A Smith method always elects a [[Smith winner]] if one exists. 
-
-"Smith method" could also simply mean a method that always elects from the [[Smith set]].
+A Smith method is any voting method that it always elects a "beats-all-winner" if one exists. A "beats-all-winner" is a candidate who would beat every other candidate in the two-choice head-to-head election got by erasing every other candidate from all votes.
