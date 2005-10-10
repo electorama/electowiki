@@ -1,6 +1,6 @@
 '''Descending Acquiescing Coalitions''' or '''DAC''' is a [[voting system]] devised by Douglas Woodall for ranked ballots. It is equivalent to [[Descending Solid Coalitions]], except that sets are scored not by the number of voters solidly committed to them, but by the number of voters ''acquiescing'' to them. A voter "acquiesces" to a set of candidates if he does not strictly prefer any candidate outside of the set to any candidate within the set.
 
-Unlike DSC, DAC does not satisfy the [[Later-no-harm criterion]].
+Unlike DSC, DAC does not satisfy the [[Later-no-harm criterion]], but it does, unlike DSC, satisfy the [[Later-no-help criterion]].
 
 When no voter uses equal rankings or truncation, then DSC and DAC give the same results.
 
