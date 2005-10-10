@@ -12,9 +12,9 @@ A variation of this method is [[Descending Acquiescing Coalitions]].
 
 == Properties ==
 
-DSC satisfies the [[Plurality criterion]], the [[Mutual majority criterion|Majority criterion]], [[Monotonicity criterion|Mono-raise]], [[Mono-add-top criterion|Mono-add-top]], the [[Participation criterion]], [[Later-no-harm criterion|Later-no-harm]], and Clone Independence.
+DSC satisfies the [[Plurality criterion]], the [[Mutual majority criterion|Majority criterion]], [[Monotonicity criterion|Mono-raise]], [[Mono-add-top criterion|Mono-add-top]], the [[Participation criterion]], [[Later-no-harm criterion|Later-no-harm]] and Clone Independence.
 
-DSC fails the [[Condorcet criterion]] and [[Smith set|Smith criterion]].
+DSC fails the [[Condorcet criterion]], the [[Smith set|Smith criterion]] and the [[Later-no-help criterion]].
 
 DSC can be considered a [[Plurality voting|First-Preference Plurality]] variant that satisfies Clone Independence. It (along with [[Descending Acquiescing Coalitions|DAC]]) is the most complicated method satisfying the [[Participation criterion]].
 
