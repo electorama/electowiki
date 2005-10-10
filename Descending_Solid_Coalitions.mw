@@ -16,7 +16,7 @@ DSC satisfies the [[Plurality criterion]], the [[Mutual majority criterion|Major
 
 DSC fails the [[Condorcet criterion]] and [[Smith set|Smith criterion]].
 
-DSC can be considered a [[Plurality voting|First-Preference Plurality]] variant that satisfies Clone Independence. It (along with [[DAC]]) is the most complicated method satisfying the [[Participation criterion]].
+DSC can be considered a [[Plurality voting|First-Preference Plurality]] variant that satisfies Clone Independence. It (along with [[Descending Acquiescing Coalitions|DAC]]) is the most complicated method satisfying the [[Participation criterion]].
 
 ===Example===
 {{Tenn_voting_example}}
