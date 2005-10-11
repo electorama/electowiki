@@ -48,43 +48,132 @@ DMC is also equivalent to [[Ranked Approval Voting]] (RAV) (also known as
 Approval Ranked Concorcet), and [[Pairwise Sorted Approval]] (PSA):  DMC always selects the [[Condorcet Criterion|Condorcet Winner]], if one exists, and otherwise selects a member of the [[Smith set]].  Eliminating the definitively defeated candidates from consideration has the effect of successively eliminating the least approved candidate until a single undefeated candidate exists, which is why DMC is equivalent to RAV.  But the definite majority set may also contain higher-approved candidates outside the Smith set.  For example, the [[Approval_voting|Approval]] winner will always be a member of the definite majority set, because it cannot be definitively defeated.
 
 == Example ==
-Here is a simple example of how ranking and approval information is used to determine the DMC winner.
+Here's a set of preferences taken from Rob LeGrand's [http://cec.wustl.edu/~rhl1/rbvote/calc.html online voting calculator].  We indicate the approval cutoff using '''>>'''.
 
-Suppose that the candidates (in order of approval) are
+The ranked ballots:
+<pre>
+ 98: Abby >  Cora >  Erin >> Dave > Brad
+ 64: Brad >  Abby >  Erin >> Cora > Dave
+ 12: Brad >  Abby >  Erin >> Dave > Cora
+ 98: Brad >  Erin >  Abby >> Cora > Dave
+ 13: Brad >  Erin >  Abby >> Dave > Cora
+125: Brad >  Erin >> Dave >  Abby > Cora
+124: Cora >  Abby >  Erin >> Dave > Brad
+ 76: Cora >  Erin >  Abby >> Dave > Brad
+ 21: Dave >  Abby >> Brad >  Erin > Cora
+ 30: Dave >> Brad >  Abby >  Erin > Cora
+ 98: Dave >  Brad >  Erin >> Cora > Abby
+139: Dave >  Cora >  Abby >> Brad > Erin
+ 23: Dave >  Cora >> Brad >  Abby > Erin
+</pre>
 
-John
+The pairwise matrix, with the victorious and approval scores highlighted:
+<table border cellpadding=3>
+<tr align="center"><td colspan=2 rowspan=2></td><th colspan=5>against</th></tr>
+<tr align="center"><td class="against"><span class="cand">Abby</span></td><td class="against"><span class="cand">Brad</span></td><td class="against"><span class="cand">Cora</span></td><td class="against"><span class="cand">Dave</span></td><td class="against"><span class="cand">Erin</span></td></tr>
+<tr align="center">
+<th rowspan=5>for</th>
+<td class="for"><span class="cand">Abby</span></td>
+<td bgcolor="yellow">645</td>
+<td class="loss">458</td>
+<td bgcolor="yellow">461</td>
+<td bgcolor="yellow">485</td>
+<td bgcolor="yellow">511</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Brad</span></td>
+<td bgcolor="yellow">463</td>
+<td bgcolor="yellow">410</td>
+<td bgcolor="yellow">461</td>
+<td class="loss">312</td>
+<td bgcolor="yellow">623</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Cora</span></td>
+<td class="loss">460</td>
+<td class="loss">460</td>
+<td bgcolor="yellow">460</td>
+<td class="loss">460</td>
+<td class="loss">460</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Dave</span></td>
+<td class="loss">436</td>
+<td bgcolor="yellow">609</td>
+<td bgcolor="yellow">461</td>
+<td bgcolor="yellow">311</td>
+<td class="loss">311</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Erin</span></td>
+<td class="loss">410</td>
+<td class="loss">298</td>
+<td bgcolor="yellow">461</td>
+<td bgcolor="yellow">610</td>
+<td bgcolor="yellow">708</td>
+</tr>
+</table>
 
-Jane
+The candidates in descending order of approval are Erin, Abby, Cora, Brad, Dave.
 
-Jill
+After reordering the pairwise matrix, it looks like this:
 
-Jack
+<table border cellpadding=3>
+<tr align="center"><td colspan=2 rowspan=2></td><th colspan=5>against</th></tr>
+<tr align="center">
+<td class="against"><span class="cand">Erin</span></td>
+<td class="against"><span class="cand">Abby</span></td>
+<td class="against"><span class="cand">Cora</span></td>
+<td class="against"><span class="cand">Brad</span></td>
+<td class="against"><span class="cand">Dave</span></td>
+</tr>
+<tr align="center">
+<th rowspan=5>for</th>
+<td class="for"><span class="cand">Erin</span></td>
+<td bgcolor="yellow">708</td>
+<td class="loss">410</td>
+<td bgcolor="yellow">461</td>
+<td class="loss">298</td>
+<td bgcolor="yellow">610</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Abby</span></td>
+<td bgcolor="yellow">511</td>
+<td bgcolor="yellow">645</td>
+<td bgcolor="yellow">461</td>
+<td class="loss">458</td>
+<td bgcolor="yellow">485</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Cora</span></td>
+<td class="loss">460</td>
+<td class="loss">460</td>
+<td bgcolor="yellow">460</td>
+<td class="loss">460</td>
+<td class="loss">460</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Brad</span></td>
+<td bgcolor="yellow">623</td>
+<td bgcolor="yellow">463</td>
+<td bgcolor="yellow">461</td>
+<td bgcolor="yellow">410</td>
+<td class="loss">312</td>
+</tr>
+<tr align="center">
+<td class="for"><span class="cand">Dave</span></td>
+<td class="loss">311</td>
+<td class="loss">436</td>
+<td bgcolor="yellow">461</td>
+<td bgcolor="yellow">609</td>
+<td bgcolor="yellow">311</td>
+</tr>
+</table>
 
-Jean
-
-and that the only two "downward" majority preferences are Jill to Jack and Jane to Jean.
-
-We are assuming that all other majority preferences are directed upward:
-
-Jane defeats John,
-
-Jill defeats both Jane and John,
-
-Jack defeats both Jane and John, and
-
-Jean defeats John, Jill, and Jack.
-
-The downward or "approval consistent" preferences are enforced by eliminating Jack and Jean.
-
-Jill (pairwise) defeats both of the remaining candidates, so Jill is the DMC winner.
-
-Note that Jill is the lowest approval candidate that pairwise defeats each of the higher approved candidates.  This property is obviously true of the [[Condorcet Criterion|Condorcet Winner]] when there is one, and completely determines the DMC winner, as well.
-
-At first blush "least approved" may sound bad, but if we did not use the least approved candidate with the "defeat all above" property, then there would be another candidate that defeated everybody "seeded" above our candidate while defeating our candidate, too.
-
-The lower the candidate with the "defeat all above" property, the greater the solid list of highly seeded candidates that it defeats.
-
-The ideal state of affairs is that the highest approval candidate pairwise defeats all candidates below it, in which case it is simultaneously the Approval Winner, the Condorcet Winner, and the DMC winner.  This is the expected state of affairs when there is no ambiguity in the will of the voters.
+To find the winner,
+* We start at the lower right diagonal entry, and start moving upward and leftward along the diagonal.
+* We eliminate the least approved candidate until one of the higher-approved remaining candidates has a solid row of victories in non-eliminated columns.
+* Dave is eliminated first, and Brad pairwise defeats all remaining candidates.  So Brad is the DMC winner.
 
 Now for the nitty gritty of collecting approval and pairwise preference information from the voters. First we'll illustrate how the method works with a deliberately crude ballot and then explore other ballot formats.
 
@@ -142,7 +231,7 @@ where the ">>" indicates the approval cutoff --- candidates to the right of that
 Alternatively, we treat '''Disapproved''' (D) as another candidate, and treat votes against D as approval points.
 
 === Tallying Votes ===
-As in other [[Condorcet method]]s, the rankings on a single ballot are added into a round-robin table using the standard [[Condorcet_method#Counting_with_matrices|Condorcet pairwise matrix]]:  when a ballot ranks / grades one candidate higher than another, it means the higher-ranked candidate receives one vote in the head-to-head contest against the other.
+As in other [[Condorcet method]]s, the rankings on a single ballot are added into a round-robin grid using the standard [[Condorcet_method#Counting_with_matrices|Condorcet pairwise matrix]]:  when a ballot ranks / grades one candidate higher than another, it means the higher-ranked candidate receives one vote in the head-to-head contest against the other.
 
 Since the diagonal cells in the Condorcet pairwise matrix are usually left blank, those locations can be used to store each candidate's Approval point score.
 
@@ -168,83 +257,10 @@ When pairwise totals are completed, we determine the outcome of a particular pai
 * the {row 2, column 2} (X2>X2) total approval score exceeds the {row 4, column 4} (X4>X4) total approval score.
 The winner is then determined as described above.
 
-==== A more intuitive ballot --- Ranking Candidates using Grades ====
-
-One barrier to public acceptance of DMC is the ballot design.  So how could the process be more intuitive, without sacrificing flexibility and expression?
-
-Many people are familiar with the standard method of giving grades A-plus through F-minus.   Most are also familiar with the Pass/Fail form of grading. A student receives grades from many instructors and on finishing school has a total grade point average or pass/fail total.
-
-A similar idea could be used to rank candidates -- a voter could grade candidates as if the voter were the instructor and the candidates were the students.  Determining the winner of the election would be similar to finding the student with the best set of grades.
-<pre>
-            A    B    C    D    F       +  /  -
-
-      X1   ( )  ( )  ( )  ( )  ( )     ( )   ( )
-
-      X2   ( )  ( )  ( )  ( )  ( )     ( )   ( )
-
-      X3   ( )  ( )  ( )  ( )  ( )     ( )   ( )
-
-      X3   ( )  ( )  ( )  ( )  ( )     ( )   ( )
-</pre>
-Like an instructor grading students, a voter may give the same grade (rank) to more than one candidate.   But here, there is one additional grade -- no grade at all.  Ungraded candidates are ranked lower than all graded candidates.  By giving one candidate a higher grade than another, the voter gives the higher-graded candidate one vote in its head-to-head contest with the lower-graded candidate.
-
-C is the "Lowest Passing Grade" (LPG):  any candidate with a grade of C or higher gets one Approval point.  No Approval points are given to candidates graded at C-minus or below (that includes ungraded candidates).
-
-A candidate's total approval score will be used like the 'seed' ranking in sports tournaments, to decide in which order head-to-head contests are to be scheduled.
-
-Grades assigned to non-passing (disapproved) candidates help determine which of them will win if the voter's approved candidates do not win.
-
-In small elections it should be adequate for a voter to grade only 2 or 3 candidates, but in crowded races, the voter could also fill in the plus or minus option to fine-tune the grade.  Plus/minus options allow a voter to distinguish up to 16 different rank levels:  8 approved (A-plus to C) and 8 unapproved (C-minus to unranked).
-
-Because we have fixed the Approval Cutoff / Lowest Passing Grade at C instead of C-minus, an indecisive voter has the opportunity to be hesitant about granting approval by initially filling in a grade of C.  If after reconsideration the voter decides to withold approval, the minus can then be checked.
-
-To avoid spoiled ballots, we count a grade with both plus and minus cells filled as no plus or minus at all.  So a truly indecisive voter could change a C grade to C-minus and back to C.
-
-==== An even simpler ballot --- Voting by slate ====
-In our modern world, there are sometimes too many choices available.  A voter who is confused by too many choices or hasn't had time to study issues carefully might benefit by using a published preference slate, as has been suggested by the [[Imagine Democratic Fair Choice|Democratic Fair Choice]] method:
-<pre>
-                     I      |  I also
-                  support   |  approve
-                 directly:  |    of:
-  --------------------------+----------
-  Anna              (X)     |    ( )
-  Bob               ( )     |    ( )
-  Cecil             ( )     |    (X)
-  Deirdre           ( )     |    (X)
-  Ellen             ( )     |    ( )
-  --------------------------+----------
-  Democrat          ( )     |    ---
-  Republican        ( )     |    ---
-  Libertarian       ( )     |    ---
-  Green             ( )     |    ---
-  Labor             ( )     |    ---
-  Progressive       ( )     |    ---
-  <local newspaper> ( )     |    ---
-  --------------------------+----------
-                    (vote   | (vote for as
-                     for    |  many candidates
-                   exactly  |  as you want)
-                     one)   |
-</pre>
-Each candidate, political organization or local newspaper could publish a preference and approval ranking, its "slate" for that particular race.
-
-By selecting a slate, the voter is saying that they want to simply copy the ranking, but if they also approve other candidates, they have the opportunity to move those candidates up in the ranking in the order they appear in the slate.
-
-Say the Libertarian slate for this race is
-<pre>
-    Deirdre (Lib.) >> Cecil (Reb.) > Ellen (Dem.) > Bob (Ind.) > Anna (Green)
-</pre>
-where we denote the approval cutoff using ">>".  Say the voter selects the libertarian slate but also approves Bob and Anna.  Then the ballot would be counted as
-<pre>
-    Deirdre (Lib.) > Bob (Ind.) > Anna (Green) >> Cecil (Reb.) > Ellen (Dem.)
-</pre>
-
 ==== Discussion ====
 What is a voter saying by giving a candidate a non-approved grade or rank?
 
-One could consider the Approval Cutoff / Lowest Passing Grade (LPG) to be like Gerald Ford.  Anybody better would make a good president, and anybody worse would be bad.
-
-Grading candidate X below the LPG gives the voter a chance to say "I don't want X to win, but of all the alternatives, X would make fewest changes in the wrong direction.  I also won't give X a passing grade because I want X to have as small a mandate as possible."  This allows the losing minority to have some say in the outcome of the election, instead of leaving the choice to the strongest core support within the majority faction.
+Disapproving a ranked candidate X gives the voter a chance to say "I don't want X to win, but of all the alternatives, X would make fewest changes in the wrong direction.  I won't approve X because I want X to have as small a mandate as possible."  This allows the losing minority to have some say in the outcome of the election, instead of leaving the choice in the hands of the strongest group of core supportors within the majority faction.
 
 === Handling Ties and Near Ties ===
 
@@ -254,12 +270,10 @@ During the initial ranking of candidates, two candidates may have the same appro
 
 If equal approval scores affect the outcome (which only occurs when there is no candidate who defeats all others), there are several alternatives for approval-tie-breaking.  The procedure that would be most in keeping with the spirit of DMC, however would be to initially rank candidates
 # In descending order of approval score
-# If equal, in descending order of Bucklin count
+# If equal, in descending order of total first- and second-place vote
 # If equal, in descending order of total first-, second- and third-place votes
-# If equal, in descending order of total first- and second-place votes
+# If equal, in descending order of ranks above last place
 # If equal, in descending order of total first-place votes
-# If equal, in descending order of "Grade Point Average" (i.e., total Cardinal Rating)
-With ranked choice ballots, the Bucklin count is determined by first counting all first place votes, then successively adding in lower preference votes until one candidate has more than 50%.  This is a graduated form of approval. When an approval cutoff is added to the ballot, however, we make this additional change -- the lower preference votes are not added into the Bucklin scores if they are below the cutoff.
 
 ==== Pairwise Ties ====
 When there are no ties, the winner is the least approved member of the definite majority ([[Techniques_of_method_design#Special_sets|P]]) set.
