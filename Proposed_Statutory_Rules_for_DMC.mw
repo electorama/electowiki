@@ -16,7 +16,7 @@ The ballot shall allow a voter to specify an ''approval cut-off'', either by ran
 ## Otherwise, if there are only two tied least-approved candidates, and one pairwise defeats the other, the pairwise loser shall be eliminated.
 ## Otherwise, eliminate the candidate with the lowest number of
 ### total ballots ranking that candidate in first or second place.
-### If equal, total ballots ranking that candidate in first, second and third place.
+### If equal, total ballots ranking that candidate in first, second or third place.
 ### If equal, total ballots ranking that candidate above last place.
 ### If equal, total ballots ranking that candidate in first place.
 
