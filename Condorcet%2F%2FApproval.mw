@@ -18,7 +18,7 @@ One drawback in proposing implicit approval of all explicitly ranked alternative
 
 Condorcet//Approval satisfies [[Condorcet criterion|Condorcet]] and always elects a majority favorite, but doesn't satisfy [[Smith set|Smith]] or the [[Majority criterion for solid coalitions]]. It satisfies [[Monotonicity criterion|monotonicity]] and, when truncation is permitted, [[Minimal Defense criterion|Minimal Defense]] (and the [[Strong Defensive Strategy criterion]]) and the [[Plurality criterion]].
 
-It fails [[Strategic nomination|Clone-Winner]], [[Participation criterion|Participation]], and [[Later-no-harm]].
+It fails [[Strategic nomination|Clone-Winner]], [[Participation criterion|Participation]], and [[Later-no-harm criterion|Later-no-harm]].
 
 [[Category:Condorcet method]]
 
