@@ -1,0 +1,9 @@
+'''Mono-add-top''' is a [[relative criterion]] which requires that if candidate ''X'' is the winner of the election, then adding additional ballots which rank ''X'' strictly above all other candidates must not reduce the probability that the winner is still ''X''.
+
+The name "Mono-add-top" was invented by Douglas Woodall.
+
+Any method which satisfies the [[Participation criterion]] also satisfies Mono-add-top.
+
+Woodall has shown that it is impossible for a method to satisfy all three of [[Condorcet criterion|Condorcet]], the [[Plurality criterion]], and Mono-add-top. It is not known whether Mono-add-top is compatible with [[Smith set|Smith]].
+
+''Stub.''
