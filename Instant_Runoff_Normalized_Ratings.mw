@@ -3,11 +3,21 @@ Based on a [[ratings ballot]], IRNR seeks to give every voter equal power and en
 The first step is normalizing, which can happen in two ways.
 
 * Divide each rating by the sum of the absolute values of the ratings. The sum of the absolute values of the ratings will then be 1.
+This shall be called IRNR[1] since the normalization factor is the L1 norm.
 * Divide each rating by the square root of the sum of the squared ratings. The vote will then be a vector with magnitude equal to 1.
+This shall be called IRNR[2] since the normalization factor is the L2 norm.
+* One could more generally consider IRNR[p] for any fixed real p with 1<=p<=infinity.
 
 Sum up the normalized ratings for each candidate. If there are two choices, the highest rated is the winner. If there are more than two choices, disqualify the lowest rated choice.
 
 The process repeats with a normalization step that ignores disqualified choices.  A voter's voting power is thus redistributed among the remaining choices.
+
+Unfortunately usually the best strategy in IRNR[p] is simply to (strategically) plurality-vote, i.e.
+giving all candidtes except one a rating of zero.
+This is true whenever there are two "frontrunner" candidates judged to be far more likely
+to win than the others and p is finite.  If p is infinite IRNR just becomes equivalent to [[range voting]]
+in the range [-1, 1]  with an extra rule demanding that the best- or worst-rated 
+candidate must have a rating with absolute value 1.
 
 == External link ==
 
