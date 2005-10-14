@@ -2,9 +2,9 @@ Based on a [[ratings ballot]], IRNR seeks to give every voter equal power and en
 
 The first step is normalizing, which can happen in two ways.
 
-* Divide each rating by the sum of the absolute values of the ratings. The sum of the absolute values of the ratings will then be 1.
+* Divide each rating by the sum of the absolute values of the ratings. The sum of absolute values of the ratings will then be 1.
 This shall be called IRNR[1] since the normalization factor is the L1 norm.
-* Divide each rating by the square root of the sum of the squared ratings. The vote will then be a vector with magnitude equal to 1.
+* Divide each rating by the square root of the sum of the squared ratings. The vote will then be a vector with magnitude 1.
 This shall be called IRNR[2] since the normalization factor is the L2 norm.
 * One could more generally consider IRNR[p], based on the Lp norm, for any fixed real p with 
 <math>1 \le p \le \infty</math>
