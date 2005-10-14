@@ -13,9 +13,10 @@ Sum up the normalized ratings for each candidate. If there are two choices, the 
 The process repeats with a normalization step that ignores disqualified choices.  A voter's voting power is thus redistributed among the remaining choices.
 
 Unfortunately usually the best strategy in IRNR[p] is simply to (strategically) plurality-vote, i.e.
-giving all candidtes except one a rating of zero.
+giving all candidates except one a rating of zero.
 This is true whenever there are two "frontrunner" candidates judged to be far more likely
-to win than the others and p is finite.  If p is infinite IRNR just becomes equivalent to [[range voting]]
+to win than the others and p is finite.  (Then vote for the best among these two.)
+If p is infinite IRNR just becomes equivalent to [[range voting]]
 in the range [-1, 1]  with an extra rule demanding that the best- or worst-rated 
 candidate must have a rating with absolute value 1.
 
