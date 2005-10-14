@@ -8,20 +8,28 @@ This shall be called IRNR[1] since the normalization factor is the L1 norm.
 This shall be called IRNR[2] since the normalization factor is the L2 norm.
 * One could more generally consider IRNR[p], based on the Lp norm, for any fixed real p with 
 <math>1 \le p \le \infty</math>
-uh
+TeX bug here
 1<=p<=infinity.
+(To avoid difficulties with dividing by 0, we agree to ignore votes that rank all candidates 0.)
 
 Sum up the normalized ratings for each candidate. If there are two choices, the highest rated is the winner. If there are more than two choices, disqualify the lowest rated choice.
 
 The process repeats with a normalization step that ignores disqualified choices.  A voter's voting power is thus redistributed among the remaining choices.
 
-Unfortunately usually the best strategy in IRNR[p] is simply to (strategically) plurality-vote, i.e.
+If it were not for the "runoff," then
+generally the best strategy in IRNR[p] is simply to (strategically) plurality-vote, i.e.
 giving all candidates except one a rating of zero.
 This is true whenever there are two "frontrunner" candidates judged to be far more likely
-to win than the others and p is finite.  (Then vote for the best among these two.)
-If p is infinite IRNR just becomes equivalent to [[range voting]]
+to win than the others and p is finite
+(then vote for the best among these two), 
+and its truth is unaffected by the runoff by induction
+on rounds.
+
+If p is infinite, IRNR without the runoff would just become equivalent to [[range voting]]
 in the range [-1, 1]  with an extra rule demanding that the best- or worst-rated 
 candidate must have a rating with absolute value 1.
+The best strategy is then the same as for [[approval voting]] and again this statement's
+validity is unaffected by adding the runoff.
 
 == External link ==
 
