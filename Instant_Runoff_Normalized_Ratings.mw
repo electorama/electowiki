@@ -7,7 +7,8 @@ This shall be called IRNR[1] since the normalization factor is the L1 norm.
 * Divide each rating by the square root of the sum of the squared ratings. The vote will then be a vector with magnitude equal to 1.
 This shall be called IRNR[2] since the normalization factor is the L2 norm.
 * One could more generally consider IRNR[p], based on the Lp norm, for any fixed real p with 
-
+<math>1 \le p \le \infty</math>
+uh
 1<=p<=infinity.
 
 Sum up the normalized ratings for each candidate. If there are two choices, the highest rated is the winner. If there are more than two choices, disqualify the lowest rated choice.
