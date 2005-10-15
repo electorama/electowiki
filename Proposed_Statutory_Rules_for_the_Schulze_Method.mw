@@ -1,12 +1,15 @@
+This page is intended to specify the proposed statutory rules for the [[Schulze method]] in a form suitable for use by legislatures or in referenda or initiatives. The properties, criteria satisfied and motivations for the [[Schulze method]] should be discussed elsewhere.
+
 == Article 1 ==
 
-Each ballot contains a complete list of all candidates. Each voter ranks these candidates in order of preference. The individual voter may give the same preference to more than one candidate and he may keep candidates unranked. When a given voter does not rank all candidates, then it is presumed that this voter strictly prefers all ranked candidates to all not ranked candidates and that this voter is indifferent between all not ranked candidates.
+Each ballot contains a complete list of all qualified candidates. Furthermore, each voter may write in [''number of write-in options''] additional candidates. Each voter ranks these candidates in order of preference. The individual voter may give the same preference to more than one candidate and he may keep candidates unranked. When a given voter does not rank all candidates, then it is presumed that this voter strictly prefers all ranked candidates to all not ranked candidates and that this voter is indifferent between all not ranked candidates.
 
 == Article 2 (Alternative #1, ''Cloneproof Schwartz Sequential Dropping'') ==
 
 #A ''majority winner'' is a candidate such that on a majority of the valid ballots this candidate is strictly preferred to every other candidate. If there is a majority winner, then this candidate wins the elections.
 #Suppose that there is no majority winner. Suppose d[V,W] is the number of valid ballots on which candidate V is strictly preferred to candidate W. A ''beats-all winner'' is a candidate A such that d[A,B] > d[B,A] for every other candidate B. If there is a beats-all winner, then this candidate wins the elections.
-#Suppose that there is no majority winner and no beats-all winner. Each candidate and each link is in one of two states, designated as ''hopeful'' and ''eliminated''. At the start, each candidate is ''hopeful'', each link XY with d[X,Y] > d[Y,X] is ''hopeful'', and each link XY with d[X,Y] &le; d[Y,X] is ''eliminated''. As soon as a candidate or a link has the state ''eliminated'', it stays in this state.
+#Suppose that there is no majority winner and no beats-all winner. Then the winner is calculated as follows:
+::Each candidate and each link is in one of two states, designated as ''hopeful'' and ''eliminated''. At the start, each candidate is ''hopeful'', each link XY with d[X,Y] > d[Y,X] is ''hopeful'', and each link XY with d[X,Y] &le; d[Y,X] is ''eliminated''. As soon as a candidate or a link has the state ''eliminated'', it stays in this state.
 ::Step 1 (''elimination of candidates''):
 :::(a) A ''feasible path'' from candidate X to candidate Y is an ordered set of candidates C(1),...,C(n) with the following four properties:
 :::#C(1) is identical to X.
