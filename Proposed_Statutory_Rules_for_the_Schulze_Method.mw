@@ -1,0 +1,48 @@
+== Article 1 ==
+
+Each ballot contains a complete list of all candidates. Each voter ranks these candidates in order of preference. The individual voter may give the same preference to more than one candidate and he may keep candidates unranked. When a given voter does not rank all candidates, then it is presumed that this voter strictly prefers all ranked candidates to all not ranked candidates and that this voter is indifferent between all not ranked candidates.
+
+== Article 2 (Alternative #1, ''Cloneproof Schwartz Sequential Dropping'') ==
+
+#A ''majority winner'' is a candidate such that on a majority of the valid ballots this candidate is strictly preferred to every other candidate. If there is a majority winner, then this candidate wins the elections.
+#Suppose that there is no majority winner. Suppose d[V,W] is the number of valid ballots on which candidate V is strictly preferred to candidate W. A ''beats-all winner'' is a candidate A such that d[A,B] > d[B,A] for every other candidate B. If there is a beats-all winner, then this candidate wins the elections.
+#Suppose that there is no majority winner and no beats-all winner. Each candidate and each link is in one of two states, designated as ''hopeful'' and ''eliminated''. At the start, each candidate is ''hopeful'', each link XY with d[X,Y] > d[Y,X] is ''hopeful'', and each link XY with d[X,Y] &le; d[Y,X] is ''eliminated''. As soon as a candidate or a link has the state ''eliminated'', it stays in this state.
+::Step 1 (''elimination of candidates''):
+:::(a) A ''feasible path'' from candidate X to candidate Y is an ordered set of candidates C(1),...,C(n) with the following four properties:
+:::#C(1) is identical to X.
+:::#C(n) is identical to Y.
+:::#For i = 1,...,n: Candidate C(i) is hopeful.
+:::#For i = 1,...,(n-1): The link C(i),C(i+1) is hopeful.
+::::For all pairs of hopeful candidates A and B: If there is a feasible path from candidate A to candidate B and no feasible path from candidate B to candidate A, then candidate A ''disqualifies'' candidate B.
+:::(b) Eliminate all disqualified candidates.
+:::(c) If (i) there is only one hopeful candidate or (ii) all links between hopeful candidates are eliminated: Go to step 3. Otherwise: Go to step 2.
+::Step 2 (''elimination of links''):
+:::The weakest hopeful link EF between hopeful candidates is eliminated.
+::::S1[X,Y] : = d[X,Y] if d[X,Y] > d[Y,X].
+::::S1[X,Y] : = 0 if d[X,Y] &le; d[Y,X].
+::::S2[X,Y] : = d[X,Y] - d[Y,X].
+:::The ''weakest'' hopeful link between hopeful candidates is that hopeful link EF between hopeful candidates with ( ( S1[E,F] < S1[G,H] ) or ( ( S1[E,F] = S1[G,H] ) and ( S2[E,F] &le; S2[G,H] ) ) ) for every other hopeful link GH between hopeful candidates. If there is more than one hopeful link EF between hopeful candidates with ( ( S1[E,F] < S1[G,H] ) or ( ( S1[E,F] = S1[G,H] ) and ( S2[E,F] &le; S2[G,H] ) ) ) for every other hopeful link GH between hopeful candidates, then all of them are eliminated simultaneously.
+:::Go to step 1.
+::Step 3 (''termination''):
+:::If there is only one hopeful candidate, then this hopeful candidate is the final winner. If there is more than one hopeful candidate, then (a) all hopeful candidates are tied for winner and (b) the final winner is chosen from the hopeful candidates as prescribed by law for cases where there is a tie for winner.
+
+== Article 2 (Alternative #2, ''Beatpath Method'') ==
+
+#A ''majority winner'' is a candidate such that on a majority of the valid ballots this candidate is strictly preferred to every other candidate. If there is a majority winner, then this candidate wins the elections.
+#Suppose that there is no majority winner. Suppose d[V,W] is the number of valid ballots on which candidate V is strictly preferred to candidate W. A ''beats-all winner'' is a candidate A such that d[A,B] > d[B,A] for every other candidate B. If there is a beats-all winner, then this candidate wins the elections.
+#Suppose that there is no majority winner and no beats-all winner.
+::A ''path'' from candidate X to candidate Y of strength (z1,z2) is an ordered set of candidates C(1),...,C(n) with the following four properties:
+::#C(1) is identical to X.
+::#C(n) is identical to Y.
+::#For i = 1,...,(n-1): d[C(i),C(i+1)] > d[C(i+1),C(i)].
+::#For i = 1,...,(n-1): ( d[C(i),C(i+1)] > z1 ) or ( ( d[C(i),C(i+1)] = z1 ) and ( d[C(i),C(i+1)] - d[C(i+1),C(i)] &ge; z2 ) ).
+::If there is a (p1,p2) such that there is a path from candidate A to candidate B of strength (p1,p2) and no path from candidate B to candidate A of strength (p1,p2), then candidate A ''disqualifies'' candidate B.
+::Candidate D is a ''potential winner'' if and only if there is no candidate E such that candidate E disqualifies candidate D.
+::If there is only one potential winner, then this potential winner is the final winner. If there is more than one potential winner, then (a) all potential winners are tied for winner and (b) the final winner is chosen from the potential winners as prescribed by law for cases where there is a tie for winner.
+
+<!--
+(Emacs settings)
+Local variables:
+fill-column: 2048
+End:
+-->
