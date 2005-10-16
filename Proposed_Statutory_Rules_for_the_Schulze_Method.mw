@@ -16,7 +16,7 @@ Each ballot contains a complete list of all qualified candidates. Furthermore, e
 :::#C(n) is identical to Y.
 :::#For i = 1,...,n: Candidate C(i) is hopeful.
 :::#For i = 1,...,(n-1): The link C(i),C(i+1) is hopeful.
-::::For all pairs of hopeful candidates A and B: If there is a feasible path from candidate A to candidate B and no feasible path from candidate B to candidate A, then candidate A ''disqualifies'' candidate B.
+:::For all pairs of hopeful candidates A and B: If there is a feasible path from candidate A to candidate B and no feasible path from candidate B to candidate A, then candidate A ''disqualifies'' candidate B.
 :::(b) Eliminate all disqualified candidates.
 :::(c) If (i) there is only one hopeful candidate or (ii) all links between hopeful candidates are eliminated: Go to step 3. Otherwise: Go to step 2.
 ::Step 2 (''elimination of links''):
