@@ -52,6 +52,8 @@ Each ballot contains a complete list of all qualified candidates. Furthermore, e
 ::If there is only one potential winner, then this potential winner is the final winner. If there is more than one potential winner, then (a) all potential winners are tied for winner and (b) the final winner is chosen from the potential winners as prescribed by law for cases where there is a tie for winner.
 
 == Alternative #3 ==
+================================================================================================
+Second proposal, Mike Ossipoff
 
 Brief and Precise SSD Statute Language:
 
@@ -106,7 +108,7 @@ If there are no candidates who are not beaten, then the winner shall be determin
 
 1. Determine, by the above-stated definition of the Schwartz set, disregarding any defeats that have been dropped, which candidates are in the Schwartz set. The defeats among those candidates that have been determined to be in the Schwartz set will be referred to as the "Schwartz set defeats".
 
-2. Drop every Schwartz set defeat that doesn't have a greater strength than at least one Schwartz set defeat other than itself.
+2. Drop every Schwartz set defeat that doesn't have a greater strength than at least one Schwartz set defeat.
 
 (Note: That has the effect of dropping the weakest Schwartz set defeat, or dropping any several equally weakest Schwartz set defeats)
 
