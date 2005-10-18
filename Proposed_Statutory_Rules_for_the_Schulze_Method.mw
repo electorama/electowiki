@@ -59,13 +59,13 @@ Brief and Precise SSD Statute Language:
 
 Schwartz Sequential Dropping:
 
-Rank-balloting definitions:
+=== Article 1: Rank-balloting definitions ===
 
 To rank a candidate means to assign to that candidate a postive integer that will be referred to as a rank number.
 
 To rank X over Y means to assign a lower rank number to X than to Y, or else to assign a rank number to X, but not to Y.
 
-Balloting:
+=== Article 2: Balloting ===
 
 The ballot shall provide a way for voters to rank any or all of the candidates listed on the ballot--as many or as few candidates as they wish to rank.
 
@@ -84,38 +84,27 @@ A defeat is an instance of one candidate beating another.
 If X beats Y, then the strength of that defeat is defined as the number of ballots ranking X over Y.
 Among any particular set of defeats, the weakest defeat is the one that has the lowest strength.
 
-Definition of the Schwartz set:
+=== Article 3: Definition of the Schwartz set ===
 
-1. An unbeaten set is a set of candidates none of whom are beaten by anyone outside that set.
+# An unbeaten set is a set of candidates none of whom are beaten by anyone outside that set.
+# An innermost unbeaten set is an unbeaten set that doesn't contain a smaller unbeaten set.
+# The Schwartz set is the set of candidates who are in innermost unbeaten sets.
 
-2. An innermost unbeaten set is an unbeaten set that doesn't contain a smaller unbeaten set.
+Note: When there are no pairwise ties, there is only one innermost unbeaten set. Pairwise ties will be vanishingly rare in public elections, but should be handled by current statute rules regarding recounts.
 
-3. The Schwartz set is the set of candidates who are in innermost unbeaten sets.
+=== Article 4: Count Procedure ===
 
-[end of Schwartz set definition]
-
-Note: When there are no pairwise ties, there is only one innermost unbeaten set. Pairwise will be vanishingly rare in public elections.
-
-Count:
-
-If, by the rules of this count, there are more than one winner, then one winner shall be chosen from among them by whatever tiebreaking statute is already in effect at the time of this statute's enactment.
+If, by the rules of this count, there is more than one winner, then one winner shall be chosen from among them by whatever tiebreaking statute is already in effect at the time of this statute's enactment.
 
 If there are one or more candidates who are not beaten then they win and the count ends.
 
 If there are no candidates who are not beaten, then the winner shall be determined by repeatedly carrying out, in their labeled numerical order, the defeat-dropping instructions that follow this paragraph, until there are one or more candidates who are not beaten. They win and the count ends.
 
-[beginning of defeat-dropping instructions]
-
-1. Determine, by the above-stated definition of the Schwartz set, disregarding any defeats that have been dropped, which candidates are in the Schwartz set. The defeats among those candidates that have been determined to be in the Schwartz set will be referred to as the "Schwartz set defeats".
-
-2. Drop every Schwartz set defeat that doesn't have a greater strength than at least one Schwartz set defeat.
+'''Defeat dropping''':
+# Determine, by the above-stated definition of the Schwartz set, disregarding any defeats that have been dropped, which candidates are in the Schwartz set. The defeats among those candidates that have been determined to be in the Schwartz set will be referred to as the "Schwartz set defeats".
+# Drop every Schwartz set defeat that doesn't have a greater strength than at least one Schwartz set defeat.
 
 (Note: That has the effect of dropping the weakest Schwartz set defeat, or dropping any several equally weakest Schwartz set defeats)
-
-[end of defeat-dropping instructions]
-
-
-[end of statute language for SSD]
 
 <!--
 (Emacs settings)
