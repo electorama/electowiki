@@ -113,13 +113,13 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
     JG   KV   DK   MO    RL
  [[range voting]] (ratings summation)
-   5.5    5    2   8.75
+   5.5    5    2   9.1
  [[Median Ratings|median ratings]]
-     3    4    2
+     3    4    2    2
  ranked pairs([[cardinal pairwise]])
-   9.5    5    2    4
+   9.5    5    2    5
  beatpath([[cardinal pairwise]])
-   9.5    5    2    4
+   9.5    5    2    5
 
 === other ===
 
