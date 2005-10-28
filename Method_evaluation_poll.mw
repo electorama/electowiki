@@ -127,23 +127,23 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  [[candidate withdrawal option|CWO]]-ER-IRV(whole)
      7    1    4
  [[candidate withdrawal option|CWO]]-ER-IRV(fractional)
-     8    1    4
+     8    1    3
  [[candidate withdrawal option|CWO]]-ranked pairs(WV)
      8    1    5
  [[candidate withdrawal option|CWO]]-ranked ballot plurality
      6    1     1
  [[MMPO|minmax(pairwise opposition)]] with [[AERLO]] and [[ATLO]]
-     4    ?    
+     4    ?     0
  [[MMPO]] with AERLO, ATLO, & [[Power Truncation]]
-     ?        
+     ?          0
  [[MMPO]] with (only) [[Power Truncation]] 
-     ?         
+     ?          10
  [[beatpath]](WV) with AERLO and ATLO
-     8    ?    4
+     8    ?      8.5
  [[beatpath]](WV) with [[strong/weak preference option]]
-   7.5    ?    4
+   7.5    ?       ?
  [[random jury]] method
-     ?         1
+     ?         1   1
 
 == See also ==
 
