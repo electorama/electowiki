@@ -69,23 +69,23 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
     JG   CB   KV   DK   MO   RL   JF
  [[ranked pairs]](WV)
-     7    7    8    8    4    9    8
+     7    7    8    8    8    9    8
  [[ranked pairs]](margins)
      2    4    3    3    0    6    ?
  [[river]](wv)
-     7         8    7    4    ?    9
+     7         8    7    8    ?    9
  [[beatpath]](WV)
-     7    7    8    7    4    9    8
+     7    7    8    7    8    9    8
  [[beatpath]](margins)  
      2    4    3    3    0    5    ?
  [[sequential dropping]](WV)
-     7    ?    7    ?    4    ?    8
+     7    ?    7    ?    5    ?    8
  [[minmax]](WV)                  
-     4   ?     7    7    3    5    7
+     4   ?     7    7    4    5    7
  [[minmax]](margins)     
      1    ?    3    3    0    5    ?
  [[Smith//minmax]](WV)    
-     6    ?    7    ?  3.5    9    8
+     6    ?    7    ?  4.5    9    8
  [[Smith//minmax]](margins)
      2    ?    3    ?    0    5    ?
  [[Nanson]]
