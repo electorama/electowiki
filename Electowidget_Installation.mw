@@ -1,0 +1,34 @@
+Below are step-by-step instructions for installing Electowidget at your MediaWiki installation on a UNIX machine running the Bash shell (typical configuration for many Linux hosting providers):
+
+<ol>
+<li>  Download Electowidget </li>
+<li> Set the MWLOC variable </li>
+ $ export MWLOC=/path/to/mediawiki
+'''Note:''' Please substitute the location in your local installation for the <code>/path/to/mediawiki</code> portion.
+<li> Unpack Electowidget into your extensions directory </li>
+ $ cd $MWLOC/extensions
+ $ tar zxvf /path/to/electowidget-0.1.0.tar.gz
+<li> Move or symlink it </li>
+*  Approach #1 (moving): 
+ $ mv Electowidget-0.1.0 Electowidget
+*  Approach #2 (symlink): 
+ $ ln -s Electowidget-0.1.0 Electowidget
+
+<li>In order for Electowidget to work with MediaWiki, there is a slight modification that is needed to MediaWiki.  Apply the provided patch to your MediaWiki install.</li>
+
+ $ cd $MWLOC
+ $ patch -p0 < /path/to/mediawiki/extensions/Electowidget/MediaWiki/mediawiki-1.5.1.patch
+
+<li>Edit LocalSettings.php using your preferred text editor</li>
+ $ $EDITOR LocalSettings.php
+
+<li>Add the following text near/at the end of LocalSettings.php</li>
+ define('ELECTOWIDGET_MAIN_NS', 100);
+ define('ELECTOWIDGET_TALK_NS', 101);
+ define('ELECTOWIDGET_SUBDIR', 'extensions/Electowidget/');
+ 
+ require_once(ELECTOWIDGET_SUBDIR."MediaWiki/ElectoDefaults.php");
+
+'''Note''': 100 and 101 are namespace identifiers which may conflict with other namespace identifiers if you've customized your MediaWiki installation.  Please choose unique values for these numbers.
+<li>Test your installation.  Visit a page in the "Election:" namespace, such as "Election:Test".  You should get a warning that reads "''Empty page. Please edit this page, providing JSON-formatted data about the election you'd like to set up.''".  If so, congratulations, you've successfully installed Electowidget.</li>
+</ol>
