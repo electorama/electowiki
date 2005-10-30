@@ -15,7 +15,7 @@ All data is stored on wiki pages, in [http://json.org JSON format].  That means 
 
 == Example elections ==
 
-Here's a few example elections.  Unless otherwise noted, the configurations for these elections are protected (to ensure that the examples remain in a usable state), but they will all have read/write counterparts that you can play with.
+Here's a few example elections.  Unless otherwise noted, the configurations for these elections are protected (to ensure that the examples remain in a usable state), but they will all have read/write counterparts that you can play with (currently hosted on a test site that may go up and down)
 
 * [[Electotest:Election:10 TV Shows]] - an example based on the top 10 season passes on TiVo. 
 ** [[Electotest:Election:10 TV Shows (editable)|Editable version]]
