@@ -1,0 +1,10 @@
+{{Electowidget Infopanel}}
+
+The [[Electowidget]] configuration is a MediaWiki page in the "Election:" namespace with [http://json.org JSON]-formatted configuration information as the content of the page.  The configuration is read in as a single associative array or "map" at the root note, with a hierarchy of data contained within.
+
+Below is documentation for each of the parameters.  Map keys in parenthesis are not literal map keys, but rather are descriptive of user-defined keys that may be used in that context.
+
+<!-- begin automatically generated portion.  See [[Electowidget Config Schema]] for source -->
+{{template:Electowidget Schema Config (generated)}}
+----
+Note: please do not reformat or restructure this page.  Only make typographical and prose changes.  This is semi-automatically generated from the JSON file at [[Election Config Schema]], so any changes need to be also made there in order for changes to be permanent.
