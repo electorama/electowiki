@@ -51,7 +51,8 @@ A somewhat complete reference for the election configuration pages is here:
 
 You can install Electowidget as a plugin on a MediaWiki 1.5.1 installation.  As October, 2005, it requires a small patch to the base installation to work, however, and probably won't work with earlier versions of MediaWiki, nor will it work with the development version of MediaWiki (due to some refactoring that has happened). It also mostly requires PHP 4.  It runs under PHP 5, but there's a known issue or two.
 
-Download the tarball to get started.
+* [http://electorama.com/2005/electowidget/downloads/electowidget-0.1.0.tar.gz Download the tarball to get started]
+* [[Electowidget Installation]] - step-by-step installation instructions for Electowiki (assumes you already have  [http://mediawiki.org MediaWiki] installed.
 
 == Developer information ==
 
