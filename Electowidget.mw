@@ -42,7 +42,7 @@ Before getting started, thoguh, there are several important caveats with the cur
 *  Performance is pretty bad.  No systematic performance work has happened to fix this up just yet.
 *  It's probably still pretty buggy.
 
-Now that you've been warned, the easiest thing to do is to copy the configuration for [[#Examples|an example election]], and create a new page in the Election: namespace with your election on it.  Since election configurations are just wiki pages, the same editing instructions for editing a wiki apply here, except that the syntax is substantially different.
+Now that you've been warned, the easiest thing to do is to copy the configuration for [[#Example elections|an example election]], and create a new page in the Election: namespace with your election on it.  Since election configurations are just wiki pages, the same editing instructions for editing a wiki apply here, except that the syntax is substantially different.
 
 A somewhat complete reference for the election configuration pages is here:
 * [[Electowidget Configuration Reference]]
