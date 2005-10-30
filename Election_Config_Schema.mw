@@ -84,7 +84,7 @@
                   "desc": "The election tallying method.  <code>schulze-wv</code> is recommended by the author of this software.",
                   "desc_enum": {
                       'approval': "[[Wikipedia:Approval voting|Approval voting]]",
-                      'chain': "Chain multiple methods using this election type.  For example, one can define a chain such that the Smith method is used, and Minmax(wv) settles any ties should there be multiple Smith method winners.  Use the 'methods' parameter described below to provide an ordered list of methods.",
+                      'chain': "Chain multiple methods using this election type.  For example, one can define a chain such that the Smith method is used, and Minmax(wv) settles any ties should there be multiple Smith method winners.",
                       'copeland': "[[Wikipedia:Copeland method|Copeland method]]", 
                       'dmc': "[[Definite Majority Choice]] method.  This particular implementation implements it as Minmax(Total Approval) as an implementation convenience. ",
                       'instant-runoff': "[[Wikipedia:Instant runoff voting|Instant runoff voting]]",
@@ -108,7 +108,7 @@
                               "mapping": {
                                 "type": {
                                   "type": "str",
-                                  "desc": "Any valid election method type.  See documentation for 'type' parameter under 'election_methods' for more information."
+                                  "desc": "<i>see above</i>"
                                 }
                               }
                             }
@@ -128,11 +128,11 @@
                   "mapping": {
                       "display_name": {
                         "type": "str",
-                        "desc": "The label for use in the column header."
+                        "desc": "The label for use in the column header.",
                       },
                       "url_field": {
-                        "type": "str",
-                        "desc": "A field identifier for an optional URL associated with a particular feature.  The identifier defined here can be used in the (candidate key) mapping defined above."
+                        "type": "str"
+                        "desc": "A field identifier for an optional URL associated with a particular feature.  The identifier defined here can be used in the (candidate key) mapping defined above.",
                       }
                     }
                 }
