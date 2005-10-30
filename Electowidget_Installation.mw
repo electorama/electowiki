@@ -2,10 +2,12 @@ Below are step-by-step instructions for installing Electowidget at your MediaWik
 
 <ol>
 <li>  Download Electowidget </li>
-<li> Unpack Electowidget into your extensions directory </li>
- $ cd /path/to/mediawiki/extensions
- $ tar zxvf /path/to/electowidget-0.1.0.tar.gz
+<li> Set the MWLOC variable </li>
+ $ export MWLOC=/path/to/mediawiki
 '''Note:''' Please substitute the location in your local installation for the <code>/path/to/mediawiki</code> portion.
+<li> Unpack Electowidget into your extensions directory </li>
+ $ cd $MWLOC/extensions
+ $ tar zxvf /path/to/electowidget-0.1.0.tar.gz
 <li> Move or symlink it </li>
 *  Approach #1 (moving): 
  $ mv Electowidget-0.1.0 Electowidget
@@ -14,10 +16,8 @@ Below are step-by-step instructions for installing Electowidget at your MediaWik
 
 <li>In order for Electowidget to work with MediaWiki, there is a slight modification that is needed to MediaWiki.  Apply the provided patch to your MediaWiki install.</li>
 
- $ cd /path/to/mediawiki
- $ patch -p0 < extensions/Electowidget/MediaWiki/mediawiki-1.5.1.patch
-
-'''Note:''' Please substitute the location in your local installation for the <code>/path/to/mediawiki</code> portion.
+ $ cd $MWLOC
+ $ patch -p0 < /path/to/mediawiki/extensions/Electowidget/MediaWiki/mediawiki-1.5.1.patch
 
 <li>Edit LocalSettings.php using your preferred text editor</li>
  $ $EDITOR LocalSettings.php
