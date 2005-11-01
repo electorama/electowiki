@@ -64,6 +64,10 @@ Electowidget is programmed in PHP.  It's currently pretty tightly bound to Media
 
 No screenshots yet, but the [[#Example elections|example elections]] are web accessible live demos.
 
+== License ==
+
+Electowidget is licensed under a BSD-style open source license.  See LICENSE.txt in the distribution for the exact text of the license.
+
 == Help ==
 
 To either get help, or to offer help, here's a list of community resources:
