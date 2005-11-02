@@ -58,7 +58,7 @@ You can install Electowidget as a plugin on a MediaWiki 1.5.1 installation.  As 
 
 Electowidget is programmed in PHP.  It's currently pretty tightly bound to MediaWiki, but an effort is already underway to generalize it, and make it possible to plug into any PHP application that provides the necessary support infrastructure.
 
-[http://electorama.com/2005/electowidget-dev/ Doxygen documentation] is available.
+[http://electorama.com/2005/electowidget/classdocs/ Doxygen documentation] is available.
 
 == Screenshots ==
 
