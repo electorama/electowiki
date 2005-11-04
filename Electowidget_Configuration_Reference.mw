@@ -2,9 +2,50 @@
 
 The [[Electowidget]] configuration is a MediaWiki page in the "Election:" namespace with [http://json.org JSON]-formatted configuration information as the content of the page.  The configuration is read in as a single associative array or "map" at the root note, with a hierarchy of data contained within.
 
-Below is documentation for each of the parameters.  Map keys in parenthesis are not literal map keys, but rather are descriptive of user-defined keys that may be used in that context.
+== Formatting rules==
 
-<!-- begin automatically generated portion.  See [[Electowidget Config Schema]] for source -->
+Here are the basics of the formatting rules.  In each item in the [[#Configuration parameters]] section below, you'll see a data type in parenthesis (e.g. ''str'', ''bool'', ''map'', ''seq'').  These are the formatting rules for each type:
+
+<dl>
+<dt>''map''</dt>
+<dd>This is a mapping of key/value pairs (also known as an "associative array" or a "hash").  Example <code>
+ {
+   "key_1" : "value_1",
+   "key_2" : "value_2",
+   ...
+   "key_n" : "value_n"
+ }
+</code>
+
+The key portion is always a ''str''.  The "value_x" portion may be any data type (including another ''map'' or a ''seq'').
+</dd>
+<dt>''seq''</dt>
+<dd>An ordered sequence of unnamed values.
+<code>
+ [
+   "value_1",
+   "value_2",
+   ...
+   "value_n"
+ ]
+</code>
+The "value_x" portion may be any data type (including another ''seq'' or a 'map'').
+</dd>
+<dt>''str''</dt>
+<dd>A quoted string, e.g. <code>"Jefferson"</code></dd>
+<dt>''int''</dt>
+<dd>A positive or negative integer (e.g. <code>42</code> or <code>-163</code>)</dd>
+<dt>''bool''</dt>
+<dd><code>true</code> or <code>false</code></dd>
+
+</dl>
+Please visit the [http://json.org JSON website] for exhaustive documentation of JSON syntax.
+
+
+== Configuration parameters ==
+
+Below is documentation for each of the parameters, which are usually identified by the map keys (e.g. '''ballot_type''').  Map keys in parenthesis are not literal map keys, but rather are descriptive of user-defined keys that may be used in that context.  In the case of a sequence (''seq''), the child elements are unnamed parameters.
+
 {{template:Electowidget Schema Config (generated)}}
 ----
-Note: please do not reformat or restructure this page.  Only make typographical and prose changes.  This is semi-automatically generated from the JSON file at [[Election Config Schema]], so any changes need to be also made there in order for changes to be permanent.
+Note: the configuration parameters list above is semi-automatically generated from the JSON file at [[Election Config Schema]], so any changes need to be also made there in order for changes to be permanent.
