@@ -128,11 +128,11 @@
                   "mapping": {
                       "display_name": {
                         "type": "str",
-                        "desc": "The label for use in the column header.",
+                        "desc": "The label for use in the column header."
                       },
                       "url_field": {
-                        "type": "str"
-                        "desc": "A field identifier for an optional URL associated with a particular feature.  The identifier defined here can be used in the (candidate key) mapping defined above.",
+                        "type": "str",
+                        "desc": "A field identifier for an optional URL associated with a particular feature.  The identifier defined here can be used in the (candidate key) mapping defined above."
                       }
                     }
                 }
