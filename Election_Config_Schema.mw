@@ -84,7 +84,7 @@
                   "desc": "The election tallying method.  <code>schulze-wv</code> is recommended by the author of this software.",
                   "desc_enum": {
                       'approval': "[[Wikipedia:Approval voting|Approval voting]]",
-                      'chain': "Chain multiple methods using this election type.  For example, one can define a chain such that the Smith method is used, and Minmax(wv) settles any ties should there be multiple Smith method winners.",
+                      'chain': "Chain multiple methods using this election type.  For example, one can define a chain such that the Smith method is used, and Minmax(wv) settles any ties should there be multiple Smith method winners.  Use the 'methods' parameter described below to provide an ordered list of methods.",
                       'copeland': "[[Wikipedia:Copeland method|Copeland method]]", 
                       'dmc': "[[Definite Majority Choice]] method.  This particular implementation implements it as Minmax(Total Approval) as an implementation convenience. ",
                       'instant-runoff': "[[Wikipedia:Instant runoff voting|Instant runoff voting]]",
@@ -108,7 +108,7 @@
                               "mapping": {
                                 "type": {
                                   "type": "str",
-                                  "desc": "<i>see above</i>"
+                                  "desc": "Any valid election method type.  See documentation for 'type' parameter under 'election_methods' for more information."
                                 }
                               }
                             }
