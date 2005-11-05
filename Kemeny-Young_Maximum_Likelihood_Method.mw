@@ -3,7 +3,7 @@ score. For each pair of candidates, find the number of ballots that
 order them the the opposite way as the given ranking. The distance is
 the sum across all such pairs. The ranking with the least distance wins.
    
-Strategies this method is vulnerable to: [[Tactical voting|compromising, burying], and [[Strategic nomination|crowding]].
+Strategies this method is vulnerable to: [[Tactical voting|compromising]], [[Tactical voting|burying]], and [[Strategic nomination|crowding]].
 
 ==External links==
 
