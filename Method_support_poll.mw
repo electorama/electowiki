@@ -21,10 +21,10 @@ Feel free to rank your supported methods in order of preference, or supply some 
  ''insist on [[Minimal Defense criterion|minimal defense]] or something similar.''
  '''Support:''' [[ICA]], [[Approval voting]]
  '''Close to supporting:''' [[Schulze method|Schulze]], Tideman, or River (using winning votes 
- or possibly [[cardinal pairwise|AWP]]), [[ER-Bucklin]](whole), [[MAMPO]]
+  or possibly [[cardinal pairwise|AWP]]), [[ER-Bucklin]](whole), [[MAMPO]], [[MDDA]]
  '''Support for legislatures only:''' [[CDTT]]-[[Later-no-harm criterion|Later-no-harm]] combination methods
  '''Oppose:''' [[plurality voting|plurality]], [[IRV]], [[ER-IRV]], margins, [[Borda count|Borda]],
- [[DSC]], rating ballots
+  [[DSC]], rating ballots
 
 *'''Juho Laatu'''
  '''Support:'''
@@ -55,11 +55,13 @@ Feel free to rank your supported methods in order of preference, or supply some 
   '''Oppose:''' [[Plurality]], the use of single seat methods in multi-member districts.
 
 *'''Mike Ossipoff'''
-'''Suppport:''' [[SSD, and Methods that meet FBC]]. These include [[Approval]], [[Range Voting]], [[MDDA]], [[MDDB]], [[MDD,ER-Bucklin(whole)]], and [[MAMPO]].
-
-'''Oppose:''' [[methods other than SSD that don't meet FBC]]
-
-(I'm referring to what I'd support or propose when a proposal is being chosen, not what I'd support or oppose after it has been put to the public).
+ '''Support:''' [[SSD, and Methods that meet FBC]]. These include [[Approval]], [[Range Voting]], [[MDDA]], [[MDDB]],
+ [[MDD,ER-Bucklin(whole)]], and [[MAMPO]].
+ 
+ '''Oppose:''' [[methods other than SSD that don't meet FBC]]
+ 
+ (I'm referring to what I'd support or propose when a proposal is being chosen, not what I'd
+ support or oppose after it has been put to the public).
 
 ==Legislative election methods==
 
