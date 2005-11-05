@@ -1,0 +1,12 @@
+Each possible complete ranking of the candidates is given a "distance"
+score. For each pair of candidates, find the number of ballots that
+order them the the opposite way as the given ranking. The distance is
+the sum across all such pairs. The ranking with the least distance wins.
+   
+Strategies this method is vulnerable to: [[Tactical voting|compromising, burying], and [[Strategic nomination|crowding]].
+
+==External links==
+
+Most text of this article is derived with permission from [http://condorcet.org/emr/methods.shtml#Kemeny-Young Electoral Methods: Single Winner].
+
+[[Category:Single-winner voting systems]]
