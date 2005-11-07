@@ -63,6 +63,15 @@ Feel free to rank your supported methods in order of preference, or supply some 
  (I'm referring to what I'd support or propose when a proposal is being chosen, not what I'd
  support or oppose after it has been put to the public).
 
+
+*'''[[User:Allens|Allen Smith]]'''
+ '''Support:''' [[Approval voting]], [[Approval-Condorcet Hybrids]], [[Condorcet//Approval]] and variants (e.g.,
+ [[Improved Condorcet Approval]]).
+ '''Close to supporting:''' [[Condorcet Criterion|Condorcet]] - any completion method, provided the result is a member
+ of the [[Schwartz set]].
+ '''Close to opposing:''' [[Borda count|Borda]]
+ '''Oppose:''' [[Plurality]], [[Random Ballot]]
+
 ==Legislative election methods==
 
 '''Which legislative (multi-winner) election methods do you support for the election of government officials?''' Unless otherwise indicated, it will be assumed that you support the method for local, state, and federal elections.
