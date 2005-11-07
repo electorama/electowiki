@@ -22,11 +22,10 @@ Each ballot contains a complete list of all qualified candidates. Furthermore, e
 :::(b) Eliminate all disqualified candidates.
 :::(c) If (i) there is only one hopeful candidate or (ii) all links between hopeful candidates are eliminated: Go to step 3. Otherwise: Go to step 2.
 ::Step 2 (''elimination of links''):
-:::The weakest hopeful link EF between hopeful candidates is eliminated.
-::::S1[X,Y] : = d[X,Y] if d[X,Y] > d[Y,X].
-::::S1[X,Y] : = 0 if d[X,Y] &le; d[Y,X].
-::::S2[X,Y] : = d[X,Y] - d[Y,X].
-:::The ''weakest'' hopeful link between hopeful candidates is that hopeful link EF between hopeful candidates with ( ( S1[E,F] < S1[G,H] ) or ( ( S1[E,F] = S1[G,H] ) and ( S2[E,F] &le; S2[G,H] ) ) ) for every other hopeful link GH between hopeful candidates. If there is more than one hopeful link EF between hopeful candidates with ( ( S1[E,F] < S1[G,H] ) or ( ( S1[E,F] = S1[G,H] ) and ( S2[E,F] &le; S2[G,H] ) ) ) for every other hopeful link GH between hopeful candidates, then all of them are eliminated simultaneously.
+:::The weakest hopeful links between hopeful candidates are eliminated.
+:::A ''weakest'' hopeful link between hopeful candidates is a hopeful link EF between hopeful candidates with
+::::( d[E,F] < d[G,H] ) or ( ( d[E,F] = d[G,H] ) and ( d[E,F] - d[F,E] &le; d[G,H] - d[H,G] ) )
+:::for every other hopeful link GH between hopeful candidates. If there is more than one weakest hopeful link between hopeful candidates, then all of them are eliminated simultaneously.
 :::Go to step 1.
 ::Step 3 (''termination''):
 :::If there is only one hopeful candidate, then this hopeful candidate is the final winner. If there is more than one hopeful candidate, then (a) all hopeful candidates are tied for winner and (b) the final winner is chosen from the hopeful candidates as prescribed by law for cases where there is a tie for winner.
