@@ -55,15 +55,15 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 
     JG   CB   KV   DK   MO   RL   JF
  [[MMPO|minmax(pairwise opposition)]]
-     5    3?    4    ?     0    ?    4
+     5    3?    4    ?    0   ?    4
  [[CDTT|CDTT,IRV]]
-     7    5?    5    ?     ?     ?    4
+     7    5?    5    ?    ?   ?    4
  [[CDTT|CDTT,minmax(pairwise opposition)]]
-     ?    3?    6    ?     ?     ?    5
+     ?    3?    6    ?    ?     ?    5
  [[Improved Condorcet Approval]] ([[ICA]]), a.k.a. [[Condorcet//Approval]] with [[FBC]] tweak)
     6?    6?   9    ?     ?     ?    5
  [[Majority Defeat Disqualification Approval]] ([[MDDA]])
-    6?    5?  9           10   ?    6
+    6?    5?   9          10   ?    6
 
 ==== Condorcet-efficient ====
 
