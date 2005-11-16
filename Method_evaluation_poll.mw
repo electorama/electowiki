@@ -41,12 +41,12 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  ER-IRV(fractional)
     6     6    3    ?    0    ?    2
  [[Bucklin voting|Bucklin]] without equal rankings
-   3?    6.5   6    0         ?    6
+   3?     5   6    0         ?    6
  [[ER-Bucklin|ER-Bucklin(whole)]]
- 5.5?          7         2    ?    4
+ 5.5?    6.5   7         2    ?    4
  [[ER-Bucklin|ER-Bucklin(fractional)]]
     ?          5              ?    5
- [[Descending Acquiescing Coalitions]] (DSC)
+ [[Descending Acquiescing Coalitions]] (DAC)
                4                     
  [[Descending Solid Coalitions]]
                2
