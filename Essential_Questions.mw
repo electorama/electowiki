@@ -64,13 +64,13 @@ Please do not change the wording of statements as soon as someone expressed a de
  Pairwise preference information (e.g. rankings) should be used
    ++   +  ++   +  ++   +   ++   +   ++
  Approval information (e.g. cutoffs) should be used
-    +  ++   ?   0   +   0    0   0   ++
+    +  ++   ?   0   +   0    +   0   ++
  Cardinal ratings information should be used
-    -   -   +  --   +   0        +    - 
+    -   -   +  --   +   0    +    +    - 
  Strategic information (e.g. AERLO) should be used
    --  --   ?  --  ++   -   --   0   --
  It should be possible to rank X and Y equal independently of whether they are approved
-    +  ++   +   0   +   0    +  ++    - 
+    +  ++   +   0   +   0    ?  ++    - 
  It should be possible to rank X over Y without the need to either rank Z over Y or X over Z
     +  ++   ?  --   ?   0    +   -   --
  It should be possible to rank X over Y and Y over Z without the need to rank X over Z
@@ -80,7 +80,7 @@ Please do not change the wording of statements as soon as someone expressed a de
  Two or more rounds of voting should be used in some cases
         ?   ?   -       0    -   +   --
  Each ranked ballot must be complete (no ties and no truncation)
-               --                     ++
+               --           -         ++
 
 === How should this information be interpreted? ===
 
