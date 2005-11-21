@@ -10,9 +10,9 @@ Feel free to rank your supported methods in order of preference, or supply some 
 
 *'''James Green-Armytage'''
  '''Support:''' [[cardinal pairwise]] with [[beatpath]], [[ranked pairs]], 
- [[river]], or [[sequential dropping]], [[CWP|AWP]], [[Candidate withdrawal option|CWO-IRV]],
+ [[river]], or [[sequential dropping|Smith sequential dropping]], [[CWP|AWP]], [[Candidate withdrawal option|CWO-IRV]],
  [[ER-IRV|ER-IRV(whole)]], [[Approval voting]], [[ER-IRV|ER-IRV(fractional)]], [[IRV]]
- '''Close to supporting:''' [[Definite majority choice|DMC]]/[[Ranked approval voting|RAV]], [[CDTT|CDTT, IRV]], [[Smith//minimax]]
+ '''Close to supporting:''' [[Definite majority choice|DMC]]/[[Ranked approval voting|RAV]], [[Smith//IRV]], [[CDTT|CDTT, IRV]], [[Smith//minimax]]
  '''Oppose:''' [[Borda count]]
  '''Close to opposing:''' [[Minimax|minmax]], [[MMPO]], [[Bucklin]], [[Descending Acquiescing Coalitions]]
 
