@@ -10,7 +10,3 @@ Sketch of method:
 * Each elected candidate has a load of 1 which is distributed among his voters.
 * The load of a candidate is not distributed evenly among its N voters, but rather such that each of the candidate's voters end up with the same cumulated load.
 * The candidates are elected iteratively - in each step electing the one that results in the most even distribution of load (i.e. minimal load on the voter with the highest load - minmax)
-
-In the case of 1 candidate to be elected, PhragmÃƒÂ©ns method degenerates to [[Approval voting]] (because the candidate resulting in the minimal load on each voter is the one with most voters to share the load).
-
-[[Category:Multi-winner voting systems]]
