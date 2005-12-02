@@ -1,7 +1,5 @@
-'''Range voting''', or '''ratings summation''', or '''average voting''', or '''cardinal ratings''' is a [[voting system]] used for single-seat elections.  
-(It could also be used for multi-seat elections, but that is a poor idea
-since it would lead to massive proportionality failures, where, e.g. a 51%
-Whig electorate could elect a 100% Whig slate of winners.)
+'''Range voting''', or '''ratings summation''', or '''average rating''', or '''cardinal ratings''' is a [[voting system]] used for single-seat elections.  
+(It can also be used for multi-seat elections, but not with proportional results.)
 It is also used on the web - for rating movies (Internet Movie Database), comments (Kuro5hin), and many other things - and something very similar to it is used
 in the Olympics to award gold medals to gymnasts.
 
@@ -19,8 +17,7 @@ In range (or approval) voting <i>with blanks</i>,
 the voter is allowed to leave some scores blank to denote <i>ignorance</i>
 about those candidates.
 
-Range voting satisfies the [[monotonicity criterion]], the [[participation criterion]], the [[Consistency Criterion]], the [[summability criterion]], the [[Favorite Betrayal criterion]], [[Independence of irrelevant alternatives]], the [[Non-compulsory support criterion]] and the [[Independence of clones criterion]].
-Range voting is a [[Smith method]] and elects the [[Smith winner]] if one exists.
+Range voting satisfies the [[monotonicity criterion]], the [[participation criterion]], the [[Consistency Criterion]], the [[summability criterion]], the [[Favorite Betrayal criterion]], [[Independence of irrelevant alternatives]], the [[Non-compulsory support criterion]] and [[Strategic nomination|independence of clones]].
 
 == Counting the Votes ==
 
@@ -28,7 +25,7 @@ The scores for each candidate are summed, and the candidate with the highest sum
 average score (where only nonblank scores are incorporated into the average)
 is the winner.
 
-(Another method of counting is to find the [[median]] score of each candidate, and elect the candidate with the highest median score - see [[Median Ratings]]. Because strategic voting will typically lead to a vast number of candidates with the same median, a rule to resolve ties is needed. Using the median is much more complicated than using the average.)
+(Another method of counting is to find the [[median]] score of each candidate, and elect the candidate with the highest median score - see [[Median Ratings]]. Because strategic voting will typically lead to a vast number of candidates with the same median, a secondary measure to resolve ties is needed.)
 
 ==Example==
 {{Tenn_voting_example}}
