@@ -41,29 +41,29 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
  ER-IRV(fractional)
     6     6    3    ?    0    ?    2
  [[Bucklin voting|Bucklin]] without equal rankings
-   3?     5   6    0         ?     6
+   3?     5    6    0         ?     6
  [[ER-Bucklin|ER-Bucklin(whole)]]
  5.5?    6.5   7         2    ?    4
  [[ER-Bucklin|ER-Bucklin(fractional)]]
     ?    5?    5              ?    5
  [[Descending Acquiescing Coalitions]] (DAC)
-         3?     4                     
+         3?    4                     
  [[Descending Solid Coalitions]]
-         2?     2
+         2?    2
 
 ==== nearly Condorcet-efficient ====
 
     JG   CB   KV   DK   MO   RL   JF
  [[MMPO|minmax(pairwise opposition)]]
-     5    3?    4    ?    0   ?    4
+     5    3?   4    ?    0   ?    4
  [[CDTT|CDTT,IRV]]
-     7    5?    5    ?    ?   ?    4
+     7    5?   5    ?    ?   ?    4
  [[CDTT|CDTT,minmax(pairwise opposition)]]
-     ?    3?    6    ?    ?     ?    5
+     ?    3?   6    ?    ?   ?    5
  [[Improved Condorcet Approval]] ([[ICA]]), a.k.a. [[Condorcet//Approval]] with [[FBC]] tweak)
-    6?    6?   9    ?     ?     ?    5
+    6?    6?   9    ?    ?   ?    5
  [[Majority Defeat Disqualification Approval]] ([[MDDA]])
-    6?    5?   9          10   ?    6
+    6?    5?   8        10   ?    6
  [[MDD,ER-Bucklin(whole)]]
           8?
 
