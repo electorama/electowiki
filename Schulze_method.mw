@@ -227,15 +227,32 @@ Furthermore, the fact that the Schulze method is a part of [http://www.debian.or
 
 == External Resources ==
 
-* [http://electorama.com/em A mailing list containing technical discussions about election methods]
-* [http://www.condorcet.org/emr/index.shtml Election Methods Resource] where CSSD is called "Schulze"
-* [http://accuratedemocracy.com/voting_rules.htm Accurate Democracy] where CSSD is called "Schulze", "Schwartz Sequential Dropping", and "Beatpath"
-* [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)] where CSSD is called "Path Winner"
-* [http://www.mcs.vuw.ac.nz/~ncj/comp303/schulze.pdf A New Monotonic and Clone-Independent Single-Winner Election Method] ('''[[Portable Document Format|PDF]]''') by Markus Schulze ([http://www.citizensassembly.bc.ca/resources/submissions/csharman-10_0409201706-143.pdf mirror1], [http://lists.gnu.org/archive/html/demexp-dev/2003-09/pdflQW7IlpAfC.pdf mirror2])
-* [http://cec.wustl.edu/~rhl1/rbvote/desc.html Descriptions of ranked-ballot voting methods] where CSSD is called "Schulze"
-* [http://fc.antioch.edu/~james_green-armytage/voting.htm Voting methods resource page] where CSSD is also called "beatpath"
+Papers:
 
+# [http://www.citizensassembly.bc.ca/resources/submissions/csharman-10_0409201706-143.pdf A New Monotonic and Clone-Independent Single-Winner Election Method] by Markus Schulze ([http://www.mcs.vuw.ac.nz/~ncj/comp303/schulze.pdf mirror1], [http://lists.gnu.org/archive/html/demexp-dev/2003-09/pdflQW7IlpAfC.pdf mirror2], [http://www.mcdougall.org.uk/VM/ISSUE17/I17P3.PDF mirror3])
+# [http://cec.wustl.edu/~rhl1/rbvote/desc.html Descriptions of ranked-ballot voting methods] by Rob LeGrand
+# [http://www.condorcet.org/emr/index.shtml Election Methods Resource] by Blake Cretney
+# [http://nodesiege.tripod.com/elections/ Election Methods and Criteria] by Kevin Venzke
+# [http://www.ghg.net/redflame/peter/swuusi.pdf Election Systems] by Peter A. Taylor
+# [http://lark.cc.ku.edu/~pauljohn/Ukraine/PJ3_VotingSystemsEssay.pdf Voting Systems] by Paul E. Johnson
+# [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)] by Steve Eppley
+# [http://seehuhn.de/comp/vote.html The Debian Voting System] by Jochen Voss
+# [http://fc.antioch.edu/~james_green-armytage/vm/survey.htm A Survey of Basic Voting Methods] by James Green-Armytage
+# [http://www.barnsdle.demon.co.uk/vote/sing.html Single-Winner Methods] by Mike Ossipoff
+# [http://accuratedemocracy.com/voting_rules.htm Accurate Democracy] by Rob Loring
+# [http://www-ifm.math.uni-hannover.de/preprints/pr304.pdf Social Choice Under Incomplete, Cyclic Preferences] by Jobst Heitzig
+# [http://electorama.com/em A mailing list containing technical discussions about election methods]
+# [[Proposed Statutory Rules for the Schulze Method|Proposed statutory rules for the Schulze method]]
 
+Software:
+
+# [http://www5.cs.cornell.edu/~andru/civs/ Condorcet Internet Voting Service (CIVS)] by Andrew Myers
+# [http://condorcet.ericgorr.net/ Condorcet Voting Calculator] by Eric Gorr
+# [http://betterpolls.com/ BetterPolls.com] by Brian Olson
+# [http://www.masquilier.org/republic/election/ A different way to vote] by Anguo Ma
+# [http://vote.sourceforge.net/ Voting Software Project] by Blake Cretney
+# [http://condorcet-dd.sourceforge.net/ Condorcet with Dual Dropping Perl Scripts] by Mathew Goldstein
+# [http://www.livejournal.com/community/evan_tech/124253.html Haskell Condorcet Module] by Evan Martin
 
 {{fromwikipedia}}
 
