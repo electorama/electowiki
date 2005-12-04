@@ -76,9 +76,9 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
      2    4    3    3    0    6    ?
  [[river]](wv)
      7    7     8    7    8    ?    9
- [[beatpath]](WV)
+ [[Schulze method|Schulze]](WV)
      7    7    8    7    8    9    8
- [[beatpath]](margins)  
+ [[Schulze method|Schulze]](margins)  
      2    4    3    3    0    5    ?
  [[sequential dropping]](WV)
      7    ?    7    ?    5    ?    8
@@ -124,7 +124,7 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
      3       4    2    2
  ranked pairs([[cardinal pairwise]])
    9.5  8?   5    2    5
- beatpath([[cardinal pairwise]])
+ [[Schulze method|Schulze]]([[cardinal pairwise]])
    9.5  8?   5    2    5
  [[Automated DMC]]
        10
@@ -146,9 +146,9 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
      ?  0??          0
  [[MMPO]] with (only) [[Power Truncation]] 
      ?  0??          10
- [[beatpath]](WV) with AERLO and ATLO
+ [[Schulze method|Schulze]](WV) with AERLO and ATLO
      8  3?      ?    8.5
- [[beatpath]](WV) with [[strong/weak preference option]]
+ [[Schulze method|Schulze]](WV) with [[strong/weak preference option]]
    7.5  5?      ?       ?
  [[random jury]] method
      ?  0      1   1
