@@ -1,4 +1,4 @@
-River is a cloneproof monotonic [[Condorcet_method#Different_ambiguity_resolution_methods|Condorcet ambiguity resolution method]] with similarities to both [[Ranked Pairs]] and [[Schulze method|Cloneproof Schwartz Sequential Dropping]], but when cycles exist, can in rare cases find a different winner than either of the other two methods.
+River is a cloneproof monotonic [[Condorcet_method#Different_ambiguity_resolution_methods|Condorcet ambiguity resolution method]] with similarities to both [[Ranked Pairs]] and [[Schulze method|Schulze]], but when cycles exist, can in rare cases find a different winner than either of the other two methods.
 
 Quick summary of method, which is identical to Ranked Pairs except where emphasized:
 * Rank defeats in descending order of winning vote strength.
