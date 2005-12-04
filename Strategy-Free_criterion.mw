@@ -53,13 +53,13 @@ that is more likely to backfire than to succeed.) The significance of
 the SFC guarantee is that the majority has no need for defensive
 strategy, hence the name Strategy-Free Criterion.
 
-[[Schulze method|Cloneproof Schwartz Sequential Dropping]] was shown to comply with both the
+[[Schulze method|Schulze]] was shown to comply with both the
 Condorcet and Generalized Condorcet Criteria (CC and GCC) above.
 Although compliance with CC and GCC are important, those criteria apply
 only in the theoretically ideal case in which all votes are sincere. The
 Strategy-Free criterion goes further and shows that, under certain
 reasonable conditions, a majority of voters have no incentive to vote
-insincerely. The fact that [[Schulze method|Cloneproof Schwartz Sequential Dropping]] also complies with SFC
+insincerely. The fact that [[Schulze method|Schulze]] also complies with SFC
 therefore enhances the significance of CC and GCC considerably.
 
 ''Some parts of this article are derived with permission from text at http://electionmethods.org''
