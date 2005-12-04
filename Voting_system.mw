@@ -55,7 +55,7 @@ Other criteria which have been used to judge voting systems include:
 *[[Participation criterion]] (PC)
 *[[Summability criterion]] (SC)
 
-Voting systems can be abstracted as mathematical functions that select between choices based on the [[utility]] of each option for each voter.  This greatly resembles a [[social welfare function]] as studied in welfare economics and many of the same considerations can be studied. For aspects such as simplicity, dispute, and fraud, the practical implementation is far more important than the abstract function. However, the choice of abstract function puts some constraints on the implementation. For instance, certain voting systems such as First Past the Post, [[Schulze method|Cloneproof Schwartz Sequential Dropping]] (CSSD), or Borda Count can be tallied in one distributed step, others such as IRV require centralization, and others such as multi-round runoff require multiple polling rounds.
+Voting systems can be abstracted as mathematical functions that select between choices based on the [[utility]] of each option for each voter.  This greatly resembles a [[social welfare function]] as studied in welfare economics and many of the same considerations can be studied. For aspects such as simplicity, dispute, and fraud, the practical implementation is far more important than the abstract function. However, the choice of abstract function puts some constraints on the implementation. For instance, certain voting systems such as First Past the Post, [[Schulze method|Schulze]], or Borda Count can be tallied in one distributed step, others such as IRV require centralization, and others such as multi-round runoff require multiple polling rounds.
 
 == List of systems ==
 
@@ -87,7 +87,7 @@ They can also be classified on how many times votes can be counted. Methods like
 *Tied rankings permitted
 **[[Condorcet method]], actually several families of systems that satisfy Condorcet's criterion:
 ***[[Ranked Pairs]] (RP) and variants such as [[Maximize Affirmed Majorities]] and [[Maximum Majority Voting]]
-***[[Schulze method|Cloneproof Schwartz Sequential Dropping]] (CSSD), which is also known as "Beatpath Method" or "Schulze Method"
+***[[Schulze method|Schulze]], which is also known as "Beatpath Method" or "Cloneproof Schwartz Sequential Dropping"
 ***[[Copeland's method]]
 ***Other names for Condorcet-compliant methods:
 ****VOTE-123: another name for Condorcet methods, stands for Virtual One-on-one Tournament Elections using 1st, 2nd, &amp; 3rd choices
@@ -166,7 +166,7 @@ They can also be classified on how many times votes can be counted. Methods like
 * [http://www.emocracia.no.sapo.pt Emocracy] Emocratic Elections Investigation
 * [http://fc.antioch.edu/~jarmyta@antioch-college.edu/voting.htm James Green-Armytage's voting methods page] Includes a beginner-friendly introduction and a helpful in-depth tutorial
 * [http://www.mcs.vuw.ac.nz/~ncj/comp303/schulze.pdf A New Monotonic and Clone-Independent Single-Winner Election Method] ('''[[Portable Document Format|PDF]]''') by Markus Schulze ([http://www.citizensassembly.bc.ca/resources/submissions/csharman-10_0409201706-143.pdf mirror1], [http://lists.gnu.org/archive/html/demexp-dev/2003-09/pdflQW7IlpAfC.pdf mirror2])
-* [http://www.masquilier.org/republic/election/ A different way to vote] by AugustinMa. Of interest is the [http://www.masquilier.org/libre/phpbb/ modified] version of the popular phpBB bulletin board that can be found [http://www.masquilier.org/agora/ here]. The board allows the users to create plurality, approval and condorcet ([[Schulze method|Cloneproof Schwartz Sequential Dropping]]) polls and [http://www.masquilier.org/agora/viewforum.php?f=7 cast their ballots].
+* [http://www.masquilier.org/republic/election/ A different way to vote] by AugustinMa. Of interest is the [http://www.masquilier.org/libre/phpbb/ modified] version of the popular phpBB bulletin board that can be found [http://www.masquilier.org/agora/ here]. The board allows the users to create plurality, approval and condorcet ([[Schulze method|Schulze]]) polls and [http://www.masquilier.org/agora/viewforum.php?f=7 cast their ballots].
 
 
 
