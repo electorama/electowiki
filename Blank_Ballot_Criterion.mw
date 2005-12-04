@@ -8,7 +8,7 @@ The addition of one or more blank ballots cannot change the winner.
 
 == Complying Methods ==
 
-*'''Complies''': [[Approval voting]], [[Cardinal Ratings]], [[Schulze method|Cloneproof Schwartz Sequential Dropping]]
+*'''Complies''': [[Approval voting]], [[Cardinal Ratings]], [[Schulze method|Schulze]]
 *'''Fails''': [[Median Ratings]]
 
 [[Category:Voting system criteria]]
