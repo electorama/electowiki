@@ -4,7 +4,7 @@ Any election method that complies with the Generalized Condorcet criterion also 
 
 == Complying Methods ==
 
-Among methods that comply with the Condorcet criterion, [[Schulze method|Cloneproof Schwartz Sequential Dropping]] and [[Ranked Pairs]] comply with the Generalized Condorcet Criterion.
+Among methods that comply with the Condorcet criterion, [[Schulze method|Schulze]] and [[Ranked Pairs]] comply with the Generalized Condorcet Criterion.
 
 Methods that do not comply with the Condorcet criterion, such as [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], [[Plurality voting]], and [[Instant-Runoff Voting]], do not with the Generalized Condorcet Criterion.
 
