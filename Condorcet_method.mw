@@ -67,7 +67,7 @@ Examples of Condorcet methods include:
 * '''[[Minmax|Minimax]]''' (also called '''Simpson''') chooses the candidate whose worst pairwise defeat is less bad than that of all other candidates.<sup>1</sup>
 * '''Smith/Minimax''' restricts the Minimax algorithm to the Smith set.<sup>1</sup>
 * '''[[Ranked Pairs]]''' (RP) or '''Tideman''' (named after [[Nicolaus Tideman]]) with variations such as '''[[Maximize Affirmed Majorities]]''' (MAM) and  '''[[Maximum Majority Voting]]''' (MMV)<sup>1</sup>
-* '''Schulze''' with several reformulations/variations, including '''Schwartz Sequential Dropping (SSD)''' and '''[[Schulze method|Cloneproof Schwartz Sequential Dropping]] (CSSD)'''<sup>1</sup>
+* '''[[Schulze method|Schulze]]''' with several reformulations/variations, including '''Schwartz Sequential Dropping (SSD)''' and '''Cloneproof Schwartz Sequential Dropping (CSSD)'''<sup>1</sup>
 * '''[[Approval-Condorcet Hybrids]]''', such as '''[[Definite Majority Choice]]''', use an [[Approval Cutoff]] to augment the Condorcet pair wise array.  Many believe that such a method would  make a good first-round public proposal.
 
 <sup>1</sup> There are different ways to measure the strength of each defeat in some methods.  Some use the margin of defeat (the difference between votes for and votes against), while others use winning votes (the votes favoring the defeat in question).
@@ -107,16 +107,14 @@ but unless there is a distinguished vote, a randomly-chosen vote is used).
 In MMV all such conflicting matchups are ignored (though any non-conflicting matchups of that size are still included).
 
 
-== Cloneproof Schwartz Sequential Dropping (CSSD) ==
+== Schulze method ==
 
-The "[[Schulze method|Cloneproof Schwartz Sequential Dropping]]" (CSSD) method resolves votes as follows:
+The [[Schulze method]] resolves votes as follows:
 
 # First, determine the Schwartz set (the innermost unbeaten set). If no defeats exist among the Schwartz set, then its members are the winners (plural only in the case of a tie, which must be resolved by another method).
 # Otherwise, drop the weakest defeat information among the Schwartz set (i.e., where the number of votes favoring the defeat is the smallest). Determine the new Schwartz set, and repeat the procedure.
 
 In other words, this procedure repeatedly throws away the narrowest defeats, until finally the largest number of votes left over produce an unambiguous decision.
-
-The "Beatpath Winner" algorithm produces equivalent results.
 
 
 == Related terms ==
@@ -206,9 +204,10 @@ In this election, Nashville is the Condorcet winner and thus the winner under al
 
 Condorcet voting is not currently used in government elections.  However, it is starting to receive support in some public organizations. Organizations which currently use some variant of the Condorcet method are:
 
-# The Debian project uses [[Schulze method|Cloneproof Schwartz Sequential Dropping]].
-# The Software in the Public Interest project uses [[Schulze method|Cloneproof Schwartz Sequential Dropping]].
-# The UserLinux project uses [[Schulze method|Cloneproof Schwartz Sequential Dropping]].
+# The [http://www.debian.org/ Debian] project uses the [[Schulze method]].
+# The [http://www.spi-inc.org/ Software in the Public Interest (SPI)] project uses the [[Schulze method]].
+# The [http://www.gentoo.org/ Gentoo Linux] project uses the [[Schulze method]].
+# The [http://www.userlinux.com/ UserLinux] project uses the [[Schulze method]].
 # The Free State Project used a Condorcet method for choosing its target state
 # The voting procedure for the uk.* hierarchy of Usenet
 #[http://www.rsabey.pwp.blueyonder.co.uk/rpc/fscc/ Five-Second Crossword Competition]
@@ -217,7 +216,7 @@ Condorcet voting is not currently used in government elections.  However, it is 
 == External links ==
 
 * [http://condorcet.ericgorr.net Condorcet Voting Calculator] by Eric Gorr
-* [http://www.eskimo.com/~robla/politics/condorcet.html Condorcet's Method] By Rob Lanphier
+* [http://www.eskimo.com/~robla/politics/condorcet.html Condorcet's Method] by Rob Lanphier
 * [http://condorcet.org/rp Ranked Pairs] by Blake Cretney
 * [http://accuratedemocracy.com/ Accurate Democracy] by Rob Loring
 * [http://fc.antioch.edu/~james_green-armytage/voting.htm Voting methods resource page] by James Green-Armytage
