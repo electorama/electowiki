@@ -1,12 +1,361 @@
-The '''Schulze method''' is a [[voting system]] developed by Markus Schulze that selects a single winner using votes that express preferences. The Schulze method can also be used to create a sorted list of winners. The Schulze method is also known as "cloneproof Schwartz sequential dropping" (CSSD), "Schwartz sequential dropping" (SSD), "beatpath method", "beatpath winner", "path voting", and "path winner".
+The '''Schulze method''' is a [[voting system]] developed by Markus Schulze that selects a single winner using votes that express preferences. The Schulze method can also be used to create a sorted list of winners. The Schulze method is also known as "Schwartz sequential dropping" (SSD), "cloneproof Schwartz sequential dropping" (CSSD), "beatpath method", "beatpath winner", "path voting", and "path winner".
 
-If there is a candidate who is preferred over the other candidates,
-when compared in turn with each of the others, the Schulze method guarantees that that candidate will win.
-Because of this property, the Schulze method is (by definition) a [[Condorcet method]].
-Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and
-[[Instant-runoff voting]], which do not make this guarantee.
+If there is a candidate who is preferred over the other candidates, when compared in turn with each of the others, the Schulze method guarantees that that candidate will win. Because of this property, the Schulze method is (by definition) a [[Condorcet method]]. Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and [[Instant-runoff voting]], which do not make this guarantee.
 
-== The Schwartz Set ==
+Many different heuristics for the Schulze method have been proposed.  The most important heuristics are the path heuristic and the Schwartz heuristic.
+
+== The path heuristic ==
+
+Each ballot contains a complete list of all candidates.  Each voter ranks these candidates in order of preference.  The individual voter may give the same preference to more than one candidate and he may keep candidates unranked.  When a given voter does not rank all candidates, then it is presumed that this voter strictly prefers all ranked candidates to all not ranked candidates and that this voter is indifferent between all not ranked candidates.
+
+=== Procedure ===
+
+Suppose d[V,W] is the number of voters who strictly prefer candidate V to candidate W.
+
+A ''path'' from candidate X to candidate Y of strength z is an ordered set of candidates C(1),...,C(n) with the following four properties:
+
+:# C(1) is identical to X.
+:# C(n) is identical to Y.
+:# For i = 1,...,(n-1): d[C(i),C(i+1)] &gt; d[C(i+1),C(i)].
+:# For i = 1,...,(n-1): d[C(i),C(i+1)] &ge; z.
+
+If there is a p such that there is a path from candidate A to candidate B of strength p and no path from candidate B to candidate A of strength p, then candidate A ''disqualifies'' candidate B.
+
+Candidate D is a ''potential winner'' if and only if there is no candidate E such that candidate E disqualifies candidate D.
+
+=== Examples ===
+
+A ''path'' from candidate X to candidate Y is an ordered set of candidates C(1),...,C(n) with the following three properties:
+
+:# C(1) is identical to X.
+:# C(n) is identical to Y.
+:# For i = 1,...,(n-1): d[C(i),C(i+1)] &gt; d[C(i+1),C(i)].
+
+The ''strength'' of the path C(1),...,C(n) is min { d[C(i),C(i+1)] | i = 1,...,(n-1) }.
+
+In other words: The strength of a path is the strength of its weakest link.
+
+p[A,B] : = max { min { d[C(i),C(i+1)] | i = 1,...,(n-1) } | C(1),...,C(n) is a path from candidate A to candidate B }.
+
+In other words: p[A,B] is the strength of the strongest path from candidate A to candidate B.
+
+Then the Schulze method can be described as follows: Candidate A is a ''potential winner'' if and only if p[A,B] &ge; p[B,A] for every other candidate B.
+
+==== Example 1 ====
+
+Example (45 voters; 5 candidates):
+
+: 5 ACBED
+: 5 ADECB
+: 8 BEDAC
+: 3 CABED
+: 7 CAEBD
+: 2 CBADE
+: 7 DCEBA
+: 8 EBADC
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] !!bgcolor=#ddffdd| d[*,E] 
+|-
+!bgcolor=#ddffdd| d[A,*] 
+|    || 20 || 26 || 30 || 22 
+|-
+!bgcolor=#ddffdd| d[B,*] 
+| 25 ||    || 16 || 33 || 18 
+|-
+!bgcolor=#ddffdd| d[C,*] 
+| 19 || 29 ||    || 17 || 24 
+|-
+!bgcolor=#ddffdd| d[D,*] 
+| 15 || 12 || 28 ||    || 14 
+|-
+!bgcolor=#ddffdd| d[E,*] 
+| 23 || 27 || 21 || 31 ||    
+|-
+|+The matrix of pairwise defeats looks as follows:
+|}
+
+The critical defeats of the strongest paths are <u>underlined</u>.
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D !!bgcolor=#ddffdd| ... to E 
+|-
+! bgcolor=#ddffdd| from A ... 
+| || A-(30)-D-<u>(28)</u>-C-(29)-B || A-(30)-D-<u>(28)</u>-C || A-<u>(30)</u>-D || A-(30)-D-(28)-C-<u>(24)</u>-E 
+|-
+! bgcolor=#ddffdd| from B ... 
+| B-<u>(25)</u>-A || || B-(33)-D-<u>(28)</u>-C || B-<u>(33)</u>-D || B-(33)-D-(28)-C-<u>(24)</u>-E 
+|-
+! bgcolor=#ddffdd| from C ... 
+| C-(29)-B-<u>(25)</u>-A || C-<u>(29)</u>-B || || C-<u>(29)</u>-B-(33)-D || C-<u>(24)</u>-E 
+|-
+! bgcolor=#ddffdd| from D ... 
+| D-(28)-C-(29)-B-<u>(25)</u>-A || D-<u>(28)</u>-C-(29)-B || D-<u>(28)</u>-C || || D-(28)-C-<u>(24)</u>-E 
+|-
+! bgcolor=#ddffdd| from E ... 
+| E-(31)-D-(28)-C-(29)-B-<u>(25)</u>-A || E-(31)-D-<u>(28)</u>-C-(29)-B || E-(31)-D-<u>(28)</u>-C || E-<u>(31)</u>-D || 
+|-
+|+The strongest paths are:
+|}
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] !!bgcolor=#ddffdd| p[*,E] 
+|-
+!bgcolor=#ddffdd| p[A,*] 
+|    || 28 || 28 || 30 || 24 
+|-
+!bgcolor=#ddffdd| p[B,*] 
+| 25 ||    || 28 || 33 || 24 
+|-
+!bgcolor=#ddffdd| p[C,*] 
+| 25 || 29 ||    || 29 || 24 
+|-
+!bgcolor=#ddffdd| p[D,*] 
+| 25 || 28 || 28 ||    || 24 
+|-
+!bgcolor=#ddffdd| p[E,*] 
+| 25 || 28 || 28 || 31 ||    
+|-
+|+The strengths of the strongest paths are:
+|}
+
+Candidate E is a potential winner, because p[E,X] &ge; p[X,E] for every other candidate X.
+
+==== Example 2 ====
+
+Example (30 voters; 4 candidates):
+
+: 5 ACBD
+: 2 ACDB
+: 3 ADCB
+: 4 BACD
+: 3 CBDA
+: 3 CDBA
+: 1 DACB
+: 5 DBAC
+: 4 DCBA
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] 
+|-
+!bgcolor=#ddffdd| d[A,*] 
+|    || 11 || 20 || 14 
+|-
+!bgcolor=#ddffdd| d[B,*] 
+| 19 ||    || 9 || 12 
+|-
+!bgcolor=#ddffdd| d[C,*] 
+| 10 || 21 ||    || 17 
+|-
+!bgcolor=#ddffdd| d[D,*] 
+| 16 || 18 || 13 ||    
+|-
+|+The matrix of pairwise defeats looks as follows:
+|}
+
+The critical defeats of the strongest paths are <u>underlined</u>.
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D 
+|-
+!bgcolor=#ddffdd| from A ... 
+| || A-<u>(20)</u>-C-(21)-B || A-<u>(20)</u>-C || A-(20)-C-<u>(17)</u>-D 
+|-
+!bgcolor=#ddffdd| from B ... 
+| B-<u>(19)</u>-A || || B-<u>(19)</u>-A-(20)-C || B-(19)-A-(20)-C-<u>(17)</u>-D 
+|-
+!bgcolor=#ddffdd| from C ... 
+| C-(21)-B-<u>(19)</u>-A || C-<u>(21)</u>-B || || C-<u>(17)</u>-D 
+|-
+!bgcolor=#ddffdd| from D ... 
+| D-<u>(18)</u>-B-(19)-A || D-<u>(18)</u>-B || D-<u>(18)</u>-B-(19)-A-(20)-C || 
+|-
+|+The strongest paths are:
+|}
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] 
+|-
+!bgcolor=#ddffdd| p[A,*] 
+|    || 20 || 20 || 17 
+|-
+!bgcolor=#ddffdd| p[B,*] 
+| 19 ||    || 19 || 17 
+|-
+!bgcolor=#ddffdd| p[C,*] 
+| 19 || 21 ||    || 17 
+|-
+!bgcolor=#ddffdd| p[D,*] 
+| 18 || 18 || 18 ||    
+|-
+|+The strengths of the strongest paths are:
+|}
+
+Candidate D is a potential winner, because p[D,X] &ge; p[X,D] for every other candidate X.
+
+==== Example 3 ====
+
+Example (30 voters; 5 candidates):
+
+: 3 ABDEC
+: 5 ADEBC
+: 1 ADECB
+: 2 BADEC
+: 2 BDECA
+: 4 CABDE
+: 6 CBADE
+: 2 DBECA
+: 5 DECAB
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] !!bgcolor=#ddffdd| d[*,E] 
+|-
+!bgcolor=#ddffdd| d[A,*] 
+|    || 18 || 11 || 21 || 21 
+|-
+!bgcolor=#ddffdd| d[B,*] 
+| 12 ||    || 14 || 17 || 19 
+|-
+!bgcolor=#ddffdd| d[C,*] 
+| 19 || 16 ||    || 10 || 10 
+|-
+!bgcolor=#ddffdd| d[D,*] 
+| 9 || 13 || 20 ||    || 30 
+|-
+!bgcolor=#ddffdd| d[E,*] 
+| 9 || 11 || 20 || 0 ||    
+|-
+|+The matrix of pairwise defeats looks as follows:
+|}
+
+The critical defeats of the strongest paths are <u>underlined</u>.
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D !!bgcolor=#ddffdd| ... to E 
+|-
+!bgcolor=#ddffdd| from A ... 
+| || A-<u>(18)</u>-B || A-(21)-D-<u>(20)</u>-C || A-<u>(21)</u>-D || A-<u>(21)</u>-E 
+|-
+!bgcolor=#ddffdd| from B ... 
+| B-<u>(19)</u>-E-(20)-C-<u>(19)</u>-A || || B-<u>(19)</u>-E-(20)-C || B-<u>(19)</u>-E-(20)-C-<u>(19)</u>-A-(21)-D || B-<u>(19)</u>-E 
+|-
+!bgcolor=#ddffdd| from C ... 
+| C-<u>(19)</u>-A || C-(19)-A-<u>(18)</u>-B || || C-<u>(19)</u>-A-(21)-D || C-<u>(19)</u>-A-(21)-E 
+|-
+!bgcolor=#ddffdd| from D ... 
+| D-(20)-C-<u>(19)</u>-A || D-(20)-C-(19)-A-<u>(18)</u>-B || D-<u>(20)</u>-C || || D-<u>(30)</u>-E 
+|-
+!bgcolor=#ddffdd| from E ... 
+| E-(20)-C-<u>(19)</u>-A || E-(20)-C-(19)-A-<u>(18)</u>-B || E-<u>(20)</u>-C || E-(20)-C-<u>(19)</u>-A-(21)-D || 
+|-
+|+The strongest paths are:
+|}
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] !!bgcolor=#ddffdd| p[*,E] 
+|-
+!bgcolor=#ddffdd| p[A,*] 
+|    || 18 || 20 || 21 || 21 
+|-
+!bgcolor=#ddffdd| p[B,*] 
+| 19 ||    || 19 || 19 || 19 
+|-
+!bgcolor=#ddffdd| p[C,*] 
+| 19 || 18 ||    || 19 || 19 
+|-
+!bgcolor=#ddffdd| p[D,*] 
+| 19 || 18 || 20 ||    || 30 
+|-
+!bgcolor=#ddffdd| p[E,*] 
+| 19 || 18 || 20 || 19 ||    
+|-
+|+The strengths of the strongest paths are:
+|}
+
+Candidate B is a potential winner, because p[B,X] &ge; p[X,B] for every other candidate X.
+
+==== Example 4 ====
+
+Example (9 voters; 4 candidates):
+
+: 3 ABCD
+: 2 DABC
+: 2 DBCA
+: 2 CBDA
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] 
+|-
+!bgcolor=#ddffdd| d[A,*] 
+|   || 5 || 5 || 3 
+|-
+!bgcolor=#ddffdd| d[B,*] 
+| 4 ||   || 7 || 5 
+|-
+!bgcolor=#ddffdd| d[C,*] 
+| 4 || 2 ||   || 5 
+|-
+!bgcolor=#ddffdd| d[D,*] 
+| 6 || 4 || 4 ||   
+|-
+|+The matrix of pairwise defeats looks as follows:
+|}
+
+The critical defeats of the strongest paths are <u>underlined</u>.
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D 
+|-
+!bgcolor=#ddffdd| from A ... 
+| || A-<u>(5)</u>-B || A-<u>(5)</u>-C || A-<u>(5)</u>-C-<u>(5)</u>-D 
+|-
+!bgcolor=#ddffdd| from B ... 
+| B-<u>(5)</u>-D-(6)-A || || B-<u>(7)</u>-C || B-<u>(5)</u>-D 
+|-
+!bgcolor=#ddffdd| from C ... 
+| C-<u>(5)</u>-D-(6)-A || C-<u>(5)</u>-D-(6)-A-<u>(5)</u>-B || || C-<u>(5)</u>-D 
+|-
+!bgcolor=#ddffdd| from D ... 
+| D-<u>(6)</u>-A || D-(6)-A-<u>(5)</u>-B || D-(6)-A-<u>(5)</u>-C || 
+|-
+|+The strongest paths are:
+|}
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] 
+|-
+!bgcolor=#ddffdd| p[A,*] 
+|  || 5 || 5 || 5 
+|-
+!bgcolor=#ddffdd| p[B,*] 
+| 5 ||  || 7 || 5 
+|-
+!bgcolor=#ddffdd| p[C,*] 
+| 5 || 5 ||  || 5 
+|-
+!bgcolor=#ddffdd| p[D,*] 
+| 6 || 5 || 5 ||  
+|-
+|+The strengths of the strongest paths are:
+|}
+
+Candidate B and candidate D are potential winners, because p[B,X] &ge; p[X,B] for every other candidate X and p[D,Y] &ge; p[Y,D] for every other candidate Y.
+
+== The Schwartz heuristic ==
+
+=== The Schwartz Set ===
 
 The definition of a [[Schwartz set]], as used in the Schulze method, is as follows:
 
@@ -14,7 +363,7 @@ The definition of a [[Schwartz set]], as used in the Schulze method, is as follo
 # An innermost unbeaten set is an unbeaten set that doesn't contain a smaller unbeaten set. 
 # The Schwartz set is the set of candidates who are in innermost unbeaten sets.
 
-== Procedure ==
+=== Procedure ===
 
 The voters cast their ballots by ranking the candidates according to their preferences, just like for any other Condorcet election.
 
@@ -26,9 +375,9 @@ From there, the Schulze method operates as follows to select a winner (or create
 # If there are no defeats among the members of that set then they (plural in the case of a tie) win and the count ends. 
 # Otherwise, drop the weakest defeat among the candidates of that set. Go to 1.
 
-== An Example ==
+=== An Example ===
 
-=== The Situation ===
+==== The Situation ====
 
 Imagine an election for the capital of [[Tennessee]], a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
 <div style="float:right;  padding:2px; text-align:center">
@@ -102,7 +451,7 @@ The results would be tabulated as follows:
 * [B] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
 * [NP] indicates voters who expressed no preference between either candidate
 
-=== Pairwise Winners ===
+==== Pairwise Winners ====
 
 First, list every pair, and determine the winner:
 {| border="1"
@@ -124,7 +473,7 @@ First, list every pair, and determine the winner:
 Note that absolute counts of votes can be used, or
 percentages of the total number of votes; it makes no difference.
 
-=== Dropping ===
+==== Dropping ====
 
 Next we start with our list of cities and their matchup wins/defeats
 
@@ -137,7 +486,7 @@ Technically, the Schwartz set is simply Nashville as it beat all others 3 to 0.
 
 Therefore, Nashville is the winner.
 
-=== Ambiguity Resolution Example ===
+==== Ambiguity Resolution Example ====
 
 Let's say there was an ambiguity.  For a simple situation involving candidates A, B, and C.
 
@@ -156,7 +505,7 @@ Therefore, A is the winner.
 
 (It may be more accessible to phrase that as "drop the weakest win", though purists may complain.)
 
-=== Summary ===
+==== Summary ====
 
 In the (first) example election, the winner is Nashville.
 This would be true for any [[Condorcet method]].
