@@ -21,7 +21,7 @@ candidate over another or falsely voting two candidates equal.</em></p>
 
 <h4 class=left>Complying Methods</h4>
 
-<p>[[Schulze method|Cloneproof Schwartz Sequential Dropping]] (with winning votes as the measure of defeat strength), [[Maximize Affirmed Majorities]], [[Bucklin voting]], [[CDTT]] methods, [[MDDA]], and [[Condorcet//Approval]] comply with the Strong Defensive Strategy Criterion, while [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], [[Plurality voting]], [[Instant-Runoff Voting]], [[Raynaud]], and [[Descending Solid Coalitions]] do not comply.</p>
+<p>[[Schulze method|Schulze]] (with winning votes as the measure of defeat strength), [[Maximize Affirmed Majorities]], [[Bucklin voting]], [[CDTT]] methods, [[MDDA]], and [[Condorcet//Approval]] comply with the Strong Defensive Strategy Criterion, while [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], [[Plurality voting]], [[Instant-Runoff Voting]], [[Raynaud]], and [[Descending Solid Coalitions]] do not comply.</p>
 
 <h4 class=left>Commentary</h4>
 
@@ -29,7 +29,7 @@ candidate over another or falsely voting two candidates equal.</em></p>
 [[truncation strategy]] to defeat a particular candidate, even when
 countering [[offensive order reversal]] by that candidate's voters.
 Offensive order reversal is the only strategy that can create the need
-for defensive strategy in [[Schulze method|Cloneproof Schwartz Sequential Dropping]].</p>
+for defensive strategy in [[Schulze method|Schulze]].</p>
 
 A very similar criterion is the [[Minimal Defense criterion]].
 
