@@ -1,14 +1,19 @@
-'''Improved Condorcet Approval''' or '''ICA''' or '''tCA''' is a variant of [[Condorcet//Approval]] devised by Kevin Venzke to satisfy the [[Favorite Betrayal criterion]]. It uses the [[tied at the top]] rule.
+'''Improved Condorcet Approval''' or '''ICA''' or '''tCA''' is a variant of [[Condorcet//Approval]] devised by Kevin Venzke which preserves [[approval voting]]'s compliance with the [[Favorite Betrayal criterion|favorite betrayal criterion]]. It uses the [[tied at the top]] rule.
 
 ==Definition==
 #The voter submits a ranked ballot, with equal-ranking and truncation permitted.
-#A voter implicitly ''approves'' every candidate whom he explicitly ranks.
+#A voter "approves" every candidate whom he explicitly ranks.
 #Let v[a,b] signify the number of voters ranking candidate ''a'' above candidate ''b'', and let t[a,b] signify the number of voters ranking ''a'' and ''b'' equally at the top of the ranking (possibly tied with other candidates).
 #Define a set ''S'' of candidates, which contains every candidate ''x'' for whom there is no other candidate ''y'' such that v[x,y]+t[x,y]<v[y,x].
 #If ''S'' is empty, then let ''S'' contain all the candidates.
 #Elect the candidate in ''S'' with the greatest approval.
 
-In other words, every candidate ''a'' is disqualified who pairwise loses to some other candidate ''b'', and would still lose to ''b'' even when the voters supporting both equally as first preferences are counted in favor of ''a''. If everyone is disqualified, then no one is. Then the most approved candidate who isn't disqualified is elected.
+An equivalent definition:
+#Collect ballots as above.
+#Identify all of the pairwise losses.
+#Disregard any pairwise loss that can be reversed or turned into a pairwise tie if the voters ranking both candidates equal in first place (possibly with other candidates) are counted in favor of the pairwise loser.
+#If any candidates do not have any pairwise loss, disqualify all the candidates who do have some pairwise loss.
+#Elect the (non-disqualified) candidate with the greatest approval.
 
 ==Comments==
 '''ICA''' satisfies the [[Favorite Betrayal criterion|favorite betrayal criterion]] by treating voters ranking ''x'' and ''y'' equally at the top as attempting to create a pairwise tie between the two candidates. Then instead of looking first for a candidate with only pairwise wins (the [[Condorcet criterion|Condorcet winner]]), ICA selects as finalists every candidate with no pairwise losses.
@@ -44,7 +49,10 @@ When no voter uses equal ranking in the first position, ICA is equivalent to ord
 ===Variant: "Tied and approved" rather than "Tied at the top"===
 The above definition defines t[a,b] to be the number of voters tying ''a'' and ''b'' in the top position. This is the most conservative change from [[Condorcet//Approval]], since it's only in this case that we can be sure the voter would like to do whatever is necessary to ensure that the winner is either ''a'' or ''b''.
 
-However, it might be more intuitive, and preferred, if t[a,b] were defined rather as the number of voters ranking ''a'' equal to ''b'' and explicitly voting for both. This requires a change to step #3 only.
+However, it might be more intuitive, and preferred, if t[a,b] were defined rather as the number of voters ranking ''a'' equal to ''b'' and explicitly voting for both. This requires a simple change to step #3 in the first definition.
+
+For the second definition, replace step 3 with:
+:Disregard any pairwise loss that can be reversed or turned into a pairwise tie if the voters approving both candidates and ranking them equal are counted in favor of the pairwise loser.
 
 ==Links==
 *[http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-May/015951.html First proposal on the EM list (May 18 2005)]
