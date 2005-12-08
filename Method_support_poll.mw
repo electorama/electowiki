@@ -12,9 +12,9 @@ Feel free to rank your supported methods in order of preference, or supply some 
  '''Support:''' [[cardinal pairwise]] with [[beatpath]], [[ranked pairs]], 
  [[river]], or [[sequential dropping|Smith sequential dropping]], [[CWP|AWP]], [[Candidate withdrawal option|CWO-IRV]],
  [[ER-IRV|ER-IRV(whole)]], [[Approval voting]], [[ER-IRV|ER-IRV(fractional)]], [[IRV]]
- '''Close to supporting:''' [[Definite Majority Choice|DMC]]/[[Ranked Approval Voting|RAV]], [[Smith//IRV]], [[CDTT|CDTT,IRV]], [[Smith//minimax]]
+ '''Close to supporting:''' [[Definite Majority Choice|DMC]]/[[Ranked Approval Voting|RAV]], [[Smith//IRV]], [[CDTT|CDTT,IRV]], [[Smith//Minimax|Smith//minimax]]
  '''Oppose:''' [[Borda count]]
- '''Close to opposing:''' [[Minimax|minmax]], [[MMPO]], [[Bucklin]], [[Descending Acquiescing Coalitions]]
+ '''Close to opposing:''' [[Minimax|minmax]], [[MMPO]], [[Bucklin voting|Bucklin]], [[Descending Acquiescing Coalitions]]
 
 *'''Kevin Venzke'''
  ''In general I prefer methods without [[favorite betrayal]] incentive. I ''
@@ -50,15 +50,15 @@ Feel free to rank your supported methods in order of preference, or supply some 
 *'''David Gamble'''
   '''Support:''' [[IRV]]
   '''Close to supporting:'''[[Condorcet Criterion|Condorcet]]- any completion method, [[top-two runoff]].
-  '''An improvement on [[Plurality]]:''' [[Approval voting]], [[Bucklin]], [[Range voting]].
+  '''An improvement on [[Plurality]]:''' [[Approval voting]], [[Bucklin voting|Bucklin]], [[Range voting]].
   '''Close to opposing:''' [[Borda count|Borda]].
   '''Oppose:''' [[Plurality]], the use of single seat methods in multi-member districts.
 
 *'''Mike Ossipoff'''
- '''Support:''' [[SSD, and Methods that meet FBC]]. These include [[Approval]], [[Range Voting]], [[MDDA]], [[MDDB]],
- [[MDD,ER-Bucklin(whole)]], and [[MAMPO]].
+ '''Support:''' [[SSD]], and Methods that meet [[Favorite Betrayal criterion|FBC]]. These include [[Approval voting|Approval]], [[Range voting|Range Voting]], [[MDDA]], [[MDDB]],
+ [[MDD]], [[ER-Bucklin|ER-Bucklin(whole)]], and [[MAMPO]].
  
- '''Oppose:''' [[methods other than SSD that don't meet FBC]]
+ '''Oppose:''' methods other than [[SSD]] that don't meet [[Favorite Betrayal criterion|FBC]]
  
  (I'm referring to what I'd support or propose when a proposal is being chosen, not what I'd
  support or oppose after it has been put to the public).
