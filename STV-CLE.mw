@@ -1,0 +1,110 @@
+STV-CLE ([[Single Transferable Vote]] with [[Condorcet method#Related terms|Condorcet Loser]] Elimination) is a [[preference voting|preference]] [[voting system]] for multi-winner elections.  It is like STV except that elimination of candidates is based on a Condorcet ranking, rather than on the number of first-choice votes.
+
+== Voting ==
+
+Each voter ranks all candidates in order of preference. For example:
+
+#Andrea
+#Carter
+#Brad
+#Delilah
+
+== Counting the Votes ==
+
+Step 1: Set a winning quota.
+
+For example, the [[Droop Quota]] or the [[Hare Quota]]
+
+Step 2: Compute the elimination order.
+
+Use a [[Condorcet ranking method]] to rank the candidates from worst to best.  That is, the first candidate in the elimination order will be the Condorcet loser (if one exists), and the last will be the Condorcet winner (if one exists).
+
+Step 3: Tally the votes.
+
+Count the top-preference votes.  If one or more candidates meet the quota, they are declared elected, and are exempt from elimination.  If they exceed the quota, the excess votes (determined by either random selection or fractional transfer) are reallocated to the next-highest ranked candidates on the ballot.
+
+If the appropriate number of candidates has been elected, counting stops here.  Otherwise, proceed to...
+
+Step 4: Elimination.
+
+Eliminate the first candidate in the elimination order who has not already been declared elected or eliminated.  Then return to Step 3.
+
+== Example ==
+
+2 seats to be filled, 4 candidates: Andrea (A), Brad (B), Carter (C), and Delilah (D).  There are 90 ballots cast:
+
+* 15: A>B>C>D
+* 51: A>C>B>D
+* 4: D>A>B>C
+* 4: D>A>C>B
+* 4: D>B>A>C
+* 4: D>B>C>A
+* 4: D>C>A>B
+* 4: D>C>B>A
+
+Suppose the Newland-Britton quota (votes/(seats+1) = 90/3 = 30) is used.
+
+The Condorcet ranking for these ballots is A>C>B>D, so the elimination order is D,B,C,A.
+
+The count of first preferences is:
+
+* Andrea: 66
+* Brad: 0
+* Carter: 0
+* Delilah: 24
+
+Andrea exceeds the quota and thus is declared elected (and removed from the elimination order), with 36 excess votes.  If fractional transfer is used, then her votes are weighted by 36/66, so that the ballots are treated as:
+
+* 8+2/11: (A)>B>C>D
+* 27+9/11: (A)>C>B>D
+* 4: D>(A)>B>C
+* 4: D>(A)>C>B
+* 4: D>B>(A)>C
+* 4: D>B>C>(A)
+* 4: D>C>(A)>B
+* 4: D>C>B>(A)
+
+The new count of first preferences is:
+
+* Andrea: 30
+* Brad: 8+2/11
+* Carter: 27+9/11
+* Delilah: 24
+
+Nobody else meets quota, so the transfer is complete.
+
+Now, a candidate must be eliminated.  The elimination order is D,B,C, and so that candidate is Delilah.  After eliminating her, we start over with the ballots:
+
+* 19: A>B>C
+* 55: A>C>B
+* 4: B>A>C
+* 4: B>C>A
+* 4: C>A>B
+* 4: C>B>A
+
+The count of first preferences is
+
+* Andrea: 74
+* Brad: 8
+* Carter: 8
+
+Andrea now has 44 excess votes, and so her votes are weighted by 44/74, so the ballots are treated as:
+
+* 11+11/37: (A)>B>C
+* 32+26/37: (A)>C>B
+* 4: B>(A)>C
+* 4: B>C>(A)
+* 4: C>(A)>B
+* 4: C>B>(A)
+
+The new count of first preferences is
+
+* Andrea: 30
+* Brad: 19+11/37
+* Carter: 40+26/37
+
+Carter meets quota and is declared elected.  Both seats have now been filled, so the counting stops.
+
+The winners are Andrea and Carter.
+
+[[Category:Multi-winner voting systems]]
