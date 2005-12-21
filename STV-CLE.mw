@@ -42,7 +42,7 @@ Eliminate the first candidate in the elimination order who has not already been 
 * 4: D>C>A>B
 * 4: D>C>B>A
 
-Suppose the H-B quota (votes/(seats+1) = 90/3 = 30) is used.
+Suppose the Newland-Britton quota (votes/(seats+1) = 90/3 = 30) is used.
 
 The Condorcet ranking for these ballots is A>C>B>D, so the elimination order is D,B,C,A.
 
