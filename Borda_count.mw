@@ -98,15 +98,7 @@ Borda count is one of the feature selection methods used by the [[OpenGL]] Archi
 Borda count is one of the voting methods used and advocated by the [[Florida]] affiliate of the [[American Patriot Party]]. See [http://www.patriotparty.us/state/fl/platform.htm here] and [http://www.patriotparty.us/state/fl/bylaws.htm here].
 
 ==See also==
-* [[List of democracy and elections-related topics]]
-* [[Voting system]] - many other ways of voting
-* [[Voting system criterion]]
-* [[First Past the Post electoral system]]
-* [[Instant-runoff voting]]
-* [[Approval voting]]
-* [[Plurality voting]]
-* [[Condorcet method]]
-* [[Schulze method]]
+* [[Correlated Instant Borda Runoff]]
 
 ==Further reading==
 * ''Chaotic Elections!'', by Donald G. Saari (ISBN 0821828479), is a book that describes various voting systems using a mathematical model, and supports the use of the Borda count.
