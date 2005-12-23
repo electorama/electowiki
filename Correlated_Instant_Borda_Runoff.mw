@@ -1,0 +1,5 @@
+Correlated Instant Borda Runoff (CIBR) is a [[preferential voting|preferential]] [[voting system]] for single-winner elections, devised by Ken Kuhlman in May 2005 in order to reduce Borda's susceptability to [[clones]].
+
+== Procedure ==
+
+Candidates are scored according to the [[Borda count]].  The Borda loser of the [[candidate correlation|most-correlated]] pair of candidates is eliminated.  The process is repeated until only one candidate remains.
