@@ -1,48 +1,5 @@
-Correlated Instant Borda Runoff (CIBR) is a [[preferential voting|preferential]] [[voting system]] for single-winner elections, devised by Ken Kuhlman in May 2005 in order to reduce [[Borda]]'s susceptability to [[clones]].
+Correlated Instant Borda Runoff (CIBR) is a [[preferential voting|preferential]] [[voting system]] for single-winner elections, devised by Ken Kuhlman in May 2005 in order to reduce Borda's susceptability to [[clones]].
 
 == Procedure ==
 
 Candidates are scored according to the [[Borda count]].  The Borda loser of the [[candidate correlation|most-correlated]] pair of candidates is eliminated.  The process is repeated until only one candidate remains.
-
-== Example ==
-
-{{Tenn_voting_example}}
-
-The [[Borda]] scores for the four candidates are:
-
-* Nashville: 194
-* Chattanooga: 173
-* Memphis: 126
-* Knoxville: 107
-
-If "correlation" is defined as [[third-order correlation]], then the most-correlated pair is Chattanooga and Knoxville.  Knoxville has fewer Borda points and so is eliminated.  After this elimination, the Borda scores for the remaining candidates are:
-
-* Nashville: 126
-* Chattanooga: 90
-* Memphis: 84
-
-and the correlations are:
-
-* Nashville & Chattanooga: 100%
-* Nashville & Memphis: 74%
-* Chattanoogs & Memphis: 26%
-
-The new most-correlated pair is Nashville and Chattanooga.  Chattanooga is the Borda loser of this pair and is eliminated.  The Borda scores of the remaining pair of candidates are:
-
-* Nashville: 58
-* Memphis: 42
-
-Memphis is eliminated, and Nashville wins.
-
-== Criteria Compliance ==
-
-CIBR passes:
-
-* [[summability criterion|third-order summability]]
-
-It fails:
-
-* [[Condorcet criterion]]
-
-
-[[Category:Single-winner voting methods]][[Category:Preferential voting methods]]
