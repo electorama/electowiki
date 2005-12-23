@@ -1,0 +1,121 @@
+Borda Distance Correlation is a measure of [[candidate correlation]] proposed by Ken Kuhlman and Dan Bishop.
+
+== Definitions ==
+
+The '''Borda distance''' between two candidates on one ballot is the absolute value of the difference of their [[Borda count|Borda]] scores on that ballot.
+
+The '''total Borda distance''' between two candidates is the sum of their Borda distances on each ballot.
+
+The '''average Borda distance''' is the total Borda distance divided by the number of ballots.
+
+The '''most-correlated pair''' of candidates is the one with the lowest average Borda distance.
+
+== Example ==
+
+{{Tenn_voting_example}}
+
+On the Memphis>Nashville>Chattanooga>Knoxville ballots, the Borda scores are:
+
+* Memphis: 3
+* Nashville: 2
+* Chattanooga: 1
+* Knoxville: 0
+
+Thus, the Borda distances on these ballots are:
+
+* between Memphis and Nashville: abs(3-2) = 1
+* between Memphis and Chattanooga: abs(3-1) = 2
+* between Memphis and Knoxville: abs(3-0) = 3
+* between Nashville and Chattanooga: abs(2-1) = 1
+* between Nashville and Knoxville: abs(2-0) = 2
+* between Chattanooga and Knoxville: abs(1-0) = 1
+
+Similarly, on the Nashville>Chattanooga>Knoxville>Memphis ballots, the Borda distances are:
+
+* between Nashville and Chattanooga: 1
+* between Nashville and Knoxville: 2
+* between Nashville and Memphis: 3
+* between Chattanooga and Knoxville: 1
+* between Chattanooga and Memphis: 2
+* between Knoxville and Memphis: 1
+
+On the Chattanooga>Knoxville>Nashville>Memphis ballots:
+
+* between Chattanooga and Knoxville: 1
+* between Chattanooga and Nashville: 2
+* between Chattanooga and Memphis: 3
+* between Knoxville and Nashville: 1
+* between Knoxville and Memphis: 2
+* between Nashville and Memphis: 1
+
+And on the Knoxville>Chattanooga>Nashville>Memphis ballots:
+
+* between Knoxville and Chattanooga: 1
+* between Knoxville and Nashville: 2
+* between Knoxville and Memphis: 3
+* between Chattanooga and Nashville: 1
+* between Chattanooga and Memphis: 2
+* between Nashville and Memphis: 1
+
+In summary,
+
+<table border align="center">
+   <tr align="center">
+      <th>candidate pair</th>
+      <th>42%</th>
+      <th>26%</th>
+      <th>15%</th>
+      <th>17%</th>
+      <th>avg.</th>
+   </tr>
+   <tr align="center">
+      <th align="left">Memphis & Nashville</th>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.52</td>
+   </tr>
+   <tr align="center">
+      <th align="left">Memphis & Chattanooga</th>
+      <td>2</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+      <td>2.15</td>
+   </tr>
+   <tr align="center">
+      <th align="left">Memphis & Knoxville</th>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>2.33</td>
+   </tr>
+   <tr align="center">
+      <th align="left">Nashville & Chattanooga</th>
+      <td>1</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1.15</td>
+   </tr>
+   <tr align="center">
+      <th align="left">Nashville & Knoxville</th>
+      <td>2</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1.85</td>
+   </tr>
+   <tr align="center">
+      <th align="left">Chattanooga & Knoxville</th>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1.00</td>
+   </tr>
+</table>
+
+The [[clone]] pair of Chattanooga and Knoxville has the lowest average Borda distance (1.00), so is the most-correlated pair.  Memphis and Knoxville have the highest average Borda distance (2.33) and  so are the least-correlated pair.
