@@ -1,0 +1,6 @@
+Candidate correlation is a measure of how "close" a pair of candidates is to being [[clones]].  The concept was introduced by Ken Kuhlman for his [[Correlated Instant Borda Runoff]] method.
+
+Some ways of measuring correlation are:
+
+* [[Borda distance correlation]]
+* [[Third-order correlation]]
