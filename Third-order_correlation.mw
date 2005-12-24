@@ -1,0 +1,46 @@
+Third-order correlation is a measure of [[Candidate correlation]] proposed by Dan Bishop.  The name comes from the fact that the correlations can be computed with a third-order [[summability criterion|summation array]].
+
+== Definitions ==
+
+On a ballot, a candidate C is '''voted between''' A and B if either C is voted both strictly lower than A and strictly higher than B, or vice-versa.
+
+The '''correlation of A and B with respect to C''', denoted "corr(A, B) wrt C", is the proportion of the ballots on which C is ''not'' voted between A and B.
+
+The '''correlation of A and B''' is the minimum of corr(A, B) wrt C over all candidates C in the complement of {A, B}.
+
+== Example ==
+
+{{Tenn_voting_example}}
+
+Consider, for example, the correlation between Chattanooga and Memphis with respect to Knoxville.  For brevity, the cities will be denoted by their initial letters.
+
+* On the M>N>C>K ballots, K is not voted between M and C.  Therefore, the 42% of the ballots with this ranking are counted in corr(C, M) wrt K.
+* However, on the N>C>K>M ballots, K ''is'' voted between C and M, so these ballots do ''not'' count towards the correlation.
+* The same is true for the C>K>N>M ballots.
+* But on the K>C>N>M ballots, K is not voted between C and M, so these 17% of the ballots count towards the correlation.
+
+Therefore, corr(C, M) wrt K = 42%+17% = 59%.  Similarly,
+
+* corr(C, K) wrt M = 100%
+* corr(C, K) wrt N = 100%
+* corr(C, M) wrt K =  59%
+* corr(C, M) wrt N =  26%
+* corr(C, N) wrt K =  85%
+* corr(C, N) wrt M = 100%
+* corr(K, M) wrt C =  41%
+* corr(K, M) wrt N =  26%
+* corr(K, N) wrt C =  15%
+* corr(K, N) wrt M = 100%
+* corr(M, N) wrt C =  74%
+* corr(M, N) wrt K =  74%
+
+The correlations between each possible pair of candidates are:
+
+* corr(C, K) = min(100%, 100%) = 100%
+* corr(C, M) = min(59%,  26%) =  26%
+* corr(C, N) = min(85%, 100%) =  85%
+* corr(K, M) = min(41%,  26%) =  26%
+* corr(K, N) = min(15%, 100%) =  15%
+* corr(M, N) = min(74%,  74%) =  74%
+
+The most-correlated pair is Chattanooga and Knoxville.
