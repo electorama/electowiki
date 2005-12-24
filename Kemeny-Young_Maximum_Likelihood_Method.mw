@@ -2,11 +2,34 @@ Each possible complete ranking of the candidates is given a "distance"
 score. For each pair of candidates, find the number of ballots that
 order them the the opposite way as the given ranking. The distance is
 the sum across all such pairs. The ranking with the least distance wins.
-   
-Strategies this method is vulnerable to: [[Tactical voting|compromising]], [[Tactical voting|burying]], and [[Strategic nomination|crowding]].
+
+The winning candidate is the top candidate in the winning ranking.
+
+==Strategic Vulnerability==
+  
+Kemeny-Young is vulnerable to [[Tactical voting|compromising]], [[Tactical voting|burying]], and [[Strategic nomination|crowding]].
+
+==Example==
+
+{{Tenn_voting_example}}
+
+Consider the ranking Nashville>Chattanooga>Knoxville>Memphis.  This ranking contains 6 orderings of pairs of candidates:
+
+* Nashville>Chattanooga, for which 32% of the voters disagree.
+* Nashville>Knoxville, for which 32% of the voters disagree.
+* Nashville>Memphis, for which 42% of the voters disagree.
+* Chattanooga>Knoxville, for which 17% of the voters disagree.
+* Chattanooga>Memphis, for which 42% of the voters disagree.
+* Knoxville>Memphis, for which 42% of the voters disagree.
+
+The distance score for this ranking is 207.
+
+It can be shown that this ranking is the one with the lowest distance score.  Therefore, the winning ranking is Nashville>Chattanooga>Knoxville>Memphis, and so the winning candidate is Nashville.
 
 ==External links==
 
-Most text of this article is derived with permission from [http://condorcet.org/emr/methods.shtml#Kemeny-Young Electoral Methods: Single Winner].
+Some text of this article is derived with permission from [http://condorcet.org/emr/methods.shtml#Kemeny-Young Electoral Methods: Single Winner].
 
-[[Category:Single-winner voting systems]]
+
+
+[[Category:Single-winner voting systems]][[Category:Condorcet Methods]]
