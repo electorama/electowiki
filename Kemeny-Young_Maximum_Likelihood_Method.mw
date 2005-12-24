@@ -22,7 +22,7 @@ Consider the ranking Nashville>Chattanooga>Knoxville>Memphis.  This ranking cont
 * Chattanooga>Memphis, for which 42% of the voters disagree.
 * Knoxville>Memphis, for which 42% of the voters disagree.
 
-The distance score for this ranking is 207.
+The distance score for this ranking is 32+32+42+17+42+42=207.
 
 It can be shown that this ranking is the one with the lowest distance score.  Therefore, the winning ranking is Nashville>Chattanooga>Knoxville>Memphis, and so the winning candidate is Nashville.
 
