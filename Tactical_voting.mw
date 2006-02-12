@@ -18,7 +18,7 @@ There are different types of tactical voting:
 
 == Strategy-free voting methods ==
 
-It has been shown by the [[Gibbard-Satterthwaite theorem]] that it is impossible for a voting method to be both strategy-free and deterministic (that is, select the same outcome every time it is applied to the same set of ballots).  The [[random ballot]] voting method, which selects the ballot of a random voter and uses this to determine the outcome, is strategy-free, but may result in different choices being selected if applied multiple times to the same set of ballots.
+It has been shown by the [[Gibbard-Satterthwaite theorem]] that it is impossible for a voting method to be both strategy-free and deterministic (that is, select the same outcome every time it is applied to the same set of ballots).  The [[Random Ballot]] voting method, which selects the ballot of a random voter and uses this to determine the outcome, is strategy-free, but may result in different choices being selected if applied multiple times to the same set of ballots.
 
 However, the extent to which tactical voting affects the timbre and results of the campaign varies dramatically from system to system: see below.
 
