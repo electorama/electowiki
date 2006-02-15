@@ -564,7 +564,6 @@ The Schulze method is not currently used in government elections.  However, it i
 # [http://blitzed.org/ Blitzed] [http://wiki.blitzed.org/Condorcet_method_for_admin_voting]
 # [http://www.leaderofthefreeworld.com/ Leader of the Free World (LFW)] / [http://www.Avoinvaali.fi/ Open Elections] / [http://elonen.iki.fi/code/swpwe/index.php Simply Working Preferential Web Election (SWPWE)] [http://www.leaderofthefreeworld.com/eng/faq.html] [http://www.avoinvaali.fi/julistus.html]
 # [http://www.demexp.org/ Democratic Experience (DemExp)] (See section 30.6 of this [http://www.linux-france.org/~dmentre/demexp/latest-src/demexp-book-official-1-0.6.3.pdf paper]!)
-# [http://glasnost.entrouvert.org/ Glasnost] / [http://www.easter-eggs.org/ Easter Eggs] / [http://www.libre-entreprise.org/ libre-entreprise]
 # [http://jhac.acm.jhu.edu/bylaws.doc Johns Hopkins Animation Club (JHAC)]
 # [http://www.haifux.org/ Haifa Linux Club (Haifux)] [http://mirror.hamakor.org.il/archives/linux-il/01-2004/8135.html]
 # [http://fsck.truman.edu/ Free Software Club of Kirksville (FSCK)] [http://66.249.93.104/search?q=cache:7cJM6uDYtCsJ:www5.cs.cornell.edu/cgi-bin/andru/civs/results%3Fid%3DE_614716deda9a4073+&hl=en]
@@ -577,9 +576,14 @@ Furthermore, the fact that the Schulze method is a part of [http://www.debian.or
 
 == External Resources ==
 
-Papers:
+=== Original Writings ===
 
 # [http://www.citizensassembly.bc.ca/resources/submissions/csharman-10_0409201706-143.pdf A New Monotonic and Clone-Independent Single-Winner Election Method] by Markus Schulze ([http://www.mcs.vuw.ac.nz/~ncj/comp303/schulze.pdf mirror1], [http://lists.gnu.org/archive/html/demexp-dev/2003-09/pdflQW7IlpAfC.pdf mirror2], [http://www.mcdougall.org.uk/VM/ISSUE17/I17P3.PDF mirror3])
+# [http://home.versanet.de/~chris1-schulze/schulze1.pdf A New Monotonic, Clone-Independent, Reversal Symmetric, and Condorcet-Consistent Single-Winner Election Method] by Markus Schulze
+# [http://home.versanet.de/~chris1-schulze/schulze2.pdf Free Riding and Vote Management under Proportional Representation by the Single Transferable Vote] by Markus Schulze
+
+=== Further Readings ===
+
 # [http://cec.wustl.edu/~rhl1/rbvote/desc.html Descriptions of ranked-ballot voting methods] by Rob LeGrand
 # [http://www.condorcet.org/emr/index.shtml Election Methods Resource] by Blake Cretney
 # [http://nodesiege.tripod.com/elections/ Election Methods and Criteria] by Kevin Venzke
@@ -594,7 +598,7 @@ Papers:
 # [http://electorama.com/em A mailing list containing technical discussions about election methods]
 # [[Proposed Statutory Rules for the Schulze Method|Proposed statutory rules for the Schulze method]]
 
-Software:
+=== Software ===
 
 # [http://www.cs.cornell.edu/andru/civs.html Condorcet Internet Voting Service (CIVS)] by Andrew Myers
 # [http://condorcet.ericgorr.net/ Condorcet Voting Calculator] by Eric Gorr
