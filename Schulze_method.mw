@@ -553,18 +553,18 @@ The Schulze method is not currently used in government elections.  However, it i
 
 # [http://www.debian.org/ Debian] [http://www.debian.org/devel/constitution] [http://www.debian.org/vote/2003/vote_0002]
 # [http://www.spi-inc.org/ Software in the Public Interest (SPI)] [http://www.spi-inc.org/corporate/resolutions/resolution-2003-01-06.wta.1]
-# [http://www.gentoo.org/ Gentoo Linux] [http://article.gmane.org/gmane.linux.gentoo.nfp/252/match=Condorcet] [http://article.gmane.org/gmane.linux.gentoo.nfp/256/match=CSSD] [http://article.gmane.org/gmane.linux.gentoo.weekly-news/121/match=Condorcet] [http://article.gmane.org/gmane.linux.gentoo.devel/28603/match=Condorcet+Cloneproof+Schwartz+Sequential+Dropping]
+# [http://www.gentoo.org/ Gentoo Linux] [http://www.gentoo.org/foundation/en/] [http://article.gmane.org/gmane.linux.gentoo.nfp/252/match=Condorcet+Schwartz+drop+dropped] [http://article.gmane.org/gmane.linux.gentoo.nfp/256/match=CSSD] [http://article.gmane.org/gmane.linux.gentoo.weekly-news/121/match=Condorcet] [http://article.gmane.org/gmane.linux.gentoo.devel/28603/match=Condorcet+Cloneproof+Schwartz+Sequential+Dropping]
 # [http://www.userlinux.com/ UserLinux] [http://www.userlinux.com/cgi-bin/wiki.pl?Policy] [http://66.249.93.104/search?q=cache:GWhcrO6Ke8sJ:www5.cs.cornell.edu/cgi-bin/andru/icvs/results%3Fid%3DE_1bfeec1126d4a714+&hl=en]
 # [http://fr.wikipedia.org/wiki/Accueil WikipÃ©dia francophone] (The Schulze method is one of three methods recommended for decision-making.) [http://fr.wikipedia.org/wiki/WikipÃ©dia:Prise_de_dÃ©cision/Choix_dans_les_votes]
-# [http://www.lopsa.org/ League of Professional System Administrators (LOPSA)] (See article 8.3 of their [http://www.lopsa.org/bylaws bylaws]!)
-# [http://www.openspf.org/ Sender Policy Framework (SPF)] [http://new.openspf.org/Council_Election]
+# [http://www.lopsa.org/ League of Professional System Administrators (LOPSA)] (See article 8.3 of their [http://governance.lopsa.org/index.php/LOPSA_Bylaws bylaws]!)
+# [http://www.openspf.org/ Sender Policy Framework (SPF)] [http://new.openspf.org/Council_Election] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?id=E_1fd503d126aaa609]
 # [http://www.mkm-ig.org/ Mathematical Knowledge Management Interest Group (MKM-IG)] (The MKM-IG uses [http://condorcet-dd.sourceforge.net/ Condorcet with dual dropping]. That means: The Schulze ranking and the [[Ranked Pairs|ranked pairs]] ranking are calculated and the winner is the top-ranked candidate of that of these two rankings that has the better Kemeny score.) [http://www.mkm-ig.org/charter.html] [http://lists.iu-bremen.de/pipermail/projects-mkm-ig/2004-November/000041.html] [http://lysander.iu-bremen.de/pipermail/projects-mkm-ig/2005-December/000072.html]
 # [http://www.parkscholars.org/ Park Alumni Society (PAS)] [http://www.parkscholars.org/voting.php]
 # [http://kingmanhall.org/ Kingman Hall] [http://www.livejournal.com/users/zestyping/102718.html] [http://www.livejournal.com/users/zestyping/111588.html]
 # [http://blitzed.org/ Blitzed] [http://wiki.blitzed.org/Condorcet_method_for_admin_voting]
 # [http://www.leaderofthefreeworld.com/ Leader of the Free World (LFW)] / [http://www.Avoinvaali.fi/ Open Elections] / [http://elonen.iki.fi/code/swpwe/index.php Simply Working Preferential Web Election (SWPWE)] [http://www.leaderofthefreeworld.com/eng/faq.html] [http://www.avoinvaali.fi/julistus.html]
 # [http://www.demexp.org/ Democratic Experience (DemExp)] (See section 30.6 of this [http://www.linux-france.org/~dmentre/demexp/latest-src/demexp-book-official-1-0.6.3.pdf paper]!)
-# [http://jhac.acm.jhu.edu/bylaws.doc Johns Hopkins Animation Club (JHAC)]
+# [http://jhac.acm.jhu.edu/ Johns Hopkins Animation Club (JHAC)] [http://jhac.acm.jhu.edu/bylaws.doc] [http://jhac.acm.jhu.edu/events/show/10]
 # [http://www.haifux.org/ Haifa Linux Club (Haifux)] [http://mirror.hamakor.org.il/archives/linux-il/01-2004/8135.html]
 # [http://fsck.truman.edu/ Free Software Club of Kirksville (FSCK)] [http://66.249.93.104/search?q=cache:7cJM6uDYtCsJ:www5.cs.cornell.edu/cgi-bin/andru/civs/results%3Fid%3DE_614716deda9a4073+&hl=en]
 # [http://ns.goobergunch.net/wiki/index.php/Main_Page NationStates Wiki (NSwiki)] [http://ns.goobergunch.net/wiki/index.php/NSwiki:Logo_candidates/Vote]
@@ -581,6 +581,7 @@ Furthermore, the fact that the Schulze method is a part of [http://www.debian.or
 # [http://www.citizensassembly.bc.ca/resources/submissions/csharman-10_0409201706-143.pdf A New Monotonic and Clone-Independent Single-Winner Election Method] by Markus Schulze ([http://www.mcs.vuw.ac.nz/~ncj/comp303/schulze.pdf mirror1], [http://lists.gnu.org/archive/html/demexp-dev/2003-09/pdflQW7IlpAfC.pdf mirror2], [http://www.mcdougall.org.uk/VM/ISSUE17/I17P3.PDF mirror3])
 # [http://home.versanet.de/~chris1-schulze/schulze1.pdf A New Monotonic, Clone-Independent, Reversal Symmetric, and Condorcet-Consistent Single-Winner Election Method] by Markus Schulze
 # [http://home.versanet.de/~chris1-schulze/schulze2.pdf Free Riding and Vote Management under Proportional Representation by the Single Transferable Vote] by Markus Schulze
+# [http://home.versanet.de/~chris1-schulze/schulze3.zip Implementing the Schulze STV Method] by Markus Schulze
 
 === Legislative Project ===
 
