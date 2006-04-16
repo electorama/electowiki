@@ -1,0 +1,26 @@
+A [[preference-approval]] is a [[preference order]] that combines preference with approval.  It can contain either weak or strong preferences. 
+
+==Restrictions== 
+
+Here are some rationality restrictions on preference-approvals.  Suppose there exists two alternatives, x and y:
+
+1) If a given voter prefers x over y, and approves y, then she must approve x.
+
+2) If a given voter prefers x over y, and does not approve y, then she must not approve x.
+
+3) If a given voter is indifferent between x and y, and approves x, then she must approve y.
+
+4) If a given voter is indifferent between x and y, and does not approve x, then she must 
+   approve y.
+
+Because of these rationality restrictions, some preference-approvals can be expressed as follows for alternatives x and y:
+
+|x>y: "The voter prefers x over y, but approves neither."
+|x=y: "The voter is indifferent between x and y, but approves neither."
+x|y:  "The voter prefers x over y, but only approves x."
+x>y|: "The voter prefers x over y, but approves both."
+
+[[Steven Brams]] and [[Peter Fishburn]] used preference-approvals in their book ''Italic text''Approval Voting''Italic text'' in 1983, though it probably was used before then.
+
+==Sources==
+Brams, Steven J. & Fishburn, Peter C. ''Approval Voting''. Cambridge, MA: BirkhÃ¤user, Boston, 1983.
