@@ -10,8 +10,7 @@ Here are some rationality restrictions on preference-approvals.  Suppose there e
 
 3) If a given voter is indifferent between x and y, and approves x, then she must approve y.
 
-4) If a given voter is indifferent between x and y, and does not approve x, then she must 
-   approve y.
+4) If a given voter is indifferent between x and y, and does not approve x, then she must approve y.
 
 Because of these rationality restrictions, some preference-approvals can be expressed as follows for alternatives x and y:
 
