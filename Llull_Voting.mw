@@ -1,0 +1,29 @@
+[[Llull Voting]] is a single winner voting system that attempts to find a compromise between approval voting and the Condorcet criterion.  It is named in honor of [[Ramon Llull]], a discoverer of the [[Borda Count]] and [[Condorcet Method]].
+
+==Assumptions==
+First, every voter submits a [[preference-approval]]. we will assume that preference-approvals can contain preference and indifference comparisons.  Furthermore, the submitted preference-approval can either be complete or incomplete. If it is incomplete, we will assume that whichever alternatives are left unranked are preferred less than any alternatives that are ranked by the individual; however, we will assume that the unranked alternatives of an incomplete preference-approval are equally preferred when compared to each other. (i.e. the unranked alternatives have an indifference relation in respect to one another).
+
+Now consider two alternatives in an election x and y.  Let us call the number of voters who prefer x over y: Vx.  The number of those that prefer y over x: Vy. And the number of those who are indifferent between x and y: Vi.  The total number of voters, (i.e. all the voters in the society) will be Vt.  Therefore, Vt equals Vx + Vy + Vi.
+
+We will say that x "beats" y if Vx is greater than Vy.  We say that y "beats" x if Vy is greater than Vx.  We say x is "tied" with y if Vx equals Vy.
+
+Now we will define a set that is similar to the [[Schwartz set]] that we will call the Llull set. (Other names exist for this set, but it is argued that Ramon Llull never got his credit he deserved; naming the set after him allows the Llull set to correspond to Llull voting and minimize confusion).  First condition: every alternative inside the Llull set beats any alternative outside the Llull set. (i.e. No alternative within the set is beaten by or tied with any alternative outside the set).  Second, no proper subset of a Llull set satisfies the first condition. Thus, if the Llull set has exactly one member, then it is the Condorcet winner.  It is possible that every alternative in the election is a member of the Llull set.
+
+
+==Description of Llull Voting==
+
+Step 1: The preference-approvals of all voters are compiled. Check if a there exists at least one alternative that is approved by a majority of alternatives.  If such an alternative exists, go to Step 2.1.  If no such alternative exists, go to Step 2.2.
+ 
+Step 2.1: If an alternative exists such that it is approved by a majority of voters, then the alternative with the greatest number of approvals wins.
+
+Step 2.2:If no alternative is approved by the majority of voters, then the
+member of the Llull set with the greatest number of approvals wins
+the election.
+
+==Arguments of Llull Voting==
+
+One of the arguments in favor of [[approval voting]] is that proponents claim that it elects consensus alternatives.  However, in an election that has an extremely divided electorate, the alternative with the plurality of approval votes may have a very small minority of approval votes.  In such scenarios, it is claimed that because winners in such situations must be from the Llull set, the winner of the election will have to be in the majority cycle if no alternative is approved by a majority of voters.
+
+==Arguments Against Llull Voting==
+
+It does not satisfy the [[Condorcet Criterion]].  It does not guarantee the election of the alternative that is approved of by the most voters.  As a result, it is just "hodge-podge" of voting systems that does not satisfy any important criteria.
