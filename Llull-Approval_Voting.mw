@@ -1,7 +1,25 @@
-[[Llull-Approval Voting]] is a single winner voting system that attempts to form a compromise between [[approval voting]] and the [[Condorcet method]].  It is called by its name because it elects the member of the [[Schwartz Set]] with the greatest number of approval votes.
+[[Llull-Approval Voting]] is a single winner voting system that attempts to form a compromise between [[approval voting]] and the [[Condorcet method]].  It is called by its name because it elects the member of the [[Llull set]] with the greatest number of approval votes.
 
-==Procedure==
-Each voter submits a [[total preference order]]. The procedure elects the member of the [[Schwartz set]] with the greatest number of approvals.
+==Assumptions==
 
-[[Category:Condorcet method]]
-[[Category:Single-winner voting methods]]
+First, every voter submits a [[preference-approval]]. We will assume that preference-approvals can contain preference and indifference comparisons.  Furthermore, the submitted preference-approval can either be complete or incomplete. If it is incomplete, we will assume that whichever alternatives are left unranked are preferred less than any alternatives that are ranked by the individual; however, we will assume that the unranked alternatives of an incomplete preference-approval are equally preferred when compared to each other. (i.e. the unranked alternatives have an indifference relation in respect to one another).
+
+Now consider two alternatives in an election x and y.  Let us call the number of voters who prefer x over y: Vx.  The number of those that prefer y over x: Vy. And the number of those who are indifferent between x and y: Vi.  The total number of voters, (i.e. all the voters in the society) will be Vt.  Therefore, Vt equals Vx + Vy + Vi.
+
+We will say that x "beats" y if Vx is greater than Vy.  We say that y "beats" x if Vy is greater than Vx.  We say x is "tied" with y if Vx equals Vy.
+
+Now we will define a set that is similar to the [[Schwartz set]] that we will call the Llull set. First condition: every alternative inside the Llull set beats any alternative outside the Llull set. (i.e. No alternative within the set is beaten by or tied with any alternative outside the set).  Second, no proper subset of a Llull set satisfies the first condition. Thus, if the Llull set has exactly one member, then it is the Condorcet winner.  It is possible that every alternative in the election is a member of the Llull set.
+
+==Description of Llull-Approval Voting==
+
+Step 1: Each voter submits a preference-approval, and they are all compiled.  The first step is to determine the members of the [[Llull set]].
+
+Step 2: The member of the Llull set with the greatest number of approval votes is the winner.
+
+==Arguments in favor of Llull-Approval Voting==
+
+This voting system is a [[Condorcet method]] because it guarantees the election of a [[Condorcet winner]] if one exists.  Also, it ensures that no [[Condorcet loser]] can win the election. It only allows alternatives that are in the majority cycle to win the election.  To choose among alternatives in the majority cycle, it selects the alternative with the most approval.
+
+==Criticisms against Llull-Approval voting==
+
+Some supporters of approval voting might argue that it will not guarantee the election of the alternative with the greatest number of approvals; thus it does not elect consensus candidates as well as [[approval voting]].
