@@ -1,0 +1,84 @@
+[[image:Ramon_Llull.jpg|thumb|150px|Ramon Llull.]]
+'''Ramon Llull''' (1235 June 29, 1315) (sometimes '''Raymond Lully''' or in Latin '''Raimundus''' or '''Raymundus Lullus''') was a writer and philosopher born into a wealthy family in Palma de Mallorca, Majorca, in the Balearic Islands, now part of Spain. He wrote the first major works of Catalan language literature and one of the first European novels. Recently surfaced manuscripts show him to have anticipated prominent [[voting system|election systems]] several centuries before they were previously believed to have been discovered.  His proto-ideas in computation theory, dubbed 'Ars Combinatoria' by Leibniz, have gained him recognizition as an early pioneer in computer science.
+
+== Early life ==
+Llull was well educated, and became the tutor of James II of Aragon.  He wrote in Arabic, Latin and Catalan.   In 1265 he had a religious epiphany, and became a tertiary Franciscan.  His first major work ''Art Abreujada d 'Atrobar Veritat'' (''The Art of Finding Truth'') was written in Catalan and then translated into Latin. He wrote treatises on alchemy and botany, ''Ars Magna'', and ''Llibre de meravelles''. He wrote the romantic [[novel]] ''Blanquerna''. Llull pressed for the study of Arabic and other then-insufficiently studied languages in Spain for the purpose of the conversion of Muslims to Christianity.
+
+Schopenhauer described Llull's conversion, as recorded in Johann Jakob Brucker's ''Critical History of Philosophy'', Book IV, Part I, page 10. "Hence men who have led a very adventurous life under the pressure of passions, men such as kings, heroes, or adventurers, have often been seen suddenly to change, resort to resignation and penance, and become hermits and monks. To this class belong all genuine accounts of conversion, for instance, that of Raymond Lull, who had long wooed a beautiful woman, was at last admitted to her chamber, and was looking forward to the fulfillment of all his desires, when, opening her dress, she showed him her bosom terribly eaten away with cancer. From that moment, as if he had looked into hell, he was converted; leaving the court of the King of Majorca, he went into the wilderness to do penance." (''The World as Will and Representation'', Vol. I, Â§ 68.
+
+== First mission ==
+In 1285 Llull visited Rome and from there embarked on a mission to convert the 'infidels' of Tunis to Christianity.  He was violently expelled from Tunis, in an incident which was magnified by some later historians into a stoning to death, and therefore a martyrdom.  On his return, Llull began to preach for a unification of the three monotheistic faiths - Judaism, Christianity and Islam - which, together, he hoped, would be able to defeat the Asian invaders then threatening Europe and the Middle East.
+
+Llull had always found his spiritual beliefs close to those of Francis of Assisi, and around 1295 he joined the Franciscan order.
+
+In 1297 Llull met Duns Scotus, after which he was given the nickname ''Doctor Illuminatus'', but is not one of the 33 Doctors of the Catholic Church.
+
+== Second mission ==
+Llull travelled to Tunis a second time in about 1314, and wrote numerous letters to the king of Tunis, but little else is known about this part of his life.
+
+== Third mission ==
+In the early 14th century Llull visited North Africa on a reconnaissance mission for a crusade being planned by the Pope. He returned in 1308, reporting that the conquest should be achieved through prayer, not through military force.  Llull died at home in Palma some years later.
+
+== Contributions to Computation Theory==
+Around 1275, Llull designed a method, which he first published in full in his ''Ars generalis ultima'' or ''Ars magna'' (1305), of combining attributes selected from a number of lists. He also invented numerous 'machines' for the purpose, each of which consisted of two or more paper discs inscribed with alphabet letters that referred to the lists of attributes.  The discs could be rotated individually to generate a large number of combinations of ideas. 
+
+The method was an early attempt to use logical means to produce knowledge.  Llull hoped to show that Christian doctrines could be obtained artificially from a fixed set of preliminary ideas.  For example, one of the tables listed the attributes of God: goodness, greatness, eternity, power, wisdom, will, virtue, truth and glory.  Llull knew that all believers in the monotheistic religions - whether Jews, Muslims or Christians - would agree with these attributes, giving him a firm platform from which to argue.
+
+The idea was developed further by Giordano Bruno in the 16th century, and by Gottfried Leibniz in the 17th century for investigations into the philosophy of science.  Leibniz gave Llull's idea the name ''ars combinatoria'', by which it is now often known.  Some computer scientists have adopted Llull as a sort of founding father, claiming that his system of logic was the beginning of information science.
+
+Llull was vocally opposed by the Grand Inquisitor of Aragon, Nicolas Eymeric. As a result, Pope Gregory XI banned some of his writings.
+
+== Election Theory ==
+With the 2001 discovery of his lost manuscripts ''Ars notandi'', ''Ars eleccionis'', and ''Alia ars eleccionis'', Llull is given credit for discovering the [[Borda count]] and [[Condorcet criterion]], which [[Jean-Charles de Borda]] and [[Marquis de Condorcet]] independently discovered centuries later. {{ref|Hagele}}
+
+== An Innovator of Western Prose Literature ==
+He wrote the romantic novel, Blanquerna, the first major work of literature written in Catalan, and perhaps the first European novel. He is regarded as one of the most influential authors in Catalan; the language is sometimes referred to as ''la llengua de Llull'', as other languages might be referred to as ''la langue de MoliÃ¨re'' (French) or ''la lengua de Cervantes'' (Castilian).
+
+== Reputation after death==
+  
+Chairs for the propagation of the theories of Llull were set up at the University of Barcelona and the University of Valencia.  However, his rationalistic mysticism was formally condemned by Pope Gregory XI in 1376 and the condemnation was renewed by Pope Paul IV.  Later the Roman Catholic Church gave Llull the status of a Blessed (Bl. Ramon Lull), in that his cult was confirmed in 1858 by Pope Pius IX, although he has not been canonized.  However, the ban on Llull's writings had an effect on intellectual history.  For example, when [[Jean-Charles de Borda]] discovered the [[Borda count]] and [[Marquis de Condorcet]] discovered the [[Condorcet criterion]], they did not know that they were replicating election systems produced by Ramon Llull centuries earlier.{{ref|Hagele}} Also, the ban limited circulation of Llull's computational ideas such that Leibniz's interpretation of ''Ars generalis ultima'' as Ars Combinatoria is more well-known than ''Ars generalis ultima''.  
+
+Also, because of the Castilian dominance in Spain, [[Catalan]] has become a less dominant language compared to its reputation during Llull's lifetime.  Thus contemporary world literature scholars have not had the opportunity to study his literary contributions as much as other great [[Iberian]] writers, like Cervantes.  
+
+What was known of Llull was often myth. For example, posthumously Llull became celebrated as a great alchemist, although he had been opposed to occult beliefs. At some time he was credited with having discovered ether, in about 1275, although there is no contemporary evidence for this. 
+
+However, the 2001 discovery on previously unknown Llull manuscripts have renewed interest in Llull's real innovative work in computation theory, [[voting systems]], and the novel literature genre.{{ref|Hagele}}
+
+== Other recent coverage ==
+
+Martin Gardner has written extensively about Llull. His analyses can be found in ''Logic Machines and Diagrams'' and ''Science - Good, Bad and Bogus''.
+
+== Bibliography ==
+Llull is known to have written at least 265 works, including:
+*''The Book of the Lover and the Beloved''
+*''Blanquerna'' (a novel; 1283)
+*''Desconort'' (on the superiority of reason)
+*''Tree of Science'' (1295)
+*''Tractatus novus de astronomia''
+*''Ars Magna'' (''The Great Art'') (1305) or ''Ars Generalis Ultima'' (''The Ultimate General Art'')
+*''Ars Brevis'' (''The Short Art''; an abbreviated version of the ''Ars Magna'')
+*''Llibre de meravelles''
+*''Practica compendiosa''
+*''Liber de Lumine'' (''The Book of Light'')
+*''Ars Infusa'' (''The Inspired Art'')
+*''Book of Propositions''
+*''Liber Chaos'' (''The Book of Chaos'')
+*''Book of the Seven Planets''
+*''Liber Proverbiorum'' (''Book of Proverbs'')
+*''Book on the Seven Gifts of the Holy Spirit''
+*''Ars electionis'' (on voting)
+*''Ars notatoria''
+*''Introductoria Artis demonstrativae''
+*''Book of the Gentile and the Three Wise Men''
+
+About another 400 works are doubtfully or spuriously attributed to him.
+
+==Notes==
+#{{note|Hagele}} {{Journal reference url | Author=G. HÃ¤gele and F. Pukelsheim | Title=Llull's writings on electoral systems | Journal=Studia Lulliana | Year=2001 | Volume=3 | Pages=3-38 | URL=http://www.math.uni-augsburg.de/stochastik/pukelsheim/2001a.html }}
+
+== External links ==
+*[http://lullianarts.net English translations of lullian works, freeware version of Ars Magna]
+*[http://orbita.bib.ub.es/ramon/p.asp  Ramon Llull Database, University of Barcelona]
+*[http://theosophy.org/tlodocs/teachers/RamonLull.htm Theosophy Library Online]
+*[http://www.catholic-forum.com/saints/saintr73.htm Patron Saints Index]
+*[http://www.newadvent.org/cathen/12670c.htm Catholic Encyclopedia]
