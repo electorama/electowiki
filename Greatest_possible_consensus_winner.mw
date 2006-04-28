@@ -1,0 +1,4 @@
+The alternative with the greatest number of [[consents]] (or tied with one or more alternatives for the greatest number of consents) in a given election is a [[greatest possible consensus winner]].  Any election that has [[total preference orders]] submitted by all voters guarantees the existence of such a winner.  There may be multiple greatest possible consensus winners.  Any [[unanimous consensus winner]] is necessarily a greatest possible consensus winner.
+
+==Voting Systems==
+Any [[voting system]] that guarantees the election of a greatest possible consensus winner satisfies the [[greatest possible consensus criterion]].  [[Approval voting]] guarantees the election of greatest possible consensus winners, when it ask voters "which alternatives do you consent to?"  [[Disapproval voting]] guarantees the election of greatest possible consensus winners, when it ask voters "which alternatives do you not consent to?"
