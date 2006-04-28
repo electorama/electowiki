@@ -1,7 +1,1 @@
 [[Consensus Voting]] is another name for [[approval voting]] because approval voting is the simplest voting system that satisfies the [[unanimous consensus criterion]] and the [[greatest possible consensus criterion]].
-
-Technically, consensus voting is syntactically identical to [[approval voting]]; however, it is different from [[approval voting]] semantically.  Specifically, voters are asked which alternatives they [[consent]] (as opposed to approve with approval voting).  This semantic difference is important because it ensures that consensus voting satisfies the [[unanimous consensus criterion]] and [[greatest possible consensus criterion]].
-
-[[Category:Single-winner voting methods]]
-[[Category:Approval Methods]]
-[[Category:Voting methods]]
