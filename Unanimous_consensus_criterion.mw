@@ -1,12 +1,6 @@
 ==Definition==
 A [[voting system]] that guarantees the [[election]] of an alternative that is [[consented]] to by all voters in the voting population satisfies the [[unanimous consensus criterion]].  
 
-==Details==
-An alternative that is consented by all voters is called a [[unanimous consensus winner]].  It is possible that no such winner exists in a given election.  Also, in a given election with two or more alternatives, there can exist more than one unanimous consensus winner.  Voting systems that guarantee the election of a unanimous consensus winner must have a tie-breaking mechanism among multiple winners in order to be decisive.
+An alternative that is consented by all voters is called a [[unanimous consensus winner]].  In a given election with two or more alternatives, there can exist more than one unanimous consensus winner.  Voting systems that guarantee the election of a unanimous consensus winner must have a tie-breaking mechanism among multiple winners in order to be decisive.
 
-Any voting system that satisfies the [[greatest possible consensus criterion]] necessarily satisfies this criterion.
-
-[[Approval voting]] and [[Llull Voting]] satisfy the unanimous consensus criterion.  [[Condorcet methods]], [[Plurality voting]], [[IRV]], and the [[Borda count]] do not satisfy this criterion.
-
-[[Category:Consensus Criteria]]
-[[Category:Voting system criteria]]
+[[Approval voting]] and [[Llull voting]] satisfy the unanimous consensus criterion.  [[Condorcet methods]], [[Plurality voting]], [[IRV]], and the [[Borda count]] do not satisfy this criterion.
