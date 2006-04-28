@@ -66,6 +66,7 @@ Examples of Condorcet methods include:
 * '''[[Black]]''' chooses the Condorcet winner when it exists and otherwise the [[Borda count|Borda winner]]. It is named after Duncan Black.
 * '''[[Smith/IRV]]''' is [[instant-runoff voting]] with the candidates restricted to the Smith set.
 * '''[[Copeland's method|Copeland]]''' selects the candidate that wins the most pairwise matchups.  Note that if there is no Condorcet winner, Copeland will often still result in a tie.
+* '''[[Llull-Approval Voting]]'''- Elects the member of the [[Schwartz set]] with the greatest number of approvals
 * '''[[Minmax|Minimax]]''' (also called '''Simpson''') chooses the candidate whose worst pairwise defeat is less bad than that of all other candidates.<sup>1</sup>
 * '''Smith/Minimax''' restricts the Minimax algorithm to the Smith set.<sup>1</sup>
 * '''[[Ranked Pairs]]''' (RP) or '''Tideman''' (named after [[Nicolaus Tideman]]) with variations such as '''[[Maximize Affirmed Majorities]]''' (MAM) and  '''[[Maximum Majority Voting]]''' (MMV)<sup>1</sup>
@@ -81,7 +82,6 @@ Ranked Pairs and Schulze are procedurally in some sense opposite approaches:
 * Schulze (and variants) repeatedly removes the weakest ambiguous information until ambiguity is removed.
 
 The text below describes (variants of) these methods in more detail.
-
 
 == Ranked Pairs, Maximize Affirmed Majorities (MAM), and Maximum Majority Voting (MMV) ==
 
