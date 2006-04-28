@@ -1,6 +1,6 @@
-A [[preference-approval]] is a [[preference order]] that combines preference with approval.  It can contain either weak or strong preferences. 
+A [[preference-approval]] is a [[preference order]] that combines preference with approval.  It can contain either weak or strong preferences. A complete preference-approval is a [[total preference order]].
 
-==Restrictions== 
+==Rationality Restrictions== 
 
 Here are some rationality restrictions on preference-approvals.  Suppose there exists two alternatives, x and y:
 
