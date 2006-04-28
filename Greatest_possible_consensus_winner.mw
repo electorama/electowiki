@@ -2,3 +2,5 @@ The alternative with the greatest number of [[consents]] (or tied with one or mo
 
 ==Voting Systems==
 Any [[voting system]] that guarantees the election of a greatest possible consensus winner satisfies the [[greatest possible consensus criterion]].  [[Approval voting]] guarantees the election of greatest possible consensus winners, when it ask voters "which alternatives do you consent to?"  [[Disapproval voting]] guarantees the election of greatest possible consensus winners, when it ask voters "which alternatives do you not consent to?"
+
+Voting systems that do not guarantee the election of greatest possible consensus winners include: [[Condorcet methods]], [[Borda Count]], [[IRV]], and [[plurality voting]].
