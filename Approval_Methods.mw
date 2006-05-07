@@ -1,0 +1,5 @@
+[[Approval Methods]] are [[voting methods]] that are syntactically identical to [[approval voting]]; however, such methods may deviate from approval voting in semantics.  Examples of approval methods include [[acceptability voting]], [[approval voting]], [[consensus voting]], and [[disapproval voting]].
+
+Consider [[approval voting]] and [[disapproval voting]].  Both methods ask the voter to distinguish between approved and unapproved alternatives.  However, approval voting ask voters to list the alternatives they approve, while disapproval would request which alternatives are not approved.  In theory, both voting systems should elect the same alternatives.  However, because of limitations on human rationality, it is likely that the way the question is posed to the voter will affect who s/he approves and disapproves.  Thus, one might arrive at different winning alternatives in the same election, dependent upon whether approval or disapproval voting is used.
+
+Similarly, one might get different results in the same election depending on whether or not acceptability, or approval, or consensus, or disapproval, or any other approval method is used.
