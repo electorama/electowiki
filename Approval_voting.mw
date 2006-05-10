@@ -13,12 +13,12 @@ Supposing that voters voted for their two favorite candidates, the results would
 *Chattanooga: 58 total votes
 *Knoxville: 32 total votes
 
+==Criteria Passed==
+Approval voting satisfies the [[unanimous consensus criterion]] and [[greatest possible consensus criterion]].  It is strongly promoted by advocates of consensus democracy for [[single-winner elections]].
+
 ==Potential for tactical voting==
 Approval voting passes a form of the [[monotonicity criterion]], in that voting for a candidate never lowers that candidate's chance of winning.  Indeed, there is never a reason for a voter to [[tactical voting|tactically vote]] for a candidate X without voting for all candidates he or she prefers to candidate X.  Approval voting satisfies the [[monotonicity criterion]], the [[participation criterion]], the [[Consistency Criterion]], the [[summability criterion]], the [[Weak Defensive Strategy criterion]], [[Independence of irrelevant alternatives]], the [[Non-compulsory support criterion]] and the [[Independence of equivalent candidates criterion]].
 .
-
-==Criteria Passed==
-Approval voting satisfies the [[unanimous consensus criterion]] and [[greatest possible consensus criterion]].  It is strongly promoted by advocates of consensus democracy for [[single-winner elections]].
 
 ===Some Strategy for Voters ===
 
