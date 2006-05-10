@@ -17,11 +17,12 @@ Supposing that voters voted for their two favorite candidates, the results would
 Approval voting passes a form of the [[monotonicity criterion]], in that voting for a candidate never lowers that candidate's chance of winning.  Indeed, there is never a reason for a voter to [[tactical voting|tactically vote]] for a candidate X without voting for all candidates he or she prefers to candidate X.  Approval voting satisfies the [[monotonicity criterion]], the [[participation criterion]], the [[Consistency Criterion]], the [[summability criterion]], the [[Weak Defensive Strategy criterion]], [[Independence of irrelevant alternatives]], the [[Non-compulsory support criterion]] and the [[Independence of equivalent candidates criterion]].
 .
 
-===Proper strategy for voters ===
+==Criteria Passed==
+Approval voting satisfies the [[unanimous consensus criterion]] and [[greatest possible consensus criterion]].  It is strongly promoted by advocates of consensus democracy for [[single-winner elections]].
 
-As approval voting does not offer a single method of expressing sincere preferences, but rather a plethora of them, voters are encouraged to analyze their fellow voters' preferences and use that information to decide which candidates to vote for.
+===Some Strategy for Voters ===
 
-Some strategies for approval voting:
+As approval voting does not offer a single method of expressing sincere preferences, but rather a plethora of them, voters are encouraged to analyze their fellow voters' preferences and use that information to decide which candidates to vote for. Some strategies include:
 
 #Vote for every candidate you prefer to the leading candidate, and to also vote for the leading candidate if that candidate is preferred to the current second place candidate.
 #For each candidate C, if the winner is more likely to come from the set of candidates that are worse than C than from the set of candidates that are better than C, then approve C, else don't.
