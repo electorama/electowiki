@@ -1,1 +1,7 @@
-#Redirect[[Utilitarian Voting]]
+[[Utilitarian Voting]] is a [[single winner election method]] design to satisfy Jeremy Bentham's Principle of Utility.  This principle can be stated as ""Act always to promote the greatest happiness for the greatest number." [Source: http://plato.stanford.edu/entries/james-mill/].  That was how Bentham had stated it.
+
+==The Procedure==
+Each voter is given a list of all candidates in the election.  The voter is asked to list the candidates that they are happy with to win the election.  A given voter can only list a given candidate once.  Whichever candidate occurs on the most lists wins.
+
+==Discussion==
+This voting system is an [[approval method]].  It is said to satisfy Bentham's principle by electing the candidate that makes the greatest number of voters happy.  A criticism of this voting system is that it only tries to make the greatest number of voters happy.  It does not take into account the extent of happiness.
