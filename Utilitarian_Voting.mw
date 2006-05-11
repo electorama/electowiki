@@ -1,18 +1,7 @@
-[[Utilitarian Voting]] is a [[single winner election method]] design to satisfy Jeremy Bentham's Principle of Utility.  This principle can be stated as ""Act always to promote the greatest happiness for the greatest number." [http://plato.stanford.edu/entries/james-mill/].  That was how Bentham had stated it.  It is also called Happiness Voting.
+[[Utilitarian Voting]] is a [[single winner election method]] design to satisfy Jeremy Bentham's Principle of Utility.  This principle can be stated as ""Act always to promote the greatest happiness for the greatest number." [Source: http://plato.stanford.edu/entries/james-mill/].  That was how Bentham had stated it.  It is also called [[Happiness Voting]].
 
 ==The Procedure==
 Each voter is given a list of all candidates in the election.  The voter is asked to list the candidates that they are happy with to win the election.  A given voter can only list a given candidate once.  Whichever candidate occurs on the most lists wins.
 
 ==Discussion==
-This voting system is also called [[approval voting]].  It is said to satisfy Bentham's principle by electing the candidate that makes the greatest number of voters happy.  A criticism of this voting system is that it only tries to make the greatest number of voters happy.  It does not take into account the extent of happiness.  [http://rangevoting.org/vsr.html Social utility efficiency] calculations show that the most utilitarian of the common voting methods, if we consider the degree of happiness rather than an arbitrary binary "happy/unhappy" metric, is [http://RangeVoting.org/ Range Voting].  Some sample social utility efficiency calculations expressed as voter satisfaction ratios (the percentage of the total ideal utility achieved - not the percent of satisfied voters):
-
-Utility measurements: Group A: 5 candidates, 20 voters, random utilities; Each entry averages the results from 4,000,000 simulated elections. Group B: 5 candidates, 50 voters, utilities based on 2 issues, each entry averages the results from 2,222,222 simulated elections.
-
-'''Voting system - VSR A - VSR B'''
-
-Magically elect optimum winner 		100.00%		100.00%
-Range (honest voters)			96.71%		94.66%
-Borda (honest voters)			91.31%		89.97%
-Approval (honest voters)		86.30%		83.53%
-Condorcet-LR (honest voters)		85.19%		85.43%
-Range
+This voting system is an [[approval method]].  It is said to satisfy Bentham's principle by electing the candidate that makes the greatest number of voters happy.  A criticism of this voting system is that it only tries to make the greatest number of voters happy.  It does not take into account the extent of happiness.
