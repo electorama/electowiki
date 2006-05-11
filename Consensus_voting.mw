@@ -2,4 +2,5 @@
 
 Technically, consensus voting is syntactically identical to [[approval voting]]; however, it is different from [[approval voting]] semantically.  Specifically, voters are asked which alternatives they [[consent]] (as opposed to approve with approval voting).  This semantic difference is important because it ensures that consensus voting satisfies the [[unanimous consensus criterion]] and [[greatest possible consensus criterion]].
 
+[[Category:Single-winner voting systems]]
 [[Category:Approval Methods]]
