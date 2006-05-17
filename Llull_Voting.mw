@@ -1,4 +1,4 @@
-[[Llull Voting]] is a single winner voting system that attempts to find a compromise between approval voting and the Condorcet criterion.  It is named in honor of [[Ramon Llull]], a discoverer of the [[Borda Count]] and [[Condorcet Method]].
+[[Llull Voting]] is a single winner voting system that attempts to find a compromise between approval voting and the Condorcet criterion.  There are two different versions. It is named in honor of [[Ramon Llull]], a discoverer of the [[Borda Count]] and [[Condorcet Method]].
 
 ==Version 1: Llull-Smith Voting==
 Assume that there are m number of voters and n number of alternatives. Each voter submits a [[total preference order]] containing all n alternatives.  Note that voters are allowed to express indifference between alternatives in their total preference order.  If there exists an alternative that is approved by a majority of all m voters, then the alternative with the greatest number of approvals wins the election.  However, if no alternative is approved of by a majority of voters, then the member of the [[Smith set]] with the greatest number of approvals is elected the winning alternative.
