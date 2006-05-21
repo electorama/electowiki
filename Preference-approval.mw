@@ -6,13 +6,13 @@ Here are some rationality restrictions on preference-approvals.  Suppose there e
 
 1) If a given voter prefers x over y, and approves y, then she must approve x.
 
-2) If a given voter prefers x over y, and does not approve y, then she must not approve x.
+2) If a given voter prefers x over y, and does not approve x, then she must not approve y.
 
 3) If a given voter is indifferent between x and y, and approves x, then she must approve y.
 
 4) If a given voter is indifferent between x and y, and does not approve x, then she must approve y.
 
-Because of these rationality restrictions, some preference-approvals can be expressed as follows for alternatives x and y:
+He are some expressions of preference-approvals and translations into natural language:
 
 |x>y: "The voter prefers x over y, but approves neither."
 
