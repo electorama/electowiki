@@ -7,8 +7,7 @@ At present, the synonymous phrase '''"Instant Round Robin Voting" (IRRV)''' is b
 
 == Simple Explanation ==
 
-If one candidate defeats all others head-to-head, that candidate is the [[Condorcet Criterion|Condorcet Winner]].  This can be determined through use of ranked ballots.  In rare occasions, each candidate is defeated by at least one other, so there is no Condorcet Winner.  In that case it is necessary to use some tiebreaking procedure.
-
+If one candidate defeats all others head-to-head, that candidate is the [[Condorcet Criterion|Condorcet Winner]].  This can be determined through use of ranked ballots.  In rare occasions, each candidate is defeated by at least one other (e.g. rock, paper, scissors), so there is no Condorcet Winner.  In that case it is necessary to use some tiebreaking procedure.
 
 == Casting ballots ==
 
