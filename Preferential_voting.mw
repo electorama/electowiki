@@ -27,6 +27,14 @@ Ballot design or voting machine instructions are particularly important in such 
 * Write names: Hand-written names as a list from first to last preference.
 * Touch screen: A slightly different category of voting is a computer Touch screen could also be used, asking voters their first, second, etc preferences, and showing the selections so far and remaining choices, allowing selections to be removed if the voter makes a mistake or changes her mind during voting. Some people want touch screen voting to print a paper ballot at the end as a hardcopy backup.
 
+== Equal rankings ==
+
+Another variation of ranked ballots is to allow a voter to give multiple candidates the same ranking.  This allows voters to cast [[range voting]] style ballots.  Ways of dealing with such ballots include:
+
+* Convert the ballot into a fully-ranked one by breaking ties at random.
+* Use fractional votes.  If N candidates are tied on a ballot, each candidate receives 1/N of a first-place vote, 1/N of a second-place vote, etc.
+* In most [[Condorcet]] methods, the [[defeat strength]] of X over Y can be computed from the X>Y and Y>X votes, while simply ignoring X=Y votes.
+
 ==Scope for corruption==
 A potential problem with preferential votes is that they can be used to undermine a [[secret ballot]], and thus enable corruption by vote buying.  If there are enough candidates then the number of possible voting patterns may be much larger than the number of voters, and it then becomes possible to use early preferences to vote for the desired candidates and then to use later preferences to identify the voter to the person who has purchased the vote and looks at the ballot papers.  
 
