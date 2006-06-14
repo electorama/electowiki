@@ -1,0 +1,15 @@
+A '''Condorcet ranking''' is an ordering of candidates such that:
+
+* The [[Condorcet method | Condorcet]] winner, if one exists, is ranked first.
+* The secondary Condorcet winner (the new Condorcet winner if the Condorcet winner is eliminated), if one exists, is ranked second.
+* The tertiary Condorcet winner (the new Condorcet winner if the Condorcet winner and the secondary Condorcet winner are eliminated), if one exists, is ranked third.
+* etc.
+
+and
+
+* The Condorcet loser, if one exists, is ranked last.
+* The secondary Condorcet loser (the new Condorcet loser if the Condorcet loser is eliminated), if one exists, is ranked next-to-last.
+* The tertiary Condorcet loser (the new Condorcet loser if the Condorcet loser and secondary Condorcet loser are eliminated), if one exists, is ranked third-to-last.
+* etc.
+
+Methods that produce Condorcet rankings include [[Kemeny-Young]] and [[Ranked Pairs]].
