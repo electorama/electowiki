@@ -1,0 +1,7 @@
+[[Condorcet methods]] require the resolution of [[cycles]].  Typically, this is done by ignoring "weak" pairwise defeats in favor of "strong" ones.  The metric used to distinguish these is called '''defeat strength'''.
+
+Measures of defeat strength for a pairwise winner W over a pairwise loser L include:
+
+* '''winning votes''': Defeat strength = votes for W>L
+* '''margins''': Defeat strength = (votes for W>L) - (votes for L>W)
+* '''relative margins''': Defeat strength = margin &divide; (votes for W&ne;L)
