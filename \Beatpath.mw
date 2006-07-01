@@ -1,0 +1,97 @@
+In an election, a '''beatpath''' is a sequence of candidates such that each candidate in the sequence beats the next one in a pair-wise contest.  
+
+Beatpaths can be used to describe the [[Condorcet paradox]], the [[Schulze method]], and the [[Schwartz set]].
+
+
+==Beatpath definition==
+
+Beatpaths can be defined for any election in which candidates are evaluated in pair-wise contests.
+
+A '''beatpath''' from candidate X to candidate Y is a series of candidates, C(0),...,C(n), for some n >= 1, where:
+
+# X = C(0)
+# Y = C(n)
+# for every k = 0,...,n-1: C(k) beats C(k+1) in their pair-wise contest.
+
+
+==Beatpath strength==
+The '''strength''' of a beatpath is the minimum '''winning strength''' of each of the pair-wise victories of C(k) over C(k+1) in the beatpath.  Different measures of beatpath strength correspond to different measures of winning strength for a pair-wise contest.  Winning strength can be expressed quantitatively as a number, or more generally, it can be expressed ordinally as a relation on parameters of a pair-wise contest, such as the number of votes for the winning and losing candidate, as for example with recent specifications of the [http://home.versanet.de/~chris1-schulze/schulze1.pdf Schulze method].  Common quantitative measures of winning strength include:
+* margins:  the difference between the number of votes for the winning candidate
+* winning votes:  the number of votes for the winning candidate
+* losing votes:  the number of total votes minus the number of votes for the losing candidate
+* ratio: the number of votes for the losing candidate divided by the number of votes for the winning candidate
+
+These measures of winning strength can differ to the extent that:
+: Total votes = votes for the winning candidate + votes for the losing candidate + abstaining votes.
+
+
+==Cycles==
+A '''cycle''' is a beatpath that starts and ends at the the same candidate.
+
+Two candidates X and Y are '''in a cycle''' when there is a cycle C(0),...,C(n) with X=C(i) and Y=C(j) for some i and j.  
+
+* Two candidates are in a cycle if and only if there is a beatpath from X to Y and there is a beatpath from Y to X.
+
+
+==Cycle equivalence==
+
+An [http://en.wikipedia.org/wiki/Equivalence_relation equivalence relation] can be defined on the set of candidates by:
+:Candidate X is '''cycle equivalent''' to  candidate Y if and only if X and Y are in a cycle or X = Y.
+
+* For every candidate X, the '''cycle equivalence class of X''', '''Cec(X)''', is the set consisting of X and all candidates that are in a cycle with X.
+
+* For any candidates X and Y, either Cec(X) = Cec(Y) or Cec(X) is disjoint from Cec(Y).
+
+
+==Beatpath order==
+
+Beatpaths create a [http://en.wikipedia.org/wiki/Partial_order partial order] on the set of all cycle equivalence classes.
+
+===Definition===
+The '''beatpath order''' is defined by:
+
+:Cec(X) &gt; Cec(Y) if and only if there is a beatpath from X to Y and there is not a beatpath from Y to X, 
+or correspondingly:
+:Cec(X) &ge; Cec(Y) if and only if X = Y or there is a beatpath from X to Y.
+
+===Compared to pair-wise wins===
+* If X beats Y, then Cec(X) &ge; Cec(Y); but it is not necessarily true that Cec(X) &gt; Cec(Y).
+
+* If Cec(X) &gt; Cec(Y), then every candidate in Cec(X) pair-wise beats or ties every candidate in Cec(Y), and it is possible that every candidate in Cec(X) pair-wise ties with every candidate in Cec(Y).
+
+* If Cec(X) &gt; Cec(Y) and Cec(X) is next to Cec(Y) [meaning there is no candidate W with Cec(X) &gt; Cec(W) &gt; Cec(Y)], then there is a candidate in Cec(X) that pair-wise beats a candidate B in Cec(Y).
+
+===Ties===
+With an ordering, there are three possible comparisons between two items:
+* Cec(X) = Cec(Y)
+* Cec(X) &gt; Cec(Y)
+* Cec(Y) &gt; Cec(X)
+
+The beatpath ordering is a partial ordering, because there may be candidates X and Y such that Cec(X) and Cec(Y) are '''not comparable''', meaning none of the three comparisons are true.
+
+* If Cec(X) and Cec(Y) are not comparable, then every candidate in Cec(X) pair-wise ties with every candidate in Cec(Y).
+
+* If there are no pair-wise ties among any of the candidates, then the beatpath order becomes a [http://en.wikipedia.org/wiki/Linear_order linear order].
+
+===Maximal cycle equivalence classes===
+A cycle equivalence class Cec(X) is [http://en.wikipedia.org/wiki/Maximal_element '''maximal'''] in the beatpath order if and only if there is no other candidate Y with Cec(Y) &gt; Cec(X). 
+
+Because the beatpath order may only be a partial order, there can be more than one maximal cycle equivalence class.  But if Cec(X) and Cec(Y) are different and both are maximal, then they are not comparable, and hence only have pair-wise ties between them.
+
+If there are no pair-wise ties, the beatpath order is linear and there is exactly one cycle equivalence class set that is maximal.
+
+===Alternative formulation===
+Given the [http://en.wikipedia.org/wiki/Binary_relation binary relation] '''''Beat''''' over the set of candidates defined by:
+:(X,Y) is in ''Beat'' if and only if candidate X pair-wise beats candidate Y
+then the [http://en.wikipedia.org/wiki/Binary_relation#Operations_on_binary_relations transitive-reflexive closure] of ''Beat'' is a [http://en.wikipedia.org/wiki/Preorder preorder] on the set of candidates, and the [http://en.wikipedia.org/wiki/Preorder#Formal_definition natural partial order generated from that preorder] is the beatpath order defined above.
+
+Typically, ''Beat'' is [http://en.wikipedia.org/wiki/Irreflexive irreflexive] and [http://en.wikipedia.org/wiki/Antisymmetric_relation anti-symmetric], but this formulation does not depend on those properties.  When ''Beat'' is irreflexive and anti-symmetric, the cycle equivalence classes can have 1, 3, or more candidates, but never exactly 2 candidates.
+
+This alternative formulation highlights that beatpaths are used in the first definition of the beatpath order mostly as a way of expressing the transitive closure of the pair-wise victories.
+
+The cycle equivalence classes are the [http://en.wikipedia.org/wiki/Strongly_connected_component strongly connected components] of the [http://en.wikipedia.org/wiki/Graph_%28mathematics%29#Directed_graph graph] of ''Beat''.
+
+===Examples===
+Examples of beatpath orders with 3 candidates are [[..\Beatpath_examples_3 | here]].
+
+An example of a beatpath order with 12 candidates is [[..\Beatpath_example_12 | here]].
