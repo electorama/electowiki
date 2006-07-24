@@ -37,9 +37,9 @@ choice is always implied, so leaving it out is not considered
 truncation). Voters <em>falsify</em> their preferences, on the other
 hand, by reversing the order of their true preferences or by specifying
 a preference they don't really have. Suppose, for example, that a
-voter's true preferences are (A,B,C,D). The vote (A) or (A,B) would be a
-truncated vote, and the vote (B,A,C) or (A,C,B) would be a falsified
-vote.
+voter's true preferences are (A,B,C) with no preference between D and E.
+The vote (A) or (A,B) would be a truncated vote, and the vote (B,A,C) or (A,C,B)
+or (A,B,C,D,E) would be a falsified vote.
 
 SFC requires that the majority of voters who prefer the Condorcet candidate to
 another particular candidate vote sincerely (neither falsify nor
