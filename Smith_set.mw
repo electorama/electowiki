@@ -1,8 +1,37 @@
-The '''Smith set''' is the smallest set of candidates in a particular election who, when paired off in pairwise elections, can beat all other candidates outside the set.  This set might consist of only one candidate, the [[Condorcet winner]].  However, when the electorate is conflicted (as in [[Voting paradox|Condorcet's paradox]]), the set has at least one [[cycle]] of candidates for whom A beats B, B beats C, and C beats A. 
+The '''Smith set''' is the smallest non-empty set of candidates such that every candidate in the set beats every candidate outside of the set in a pair-wise contest.
+The Smith set represents one approach to identifying a subset of candidates from which an election method should choose a winner.  
+An election method that always chooses a winner from the Smith Set satisfies the Smith Criterion.
+The Smith set is defined for any election in which every candidate is evaluated against every other candidate in pair-wise contests that each result either in a tie or with one of candidates beating the other.
 
-== See also: ==
+The [[Schwartz set]] is a related set.
 
-*[[Schwartz set]]
+==Properties==
+
+The Smith set is the maximal cycle equivalence class of the [[Beatpath#Beat-or-tie_path | beat-or-tie order]].
+
+The Smith set always exists, when it is defined.  It can have more than one candidate, either because of pair-wise ties or because of cycles, such as in [[Condorcet's paradox]].
+
+The Smith set always contains the [[Condorcet Criterion |Condorcet winner]] and any [http://en.wikipedia.org/wiki/Condorcet_method#Related_terms weak Condorcet winners], if they exist. If the Smith set contains only one candidate, that candidate is the Condorcet winner.  If there is a Condorcet winner, it is the only candidate in the Smith set.
+
+If the Smith set contains more than one candidate, any two candidates in the set are in a [[Beatpath#Beat-or-tie_path | beat-or-tie]] cycle with each other.
+
+The Schwartz set is always a subset of the Smith set.  The Schwartz set is equal to the Smith set except when there is a candidate in the Schwartz set that has a pair-wise tie with a candidate outside of the Schwartz set.
+
+Some examples of the Smith set and Schwartz set are provided, some [[Beatpath examples 3 | with 3 candidates]] or with [[Beatpath example 12 | 12 candidates]].
+
+The Smith set can be calculated using versions of either [http://en.wikipedia.org/wiki/Kosaraju%27s_algorithm Kosaraju's algorithm] or the [http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm Floyd-Warshall algorithm].   Examples of both algorithms applied to calculating the Smith set and the Schwartz set are available [[maximal elements algorithms | here]].
+
+
+==References==
+* Smith, J. H.(1973). "Aggregation of preferences with variable electorate". ''Econometrica'' 41: 1027-1041.
+
+==See also==
+* [[Schwartz set]]
+* [[Beatpath]]
+* [[Beatpath examples 3 | Examples with 3 candidates]]
+* [[Beatpath example 12 | Example 12 candidates]]
+* [[maximal elements algorithms | Algorithms to calculate the Smith set]]
+
 
 {{fromwikipedia}}
 [[Category:Voting theory]]
