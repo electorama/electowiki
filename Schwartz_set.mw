@@ -11,7 +11,7 @@ The [[Smith set]] is a related set.
 
 
 ==Beatpath Order==
-The Schwartz set is the union of all of the [[../Beatpath#Cycle_equivalence | cycle equivalence classes]] that are [http://en.wikipedia.org/wiki/Maximal_element maximal] in the [[../Beatpath#Beatpath_order | beatpath order]].  A set is a Schwartz set component if and only if it is a cycle equivalence class that is maximal in the beatpath order.
+The Schwartz set is the union of all of the [[Beatpath#Cycle_equivalence | cycle equivalence classes]] that are [http://en.wikipedia.org/wiki/Maximal_element maximal] in the [[Beatpath#Beatpath_order | beatpath order]].  A set is a Schwartz set component if and only if it is a cycle equivalence class that is maximal in the beatpath order.
 
 This characterization of the Schwartz set follows from two characteristics of any set S that has the first property of a Schwartz set component:
 * No beatpath starts outside and finishes inside S.
@@ -58,9 +58,9 @@ Other characteristics of the Schwartz set include:
 
 
 ==Examples==
-Examples with 3 candidates are [[../Beatpath_Examples_3 | here]].
+Examples with 3 candidates are [[Beatpath examples 3 | here]].
 
-An example with 12 candidates is [[../Beatpath_Example_12 | here]].
+An example with 12 candidates is [[Beatpath example 12 | here]].
 
 ==Algorithms==
 The Schwartz set can be calculated using versions of either [http://en.wikipedia.org/wiki/Kosaraju%27s_algorithm Kosaraju's algorithm] or the [http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm Floyd-Warshall algorithm].   Examples of both algorithms applied to calculating the Smith set and the Schwartz set are available [[maximal elements algorithms | here]].
