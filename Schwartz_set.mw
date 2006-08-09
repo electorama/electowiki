@@ -66,7 +66,7 @@ An example with 12 candidates is [[../Beatpath_Example_12 | here]].
 The Schwartz set can be calculated using versions of either [http://en.wikipedia.org/wiki/Kosaraju%27s_algorithm Kosaraju's algorithm] or the [http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm Floyd-Warshall algorithm].   Examples of both algorithms applied to calculating the Smith set and the Schwartz set are available [[maximal elements algorithms | here]].
 
 ==See also==
-* [[Schwartz set]]
+* [[Smith set]]
 * [[Beatpath]]
 * [[Beatpath examples 3 | Examples with 3 candidates]]
 * [[Beatpath example 12 | Example with 12 candidates]]
