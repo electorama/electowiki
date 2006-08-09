@@ -1,0 +1,168 @@
+Versions of [http://en.wikipedia.org/wiki/Kosaraju%27s_algorithm Kosaraju's algorithm] and the [http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm Floyd-Warshall algorithm] can each be used to calculate the [[Schwartz set]] and the [[Smith set]] for an election.  When there are N candidates, Kosaraju's algorithm runs in &Theta;(N<sup>2</sup>) time with &Theta;(N<sup>2</sup>) space, while the Floyd-Warshall algorithm runs in &Theta;(N<sup>3</sup>) time with &Theta;(N<sup>2</sup>) space.
+
+==Background==
+
+The general problem is identifying the members of the [http://en.wikipedia.org/wiki/Maximal_element maximal elements] of an order generated from a binary relation.  The order is the [http://en.wikipedia.org/wiki/Preorder#Formal_definition natural partial order] generated from the [http://en.wikipedia.org/wiki/Preorder preorder] that is the [http://en.wikipedia.org/wiki/Binary_relation#Operations_on_binary_relations transitive-reflexive closure] of the relation.
+
+The Schwartz set is associated with the [[Beatpath#Beatpath_order | beatpath order]] on the set of [[Beatpath#Cycle_equivalence | beatpath cycle equivalence classes]], which are generated from the ''Beat'' relation defined by:
+:(X,Y) is in ''Beat'' if and only if candidate X pair-wise beats candidate Y
+
+The Smith set is associated with the [[Beatpath#Beat-or-tie_path | beat-or-tie order]]  on the set of beat-or-tie cycle equivalence classes, which are generated from the ''Beat-or-tie'' relation defined by:
+:(X,Y) is in ''Beat-or-tie'' if and only if candidate X pair-wise beats or ties candidate Y
+
+From a graph-theoretic perspective, these algorithms identify which vertices in the maximal [http://en.wikipedia.org/wiki/Strongly_connected_component strongly connected components] of the [http://en.wikipedia.org/wiki/Graph_%28mathematics%29#Directed_graph directed graph] of the given relation.
+
+The algorithms are started with a typical approach to summarizing the pair-wise contests between candidates: with a voting matrix such that <code>Votes[i,j]</code> is the number of votes for candidate <code>i</code> in a pair-wise contest against candidate <code>j</code>.  The final result of each algorithm is an boolean array, such that <code>IsInMaximal[i]</code> is true if and only if candidate <code>i</code> is in (one of) the maximal cycle equivalence classes, that is, if and only if the candidate is in the requested set, either the Schwartz set or the Smith Set.
+
+Pseudo-code for the algorithms starts with:
+
+  function FindMaximalCandidates(number [1..N,1..N] Votes, string Set, string Algorithm) 
+      boolean [1..N,1..N] Relation 
+      // Initialize Relation
+      for i from 1 to N
+          for j from 1 to N
+              if (Set == "Schwartz" and Votes[i,j] > Votes[j,i]) or
+                 (Set == "Smith" and i <> j and Votes[i,j] >= Votes[j,i])
+                  Relation[i,j] = true
+              else
+                  Relation[i,j] = false
+      boolean [1..N] IsInMaximal
+      &nbsp;
+      // Call the requested algorithm
+      if Algorithm == "Kosaraju"
+          IsInMaximal = '''KosarajuMaximal'''(Relation)
+      if Algorithm == "Floyd-Warshall"
+          IsInMaximal = '''FloydWarshallMaximal'''(Relation)
+
+
+==Kosaraju's algorithm==
+
+Kosaraju's algorithm does two depth-first searches (DFS) of the <code>Relation</code>.  The first search records the search finish times, which are then reversed to be used as a search order for the second search using the transpose of the <code>Relation</code>.  The second search partitions the candidates into search trees which are actually cycle equivalence classes, and also identifies which candidates are in maximal cycle equivalence classes.  While the first and second searches have slightly different requirements, for the purposes of presentation here, the pseudo-code for both searches have been consolidated into a single set of functions.
+
+  function '''KosarajuMaximal'''(boolean [1..N,1..N] Relation)
+      // SearchOrder[i] == j means candidate j is in position i of the search order
+      integer [1..N] SearchOrder
+      for i from 1 to N
+          SearchOrder[i] = i
+      '''StartDFS'''(Relation, SearchOrder)
+                 &nbsp;
+      //The second DFS is performed with
+      //   a search order that is the reverse finish order from first search
+      integer [1..N] SecondSearchOrder
+      for i from 1 to N
+          SecondSearchOrder[i] = FinishOrder[N+1 - i]
+      // ... and with the transposed Relation 
+      boolean [1..N,1..N] RelationTranspose
+      for i from 1 to N
+          for j from 1 to N
+              RelationTranspose[i,j] = Relation[j,i]
+      '''StartDFS'''(RelationTranspose, SecondSearchOrder)
+                 &nbsp;
+      bool [1..N] IsInMaximal
+      for i from 1 to N
+          if TreeConnectsToAnyPriorTree[Tree[i]] == true
+              IsInMaximal[i] = false
+          else
+              IsInMaximal[i] = true
+      return IsInMaximal
+
+  // This function initializes several variables that are globally shared 
+  // between the KosarajuMaximal, StartDFS, and VisitDFS functions
+  function '''InitDFS'''(int N)
+      integer [1..N] FinishOrder
+      FinishOrderCnt = 0
+      boolean [1..N] Visited
+      integer [1..N] Tree
+      // The variable TreeConnectsToAnyPriorTree is only relevant in the second DFS.  
+      // Since the second DFS is based on the transpose of the original relation,
+      //    and in the second search, trees correspond to cycle equivalence classes
+      //    aka strongly connected components, this is really tracking whether under
+      //    the original relation this tree is dominated by another one and hence
+      //    is not maximal.
+      boolean [1..N] TreeConnectsToAnyPriorTree
+      TreeCnt = 0
+      for i from 1 to N
+          Visited[i] = false
+          TreeConnectsToAnyPriorTree[i] = false
+
+  function '''StartDFS'''(boolean [1..N,1..N] Relation, integer [1..N] SearchOrder)
+      '''InitDFS'''(N)
+      for srchIx from 1 to N
+          rootIx = SearchOrder[srchIx]
+          if Visited[rootIx] == false
+              // Note:  when translating to zero-based array indexes,
+              //   reverse the order of the next two lines 
+              TreeCnt = TreeCnt + 1
+              '''VisitDFS'''(Relation, SearchOrder, rootIx)
+  &nbsp;      
+  &nbsp;      
+  function '''VisitDFS'''(boolean [1..N,1..N] Relation, integer [1..N] SearchOrder, integer visitIx)
+      Tree[visitIx] = TreeCnt
+      Visited[visitIx] = true
+      for srchIx from 1 to N
+          probeIx = SearchOrder[srchIx]
+          if Relation[visitIx,probeIx] == true
+              if Visited[probeIx] == false
+                  '''VisitDFS'''(Relation, SearchOrder, probeIx)
+              else
+                  if Tree[probeIx] < Tree[TreeCnt]
+                      TreeConnectsToAnyPriorTree[TreeCnt] = true
+      FinishCnt = FinishCnt + 1 
+      FinishOrder[FinishCnt] = visitIx
+
+Kosaraju's algorithm always starts the second depth-first search with a tree that is a maximal cycle equivalence class.  So if conditions hold that guarantee that the relation-induced partial ordering has exactly one maximal cycle equivalence class, and only the maximal candidates need to be identified, then a specialized version of StartDFS can be used for the second depth-first search that only executes the '''for''' loop one time.  In that case, the test for whether to set <code>IsInMaximal[i] = true</code> is simply whether <code>Visited[i] == true</code>.
+
+==Floyd-Warshall algorithm==
+
+This version of the Floyd-Warshall algorithm calculates whether there is a path between any two candidates, and then uses the results to see if each candidate is in a maximal cycle equivalence class.
+
+Floyd Algorithm to calculate the Schwartz winners:
+
+  function '''Floyd-WarshallMaximal'''(boolean [1..N,1..N] Relation)
+      boolean [1..N] IsInMaximal
+      for i from 1 to N
+          IsInMaximal[i] = true
+      &nbsp;
+      // Eventually, HasPath[i,j] == true iff there is a path from i to j
+      boolean [1..N,1..N] HasPath 
+      // Initialize HasPath for paths of length 1
+      for i from 1 to N
+          for j from 1 to N
+              if i <> j 
+                  if Relation[i,j] == true
+                      HasPath[i,j] = true
+                  else
+                      HasPath[i,j] = false
+      &nbsp;
+      // Expand consideration to paths that have intermediate nodes from 1 to k
+      for k from 1 to N
+          for i from 1 to N
+              if k <> i 
+                  for j from 1 to N
+                      if k <> j and i <> j 
+                          if HasPath[i,k] == true and HasPath[k,j] == true
+                              HasPath[i,j] = true      
+      &nbsp;
+      // Disqualify as maximal any candidates that have paths to them, 
+      //     but no path back to complete a cycle
+      for i from 1 to N
+          for j from 1 to N
+              if i <> j
+                  if HasPath[j,i] == true and HasPath[i,j] == false
+                      IsInMaximal[i] = false;
+      return IsInMaximal
+
+==References==
+* http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/2000-April/003907.html
+* http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/2001-February/005093.html
+* http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/2004-January/011627.html
+* Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L. (1990). Introduction to Algorithms, first edition, MIT Press and McGraw-Hill. ISBN 0-262-03141-8.
+** Section 23.5, "Strongly connected components", pp. 488-493;
+** Section 26.2, "The Floyd-Warshall algorithm", pp. 558â€“565;
+
+==See Also==
+* [[Schwartz set]]
+* [[Smith set]]
+* [[Beatpath]]
+* [http://en.wikipedia.org/wiki/Kosaraju%27s_algorithm Kosaraju's algorithm]
+* [http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm Floyd-Warshall algorithm]
