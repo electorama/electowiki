@@ -1,4 +1,4 @@
-This is an example of a [[Beatpath#Beatpath_order | beatpath order]] with 12 candidates.  It has been constructed to illustrate a variety of situations that can occur in terms of beatpaths, the beatpath order, and pair-wise wins, losses, and ties.  The example purposely has a lot of pair-wise ties and illustrates what is possible, not necessarily what might be typical.
+This is an example of a [[../Beatpath#Beatpath_order | beatpath order]] with 12 candidates.  It has been constructed to illustrate a variety of situations that can occur in terms of beatpaths, the beatpath order, and pair-wise wins, losses, and ties.  The example purposely has a lot of pair-wise ties and illustrates what is possible, not necessarily what might be typical.
 
 This example could occur with the following ranked ballots involving 12 candidates A - L:
 :  6: A>B
