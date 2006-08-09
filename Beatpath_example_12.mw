@@ -1,0 +1,237 @@
+This is an example of a [[../Beatpath#Beatpath_order | beatpath order]] with 12 candidates.  It has been constructed to illustrate a variety of situations that can occur in terms of beatpaths, the beatpath order, and pair-wise wins, losses, and ties.  The example purposely has a lot of pair-wise ties and illustrates what is possible, not necessarily what might be typical.
+
+This example could occur with the following ranked ballots involving 12 candidates A - L:
+:  6: A>B
+:  1: A>C>H>D>B>G>F>E>L>I>K>J
+:  6: C>D
+:  3: E>A>C>H>D>B
+:  3: E>B>D>C>A
+:  2: E>F>G>H>A>B
+:  2: E>G>F>H>B>C
+:  4: F>D>G>H>A
+:  1: F>G>E>H>B>D>C>A>L
+:  4: G>B>F>H>C
+:  1: H>G>F>E>D>C>B>J>I>K>L>A
+:  9: H>G>F>E>D>C>B>L>I>J>K>A
+: 10: K>J>I>L>A>B>C>D>E>F>G>H
+
+These ballots are evaluated in pair-wise contests using a typical procedure.  For example, the first line says there are 6 votes for A in each contest involving A, there are six votes for B in each contest involving B except for the one against A, and there are no votes for either candidate in any other pair-wise contest.  
+ 
+{| cellspacing="3" cellpadding="3" border="1" style="background:#eeeeff;text-align:right" align="center"  
+|+ '''Vote Totals'''
+|- style="text-align:center"
+!&ensp;&ensp;&ensp; ||&ensp;A&ensp;!!&ensp;B&ensp;!!&ensp;C&ensp;!!&ensp;D&ensp;!!&ensp;E&ensp;!!&ensp;F&ensp;!!&ensp;G&ensp;!!&ensp;H&ensp;!!&ensp;I&ensp;!!&ensp;J&ensp;!!&ensp;K&ensp;!!&ensp;L&ensp;
+|-
+!style="text-align:center"|A
+| bgcolor="#AAAAAA"|--|| bgcolor="#80EE80"|26|| bgcolor="yellow"|26|| bgcolor="red"|22|| bgcolor="yellow"|21|| bgcolor="yellow"|23|| bgcolor="yellow"|23|| bgcolor="yellow"|23|| bgcolor="yellow"|20|| bgcolor="yellow"|20|| bgcolor="yellow"|20|| bgcolor="yellow"|20
+|-
+!style="text-align:center"|B
+| bgcolor="red"|20|| bgcolor="#AAAAAA"|--|| bgcolor="#80EE80"|28|| bgcolor="#80EE80"|28|| bgcolor="yellow"|21|| bgcolor="#80EE80"|27|| bgcolor="yellow"|23|| bgcolor="yellow"|23|| bgcolor="#80EE80"|32|| bgcolor="#80EE80"|32|| bgcolor="#80EE80"|32|| bgcolor="#80EE80"|32
+|-
+!style="text-align:center"|C
+| bgcolor="yellow"|26|| bgcolor="red"|20|| bgcolor="#AAAAAA"|--|| bgcolor="#80EE80"|26|| bgcolor="yellow"|21|| bgcolor="yellow"|23|| bgcolor="yellow"|23|| bgcolor="yellow"|23|| bgcolor="#80EE80"|30|| bgcolor="#80EE80"|30|| bgcolor="#80EE80"|30|| bgcolor="#80EE80"|30
+|-
+!style="text-align:center"|D
+| bgcolor="#80EE80"|24|| bgcolor="red"|24|| bgcolor="red"|18|| bgcolor="#AAAAAA"|--|| bgcolor="yellow"|21|| bgcolor="yellow"|23|| bgcolor="#80EE80"|27|| bgcolor="yellow"|23|| bgcolor="#80EE80"|28|| bgcolor="#80EE80"|28|| bgcolor="#80EE80"|28|| bgcolor="#80EE80"|28
+|-
+!style="text-align:center"|E
+| bgcolor="yellow"|21|| bgcolor="yellow"|21|| bgcolor="yellow"|21|| bgcolor="yellow"|21|| bgcolor="#AAAAAA"|--|| bgcolor="yellow"|20|| bgcolor="yellow"|20|| bgcolor="#80EE80"|21|| bgcolor="#80EE80"|22|| bgcolor="#80EE80"|22|| bgcolor="#80EE80"|22|| bgcolor="#80EE80"|22
+|-
+!style="text-align:center"|F
+| bgcolor="yellow"|23|| bgcolor="red"|19|| bgcolor="yellow"|23|| bgcolor="yellow"|23|| bgcolor="yellow"|20|| bgcolor="#AAAAAA"|--|| bgcolor="yellow"|17|| bgcolor="#80EE80"|23|| bgcolor="#80EE80"|24|| bgcolor="#80EE80"|24|| bgcolor="#80EE80"|24|| bgcolor="#80EE80"|24
+|-
+!style="text-align:center"|G
+| bgcolor="yellow"|23|| bgcolor="yellow"|23|| bgcolor="yellow"|23|| bgcolor="red"|19|| bgcolor="yellow"|20|| bgcolor="yellow"|17|| bgcolor="#AAAAAA"|--|| bgcolor="#80EE80"|23|| bgcolor="#80EE80"|24|| bgcolor="#80EE80"|24|| bgcolor="#80EE80"|24|| bgcolor="#80EE80"|24
+|-
+!style="text-align:center"|H
+| bgcolor="yellow"|23|| bgcolor="yellow"|23|| bgcolor="yellow"|23|| bgcolor="yellow"|23|| bgcolor="red"|19|| bgcolor="red"|14|| bgcolor="red"|14|| bgcolor="#AAAAAA"|--|| bgcolor="#80EE80"|27|| bgcolor="#80EE80"|27|| bgcolor="#80EE80"|27|| bgcolor="#80EE80"|27
+|-
+!style="text-align:center"|I
+| bgcolor="yellow"|20|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="#AAAAAA"|--|| bgcolor="red"|10|| bgcolor="#80EE80"|11|| bgcolor="yellow"|11
+|-
+!style="text-align:center"|J
+| bgcolor="yellow"|20|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="#80EE80"|11|| bgcolor="#AAAAAA"|--|| bgcolor="red"|10|| bgcolor="yellow"|11
+|-
+!style="text-align:center"|K
+| bgcolor="yellow"|20|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="#80EE80"|11|| bgcolor="#AAAAAA"|--|| bgcolor="yellow"|11
+|-
+!style="text-align:center"|L
+| bgcolor="yellow"|20|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="red"|10|| bgcolor="yellow"|11|| bgcolor="yellow"|11|| bgcolor="yellow"|11|| bgcolor="#AAAAAA"|--
+
+|}
+
+{| cellspacing="3" cellpadding="5" border="1" style="background:#eeeeff;text-align:center" align="center"
+|+ Color Code for Vote Totals
+|-
+| bgcolor="#80EE80"|Pair-wise Win|| bgcolor="yellow"|Pair-wise Tie|| bgcolor="red"|Pair-wise Loss|| bgcolor="#AAAAAA"|No Contest
+|}
+
+
+
+
+{| cellspacing="3" cellpadding="3" border="1" style="background:#eeeeff;text-align:right" align="center" 
+|+ '''Vote Margins'''
+|- style="text-align:center"
+!&ensp;&ensp;&ensp; ||&ensp;A&ensp;!!&ensp;B&ensp;!!&ensp;C&ensp;!!&ensp;D&ensp;!!&ensp;E&ensp;!!&ensp;F&ensp;!!&ensp;G&ensp;!!&ensp;H&ensp;!!&ensp;I&ensp;!!&ensp;J&ensp;!!&ensp;K&ensp;!!&ensp;L&ensp;
+|-
+!style="text-align:center"|A
+| bgcolor="#AAAAAA"| --|| bgcolor="#80EE80"|6|| bgcolor="yellow"|0|| bgcolor="red"|-2|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0
+|-
+!style="text-align:center"|B
+| bgcolor="red"|-6|| bgcolor="#AAAAAA"|--|| bgcolor="#80EE80"|8|| bgcolor="#80EE80"|4|| bgcolor="yellow"|0|| bgcolor="#80EE80"|8|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="#80EE80"|22|| bgcolor="#80EE80"|22|| bgcolor="#80EE80"|22|| bgcolor="#80EE80"|22
+|-
+!style="text-align:center"|C
+| bgcolor="yellow"|0|| bgcolor="red"|-8|| bgcolor="#AAAAAA"|--|| bgcolor="#80EE80"|8|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="#80EE80"|20|| bgcolor="#80EE80"|20|| bgcolor="#80EE80"|20|| bgcolor="#80EE80"|20
+|-
+!style="text-align:center"|D
+| bgcolor="#80EE80"|2|| bgcolor="red"|-4|| bgcolor="red"|-8|| bgcolor="#AAAAAA"|--|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="#80EE80"|8|| bgcolor="yellow"|0|| bgcolor="#80EE80"|18|| bgcolor="#80EE80"|18|| bgcolor="#80EE80"|18|| bgcolor="#80EE80"|18
+|-
+!style="text-align:center"|E
+| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="#AAAAAA"|--|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="#80EE80"|2|| bgcolor="#80EE80"|12|| bgcolor="#80EE80"|12|| bgcolor="#80EE80"|12|| bgcolor="#80EE80"|12
+|-
+!style="text-align:center"|F
+| bgcolor="yellow"|0|| bgcolor="red"|-8|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="#AAAAAA"|--|| bgcolor="yellow"|0|| bgcolor="#80EE80"|9|| bgcolor="#80EE80"|14|| bgcolor="#80EE80"|14|| bgcolor="#80EE80"|14|| bgcolor="#80EE80"|14
+|-
+!style="text-align:center"|G
+| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="red"|-8|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="#AAAAAA"|--|| bgcolor="#80EE80"|9|| bgcolor="#80EE80"|14|| bgcolor="#80EE80"|14|| bgcolor="#80EE80"|14|| bgcolor="#80EE80"|14
+|-
+!style="text-align:center"|H
+| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="red"|-2|| bgcolor="red"|-9|| bgcolor="red"|-9|| bgcolor="#AAAAAA"|--|| bgcolor="#80EE80"|17|| bgcolor="#80EE80"|17|| bgcolor="#80EE80"|17|| bgcolor="#80EE80"|17
+|-
+!style="text-align:center"|I
+| bgcolor="yellow"|0|| bgcolor="red"|-22|| bgcolor="red"|-20|| bgcolor="red"|-18|| bgcolor="red"|-12|| bgcolor="red"|-14|| bgcolor="red"|-14|| bgcolor="red"|-17|| bgcolor="#AAAAAA"|--|| bgcolor="red"|-1|| bgcolor="#80EE80"|1|| bgcolor="yellow"|0
+|-
+!style="text-align:center"|J
+| bgcolor="yellow"|0|| bgcolor="red"|-22|| bgcolor="red"|-20|| bgcolor="red"|-18|| bgcolor="red"|-12|| bgcolor="red"|-14|| bgcolor="red"|-14|| bgcolor="red"|-17|| bgcolor="#80EE80"|1|| bgcolor="#AAAAAA"|--|| bgcolor="red"|-1|| bgcolor="yellow"|0
+|-
+!style="text-align:center"|K
+| bgcolor="yellow"|0|| bgcolor="red"|-22|| bgcolor="red"|-20|| bgcolor="red"|-18|| bgcolor="red"|-12|| bgcolor="red"|-14|| bgcolor="red"|-14|| bgcolor="red"|-17|| bgcolor="red"|-1|| bgcolor="#80EE80"|1|| bgcolor="#AAAAAA"|--|| bgcolor="yellow"|0
+|-
+!style="text-align:center"|L
+| bgcolor="yellow"|0|| bgcolor="red"|-22|| bgcolor="red"|-20|| bgcolor="red"|-18|| bgcolor="red"|-12|| bgcolor="red"|-14|| bgcolor="red"|-14|| bgcolor="red"|-17|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="yellow"|0|| bgcolor="#AAAAAA"|--
+
+|}
+
+{| cellspacing="3" cellpadding="5" border="1" style="background:#eeeeff;text-align:center" align="center"
+|+ Color Code for Vote Margins
+|-
+| bgcolor="#80EE80"|Pair-wise Win|| bgcolor="yellow"|Pair-wise Tie|| bgcolor="red"|Pair-wise Loss|| bgcolor="#AAAAAA"|No Contest
+|}
+
+
+
+
+{| cellspacing="3" cellpadding="3" border="1" style="background:#eeeeff;text-align:right" align="center" 
+|+ '''Beatpath Exists'''
+|- style="text-align:center"
+!&ensp;&ensp;&ensp; ||&ensp;A&ensp;!!&ensp;B&ensp;!!&ensp;C&ensp;!!&ensp;D&ensp;!!&ensp;E&ensp;!!&ensp;F&ensp;!!&ensp;G&ensp;!!&ensp;H&ensp;!!&ensp;I&ensp;!!&ensp;J&ensp;!!&ensp;K&ensp;!!&ensp;L&ensp;
+|-
+!style="text-align:center"|A
+| bgcolor="#AAAAAA"|Y|| bgcolor="#80EE80"|Y|| bgcolor="yellow"|Y|| bgcolor="red"|Y|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|Y|| bgcolor="yellow"|Y|| bgcolor="yellow"|Y|| bgcolor="yellow"|Y|| bgcolor="yellow"|Y|| bgcolor="yellow"|Y|| bgcolor="yellow"|Y
+|-
+!style="text-align:center"|B
+| bgcolor="red"|Y|| bgcolor="#AAAAAA"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="yellow"|&nbsp;|| bgcolor="#80EE80"|Y|| bgcolor="yellow"|Y|| bgcolor="yellow"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y
+|-
+!style="text-align:center"|C
+| bgcolor="yellow"|Y|| bgcolor="red"|Y|| bgcolor="#AAAAAA"|Y|| bgcolor="#80EE80"|Y|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|Y|| bgcolor="yellow"|Y|| bgcolor="yellow"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y
+|-
+!style="text-align:center"|D
+| bgcolor="#80EE80"|Y|| bgcolor="red"|Y|| bgcolor="red"|Y|| bgcolor="#AAAAAA"|Y|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|Y|| bgcolor="#80EE80"|Y|| bgcolor="yellow"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y
+|-
+!style="text-align:center"|E
+| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y
+|-
+!style="text-align:center"|F
+| bgcolor="yellow"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y
+|-
+!style="text-align:center"|G
+| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y
+|-
+!style="text-align:center"|H
+| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#80EE80"|Y
+|-
+!style="text-align:center"|I
+| bgcolor="yellow"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="#AAAAAA"|Y|| bgcolor="red"|Y|| bgcolor="#80EE80"|Y|| bgcolor="yellow"|&nbsp;
+|-
+!style="text-align:center"|J
+| bgcolor="yellow"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="#80EE80"|Y|| bgcolor="#AAAAAA"|Y|| bgcolor="red"|Y|| bgcolor="yellow"|&nbsp;
+|-
+!style="text-align:center"|K
+| bgcolor="yellow"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|Y|| bgcolor="#80EE80"|Y|| bgcolor="#AAAAAA"|Y|| bgcolor="yellow"|&nbsp;
+|-
+!style="text-align:center"|L
+| bgcolor="yellow"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="red"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="yellow"|&nbsp;|| bgcolor="#AAAAAA"|&nbsp;
+
+|}
+
+{| cellspacing="3" cellpadding="5" border="1" style="background:#eeeeff;text-align:center" align="center"
+|+ Color Code for BeatPath Exists
+|-
+| bgcolor="#80EE80"|Pair-wise Win|| bgcolor="yellow"|Pair-wise Tie|| bgcolor="red"|Pair-wise Loss|| bgcolor="#AAAAAA"|No Contest
+|}
+
+
+
+
+{| cellspacing="3" cellpadding="3" border="1" style="background:#eeeeff;text-align:right" align="center" 
+|+ '''Beatpath Order on Cycle Equivalence Classes'''
+|- style="text-align:center"
+!Cec ||&ensp;A&ensp;!!&ensp;E&ensp;!!&ensp;F&ensp;!!&ensp;G&ensp;!!&ensp;H&ensp;!!&ensp;I&ensp;!!&ensp;L&ensp;
+|-
+!style="text-align:center"|A
+| bgcolor="yellow"|=|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="#80EE80"|&gt;|| bgcolor="#80EE80"|&gt;|| bgcolor="#80EE80"|&gt;|| bgcolor="#80EE80"|&gt;|| bgcolor="#80EE80"|&gt;
+|-
+!style="text-align:center"|E
+| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="#AAAAAA"|=|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="#80EE80"|&gt;|| bgcolor="#80EE80"|&gt;|| bgcolor="#80EE80"|&gt;
+|-
+!style="text-align:center"|F
+| bgcolor="red"|&lt;|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="#AAAAAA"|=|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="#80EE80"|&gt;|| bgcolor="#80EE80"|&gt;|| bgcolor="#80EE80"|&gt;
+|-
+!style="text-align:center"|G
+| bgcolor="red"|&lt;|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="#AAAAAA"|=|| bgcolor="#80EE80"|&gt;|| bgcolor="#80EE80"|&gt;|| bgcolor="#80EE80"|&gt;
+|-
+!style="text-align:center"|H
+| bgcolor="red"|&lt;|| bgcolor="red"|&lt;|| bgcolor="red"|&lt;|| bgcolor="red"|&lt;|| bgcolor="#AAAAAA"|=|| bgcolor="#80EE80"|&gt;|| bgcolor="#80EE80"|&gt;
+|- 
+!style="text-align:center"|I
+| bgcolor="red"|&lt;|| bgcolor="red"|&lt;|| bgcolor="red"|&lt;|| bgcolor="red"|&lt;|| bgcolor="red"|&lt;|| bgcolor="yellow"|=|| bgcolor="#AAAAAA"|&nbsp;
+|-
+!style="text-align:center"|L
+| bgcolor="red"|&lt;|| bgcolor="red"|&lt;|| bgcolor="red"|&lt;|| bgcolor="red"|&lt;|| bgcolor="red"|&lt;|| bgcolor="#AAAAAA"|&nbsp;|| bgcolor="#AAAAAA"|=
+
+|}
+
+{| cellspacing="3" cellpadding="5" border="1" style="background:#eeeeff;text-align:center" align="center"
+|+ Color Code for Beatpath Order on Cycle Equivalence Classes
+|-
+| bgcolor="#80EE80"|Beatpath from-to|| bgcolor="yellow"|In a Cycle|| bgcolor="red"|Beatpath to-from|| bgcolor="#AAAAAA"|No Beatpaths
+|}
+
+Note that the cycle equivalence class for A is {A,B,C,D} and the cycle equivalence class for I is {I,J,K}.
+
+
+:'''Beat Path Order:'''
+<code>
+     {A,B,C,D}  {E}
+       /   \    /
+     {F}   {G} /
+       \___ | /
+           \|/
+           {H}
+           / \
+    {I,J,K}   {L}
+</code>
+
+* The weak Condorcet winner is E.
+* The Schwartz set = {A,B,C,D,E}.
+* The Smith set = the set of all candidates.
+
+
+==See also==
+* [[Beatpath]]
+* [[Beatpath examples 3 | Examples 3 candidates]]
+* [[Maximal elements algorithms | Algorithms to calculate the Schwartz set and Smith set]]
+* [[Condorcet Criterion |Condorcet winner]]
+* [http://en.wikipedia.org/wiki/Condorcet_method#Related_terms weak Condorcet winners]
+* [[Schwartz set]]
+* [[Smith set]]
