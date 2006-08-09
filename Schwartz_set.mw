@@ -1,7 +1,76 @@
-The '''Schwartz set''' is the union of all possible sets of candidates such that for every set:
-# every candidate inside the set is pairwise unbeatable by any other candidate outside the set, i.e. ties are allowed
-# no proper (smaller) subset of the set fulfills the first property
-The Schwartz set is always a subset of the [[Smith set]], although not necessarily a ''smaller'' (i.e., proper) subset.
+The '''Schwartz set''' is the union of all sets that are Schwartz set components.
+
+A '''Schwartz set component''' is any non-empty set S of candidates, such that:
+
+# Every candidate in S pair-wise beats or ties any other candidate outside of S, and
+# No non-empty proper (smaller) subset of S fulfills the first property 
+
+The Schwartz set represents one approach to identifying a subset of candidates from which an election method should choose a winner.  The Schwartz set is defined for any election in which every candidate is evaluated against every other candidate in pair-wise contests that each result either in a tie or with one of the candidates beating the other.
+
+The [[Smith set]] is a related set.
+
+
+==Beatpath Order==
+The Schwartz set is the union of all of the [[../Beatpath#Cycle_equivalence | cycle equivalence classes]] that are [http://en.wikipedia.org/wiki/Maximal_element maximal] in the [[../Beatpath#Beatpath_order | beatpath order]].  A set is a Schwartz set component if and only if it is a cycle equivalence class that is maximal in the beatpath order.
+
+This characterization of the Schwartz set follows from two characteristics of any set S that has the first property of a Schwartz set component:
+* No beatpath starts outside and finishes inside S.
+* If X is in S, then the set S \ {Y : Y is in S and there is no beatpath from Y to X} also has the first property of a Schwartz set component.
+
+
+==Smith Set==
+The Schwartz set is a subset of the [[Smith set]].  The Schwartz set is equal to the Smith set if and only if every candidate in the Schwartz set pair-wise beats every candidate outside the Schwartz set, that is, no candidate in Schwartz set pair-wise ties with any candidate outside of the Schwartz set.
+
+The Smith set can be constructed from the Schwartz set by repeatedly adding two types of candidates until no more such candidates exist outside the set:
+* candidates that have pair-wise ties with candidates in the set,
+* candidates that start a beatpath that ends in the set.
+
+Note that candidates of the second type can only exist after candidates of the first type have be added.
+
+
+==Other Characteristics==
+
+Other characteristics of the Schwartz set include:
+
+* If a [[Condorcet Criterion |Condorcet winner]] exists, it is the one and only candidate in the Schwartz set.
+
+* All [http://en.wikipedia.org/wiki/Condorcet_method#Related_terms weak Condorcet winners] are in the Schwartz set.  The weak Condorcet winners are the candidates in the Schwartz set that are not in a cycle, so they are each in their own Schwartz set component.
+
+* If the Schwartz set contains only one candidate, it is the weak Condorcet winner.  If that candidate has no pair-wise ties, it is the Condorcet winner.
+
+* The Schwartz set is never empty.  At least one Schwartz set component exists.  (Assuming the number of candidates is finite.)
+
+* There is no beatpath that starts outside and ends inside a Schwartz set component.
+
+* Schwartz set components are disjoint.  No candidate is in more than one Schwartz set component.
+
+* Any two candidates from different Schwartz set components are pair-wise tied with each other.
+
+* Any two distinct candidates X and Y from the same Schwartz set component are in a cycle with each other; there is a beatpath from X to Y and there is a beatpath from Y to X.
+
+* For any candidate Y not in the Schwartz set, there is at least one candidate X in the Schwartz set that has a beatpath from X to Y.  However, it is possible that there exists a candidate outside the Schwartz set that is not beaten by any candidate in the Schwartz set, but instead is pair-wise tied with every candidate in the Schwartz set.
+
+* A Schwartz set component may contain 1, 3, or more candidates, but never exactly two candidates.
+
+* If there are no pair-wise ties, as is typical in larger-scale elections, the Schwartz set will consist of either:
+** a single candidate that is the Condorcet winner, or 
+** a set of three or more candidates that are all in cycles with each other.
+
+
+==Examples==
+Examples with 3 candidates are [[../Beatpath_Examples_3 | here]].
+
+An example with 12 candidates is [[../Beatpath_Example_12 | here]].
+
+==Algorithms==
+The Schwartz set can be calculated using versions of either [http://en.wikipedia.org/wiki/Kosaraju%27s_algorithm Kosaraju's algorithm] or the [http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm Floyd-Warshall algorithm].   Examples of both algorithms applied to calculating the Smith set and the Schwartz set are available [[maximal elements algorithms | here]].
+
+==See also==
+* [[Schwartz set]]
+* [[Beatpath]]
+* [[Beatpath examples 3 | Examples with 3 candidates]]
+* [[Beatpath example 12 | Example with 12 candidates]]
+* [[maximal elements algorithms | Algorithms to calculate the Schwartz set]]
 
 [[Category:Voting theory]]
 {{fromwikipedia}}
