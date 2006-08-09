@@ -103,8 +103,8 @@ This alternative formulation highlights that beatpaths are used in the first def
 The cycle equivalence classes are the [http://en.wikipedia.org/wiki/Strongly_connected_component strongly connected components] of the [http://en.wikipedia.org/wiki/Graph_%28mathematics%29#Directed_graph graph] of ''Beat''.
 
 ===Examples===
-* [[Beatpath Examples 3 | Examples of beatpath orders with 3 candidates]]
-* [[Beatpath Example 12 | An example of a beatpath order with 12 candidates]]
+* [[Beatpath examples 3 | Examples of beatpath orders with 3 candidates]]
+* [[Beatpath example 12 | An example of a beatpath order with 12 candidates]]
 
 
 ==Beat-or-tie path==
@@ -123,12 +123,12 @@ Given either the ''Beat'' relation or the ''Beat-or-tie'' relation as an N &time
 
 A version of the [http://en.wikipedia.org/wiki/Floyd-Warshall_algorithm Floyd-Warshall algorithm] can be used to identify the candidates in the maximal elements of the beatpath order or the beat-or-tie order.  The Floyd-Warshall algorithm runs in &Theta;(N<sup>3</sup>) time.
 
-Here are [[Maximal Elements Algorithms | pseudo-code examples of these algorithms]] applied to calculating the [[Schwartz set]] and [[Smith set]] for an election.
+Here are [[Maximal elements algorithms | pseudo-code examples of these algorithms]] applied to calculating the [[Schwartz set]] and [[Smith set]] for an election.
 
 
 ==See also==
-* [[Beatpath Examples 3 | Examples with 3 candidates]]
-* [[Beatpath Example 12 | Example 12 candidates]]
+* [[Beatpath examples 3 | Examples with 3 candidates]]
+* [[Beatpath example 12 | Example 12 candidates]]
 * [[Maximal elements algorithms | Algorithms to calculate the Schwartz set and Smith set]]
 * [[Schwartz set]]
 * [[Smith set]]
