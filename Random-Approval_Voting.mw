@@ -1,0 +1,15 @@
+[[Random-Approval Voting]] is a variation on [[approval voting]] and [[random ballot]] intended to respond to [[Jack Nagel]]'s [[Burr's Dilemma]].  The dilemma provides a game-theoretic argument such that under certain conditions, approval voting might elect a candidate who would not be the [[approval winner]] under sincere approval voting.
+
+==Procedure==
+Though there are more practical and equivalent ways of enacting random-approval voting, the procedure will be described here in a manner to elucidate the concept behind the procedure.
+
+The voter writes the name of a candidate she [[consents]] on a standardized sheet of paper.  She does this for each candidate she [[consents]]; one name person standardized sheet such that if there are n number of candidates she consents, then there are n sheets of paper she writes on.  
+
+She place all of the sheets, which she has written candidate names on, into a hopper.  All other voters place their sheets into the same hopper.  Then, one of the sheets is randomly chosen from the hopper.  Whichever candidate occurs on this randomly chosen sheet is the winner of the election.
+
+==Discussion==
+A voter increases the chances of a candidate that she consents winning the election, if she lists more candidates.  But there is no incentive to list candidates you don't consent, because then you increase the likelihood of electing a candidate you do not consent.  Thus, the election system is geared towards getting voters to list all candidates they sincerely [[consent]].
+
+Statistically speaking, the candidate that is consented by the greatest number of voters is most likely to win the election.  However, there is no guarantee.  In fact, it is possible that a candidate that is listed by only one voter could possibly win the election.
+
+Because of fear of (1) possibly electing a candidate with little support and (2) possible tampering of random procedures in the real world elections, this is arguably not a practical election system.  However, it is a useful tool in voting research that helps researchers understand which candidates voters sincerely [[consent]] to.
