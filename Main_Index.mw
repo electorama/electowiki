@@ -14,7 +14,7 @@ Feel free to add new methods, but try to keep the list reasonably organised.
 ***[[STV method|Method]], [[STV theory|Theory]], [[STV strategy|Strategy]]
 **[[asset voting|Asset Voting]]
 ***[[asset voting method|Method]], [[asset voting theory|Theory]], [[asset voting strategy|Strategy]]
-**[[reweighted score voting|Reweighted score voting]]
+
 *Non Proportional Methods
 **[[bloc vote|Block Voting]]
 ***[[bloc vote method|Method]], [[bloc vote theory|Theory]], [[bloc vote strategy|Strategy]]
@@ -23,7 +23,7 @@ Feel free to add new methods, but try to keep the list reasonably organised.
 
 *[[first-past-the-post|First Past the Post (Plurality)]]
 **[[first-past-the-post method|Method]], [[first-past-the-post theory|Theory]], [[first-past-the-post strategy|Strategy]]
-*[[instant-runoff voting|IRV (Instant Runoff Voting)]]
+*[[instant-runoff voting|IRV (Instant Runoff Voting]]
 **[[instant-runoff voting method|Method]], [[instant-runoff voting theory|Theory]], [[instant-runoff voting strategy|Strategy]]
 *[[Condorcet method|Condorcet]]
 **[[Condorcet method method|Method]], [[Condorcet method theory|Theory]], [[Condorcet method strategy|Strategy]]
@@ -38,7 +38,3 @@ Feel free to add new methods, but try to keep the list reasonably organised.
 **[[Additional Member System method|Method]], [[Additional Member System theory|Theory]], [[Additional Member System strategy|Strategy]]
 *[[Mixed Member Proportional|MMP (Mixed Member Proportional or "top up)]]
 **[[Mixed Member Proportional method|Method]], [[Mixed Member Proportional theory|Theory]], [[Mixed Member Proportional strategy|Strategy]]
-
-=General Election Theory=
-
-==Election Criteron==
