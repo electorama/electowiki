@@ -379,7 +379,7 @@ From there, the Schulze method operates as follows to select a winner (or create
 
 ==== The Situation ====
 
-Imagine an election for the capital of [[Tennessee]], a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
+Imagine an election for the capital of Tennessee, a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
 <div style="float:right;  padding:2px; text-align:center">
 [[Image:CondorcetTennesee.png]]</div>
 
@@ -552,8 +552,8 @@ The Schulze method violates the following criteria:
 The Schulze method is not currently used in government elections.  However, it is starting to receive support in some public organizations. Organizations which currently use the Schulze method are:
 
 # [http://www.debian.org/ Debian] [http://www.debian.org/devel/constitution] [http://www.debian.org/vote/2003/vote_0002]
-# [http://www.spi-inc.org/ Software in the Public Interest (SPI)] [http://www.spi-inc.org/corporate/resolutions/resolution-2003-01-06.wta.1]
-# [http://www.gentoo.org/ Gentoo Linux] [http://www.gentoo.org/foundation/en/] [http://article.gmane.org/gmane.linux.gentoo.nfp/252/match=Condorcet+Schwartz+drop+dropped] [http://article.gmane.org/gmane.linux.gentoo.nfp/256/match=CSSD] [http://article.gmane.org/gmane.linux.gentoo.weekly-news/121/match=Condorcet] [http://article.gmane.org/gmane.linux.gentoo.devel/28603/match=Condorcet+Cloneproof+Schwartz+Sequential+Dropping]
+# [http://www.spi-inc.org/ Software in the Public Interest (SPI)] [http://www.spi-inc.org/corporate/resolutions/2003-01-06-wta.1]
+# [http://www.gentoo.org/ Gentoo Linux] [http://www.gentoo.org/foundation/en/] [http://article.gmane.org/gmane.linux.gentoo.nfp/252/match=Condorcet+Schwartz+drop+dropped] [http://article.gmane.org/gmane.linux.gentoo.weekly-news/121/match=Condorcet] [http://article.gmane.org/gmane.linux.gentoo.devel/28603/match=Condorcet+Cloneproof+Schwartz+Sequential+Dropping] [http://article.gmane.org/gmane.linux.gentoo.devel/42260/match=Schulze+method]
 # [http://www.userlinux.com/ UserLinux] [http://www.userlinux.com/cgi-bin/wiki.pl?Policy] [http://66.249.93.104/search?q=cache:GWhcrO6Ke8sJ:www5.cs.cornell.edu/cgi-bin/andru/icvs/results%3Fid%3DE_1bfeec1126d4a714+&hl=en]
 # [http://fr.wikipedia.org/wiki/Accueil WikipÃ©dia francophone] (The Schulze method is one of three methods recommended for decision-making.) [http://fr.wikipedia.org/wiki/WikipÃ©dia:Prise_de_dÃ©cision/Choix_dans_les_votes]
 # [http://www.lopsa.org/ League of Professional System Administrators (LOPSA)] (See article 8.3 of their [http://governance.lopsa.org/index.php/LOPSA_Bylaws bylaws]!)
@@ -592,14 +592,14 @@ Furthermore, the fact that the Schulze method is a part of [http://www.debian.or
 # [http://cec.wustl.edu/~rhl1/rbvote/desc.html Descriptions of ranked-ballot voting methods] by Rob LeGrand
 # [http://www.condorcet.org/emr/index.shtml Election Methods Resource] by Blake Cretney
 # [http://nodesiege.tripod.com/elections/ Election Methods and Criteria] by Kevin Venzke
-# [http://www.ghg.net/redflame/peter/swuusi.pdf Election Systems] by Peter A. Taylor
+# [http://m-schulze.webhop.net/swuusi.pdf Election Systems] by Peter A. Taylor
 # [http://pj.freefaculty.org/Ukraine/PJ3_VotingSystemsEssay.pdf Voting Systems] by Paul E. Johnson
 # [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)] by Steve Eppley
 # [http://seehuhn.de/comp/vote.html The Debian Voting System] by Jochen Voss
 # [http://fc.antioch.edu/~james_green-armytage/vm/survey.htm A Survey of Basic Voting Methods] by James Green-Armytage
 # [http://www.barnsdle.demon.co.uk/vote/sing.html Single-Winner Methods] by Mike Ossipoff
 # [http://accuratedemocracy.com/voting_rules.htm Accurate Democracy] by Rob Loring
-# [http://www-ifm.math.uni-hannover.de/preprints/pr304.pdf Social Choice Under Incomplete, Cyclic Preferences] by Jobst Heitzig
+# [http://m-schulze.webhop.net/pr304.pdf Social Choice Under Incomplete, Cyclic Preferences] by Jobst Heitzig
 # [http://electorama.com/em A mailing list containing technical discussions about election methods]
 # [[Proposed Statutory Rules for the Schulze Method|Proposed statutory rules for the Schulze method]]
 
