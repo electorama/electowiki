@@ -2,7 +2,7 @@ Versions of [http://en.wikipedia.org/wiki/Kosaraju%27s_algorithm Kosaraju's algo
 
 ==Background==
 
-The general problem is identifying the members of the [http://en.wikipedia.org/wiki/Maximal_element maximal elements] of an order generated from a binary relation.  The order is the [http://en.wikipedia.org/wiki/Preorder#Formal_definition natural partial order] generated from the [http://en.wikipedia.org/wiki/Preorder preorder] that is the [http://en.wikipedia.org/wiki/Binary_relation#Operations_on_binary_relations transitive-reflexive closure] of the relation.
+The general problem is identifying the members of the [http://en.wikipedia.org/wiki/Maximal_element maximal elements] of an order generated from a binary relation.  The order is the [http://en.wikipedia.org/wiki/Preorder#Constructions natural partial order] generated from the [http://en.wikipedia.org/wiki/Preorder preorder] that is the [http://en.wikipedia.org/wiki/Binary_relation#Operations_on_binary_relations transitive-reflexive closure] of the relation.
 
 The Schwartz set is associated with the [[Beatpath#Beatpath_order | beatpath order]] on the set of [[Beatpath#Cycle_equivalence | beatpath cycle equivalence classes]], which are generated from the ''Beat'' relation defined by:
 :(X,Y) is in ''Beat'' if and only if candidate X pair-wise beats candidate Y
