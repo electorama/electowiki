@@ -94,7 +94,7 @@ The [[Schwartz set]] is the union of the maximal cycle equivalence classes in th
 An alternative but equivalent formulation of the beatpath order is based on the [http://en.wikipedia.org/wiki/Binary_relation binary relation] ''Beat'' over the set of candidates defined by:
 :(X,Y) is in ''Beat'' if and only if candidate X pair-wise beats candidate Y
 
-The [http://en.wikipedia.org/wiki/Binary_relation#Operations_on_binary_relations transitive-reflexive closure] of ''Beat'' is a [http://en.wikipedia.org/wiki/Preorder preorder] on the set of candidates, and the [http://en.wikipedia.org/wiki/Preorder#Formal_definition natural partial order generated from that preorder] is the beatpath order defined previously.
+The [http://en.wikipedia.org/wiki/Binary_relation#Operations_on_binary_relations transitive-reflexive closure] of ''Beat'' is a [http://en.wikipedia.org/wiki/Preorder preorder] on the set of candidates, and the [http://en.wikipedia.org/wiki/Preorder#Constructions natural partial order generated from that preorder] is the beatpath order defined previously.
 
 Typically, ''Beat'' is [http://en.wikipedia.org/wiki/Irreflexive irreflexive] and [http://en.wikipedia.org/wiki/Antisymmetric_relation anti-symmetric], but this formulation does not depend on those properties.  When ''Beat'' is irreflexive and anti-symmetric, the cycle equivalence classes can have 1, 3, or more candidates, but never exactly 2 candidates.
 
