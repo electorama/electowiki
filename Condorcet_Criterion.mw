@@ -1,4 +1,4 @@
-The '''Condorcet candidate''' or '''Condorcet winner''' of an [[election]] is the candidate who, when compared in turn with each of the other candidates, is preferred over the other candidate. Mainly because of Condorcet's [[voting paradox]], a Condorcet winner will not always exist in a given set of votes.
+The '''Condorcet candidate''' or '''Condorcet winner''' of an [[election]] is the candidate who, when compared in turn with each of the other candidates, is preferred over the other candidate.  On a one-dimensional [[political spectrum]], the Condorcet winner will be at the position of the median voter.  Mainly because of Condorcet's [[voting paradox]], a Condorcet winner will not always exist in a given set of votes.
 
 The '''Condorcet criterion''' for a [[voting system]] is that it chooses the Condorcet winner when one exists. Any method conforming to the Condorcet criterion is known as a [[Condorcet method]].
 
@@ -15,9 +15,9 @@ Non-ranking methods such as [[plurality voting|plurality]] and [[approval voting
 Consider, for example, the following vote count of preferences with three candidates {A,B,C}:
 
 <blockquote><table>
-<tr><td align=right>499:</td><td align=left>A,B,C</td></tr>
-<tr><td align=right>498:</td><td align=left>C,B,A</td></tr>
-<tr><td align=right>3:</td><td align=left>B,C,A</td></tr>
+<tr><td align=right>499:</td><td align=left>A&gt;B&gt;C</td></tr>
+<tr><td align=right>498:</td><td align=left>C&gt;B&gt;A</td></tr>
+<tr><td align=right>3:</td><td align=left>B&gt;C&gt;A</td></tr>
 </table></blockquote>
 
 In this case, B is preferred to A by 501 votes to 499, and B is
