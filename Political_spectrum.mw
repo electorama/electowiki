@@ -1,0 +1,9 @@
+A '''political spectrum''' is a way of comparing or visualizing different political positions. It does this by placing them upon one or more geometric axes symbolising political dimensions that it models as being independent of one another.
+
+Mathematically, a political spectrum is defined by:
+
+* a '''dimension''' n, representing the number of independent issues under consideration.  Voters are represented by points in V = [0,1]<sup>n</sup>.
+* a '''voter density function''' v: V &rarr; &real;
+* a '''distance function''' d: V &times; V &rarr; &real; that is positive definite and symmetric and satisfies the triangle inequality.  Ballots are determined from the assumption that voters prefer candidates which are closer (according to this distance function) to them.
+
+The simplest example of a political spectrum is the [[uniform linear political spectrum]], in which n=1, v(x)=1, and d(x,y)=|x-y|.
