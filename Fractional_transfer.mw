@@ -1,0 +1,12 @@
+The simplest methods of transferring surpluses under [[Single Transferable Vote | STV]] involve an element of randomness; partially random systems are used in the Republic of Ireland (except Senate elections) and Malta, among other places.
+
+An alternative is to give each ballot a fractional weighting, to give the effect of subtracting a quota's worth of votes from the winning candidates.  Specifically, if the quota is ''Q'', a candidate with ''V'' votes is assigned a ''retention fraction'' of:
+
+{|
+|-
+| 1 - Q/V || if the candidate meets quota
+|-
+| 1 || if the candidate does not meet quota
+|}
+
+The weight of each ballot is multiplied by the retention fraction of it's top-ranked candidate (or, if equal rankings are allowed, the average of the top-ranked candidates).
