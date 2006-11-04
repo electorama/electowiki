@@ -16,18 +16,17 @@ Each voter ranks all candidates in order of preference. For example:
 When all the votes have been cast, a winning quota is set.  The most common formula for the quota is the [[Droop Quota]] which is most often given as:
 
 <!-- <math>\left({{\rm votes} \over {\rm seats}+1}\right)+1</math>. -->
-
 floor(votes / (seats + 1)) + 1
 
 Other quotas used include the [[Hare Quota]]:
 
-<!-- <math>\rm votes \over \rm seats</math>
-votes / seats -->
+<!-- <math>\rm votes \over \rm seats</math> -->
+votes / seats
 
 and the [[Imperiali Quota]]:
 
-<!-- <math>\rm votes \over \rm {seats+2}</math>.
-votes / (seats + 2) -->
+<!-- <math>\rm votes \over \rm {seats+2}</math>. -->
+votes / (seats + 2)
 
 For those keeping track, the size of the quota is then generally Hare > Droop > Imperiali.
 
