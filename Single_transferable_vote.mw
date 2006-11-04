@@ -69,7 +69,7 @@ Delilah.
 
 # Delilah
 
-The threshold is: <math>\left({30 \over (2+1)}\right)  +1 = 11</math>
+The threshold is: <!-- <math>\left({30 \over (2+1)}\right)  +1 = 11</math> --> floor(30 / (2 + 1)) + 1 = 11.
 
 In the first round, Andrea receives 22 votes and Delilah 8.  Andrea is
 elected with 11 excess votes.  Her 11 excess votes are reallocated to their second preferences (which votes are chosen may be decided by random selection).  For example, 8 of the reallocated votes are for Carter, 3 for Brad.  Note: this is not a realistic example - elections with a small number of votes often have special rules - for example, Irish Senate elections are conducted using thousands of votes.
