@@ -129,15 +129,35 @@ Some non-governmental organisations also use STV.  For instance, all National Un
 ==Historical assessments==
 An early proponent of STV was John Stuart Mill, who praised it in "On Representation." In the "English Constitution" Walter Bagehot praised the Hare system for allowing everyone, even ideological minorities, to elect an MP, but said that the Hare would create more problems than it solved. "[the Hare system] is inconsistent with the extrinsic independence as well as the inherent moderation of a Parliament - two of the conditions we have seen, are essential to the bare possibility of parliamentary government."
 
-==See also==
-* [[Single Non-Transferable Vote]]
-* [[Hagenbach-Bischoff quota]]
+==Variations==
+
+=== Quotas ===
 * [[Hare quota]]
+* [[Droop quota]]
 * [[Imperiali quota]]
+* [[Hagenbach-Bischoff quota]]
 * [[Ross quota]]
+
+=== Ways of dealing with equal rankings ===
+* Disallowing them, requiring full rankings
+* Counting a ballot with N top-ranked candidates as 1/N of a vote for each candidate.
+
+=== Methods of transferring excess votes ===
+* Random transfer
+* [[Fractional transfer]]
+
+=== Ways of choosing a candidate to eliminate ===
+* Standard STV: Eliminate the candidate with the fewest top-choice votes.
+* [[BTR-STV]]: Eliminate the pairwise loser of the bottom two candidates (meets [[Condorcet criterion]] in single-winner elections).
+* [[STV-CLE]]: Eliminate the loser of a [[Condorcet ranking]]
+
+=== Methods of transferring votes from an eliminated candidate ===
+
+{{sectstub}} 
+
+=== Related Election Methods ===
+* [[Single Non-Transferable Vote]]
 * [[CPO-STV]]
-* [[STV-CLE]]
-* [[BTR-STV]]
 
 == External links ==
 *[http://dmoz.org/Society/Politics/Campaigns_and_Elections/Voting_Systems/Single_Transferable_Vote/ ODP category]
