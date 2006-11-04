@@ -1,3 +1,80 @@
 '''Mean minimum political distance (MMPD)''' is a [[political spectrum]] statistic defined as the mean distance between a voter and the nearest elected candidate.
 
-{{stub}}
+== Example ==
+
+Assume a one-dimensional political spectrum with the voter distribution
+
+* 15% at position 0
+* 20% at position 0.25
+* 30% at position 0.5
+* 20% at position 0.75
+* 15% at position 1
+
+If the candidate set {0.25, 0.75} is elected, then
+
+<table border>
+   <tr>
+      <th>voters</th>
+      <th>position</th>
+      <th>nearest winner</th>
+      <th>distance</th>
+      <th>voters Ã— distance</th>
+   </tr>
+   <tr align="right">
+      <td>0.15</td>
+      <td>0.00</td>
+      <td>0.25</td>
+      <td>0.25</td>
+      <td>0.0375</td>
+   </tr>
+   <tr align="right">
+      <td>0.20</td>
+      <td>0.25</td>
+      <td>0.25</td>
+      <td>0.00</td>
+      <td>0.0000</td>
+   </tr>
+   <tr align="right">
+      <td>0.30</td>
+      <td>0.55</td>
+      <td>either</td>
+      <td>0.25</td>
+      <td>0.0750</td>
+   </tr>
+   <tr align="right">
+      <td>0.20</td>
+      <td>0.75</td>
+      <td>0.75</td>
+      <td>0.00</td>
+      <td>0.0000</td>
+   </tr>
+   <tr align="right">
+      <td>0.15</td>
+      <td>1.00</td>
+      <td>0.75</td>
+      <td>0.25</td>
+      <td>0.0375</td>
+   </tr>
+   <tr>
+      <th colspan="4">sum of voters Ã— distance</th>
+      <td align="right">0.1500</td>
+   </tr>
+</table>
+
+The MMPD of this example is 0.15.
+
+== Special cases ==
+
+On a [[uniform linear political spectrum]]:
+
+=== Random Ballots ===
+
+''This section is a stub.''
+
+=== Droop Multiples ===
+
+Electing the candidates {i/(n+1): 1&le;i&le;n} gives an MMPD of (n+3)/(4(nÂ²+2n+1)).  As the number of seats approaches infinity, this is asymptotically equal to 1/(4n).
+
+=== Optimal Candidates ===
+
+''This section is a stub.''
