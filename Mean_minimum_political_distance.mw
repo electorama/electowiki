@@ -77,4 +77,4 @@ Electing the candidates {i/(n+1): 1&le;i&le;n} gives an MMPD of (n+3)/(4(nÂ²+2
 
 === Optimal Candidates ===
 
-''This section is a stub.''
+The minimum possible MMPD in a uniform linear spectrum is 1/(4n), which occurs when the candidate set {(2i+1)/(2n): 0&le;i&lt;n} is elected.
