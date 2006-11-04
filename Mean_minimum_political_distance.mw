@@ -69,12 +69,12 @@ On a [[uniform linear political spectrum]]:
 
 === Random Ballots ===
 
-''This section is a stub.''
+The mathematically expected MMPD for ''n'' winners randomly selected from uniform(0,1) is (n+3)/(2(n+1)(n+2)), which is 1/3 for a single winner, and asympotically 1/(2n) as the number of seats approaches infinity.
 
 === Droop Multiples ===
 
-Electing the candidates {i/(n+1): 1&le;i&le;n} gives an MMPD of (n+3)/(4(nÂ²+2n+1)).  As the number of seats approaches infinity, this is asymptotically equal to 1/(4n).
+Electing the candidates {i/(n+1): 1&le;i&le;n} gives an MMPD of (n+3)/(4(n+1)Â²).  As ''n'' approaches infinity, this is asymptotically equal to the optimal value of 1/(4n).
 
-=== Optimal Candidates ===
+=== Optimal Winners ===
 
 The minimum possible MMPD in a uniform linear spectrum is 1/(4n), which occurs when the candidate set {(2i+1)/(2n): 0&le;i&lt;n} is elected.
