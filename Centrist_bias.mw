@@ -1,0 +1,69 @@
+'''Centrist bias''' is a [[political spectrum]] statistic that measures the tendency for elected candidates to be near the mean voter.
+
+== Definition ==
+
+The centrist bias of a set of winning candidates with respect to a given political spectrum is equal to Pearson's correlation coefficient between the distance of a voter from the mean voter and the distance of that voter from the nearest winning candidate.
+
+== Example ==
+
+Assume a one-dimensional political spectrum with the voter distribution
+
+* 15% at position 0
+* 20% at position 0.25
+* 30% at position 0.5
+* 20% at position 0.75
+* 15% at position 1 
+
+If the candidate set {0.25, 0.75} is elected, then
+
+<table border>
+    <tr>
+        <th>voters</th>
+        <th>position</th>
+        <th>distance from mean</th>
+        <th>nearest winner</th>
+        <th>distance from winner</th>
+    </tr>
+    <tr align="right">
+        <td>15%</td>
+        <td>0.00</td>
+        <td>0.50</td>
+        <td>0.25</td>
+        <td>0.25</td>
+    </tr>
+    <tr align="right">
+        <td>20%</td>
+        <td>0.25</td>
+        <td>0.25</td>
+        <td>0.25</td>
+        <td>0.00</td>
+    </tr>
+    <tr align="right">
+        <td>30%</td>
+        <td>0.50</td>
+        <td>0.00</td>
+        <td>either</td>
+        <td>0.25</td>
+    </tr>
+    <tr align="right">
+        <td>20%</td>
+        <td>0.75</td>
+        <td>0.25</td>
+        <td>0.75</td>
+        <td>0.00</td>
+    </tr>
+    <tr align="right">
+        <td>15%</td>
+        <td>1.00</td>
+        <td>0.50</td>
+        <td>0.75</td>
+        <td>0.25</td>
+</table>
+
+To compute the centrist bias, we consider the (distance from mean, distance from winner) pairs:
+
+* (0.50, 0.25) with frequency 30%
+* (0.25, 0.00) with frequency 40%
+* (0.00, 0.25) with frequency 30%
+
+The correlation, and thus the centrist bias, is zero.
