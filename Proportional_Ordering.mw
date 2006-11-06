@@ -1,0 +1,98 @@
+'''Proportional Ordering''' is a [[ranking method]] proposed by James Green-Armytage in December 2004.  The ordering is intended so that a [[semi-proportional]] set of ''n'' candidates can be obtained by taking the first ''n'' candidates from the ranking.
+
+== Definition ==
+
+Start by choosing the [[Condorcet method | Condorcet]] winner.  To choose the ''k''th candidate, perform a [[CPO-STV]] tally considering only the outcomes that include the previously chosen k-1 candidates; this will add one new candidate to the ranking.  Repeat the process until all candidates have been ranked.
+
+== Example ==
+
+Suppose there are four candidates: Andrea (A), Brad (B), Carter (C), and Delilah (D). The ballots are:
+
+* 5: A>B>C>D
+* 17: A>C>B>D
+* 8: D
+
+=== First Candidate ===
+
+Andrea is the Condorcet winner, so she is the first candidate in the ordering.
+
+=== Second Candidate ===
+
+To choose the second-place candidate, we consider the sets of two candidates including Andrea: {A, B}, {A, C}, and {A, D}.
+
+In the CPO-STV comparison for {A, B} versus {A, C}, D is eliminated, leaving
+
+*  5: A>B>C
+* 17: A>C>B
+
+After transferring A's excess votes, {A, C} beats {A, B}.
+
+The CPO-STV comparison for {A, B} versus {A, D} eliminates C, leaving
+
+* 22: A>B>D
+* 8: D
+
+With the two-seat Droop quota of 11 votes, A meets the quota with 11 excess votes, all transferring to B, giving a vote count of:
+
+* A: 11
+* B: 11
+* D: 8
+* A+B: 22
+* A+D: 19
+
+So {A, B} beats {A, D}.
+
+Finally, the CPO-STV comparison for {A, C} versus {A, D} gives a vote count of:
+
+* A: 11
+* C: 11
+* D: 8
+* A+C: 22
+* A+D: 19
+
+So {A, C} beats {A, D}.
+
+The set {A, C} is the Condorcet winner (beating both {A, B} and {A, D}).  Therefore, Carter is the second candidate in the proportional ordering.
+
+=== Third candidate ===
+
+We now consider the sets of three candidates containing both Andrea and Carter, i.e., {A, C, B} and {A, C, D}.  The inital first-choice vote counts are:
+
+* A: 22
+* B: 8
+
+Andrea is in both outcomes, so her votes are transferred.  Using the three-seat Droop quota of 8 votes with [[fractional transfer]] gives her a retention fraction of 1-8/22 = 7/11.  Applying this to the A>B>C>D and A>C>B>D ballots gives.
+
+* 3+2/11: (A)>B>C>D
+* 10+9/11: (A)>C>B>D
+* 8: D
+
+Now, Carter has a surplus as well, all of which transfers to Brad, giving the ballots:
+
+* 3+2/11: (A)>B>(C)>D
+* 2+9/11: (A>C)>B>D
+* 8: D
+
+Vote transfers are now complete.  The vote totals for each candidate are:
+
+* A: 8 (quota)
+* B: 6
+* C: 8 (quota)
+* D: 8
+* A+C+B: 22
+* A+C+D: 24
+
+Thus, {A, C, D} beats {A, C, B}, so Delilah is the next candidate chosen.
+
+=== Final ordering ===
+
+Brad is now the only candidate left and is added to the end of the ranking.  The final proportional ordering is:
+
+#Andrea
+#Carter
+#Delilah
+#Brad
+
+== See also ==
+
+* [[Reverse Proportional Ordering]]
