@@ -16,6 +16,7 @@ Each vote should map onto a summable array, where the summation operation is ass
 *[[Bucklin voting|Bucklin]]
 ||
 *[[Iterative Ranked Approval Voting]]
+*[[Correlated Instant Borda Runoff]]
 ||
 *[[Instant-Runoff Voting]] 
 |}
