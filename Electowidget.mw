@@ -12,6 +12,7 @@ Electowidget is a plugin for MediaWiki designed to make it possible to conduct I
 Electowidget isn't designed for secure public elections.  Rather, it's designed for the types of informal polls and elections that currently happen on wikis today.  It's also designed as a tool to help election theorists provide comparitive examples of how a given result will be tabulated comparing multiple different systems.
 
 All data is stored on wiki pages, in [http://json.org JSON format].  That means that there's an audit trail for every change that is made to the wiki.
+204930812244262933106267
 
 == Example elections ==
 
