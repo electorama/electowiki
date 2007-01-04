@@ -1,4 +1,4 @@
-'''Marginal Ranked Approval Voting''' (MRAV) is a refinement of [[Definite Majority Choice]].  It will choose the same winner most of the time, but will eliminate the DMC winner under certain circumstances.  It satisfies all the other criteria satisfied by DMC and is implemented in exactly the same manner.  The only difference is how the final vote tally is interpreted.
+'''Marginal Ranked Approval Voting''' (MRAV) is a refinement of [[Definite Majority Choice]].  It will choose the same winner most of the time, but will eliminate the DMC winner under certain circumstances.  It satisfies all the other criteria satisfied by DMC and is implemented in exactly the same manner.  The only difference is how the final vote tally is interpreted.  MRAV finds the same winner and is equivalent to [[Approval Sorted Margins]], and hence is a symmetric method.
 
 == Definitions ==
 * '''Strong defeat''': Pairwise defeat by higher-approved candidate
