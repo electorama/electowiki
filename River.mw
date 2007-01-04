@@ -15,6 +15,8 @@ It was first proposed by [[User:Heitzig-j|Jobst Heitzig]] on the [[Election-meth
 * [http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-October/014102.html Example using 2004 baseball scores].  This shows how a 14-candidate election winner can be determined much more quickly using River than with RP or [[Schulze method|Schulze]].
 * [http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-April/012678.html Early criticism of the River method].   This shows that the River method violates mono-add-top and mono-remove-bottom
 
+River can be interpreted as a [[Minmax]] method, Minmax(non-cyclic pairwise loss) or MMNCPL.  It is similar to Minmax(winning votes) except that River elects the candidate whose greatest ''non-cyclic'' pairwise loss to another candidate is least.  As in [[Ranked Pairs]], the greatest pairwise loss (GPL) of each candidate is considered in order from largest (among all candidates) to smallest and locked.  If a candidate's GPL is cyclic, it is discarded, and the next-greatest pairwise loss of that candidate is added to the list.  When (N-1) candidate's greatest pairwise losses have been locked, the remaining candidate is the winner.
+
 <!--
 (Emacs settings)
 Local variables:
