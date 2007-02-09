@@ -4,7 +4,25 @@
 Each voter is given a list of all candidates in the election.  The voter is asked to list the candidates that they are happy with to win the election.  A given voter can only list a given candidate once.  Whichever candidate occurs on the most lists wins.
 
 ==Discussion==
-This voting system is an [[approval method]].  It is said to satisfy Bentham's principle by electing the candidate that makes the greatest number of voters happy.  A criticism of this voting system is that it only tries to make the greatest number of voters happy.  It does not take into account the extent of happiness.
+This voting system is also called [[approval voting]].  It is said to satisfy Bentham's principle by electing the candidate that makes the greatest number of voters happy.  A criticism of this voting system is that it only tries to make the greatest number of voters happy.  It does not take into account the extent of happiness.  [http://rangevoting.org/vsr.html Social utility efficiency] calculations show that the most utilitarian of the common voting methods, if we consider the degree of happiness rather than an arbitrary binary "happy/unhappy" metric, is [http://RangeVoting.org/ Range Voting].  Some sample social utility efficiency calculations expressed as voter satisfaction ratios (the percentage of the total ideal utility achieved - not the percent of satisfied voters):
+
+Utility measurements: Group A: 5 candidates, 20 voters, random utilities; Each entry averages the results from 4,000,000 simulated elections. Group B: 5 candidates, 50 voters, utilities based on 2 issues, each entry averages the results from 2,222,222 simulated elections.
+
+'''Voting system - VSR A - VSR B'''
+
+Magically elect optimum winner 		100.00%		100.00%
+Range (honest voters)			96.71%		94.66%
+Borda (honest voters)			91.31%		89.97%
+Approval (honest voters)		86.30%		83.53%
+Condorcet-LR (honest voters)		85.19%		85.43%
+Range & Approval (strategic voters)	78.99%		77.01%
+IRV (honest voters)			78.49%		76.32%
+Plurality (honest voters)		67.63%		62.29%
+Borda (strategic exaggerating voters) 	53.26%		51.78%
+Condorcet-LR (strategic voters) 	42.56%		41.31%
+IRV (strategic exaggerating voters) 	39.07%		39.21%
+Plurality (strategic voters)		39.07%		39.21%
+Elect random winner			0.00%		0.00%
 
 [[Category:Single-winner voting systems]]
 [[Category:Voting systems]]
