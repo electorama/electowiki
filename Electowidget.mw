@@ -36,7 +36,7 @@ Here's a few example elections.  Unless otherwise noted, the configurations for 
 
 If you have access to a running version of (such as [http://wikitest.electorama.com the Electowiki test installation]), setting up an election is reasonably straightforward. 
 
-Before getting started, thoguh, there are several important caveats with the current version:
+Before getting started, though, there are several important caveats with the current version:
 *  There is '''no privacy'''.  Since everything is stored as a wiki page, that means there's a complete, public audit log of every change, '''including votes'''.  Future versions will probably lock this down, but it's not an immediate priority.
 *  There is '''little security'''.  Ballot box stuffing is easy, and I can't guarantee that ballots cast by one person can't be changed by a different person (though some measures have been taken to prevent the latter).
 *  Performance is pretty bad.  No systematic performance work has happened to fix this up just yet.
