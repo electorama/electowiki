@@ -11,4 +11,105 @@ Each ballot contains a complete list of all qualified candidates. Furthermore, e
 #A ''majority winner'' is a candidate such that on a majority of the valid ballots this candidate is strictly preferred to every other candidate. If there is a majority winner, then this candidate wins the elections.
 #Suppose that there is no majority winner. Suppose d[V,W] is the number of valid ballots on which candidate V is strictly preferred to candidate W. A ''beats-all winner'' is a candidate A such that d[A,B] > d[B,A] for every other candidate B. If there is a beats-all winner, then this candidate wins the elections.
 #Suppose that there is no majority winner and no beats-all winner. Then the winner is calculated as follows:
-::Each candidate and each link is in one of two states, designated as ''hopeful'' and ''eliminated''. At the start, each candidate is ''hopeful'', each link XY with d[X,Y] > d[Y,X] is ''hopeful'', and each link XY with d[X,Y]
+::Each candidate and each link is in one of two states, designated as ''hopeful'' and ''eliminated''. At the start, each candidate is ''hopeful'', each link XY with d[X,Y] > d[Y,X] is ''hopeful'', and each link XY with d[X,Y] &le; d[Y,X] is ''eliminated''. As soon as a candidate or a link has the state ''eliminated'', it stays in this state.
+::Step 1 (''elimination of candidates''):
+:::(a) A ''feasible path'' from candidate X to candidate Y is an ordered set of candidates C(1),...,C(n) with the following four properties:
+:::#C(1) is identical to X.
+:::#C(n) is identical to Y.
+:::#For i = 1,...,n: Candidate C(i) is hopeful.
+:::#For i = 1,...,(n-1): The link C(i),C(i+1) is hopeful.
+:::For all pairs of hopeful candidates A and B: If there is a feasible path from candidate A to candidate B and no feasible path from candidate B to candidate A, then candidate A ''disqualifies'' candidate B.
+:::(b) Eliminate all disqualified candidates.
+:::(c) If (i) there is only one hopeful candidate or (ii) all links between hopeful candidates are eliminated: Go to step 3. Otherwise: Go to step 2.
+::Step 2 (''elimination of links''):
+:::The weakest hopeful links between hopeful candidates are eliminated.
+:::A ''weakest'' hopeful link between hopeful candidates is a hopeful link EF between hopeful candidates with
+::::( d[E,F] < d[G,H] ) or ( ( d[E,F] = d[G,H] ) and ( d[E,F] - d[F,E] &le; d[G,H] - d[H,G] ) )
+:::for every other hopeful link GH between hopeful candidates. If there is more than one weakest hopeful link between hopeful candidates, then all of them are eliminated simultaneously.
+:::Go to step 1.
+::Step 3 (''termination''):
+:::If there is only one hopeful candidate, then this hopeful candidate is the final winner. If there is more than one hopeful candidate, then (a) all hopeful candidates are tied for winner and (b) the final winner is chosen from the hopeful candidates as prescribed by law for cases where there is a tie for winner.
+
+== Alternative 2 ==
+
+=== Article 1 ===
+
+Each ballot contains a complete list of all qualified candidates. Furthermore, each voter may write in [''number of write-in options''] additional candidates. Each voter ranks these candidates in order of preference. The individual voter may give the same preference to more than one candidate and he may keep candidates unranked. When a given voter does not rank all candidates, then it is presumed that this voter strictly prefers all ranked candidates to all not ranked candidates and that this voter is indifferent between all not ranked candidates.
+
+=== Article 2 ===
+
+#A ''majority winner'' is a candidate such that on a majority of the valid ballots this candidate is strictly preferred to every other candidate. If there is a majority winner, then this candidate wins the elections.
+#Suppose that there is no majority winner. Suppose d[V,W] is the number of valid ballots on which candidate V is strictly preferred to candidate W. A ''beats-all winner'' is a candidate A such that d[A,B] > d[B,A] for every other candidate B. If there is a beats-all winner, then this candidate wins the elections.
+#Suppose that there is no majority winner and no beats-all winner.
+::A ''path'' from candidate X to candidate Y of strength (z1,z2) is an ordered set of candidates C(1),...,C(n) with the following four properties:
+::#C(1) is identical to X.
+::#C(n) is identical to Y.
+::#For i = 1,...,(n-1): d[C(i),C(i+1)] > d[C(i+1),C(i)].
+::#For i = 1,...,(n-1): ( d[C(i),C(i+1)] > z1 ) or ( ( d[C(i),C(i+1)] = z1 ) and ( d[C(i),C(i+1)] - d[C(i+1),C(i)] &ge; z2 ) ).
+::If there is a (p1,p2) such that there is a path from candidate A to candidate B of strength (p1,p2) and no path from candidate B to candidate A of strength (p1,p2), then candidate A ''disqualifies'' candidate B.
+::Candidate D is a ''potential winner'' if and only if there is no candidate E such that candidate E disqualifies candidate D.
+::If there is only one potential winner, then this potential winner is the final winner. If there is more than one potential winner, then (a) all potential winners are tied for winner and (b) the final winner is chosen from the potential winners as prescribed by law for cases where there is a tie for winner.
+
+== Alternative 3 ==
+
+Second proposal, Mike Ossipoff
+
+Brief and Precise SSD Statute Language:
+
+Schwartz Sequential Dropping:
+
+=== Article 1: Rank-balloting definitions ===
+
+To rank a candidate means to assign to that candidate a postive integer that will be referred to as a rank number.
+
+To rank X over Y means to assign a lower rank number to X than to Y, or else to assign a rank number to X, but not to Y.
+
+=== Article 2: Balloting ===
+
+The ballot shall provide a way for voters to rank any or all of the candidates listed on the ballot--as many or as few candidates as they wish to rank.
+
+A voter may assign the same rank number to more than one candidate if s/he wants to--as many as s/he wishes to.
+
+A voter is not required to use every rank number.  Only relative order of rank is significant.  The candidate(s) with highest rank number is(are) called the first choice preference(s).
+
+A ballot is spoiled and not counted if it assigns more than one rank number to any one candidate.
+
+Definitions involving pairwise defeats:
+
+"Ballots", as used below, means "valid ballots".
+
+X beats Y if the number of ballots ranking X over Y is greater than the number of ballots ranking Y over X.
+
+A defeat is an instance of one candidate beating another.
+
+If X beats Y, then the strength of that defeat is defined as the number of ballots ranking X over Y.
+Among any particular set of defeats, the weakest defeat is the one that has the lowest strength.
+
+=== Article 3: Definition of the Schwartz set ===
+
+# An unbeaten set is a set of candidates none of whom are beaten by anyone outside that set.
+# An innermost unbeaten set is an unbeaten set that doesn't contain a smaller unbeaten set.
+# The Schwartz set is the set of candidates who are in innermost unbeaten sets.
+
+Note: When there are no pairwise ties, there is only one innermost unbeaten set. Pairwise ties will be vanishingly rare in public elections, but should be handled by current statute rules regarding recounts.
+
+=== Article 4: Count Procedure ===
+
+If, by the rules of this count, there is more than one winner, then one winner shall be chosen from among them by whatever tiebreaking statute is already in effect at the time of this statute's enactment.
+
+If there are one or more candidates who are not beaten then they win and the count ends.
+
+If there are no candidates who are not beaten, then the winner shall be determined by repeatedly carrying out, in their labeled numerical order, the defeat-dropping instructions that follow this paragraph, until there are one or more candidates who are not beaten. They win and the count ends.
+
+'''Defeat dropping''':
+# Determine, by the above-stated definition of the Schwartz set, disregarding any defeats that have been dropped, which candidates are in the Schwartz set. The defeats among those candidates that have been determined to be in the Schwartz set will be referred to as the "Schwartz set defeats".
+# Drop every Schwartz set defeat that doesn't have a greater strength than at least one Schwartz set defeat.
+
+(Note: That has the effect of dropping the weakest Schwartz set defeat, or dropping any several equally weakest Schwartz set defeats)
+
+<!--
+(Emacs settings)
+Local variables:
+fill-column: 2048
+End:
+-->
