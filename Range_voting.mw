@@ -30,7 +30,8 @@ is the winner.
 ==Example==
 {{Tenn_voting_example}}
 
-Suppose that voters were told to grant 1 to 4 points to each city such that their most liked choice(s) got 4 points, and least liked choice(s) got 1 point.
+Suppose that voters were told to grant 1 to 4 points to each city, giving their most favorite 4 points, second favorite 3 points, third favorite 2 points, and least favorite 1 point. For simplicity, letâ€™s say we had 42 voters from Memphis, 26 from Nashville, 15 from Chattanooga, and 17 from Knoxville. The votes would be as follows.
+
 
 <TABLE BORDER=1 style="empty-cells: show">
 		<TR>
@@ -43,34 +44,34 @@ Suppose that voters were told to grant 1 to 4 points to each city such that thei
 		</TR>
                 <TR>
 			<TD>Memphis</TD>
-			<TD>168 (42 * 4)</TD>
-			<TD>26</TD>
-			<TD>15</TD>
-			<TD>17</TD>
+			<TD>42 * 4 = 168</TD>
+			<TD>26 * 1 =  26</TD>
+			<TD>15 * 1 =  26</TD>
+			<TD>17 * 1 =  26</TD>
 			<TD>226</TD>
 		</TR>
                 <TR>
 			<TD>Nashville</TD>
-			<TD>126 (42 * 3)</TD>
-			<TD>104 (26 * 4)</TD>
-			<TD>30 (15 * 2)</TD>
-			<TD>34 (17 * 2)</TD>
+			<TD>42 * 3 = 126</TD>
+			<TD>26 * 4 = 104</TD>
+			<TD>15 * 2 =  30</TD>
+			<TD>17 * 2 =  34</TD>
 			<TD>294</TD>
 		</TR>
                 <TR>
 			<TD>Chattanooga</TD>
-			<TD>84 (42 * 2)</TD>
-			<TD>78 (26 * 3)</TD>
-			<TD>60 (15 * 4)</TD>
-			<TD>51 (17 * 3)</TD>
+			<TD>42 * 2 = 84</TD>
+			<TD>26 * 3 = 78</TD>
+			<TD>15 * 4 = 60</TD>
+			<TD>17 * 3 = 51</TD>
 			<TD>273</TD>
 		</TR>
                 <TR>
 			<TD>Knoxville</TD>
-			<TD>42</TD>
-			<TD>52 (26 * 2)</TD>
-			<TD>45 (15 * 3)</TD>
-			<TD>68 (17 * 4)</TD>
+			<TD>42 * 1 = 42</TD>
+			<TD>26 * 2 = 52</TD>
+			<TD>15 * 3 = 45</TD>
+			<TD>17 * 4 = 68</TD>
 			<TD>207</TD>
 		</TR>
 </TABLE>
