@@ -14,7 +14,7 @@
 ** Approval(Y) - Approval(X) > Approval(X) - Approval(Z)
 *** This means that Y's approval-margin defeat strength over X is bigger than X's over Z.
 *** Note that both sides of the inequality are negative.
-*** The inequality can be arranged to Approval(X) < (Approval(Z)+Approval(Y))/2; that is, X is below the average approval of Y and Z.
+*** The inequality can be arranged to Approval(X) < (Approval(Z) Approval(Y))/2; that is, X is below the average approval of Y and Z.
 *'''Marginal losers''': Set of all marginally defeated candidates
 *'''Strong set''': set of candidates neither strongly nor marginally defeated
 
