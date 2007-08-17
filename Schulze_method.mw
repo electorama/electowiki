@@ -16,4 +16,608 @@ A ''path'' from candidate X to candidate Y of strength z is an ordered set of ca
 
 :# C(1) is identical to X.
 :# C(n) is identical to Y.
-:# For i = 1,...,(n-1): d[C(i),C(i 1)]
+:# For i = 1,...,(n-1): d[C(i),C(i+1)] &gt; d[C(i+1),C(i)].
+:# For i = 1,...,(n-1): d[C(i),C(i+1)] &ge; z.
+
+If there is a p such that there is a path from candidate A to candidate B of strength p and no path from candidate B to candidate A of strength p, then candidate A ''disqualifies'' candidate B.
+
+Candidate D is a ''potential winner'' if and only if there is no candidate E such that candidate E disqualifies candidate D.
+
+=== Examples ===
+
+A ''path'' from candidate X to candidate Y is an ordered set of candidates C(1),...,C(n) with the following three properties:
+
+:# C(1) is identical to X.
+:# C(n) is identical to Y.
+:# For i = 1,...,(n-1): d[C(i),C(i+1)] &gt; d[C(i+1),C(i)].
+
+The ''strength'' of the path C(1),...,C(n) is min { d[C(i),C(i+1)] | i = 1,...,(n-1) }.
+
+In other words: The strength of a path is the strength of its weakest link.
+
+p[A,B] : = max { min { d[C(i),C(i+1)] | i = 1,...,(n-1) } | C(1),...,C(n) is a path from candidate A to candidate B }.
+
+In other words: p[A,B] is the strength of the strongest path from candidate A to candidate B.
+
+Then the Schulze method can be described as follows: Candidate A is a ''potential winner'' if and only if p[A,B] &ge; p[B,A] for every other candidate B.
+
+==== Example 1 ====
+
+Example (45 voters; 5 candidates):
+
+: 5 ACBED
+: 5 ADECB
+: 8 BEDAC
+: 3 CABED
+: 7 CAEBD
+: 2 CBADE
+: 7 DCEBA
+: 8 EBADC
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] !!bgcolor=#ddffdd| d[*,E] 
+|-
+!bgcolor=#ddffdd| d[A,*] 
+|    || 20 || 26 || 30 || 22 
+|-
+!bgcolor=#ddffdd| d[B,*] 
+| 25 ||    || 16 || 33 || 18 
+|-
+!bgcolor=#ddffdd| d[C,*] 
+| 19 || 29 ||    || 17 || 24 
+|-
+!bgcolor=#ddffdd| d[D,*] 
+| 15 || 12 || 28 ||    || 14 
+|-
+!bgcolor=#ddffdd| d[E,*] 
+| 23 || 27 || 21 || 31 ||    
+|-
+|+The matrix of pairwise defeats looks as follows:
+|}
+
+The critical defeats of the strongest paths are <u>underlined</u>.
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D !!bgcolor=#ddffdd| ... to E 
+|-
+! bgcolor=#ddffdd| from A ... 
+| || A-(30)-D-<u>(28)</u>-C-(29)-B || A-(30)-D-<u>(28)</u>-C || A-<u>(30)</u>-D || A-(30)-D-(28)-C-<u>(24)</u>-E 
+|-
+! bgcolor=#ddffdd| from B ... 
+| B-<u>(25)</u>-A || || B-(33)-D-<u>(28)</u>-C || B-<u>(33)</u>-D || B-(33)-D-(28)-C-<u>(24)</u>-E 
+|-
+! bgcolor=#ddffdd| from C ... 
+| C-(29)-B-<u>(25)</u>-A || C-<u>(29)</u>-B || || C-<u>(29)</u>-B-(33)-D || C-<u>(24)</u>-E 
+|-
+! bgcolor=#ddffdd| from D ... 
+| D-(28)-C-(29)-B-<u>(25)</u>-A || D-<u>(28)</u>-C-(29)-B || D-<u>(28)</u>-C || || D-(28)-C-<u>(24)</u>-E 
+|-
+! bgcolor=#ddffdd| from E ... 
+| E-(31)-D-(28)-C-(29)-B-<u>(25)</u>-A || E-(31)-D-<u>(28)</u>-C-(29)-B || E-(31)-D-<u>(28)</u>-C || E-<u>(31)</u>-D || 
+|-
+|+The strongest paths are:
+|}
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] !!bgcolor=#ddffdd| p[*,E] 
+|-
+!bgcolor=#ddffdd| p[A,*] 
+|    || 28 || 28 || 30 || 24 
+|-
+!bgcolor=#ddffdd| p[B,*] 
+| 25 ||    || 28 || 33 || 24 
+|-
+!bgcolor=#ddffdd| p[C,*] 
+| 25 || 29 ||    || 29 || 24 
+|-
+!bgcolor=#ddffdd| p[D,*] 
+| 25 || 28 || 28 ||    || 24 
+|-
+!bgcolor=#ddffdd| p[E,*] 
+| 25 || 28 || 28 || 31 ||    
+|-
+|+The strengths of the strongest paths are:
+|}
+
+Candidate E is a potential winner, because p[E,X] &ge; p[X,E] for every other candidate X.
+
+==== Example 2 ====
+
+Example (30 voters; 4 candidates):
+
+: 5 ACBD
+: 2 ACDB
+: 3 ADCB
+: 4 BACD
+: 3 CBDA
+: 3 CDBA
+: 1 DACB
+: 5 DBAC
+: 4 DCBA
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] 
+|-
+!bgcolor=#ddffdd| d[A,*] 
+|    || 11 || 20 || 14 
+|-
+!bgcolor=#ddffdd| d[B,*] 
+| 19 ||    || 9 || 12 
+|-
+!bgcolor=#ddffdd| d[C,*] 
+| 10 || 21 ||    || 17 
+|-
+!bgcolor=#ddffdd| d[D,*] 
+| 16 || 18 || 13 ||    
+|-
+|+The matrix of pairwise defeats looks as follows:
+|}
+
+The critical defeats of the strongest paths are <u>underlined</u>.
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D 
+|-
+!bgcolor=#ddffdd| from A ... 
+| || A-<u>(20)</u>-C-(21)-B || A-<u>(20)</u>-C || A-(20)-C-<u>(17)</u>-D 
+|-
+!bgcolor=#ddffdd| from B ... 
+| B-<u>(19)</u>-A || || B-<u>(19)</u>-A-(20)-C || B-(19)-A-(20)-C-<u>(17)</u>-D 
+|-
+!bgcolor=#ddffdd| from C ... 
+| C-(21)-B-<u>(19)</u>-A || C-<u>(21)</u>-B || || C-<u>(17)</u>-D 
+|-
+!bgcolor=#ddffdd| from D ... 
+| D-<u>(18)</u>-B-(19)-A || D-<u>(18)</u>-B || D-<u>(18)</u>-B-(19)-A-(20)-C || 
+|-
+|+The strongest paths are:
+|}
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] 
+|-
+!bgcolor=#ddffdd| p[A,*] 
+|    || 20 || 20 || 17 
+|-
+!bgcolor=#ddffdd| p[B,*] 
+| 19 ||    || 19 || 17 
+|-
+!bgcolor=#ddffdd| p[C,*] 
+| 19 || 21 ||    || 17 
+|-
+!bgcolor=#ddffdd| p[D,*] 
+| 18 || 18 || 18 ||    
+|-
+|+The strengths of the strongest paths are:
+|}
+
+Candidate D is a potential winner, because p[D,X] &ge; p[X,D] for every other candidate X.
+
+==== Example 3 ====
+
+Example (30 voters; 5 candidates):
+
+: 3 ABDEC
+: 5 ADEBC
+: 1 ADECB
+: 2 BADEC
+: 2 BDECA
+: 4 CABDE
+: 6 CBADE
+: 2 DBECA
+: 5 DECAB
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] !!bgcolor=#ddffdd| d[*,E] 
+|-
+!bgcolor=#ddffdd| d[A,*] 
+|    || 18 || 11 || 21 || 21 
+|-
+!bgcolor=#ddffdd| d[B,*] 
+| 12 ||    || 14 || 17 || 19 
+|-
+!bgcolor=#ddffdd| d[C,*] 
+| 19 || 16 ||    || 10 || 10 
+|-
+!bgcolor=#ddffdd| d[D,*] 
+| 9 || 13 || 20 ||    || 30 
+|-
+!bgcolor=#ddffdd| d[E,*] 
+| 9 || 11 || 20 || 0 ||    
+|-
+|+The matrix of pairwise defeats looks as follows:
+|}
+
+The critical defeats of the strongest paths are <u>underlined</u>.
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D !!bgcolor=#ddffdd| ... to E 
+|-
+!bgcolor=#ddffdd| from A ... 
+| || A-<u>(18)</u>-B || A-(21)-D-<u>(20)</u>-C || A-<u>(21)</u>-D || A-<u>(21)</u>-E 
+|-
+!bgcolor=#ddffdd| from B ... 
+| B-<u>(19)</u>-E-(20)-C-<u>(19)</u>-A || || B-<u>(19)</u>-E-(20)-C || B-<u>(19)</u>-E-(20)-C-<u>(19)</u>-A-(21)-D || B-<u>(19)</u>-E 
+|-
+!bgcolor=#ddffdd| from C ... 
+| C-<u>(19)</u>-A || C-(19)-A-<u>(18)</u>-B || || C-<u>(19)</u>-A-(21)-D || C-<u>(19)</u>-A-(21)-E 
+|-
+!bgcolor=#ddffdd| from D ... 
+| D-(20)-C-<u>(19)</u>-A || D-(20)-C-(19)-A-<u>(18)</u>-B || D-<u>(20)</u>-C || || D-<u>(30)</u>-E 
+|-
+!bgcolor=#ddffdd| from E ... 
+| E-(20)-C-<u>(19)</u>-A || E-(20)-C-(19)-A-<u>(18)</u>-B || E-<u>(20)</u>-C || E-(20)-C-<u>(19)</u>-A-(21)-D || 
+|-
+|+The strongest paths are:
+|}
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] !!bgcolor=#ddffdd| p[*,E] 
+|-
+!bgcolor=#ddffdd| p[A,*] 
+|    || 18 || 20 || 21 || 21 
+|-
+!bgcolor=#ddffdd| p[B,*] 
+| 19 ||    || 19 || 19 || 19 
+|-
+!bgcolor=#ddffdd| p[C,*] 
+| 19 || 18 ||    || 19 || 19 
+|-
+!bgcolor=#ddffdd| p[D,*] 
+| 19 || 18 || 20 ||    || 30 
+|-
+!bgcolor=#ddffdd| p[E,*] 
+| 19 || 18 || 20 || 19 ||    
+|-
+|+The strengths of the strongest paths are:
+|}
+
+Candidate B is a potential winner, because p[B,X] &ge; p[X,B] for every other candidate X.
+
+==== Example 4 ====
+
+Example (9 voters; 4 candidates):
+
+: 3 ABCD
+: 2 DABC
+: 2 DBCA
+: 2 CBDA
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| d[*,A] !!bgcolor=#ddffdd| d[*,B] !!bgcolor=#ddffdd| d[*,C] !!bgcolor=#ddffdd| d[*,D] 
+|-
+!bgcolor=#ddffdd| d[A,*] 
+|   || 5 || 5 || 3 
+|-
+!bgcolor=#ddffdd| d[B,*] 
+| 4 ||   || 7 || 5 
+|-
+!bgcolor=#ddffdd| d[C,*] 
+| 4 || 2 ||   || 5 
+|-
+!bgcolor=#ddffdd| d[D,*] 
+| 6 || 4 || 4 ||   
+|-
+|+The matrix of pairwise defeats looks as follows:
+|}
+
+The critical defeats of the strongest paths are <u>underlined</u>.
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| ... to A !!bgcolor=#ddffdd| ... to B !!bgcolor=#ddffdd| ... to C !!bgcolor=#ddffdd| ... to D 
+|-
+!bgcolor=#ddffdd| from A ... 
+| || A-<u>(5)</u>-B || A-<u>(5)</u>-C || A-<u>(5)</u>-C-<u>(5)</u>-D 
+|-
+!bgcolor=#ddffdd| from B ... 
+| B-<u>(5)</u>-D-(6)-A || || B-<u>(7)</u>-C || B-<u>(5)</u>-D 
+|-
+!bgcolor=#ddffdd| from C ... 
+| C-<u>(5)</u>-D-(6)-A || C-<u>(5)</u>-D-(6)-A-<u>(5)</u>-B || || C-<u>(5)</u>-D 
+|-
+!bgcolor=#ddffdd| from D ... 
+| D-<u>(6)</u>-A || D-(6)-A-<u>(5)</u>-B || D-(6)-A-<u>(5)</u>-C || 
+|-
+|+The strongest paths are:
+|}
+
+{| border="1"
+|-
+! !!bgcolor=#ddffdd| p[*,A] !!bgcolor=#ddffdd| p[*,B] !!bgcolor=#ddffdd| p[*,C] !!bgcolor=#ddffdd| p[*,D] 
+|-
+!bgcolor=#ddffdd| p[A,*] 
+|  || 5 || 5 || 5 
+|-
+!bgcolor=#ddffdd| p[B,*] 
+| 5 ||  || 7 || 5 
+|-
+!bgcolor=#ddffdd| p[C,*] 
+| 5 || 5 ||  || 5 
+|-
+!bgcolor=#ddffdd| p[D,*] 
+| 6 || 5 || 5 ||  
+|-
+|+The strengths of the strongest paths are:
+|}
+
+Candidate B and candidate D are potential winners, because p[B,X] &ge; p[X,B] for every other candidate X and p[D,Y] &ge; p[Y,D] for every other candidate Y.
+
+== The Schwartz set heuristic ==
+
+=== The Schwartz Set ===
+
+The definition of a [[Schwartz set]], as used in the Schulze method, is as follows:
+
+# An unbeaten set is a set of candidates of whom none is beaten by anyone outside that set. 
+# An innermost unbeaten set is an unbeaten set that doesn't contain a smaller unbeaten set. 
+# The Schwartz set is the set of candidates who are in innermost unbeaten sets.
+
+=== Procedure ===
+
+The voters cast their ballots by ranking the candidates according to their preferences, just like for any other Condorcet election.
+
+The Schulze method uses [[Condorcet method|Condorcet]] pairwise matchups between the candidates and a winner is chosen in each of the matchups.
+
+From there, the Schulze method operates as follows to select a winner (or create a ranked list):
+
+# Calculate the Schwartz set based only on undropped defeats. 
+# If there are no defeats among the members of that set then they (plural in the case of a tie) win and the count ends. 
+# Otherwise, drop the weakest defeat among the candidates of that set. Go to 1.
+
+=== An Example ===
+
+==== The Situation ====
+
+Imagine an election for the capital of Tennessee, a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
+<div style="float:right;  padding:2px; text-align:center">
+[[Image:CondorcetTennesee.png]]</div>
+
+* Memphis (Shelby County): 826,330
+* Nashville (Davidson County): 510,784
+* Chattanooga (Hamilton County): 285,536
+* Knoxville (Knox County): 335,749
+
+Let's say that in the vote, the voters vote based on geographic proximity.  Assuming that the population distribution of the rest of Tennessee follows from those population centers, one could easily envision an election where the percentages of votes would be as follows:
+
+<table border=1>
+<tr>
+<td>
+'''42% of voters (close to Memphis)'''<br>
+1. Memphis<br>
+2. Nashville<br>
+3. Chattanooga<br>
+4. Knoxville
+</td>
+<td valign="top">
+'''26% of voters (close to Nashville)'''<br>
+1. Nashville<br>
+2. Chattanooga<br>
+3. Knoxville<br>
+4. Memphis
+</td>
+<td>
+'''15% of voters (close to Chattanooga)'''<br>
+1. Chattanooga<br>
+2. Knoxville<br>
+3. Nashville<br>
+4. Memphis
+</td>
+<td>
+'''17% of voters (close to Knoxville)'''<br>
+1. Knoxville<br>
+2. Chattanooga<br>
+3. Nashville<br>
+4. Memphis
+</td>
+</tr>
+</table>
+
+The results would be tabulated as follows:
+<table BORDER><caption>Pairwise Election Results</caption>
+<tr><th colspan=2><th colspan=4 bgcolor="#c0c0ff">A</tr>
+
+<tr>
+<th colspan=2><th bgcolor="#c0c0ff">Memphis
+<th bgcolor="#c0c0ff">Nashville
+<th bgcolor="#c0c0ff">Chattanooga
+<th bgcolor="#c0c0ff">Knoxville
+</tr>
+<tr><th  bgcolor="#ffc0c0" rowspan=4>B<th bgcolor="#ffc0c0">Memphis<td><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br></tr>
+<tr><th bgcolor="#ffc0c0">Nashville<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td><td nowrap bgcolor="#ffe0e0">[A] 32% <br>[B] 68% <br><td nowrap bgcolor="#ffe0e0">[A] 32% <br>[B] 68% <br></tr>
+
+<tr><th bgcolor="#ffc0c0">Chattanooga<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td nowrap bgcolor="#e0e0ff">[A] 68% <br>[B] 32% <br><td><td nowrap bgcolor="#ffe0e0">[A] 17% <br>[B] 83% <br></tr>
+<tr><th bgcolor="#ffc0c0">Knoxville<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td nowrap bgcolor="#e0e0ff">[A] 68% <br>[B] 32% <br><td nowrap bgcolor="#e0e0ff">[A] 83% <br>[B] 17% <br><td></tr>
+<tr><th colspan=2 bgcolor="#c0c0ff">Pairwise election results (won-lost-tied):
+
+<td bgcolor="#ffffff">0-3-0
+<td bgcolor="#ffffff">3-0-0
+<td bgcolor="#ffffff">2-1-0
+<td bgcolor="#ffffff">1-2-0
+<tr><th colspan=2 bgcolor="#c0c0ff">Votes against in worst pairwise defeat:
+<td bgcolor="#ffffff">58%<td bgcolor="#ffffff">N/A<td bgcolor="#ffffff">68%<td bgcolor="#ffffff">83%</table>
+
+* [A] indicates voters who preferred the candidate listed in the column caption to the candidate listed in the row caption
+* [B] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
+* [NP] indicates voters who expressed no preference between either candidate
+
+==== Pairwise Winners ====
+
+First, list every pair, and determine the winner:
+{| border="1"
+!Pair!!Winner
+|-
+| Memphis (42%) vs. Nashville (58%)|| Nashville 58%
+|-
+| Memphis (42%) vs. Chattanooga (58%)|| Chattanooga 58%
+|-
+| Memphis (42%) vs. Knoxville (58%)|| Knoxville 58%
+|-
+| Nashville (68%) vs. Chattanooga (32%)|| Nashville 68%
+|-
+| Nashville (68%) vs. Knoxville (32%)||Nashville 68%
+|-
+| Chattanooga (83%) vs. Knoxville (17%)|| Chattanooga: 83%
+|}
+
+Note that absolute counts of votes can be used, or
+percentages of the total number of votes; it makes no difference.
+
+==== Dropping ====
+
+Next we start with our list of cities and their matchup wins/defeats
+
+* Nashville 3-0
+* Chattanooga 2-1
+* Knoxville 1-2
+* Memphis 0-3
+
+Technically, the Schwartz set is simply Nashville as it beat all others 3 to 0.
+
+Therefore, Nashville is the winner.
+
+==== Ambiguity Resolution Example ====
+
+Let's say there was an ambiguity.  For a simple situation involving candidates A, B, and C.
+
+* A > B 72%
+* B > C 68%
+* C > A 52%
+
+In this situation the Schwartz set is A, B, and C as they all beat someone.
+
+The Schulze method then says to drop the weakest defeat, so we drop C > A and are left with
+
+* A > B 72% (as C has been removed)
+
+Therefore, A is the winner.
+
+
+(It may be more accessible to phrase that as "drop the weakest win", though purists may complain.)
+
+==== Summary ====
+
+In the (first) example election, the winner is Nashville.
+This would be true for any [[Condorcet method]].
+Using the [[first-past-the-post]] system and some other systems, Memphis would have won the election by having the most people, even though Nashville won every simulated pairwise election outright.  Using [[Instant-runoff voting]] in this example would result in Knoxville winning, even though more people preferred Nashville over Knoxville.
+
+== History ==
+
+The Schulze method has been proposed by Markus Schulze in 1997. See e.g. [http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/1998-August/001958.html here], [http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/1998-August/002044.html here], and [http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/1998-November/002771.html here]!
+
+== Satisfied Criteria ==
+
+The Schulze method satisfies the following criteria:
+
+# [[Mutual majority criterion]]
+# [[Monotonicity criterion]]
+# [[Pareto criterion]]
+# [[Condorcet Criterion|Condorcet criterion]]
+# [[Smith set|Smith criterion]] (a.k.a. [[Generalized Condorcet criterion]])
+# [[Independence of irrelevant alternatives|local independence from irrelevant alternatives]]
+# [[Schwartz set|Schwartz criterion]]
+# [[Plurality criterion]]
+# the winner is always chosen from the [[Immune set]]
+# the winner is always chosen from the [[CDTT|CDTT set]]
+# [[Minimal Defense criterion]]
+# [[Strategy-Free criterion]]
+# [[Generalized Strategy-Free criterion]]
+# [[Strong Defensive Strategy criterion]]
+# [[Weak Defensive Strategy criterion]]
+# [[Summability criterion]]
+# [[Strategic nomination|Independence of clones]]
+# [[Neutrality of Spoiled Ballots]]
+
+The Schulze method violates the following criteria:
+
+# [[Participation criterion]]
+# [[Consistency|Consistency criterion]]
+# [[Tactical voting|invulnerability to compromising]]
+# [[Tactical voting|invulnerability to burying]]
+# [[Favorite Betrayal criterion]]
+# [[Later-no-harm criterion]]
+
+== Use of the Schulze method ==
+
+The Schulze method is not currently used in government elections.  However, it is starting to receive support in some public organizations. Organizations which currently use the Schulze method are:
+
+# [http://www.debian.org/ Debian] [http://www.debian.org/devel/constitution] [http://www.debian.org/vote/2003/vote_0002]
+# [http://www.spi-inc.org/ Software in the Public Interest (SPI)] [http://www.spi-inc.org/corporate/resolutions/2003-01-06-wta.1]
+# [http://www.gentoo.org/ Gentoo Linux] [http://www.gentoo.org/foundation/en/] [http://article.gmane.org/gmane.linux.gentoo.nfp/252/match=Condorcet+Schwartz+drop+dropped] [http://article.gmane.org/gmane.linux.gentoo.weekly-news/121/match=Condorcet] [http://article.gmane.org/gmane.linux.gentoo.devel/28603/match=Condorcet+Cloneproof+Schwartz+Sequential+Dropping] [http://article.gmane.org/gmane.linux.gentoo.devel/42260/match=Schulze+method]
+# [http://www.topcoder.com/ TopCoder] [http://www.topcoder.com/tc?module=Static&d1=tournaments&d2=tco06&d3=logo_rules] [http://www.topcoder.com/tc?module=Static&d1=tournaments&d2=tccc06&d3=logo_rules] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2030] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2044] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2046] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2047] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2050] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2060] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2065] [http://studio.topcoder.com/?module=ViewContestDetails&ct=2079]
+# [http://fr.wikipedia.org/wiki/Accueil WikipÃ©dia francophone] (The Schulze method is one of three methods recommended for decision-making.) [http://fr.wikipedia.org/wiki/WikipÃ©dia:Prise_de_dÃ©cision/Choix_dans_les_votes]
+# [http://www.lopsa.org/ League of Professional System Administrators (LOPSA)] (See article 8.3 of their [http://governance.lopsa.org/index.php/LOPSA_Bylaws bylaws]!)
+# [http://www.openspf.org/ Sender Policy Framework (SPF)] [http://new.openspf.org/Council_Election] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?id=E_1fd503d126aaa609]
+# [http://www.mkm-ig.org/ Mathematical Knowledge Management Interest Group (MKM-IG)] (The MKM-IG uses [http://condorcet-dd.sourceforge.net/ Condorcet with dual dropping]. That means: The Schulze ranking and the [[Ranked Pairs|ranked pairs]] ranking are calculated and the winner is the top-ranked candidate of that of these two rankings that has the better Kemeny score.) [http://www.mkm-ig.org/charter.html] [http://m-schulze.webhop.net/000041.mht] [http://m-schulze.webhop.net/000072.mht]
+# [http://www.parkscholars.org/ Park Alumni Society (PAS)] [http://m-schulze.webhop.net/voting.mht]
+# [http://kingmanhall.org/ Kingman Hall] [http://www.livejournal.com/users/zestyping/102718.html] [http://www.livejournal.com/users/zestyping/111588.html]
+# [http://blitzed.org/ Blitzed] [http://wiki.blitzed.org/Condorcet_method_for_admin_voting]
+# [http://www.leaderofthefreeworld.com/ Leader of the Free World (LFW)] / [http://www.Avoinvaali.fi/ Open Elections] / [http://elonen.iki.fi/code/swpwe/index.php Simply Working Preferential Web Election (SWPWE)] [http://www.leaderofthefreeworld.com/eng/faq.html] [http://www.avoinvaali.fi/julistus.html]
+# [http://www.demexp.org/ Democratic Experience (DemExp)] (See section 40.6 of this [http://www.linux-france.org/~dmentre/demexp/latest-src/demexp-book-0.8.2.pdf paper]!)
+# [http://jhac.acm.jhu.edu/ Johns Hopkins Animation Club (JHAC)] [http://jhac.acm.jhu.edu/bylaws.doc] [http://jhac.acm.jhu.edu/events/show/10]
+# [http://www.haifux.org/ Haifa Linux Club (Haifux)] [http://mirror.hamakor.org.il/archives/linux-il/01-2004/8135.html]
+# [http://fsck.truman.edu/ Free Software Club of Kirksville (FSCK)] [http://66.249.93.104/search?q=cache:7cJM6uDYtCsJ:www5.cs.cornell.edu/cgi-bin/andru/civs/results%3Fid%3DE_614716deda9a4073+&hl=en]
+# [http://ns.goobergunch.net/wiki/index.php/Main_Page NationStates Wiki (NSwiki)] [http://ns.goobergunch.net/wiki/index.php/NSwiki:Logo_candidates/Vote]
+# [http://www.rsabey.pwp.blueyonder.co.uk/rpc/fscc/ Five-Second Crossword Competition (FSCC)] [http://www.rsabey.pwp.blueyonder.co.uk/rpc/home/elect.html]
+# [http://civicevolution.org/ CivicEvolution] [http://m-schulze.webhop.net/cepaper1.pdf]
+# [http://www.lpcsu.org/ Libertarian Party at Colorado State University (LPCSU)] [http://www.lpcsu.org/documents/LPCSUConst-Bylaws.pdf]
+
+Furthermore, the fact that the Schulze method is a part of [http://www.debian.org/ Debian's] voting software ("Debian Vote Engine", Devotee) means that it is the standard voting system in all Debian user groups (DUGs).
+
+== External Resources ==
+
+=== Original Writings ===
+
+# [http://www.citizensassembly.bc.ca/resources/submissions/csharman-10_0409201706-143.pdf A New Monotonic and Clone-Independent Single-Winner Election Method] by Markus Schulze ([http://www.mcs.vuw.ac.nz/~ncj/comp303/schulze.pdf mirror1], [http://lists.gnu.org/archive/html/demexp-dev/2003-09/pdflQW7IlpAfC.pdf mirror2], [http://www.mcdougall.org.uk/VM/ISSUE17/I17P3.PDF mirror3])
+# [http://m-schulze.webhop.net/schulze1.pdf A New Monotonic, Clone-Independent, Reversal Symmetric, and Condorcet-Consistent Single-Winner Election Method] by Markus Schulze
+# [http://m-schulze.webhop.net/schulze2.pdf Free Riding and Vote Management under Proportional Representation by the Single Transferable Vote] by Markus Schulze
+# [http://m-schulze.webhop.net/schulze3.zip Implementing the Schulze STV Method] by Markus Schulze
+
+=== Legislative Project ===
+
+# [http://groups.yahoo.com/group/Condorcet Condorcet Policy "Think Tank"] moderated by [http://jeffryfisher.net/Statesman Jeffry R. Fisher]
+
+=== Further Readings ===
+
+# [http://cec.wustl.edu/~rhl1/rbvote/desc.html Descriptions of ranked-ballot voting methods] by Rob LeGrand
+# [http://www.condorcet.org/emr/index.shtml Election Methods Resource] by Blake Cretney
+# [http://nodesiege.tripod.com/elections/ Election Methods and Criteria] by Kevin Venzke
+# [http://m-schulze-2.webhop.net/swuusi.pdf Election Systems] by Peter A. Taylor
+# [http://pj.freefaculty.org/Ukraine/PJ3_VotingSystemsEssay.pdf Voting Systems] by Paul E. Johnson
+# [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)] by Steve Eppley
+# [http://seehuhn.de/comp/vote.html The Debian Voting System] by Jochen Voss
+# [http://fc.antioch.edu/~james_green-armytage/vm/survey.htm A Survey of Basic Voting Methods] by James Green-Armytage
+# [http://www.barnsdle.demon.co.uk/vote/sing.html Single-Winner Methods] by Mike Ossipoff
+# [http://accuratedemocracy.com/voting_rules.htm Accurate Democracy] by Rob Loring
+# [http://m-schulze.webhop.net/pr304.pdf Social Choice Under Incomplete, Cyclic Preferences] by Jobst Heitzig
+# [http://electorama.com/em A mailing list containing technical discussions about election methods]
+# [[Proposed Statutory Rules for the Schulze Method|Proposed statutory rules for the Schulze method]]
+
+=== Books ===
+
+# ''Collective Decisions and Voting: The Potential for Public Choice'' by Nicolaus Tideman (ISBN 0-7546-4717-X)
+# ''Understanding Modern Mathematics'' by Saul Stahl and Paul E. Johnson (ISBN 0-7637-3401-2)
+
+=== Software ===
+
+# [http://www.cs.cornell.edu/andru/civs.html Condorcet Internet Voting Service (CIVS)] by Andrew Myers
+# [http://condorcet.ericgorr.net/ Condorcet Voting Calculator] by Eric Gorr
+# [http://betterpolls.com/ BetterPolls.com] by Brian Olson
+# [http://www.masquilier.org/republic/election/ A different way to vote] by Anguo Ma
+# [http://vote.sourceforge.net/ Voting Software Project] by Blake Cretney
+# [http://condorcet-dd.sourceforge.net/ Condorcet with Dual Dropping Perl Scripts] by Mathew Goldstein
+# [http://www.livejournal.com/community/evan_tech/124253.html Haskell Condorcet Module] by Evan Martin
+
+{{fromwikipedia}}
+
+[[Category:Condorcet method]]
