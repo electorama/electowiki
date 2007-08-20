@@ -15,22 +15,7 @@ All data is stored on wiki pages, in [http://json.org JSON format].  That means 
 
 == Example elections ==
 
-Here's a few example elections.  Unless otherwise noted, the configurations for these elections are protected (to ensure that the examples remain in a usable state), but they will all have read/write counterparts that you can play with (currently hosted on a test site that may go up and down)
-
-* [[Electotest:Election:10 TV Shows]] - an example based on the top 10 season passes on TiVo. 
-** [[Electotest:Election:10 TV Shows (editable)|Editable version]]
-* [[Electotest:Election:Mock U.S. Presidential Election, combined 2000 and 2004]] - mock election with the nominated candidates for U.S. President from all major and most ballot-qualified minor candiates from 2000 and 2004, in addition to the major candidates vying for the Democratic and Republican nominations in 2000 and 2004.  
-** [[Electotest:Election:Mock U.S. Presidential Election, combined 2000 and 2004 (editable)|Editable version]]
-<!-- Hiding for now
-** Different ballot types
-*** barscale
-*** radioarray
-*** singlecheckbox
-*** singleradio
-*** stars
--->
-* [[Electotest:Election:2003 Debian Project Leader]] - comparison of Schulze(wv-mod) and Instant Runoff in calculating the 2003 Debian Project Leader election.  (Schulze was used, but the results using Instant Runoff were interesting).
-** [[Electotest:Election:2003 Debian Project Leader (editable)|Editable version]]
+(Hosted version taken down on 8/19/2007 - test wiki was just too much of a spam trap)
 
 == Setting up an election ==
 
