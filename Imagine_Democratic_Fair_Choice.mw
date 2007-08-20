@@ -1,13 +1,10 @@
 [[Category:Single-winner voting systems]]
 
-Before Jobst Heitzig begins, a brief note by Warren Smith, who absolutely hates Jobst's writeup below.
-I believe the description of the DFC method can be condensed down to a single line so you don't 
-have to read that garbage:
-
+== Summary ==
 * The DFC winner is whoever wins a runoff between the approval voting winner and a candidate chosen by a random voter.
 
-And now back to our regularly scheduled programming.
 
+== Details ==
 <hr>
 
 ''A: Welcome to tonight's election show on WDTN!''
@@ -36,13 +33,13 @@ B: OK, let's suppose you voted direct support for Anna and indicated additional 
               I     |  I also
            support  |  approve
           directly: |    of:
-  ------------------+----------
+  ------------------ ----------
   Anna        X     |     O
   Bob         O     |     O  
   Cecil       O     |     X
   Deirdre     O     |     X
   Ellen       O     |     O
-  ------------------+----------
+  ------------------ ----------
             (vote   | (vote for     
              for    |  as many
            exactly  |   as you 
