@@ -1,0 +1,64 @@
+==Summary==
+
+'''D2MAC (Draw Two / Most Approved Compromise)''' is a [[non-deterministic]] and non-majoritarian single-winner election (or group decision) method which lets each voter control and in a sense "trade" an equal share of the [[winning probability]]. 
+
+It allowes each voter to indicate one "favourite" and any additional number of "also approved" candidates (or options) and assigns the voter's share of the winning probability to one of these "approved" (i.e., "favourite" or "also approved") candidates.
+
+==Procedure== 
+
+# For each candidate, determine the [[approval score]] (= no. of voters who marked the candidate as "favourite" or "also approved").
+# Draw two voters (or ballots) at random (uniformly and with replacement) and determine the set of candidates marked as "favourite" or "also approved" by both voters.
+# If that set is not empty, the winner is that member of the set which has the highest approval score.
+# Otherwise, the winner is the candidate marked "favourite" by the first drawn voter.
+
+(D2MAC does not specify how possible ties in the approval score in step 3 are resolved.)
+
+==Examples==
+
+===Two factions with a compromise option and full cooperation===
+
+: 55 voters: A favourite, C also approved.
+
+: 45 voters: B favourite, C also approved.
+
+Approval scores: A 55, B 45, C 100.
+
+Whatever two voters are drawn, both approve of C, hence C is the certain winner (i.e. has a winning probability of 1).
+
+This shows that D2MAC does not necessarily elect the favourite of a majority when there is a strong compromise option.
+ 
+===Two factions with a compromise option and unilateral cooperation===
+
+: 54 voters: A favourite, none also approved.
+
+: 1 voter: A favourite, C also approved.
+
+: 45 voters: B favourite, C also approved.
+
+Approval scores: A 55, B 45, C 46.
+
+C wins if and only if (a) both drawn voters are amoung the 45 B-voter or (b) one of the two is amoung them and the other is the lone "cooperative" A-voter. This has a probability of 45%*45% + 1%*45% + 45%*1% = 21.15%.
+
+A wins if (a) the first voter is amoung the 54 "non-cooperative" A-voters or (b) the first voter is the lone "cooperative" A-voter and the second voter is amoung all 55 A-voters. This has a probability of 54% + 1%*55% = 54.55%.
+
+B wins if the first voter is amoung the 45 B-voters and the second voter is amoung the 54 "non-cooperative" A-voters. This has a probability of 45%*54% = 24.30%.
+
+This shows that under D2MAC a majority (here the 54 A-voters) cannot necessarily make sure their favourite (here A) wins with certainty. Rather every group of voters who favour the same option can make sure their favourite gets at least a winning probability of ''size of group / no. of voters''.
+ 
+===Two factions with a compromise option and bilateral partial cooperation===
+
+: 25 voters: A favourite, none also approved.
+
+: 30 voters: A favourite, C also approved.
+
+: 30 voters: B favourite, C also approved.
+
+: 15 voters: B favourite, none also approved.
+
+Approval scores: A 55, B 45, C 60.
+
+C wins if and only if both drawn voters are amoung the 30+30 "cooperative" voters, which has a probability of 60%*60% = 36%.
+
+A wins if (a) the first voter is amoung the 25 "non-cooperative" A-voters or (b) the first voter is amoung the 30 "cooperative" A-voters but the second voter is not amoung the 60 "cooperative" voters. This has a probability of 25% + 30%*40% = 37%.
+
+B wins if (a) the first voter is amoung the 15 "non-cooperative" B-voters or (b) the first voter is amoung the 30 "cooperative" B-voters but the second voter is not amoung the 60 "cooperative" voters. This has a probability of 15% + 30%*40% = 27%.
