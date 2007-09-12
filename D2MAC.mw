@@ -2,7 +2,7 @@
 
 '''D2MAC (Draw Two / Most Approved Compromise)''' is a [[non-deterministic]] and non-majoritarian single-winner election (or group decision) method which lets each voter control and in a sense "trade" an equal share of the [[winning probability]]. 
 
-It allows each voter to indicate one "favourite" and any additional number of "also approved" candidates (or options) and assigns the voter's share of the winning probability to one of these "approved" (i.e., "favourite" or "also approved") candidates.
+It allowes each voter to indicate one "favourite" and any additional number of "also approved" candidates (or options) and assigns the voter's share of the winning probability to one of these "approved" (i.e., "favourite" or "also approved") candidates.
 
 ==Procedure== 
 
@@ -25,7 +25,7 @@ Approval scores: A 55, B 45, C 100.
 
 Whatever two voters are drawn, both approve of C, hence C is the certain winner (i.e. has a winning probability of 1).
 
-''This shows that D2MAC does not necessarily elect the favourite of a majority when there is a strong compromise option.''
+This shows that D2MAC does not necessarily elect the favourite of a majority when there is a strong compromise option.
  
 ===Two factions with a compromise option and unilateral cooperation===
 
@@ -43,7 +43,7 @@ A wins if (a) the first voter is amoung the 54 "non-cooperative" A-voters or (b)
 
 B wins if the first voter is amoung the 45 B-voters and the second voter is amoung the 54 "non-cooperative" A-voters. This has a probability of 45%*54% = 24.30%.
 
-''This shows that under D2MAC a majority (here the 54 A-voters) cannot necessarily make sure their favourite (here A) wins with certainty. Rather every group of voters who favour the same option can make sure their favourite gets at least a winning probability of (size of group / no. of voters).''
+This shows that under D2MAC a majority (here the 54 A-voters) cannot necessarily make sure their favourite (here A) wins with certainty. Rather every group of voters who favour the same option can make sure their favourite gets at least a winning probability of ''size of group / no. of voters''.
  
 ===Two factions with a compromise option and bilateral partial cooperation===
 
@@ -62,58 +62,3 @@ C wins if and only if both drawn voters are amoung the 30+30 "cooperative" voter
 A wins if (a) the first voter is amoung the 25 "non-cooperative" A-voters or (b) the first voter is amoung the 30 "cooperative" A-voters but the second voter is not amoung the 60 "cooperative" voters. This has a probability of 25% + 30%*40% = 37%.
 
 B wins if (a) the first voter is amoung the 15 "non-cooperative" B-voters or (b) the first voter is amoung the 30 "cooperative" B-voters but the second voter is not amoung the 60 "cooperative" voters. This has a probability of 15% + 30%*40% = 27%.
-
-===Two factions with a strong compromise option: strategic considerations===
-
-Assume these voters have the following cardinal utility functions:
-
-: 55 voters: A 100, C 80, B 0
-
-: 45 voters: B 100, C 75, A 0
-
-Then it is quite probable that voters will behave like this:
-
-: first 55 voters: A favourite, C also approved.
-
-: other 45 voters: B favourite, C also approved.
-
-This is because this voting behaviour of "full cooperation" is a group strategic equilibrium, which means that no group of voters would wish to have voted differently. To see this, note that with the above behaviour, C is the certain winner and the expected utilities for the voters are
-
-: first 55 voters: 80
-
-: other 45 voters: 75
-
-Had some ''x'' of the last 45 voters voted no approval for C instead, they would have ended up with a smaller expected utility than 75, namely
-
-: (''x'' % + (45 - ''x'')% * ''x'' %) * 100 + (100 - ''x'')% * (100 - ''x'')% * 75 = 75 - 0.05 ''x'' - 0.002 ''x'' Â² < 75.
-
-Analogously, had some x of the other 55 voters voted no approval for C instead, they would have ended up with a smaller expected utility than 80.
-
-Note that the resulting total (expected) utility is approx. 78. If A had been declared the winner (as majoritarian methods do), it had only been 55.
-
-''This shows that D2MAC can be more efficient in maximing total utility than majoritarian methods.''
-
-==Variants==
-
-===Ratings-based D2MAC===
-
-This mainly differ from D2MAC in that voters submit a [[ratings ballot]], that is, each voter assigns to each candidate (or option) a number as "rating", and in that those candidates are considered "approved" which the voter seems to prefer to the Random Ballot lottery. The exact procedure is this:
-
-# For each voter, let ''r'' be the expected value of the voter's rating of the candidate that a randomly chosen ballot assigned the highest rating to. Then consider those candidates as "approved" by the voter whom the voter rates at least as high as ''r''. Then, for each candidate, determine the [[approval score]] (= no. of voters who "approve" of the candidate in the above sense).
-# Draw two voters (or ballots) at random (uniformly and with replacement) and determine the set of candidates X "approved" by both voters.
-# If that set is not empty, the winner is that member of the set which has the highest approval score.
-# Otherwise, the winner is the candidate the first drawn voter assigned the highest rating to.
-
-===D2MSC===
-
-'''D2MSC (Draw Two / Maximum Sum Compromise)''' differs from Ratings-based D2MAC only in that not the approval score but the ''ratings sum'' (= sum of ratings assigned to the candidate by all voters) is used in step 3.
-
-===D2MGC===
-
-'''D2MGC (Draw Two / Maximum Gini Compromise)''' differs from Ratings-based D2MAC only in that not the approval score but the [[Gini welfare function]] based on the ratings (= expected minimum of the ratings assigned to the candidate by two voters drawn uniformly at random with replacement) is used in step 3.
-
-===RB-normalized D2MSC and D2MGC===
-
-These two variants differ from D2MSC and D2MGC in that the ratings of each voters are first normalized by an affine transformation so that the voter's favourite receives a rating of 1 and so that 0 is the expected value of the voter's rating of the candidate that a randomly chosen ballot assigned the highest rating to.
-
-[[Category:Single-winner voting methods]]
