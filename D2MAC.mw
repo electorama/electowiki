@@ -67,7 +67,7 @@ B wins if (a) the first voter is amoung the 15 "non-cooperative" B-voters or (b)
 
 ===Ratings-based D2MAC===
 
-This mainly differ from D2MAC in that voters submit a standard cardinal [[ratings]] ballot, that is, each voter assigns to each candidate (or option) a number as "rating", and in that those candidates are considered "approved" which the voter seems to prefer to the Random Ballot lottery. The exact procedure is this:
+This mainly differ from D2MAC in that voters submit a [[ratings ballot]], that is, each voter assigns to each candidate (or option) a number as "rating", and in that those candidates are considered "approved" which the voter seems to prefer to the Random Ballot lottery. The exact procedure is this:
 
 # For each voter, let ''r'' be the expected value of the voter's rating of the candidate that a randomly chosen ballot assigned the highest rating to. Then consider those candidates as "approved" by the voter whom the voter rates at least as high as ''r''. Then, for each candidate, determine the [[approval score]] (= no. of voters who "approve" of the candidate in the above sense).
 # Draw two voters (or ballots) at random (uniformly and with replacement) and determine the set of candidates X "approved" by both voters.
