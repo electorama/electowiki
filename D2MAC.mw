@@ -76,11 +76,11 @@ This mainly differ from D2MAC in that voters submit a standard cardinal [[rating
 
 ===D2MSC===
 
-D2MSC (Draw Two / Maximum Sum Compromise) differs from Ratings-based D2MAC only in that not the approval score but the ''ratings sum'' (= sum of ratings assigned to the candidate by all voters) is used in step 3.
+'''D2MSC (Draw Two / Maximum Sum Compromise)''' differs from Ratings-based D2MAC only in that not the approval score but the ''ratings sum'' (= sum of ratings assigned to the candidate by all voters) is used in step 3.
 
 ===D2MGC===
 
-D2MGC (Draw Two / Maximum Gini Compromise) differs from D2MAC(Ratings) only in that not the approval score but the [[Gini welfare function]] based on the ratings (= expected minimum of the ratings assigned to the candidate by two voters drawn uniformly at random with replacement) is used in step 3.
+'''D2MGC (Draw Two / Maximum Gini Compromise)''' differs from Ratings-based D2MAC only in that not the approval score but the [[Gini welfare function]] based on the ratings (= expected minimum of the ratings assigned to the candidate by two voters drawn uniformly at random with replacement) is used in step 3.
 
 ===RB-normalized D2MSC and D2MGC===
 
