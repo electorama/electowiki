@@ -2,7 +2,7 @@
 
 '''D2MAC (Draw Two / Most Approved Compromise)''' is a [[non-deterministic]] and non-majoritarian single-winner election (or group decision) method which lets each voter control and in a sense "trade" an equal share of the [[winning probability]]. 
 
-It allowes each voter to indicate one "favourite" and any additional number of "also approved" candidates (or options) and assigns the voter's share of the winning probability to one of these "approved" (i.e., "favourite" or "also approved") candidates.
+It allows each voter to indicate one "favourite" and any additional number of "also approved" candidates (or options) and assigns the voter's share of the winning probability to one of these "approved" (i.e., "favourite" or "also approved") candidates.
 
 ==Procedure== 
 
@@ -62,3 +62,26 @@ C wins if and only if both drawn voters are amoung the 30+30 "cooperative" voter
 A wins if (a) the first voter is amoung the 25 "non-cooperative" A-voters or (b) the first voter is amoung the 30 "cooperative" A-voters but the second voter is not amoung the 60 "cooperative" voters. This has a probability of 25% + 30%*40% = 37%.
 
 B wins if (a) the first voter is amoung the 15 "non-cooperative" B-voters or (b) the first voter is amoung the 30 "cooperative" B-voters but the second voter is not amoung the 60 "cooperative" voters. This has a probability of 15% + 30%*40% = 27%.
+
+==Variants==
+
+===Ratings-based D2MAC===
+
+This mainly differ from D2MAC in that voters submit a standard cardinal [[ratings]] ballot, that is, each voter assigns to each candidate (or option) a number as "rating", and in that those candidates are considered "approved" which the voter seems to prefer to the Random Ballot lottery. The exact procedure is this:
+
+# For each voter, let ''r'' be the expected value of the voter's rating of the candidate that a randomly chosen ballot assigned the highest rating to. Then consider those candidates as "approved" by the voter whom the voter rates at least as high as ''r''. Then, for each candidate, determine the [[approval score]] (= no. of voters who "approve" of the candidate in the above sense).
+# Draw two voters (or ballots) at random (uniformly and with replacement) and determine the set of candidates X "approved" by both voters.
+# If that set is not empty, the winner is that member of the set which has the highest approval score.
+# Otherwise, the winner is the candidate the first drawn voter assigned the highest rating to.
+
+===D2MSC===
+
+D2MSC (Draw Two / Maximum Sum Compromise) differs from Ratings-based D2MAC only in that not the approval score but the ''ratings sum'' (= sum of ratings assigned to the candidate by all voters) is used in step 3.
+
+===D2MGC===
+
+D2MGC (Draw Two / Maximum Gini Compromise) differs from D2MAC(Ratings) only in that not the approval score but the [[Gini welfare function]] based on the ratings (= expected minimum of the ratings assigned to the candidate by two voters drawn uniformly at random with replacement) is used in step 3.
+
+===RB-normalized D2MSC and D2MGC===
+
+These two variants differ from D2MSC and D2MGC in that the ratings of each voters are first normalized by an affine transformation so that the voter's favourite receives a rating of 1 and so that 0 is the expected value of the voter's rating of the candidate that a randomly chosen ballot assigned the highest rating to.
