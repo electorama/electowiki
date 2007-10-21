@@ -8,7 +8,7 @@ CWP uses the ''ordinal'' information to determine the ''direction'' of pairwise 
 
 Thus, in essence, CWP can be thought of as a defeat strength definition. If A pairwise defeats B, CWP finds the strength of the defeat as follows:
 
-'''For each voter who ranks A over B, and only for these voters, subtract BÃ¢â‚¬â„¢s rating from AÃ¢â‚¬â„¢s rating, to get the rating differential. Sum these rating differentials to get the defeat strength.'''
+'''For each voter who ranks A over B, and only for these voters, subtract B's rating from A's rating, to get the rating differential. Sum these rating differentials to get the defeat strength.'''
 
 The name "cardinal pairwise" also implies that a Smith-efficient, defeat-dropping base method will be used, for example [[Schulze method|Schulze]], [[ranked pairs]], or [[river]].
 
