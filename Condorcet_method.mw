@@ -63,7 +63,7 @@ Indeed, it can be argued that the large number of different competing Condorcet 
 
 Examples of Condorcet methods include:
 * '''[[Black]]''' chooses the Condorcet winner when it exists and otherwise the [[Borda count|Borda winner]]. It is named after Duncan Black.
-* '''[[Baldwin]]''' Computes the [[Borda count|Borda winner]], then iteratively deletes the candidate with the lowest count.
+* '''[[Baldwin]]''' Computes the [[Borda count]] for all candidates, then iteratively deletes the candidate with the lowest count.
 * '''[[Smith/IRV]]''' is [[instant-runoff voting]] with the candidates restricted to the Smith set.
 * '''[[Copeland's method|Copeland]]''' selects the candidate that wins the most pairwise matchups.  Note that if there is no Condorcet winner, Copeland will often still result in a tie.
 * '''[[Llull-Approval Voting]]'''- Elects the member of the [[Schwartz set]] with the greatest number of approvals
