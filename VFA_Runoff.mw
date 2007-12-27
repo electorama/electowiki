@@ -19,4 +19,12 @@ In the second round, Nashville defeats Chattanooga 68% to 22%.
 
 If the Memphis supporters had preferred Chattanooga to Nashville, then while a standard runoff or VFA would elect Nashville, while VFA Runoff would elect Chattanooga.
 
+== Instant VFA Runoff ==
+
+In the above scenario [[IRV]] elects Knoxville. An "instant" version of VFA Runoff could be defined like this:
+
+The voter ranks the candidates. Equal ranking is not allowed, but truncation is. While more than one candidate remains, eliminate one: If more than half of the total number of voters rank the same candidate strictly last among all remaining candidates, eliminate this candidate; otherwise eliminate the candidate with the fewest first preferences as under IRV.
+
+In the above scenario, "instant" VFA Runoff would eliminate Memphis as before. At that point more than half of the voters rank Knoxville last, so that Knoxville is eliminated. At that point, this same majority ranks Chattanooga last, so that the winner of the method is Nashville, the [[Condorcet winner]].
+
 [[Category:Single-winner voting systems]]
