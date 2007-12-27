@@ -25,7 +25,7 @@ Approval scores: A 55, B 45, C 100.
 
 Whatever two voters are drawn, both approve of C, hence C is the certain winner (i.e. has a winning probability of 1).
 
-This shows that D2MAC does not necessarily elect the favourite of a majority when there is a strong compromise option.
+''This shows that D2MAC does not necessarily elect the favourite of a majority when there is a strong compromise option.''
  
 ===Two factions with a compromise option and unilateral cooperation===
 
@@ -43,7 +43,7 @@ A wins if (a) the first voter is amoung the 54 "non-cooperative" A-voters or (b)
 
 B wins if the first voter is amoung the 45 B-voters and the second voter is amoung the 54 "non-cooperative" A-voters. This has a probability of 45%*54% = 24.30%.
 
-This shows that under D2MAC a majority (here the 54 A-voters) cannot necessarily make sure their favourite (here A) wins with certainty. Rather every group of voters who favour the same option can make sure their favourite gets at least a winning probability of ''size of group / no. of voters''.
+''This shows that under D2MAC a majority (here the 54 A-voters) cannot necessarily make sure their favourite (here A) wins with certainty. Rather every group of voters who favour the same option can make sure their favourite gets at least a winning probability of (size of group / no. of voters).''
  
 ===Two factions with a compromise option and bilateral partial cooperation===
 
