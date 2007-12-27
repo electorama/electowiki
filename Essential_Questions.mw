@@ -108,17 +108,17 @@ Please do not change the wording of statements as soon as someone expressed a de
  Approval Winners should never lose with certainty
     -   +  --  --   ?   0   +  ? 
  Beaten-By-All Losers (=Condorcet Losers) should never win
-   ++   ?  ++   +  --   -  ++  ++
+   ++  --  ++   +  --   -  ++  ++
  A Beaten-By-All Loser should never win unless s/he is an Approval Winner
-   --  ++   -   --      -   -  - 
+   --  --   -   --      -   -  - 
  Beaten-By-All Losers should always have winning probability less than 1/2
     +   +   ++  +  --   -  ++  +
  Approval Losers should not win
     -   -  --  --  --   0   0  +
  An Approval Loser should not win unless s/he is a Condorcet Winner
-    +   +  --  --  --   ?  ++  +
+    +   -  --  --  --   ?  ++  +
  When >50% of voters rank X and don't vote for Y, Y should never win
-            +  ++          ++  0
+       --   +  ++          ++  0
 
 === What other special properties should the winner have? ===
 
