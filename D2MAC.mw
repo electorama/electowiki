@@ -63,6 +63,36 @@ A wins if (a) the first voter is amoung the 25 "non-cooperative" A-voters or (b)
 
 B wins if (a) the first voter is amoung the 15 "non-cooperative" B-voters or (b) the first voter is amoung the 30 "cooperative" B-voters but the second voter is not amoung the 60 "cooperative" voters. This has a probability of 15% + 30%*40% = 27%.
 
+===Two factions with a strong compromise option: strategic considerations===
+
+Assume these voters have the following cardinal utility functions:
+
+: 55 voters: A 100, C 80, B 0
+
+: 45 voters: B 100, C 75, A 0
+
+Then it is quite probable that voters will behave like this:
+
+: first 55 voters: A favourite, C also approved.
+
+: other 45 voters: B favourite, C also approved.
+
+This is because this voting behaviour of "full cooperation" is a group strategic equilibrium, which means that no group of voters would wish to have voted differently. To see this, note that with the above behaviour, C is the certain winner and the expected utilities for the voters are
+
+: first 55 voters: 80
+
+: other 45 voters: 75
+
+Had some ''x'' of the last 45 voters voted no approval for C instead, they would have ended up with a smaller expected utility than 75, namely
+
+: (''x'' % + (45 - ''x'')% * ''x'' %) * 100 + (100 - ''x'')% * (100 - ''x'')% * 75 = 75 - 0.05 ''x'' - 0.002 ''x'' Â² < 75.
+
+Analogously, had some x of the other 55 voters voted no approval for C instead, they would have ended up with a smaller expected utility than 80.
+
+Note that the resulting total (expected) utility is approx. 78. If A had been declared the winner (as majoritarian methods do), it had only been 55.
+
+''This shows that D2MAC can be more efficient in maximing total utility than majoritarians methods.''
+
 ==Variants==
 
 ===Ratings-based D2MAC===
