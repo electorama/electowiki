@@ -7,81 +7,80 @@ Feel free to add more methods to the poll, especially interesting ones! This goe
 == the participants ==
 
   KV - Kevin Venzke
-  DS - Diego Santos
 
 == the methods ==
 
 === binary input ===
 
-    KV  DS
+    KV
  [[Plurality]]
-     2   1
+     2
  [[Runoff voting|Two round runoff]]
-     5   4
+     5
  [[Approval voting|Approval]]
-     7   6
+     7
  [[Random Ballot|Random Ballot]]
-     0   0
+     0
 
 === ranking input ===
 
 ==== not Condorcet-efficient ====
 
-    KV  DS
+    KV
  [[Borda count]]
-     0   3
+     0
  [[IRV]] without equal rankings
-     3   5
+     3
  [[Bucklin voting|Bucklin]] without equal rankings
-     6   6
+     6
  [[ER-Bucklin|ER-Bucklin(whole)]]
-     6   6
+     6
 
 ==== partially Condorcet-efficient ====
 
-    KV  DS
+    KV
  [[MMPO|minmax(pairwise opposition)]]
-     4   6
- [[Improved Condorcet Approval]] ([[ICA]], a.k.a. [[Condorcet//Approval]] with [[FBC]] tweak)
-     8   7
+     4
+ [[Improved Condorcet Approval]] ([[ICA]]), a.k.a. [[Condorcet//Approval]] with [[FBC]] tweak)
+     9
 
 ==== Condorcet-efficient ====
 
-    KV  DS
+    KV
  [[Schulze method|Schulze]](WV)
-     7   8
+     7
  [[Schulze method|Schulze]](margins)  
-     3   5
+     3
  [[minmax]](WV)
-     6   6
+     6
  [[minmax]](margins)
-     3   4
+     3
  [[Smith,IRV]] or [[Schwartz,IRV]]
-     5   9
+     5
  [[Condorcet//Approval]] with implicit ranking = approval
-     7   8
+     7
 
 === ranking input with explicit approval cutoff ===
 
-    KV  DS
+    KV
  [[Definite Majority Choice|definite majority choice]] a.k.a. [[Ranked Approval Voting|ranked approval voting]]
-     4   9
+     4
  [[Condorcet//Approval]]
-     3   7
+     3
 
 === rating input ===
 
-    KV  DS
+    KV
  [[range voting]] (ratings summation)
-     5   6
+     5
 
 === other ===
 
-    KV  DS
+    KV
   [[Vote For and Against]]
-     5   4
+     5
   [[VFA Runoff]]
-     7   6
+     7
 
 == See also ==
 
