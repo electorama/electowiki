@@ -1,0 +1,25 @@
+== AMP (Approval-seeded Maximal Pairings) ==
+
+AMP is a method designed to elect C in the following situation:
+* 51 strategic voters with A(100) > C(52) > B(0)
+* 49 strategic voters with B(100) > C(52) > A(0)
+
+=== Ballot ===
+
+* Each voter marks one option as her "favourite" option and may name any number of "offers". An "offer" is an (ordered) pair of options (y,z). by "offering" (y,z) the voter expresses that she is willing to transfer "her" share of the winning probability from her favourite x to the compromise z if a second voter transfers his share of the winning probability from his favourite y to this compromise z. (Usually, a voter would agree to this if she prefers z to tossing a coin between her favourite and y).
+
+* Alternatively, a voter may specify cardinal ratings for all options. Then the highest-rated option x is considered the voter's "favourite", and each option-pair (y,z) for with z is higher rated that the mean rating of x and y is considered an "offer" by this voter.
+
+* As another, simpler alternative, a voter may name only a "favourite" option x and any number of "also approved" options. Then each option-pair (y,z) for which z but not y is "also approved" is considered an "offer" by this voter.
+
+=== Tally ===
+
+# For each option z, the "approval score" of z is the number of voters who offered (y,z) with any y.
+# Start with an empty urn and by considering all voters "free for cooperation".
+# For each option z, in order of descending approval score, do the following:
+## Find the largest set of voters that can be divvied up into disjoint voter-pairs {v,w} such that v and w are still free for cooperation, v offered (y,z), and w offered (x,z), where x is v's favourite and y is w's favourite.
+## For each voter v in this largest set, put a ball labelled with the compromise option z in the urn and consider v no longer free for cooperation.
+# For each voter who still remains free for cooperation after this was done for all options, put a ball labelled with the favourite option of that voter in the urn.
+# Finally, the winning option is determined by drawing a ball from the urn.
+
+(In rare cases, some tie-breaking mechanism may be needed in step 3 or 3.1.)
