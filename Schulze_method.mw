@@ -12,34 +12,86 @@ Each ballot contains a complete list of all candidates.  Each voter ranks these 
 
 Suppose d[V,W] is the number of voters who strictly prefer candidate V to candidate W.
 
-A ''path'' from candidate X to candidate Y of strength z is an ordered set of candidates C(1),...,C(n) with the following four properties:
+A ''path'' from candidate X to candidate Y of ''strength'' p is a sequence of candidates C(1),...,C(n) with the following five properties:
 
 :# C(1) is identical to X.
 :# C(n) is identical to Y.
-:# For i = 1,...,(n-1): d[C(i),C(i+1)] &gt; d[C(i+1),C(i)].
-:# For i = 1,...,(n-1): d[C(i),C(i+1)] &ge; z.
+:# For all i = 1,...,(n-1): d[C(i),C(i+1)] &gt; d[C(i+1),C(i)].
+:# For all i = 1,...,(n-1): d[C(i),C(i+1)] &ge; p.
+:# For at least one i = 1,...,(n-1): d[C(i),C(i+1)] = p.
 
-If there is a p such that there is a path from candidate A to candidate B of strength p and no path from candidate B to candidate A of strength p, then candidate A ''disqualifies'' candidate B.
+p[A,B], the ''strength of the strongest path'' from candidate A to candidate B, is the maximum value such that there is a path from candidate A to candidate B of that strength. If there is no path from candidate A to candidate B at all, then p[A,B] : = 0.
 
-Candidate D is a ''potential winner'' if and only if there is no candidate E such that candidate E disqualifies candidate D.
+Candidate D is ''better'' than candidate E if and only if p[D,E] &gt; p[E,D].
+
+Candidate D is a ''potential winner'' if and only if p[D,E] &ge; p[E,D] for every other candidate E.
+
+=== Implementation ===
+
+Suppose ''C'' is the number of candidates. Then the strengths of the strongest paths can be calculated with the Floydâ€“Warshall algorithm.
+
+Input: d[i,j] is the number of voters who strictly prefer candidate i to candidate j.
+
+Output: Candidate i is a potential winner if and only if "winner[i] = true".
+
+  1 '''for''' i : = 1 '''to''' ''C''
+  2 '''begin'''
+  3    '''for''' j : = 1 '''to''' ''C''
+  4    '''begin'''
+  5       '''if''' ( i â‰  j ) '''then'''
+  6       '''begin'''
+  7          '''if''' ( d[i,j] > d[j,i] ) '''then'''
+  8          '''begin'''
+  9             p[i,j] : = d[i,j]
+ 10          '''end'''
+ 11          '''else'''
+ 12          '''begin'''
+ 13             p[i,j] : = 0
+ 14          '''end'''
+ 15       '''end'''
+ 16    '''end'''
+ 17 '''end'''
+ 18
+ 19 '''for''' i : = 1 '''to''' ''C''
+ 20 '''begin'''
+ 21    '''for''' j : = 1 '''to''' ''C''
+ 22    '''begin'''
+ 23       '''if''' ( i â‰  j ) '''then'''
+ 24       '''begin'''
+ 25          '''for''' k : = 1 '''to''' ''C''
+ 26          '''begin'''
+ 27             '''if''' ( i â‰  k ) '''then'''
+ 28             '''begin'''   
+ 29                '''if''' ( j â‰  k ) '''then'''
+ 30                '''begin'''
+ 31                   p[j,k] : = max { p[j,k]; min { p[j,i]; p[i,k] } }
+ 32                '''end'''
+ 33             '''end'''
+ 34          '''end'''
+ 35       '''end'''
+ 36    '''end'''
+ 37 '''end'''
+ 38
+ 39 '''for''' i : = 1 '''to''' ''C''
+ 40 '''begin'''
+ 41    winner[i] : = true
+ 42 '''end'''
+ 43
+ 44 '''for''' i : = 1 '''to''' ''C''
+ 45 '''begin'''
+ 46    '''for''' j : = 1 '''to''' ''C''
+ 47    '''begin'''
+ 48       '''if''' ( i â‰  j ) '''then'''
+ 49       '''begin'''
+ 50          '''if''' ( p[j,i] > p[i,j] ) '''then'''
+ 51          '''begin'''
+ 52             winner[i] : = false
+ 53          '''end'''
+ 54       '''end'''
+ 55    '''end'''
+ 56 '''end'''
 
 === Examples ===
-
-A ''path'' from candidate X to candidate Y is an ordered set of candidates C(1),...,C(n) with the following three properties:
-
-:# C(1) is identical to X.
-:# C(n) is identical to Y.
-:# For i = 1,...,(n-1): d[C(i),C(i+1)] &gt; d[C(i+1),C(i)].
-
-The ''strength'' of the path C(1),...,C(n) is min { d[C(i),C(i+1)] | i = 1,...,(n-1) }.
-
-In other words: The strength of a path is the strength of its weakest link.
-
-p[A,B] : = max { min { d[C(i),C(i+1)] | i = 1,...,(n-1) } | C(1),...,C(n) is a path from candidate A to candidate B }.
-
-In other words: p[A,B] is the strength of the strongest path from candidate A to candidate B.
-
-Then the Schulze method can be described as follows: Candidate A is a ''potential winner'' if and only if p[A,B] &ge; p[B,A] for every other candidate B.
 
 ==== Example 1 ====
 
@@ -511,10 +563,6 @@ In the (first) example election, the winner is Nashville.
 This would be true for any [[Condorcet method]].
 Using the [[first-past-the-post]] system and some other systems, Memphis would have won the election by having the most people, even though Nashville won every simulated pairwise election outright.  Using [[Instant-runoff voting]] in this example would result in Knoxville winning, even though more people preferred Nashville over Knoxville.
 
-== History ==
-
-The Schulze method has been proposed by Markus Schulze in 1997. See e.g. [http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/1998-August/001958.html here], [http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/1998-August/002044.html here], and [http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/1998-November/002771.html here]!
-
 == Satisfied Criteria ==
 
 The Schulze method satisfies the following criteria:
@@ -546,6 +594,10 @@ The Schulze method violates the following criteria:
 # [[Tactical voting|invulnerability to burying]]
 # [[Favorite Betrayal criterion]]
 # [[Later-no-harm criterion]]
+
+== History of the Schulze method ==
+
+The Schulze method was developed by Markus Schulze in 1997. The first time that the Schulze method was discussed in a public mailing list was in 1998 [http://lists.electorama.com/pipermail/election-methods-electorama.com/1998-July/001856.html] [http://lists.electorama.com/pipermail/election-methods-electorama.com/1998-August/001958.html] [http://lists.electorama.com/pipermail/election-methods-electorama.com/1998-August/002044.html] [http://lists.electorama.com/pipermail/election-methods-electorama.com/1998-September/002055.html] [http://lists.electorama.com/pipermail/election-methods-electorama.com/1998-November/002771.html].  In the following years, the Schulze method has been adopted e.g. by "Software in the Public Interest" (2003), Debian (2003), Gentoo (2005), TopCoder (2005), and "Sender Policy Framework" (2005). The first books on the Schulze method were written by Tideman (2006) and by Stahl and Johnson (2007).
 
 == Use of the Schulze method ==
 
