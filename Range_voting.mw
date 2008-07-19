@@ -19,6 +19,8 @@ about those candidates.
 
 Range voting satisfies the [[monotonicity criterion]], the [[participation criterion]], the [[Consistency Criterion]], the [[summability criterion]], the [[Favorite Betrayal criterion]], [[Independence of irrelevant alternatives]], the [[Non-compulsory support criterion]] and [[Strategic nomination|independence of clones]].
 
+Range voting does not comply with the [[Condorcet criterion]] because it allows for the difference between 'rankings' to matter.  E.g. 51 people might rate A at 100, and B at 90, while 49 people rate A at 0, and B at 100.  Condorcet would consider this 51 people voting A>B, and 49 voting B>A, and A would win.  Range voting would see this as A having support of 5100/100 = 51%, and B support of (51*90+49*100)/100 = 94.9%; range voting advocates would probably say that in this case the Condorcet winner is not the socially ideal winner.
+
 == Counting the Votes ==
 
 The scores for each candidate are summed, and the candidate with the highest sum is declared the winner.  In [[range voting with blanks]] the candidate with the highest
