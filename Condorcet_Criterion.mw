@@ -24,6 +24,8 @@ In this case, B is preferred to A by 501 votes to 499, and B is
 preferred to C by 502 to 498, hence B is preferred to both A and C. So
 according to the Condorcet criteria, B should win. By contrast, according to the rules of IRV, B is ranked first by the fewest voters and is eliminated, and C wins with the transferred voted from B; in plurality voting A wins with the most first choices.
 
+Range voting does not comply because it allows for the difference between 'rankings' to matter.  E.g. 51 people might rate A at 100, and B at 90, while 49 people rate A at 0, and B at 100.  Condorcet would consider this 51 people voting A>B, and 49 voting B>A, and A would win.  Range voting would see this as A having support of 5100/100 = 51%, and B support of (51*90+49*100)/100 = 94.9%; range voting advocates would probably say that in this case the Condorcet winner is not the socially ideal winner.
+
 [[Category:Voting system criteria]]
 
 {{fromwikipedia}}
