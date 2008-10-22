@@ -1,0 +1,26 @@
+[this is a stub]
+
+FAWRB (Favourite or Approval Winner Random Ballot) is a non-majoritarian and non-deterministic single-winner group decision method in which all voters control the same amount of winning probability and are given the means and incentives to cooperatively transfer this probability from their favourite options to good compromise options.
+
+There are a number of slightly different versions of FAWRB which differ in 
+* how the compromise option is nominated
+* whether they are performed in one or two phases
+* whether they include a threshold or supermajority vetoing
+* what mathematical function determines the winning probability of the compromise.
+
+Also, FAWRB can be combined with [[Delegable Proxy]].
+
+The easiest version is Two-phase-FAWRB.
+
+== Motivation ==
+
+FAWRB was designed to solve the following problem: 
+
+
+== Simplest version ==
+
+
+== Strategic analysis ==
+
+
+== Recommended version ==
