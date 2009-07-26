@@ -18,13 +18,16 @@ A ''path'' from candidate X to candidate Y of ''strength'' p is a sequence of ca
 :# C(n) is identical to Y.
 :# For all i = 1,...,(n-1): d[C(i),C(i+1)] &gt; d[C(i+1),C(i)].
 :# For all i = 1,...,(n-1): d[C(i),C(i+1)] &ge; p.
-:# For at least one i = 1,...,(n-1): d[C(i),C(i+1)] = p.
 
 p[A,B], the ''strength of the strongest path'' from candidate A to candidate B, is the maximum value such that there is a path from candidate A to candidate B of that strength. If there is no path from candidate A to candidate B at all, then p[A,B] : = 0.
 
 Candidate D is ''better'' than candidate E if and only if p[D,E] &gt; p[E,D].
 
 Candidate D is a ''potential winner'' if and only if p[D,E] &ge; p[E,D] for every other candidate E.
+
+=== Remark ===
+
+It is possible to prove that p[X,Y] &gt; p[Y,X] and p[Y,Z] &gt; p[Z,Y] together imply p[X,Z] &gt; p[Z,X]. Therefore, it is guaranteed (1) that the above definition of "''better''" really defines a transitive relation and (2) that there is always at least one candidate D with p[D,E] &ge; p[E,D] for every other candidate E.
 
 === Implementation ===
 
@@ -176,6 +179,28 @@ The critical defeats of the strongest paths are <u>underlined</u>.
 
 Candidate E is a potential winner, because p[E,X] &ge; p[X,E] for every other candidate X.
 
+As 25 = p[E,A] > p[A,E] = 24, candidate E is ''better'' than candidate A.
+
+As 28 = p[E,B] > p[B,E] = 24, candidate E is ''better'' than candidate B.
+
+As 28 = p[E,C] > p[C,E] = 24, candidate E is ''better'' than candidate C.
+
+As 31 = p[E,D] > p[D,E] = 24, candidate E is ''better'' than candidate D.
+
+As 28 = p[A,B] > p[B,A] = 25, candidate A is ''better'' than candidate B.
+
+As 28 = p[A,C] > p[C,A] = 25, candidate A is ''better'' than candidate C.
+
+As 30 = p[A,D] > p[D,A] = 25, candidate A is ''better'' than candidate D.
+
+As 29 = p[C,B] > p[B,C] = 28, candidate C is ''better'' than candidate B.
+
+As 29 = p[C,D] > p[D,C] = 28, candidate C is ''better'' than candidate D.
+
+As 33 = p[B,D] > p[D,B] = 28, candidate B is ''better'' than candidate D.
+
+Therefore, the Schulze ranking is E > A > C > B > D.
+
 ==== Example 2 ====
 
 Example (30 voters; 4 candidates):
@@ -250,6 +275,20 @@ The critical defeats of the strongest paths are <u>underlined</u>.
 |}
 
 Candidate D is a potential winner, because p[D,X] &ge; p[X,D] for every other candidate X.
+
+As 18 = p[D,A] > p[A,D] = 17, candidate D is ''better'' than candidate A.
+
+As 18 = p[D,B] > p[B,D] = 17, candidate D is ''better'' than candidate B.
+
+As 18 = p[D,C] > p[C,D] = 17, candidate D is ''better'' than candidate C.
+
+As 20 = p[A,B] > p[B,A] = 19, candidate A is ''better'' than candidate B.
+
+As 20 = p[A,C] > p[C,A] = 19, candidate A is ''better'' than candidate C.
+
+As 21 = p[C,B] > p[B,C] = 19, candidate C is ''better'' than candidate B.
+
+Therefore, the Schulze ranking is D > A > C > B.
 
 ==== Example 3 ====
 
@@ -335,6 +374,28 @@ The critical defeats of the strongest paths are <u>underlined</u>.
 
 Candidate B is a potential winner, because p[B,X] &ge; p[X,B] for every other candidate X.
 
+As 19 = p[B,A] > p[A,B] = 18, candidate B is ''better'' than candidate A.
+
+As 19 = p[B,C] > p[C,B] = 18, candidate B is ''better'' than candidate C.
+
+As 19 = p[B,D] > p[D,B] = 18, candidate B is ''better'' than candidate D.
+
+As 19 = p[B,E] > p[E,B] = 18, candidate B is ''better'' than candidate E.
+
+As 20 = p[A,C] > p[C,A] = 19, candidate A is ''better'' than candidate C.
+
+As 21 = p[A,D] > p[D,A] = 19, candidate A is ''better'' than candidate D.
+
+As 21 = p[A,E] > p[E,A] = 19, candidate A is ''better'' than candidate E.
+
+As 20 = p[D,C] > p[C,D] = 19, candidate D is ''better'' than candidate C.
+
+As 30 = p[D,E] > p[E,D] = 19, candidate D is ''better'' than candidate E.
+
+As 20 = p[E,C] > p[C,E] = 19, candidate E is ''better'' than candidate C.
+
+Therefore, the Schulze ranking is B > A > D > E > C.
+
 ==== Example 4 ====
 
 Example (9 voters; 4 candidates):
@@ -404,6 +465,12 @@ The critical defeats of the strongest paths are <u>underlined</u>.
 |}
 
 Candidate B and candidate D are potential winners, because p[B,X] &ge; p[X,B] for every other candidate X and p[D,Y] &ge; p[Y,D] for every other candidate Y.
+
+As 7 = p[B,C] > p[C,B] = 5, candidate B is ''better'' than candidate C.
+
+As 6 = p[D,A] > p[A,D] = 5, candidate D is ''better'' than candidate A.
+
+Possible Schulze rankings are B > C > D > A, B > D > A > C, B > D > C > A, D > A > B > C, D > B > A > C, and D > B > C > A.
 
 == The Schwartz set heuristic ==
 
