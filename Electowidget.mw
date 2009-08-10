@@ -1,6 +1,7 @@
 '''Electowidget''' is a PHP library (initally a plugin for MediaWiki) designed to make it possible to conduct Internet polls and elections using many different [[wikipedia:Voting systems|voting systems]], including the [[Wikipedia:Schulze method|Schulze method]], [[Wikipedia:Instant runoff voting|Instant runoff voting]], [[Wikipedia:Approval voting|Approval voting]], and even plain old [[Wikipedia:Plurality|Plurality]].  It also assists in explaining different election methods by providing an easy way of tallying example elections, and comparing the results as computed by different elections. The modular design allows for plugging in new election tallying methods, different ballot designs, and different ballot formats.
 
 Latest news:
+* August 9, 2009 - Electowidget back from the dead!  I've installed a new version on this wiki, which is now simply a tag extension to standard MediaWiki (no patching required).  No official release yet, but there's a new [http://bitbucket.org/robla/electowidget/ Bitbucket repository] with some updated code in it.
 * October 29, 2005 - Initial Electowidget release!  (version 0.1.0) 
 
 {{Electowidget Infopanel}}
@@ -9,28 +10,22 @@ Latest news:
 
 Electowidget is a plugin for MediaWiki designed to make it possible to conduct Internet polls and elections using many different [[wikipedia:Voting systems|voting systems]], including the [[Wikipedia:Schulze method|Schulze method]], [[Wikipedia:Instant runoff voting|Instant runoff voting]], [[Wikipedia:Approval voting|Approval voting]], and even plain old [[Wikipedia:Plurality|Plurality]].
 
-Electowidget isn't designed for secure public elections.  Rather, it's designed for the types of informal polls and elections that currently happen on wikis today.  It's also designed as a tool to help election theorists provide comparitive examples of how a given result will be tabulated comparing multiple different systems.
+Electowidget isn't designed for secure public elections. It's primarily designed as a tool to help election theorists provide comparative examples of how a given result will be tabulated comparing multiple different systems.  The initial version supported conducting polls, but this functionality is now dormant.  Development in the near term will be focused toward making it easier to input full datasets from election data and/or developing theoretical election results.
 
-All data is stored on wiki pages, in [http://json.org JSON format].  That means that there's an audit trail for every change that is made to the wiki.
+Currently, a [http://json.org JSON-based format] is the only supported format.
 
-== Example elections ==
+== Using Electowidget ==
 
-(Hosted version taken down on 8/19/2007 - test wiki was just too much of a spam trap)
-
-== Setting up an election ==
-
-If you have access to a running version of (such as [http://wikitest.electorama.com the Electowiki test installation]), setting up an election is reasonably straightforward. 
-
-Before getting started, though, there are several important caveats with the current version:
-*  There is '''no privacy'''.  Since everything is stored as a wiki page, that means there's a complete, public audit log of every change, '''including votes'''.  Future versions will probably lock this down, but it's not an immediate priority.
-*  There is '''little security'''.  Ballot box stuffing is easy, and I can't guarantee that ballots cast by one person can't be changed by a different person (though some measures have been taken to prevent the latter).
-*  Performance is pretty bad.  No systematic performance work has happened to fix this up just yet.
-*  It's probably still pretty buggy.
-
-Now that you've been warned, the easiest thing to do is to copy the configuration for [[#Example elections|an example election]], and create a new page in the Election: namespace with your election on it.  Since election configurations are just wiki pages, the same editing instructions for editing a wiki apply here, except that the syntax is substantially different.
+Now that you've been warned, the easiest thing to do is to copy the configuration for [[#Example elections|an example election]], and create a new page with your election on it.  Since election configurations are just wiki pages, the same editing instructions for editing a wiki apply here, except that the syntax is substantially different.
 
 A somewhat complete reference for the election configuration pages is here:
 * [[Electowidget Configuration Reference]]
+
+An [http://robla.net/2005/jsonwidget/example.php online Javascript-based editor] for election configurations is available.  When you have everything configured like you want it, view "edit source", copy the text, and save it inside of <nowiki><electowidget></electowidget></nowiki> tags.
+
+== Example elections ==
+
+*  [[2003 Debian Project Leader Election]]
 
 == MediaWiki administrator information ==
 
