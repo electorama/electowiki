@@ -1,0 +1,40 @@
+The '''Plurality-Cloaked Participation Criterion (PCPC)''' states that ''adding a ballot that bullet-votes for only X should neither decrease the winning probability of X, nor change the winning probabilities among the other candidates relative to each other. A method that does not allow bullet-voting for only one candidate is considered failing the criterion.''
+
+The '''Approval-Cloaked Participation Criterion (ACPC)''' is a stronger requirement which states that ''adding a ballot that votes a set S of candidates equal-top and all candidates outside that set equal-bottom should neither decrease the winning probability of any candidate in S, nor change the winning probabilites among the candidates in set S relative to each other, nor change the winning probabilities among the candidates outside of S relative to each other. A method that does not allow voting by putting one or several candidates in the first rank and all other candidates in the last rank is considered failing the criterion.'' Satisfying ACPC implies satisfying PCPC.
+
+Satisfying ACPC does not imply compliance with the Participation Criterion but protection for semi-honest voters (those who compress their true preferences) against the No-Show Paradox.
+
+Methods that satisfy ACPC: [[Approval voting|Approval]], [[Range voting|Range]].
+
+Methods that fail both ACPC and PCPC: [[Instant-runoff voting|IRV]], [[Runoff voting]] in general, [[Bucklin voting|Bucklin]], the [[Schulze method]].
+
+Example for IRV failing PCPC:
+ 49 Z
+ 26 Y
+ 25 X>Y
+
+Y wins.
+
+Now add 3 voters bullet-voting for X.
+
+ 49 Z
+ 26 Y
+ 25 X>Y
+  3 X
+
+Z wins. The added voters who bullet-voted for X changed the winner without changing it to X.
+
+Example for Bucklin failing PCPC:
+
+ 49 Z
+ 51 Y>Z
+
+Y wins.
+
+Now add 10 voters plumbing for X.
+
+ 49 Z
+ 51 Y>Z
+ 10 X
+
+Z wins. The added voters who bullet-voted for X changed the winner without changing it to X.
