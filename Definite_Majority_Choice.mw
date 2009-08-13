@@ -2,31 +2,22 @@
 :'''While no undefeated candidates exist, eliminate the least-approved candidate.'''
 See also [[Proposed Statutory Rules for DMC]].
 
-''Page refactoring in progress.  Comments welcome.--[[User:Araucaria|Araucaria]] 11:41, 30 Sep 2005 (PDT)''
-
-== Procedure 1, [[Approval cutoff]] ==
-# Voters cast [[Preferential voting|ranked ballots]], ranking as many candidates as they like.  Equal ranking of candidates is allowed.  Write-in candidates are allowed.  Unranked candidates are allowed.  There are sufficient ranks to allow ranking each candidate separately, ranking all candidates approved, or all candidates disapproved.
-# By default, all ranked candidates are considered [[Approval voting|approved]].  If the voter doesn't approve of some of the ranked candidates, an [[Approval Cutoff|approval cutoff]] can be placed at some rank, indicating that all candidates at that rank and below are disapproved.
-# Ballots are tabulated into a pairwise array containing results for each head-to-head contest (see [[Definite_Majority_Choice#Tallying_Votes|example]] below).  Total approval rating for each candidate is also tabulated.
-# The winner is the candidate who, when compared with every other (un-dropped) candidate, is preferred over the other candidate.
-# If no undefeated candidates exist, the least-approved candidate is dropped, and we return to step 4.
-
-== Procedure 2, [[Range voting]] ==
-[[Approval cutoff]] may be deemed too complicated for the voter to understand.  An alternative is to use [[Range voting]] to resolve cycles.
+== [[Range voting]] implementation ==
+From a voter's standpoint, the simplest ballot would use [[Range voting]].  Then the candidates' total score, as a measure of approval, would be used to resolve cycles.
 # Voters cast [[ratings ballot]]s, rating as many candidates as they like.  Equal rating and ranking of candidates is allowed.  Separate ranking of equally-rated candidates is provided.  Write-in candidates are allowed.  Unrated candidates are allowed.
-# Ordinal (rank) information is inferred from the candidate rating plus additional ranking.  For example, candidates might be rated from 0 to 99, with 99 most favored.  Because a voter may wish to give two candidates the same rating but rank them differently, an additional decimal point rating from 0.0 to 0.9 (or 0.00 to 0.99) would be allowed.  It would be used for rank only, and would be truncated before adding the candidate's rating to the total rating score.
+# Ordinal (rank) information is inferred from the candidate rating plus additional ranking.  For example, candidates might be rated from 0 to 99, with 99 most favored.
 # Each ballot's ordinal ranking is tabulated into a pairwise array containing results for each head-to-head contest (see [[Definite_Majority_Choice#Tallying_Votes|example]] below).  The total rating for each candidate is also tabulated.
 # The winner is the candidate who, when compared with every other (un-dropped) candidate, is preferred over the other candidate.
 # If no undefeated candidates exist, the candidate with lowest total rating is dropped, and we return to step 4.
 
-Quick example:  A:99.9 , B:99.8, C:50, D:25, E:25 would be counted as
+Quick example:  A:99 , B:98, C:50, D:25, E:25 would be counted as
  A>B>C>D=E
 {| border="1"
 ! !! A !! B !! C !! D !! E !! F
 |-
 ! A || 99 || 1 || 1 || 1 || 1 || 1
 |-
-! B || 0 || 99 || 1 || 1 || 1 || 1
+! B || 0 || 98 || 1 || 1 || 1 || 1
 |-
 ! C || 0 || 0 || 50 || 1 || 1 || 1
 |-
