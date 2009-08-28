@@ -1,0 +1,24 @@
+Score DSV (Declared Strategy Voting) is a hybrid of Condorcet and Score (Range) Voting. You take score ballots, and find the [[Smith set]], then "renormalize" each ballot so that the worst member of the smith set is at 0 and the best is at 100. Say Violet the voter rated the smith set members A, B, and C as 40, 38, and 30, and the non-smith members D and E as 100 and 0; that ballot will be counted as 100, 80, 0, 100, 0. The ballots are added, and the highest score wins.
+
+Why is this a form of Declared Strategy Voting? Assuming all the voters vote their honest utilities, the renormalized score ballots represent the (average of the) ideal score-voting strategy if the voters knew the Smith set (but didn't have enough information to know which candidates were likely to come out ahead within that set). If there's a [[Condorcet winner]], all voters' ideal strategy will be to vote approval-style, and the Condorcet winner will win, thus this method satisfies the Condorcet criterion. If there are several members in the [[Smith set]], the ideal ([[Nash equilibrium]])strategy is actually a mixed strategy; the example voter Violet from above should have an 80% probability of strategically voting 100, 100, 0 and a 20% probability of voting 100, 0, 0. If there are more than a few hundred voters, these probabilities will inevitably average out, and so the mixed strategy is equivalent to the average vote of 100, 80, 0.
+
+Because the system is working out your strategy for you, you have to be very clever indeed to work out an advantageous strategy of any kind at all. You need to know not only who is likely to be in the Smith set, you also need to know the chirality (is it A>B>C>A or A>C>B>A?) and the relative position of the members of the set. In real-world situations, even the best of polls would only indicate the possibility of a Condorcet tie (Smith set larger than 1), they would never be able to give you this extra information. Moreover, even if every voter has absolutely perfect information about all other voters' true preferences, for every group of G voters who has a dishonest strategy available to gain an advantage, there is a larger and/or more motivated group H of voters with a defensive counterstrategy available - one that would make G's strategy backfire to their own harm, if G dares to use it. In the real world, that means that nobody has a motive to start the massive coordination that a successful strategy would require, because the word will get out.
+
+Actually, the simple explanation above is not quite correct, there's one more small adjustment to make it possible to count the ballots at the precinct level, in just one round, even if there are 4 or more members of the Smith set (something which, by my calculations, should happen far less than once a century). Instead of normalizing to the 4 candidates, you normalize to every possible group of 3 candidates. So a ballot that marked 90, 80, 70, 60 would be counted as average((100, 50, 0, 0), (100, 100, 50, 0), (100, 67, 33, 0), (100, 67, 33, 0)) - that is, the second candidate would get 1700/24 instead of 1600/24, a minor difference. The number of sums maintained at each precinct is then manageable - for 7 candidates, just 35 totals - and the sums just add up across precincts. (Also, this adjustment is actually correct in terms of finding the correct "best" strategy for a voter with the given assumptions).
+
+So, an example: There are 4 candidates, and 3 groups of voters. The true utilities are:
+
+10 voters: 100, 90, 80, 0
+9 voters: 80, 100, 90, 0
+8 voters: 82, 80, 100, 100
+
+The Smith set is A, B, C, so the strategic ballots are:
+100, 50, 0, 0
+0, 100, 50, 0
+10, 0, 100, 100
+
+The totals are 1080, 1400, 1250, 800, and candidate B wins. Effectively, the smallest group of voters has acted as a "tie breaker" between the favorites of the larger two groups. (If their utility for A had been 98 instead of 92, A would win)
+
+On an honest score ballot, the last group of voters has the advantage of "caring less" about making sure candidate D doesn't win; they can honestly vote 10, 0, 100, 100, exaggerating their utilities beyond what the others do. So they get their favorite member of the Smith set, C, even though they're fewer than the other two groups.
+
+IRV and most Condorcet methods would elect B, as that is the candidate with the fewest first-place wins.
