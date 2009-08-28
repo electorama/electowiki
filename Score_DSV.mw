@@ -8,16 +8,16 @@ Actually, the simple explanation above is not quite correct, there's one more sm
 
 So, an example: There are 4 candidates, and 3 groups of voters. The true utilities are:
 
-10 voters: 100, 90, 80, 0
-9 voters: 80, 100, 90, 0
-8 voters: 82, 80, 100, 100
+*10 voters: 100, 90, 80, 0
+*9 voters: 80, 100, 90, 0
+*8 voters: 82, 80, 100, 100
 
 The Smith set is A, B, C, so the strategic ballots are:
-100, 50, 0, 0
-0, 100, 50, 0
-10, 0, 100, 100
+*100, 50, 0, 0
+*0, 100, 50, 0
+*10, 0, 100, 100
 
-The totals are 1080, 1400, 1250, 800, and candidate B wins. Effectively, the smallest group of voters has acted as a "tie breaker" between the favorites of the larger two groups. (If their utility for A had been 98 instead of 92, A would win)
+The totals are 1080, 1400, 1250, 800, and candidate B wins. Effectively, the smallest group of voters has acted as a "tie breaker" between the favorites of the larger two groups. (If their utility for A had been over 89, A would win)
 
 On an honest score ballot, the last group of voters has the advantage of "caring less" about making sure candidate D doesn't win; they can honestly vote 10, 0, 100, 100, exaggerating their utilities beyond what the others do. So they get their favorite member of the Smith set, C, even though they're fewer than the other two groups.
 
