@@ -11,12 +11,13 @@ Moreover, even if every voter has absolutely perfect information about all other
 
 Also, consider what kinds of strategies exist in other systems. In Condorcet methods, a typical strategy to consider is a "favorite betrayal" strategy. An A>B>C voter who thinks C could win an A>B>C>A Condorcet cycle can "betray" A to vote B>A>C. If this breaks the cycle, B wins. In effect, the voter was saying that they care more about the possible advantage of getting B over C, than about the possible disadvantage of getting B over A. In Score DSV, this voter's honest A>B>>C vote (such as 100, 90, 0) will probably have the same effect. In other words, this system, by allowing a more expressive ballot than most Condorcet methods, allows honesty to replace the many cases of strategy, especially those with the strongest voter motivation behind them.
 
-Finally, unlike score voting, this system is not only resistant to strategy, it is forgiving of the lack of strategy. A voter who, through imperfect understanding or laziness, simply votes approval-style or simply ranks the candidates, will still have almost the same power as a voter who carefully figures out a precise utility for each candidate. There will be no systematic bias in favor of candidates whose supporters are more skilled and/or willing strategists.
+Finally, unlike score voting, this system is not only resistant to strategy, it is forgiving of the lack of strategy. A voter who, through imperfect understanding or laziness, simply votes approval-style, ranks the candidates, or truncates their vote will still have almost the same power as a voter who carefully figures out a precise utility for every candidate. There will be essentially no systematic bias in favor of candidates whose supporters are more skilled and/or willing strategists.
 
  **"More motivated" relative to the range of utility of the Smith set. A voter who voted the Smith set 
  20, 19, 10 is "more motivated" for B>C than one who voted 60, 50, 10 (90% vs. 80%), even though the 
  un-renormalized gap is less. Still, individual differences of this kind should average out, so in 
  general they will be "more motivated" in an absolute sense as well.
+
 == Example ==
 
 There are 4 candidates, and 3 groups of voters. The true utilities are:
