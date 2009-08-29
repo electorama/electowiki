@@ -46,7 +46,7 @@ This method complies with the [[Condorcet criterion]] but not the [[Generalized 
 *100, 99, 0, 98
 *99, 0, 100, 98
 *0, 100, 99, 98
-then candidate D is the highest-utility compromise, but is not part of the Smith set. However, if the third voter's true preference were 0, 99, 100, 98, the system should NOT elect D even though they're still the Score winner, because that gives voters 2 and 3 motivation to strategically bullet-vote for C. 
+then candidate D is the highest-utility compromise, but is not part of the Smith set. However, if the third voter's true preference were 0, 99, 100, 98, the system should NOT elect D even though they're still the utility winner and the score winner, because to do so would give voters 2 and 3 motivation to strategically bullet-vote for C. 
 
 There are some other criteria which Score DSV fails for similar "good" reasons, ie, only in relatively-contrived cases when a highest-utility (after renormalization) candidate is not part of the Smith set: [[Mutual majority criterion]], [[Independence of irrelevant alternatives|local independence from irrelevant alternatives]], [[Schwartz set|Schwartz criterion]], [[Generalized Strategy-Free criterion]], 
 
