@@ -7,12 +7,16 @@ Why is this a form of Declared Strategy Voting? Assuming all the voters vote the
 == Less strategy than other systems ==
 Because the system is working out your strategy for you, you would have to be very clever indeed to work out an even better strategy. You need to know not only who is likely to be in the Smith set, you also need to know the chirality (is it A>B>C>A or A>C>B>A?) and the relative position of the members of the set. In real-world situations, even the best of polls would only indicate the possibility of a Condorcet tie (Smith set larger than 1), they would never be able to give you this extra information. 
 
-Moreover, even if every voter has absolutely perfect information about all other voters' true preferences, for every group of G voters who has a dishonest strategy available to gain an advantage, there is a larger and/or more motivated <ref>"More motivated" relative to the range of utility of the Smith set. A voter who voted the Smith set 20, 19, 10 is "more motivated" for B>C than one who voted 60, 50, 10 (90% vs. 80%), even though the un-renormalized gap is less. Still, individual differences of this kind should average out, so in general they will be "more motivated" in an absolute sense as well.</ref> group H of voters with a defensive counterstrategy available - one that would make G's strategy backfire to their own harm, if G dares to use it. In the real world, that means that nobody has a motive to start the massive coordination that a successful strategy would require, because the word will get out and others will use a defensive strategy.
+Moreover, even if every voter has absolutely perfect information about all other voters' true preferences, for every group of G voters who has a dishonest strategy available to gain an advantage, there is a larger and/or more motivated** group H of voters with a defensive counterstrategy available - one that would make G's strategy backfire to their own harm, if G dares to use it. In the real world, that means that nobody has a motive to start the massive coordination that a successful strategy would require, because the word will get out and others will use a defensive strategy.
 
 Also, consider what kinds of strategies exist in other systems. In Condorcet methods, a typical strategy to consider is a "favorite betrayal" strategy. An A>B>C voter who thinks C could win an A>B>C>A Condorcet cycle can "betray" A to vote B>A>C. If this breaks the cycle, B wins. In effect, the voter was saying that they care more about the possible advantage of getting B over C, than about the possible disadvantage of getting B over A. In Score DSV, this voter's honest A>B>>C vote (such as 100, 90, 0) will probably have the same effect. In other words, this system, by allowing a more expressive ballot than most Condorcet methods, allows honesty to replace the many cases of strategy, especially those with the strongest voter motivation behind them.
 
 Finally, unlike score voting, this system is not only resistant to strategy, it is forgiving of the lack of strategy. A voter who, through imperfect understanding or laziness, simply votes approval-style or simply ranks the candidates, will still have almost the same power as a voter who carefully figures out a precise utility for each candidate. There will be no systematic bias in favor of candidates whose supporters are more skilled and/or willing strategists.
 
+ **"More motivated" relative to the range of utility of the Smith set. A voter who voted the Smith set 
+ 20, 19, 10 is "more motivated" for B>C than one who voted 60, 50, 10 (90% vs. 80%), even though the 
+ un-renormalized gap is less. Still, individual differences of this kind should average out, so in 
+ general they will be "more motivated" in an absolute sense as well.
 == Example ==
 
 There are 4 candidates, and 3 groups of voters. The true utilities are:
@@ -33,5 +37,25 @@ On an honest score ballot, the last group of voters has the advantage of "caring
 Most Condorcet methods would elect A, as that is the candidate with the weakest defeat (versus C).
 
 IRV would eliminate C and elect B.
+
+== Criteria compliance ==
+Obvious compliances: [[Pareto criterion]], [[Monotonicity criterion]], [[Plurality criterion]], [[Strategy-Free criterion]], [[Blank Ballot Criterion]]. Obviously non-compliant: [[Consistency|Consistency criterion]], [[Tactical voting|invulnerability to compromising]], [[Tactical voting|invulnerability to burying]], [[Favorite Betrayal criterion]], [[Later-no-harm criterion]].
+
+This method complies with the [[Condorcet criterion]] but not the [[Smith criterion]]. The latter non-compliance is seen as a feature; for instance, if there are 3 voters and 4 candididates with the votes:
+*100, 99, 0, 98
+*99, 0, 100, 98
+*0, 100, 99, 98
+then candidate D is the highest-utility compromise, but is not part of the Smith set. However, if the third voter's true preference were 0, 99, 100, 98, the system should NOT elect D even though they're still the Score winner, because that gives voters 2 and 3 motivation to strategically bullet-vote for C. 
+
+There are some other criteria which Score DSV fails for similar "good" reasons, ie, only in relatively-contrived cases when a highest-utility (after renormalization) candidate is not part of the Smith set: [[Mutual Majority criterion]], [[Independence of irrelevant alternatives|local independence from irrelevant alternatives]], [[Schwartz set|Schwartz criterion]], [[Generalized Strategy-Free criterion]], 
+
+The method is not universally [[clone independent]] under the standard definition of clones (that they must simply rank the same as the originals). However, if the clones have scores within the range of the Smith set for every voter (for instance, if they have identical scores to the originals), then the method is clone independent.
+
+The method complies with the [[minimal defense]] criterion and the [[Strong and Weak Defensive Strategy criteria|Strong Defensive Strategy criterion]]. As noted above, it is even better: defensive strategies are always available to larger and/or more-motivated groups (where motivation is counted relative to the Smith set) than the corresponding offensive strategies.
+
+This method does not meet the [[Summability criterion]], although, unlike [[IRV]], it only requires a maximum of two summable counting rounds. A minor modification of this method, in which average scores for every 3-member subset of the Smith set are used, does meet this criterion (at summability of order 3, not 2 like other Condorcet systems); this modification also happens to meet the [[Smith criterion]] and some of the related criteria noted above, but the extra complexity is not worth it.
+
+This method does not meet the [[Participation criterion]], but it does meet a weaker version I call the "defensive participation criterion": <em>If a given election chooses X, and new voters are added who prefer X over Y, then the set of voters who prefer X over Y have some way of voting to make sure Y does not win without reversing any preferences or falsely voting any candidates equally.</em> As far as I know, it is the only Condorcet method to meet this criterion.
+
 
 [[Category:Condorcet method]] [[Category:Single-winner systems]]
