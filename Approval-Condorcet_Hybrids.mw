@@ -4,3 +4,5 @@ Condorcet augmented with Approval.  Usually implemented using a ranked ballot wi
 * [[Llull Voting]]
 * [[Llull-Approval Voting]]
 * [[Pairwise Sorted Methods]]
+
+A related idea is approval-range hybrids, such as [[Score DSV]], which use a range ballot to infer ranking.
