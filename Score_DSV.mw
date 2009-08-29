@@ -13,9 +13,6 @@ Also, consider what kinds of strategies exist in other systems. In Condorcet met
 
 Finally, unlike score voting, this system is not only resistant to strategy, it is forgiving of the lack of strategy. A voter who, through imperfect understanding or laziness, simply votes approval-style or simply ranks the candidates, will still have almost the same power as a voter who carefully figures out a precise utility for each candidate. There will be no systematic bias in favor of candidates whose supporters are more skilled and/or willing strategists.
 
-== Minor adjustment ==
-Actually, the simple explanation above is not quite correct, there's one more small adjustment to make it possible to count the ballots at the precinct level, in just one round, even if there are 4 or more members of the Smith set (something which, by my calculations, should happen far less than once a century). Instead of normalizing to the 4 candidates, you normalize to every possible group of 3 candidates. So a ballot that marked 90, 80, 70, 60 would be counted as average((100, 50, 0, 0), (100, 100, 50, 0), (100, 67, 33, 0), (100, 67, 33, 0)) - that is, the second candidate would get 1700/24 instead of 1600/24, a minor difference. The number of sums maintained at each precinct is then manageable - for 7 candidates, just 35 totals - and the sums just add up across precincts. (Also, this adjustment is actually correct in terms of finding the correct "best" strategy for a voter with the given assumptions).
-
 == Example ==
 
 There are 4 candidates, and 3 groups of voters. The true utilities are:
