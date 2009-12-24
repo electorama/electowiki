@@ -829,17 +829,19 @@ Each figure represents the number of voters who ranked the candidate at the left
 * [http://vote.sourceforge.net/ Voting Software Project] by Blake Cretney
 * [http://condorcet-dd.sourceforge.net/ Condorcet with Dual Dropping Perl Scripts] by Mathew Goldstein
 * [http://condorcet.ericgorr.net/ Condorcet Voting Calculator] by Eric Gorr
-* [http://selectricity.org/ Selectricity] and [http://rubyvote.rubyforge.org/ RubyVote] by Benjamin Mako Hill
-* [http://relet.net/frog/?p=52 Java implementation of the Schulze method] by Thomas Hirsch
+* [http://selectricity.org/ Selectricity] and [http://rubyvote.rubyforge.org/ RubyVote] by Benjamin Mako Hill [http://web.mit.edu/newsoffice/2008/voting-tt0312.html] [http://labcast.media.mit.edu/?p=56]
+* [http://relet.net/frog/archives/52 Java implementation of the Schulze method] by Thomas Hirsch
 * [http://wiki.electorama.com/wiki/Electowidget Electowidget] by Rob Lanphier
+* [http://www.votator.com Votator.com] by Louis Philippe Lessard [http://www.votator.com/howitworks.html]
 * [http://www.livejournal.com/community/evan_tech/124253.html Haskell Condorcet Module] by Evan Martin
 * [http://www.cs.cornell.edu/andru/civs.html Condorcet Internet Voting Service (CIVS)] by Andrew Myers
 * [http://betterpolls.com/ BetterPolls.com] by Brian Olson
+* [http://www.openstv.org/ OpenSTV] by Jeffrey O'Neill
 
 === Legislative project ===
 
 * [http://groups.yahoo.com/group/Condorcet Condorcet Policy "Think Tank"] moderated by [http://jeffryfisher.net/Statesman Jeffry R. Fisher]
-* [http://www.azvotereform.com/ Arizonans for Competitive Elections Reform] [http://ballotpedia.org/wiki/index.php?title=Arizona_Competitive_Elections_Reform_Act_%282008%29] [http://azvotereform.zxq.net/booklet.pdf] [http://www.azcentral.com/members/Blog/PoliticalInsider/22368] [http://www.eastvalleytribune.com/story/111955] [http://www.ballot-access.org/2008/04/29/arizona-high-school-student-files-paperwork-for-initiatives-for-irv-and-easier-ballot-access/]
+* [http://www.azsos.gov/election/2008/general/ballotmeasuretext/I-21-2008.pdf Arizonans for Condorcet Ranked Voting] [http://ballotpedia.org/wiki/index.php?title=Arizona_Competitive_Elections_Reform_Act_%282008%29] [http://www.azcentral.com/members/Blog/PoliticalInsider/22368] [http://www.ballot-access.org/2008/04/29/arizona-high-school-student-files-paperwork-for-initiatives-for-irv-and-easier-ballot-access/]
 
 {{fromwikipedia}}
 
