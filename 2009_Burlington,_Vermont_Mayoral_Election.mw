@@ -1,4 +1,20 @@
-This is the results of the [http://en.wikipedia.org/wiki/Burlington,_Vermont_mayoral_election,_2009 Burlington, Vermont mayoral election of 2009].  '''WARNING''': there's a bug in the IRV counting used by [[Electowidget]] on this page, so the IRV results are inaccurate.
+This is the results of the [http://en.wikipedia.org/wiki/Burlington,_Vermont_mayoral_election,_2009 Burlington, Vermont mayoral election of 2009].
+
+Pairwise tallies for each of the candidates are available on the following subpages:
+*  [[2009 Burlington, Vermont Mayoral Election - Kiss Voters|Schulze (Condorcet) results among Bob Kiss (P) voters]]
+*  [[2009 Burlington, Vermont Mayoral Election - Montroll Voters|Schulze (Condorcet) results among Andy Montroll (D) voters]]
+*  [[2009 Burlington, Vermont Mayoral Election - Smith Voters|Schulze (Condorcet) results among Dan Smith (I) voters]]
+*  [[2009 Burlington, Vermont Mayoral Election - Wright Voters|Schulze (Condorcet) results among Kurt Wright (R) voters]]
+
+== Visual depiction of IRV results ==
+
+[[File:Burlington2009election-infosheet.png]]
+
+== Raw Electowidget-tallied results ==
+
+Below are the theoretical results of using different mechanisms other than IRV.
+
+(Raw IRV results not included due to bug in IRV tally mechanism in [[Electowidget]])
 
 <electowidget>{
   "version":"0.1",
@@ -41,9 +57,6 @@ This is the results of the [http://en.wikipedia.org/wiki/Burlington,_Vermont_may
   "count_inline_ballots": true,
   "election_methods":
   [
-    {
-      "type":"instant-runoff"
-    },
     {
       "type":"schulze-wv"
     },
