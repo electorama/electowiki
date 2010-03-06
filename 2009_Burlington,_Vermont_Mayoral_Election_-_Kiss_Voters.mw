@@ -1,0 +1,142 @@
+This page contains a '''subset''' the results of the [[2009 Burlington, Vermont Mayoral Election]], showing only voters who preferred Kiss over all other candidates.  For full results, see [[2009 Burlington, Vermont Mayoral Election]].
+
+<electowidget>{
+  "version":"0.1",
+  "candidates":
+  {
+    "Kiss":
+    {
+      "display_name":"Bob Kiss (Progressive)"
+    },
+    "Montroll":
+    {
+      "display_name":"Andy Montroll (Democrat)"
+    },
+    "Simpson":
+    {
+      "display_name":"James Simpson (Green)"
+    },
+    "Smith":
+    {
+      "display_name":"Dan Smith (Independent)"
+    },
+    "Wright":
+    {
+      "display_name":"Kurt Wright (Republican)"
+    },
+    "Write-in":
+    {
+      "display_name":"Write-in"
+    }
+  },
+  "description":"2009 Burlington mayoral election",
+  "display_parameters": true,
+  "display_results": true,
+  "display_ballots": true,
+  "allow_voting": false,
+  "ballot_type": null,
+  "max_rating": 6,
+  "min_rating": 0,
+  "count_subpage_ballots": false,
+  "count_inline_ballots": true,
+  "election_methods":
+  [
+    {
+      "type":"schulze-wv"
+    }
+  ],
+  "inline_ballot_type":"range-array",
+  "inline_ballots":
+  [           {"qty":355, "vote": {"Kiss":6, "Montroll":5}},
+    {"qty":327, "vote": {"Kiss":6}},
+    {"qty":234, "vote": {"Kiss":6, "Montroll":5, "Smith":4}},
+    {"qty":125, "vote": {"Kiss":6, "Smith":5}},
+    {"qty":123, "vote": {"Kiss":6, "Montroll":5, "Smith":4, "Wright":3, "Simpson":2}},
+    {"qty":121, "vote": {"Kiss":6, "Smith":5, "Montroll":4}},
+    {"qty":120, "vote": {"Kiss":6, "Montroll":5, "Smith":4, "Simpson":3, "Wright":2}},
+    {"qty":103, "vote": {"Kiss":6, "Montroll":5, "Simpson":4, "Smith":3, "Wright":2}},
+    {"qty":80, "vote": {"Kiss":6, "Smith":5, "Montroll":4, "Simpson":3, "Wright":2}},
+    {"qty":71, "vote": {"Kiss":6, "Montroll":5, "Wright":4, "Smith":3, "Simpson":2}},
+    {"qty":66, "vote": {"Kiss":6, "Wright":5}},
+    {"qty":60, "vote": {"Kiss":6, "Montroll":5, "Smith":4, "Wright":3}},
+    {"qty":55, "vote": {"Kiss":6, "Smith":5, "Montroll":4, "Wright":3, "Simpson":2}},
+    {"qty":52, "vote": {"Kiss":6, "Montroll":5, "Simpson":4}},
+    {"qty":48, "vote": {"Kiss":6, "Montroll":5, "Wright":4}},
+    {"qty":42, "vote": {"Kiss":6, "Montroll":5, "Smith":4, "Simpson":3}},
+    {"qty":41, "vote": {"Kiss":6, "Montroll":5, "Simpson":4, "Smith":3}},
+    {"qty":39, "vote": {"Kiss":6, "Wright":5, "Montroll":4, "Smith":3, "Simpson":2}},
+    {"qty":31, "vote": {"Kiss":6, "Wright":5, "Montroll":4}},
+    {"qty":29, "vote": {"Kiss":6, "Smith":5, "Montroll":4, "Wright":3}},
+    {"qty":26, "vote": {"Kiss":6, "Smith":5, "Wright":4, "Montroll":3, "Simpson":2}},
+    {"qty":24, "vote": {"Kiss":6, "Montroll":5, "Wright":4, "Smith":3}},
+    {"qty":24, "vote": {"Kiss":6, "Simpson":5, "Montroll":4, "Smith":3, "Wright":2}},
+    {"qty":23, "vote": {"Kiss":6, "Smith":5, "Simpson":4, "Montroll":3, "Wright":2}},
+    {"qty":21, "vote": {"Kiss":6, "Smith":5, "Montroll":4, "Simpson":3}},
+    {"qty":21, "vote": {"Kiss":6, "Wright":5, "Smith":4, "Montroll":3, "Simpson":2}},
+    {"qty":19, "vote": {"Kiss":6, "Simpson":5}},
+    {"qty":16, "vote": {"Kiss":6, "Simpson":5, "Montroll":4}},
+    {"qty":15, "vote": {"Kiss":6, "Wright":5, "Smith":4, "Montroll":3}},
+    {"qty":15, "vote": {"Kiss":6, "Smith":5, "Simpson":4}},
+    {"qty":15, "vote": {"Kiss":6, "Smith":5, "Wright":4, "Montroll":3}},
+    {"qty":14, "vote": {"Kiss":6, "Montroll":5, "Wright":4, "Simpson":3, "Smith":2}},
+    {"qty":13, "vote": {"Kiss":6, "Montroll":5, "Simpson":4, "Wright":3, "Smith":2}},
+    {"qty":13, "vote": {"Kiss":6, "Smith":5, "Wright":4}},
+    {"qty":12, "vote": {"Kiss":6, "Simpson":5, "Smith":4, "Montroll":3, "Wright":2}},
+    {"qty":12, "vote": {"Kiss":6, "Wright":5, "Montroll":4, "Smith":3}},
+    {"qty":12, "vote": {"Kiss":6, "Wright":5, "Montroll":4, "Simpson":3, "Smith":2}},
+    {"qty":12, "vote": {"Kiss":6, "Wright":5, "Smith":4}},
+    {"qty":9, "vote": {"Kiss":6, "Smith":5, "Montroll":4, "Simpson":3, "Write-in":2}},
+    {"qty":9, "vote": {"Kiss":6, "Montroll":5, "Smith":4, "Simpson":3, "Write-in":2}},
+    {"qty":9, "vote": {"Kiss":6, "Smith":5, "Simpson":4, "Montroll":3}},
+    {"qty":8, "vote": {"Kiss":6, "Simpson":5, "Montroll":4, "Smith":3}},
+    {"qty":8, "vote": {"Kiss":6, "Simpson":5, "Smith":4}},
+    {"qty":7, "vote": {"Kiss":6, "Simpson":5, "Montroll":4, "Wright":3, "Smith":2}},
+    {"qty":6, "vote": {"Kiss":6, "Smith":5, "Simpson":4, "Wright":3, "Montroll":2}},
+    {"qty":6, "vote": {"Kiss":6, "Simpson":5, "Smith":4, "Montroll":3}},
+    {"qty":6, "vote": {"Kiss":6, "Wright":5, "Smith":4, "Simpson":3, "Montroll":2}},
+    {"qty":6, "vote": {"Kiss":6, "Wright":5, "Simpson":4, "Smith":3, "Montroll":2}},
+    {"qty":6, "vote": {"Kiss":6, "Smith":5, "Simpson":4, "Montroll":3, "Write-in":2}},
+    {"qty":5, "vote": {"Kiss":6, "Wright":5, "Simpson":4, "Montroll":3, "Smith":2}},
+    {"qty":5, "vote": {"Kiss":6, "Smith":5, "Wright":4, "Simpson":3, "Montroll":2}},
+    {"qty":4, "vote": {"Kiss":6, "Write-in":5, "Montroll":4, "Smith":3, "Simpson":2}},
+    {"qty":4, "vote": {"Kiss":6, "Smith":5, "Montroll":4, "Write-in":3, "Simpson":2}},
+    {"qty":4, "vote": {"Kiss":6, "Wright":5, "Montroll":4, "Simpson":3}},
+    {"qty":4, "vote": {"Kiss":6, "Write-in":5}},
+    {"qty":3, "vote": {"Kiss":6, "Simpson":5, "Wright":4, "Montroll":3, "Smith":2}},
+    {"qty":3, "vote": {"Kiss":6, "Montroll":5, "Simpson":4, "Smith":3, "Write-in":2}},
+    {"qty":3, "vote": {"Kiss":6, "Simpson":5, "Smith":4, "Wright":3, "Montroll":2}},
+    {"qty":3, "vote": {"Kiss":6, "Smith":5, "Write-in":4, "Montroll":3, "Simpson":2}},
+    {"qty":2, "vote": {"Kiss":6, "Wright":5, "Smith":4, "Simpson":3}},
+    {"qty":2, "vote": {"Kiss":6, "Smith":5, "Write-in":4}},
+    {"qty":2, "vote": {"Kiss":6, "Montroll":5, "Wright":4, "Write-in":3}},
+    {"qty":2, "vote": {"Kiss":6, "Montroll":5, "Write-in":4}},
+    {"qty":2, "vote": {"Kiss":6, "Simpson":5, "Wright":4}},
+    {"qty":2, "vote": {"Kiss":6, "Simpson":5, "Montroll":4, "Write-in":3, "Smith":2}},
+    {"qty":2, "vote": {"Kiss":6, "Simpson":5, "Smith":4, "Wright":3}},
+    {"qty":1, "vote": {"Kiss":6, "Montroll":5, "Simpson":4, "Wright":3}},
+    {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Montroll":4, "Wright":3, "Write-in":2}},
+    {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Montroll":4, "Smith":3, "Write-in":2}},
+    {"qty":1, "vote": {"Kiss":6, "Smith":5, "Montroll":4, "Write-in":3}},
+    {"qty":1, "vote": {"Kiss":6, "Write-in":5, "Smith":4, "Montroll":3, "Simpson":2}},
+    {"qty":1, "vote": {"Kiss":6, "Montroll":5, "Smith":4, "Write-in":3}},
+    {"qty":1, "vote": {"Kiss":6, "Write-in":5, "Wright":4, "Smith":3, "Simpson":2}},
+    {"qty":1, "vote": {"Kiss":6, "Write-in":5, "Wright":4}},
+    {"qty":1, "vote": {"Kiss":6, "Write-in":5, "Montroll":4}},
+    {"qty":1, "vote": {"Kiss":6, "Wright":5, "Simpson":4, "Montroll":3}},
+    {"qty":1, "vote": {"Kiss":6, "Montroll":5, "Smith":4, "Wright":3, "Write-in":2}},
+    {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Smith":4, "Write-in":3}},
+    {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Smith":4, "Write-in":3, "Wright":2}},
+    {"qty":1, "vote": {"Kiss":6, "Write-in":5, "Wright":4, "Simpson":3, "Smith":2}},
+    {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Wright":4, "Smith":3, "Montroll":2}},
+    {"qty":1, "vote": {"Kiss":6, "Wright":5, "Smith":4, "Montroll":3, "Write-in":2}},
+    {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Write-in":4, "Montroll":3, "Wright":2}},
+    {"qty":1, "vote": {"Kiss":6, "Smith":5, "Wright":4, "Simpson":3}},
+    {"qty":1, "vote": {"Kiss":6, "Smith":5, "Simpson":4, "Write-in":3, "Montroll":2}},
+    {"qty":1, "vote": {"Kiss":6, "Montroll":5, "Write-in":4, "Wright":3, "Simpson":2}},
+    {"qty":1, "vote": {"Kiss":6, "Montroll":5, "Simpson":4, "Write-in":3, "Wright":2}},
+    {"qty":1, "vote": {"Kiss":6, "Wright":5, "Simpson":4, "Montroll":3, "Write-in":2}},
+    {"qty":1, "vote": {"Kiss":6, "Write-in":5, "Montroll":4, "Smith":3}},
+    {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Write-in":4}},
+    {"qty":1, "vote": {"Kiss":6, "Smith":5, "Montroll":4, "Write-in":3, "Wright":2}}
+]
+}</electowidget>
