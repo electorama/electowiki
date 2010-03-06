@@ -1,3 +1,5 @@
+This is the results of the [http://en.wikipedia.org/wiki/Burlington,_Vermont_mayoral_election,_2009 Burlington, Vermont mayoral election of 2009].  '''WARNING''': there's a bug in the IRV counting used by [[Electowidget]] on this page, so the IRV results are inaccurate.
+
 <electowidget>{
   "version":"0.1",
   "candidates":
