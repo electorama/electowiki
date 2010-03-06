@@ -1,34 +1,3 @@
-To quote [http://bolson.org/~bolson/2009/20090303_burlington_vt_mayor.html Brian Olson's page on the same subject]: "Well, it has happened. That thing that a few math nerd election theory wankers warned about but nay-sayers said could never happen has happened. Instant Runoff Voting has elected the wrong person."
-
-== Visual depiction of IRV results ==
-
-Below is an infographic which attempts to put everything in a one-page result:
-
-[[File:Burlington2009election-infosheet.png|frameless|none|700px]]
-
-
-== Further analysis ==
-
-*  [http://bolson.org/~bolson/2009/20090303_burlington_vt_mayor.html Brian Olson's analysis of the election]
-
-== Pairwise results ==
-
-This is the results of the [http://en.wikipedia.org/wiki/Burlington,_Vermont_mayoral_election,_2009 Burlington, Vermont mayoral election of 2009].
-
-Pairwise tallies for each of the candidates are available on the following subpages:
-*  [[2009 Burlington, Vermont Mayoral Election - Kiss Voters|Schulze (Condorcet) results among Bob Kiss (P) voters]]
-*  [[2009 Burlington, Vermont Mayoral Election - Montroll Voters|Schulze (Condorcet) results among Andy Montroll (D) voters]]
-*  [[2009 Burlington, Vermont Mayoral Election - Smith Voters|Schulze (Condorcet) results among Dan Smith (I) voters]]
-*  [[2009 Burlington, Vermont Mayoral Election - Wright Voters|Schulze (Condorcet) results among Kurt Wright (R) voters]]
-
-
-
-== Raw Electowidget-tallied results ==
-
-Below are the theoretical results of using different mechanisms other than IRV.
-
-(Raw IRV results not included due to bug in IRV tally mechanism in [[Electowidget]])
-
 <electowidget>{
   "version":"0.1",
   "candidates":
@@ -71,7 +40,10 @@ Below are the theoretical results of using different mechanisms other than IRV.
   "election_methods":
   [
     {
-      "type":"copeland"
+      "type":"instant-runoff"
+    },
+    {
+      "type":"schulze-wv"
     },
     {
       "type":"plurality"
@@ -80,9 +52,9 @@ Below are the theoretical results of using different mechanisms other than IRV.
   "inline_ballot_type":"range-array",
   "inline_ballots":
   [
-    {"qty":840, "vote": {"Wright":6}},
+    {"qty":843, "vote": {"Wright":6}},
     {"qty":355, "vote": {"Kiss":6, "Montroll":5}},
-    {"qty":326, "vote": {"Kiss":6}},
+    {"qty":327, "vote": {"Kiss":6}},
     {"qty":271, "vote": {"Wright":6, "Smith":5}},
     {"qty":256, "vote": {"Wright":6, "Montroll":5}},
     {"qty":234, "vote": {"Kiss":6, "Montroll":5, "Smith":4}},
@@ -152,9 +124,9 @@ Below are the theoretical results of using different mechanisms other than IRV.
     {"qty":34, "vote": {"Montroll":6, "Wright":5, "Kiss":4}},
     {"qty":32, "vote": {"Smith":6, "Kiss":5, "Montroll":4, "Wright":3, "Simpson":2}},
     {"qty":32, "vote": {"Montroll":6, "Smith":5, "Wright":4, "Kiss":3}},
+    {"qty":31, "vote": {"Wright":6, "Smith":5, "Kiss":4}},
     {"qty":31, "vote": {"Smith":6, "Montroll":5, "Wright":4, "Kiss":3, "Simpson":2}},
     {"qty":31, "vote": {"Kiss":6, "Wright":5, "Montroll":4}},
-    {"qty":30, "vote": {"Wright":6, "Smith":5, "Kiss":4}},
     {"qty":29, "vote": {"Kiss":6, "Smith":5, "Montroll":4, "Wright":3}},
     {"qty":28, "vote": {"Smith":6, "Wright":5, "Montroll":4, "Simpson":3, "Kiss":2}},
     {"qty":27, "vote": {"Montroll":6, "Kiss":5, "Simpson":4, "Smith":3, "Wright":2}},
@@ -226,13 +198,13 @@ Below are the theoretical results of using different mechanisms other than IRV.
     {"qty":9, "vote": {"Kiss":6, "Montroll":5, "Smith":4, "Simpson":3, "Write-in":2}},
     {"qty":9, "vote": {"Montroll":6, "Simpson":5, "Kiss":4, "Smith":3, "Wright":2}},
     {"qty":9, "vote": {"Kiss":6, "Smith":5, "Simpson":4, "Montroll":3}},
+    {"qty":9, "vote": {"Montroll":6, "Smith":5, "Simpson":4}},
     {"qty":9, "vote": {"Smith":6, "Simpson":5, "Montroll":4, "Kiss":3, "Wright":2}},
     {"qty":8, "vote": {"Montroll":6, "Simpson":5, "Smith":4, "Kiss":3, "Wright":2}},
     {"qty":8, "vote": {"Smith":6, "Montroll":5, "Kiss":4, "Simpson":3}},
     {"qty":8, "vote": {"Montroll":6, "Simpson":5, "Smith":4, "Wright":3, "Kiss":2}},
     {"qty":8, "vote": {"Kiss":6, "Simpson":5, "Montroll":4, "Smith":3}},
     {"qty":8, "vote": {"Wright":6, "Simpson":5, "Smith":4}},
-    {"qty":8, "vote": {"Montroll":6, "Smith":5, "Simpson":4}},
     {"qty":8, "vote": {"Smith":6, "Kiss":5, "Wright":4, "Montroll":3}},
     {"qty":8, "vote": {"Kiss":6, "Simpson":5, "Smith":4}},
     {"qty":7, "vote": {"Montroll":6, "Simpson":5, "Kiss":4}},
@@ -350,7 +322,6 @@ Below are the theoretical results of using different mechanisms other than IRV.
     {"qty":1, "vote": {"Write-in":6, "Wright":5, "Smith":4, "Simpson":3, "Montroll":2}},
     {"qty":1, "vote": {"Wright":6, "Simpson":5, "Kiss":4}},
     {"qty":1, "vote": {"Wright":6, "Write-in":5, "Simpson":4}},
-    {"qty":1, "vote": {"Wright":6, "Write-in":6, "Montroll":5, "Kiss":4, "Smith":3}},
     {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Montroll":4, "Smith":3, "Write-in":2}},
     {"qty":1, "vote": {"Wright":6, "Write-in":5, "Montroll":4, "Smith":3, "Simpson":2}},
     {"qty":1, "vote": {"Kiss":6, "Smith":5, "Montroll":4, "Write-in":3}},
@@ -382,7 +353,6 @@ Below are the theoretical results of using different mechanisms other than IRV.
     {"qty":1, "vote": {"Wright":6, "Simpson":5, "Kiss":4, "Smith":3, "Montroll":2}},
     {"qty":1, "vote": {"Montroll":6, "Write-in":5, "Simpson":4}},
     {"qty":1, "vote": {"Wright":6, "Write-in":5, "Montroll":4}},
-    {"qty":1, "vote": {"Wright":6, "Write-in":6, "Smith":5, "Montroll":4, "Simpson":3, "Kiss":2}},
     {"qty":1, "vote": {"Kiss":6, "Montroll":5, "Smith":4, "Wright":3, "Write-in":2}},
     {"qty":1, "vote": {"Simpson":6, "Montroll":5, "Smith":4, "Wright":3, "Kiss":2}},
     {"qty":1, "vote": {"Wright":6, "Montroll":5, "Kiss":4, "Simpson":3}},
@@ -394,14 +364,12 @@ Below are the theoretical results of using different mechanisms other than IRV.
     {"qty":1, "vote": {"Smith":6, "Montroll":5, "Kiss":4, "Simpson":3, "Write-in":2}},
     {"qty":1, "vote": {"Montroll":6, "Simpson":5, "Smith":4, "Kiss":3}},
     {"qty":1, "vote": {"Montroll":6, "Smith":5, "Simpson":4, "Wright":3}},
-    {"qty":1, "vote": {"Montroll":6, "Smith":5, "Simpson":4, "Wright":4, "Kiss":3}},
     {"qty":1, "vote": {"Smith":6, "Montroll":5, "Wright":4, "Write-in":3, "Simpson":2}},
     {"qty":1, "vote": {"Write-in":6, "Smith":5, "Kiss":4, "Wright":3, "Montroll":2}},
     {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Smith":4, "Write-in":3, "Wright":2}},
     {"qty":1, "vote": {"Smith":6, "Kiss":5, "Wright":4, "Simpson":3, "Write-in":2}},
     {"qty":1, "vote": {"Wright":6, "Simpson":5, "Montroll":4, "Smith":3}},
     {"qty":1, "vote": {"Kiss":6, "Write-in":5, "Wright":4, "Simpson":3, "Smith":2}},
-    {"qty":1, "vote": {"Wright":6, "Write-in":6, "Montroll":5}},
     {"qty":1, "vote": {"Smith":6, "Simpson":5, "Montroll":4, "Wright":3}},
     {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Wright":4, "Smith":3, "Montroll":2}},
     {"qty":1, "vote": {"Simpson":6, "Kiss":5, "Smith":4, "Montroll":3, "Write-in":2}},
@@ -417,10 +385,8 @@ Below are the theoretical results of using different mechanisms other than IRV.
     {"qty":1, "vote": {"Wright":6, "Kiss":5, "Simpson":4, "Montroll":3}},
     {"qty":1, "vote": {"Simpson":6, "Kiss":5, "Montroll":4, "Smith":3, "Wright":2}},
     {"qty":1, "vote": {"Wright":6, "Simpson":5, "Smith":4, "Write-in":3, "Montroll":2}},
-    {"qty":1, "vote": {"Kiss":6, "Write-in":6, "Wright":5, "Montroll":4, "Smith":3, "Simpson":2}},
     {"qty":1, "vote": {"Smith":6, "Simpson":5, "Write-in":4}},
     {"qty":1, "vote": {"Wright":6, "Montroll":5, "Smith":4, "Kiss":3, "Write-in":2}},
-    {"qty":1, "vote": {"Wright":6, "Smith":5, "Kiss":4, "Montroll":4}},
     {"qty":1, "vote": {"Smith":6, "Simpson":5, "Montroll":4, "Kiss":3}},
     {"qty":1, "vote": {"Montroll":6, "Smith":5, "Simpson":4, "Wright":3, "Write-in":2}},
     {"qty":1, "vote": {"Wright":6, "Smith":5, "Simpson":4, "Montroll":3, "Write-in":2}},
