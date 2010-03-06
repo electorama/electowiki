@@ -47,8 +47,8 @@ This page contains a '''subset''' the results of the [[2009 Burlington, Vermont 
   ],
   "inline_ballot_type":"range-array",
   "inline_ballots":
-  [               {"qty":355, "vote": {"Kiss":6, "Montroll":5}},
-    {"qty":326, "vote": {"Kiss":6}},
+  [           {"qty":355, "vote": {"Kiss":6, "Montroll":5}},
+    {"qty":327, "vote": {"Kiss":6}},
     {"qty":234, "vote": {"Kiss":6, "Montroll":5, "Smith":4}},
     {"qty":125, "vote": {"Kiss":6, "Smith":5}},
     {"qty":123, "vote": {"Kiss":6, "Montroll":5, "Smith":4, "Wright":3, "Simpson":2}},
@@ -129,7 +129,6 @@ This page contains a '''subset''' the results of the [[2009 Burlington, Vermont 
     {"qty":1, "vote": {"Kiss":6, "Write-in":5, "Wright":4, "Simpson":3, "Smith":2}},
     {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Wright":4, "Smith":3, "Montroll":2}},
     {"qty":1, "vote": {"Kiss":6, "Wright":5, "Smith":4, "Montroll":3, "Write-in":2}},
-    {"qty":1, "vote": {"Kiss":6, "Write-in":6, "Wright":5, "Montroll":4, "Smith":3, "Simpson":2}},
     {"qty":1, "vote": {"Kiss":6, "Simpson":5, "Write-in":4, "Montroll":3, "Wright":2}},
     {"qty":1, "vote": {"Kiss":6, "Smith":5, "Wright":4, "Simpson":3}},
     {"qty":1, "vote": {"Kiss":6, "Smith":5, "Simpson":4, "Write-in":3, "Montroll":2}},
