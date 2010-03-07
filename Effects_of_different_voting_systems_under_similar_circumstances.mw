@@ -1,0 +1,629 @@
+This article describes an example election using geographical proximity to create hypothetical preferences of a group of voters, and then compares the results of such preferences with ten different [[voting systems]]. It does not, however, address any of the voting systems that are based on [[proportional representation]].
+
+'''Note that the examples given below may not reflect real-world elections, because, among other things, all of the ballots have only four unique sets of preferences.'''
+
+There is a wide number of possible single-winner [[voting systems]], each with different strengths and weaknesses. Each system of voting places different demands on voters and offers different opportunities for strategy to affect the winner.
+
+== Picking the capital city in Tennessee ==
+
+{{Tenn voting example}}
+
+We can pretend that these are "true preferences" among voters and that this implies how they would vote. However in an actual election, within a specific voting system, there will be incentives to vote differently (compromising) to improve influence for an acceptable winner.
+
+== One-vote systems ==
+[[Image:Plurality ballot.svg|thumb|right]]
+Two systems, plurality and runoff voting, allow voters to offer only one vote at a time. The runoff system is two (or more) sequential plurality counts with candidate elimination between.
+
+These are simple systems to vote because they only have to consider one top choice at a time, but require strategies of compromise when there is more than one "good" choice available.
+
+=== Plurality voting system ===
+
+:''Winner: Memphis''
+
+In the [[plurality voting system]] each voter is allowed to vote for one candidate, and the winner of the election is whichever candidate represents a plurality of voters by receiving the largest number of votes. This makes the plurality voting system among the simplest of all voting systems.
+
+In this example, if voting follows sincere preferences, Memphis is selected with the most votes.  Note that this system does not require that the winner have a [[Simple majority|majority]], but only a [[Plurality (voting)|plurality]]. That is, Memphis wins because it has the most votes, even though more than half of the voters preferred another option ''and'' in all other regions Memphis was the '''last place''' choice.
+
+=== Runoff voting (two-round runoff) ===
+:''Winner: Nashville''
+
+In [[Two-round system|runoff voting]] there first is a preliminary election, where voters select their preferred candidate. If a candidate reaches the election threshold (usually fifty percent of the valid votes, plus one), they are elected. Otherwise, the top candidates (usually the top two) are placed on a secondary ballot. Whoever receives the most votes on the second ballot is declared elected.
+
+In this example, assuming each voter voted for his preferred city (for a more sophisticated approach, see below), the first ballot results would be as follows: 
+
+*Memphis: 42%
+*Nashville: 26%
+*Knoxville: 17%
+*Chattanooga: 15%
+
+In a two round runoff,  Knoxville and Chattanooga are eliminated, while Nashville and Memphis advance to the second ballot.
+
+The voters from Knoxville and Chattanooga prefer Nashville, because it is closer, over Memphis, so the results of the second ballot would be:
+
+*Nashville: 58%
+*Memphis: 42%
+
+Nashville would then be declared the winner.
+
+Note on strategy: A two round runoff encourages candidates to unite to make the top two cut. Since Chattanooga and Knoxville both prefer each other second, knowing their divided vote might eliminate them both, they might work together before the election and decide for only Chattanooga to run. That would cause the defeat of Nashville (third place) and Chattanooga could win the final runoff round against Memphis.  Something similar would happen with a multi-round elimination ballot, where only the last-place finisher is eliminated.
+
+==== Potential for tactical voting ====
+
+The runoff system encourages voters to "compromise" by not voting for their favorite candidate in their first round.  In the above two-round example, if all voters from Chattanooga "compromised" for Knoxville in the first round, Knoxville would advance to the second round, where it would defeat Memphis.  This would be a better result for the Chattanooga voters than sincere voting would get them.  The Memphis supporters voters could respond by voting for Nashville instead of Memphis as a way to prevent Knoxville or Chattanooga winning. Plurality voting also allows this possibility; however, it is much less likely, given that more than two candidates often have to combine forces to win against a candidate with a near-majority. In the above example, all three cities would have had to collude in order to defeat Memphis.
+
+Runoff voting can also encourage voters to vote for "pushovers", in order to set up a more favorable second-round matchup.
+
+== Rank preference voting systems ==
+[[Image:Preferential ballot.svg|thumb|right]]
+Rank preference systems allow voters to rank all the candidates from highest to lowest preference.
+
+See: [[Preferential voting]]
+
+=== Instant-runoff voting IRV (one-vote elimination runoff) ===
+
+{{Article issues | section = y | POV = March 2008 | disputed = March 2008}}
+
+:''Winner: Knoxville''
+
+In [[instant-runoff voting]] first choices are tallied. If no candidate has the support of a majority of voters, the candidate with the least support is eliminated. A second round of counting takes place, with the votes of supporters of the eliminated candidate now counting for their second choice candidate. After a candidate is eliminated, he or she may not receive any more votes. This process of counting and eliminating is repeated until one candidate has over half the votes.
+
+{| border=1 class="floatright"
+!City
+!Round 1
+!Round 2
+!Round 3
+|-
+!bgcolor="#ffc0c0"|Memphis
+|bgcolor="#ffc0c0"|42
+|bgcolor="#ffc0c0"|42
+|bgcolor="#ffc0c0"|42
+|-
+!bgcolor="#ffc0c0"|Nashville
+|bgcolor="#ffc0c0"|26
+|bgcolor="#ffc0c0"|26
+|bgcolor="#e0e0ff"|<strike>26</strike> 0
+|-
+!bgcolor="#ffc0c0"|Chattanooga
+|bgcolor="#ffc0c0"|15
+|bgcolor="#e0e0ff"|<strike>15</strike> 0
+|bgcolor="#e0e0ff"|0
+|-
+!bgcolor="#ffc0c0"|Knoxville
+|bgcolor="#ffc0c0"|17
+|bgcolor="#ffc0c0"|<strike>17</strike> 32
+|bgcolor="#ffffc0"|<strike>32</strike> 58
+|}
+
+Chattanooga, having the smallest vote, is eliminated in the first round.  All of the votes for Chattanooga have Knoxville as a second choice, so they are transferred to Knoxville.  Nashville now has the smallest vote, so it is eliminated.  The votes for Nashville have Chattanooga as a second choice, but as Chattanooga has been eliminated, they instead transfer to their third choice, Knoxville.  Knoxville now has 58% of the vote, and it is the winner.
+
+In a real election, of course, voters would show greater variation in the rankings they cast, which could influence the result.  However, the result of Knoxville winning shows that in this case, a capital which is the last choice of 42% of the state's population can win; some would say that this is an undesirable result.  The reason for this result is that the preferences of those who voted for Memphis are not counted beyond their first choice, because Memphis isn't eliminated until the last "round".  In the [[Schulze method]], another ranked choice voting method, all preferences are counted, and Nashville, a compromise city toward the geographic center of the state, would win. When voters vote, both methods appear the same, as the ballot is identical in most ranked choice voting methods.  The method of counting (and in this case, the outcome) of the votes differs.
+
+==== Supplementary vote (IRV variant) ====
+: ''Winner: Memphis''
+{| border=1 class="floatright"
+!City!!Round 1!!Round2
+|-
+!Memphis
+|bgcolor="#ffc0c0"|42%
+|bgcolor="#ffc0c0"|42%
+|-
+!Nashville
+|bgcolor="#ffc0c0"|26%
+|bgcolor="#ffc0c0"|26%
+|-
+!Chattanooga
+|bgcolor="#ffc0c0"|15%
+|bgcolor="#e0e0ff"|<strike>15%</strike> 0
+|-
+!Knoxville
+|bgcolor="#ffc0c0"|17%
+|bgcolor="#e0e0ff"|<strike>17%</strike> 0
+|}
+The [[Supplementary Vote]] may be understood both as a special variant of Instant runoff voting (also known as the "alternative vote") in which there are only two rounds of counting and the voter is restricted to expressing only a first and a second preference, and of runoff voting (also known as the two-round system) in which both 'rounds' may occur without the need for a second poll.
+
+Assuming each voter votes according to their sincere preferences (for a more sophisticated approach, see below), Nashville and Memphis would receive the most votes and advance to the second round.
+
+The second preference of voters from Chattanooga is for Knoxville while the second preference of voters from Knoxville is for Chattanooga. For this reason, in this particular case, no votes from either Chattanooga or Knoxville may be transferred to the two remaining candidates.
+
+On the second and final count, Memphis still has more votes than Nashville, and wins.
+
+==== Sri Lankan supplementary vote (IRV variant) ====
+:''Winner: Nashville''
+{| border=1 class="floatright"
+!City!!Round 1!!Round2
+|-
+!Memphis
+|bgcolor="#ffc0c0"|42%
+|bgcolor="#ffc0c0"|42%
+|-
+!Nashville
+|bgcolor="#ffc0c0"|26%
+|bgcolor="#ffc0c0"|58%
+|-
+!Chattanooga
+|bgcolor="#ffc0c0"|15%
+|bgcolor="#e0e0ff"|<strike>15%</strike> 0
+|-
+!Knoxville
+|bgcolor="#ffc0c0"|17%
+|bgcolor="#e0e0ff"|<strike>17%</strike> 0
+|}
+The [[Sri Lankan supplementary vote]] may be understood both as a special variant of [[Instant-runoff voting]] (also known as the "alternative vote") in which there are only two rounds of counting and the voter is restricted to expressing only a first, second, and third preference, and of [[Two-round system|runoff voting]] (also known as the two-round system) in which both "rounds" may occur without the need for a second poll.
+
+Assuming each voter votes according to their sincere preferences (for a more sophisticated approach, see below), Nashville and Memphis would receive the most votes and advance to the second round.
+
+The second preference of voters from Chattanooga is for Knoxville. However, Knoxville has been eliminated, so the votes must be transferred to the third choice of Chattanooga voters: Nashville, which remains in the race. The second preference of voters from Knoxville is for Chattanooga. Chattanooga has been eliminated so their votes also transfer to their third choice--again, Nashville.
+
+On the second and final count, therefore, all the votes from the two eliminated candidates transfer to Nashville. Nashville now has more votes than Memphis and so '''Nashville is declared the winner'''. Note that under "conventional" SV the winner would have been Memphis.
+
+=== Coombs' method (least-disliked runoff) ===
+:''Winner: Nashville''
+{| border="1" class="floatright"
+|+ Coombs' Method Election Results
+|-
+! rowspan="2" | City
+! colspan="2" | Round 1
+! colspan="2" | Round 2
+|-
+! First
+! Last
+! First
+! Last
+|-
+! bgcolor="#ffc0c0" | Memphis
+| bgcolor="#ffc0c0" | 42
+| bgcolor="#ffc0c0" | 58
+| bgcolor="#e0e0ff" | <del>42</del> 0
+| bgcolor="#c0c0c0" rowspan="4" |
+|-
+! bgcolor="#ffc0c0" | Nashville
+| bgcolor="#ffc0c0" | 26
+| bgcolor="#ffc0c0" | 0
+| bgcolor="#ffc0c0" | <del>26</del> 68
+|-
+! bgcolor="#ffc0c0" | Chattanooga
+| bgcolor="#ffc0c0" | 15
+| bgcolor="#ffc0c0" | 0
+| bgcolor="#ffc0c0" | 15
+|-
+! bgcolor="#ffc0c0" | Knoxville
+| bgcolor="#ffc0c0" | 17
+| bgcolor="#ffc0c0" | 42
+| bgcolor="#ffc0c0" | 17
+|}
+Like instant-runoff voting, in [[Coombs' method]] if one candidate is ranked first by an absolute majority of the voters, then this is the winner. Otherwise votes are tallied for the "lowest preferred" non-eliminated candidate from each ballot. The candidate with the most votes is eliminated. (This method usually requires full rank preferences to be given on every ballot.)
+
+Coombs' method can also be equivalently run like instant-runoff voting with multiple votes counted per ballot. For each ballot, a candidate marked above '''n'''th place is given a point (among '''n''' candidates remaining in a given round). This counting approach allows truncated preference ballots to be counted, since ranked candidates will always have more votes than unranked candidates.
+
+Assuming all of the voters vote sincerely (strategic voting is discussed below), the results would be as follows, by percentage:
+
+* In the first round, no candidate has an absolute majority of first place votes (51).
+* Memphis, having the most last place votes (26+15+17=58), is therefore eliminated.   
+* In the second round, Memphis is out of the running, and so must be factored out. Memphis was ranked first on Group A's ballots, so the second choice of Group A, Nashville, gets an additional 42 first place votes, giving it an absolute majority of first place votes (68 versus 15+17=32) and making it thus the winner. Note that the last place votes are disregarded in the final round.
+
+Note that although Coomb's method chose the [[Condorcet winner]] here, this is not necessarily the case.
+
+=== Borda count (ranked scoring) ===
+:''Winner: Nashville''
+{| class="wikitable floatright"
+!City||First||Second||Third||Fourth||Points
+|-
+!Memphis
+|42||0||0||58||126
+|-
+!Nashville
+|26||42||32||0||194
+|-
+!Chattanooga
+|15||43||42||0||173
+|-
+!Knoxville
+|17||15||26||42||107
+|}
+In [[Borda count]] each voter ranks all the candidates on their ballot. If there are '''n''' candidates in the election, then the first-place candidate on a ballot receives '''n'''âˆ’1 points, the second-place candidate receives '''n'''âˆ’2, and in general the candidate in ''x''th place receives '''n'''âˆ’''x'' points. The candidate ranked last on the ballot therefore receives zero points.
+
+Nashville is the winner in this election, as it has the most points.  Nashville also happens to be the [[Condorcet winner]] in this case. While the Borda count does not always select the Condorcet winner as the Borda Count winner, it always ranks the Condorcet winner above the Condorcet loser.  No other positional method can guarantee such a relationship.
+
+=== Bucklin voting (a ranked approval) ===
+:''Winner: Nashville''
+{| border=1 class="floatright"
+!City
+!Round 1
+!Round 2
+|-
+!bgcolor="#ffc0c0"|Memphis
+|bgcolor="#ffc0c0"|42
+|bgcolor="#ffc0c0"|42
+|-
+!bgcolor="#ffc0c0"|Nashville
+|bgcolor="#ffc0c0"|26
+|bgcolor="#ffc0ff"|68
+|-
+!bgcolor="#ffc0c0"|Chattanooga
+|bgcolor="#ffc0c0"|15
+|bgcolor="#e0e0ff"|58
+|-
+!bgcolor="#ffc0c0"|Knoxville
+|bgcolor="#ffc0c0"|17
+|bgcolor="#ffc0c0"|32
+|}
+In [[Bucklin voting]] first choice votes are counted first. If one candidate has a majority, that candidate wins. Otherwise the second choices are added to the first choices. Again, if a candidate with a majority vote is found, the winner is the candidate with the most votes in that round. Lower rankings are added as needed.
+
+The first round has no majority winner. Therefore the second rank votes are added. This moves Nashville and Chatanooga above 50%, so a winner can be determined. Since Nashville is supported by a higher majority (68% versus 58%), Nashville is the winner.
+
+=== Majority choice approval  ===
+:''Winner: Nashville''
+
+[[Majority-choice approval]] (MCA) is a voting system devised by Forest Simmons in April 2002 for use with three-slot ballots. That is, a voter has three possible choices for rating each candidate: â€˜favoredâ€™, â€˜acceptedâ€™, or â€˜disapprovedâ€™. A rating of either â€˜favoredâ€™ or â€˜acceptedâ€™ signifies approval of the candidate.  If at least one candidate is marked â€˜favoredâ€™ by more than 50% of the voters, then the candidate marked â€˜favoredâ€™ on the most ballots is elected. Otherwise, the winner is the candidate with the highest approval (i.e., the sum of â€˜favoredâ€™ and â€˜acceptedâ€™ marks). Ties can be broken based on the number of â€˜favoredâ€™ marks. Thus, MCA is equivalent to [[Bucklin voting]] with the voter only able to classify in two slots, but able to vote any number of candidates in those slots.
+
+In this example, like with Bucklin, we see that Nashville wins, and that everyone would accept Chattanooga as an alternative. (The majority of voters did not disapprove of Chattanooga.)
+
+The results would be as follows: (Assume the voters favor the first city, accept the next 2 cities, and reject the last city.)
+
+{| border="1"
+|-
+! City
+! Favor
+! Accept
+! Dislike
+|-
+| Memphis
+| 42
+| 0
+| 58
+|-
+| Nashville
+| 26
+| 74
+| 0
+|-
+| Chattanooga
+| 15
+| 85
+| 0
+|-
+| Knoxville
+| 17
+| 41
+| 42
+|}
+
+No city is favored by a majority, so the city with most approval votes (favored + accepted) wins.  Nashville and Chattanooga are tied at 100% approval since nobody voted against either. However, Nashville has more favored votes than the other, so it wins. The higher number of favored votes is what breaks the tie.
+
+=== Condorcet method ===
+:''Winner: Nashville''
+{| class="wikitable floatright"
+|+ Pairwise Election Results
+! colspan="2" rowspan="2" |
+! colspan=4 bgcolor="#c0c0ff" | A
+|-
+! bgcolor="#c0c0ff" | Memphis
+! bgcolor="#c0c0ff" | Nashville
+! bgcolor="#c0c0ff" | Chattanooga
+! bgcolor="#c0c0ff" | Knoxville
+|-
+! bgcolor="#ffc0c0" rowspan=4 | B
+! bgcolor="#ffc0c0" | Memphis
+|
+| bgcolor="#e0e0ff" | [A] 58%<br />[B] 42%
+| bgcolor="#e0e0ff" | [A] 58%<br />[B] 42%
+| bgcolor="#e0e0ff" | [A] 58%<br />[B] 42%
+|-
+! bgcolor="#ffc0c0" | Nashville
+| bgcolor="#ffe0e0" | [A] 42%<br />[B] 58%
+|
+| bgcolor="#ffe0e0" | [A] 32%<br />[B] 68%
+| bgcolor="#ffe0e0" | [A] 32%<br />[B] 68%
+|-
+! bgcolor="#ffc0c0" | Chattanooga
+| bgcolor="#ffe0e0" | [A] 42%<br />[B] 58%
+| bgcolor="#e0e0ff" | [A] 68%<br />[B] 32%
+|
+| bgcolor="#ffe0e0" | [A] 17%<br />[B] 83%
+|-
+! bgcolor="#ffc0c0" | Knoxville
+| bgcolor="#ffe0e0" | [A] 42%<br />[B] 58%
+| bgcolor="#e0e0ff" | [A] 68%<br />[B] 32%
+| bgcolor="#e0e0ff" | [A] 83%<br />[B] 17%
+|
+|-
+! colspan=2 bgcolor="#c0c0ff" | Ranking<br />(by repeatedly removing<br />Condorcet winner)
+| bgcolor="#ffffff" | 4th
+| bgcolor="#ffffff" | 1st
+| bgcolor="#ffffff" | 2nd
+| bgcolor="#fffffe" | 3rd
+|}
+In the [[Condorcet method]] ballots are counted by considering all possible sets of two-candidate elections from all available candidates. That is, each candidate is considered against each and every other candidate. A candidate is considered to "win" against another on a single ballot if they are ranked higher than their opponent. 
+
+If a candidate is preferred over all other candidates, that candidate is the Condorcet winner. However, a Condorcet winner may not exist, due to a fundamental paradox: It is possible for the electorate to prefer A over B, B over C, and C over A simultaneously. This is called a majority rule cycle, and it must be resolved by some other mechanism.
+
+In this example, the results would be tabulated as follows:
+
+* [A] indicates voters who preferred the candidate listed in the column caption to the candidate listed in the row caption
+* [B] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
+
+In this election, Nashville is the Condorcet winner and thus the winner under all possible Condorcet methods. Notice how [[first-past-the-post]] and [[instant-runoff voting]] would have selected Memphis and Knoxville here, respectively, even though when compared to either of them, most people would have preferred Nashville.
+
+==== Ranked pairs (Condorcet method) ====
+:''Winner: Nashville''
+{| class="wikitable floatright"
+|+ Pairwise Election Results
+! colspan="2" rowspan="2" |
+! colspan=4 bgcolor="#c0c0ff" | A
+|-
+! bgcolor="#c0c0ff" | Memphis
+! bgcolor="#c0c0ff" | Nashville
+! bgcolor="#c0c0ff" | Chattanooga
+! bgcolor="#c0c0ff" | Knoxville
+|-
+! bgcolor="#ffc0c0" rowspan=4 | B
+! bgcolor="#ffc0c0" | Memphis
+|
+| bgcolor="#e0e0ff" | [A] 58%<br />[B] 42%
+| bgcolor="#e0e0ff" | [A] 58%<br />[B] 42%
+| bgcolor="#e0e0ff" | [A] 58%<br />[B] 42%
+|-
+! bgcolor="#ffc0c0" | Nashville
+| bgcolor="#ffe0e0" | [A] 42%<br />[B] 58%
+|
+| bgcolor="#ffe0e0" | [A] 32%<br />[B] 68%
+| bgcolor="#ffe0e0" | [A] 32%<br />[B] 68%
+|-
+! bgcolor="#ffc0c0" | Chattanooga
+| bgcolor="#ffe0e0" | [A] 42%<br />[B] 58%
+| bgcolor="#e0e0ff" | [A] 68%<br />[B] 32%
+|
+| bgcolor="#ffe0e0" | [A] 17%<br />[B] 83%
+|-
+! bgcolor="#ffc0c0" | Knoxville
+| bgcolor="#ffe0e0" | [A] 42%<br />[B] 58%
+| bgcolor="#e0e0ff" | [A] 68%<br />[B] 32%
+| bgcolor="#e0e0ff" | [A] 83%<br />[B] 17%
+|
+|-
+! colspan=2 bgcolor="#c0c0ff" | Pairwise election results<br />(won-lost-tied):
+| bgcolor="#ffffff" | 0-3-0
+| bgcolor="#feffff" | 3-0-0
+| bgcolor="#ffffff" | 2-1-0
+| bgcolor="#ffffff" | 1-2-0
+|-
+! colspan=2 bgcolor="#c0c0ff" | Votes against<br />in worst pairwise defeat:
+| bgcolor="#ffffff" | 58%
+| bgcolor="#fffeff" | N/A
+| bgcolor="#ffffff" | 68%
+| bgcolor="#ffffff" | 83%
+|}
+In [[Ranked pairs]] if there is a candidate that is preferred over the other candidates, when compared in turn with each of the others, RP guarantees that that candidate will win. Because of this property, RP is (by definition) a '''[[Condorcet method]]'''.
+
+The results in table:
+
+* [A] indicates voters who preferred the candidate listed in the column caption to the candidate listed in the row caption
+* [B] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
+* [NP] indicates voters who expressed no preference between either candidate
+
+===== Tally =====
+
+First, list every pair, and determine the winner:
+{| border="1"
+!Pair!!Winner
+|-
+| Memphis (42%) vs. Nashville (58%)|| Nashville 58%
+|-
+| Memphis (42%) vs. Chattanooga (58%)|| Chattanooga 58%
+|-
+| Memphis (42%) vs. Knoxville (58%)|| Knoxville 58%
+|-
+| Nashville (68%) vs. Chattanooga (32%)|| Nashville 68%
+|-
+| Nashville (68%) vs. Knoxville (32%)||Nashville 68%
+|-
+| Chattanooga (83%) vs. Knoxville (17%)|| Chattanooga: 83%
+|}
+
+Note that absolute counts of votes can be used as well as the percentages of the total number of votes; it makes no difference.
+
+===== Sort =====
+
+The votes are then sorted. The largest majority is "Chattanooga over Knoxville"; 83% of the
+voters prefer Chattanooga. Nashville (68%) beats both Chattanooga and Knoxville by a score
+of 68% over 32% (an exact tie, which is unlikely in real life for this many voters). Since Chattanooga &gt; Knoxville, and they're the losers, Nashville vs. Knoxville will be added first, followed by Nashville vs. Chattanooga.
+
+Thus, the pairs from above would be sorted this way:
+
+{| border="1"
+!Pair!!Winner
+|-
+| Chattanooga (83%) vs. Knoxville (17%)|| Chattanooga 83%
+|-
+| Nashville (68%) vs. Knoxville (32%)||Nashville 68%
+|-
+| Nashville (68%) vs. Chattanooga (32%)|| Nashville 68%
+|-
+| Memphis (42%) vs. Nashville (58%)|| Nashville 58%
+|-
+| Memphis (42%) vs. Chattanooga (58%)|| Chattanooga 58%
+|-
+| Memphis (42%) vs. Knoxville (58%)|| Knoxville 58%
+|}
+
+===== Lock =====
+[[Image:Tennessee-vote.svg|right]]
+The pairs are then locked in order, skipping any pairs
+that would create a cycle:
+
+* Lock Chattanooga over Knoxville.
+* Lock Nashville over Knoxville.
+* Lock Nashville over Chattanooga.
+* Lock Nashville over Memphis.
+* Lock Chattanooga over Memphis.
+* Lock Knoxville over Memphis.
+
+In this case, no cycles are created by any of the
+pairs, so every single one is locked in.
+
+Every "lock in" would add another arrow to the
+graph showing the relationship between the candidates.
+Here is the final graph (where arrows point from
+the winner).
+
+In this example, Nashville is the winner using RP.
+
+===== Ambiguity resolution example =====
+
+Let's say there was an ambiguity.  For a simple situation involving candidates A, B, and C.
+
+* A > B 68%
+* B > C 72%
+* C > A 52%
+
+In this situation we "lock in" the majorities starting with the greatest one first.
+
+* Lock B > C
+* Lock A > B
+* We don't lock in the final C > A as it creates an ambiguity.
+
+Therefore, A is the winner.
+
+===== Summary =====
+
+In the example election, the winner is Nashville. This would be true for any [[Condorcet method]]. Using the [[plurality election system]] system and some other systems, Memphis would have won the election by having the most people, even though Nashville won every simulated pairwise election outright.  Using [[instant-runoff voting]] in this example would have resulted in Knoxville winning, even though more people preferred Nashville over Knoxville.
+
+== Multiple vote systems (ratings) ==
+[[Image:Approval ballot.svg|thumb|right|Approval ballot]]
+These two systems, Approval and Range voting, allow voters to evaluate each candidate independently and assign point scores to each candidate. Approval is a limited range system with zero or one points for each candidate.
+
+In these systems, voters are free to offer honest assessment of their strength of support of all candidates. However voters are also rewarded by "exaggerating" their ratings to maximize the votes for acceptable candidates over unacceptable ones. 
+
+Approval voting can be considered a [[range voting]] system that recognizes only this strategic approach of maximizing support for acceptable over unacceptable candidates.
+
+=== Approval (yes/no rating) ===
+:''Winner: Nashville''
+In [[Approval voting]] the voters can vote for as many or as few candidates as desired. The candidate with the most votes wins.
+
+In this example, supposing that voters voted for their two favorite candidates, the results would be as follows (a more sophisticated approach to voting is discussed below):
+
+*Memphis: 42 total votes
+*Nashville: 68 total votes (wins)
+*Chattanooga: 58 total votes
+*Knoxville: 32 total votes
+
+====Potential for tactical voting====
+
+Approval voting passes the [[monotonicity criterion]], in that voting for a candidate never lowers that candidate's chance of winning.  Indeed, there is never a reason for a voter to [[tactical voting|tactically vote]] for a candidate X without voting for all candidates he or she prefers to candidate X. It is also never necessary for a voter to vote for a candidate liked ''less'' than X in order to elect X.
+
+However, as approval voting does not offer a single method of expressing sincere preferences, but rather a plethora of them, voters are encouraged to analyze their fellow voters' preferences and use that information to decide which candidates to vote for. This feature of approval voting makes it difficult for theoreticians to predict how approval will play out in practice.
+
+One good tactic is to vote for every candidate the voter prefers to the leading candidate, and to also vote for the leading candidate if that candidate is preferred to the current second-place candidate.  When all voters use this tactic, there is a good chance that the [[Condorcet method|Condorcet winner]] will be elected.  It should be noted that approval voting does not satisfy the [[Condorcet criterion]]. It is even possible that a Condorcet loser can be elected.
+
+In the above election, if Chattanooga is perceived as the strongest challenger to Nashville, voters from Nashville will only vote for Nashville, because it is the leading candidate and they prefer no alternative to it.  Voters from Chattanooga and Knoxville will withdraw their support from Nashville, the leading candidate, because they do not support it over Chattanooga.  The new results would be:
+*Memphis: 42
+*Nashville: 68
+*Chattanooga: 32
+*Knoxville: 32
+
+If, however, Memphis were perceived as the strongest challenger, voters from Memphis would withdraw their votes from Nashville, whereas voters from Chattanooga and Knoxville would support Nashville over Memphis.  The results would then be:
+*Memphis: 42
+*Nashville: 58
+*Chattanooga: 32
+*Knoxville: 32
+
+The mathematics of approval voting lend it to some manipulation and tactical voting.  As each vote counts as one vote and the winner is the one with the highest total, each vote equally helps the candidate/issue (city in this example) selected win.  Because of this, voters are more likely to only vote for their favorite. Because approval voting has not been used much for real elections, this phenomenon is not well documented.
+
+=== Range voting (scored ratings) ===
+:''Winner: Nashville''
+[[Range voting]] (also called ratings summation, or average voting, or cardinal ratings, or 0-99 voting, or the score system or point system) is a voting system used for single-seat elections in which votes are graded.
+
+In this example, suppose that voters each decided to grant from 1 to 10 points to each city such that their most liked choice got 10 points, and least liked choice got 1 point, with the intermediate choices getting 5 points and 2 points.
+
+<TABLE BORDER=1 style="empty-cells: show">
+<TR>
+	<TH>Voter from/<br/>City Choice </TH>
+	<TH>Memphis</TH>
+	<TH>Nashville</TH>
+	<TH>Chattanooga</TH>
+	<TH>Knoxville</TH>
+	<TH>Total</TH>
+</TR>
+<TR>
+	<TD>Memphis</TD>
+	<TD>420 (42 Ã— 10)</TD>
+	<TD>26 (26 Ã— 1)</TD>
+	<TD>15 (15 Ã— 1)</TD>
+	<TD>17 (17 Ã— 1)</TD>
+	<TD>478</TD>
+</TR>
+<TR>
+	<TD>Nashville</TD>
+	<TD>210 (42 Ã— 5)</TD>
+	<TD>260 (26 Ã— 10)</TD>
+	<TD>30 (15 Ã— 2)</TD>
+	<TD>34 (17 Ã— 2)</TD>
+	<TD>534</TD>
+</TR>
+<TR>
+	<TD>Chattanooga</TD>
+	<TD>84 (42 Ã— 2)</TD>
+	<TD>130 (26 Ã— 5)</TD>
+	<TD>150 (15 Ã— 10)</TD>
+	<TD>85 (17 Ã— 5)</TD>
+	<TD>449</TD>
+</TR>
+<TR>
+	<TD>Knoxville</TD>
+	<TD>42 (42 Ã— 1)</TD>
+	<TD>52 (26 Ã— 2)</TD>
+	<TD>75 (15 Ã— 5)</TD>
+	<TD>170 (17 Ã— 10)</TD>
+	<TD>339</TD>
+</TR>
+</TABLE>
+
+Nashville wins, but Memphis would have won if the voters from Memphis had reduced the points they gave Nashville from 5 down to 1 and all other votes had remained the same. Voters from Chattanooga or Knoxville could restore Nashville to first place over Memphis if they raised the points they gave Nashville from 2 up to 10.
+
+==Multiple winners==
+Although the example is about choosing a state capital, it can also be used to consider some multiple winner elections.
+
+===Block voting===
+With [[block voting]], for one vote each and one winner, Memphis wins, as in plurality voting.
+
+With two votes each, and two winners, Nashville and Chattanooga win as the support is (adding up to 200)
+* Memphis: 42 total votes
+* Nashville: 68 total votes (wins)
+* Chattanooga: 58 total votes (wins)
+* Knoxville: 32 total votes.
+
+With three votes each, and three winners, Nashville, Chattanooga and Knoxville win, as the support is (adding up to 300)
+* Memphis: 42 total votes
+* Nashville: 100 total votes (wins)
+* Chattanooga: 100 total votes (wins)
+* Knoxville: 58 total votes (wins).
+
+So Memphis wins if there is one winner but loses if there are two or three winners.
+
+===Limited voting===
+With [[limited voting]], voters have multiple votes, but fewer than the number of winners.  If for example voters have two votes each and the top three cities are chosen then Memphis, Nashville and Chattanooga win as the support is (adding up to 200)
+* Memphis: 42 total votes (wins)
+* Nashville: 68 total votes (wins)
+* Chattanooga: 58 total votes (wins)
+* Knoxville: 32 total votes.
+
+===Single non-transferable vote===
+In the [[single non-transferable vote]] system, the cities in rank order of support are Memphis, Nashville, Knoxville and finally Chattanooga: so with one winner Memphis wins; with two winners Memphis and Nashville win; and with three winners Memphis, Nashville and Knoxville win.  A city which wins an election will also win if the number of winners is increased.
+
+===Single transferable vote===
+In the [[single transferable vote]] system with just one winner, Knoxville wins, as with instant-runoff voting.  The quota is about 51%:
+*'''Round 1:''' No city meets the quota so Chattanooga is eliminated.
+*'''Round 2:''' Chattanooga votes transfer to Knoxville raising Knoxville's support to 32%.  No city meets the quota so Nashville is eliminated.
+*'''Round 3:''' Nashville's votes transfer to Knoxville raising Knoxville's support to 58%.  Knoxville now exceeds the quota and wins.  
+
+If two winners were to be selected, Memphis and Nashville would win. The quota would be about 34%:
+*'''Round 1:''' Memphis exceeds the quota and wins.
+*'''Round 2:''' Memphis's surplus of 8% transfers to Nashville raising Nashville's support to 34%.  Nashville now meets the quota and takes the second winning place.
+
+If three winners were to be selected, Memphis, Nashville and Chattanooga would win.  The quota would be about 26%:
+*'''Round 1:''' Memphis exceeds the quota and wins.  Nashville meets the quota and wins.
+*'''Round 2:''' Memphis's surplus of 16% transfers to Chattanooga raising Chattanooga's support to 31%. Chattanooga now exceeds the quota and takes the third winning place. 
+
+So Knoxville wins if there is one winner but loses if there are two or three winners.
+
+{{fromwikipedia}}
