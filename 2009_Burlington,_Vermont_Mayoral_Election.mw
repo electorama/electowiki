@@ -58,7 +58,7 @@ Below are the theoretical results of using different mechanisms other than IRV.
   "election_methods":
   [
     {
-      "type":"schulze-wv"
+      "type":"copeland"
     },
     {
       "type":"plurality"
