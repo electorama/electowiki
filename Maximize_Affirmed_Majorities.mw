@@ -1,265 +1,150 @@
-'''Maximize Affirmed Majorities''' (MAM) is a [[voting method]] developed by Stephen Eppley that selects a single winner using votes that express preferences.  MAM can also be used to create a sorted list of winners.
+'''Maximize Affirmed Majorities''' (MAM) is a [[voting method]] developed by Stephen Eppley that selects a single winner using votes that express each voter's order of preference. MAM also constructs the complete order of finish, and is defined in terms of constructing the "best" order of finish.
 
-If there is a candidate who is preferred over the other candidates,
-when compared in turn with each of the others, MAM guarantees that that candidate will win.
-Because of this property, MAM is (by definition) a '''[[Condorcet method]]'''.
-Note that this is different from some other preference voting systems such as [[Borda count|Borda]] and
-[[Instant-runoff voting]], which do not make this guarantee.
+MAM is a [[Condorcet method]]. If there is a candidate X who, for every other candidate Y, is ranked by a majority over Y, then X will be elected. In other words, MAM will place X atop the order of finish. Such a candidate is a Condorcet winner, and requiring it be elected (when it exists) is the Condorcet criterion.
 
-MAM is a variation of the [[Ranked Pairs]] (RP) voting method, with additional
-refinements to break ties using as much information as available from a set of votes.
-Another voting method that is a variation of ranked pairs is [[Maximum Majority Voting]] (MMV).
-One of the primary "competing" Condorcet methods is [[Schulze method|Schulze]].
+Like many Condorcet methods, MAM always elects a candidate in the Smith set (a.k.a. top cycle), which is the smallest non-empty subset of the candidates such that, for each candidate x in the subset and each candidate y outside the subset, a majority rank x over y. (When there is a Condorcet winner, it alone is in the Smith set.) Requiring that the winner be in the Smith set generalizes the Condorcet criterion to the case where there is not necessarily a Condorcet winner and has a similar justification. With MAM, all candidates in the Smith set finish over all candidates outside the Smith set.
+
+MAM satisfies numerous desirable criteria, including Nicolaus Tideman's independence from clone alternatives, Peyton Young's local independence from irrelevant alternatives, Mike Ossipoff's strong defensive strategy criterion, weak defensive strategy criterion and truncation resistance, and Eppley's immunity from majority complaints. (Only MAM and extremely similar variations satisfy immunity from majority complaints.) 
+
+MAM is highly deterministic, satisfying the resolvability and reasonable determinism criteria. To a casual observer, MAM may appear less deterministic than it is. When sorting the majorities into the largest-to-smallest order of precedence, the order in which same-size majorities are sorted would depend on chance. That often won't affect the order of finish. Even when it does affect the order of finish, it often doesn't affect which alternative finishes on top, which is the common standard for evaluating determinism.
+
+Originally MAM was defined as the voting method that finds the order of finish that minimizes the largest "thwarted" majority. (A majority is thwarted if the order of finish does not place their more preferred candidate over their less preferred candidate.) It was originally named "Minimize Thwarted Majorities." The original definition is equivalent (same order of finish) to the quicker procedure with which MAM is more commonly described. (The equivalence is helpful when proving some properties of MAM.) The name was soon changed to MAM to emphasize the positive rather than the negative.
+
+Some people treat MAM as a variation of the [[Ranked Pairs]] (RP) voting method invented by Tideman in 1987 and refined by Tideman & Zavist in 1989. However, some differences cause MAM and RP to behave significantly differently. The two most important differences are: (1) RP expects votes to be linear orderings whereas MAM allows weak orderings. (That is, a vote can rank two or more candidates as equals to express indifference between them.) (2) RP subtracts the size of the opposing coalition when measuring the size of each pair, whereas MAM does not subtract the size of the opposing minority when measuring the size of each majority. These differences allow MAM to satisfy desirable criteria that RP fails, making it risky and misleading to treat MAM as just a variant of RP.
+
+There are also some minor differences between MAM and RP: (1) When RP sorts the pairs into its order of precedence, it includes all N<sup>2</sup>-N ordered pairs, including tied pairs and minorities, whereas MAM sorts only the majorities and ignores minorities & ties completely (except in rare cases, when sorting majorities that are the same size). When votes can be weak orderings, ties may be larger than majorities, which means tied pairs could affect the outcome if included in the order of precedence. (2) Since RP includes ties and minorities in its order of precedence, RP does more tiebreaking during sorting and none later, whereas with MAM there may be a tiebreaking step after the sorted majorities are considered (if more than one alternative is atop the order of finish). (3) Since RP requires votes to be linear orderings, a linear tiebreak order can be had by randomly picking a single vote, whereas MAM, which allows votes to be weak orderings, may need to pick multiple votes to construct the linear tiebreak order. (4) The details of how MAM uses the tiebreak order differ subtly from how Zavist & Tideman's Ranked Pairs uses their tiebreak order, so that MAM completely satisfies the strong Pareto criterion.
+
+MAM has some similarity to the Kemeny-Young voting method (KY), which is also defined in terms of finding the "best" order of finish but defines "best" differently. KY finds the order of finish that maximizes the sum over all pairings of the voters who ranked the pair the same as in the order of finish. Unlike MAM and RP, KY satisfies Young's reinforcement criterion, which requires that if two collections of votes produce the same order of finish, then the order of finish given all the votes must be the same. (This is weaker than the same-named criterion satisfied by the Borda count, which requires that if two collections of votes produce the same winner, then the winner given all the votes must be the same.) KY fails independence of clones in a way that could induce nominations of large numbers of clones, which arguably is much more important than MAM's failure to satisfy reinforcement. A small minority can easily manipulate failures of clone independence since it doesn't take many people to nominate alternatives, whereas election rules can easily prevent a minority from manipulating failures of reinforcement.
+
+Two other voting methods that can be considered close variations of MAM are [[Maximum Majority Voting]] (MMV) and River. 
+
+One of the main "competing" Condorcet methods is the [[Schulze method|Schulze]]. Many of the criteria listed above that are satisfied by MAM are also satisfied by Schulze. But not local independence of irrelevant alternatives, nor immunity from majority complaints. (Schulze also fails a weaker immunity criterion, immunity from second place complaints, which requires that the candidate that would win if the winner were deleted must not be ranked over the winner by a majority.) When there are three or fewer candidates, MAM and Schulze always elect the same candidate. When there are four or more candidates, computer simulations independently designed by Norm Petry and Steve Eppley have shown that majorities prefer MAM winners over Schulze winners more often than vice versa.
 
 == Procedure ==
 
-The MAM procedure is as follows:
-# Tally the vote count comparing each pair of candidates, and determine the winner of each pair (if there is one)
-# Compute the Tiebreaker (this is unnecessary if there are many voters)
-# Sort (rank) each pair, using the MAM ranking method (primarily by the number of winning votes)
-# Affirm each pair, starting with the one with the largest number of winning votes, and add one in turn to a graph as long as they do not create a cycle (which would create an ambiguity).  The completed graph shows the winner.
+Assuming the reader is already familiar with the basic Condorcet concept that there is more than one majority when there are more than two alternatives, the MAM procedure can be briefly summarized: '''Construct the order of finish by considering the majorities one at a time, from largest majority to smallest majority. For each majority, place their higher-ranked candidate over their lower-ranked candidate in the order of finish, unless the lower-ranked candidate is already over the higher-ranked candidate.'''
 
-MAM can also be used to create a sorted list of preferred candidates.
-To create a sorted list, repeatedly use MAM to select a winner,
-remove that winner from the list of candidates,
-and repeat (to find the next runner up).
+=== Simple Examples ===
 
-=== Tally ===
+EXAMPLE 1. Assume three candidates Left, Center and Right were nominated. Suppose the voters' orders of preference, expressed top to bottom, are as follows:
 
-To tally the votes, consider each voters' preferences.
-For example, if a voter states "A &gt; B &gt; C"
-(A is better than B, and B is better than C), the tally
-should add one for A in A vs. B, one for A in A vs. C, and
-one for B in B vs. C.
-Voters may also express indifference (e.g., A = B), and unstated
-candidates are assumed to be equally worse than the stated candidates.
+   36%     12%      8%      44%
+   Left    Center   Center  Right
+   Center  Left     Right   Center
+   Right   Right    Left    Left
 
-Once, tallied the majorities can be determined.
-If "Vxy" is the number of Votes that rank x over y, then
-"x" wins if Vxy &gt; Vyx, and "y" wins if Vyx &gt; Vxy.
+Not surprisingly, Right is least preferred by voters whose most preferred candidate is Left, and Left is least preferred by voters whose most preferred candidate is Right.
 
-=== Compute Tiebreak ===
+Since there are three candidates, there are three pairings: Left versus Center, Left versus Right, and Center versus Right.
 
-Compute a tiebreak ordering, in case there are exactly the same
-number of votes for a situation.
-Do this by repeatedly retrieving an unused random vote, using its
-order to define an ordering of the candidates, until all candidates
-are ordered or all votes are used up.
-Once an order is determined, don't change it later.
-If all votes are used up, assign the remaining ranks randomly
-(this can only occur if no voter expressed a preference; if no voter
-expressed a preference, voting methods don't have anything to work with).
-This process is called the Random Voter Hierarchy procedure.
+When the votes are counted for each pairing, three majorities are identified:
+A majority of 64% rank Center over Left: (12% + 8% + 44%)
+A majority of 56% rank Center over Right: (36% + 12% + 8%)
+A majority of 52% rank Right over Left: (8% + 44%)
 
-If there is a privileged alternative (e.g., the status quo),
-or a privileged voter (e.g., a chairperson), that alternative
-and/or voter could be used first before the random choices.
-The original developer of MAM does not consider that
-normally a part of MAM.
+MAM begins with the largest majority, the 64% for Center over Left, and places Center over Left in the order of finish:
+              Center
+              Left
+Then MAM considers the second largest majority, the 56% for Center over Right, and places Center over Right in the order of finish:
+              Center
+              Left, Right
+Then MAM considers the third largest majority, the 52% for Right over Left, and places Right over Left in the order of finish:
+              Center
+              Right
+              Left
+The complete order of finish is Center on top, Right next, and Left at the bottom. Center is elected.
 
+Note that Center would appear least popular using primitive election methods such as plurality rule, top two runoff and Instant Runoff, even though large majorities rank it over the other candidates. This is a primary source of polarization with primitive methods, since candidates who want to win will avoid taking median positions on the issues. Center would win given the most widely used voting method, the one Robert's Rules of Order prescribes for assemblies like committees, councils, and legislatures. The Robert's Rules method is analogous to a single elimination tournament like football playoffs and tennis tournaments. The alternatives are voted on two at a time&mdash;for instance a proposed bill versus a proposed amended bill&mdash;and the loser by majority rule is eliminated, until eventually only one alternative remains. The Robert's Rules method is a Condorcet method and elects a candidate in the Smith set, but is impractical for public elections because it would involve many rounds of voting: expensive to administer, time-consuming for the voters, and costly for the candidates and their donors. 
 
-=== Sort ===
+EXAMPLE 2. Assume three candidates Rock, Paper and Scissors were nominated. Suppose the voters' orders of preference are as follows:
 
-The pairs of defeats, called the "majorities", are then sorted from
-the largest majority to the smallest majority.
-A majority for x over y precedes a majority for z over w 
-if and only if at least one of the following conditions holds:
+   40%        35%         25%
+   Rock       Scissors    Paper
+   Scissors   Paper       Rock
+   Paper      Rock        Scissors
 
-#Vxy &gt; Vzw.  In other words, the majority having more support for its alternative is ranked first.
-#Vxy = Vzw and Vwz &gt; Vyx.  Where the majorities are equal, the majority with the smaller minority opposition is ranked first.
-#Vxy = Vzw and Vwz = Vyx and Tiebreak ranks w over y.
-#Vxy = Vzw and Vwz = Vyx and w = y and Tiebreak ranks x over z.
+Since there are three candidates, there are three pairings: Rock versus Scissors, Rock versus Paper, and Scissors versus Paper.
 
+When the votes are counted for each pairing, three majorities are identified:
+A majority of 75% rank Scissors over Paper: (40% + 35%)
+A majority of 65% rank Rock over Scissors: (40% + 25%)
+A majority of 60% rank Paper over Rock: (35% + 25%)
 
-=== Affirm ===
+MAM begins with the largest majority, the 75% for Scissors over Paper, and places Scissors over Paper in the order of finish:
+            Scissors
+            Paper
+Then MAM considers the second largest majority, the 65% for Rock over Scissors, and places Rock over Scissors in the order of finish: 
+            Rock
+            Scissors
+            Paper
+Then MAM considers the third largest majority, the 60% for Paper over Rock. Since Rock is already over Paper in the order of finish, MAM does not place Paper over Rock. The complete order of finish is Rock on top, Scissors next, and Paper at the bottom. Rock is elected.
 
-The next step is to examine each pair in turn to determine
-which pairs to "affirm".
-Using the sorted list above, affirm each pair in turn ''unless''
-the pair will create a circularity in a graph
-(e.g., where A is more than B, B is more than C, but C is more than A).
-Then use the tiebreaker information, if necessary, to disambiguate any
-cases.
+The majority rule heuristic is that the larger the number of people who think an alternative x is better than another alternative y, the more likely it is that x is better than y. (All else being equal.) This is also the basis for treating large majorities as more significant than small majorities. It explains why MAM disregarded the smaller majority who ranked Paper over Rock when their preference conflicted with the preferences of larger majorities. The larger a majority, the stronger is the evidence that their more preferred alternative is better than their less preferred alternative.
 
-== An Example ==
+== The Procedure, In Greater Detail ==
 
-=== The Situation ===
+# Each voter may rank the candidates from top to bottom (best to worst) and may rank candidates as equals (to express indifference or save time). Such votes are called weak orderings. Candidates omitted from the voter's ranking will be treated as if the voter ranked them at the bottom.
+# When there are more than two candidates, there is more than one possible pairing. For example, if there are three candidates X, Y and Z, there are three pairings: X versus Y, X versus Z and Y versus Z. For each possible pairing of candidates, for instance X versus Y, count how many voters rank X over Y and how many rank Y over X. If the number of voters who rank X over Y exceeds the number who rank Y over X, call this a majority for X over Y (and an opposing minority for Y over X).
+# Sort the majorities from largest majority to smallest majority. This ordering is called the ''order of precedence'' of the majorities. The size of a majority is simply the number of voters who ranked their more preferred candidate over their less preferred candidate. (If two majorities are the same size&mdash;rare when there are many voters&mdash;give precedence to the majority opposed by a smaller minority. If two majorities are the same size and their opposing minorities are the same size, resolve those majorities' precedence according to the Random Voter Hierarchy procedure, described below.) Note that the order of precedence will be a linear ordering, so the majorities can be processed one at a time in that order with no ambiguity.
+# Construct the order of finish a piece at the time by considering the majorities one at a time in the order of precedence. (In other words, largest majority first.) For each majority, place their more preferred candidate over their less preferred candidate in the order of finish, unless their less preferred candidate is already over their more preferred candidate.
+# Elect the candidate atop the order of finish. (If the goal is to elect more than one candidate, elect the candidates that finish in the top N places.) After having processed all the majorities, the order of finish will typically be a linear ordering with one candidate over every other candidate; that's the winner. However, in rare cases one or more pairings might have no majority; such a pairing is said to be tied. When one or more pairings is tied, it's possible that two or more candidates can top the order of finish; that is, MAM did not place any of them below any candidates. The simplest example is an election between two candidates where half the voters rank one on top and the other half rank the other on top; since there are no majorities, neither candidate is placed over the other. (Note that this kind of tie can happen with any voting method.) Ties in the order of finish are resolved according to the tiebreak ordering constructed by the Random Voter Hierarchy procedure described below.
 
-Imagine an election for the capital of [[Tennessee]], a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
-<div style="float:right;  padding:2px; text-align:center">
-[[Image:CondorcetTennesee.png]]</div>
+== Random Voter Hierarchy tiebreak procedure ==
 
-* Memphis (Shelby County): 826,330
-* Nashville (Davidson County): 510,784
-* Chattanooga (Hamilton County): 285,536
-* Knoxville (Knox County): 335,749
+The Random Voter Hierarchy procedure (RVH) was not invented by Steve Eppley, and MAM is not the only voting method that uses RVH to construct a tiebreak order. For instance, the Schulze method uses RVH too. MAM uses the RVH tiebreak order in a different way. However, many of its properties are relevant to all voting methods that use it. 
 
-Let's say that in the vote, the voters vote based on geographic proximity.  Assuming that the population distribution of the rest of Tennessee follows from those population centers, one could easily envision an election where the percentages of votes would be as follows:
+One notable property is that the tiebreak order is independent of clone alternatives. This allows voting methods that are independent of clones in non-tied cases to use RVH to completely satisfy the "independence of clones" criterion. This matters even in scenarios that are not ties, because people will not know during the nominating phase whether or not there will be a tie later (unless the number of voters is so large that the chance of a tie is negligible). So, if a group of people use a tiebreak scheme that is not independent of clones&mdash;for instance, randomly electing one of the candidates tied for first place&mdash;members of the group will have bad incentives to nominate extra candidates just in case of a tie later. That could turn their elections into farces as many factions try to nominate as many similar candidates as possible, just in case there is a tie later.
 
-<table border=1>
-<tr>
-<td>
-'''42% of voters (close to Memphis)'''<br>
-1. Memphis<br>
-2. Nashville<br>
-3. Chattanooga<br>
-4. Knoxville
-</td>
-<td valign="top">
-'''26% of voters (close to Nashville)'''<br>
-1. Nashville<br>
-2. Chattanooga<br>
-3. Knoxville<br>
-4. Memphis
-</td>
-<td>
-'''15% of voters (close to Chattanooga)'''<br>
-1. Chattanooga<br>
-2. Knoxville<br>
-3. Nashville<br>
-4. Memphis
-</td>
-<td>
-'''17% of voters (close to Knoxville)'''<br>
-1. Knoxville<br>
-2. Chattanooga<br>
-3. Nashville<br>
-4. Memphis
-</td>
-</tr>
-</table>
+There are two cases in MAM where "tiebreaking" is called for: (1) When sorting the majorities from largest to smallest, two or more majorities may be the same size. (2) If one or more pairings is a tie, it is possible that two or more candidates may be tied for first place after MAM has constructed the (partial) order of finish, in the sense that none of those candidates has been placed over all others (yet).
 
-The results would be tabulated as follows:
-<table BORDER><caption>Pairwise Election Results</caption>
-<tr><th colspan=2><th colspan=4 bgcolor="#c0c0ff">A</tr>
+An example of the first case: Suppose the election is between three candidates X, Y and Z. Suppose a majority rank X over Y, a majority rank Y over Z, and both these majorities are the same size. (In a moment we'll get to the third majority, in the X versus Z pairing.) Which of these two majorities is given more precedence when MAM sorts the three majorities into the order of precedence? MAM will use the RVH tiebreak ordering to resolve this, in the manner described below. Note that this "tiebreaking" might not affect which candidate finishes first: If the third majority rank X over Z, then the order of finish does not depend on chance and X wins with certainty. If the third majority rank Z over X and that majority is smaller than the other two majorities, then the order of finish does not depend on chance and X wins with certainty. So, even though the tiebreak procedure involves chance, this does not mean the outcome depends on chance whenever the tiebreak procedure is invoked. If the third majority rank Z over X and that majority is larger than the other two majorities, then chance would affect the winner: X will definitely not win, and Y's chance of winning is greater than Z's because the fact that a majority rank Y over Z makes it more likely that RVH will randomly pick a vote that ranks Y over Z than a vote that ranks Z over Y. (Note that in this 3-candidate scenario where chance affects the winner, each candidate's chance of winning would be the same with MAM, the Schulze method, or several other methods that use the RVH tiebreaker.) 
 
-<tr>
-<th colspan=2><th bgcolor="#c0c0ff">Memphis
-<th bgcolor="#c0c0ff">Nashville
-<th bgcolor="#c0c0ff">Chattanooga
-<th bgcolor="#c0c0ff">Knoxville
-</tr>
-<tr><th  bgcolor="#ffc0c0" rowspan=4>B<th bgcolor="#ffc0c0">Memphis<td><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br><td nowrap bgcolor="#e0e0ff">[A] 58% <br>[B] 42% <br></tr>
-<tr><th bgcolor="#ffc0c0">Nashville<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td><td nowrap bgcolor="#ffe0e0">[A] 32% <br>[B] 68% <br><td nowrap bgcolor="#ffe0e0">[A] 32% <br>[B] 68% <br></tr>
+An example of the second case where MAM can use tiebreaking: Suppose the election is between two candidates X and Y, and suppose the number of voters who ranked X over Y equals the number who ranked Y over X. There are no majorities, so the order of precedence of majorities is empty. A tiebreak will be needed to pick one of the two candidates. (This kind of tie can occur with any voting method.) Note that Ranked Pairs would sort the two tied pairs (X over Y and Y over X) into an order of precedence, which would require tiebreaking as in the first case; Ranked Pairs has no second case.
 
-<tr><th bgcolor="#ffc0c0">Chattanooga<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td nowrap bgcolor="#e0e0ff">[A] 68% <br>[B] 32% <br><td><td nowrap bgcolor="#ffe0e0">[A] 17% <br>[B] 83% <br></tr>
-<tr><th bgcolor="#ffc0c0">Knoxville<td nowrap bgcolor="#ffe0e0">[A] 42% <br>[B] 58% <br><td nowrap bgcolor="#e0e0ff">[A] 68% <br>[B] 32% <br><td nowrap bgcolor="#e0e0ff">[A] 83% <br>[B] 17% <br><td></tr>
-<tr><th colspan=2 bgcolor="#c0c0ff">Pairwise election results (won-lost-tied):
+Assuming the votes will be tallied by computer, the simplest way to define the RVH tiebreaking procedure is to assume tiebreaking will always be done, since the extra labor is insignificant for a computer. In other words, prior to sorting the majorities into the largest-to-smallest order of precedence, a tiebreak ordering of the candidates is constructed just in case it will be needed. The tiebreak order is constructed to be a linear ordering&mdash;it contains no ties&mdash;thus it can be used later, if needed, to break any tie.
 
-<td bgcolor="#ffffff">0-3-0
-<td bgcolor="#ffffff">3-0-0
-<td bgcolor="#ffffff">2-1-0
-<td bgcolor="#ffffff">1-2-0
-<tr><th colspan=2 bgcolor="#c0c0ff">Votes against in worst pairwise defeat:
-<td bgcolor="#ffffff">58%<td bgcolor="#ffffff">N/A<td bgcolor="#ffffff">68%<td bgcolor="#ffffff">83%</table>
+To construct the tiebreak order, RVH randomly picks one vote at a time and copies its strict preferences into the tiebreak order wherever the tiebreak order isn't already strict, repeating until either the tiebreak order has become a linear ordering or no more unpicked votes remain. For example, suppose the first vote randomly picked ranks A over B, B equal to C, and D at the bottom. RVH places A atop the tiebreak order, D at the bottom, and B & C tied in between. This isn't yet a linear ordering since B & C are at the same position, so another vote is randomly picked, hoping it ranks B over C or C over B. If it does, its preference regarding B & C is incorporated into the tiebreak order, making the order linear (with A still on top and D still at the bottom). On the other hand, if the second vote ranks B=C too, a third vote is randomly picked, etc. Sooner or later, unless every vote ranks B=C, a vote is picked that has a preference between B & C, and the tiebreak ordering is made linear. In the extremely rare but not impossible case that every vote ranks B=C (a situation which could be quickly recognized merely by checking whether both counts in the B versus C pairing are zero) a totally random ordering of the candidates is constructed and its relative ranking of B & C is used to make the tiebreak ordering linear. (For simplicity, this totally random ordering can be constructed at the very beginning in case it will be needed later, and reused each time it's needed. On the other hand, for efficiency's sake the totally random ordering can be constructed only when needed, which would be almost never.)
 
-* [A] indicates voters who preferred the candidate listed in the column caption to the candidate listed in the row caption
-* [B] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
-* [NP] indicates voters who expressed no preference between either candidate
+If each vote were required to be a linear ordering (which Ranked Pairs and some other methods require) then RVH is equivalent to simply randomly picking a single vote and using it as the tiebreak order. In the literature of social choice theory, this scheme is named Random Dictator (which unfortunately has a negative connotation). Although it would simplify tiebreaking, requiring each vote to be a linear ordering would have significant consequences&mdash;failure of important criteria&mdash;and is not recommended.
 
-=== Tally ===
+Now that we've discussed how RVH constructs the tiebreak order, here are the two ways MAM can use the tiebreak order:
 
-First, list every pair, and determine the winner:
-{| border="1"
-!Pair!!Winner
-|-
-| Memphis (42%) vs. Nashville (58%)|| Nashville 58%
-|-
-| Memphis (42%) vs. Chattanooga (58%)|| Chattanooga 58%
-|-
-| Memphis (42%) vs. Knoxville (58%)|| Knoxville 58%
-|-
-| Nashville (68%) vs. Chattanooga (32%)|| Nashville 68%
-|-
-| Nashville (68%) vs. Knoxville (32%)||Nashville 68%
-|-
-| Chattanooga (83%) vs. Knoxville (17%)|| Chattanooga: 83%
-|}
+Suppose that when sorting the majorities into the largest-to-smallest order of precedence, two majorities are the same size, for example both are 52% of the voters. Which should be given more precedence? If their opposing minorities are not also the same size, the majority opposed by the smaller minority is given precedence, and RVH is not needed. Suppose however that the opposing minorities are also the same size, for example both are 47% of the voters. (Since 52% + 47% is 99%, in both pairings 1% must have expressed indifference.) For clarity, let's say the two majorities are the majority that ranked X over Y and the majority that ranked W over Z. (It is possible that X is W or Z, or that Y is W or Z, so we might be dealing with only 3 distinct candidates even though 4 letters are being used. For instance, a majority that ranked X over Y might be the same size as a majority that ranked Y over Z, in which case the labels Y and W refer to the same candidate.) There are two possible cases: either Y is Z or Y is not Z. If Y is not Z, the order of precedence of the two majorities depends on the relative ranking of Y & Z in the tiebreak ordering: If the tiebreak ordering ranks Z over Y, give precedence to the X over Y majority; else give precedence to the W over Z majority. If Y is Z, the order of precedence of the two majorities depends on the relative ranking of X & W in the tiebreak ordering: If the tiebreak ordering ranks X over W, give precedence to the X over Y majority; else give precedence to the W over Z majority. (Note that this differs slightly from the tiebreaking scheme Zavist & Tideman specified for Ranked Pairs. If MAM used Zavist's tiebreaker, MAM would not completely satisfy the strong Pareto criterion.)
 
-Note that absolute counts of votes can be used, or
-percentages of the total number of votes; it makes no difference.
+Next we examine the other case where MAM invokes tiebreaking. Suppose the order of finish is not a linear ordering after MAM has considered all the majorities (one majority at a time in their order of precedence). If some pairs are ties, the order of finish might be only a partial ordering at this point. In particular, suppose two or more candidates were not placed below any candidates. Typically a single winner needs to be elected, so tiebreaking is needed, and the tiebreak order constructed by RVH is used. Taking those candidates that MAM didn't place below any other, the winner is the one ranked over the others by the tiebreak order. In this manner, the entire order of finish can be made into a linear order (if needed, and assuming it is not already linear) iteratively, by resolving the topmost remaining ties according to their positions in the RVH tiebreak order (one tied candidate per iteration).
 
-=== Compute Tiebreak ===
+Although it's simpler to define MAM and RVH so a computer will construct the tiebreak order before sorting the majorities just in case it will be needed, for the sake of efficiency the tiebreak order can be constructed only when needed. Also, its linearity only needs to be ironed out as far as needed to resolve the particular tie(s) encountered. In the example above in which the first randomly picked vote ranked A over B=C over D, this weak ordering suffices to break ties involving A & B or A & C or A & D or B & D or C & D. So, for example, if a majority who ranked A over B is the same size as a majority who ranked C over D, the two majorities' relative precedence can be determined, which means it's unnecessary to randomly pick a second vote. B is over D in the partially constructed tiebreak ordering, so the C over D majority is given precedence over the A over B majority.
 
-Tiebreak computation is only useful if there are only a few voters,
-and is unlikely to be needed to determine a winner of
-a statewide election.
-Indeed, in this example the winner will be the same regardless
-of the tiebreak value.
-However, for example purposes, presume a tiebreak was found by
-pulling a specific vote; the most likely of the options is a
-voter close to Memphis, and if such a vote is selected the
-tiebreak would be
-"Memphis &gt; Nashville &gt; Chattanooga &gt; Knoxville".
+There are other reasonable tiebreakers that don't involve randomness. In some scenarios it may be okay to distinguish the voters according to a property like seniority. Rather than picking votes randomly one at a time to construct the tiebreak order, votes can be picked in order of seniority. Similarly, it may be okay to treat the chairperson of a committee in a special way, requiring him/her to submit a vote that is a linear ordering, which would be used as the tiebreak order if needed. Both of these schemes violate the anonymity criterion (which requires no voter be given special treatment) but strict anonymity isn't important when it's only violated to resolve ties. This variation of MAM would still completely satisfy independence of clones and the other criteria MAM satisfies (except anonymity). Of course, these schemes can't be used in elections that have secret ballot.
 
-=== Sort ===
+Another way to avoid randomness is to distinguish between candidates in a nonrandom way. For instance, the tiebreak order could simply be the order in which the alternatives were nominated. (Continuing the status quo would typically top the tiebreak order, if it's an alternative.) This violates the neutrality criterion (which requires no alternative be given special treatment). This variation of MAM might not completely satisfy independence of clones, but it comes close and it would be difficult to manipulate the failures.
 
-The votes are then sorted.
-The largest majority is "Chattanooga over Knoxville"; 83% of the
-voters prefer Chattanooga.
-Nashville (68%) beats both Chattanooga and Knoxville by a score
-of 68% over 32% (an exact tie, which is unlikely in real life
-for this many voters).
-Since Chattanooga &gt; Knoxville, and they're the losers,
-Nashville vs. Knoxville will be added first, followed by
-Nashville vs. Chattanooga.
+== Variations on preference order voting ==
 
-Thus, the pairs from above would be sorted this way:
+When there are many candidates, some voters may have trouble ranking them in a meaningful order; some voters may neglect to rank some good compromise over worse candidates, some other voters may neglect to rank another good compromise over worse candidates, etc., allowing a worse candidate to win. Or the voting technology may be so primitive in an underdeveloped country that voters can't rank the candidates on ballots readable by machine. In both scenarios, it's possible to provide a shortcut: Prior to election day, each candidate publishes a top-to-bottom ordering of the candidates. (Presumably each candidate will place him/herself at the top.) On election day, each voter simply selects one candidate, then each vote is treated as if it were the ordering published by the selected candidate. This collection of "indirectly" voted rankings can then be tallied by MAM (or by some other voting method).
 
-{| border="1"
-!Pair!!Winner
-|-
-| Chattanooga (83%) vs. Knoxville (17%)|| Chattanooga 83%
-|-
-| Nashville (68%) vs. Knoxville (32%)||Nashville 68%
-|-
-| Nashville (68%) vs. Chattanooga (32%)|| Nashville 68%
-|-
-| Memphis (42%) vs. Nashville (58%)|| Nashville 58%
-|-
-| Memphis (42%) vs. Chattanooga (58%)|| Chattanooga 58%
-|-
-| Memphis (42%) vs. Knoxville (58%)|| Knoxville 58%
-|}
+Technology permitting, a hybrid of the two systems could be used. After the voter selects a candidate, the ordering the candidate published would be displayed to the voter. Then the voter could rearrange it if desired, perhaps using drag&drop, before submitting it as her vote.
 
-=== Affirm ===
+== MAM voting on ballot propositions ==
 
+Traditionally, propositions placed on a public ballot are voted on by expressing Yes or No; a proposition passes if it receives more Yes votes than No votes. This method breaks down if two or more propositions are being voted on if they conflict in a way such that they can't all pass. For example, in the 1990s the Los Angeles Charter Reform Commission placed two propositions on the ballot. One would increase the size of the city council from 15 to 21, the other would increase it to 25. That created a strategy problem and muddled the results. Before the election, the L.A. Times opined that both 21 and 25 would be better than 15, yet recommended voting No on 21 because they preferred 25. Many voters who considered both 21 and 25 better than 15 may have voted No on 21, causing it to fail. It will never be known if a majority preferred 21 over 15.
 
-The pairs are then affirmed in order, skipping any pairs
-that would create a cycle:
+A solution is to vote on the entire set of propositions using MAM, regardless of whether the propositions conflict with each other. In addition, continuing the status quo would be an alternative that voters could include in their orders of preference. (It might be given a label like "None of the Rest" if that would be less confusing.) The propositions that pass would be the ones that finish higher than the status quo, that do not conflict with any that finish even higher and also pass.
 
-* Affirm Chattanooga over Knoxville.
-* Affirm Nashville over Knoxville.
-* Affirm Nashville over Chattanooga.
-* Affirm Nashville over Memphis.
-* Affirm Chattanooga over Memphis.
-* Affirm Knoxville over Memphis.
+== MAM in U.S. presidential elections ==
 
-In this case, no cycles are created by any of the
-pairs, so every single one is affirmed.
+Assuming the Electoral College is not eliminated, methods like MAM could be used in presidential elections if candidates may withdraw from contention after election day, before the states decide which delegates go the EC. Candidates could withdraw to allow a similar or compromise candidate to achieve a majority of the EC. (A withdrawal option could be useful in many kinds of elections, since it would permit candidates to thwart voting strategies.)
 
-Every "affirm" would add another arrow to the
-graph showing the relationship between the candidates.
-Here is the final graph (where arrows point from
-the winner).
+== MAM with a supermajority requirement ==
 
-[[Image:Tennessee-vote.png]]
-
-In this example, Nashville is the winner using MAM.
-
-=== Summary ===
-
-In this election, the winner is Nashville.
-This would be true for any a Condorcet method.
-Using 
-the [[first-past-the-post]] system and some other systems, Memphis would have won the election by having the most people, even though Nashville won every simulated pairwise election outright.  Using [[Instant-runoff voting]] in this example would result in Knoxville winning, even though more people preferred Nashville over Knoxville.
+In some situations, a very large majority may be required to enact certain changes. For instance, a 3/4 supermajority might be needed to amend a group's charter. Continuing the status quo is a highly privileged alternative. What voting method should be used if more than one change is proposed, and the changes conflict so they can't all pass? They can be voted on using MAM. (Continuing the status quo would be an alternative too.) If the status quo tops the order of finish, or if the alternative that tops the order of finish isn't ranked over the status quo by a sufficiently large supermajority, then the status quo wins. Otherwise the alternative atop the order of finish wins (and becomes the new status quo).
 
 
 == External Resources ==
+* [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)]
 * [http://groups.yahoo.com/group/election-methods-list/ A mailing list containing technical discussions about election methods]
 * [http://condorcet.org/rp Ranked Pairs]
 * [http://accurate-democracy.com/ Accurate Democracy]
-* [http://www.alumni.caltech.edu/~seppley The Maximize Affirmed Majorities voting procedure (MAM)]
 * [http://radicalcentrism.org/majority_voting.html Maximum Majority Voting]
 * [http://cec.wustl.edu/~rhl1/rbvote/desc.html Descriptions of ranked-ballot voting methods]
 * [http://fc.antioch.edu/~jarmyta@antioch-college.edu/voting.htm Voting methods resource page]
