@@ -1,5 +1,4 @@
-''A '''Beat Clone''' set Beta is a set of candidates such that every candidate not 
-in Beta is either beaten by all members of Beta or by no members of Beta.''
+''A '''Beat Clone''' set Beta is a set of candidates such that every candidate not in Beta is either beaten by all members of Beta or by no members of Beta.''
 --[http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-February/014788.html definition by Forest Simmons]
 
 Tideman Clones are a subset of Beat Clones.
