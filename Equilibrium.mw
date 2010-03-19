@@ -1,0 +1,12 @@
+The word equilibrium refers, among other things, to concepts of game theory. The most well-known equilibrium in game theory is the Nash equilibrium.
+
+'''Nash equilibria''' are situations where each player has chosen a strategy and no single player could improve his situation by unilaterally changing strategy while all the other players keep their strategies.
+
+'''Cabal equilibria''' are situations where each player has chosen a strategy and no ''subset of players'' could simultaneously change behaviour (while those outside that subset keep their strategies) in a way that no player in that subset is worse off and at least one in the subset is better off.
+
+All cabal equilibria are Nash equilibria but not vice versa.
+
+==External Links==
+*[http://en.wikipedia.org/wiki/Nash_equilibrium Wikipedia: Nash equilibrium]
+*[http://www.spaceandgames.com/?p=46 Peter de Blanc: A Stronger Type of Equilibrium]
+*[http://www.spaceandgames.com/?p=134 Peter de Blanc: When is an honest vote a cabal equilibrium?]
