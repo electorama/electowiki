@@ -170,7 +170,7 @@ Thus, the pairs from above would be sorted this way:
 | Memphis (42%) vs. Knoxville (58%)|| Knoxville 58%
 |}
 
-=== Candidate erdering, winner selection ===
+=== Candidate ordering, winner selection ===
 
 The pairs are then sorted in order, skipping any pairs
 that would create a cycle:
