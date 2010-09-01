@@ -32,10 +32,10 @@ The [[Condorcet criterion|Condorcet winner]] is A, but ICA elects B. Both A and 
 
 In ordinary [[Condorcet//Approval]], A's win over B is counted. This creates problems with the [[Favorite Betrayal criterion|favorite betrayal]] criterion (or the [[Sincere Favorite criterion]]) since it could happen that the 35 A=B voters are preventing either A or B from being the decisive winner, and that in trying to support both equally, the win is instead moved to the approval winner, who might be someone worse. Here is an example:
 
- 25 A>B
+ 20 A>B
  20 A=B
  15 B>C
- 40 C
+ 45 C
 
 There is a [[Condorcet method|Condorcet cycle]], and ordinary [[Condorcet//Approval]] elects C as the approval winner. But if the 20 A=B voters change their vote to B>A, this turns B into the decisive, Condorcet winner, which is a result that these voters prefer.
 
