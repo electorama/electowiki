@@ -18,7 +18,7 @@ The possible resolution methods include:
 
 * MCA-S: Range or Score winner, using (in the case of 3 ranking levels) 2 points for preference and 1 point for approval.
 
-* MCA-R: Runoff - One or two of the methods above is used to pick two "finalists", who are then measured against each other using one of the following methods:
+* MCA-R: Runoff - Two "finalists" are chosen by one or two methods, such as one of the methods above or a equality-allowed Condorcet method over the given ballots. The finalists are then measured against each other using one of the following methods:
 
 ** MCA-IR: Instant runoff (Condorcet-style, using ballots): Ballots are recounted for whichever one of the finalists they rate higher. Ballots which rate both candidates at the same level are counted for neither.
 
