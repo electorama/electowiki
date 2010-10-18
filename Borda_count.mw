@@ -33,7 +33,7 @@ The points are added up across all the ballots, and the candidate with the most 
 |}
 </div>
 
-Nashville is the winner in this election, as it has the most points.  Nashville also happens to be the [[Condorcet winner]] in this case. While the Borda count does not always select the Condorcet winner as the Borda Count winner, it always ranks the Condorcet winner above the Condorcet loser.  No other positional method can guarantee such a relationship.
+Nashville is the winner in this election, as it has the most points.  Nashville also happens to be the [[pairwise champion]] (aka Condorcet winner) in this case. While the Borda count does not always select the Condorcet winner as the Borda Count winner, it always ranks the Condorcet winner above the Condorcet loser.  No other positional method can guarantee such a relationship.
 
 Like most voting methods, The Borda count is vulnerable to compromising. That is, voters can help avoid the election of a less-preferred candidate by insincerely raising the position of a more-preferred candidate on their ballot.
 
