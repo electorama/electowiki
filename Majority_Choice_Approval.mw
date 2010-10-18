@@ -36,7 +36,7 @@ The [[Condorcet criterion]] is satisfied by MCA-VR if the pairwise champion (PC,
 
 The [[Later-no-help criterion]] and the [[Favorite Betrayal criterion]] are satisfied by MCA-P. They're also satisfied by MCA-AR if MCA-P is used to pick the two finalists. 
 
-The [[Participation criterion|Participation]] and [[Summability criterion]] are not satisfied by any MCA variant, although MCA-P only fails Participation if the vote causes an approval majority.
+The [[Participation criterion|Participation]] and [[Summability criterion]] are not satisfied by any MCA variant, although MCA-P only fails Participation if the additional vote causes an approval majority.
 
 None of the methods satisfy [[Later-no-harm criterion|Later-no-harm]].
 
