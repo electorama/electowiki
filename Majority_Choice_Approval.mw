@@ -40,7 +40,7 @@ The [[Participation criterion|Participation]] and [[Summability criterion]] are 
 
 None of the methods satisfy [[Later-no-harm criterion|Later-no-harm]].
 
-All of the methods are [[Summability criterion|matrix-summable]] for counting at the precinct level. Only MCA-IR actually requires a matrix (or, possibly two counting rounds), and is thus - "[[Summability criterion|summable for k=2]]" ; the others require only O(N) tallies, and are thus "[[Summability criterion|summable for k=1]]".
+All of the methods are [[Summability criterion|matrix-summable]] for counting at the precinct level. Only MCA-IR actually requires a matrix (or, possibly two counting rounds), and is thus "[[Summability criterion|summable for k=2]]" ; the others require only O(N) tallies, and are thus "[[Summability criterion|summable for k=1]]".
 
 Thus, the method which satisfies the most criteria is MCA-AR, using [[Schulze]] over the ballots to select one finalist and MCA-P to select the other. Also notable are MCA-M and MCA-P, which, as rated methods (and thus ones which fail Arrow's ranking-based Universality Criterion), are able to seem to "violate [[Arrow's Theorem]]" by simultaneously satisfying monotonicity and [[independence of irrelevant alternatives]] (as well as of course sovereignty and non-dictatorship).
 
