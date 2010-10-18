@@ -1,6 +1,6 @@
 In [[voting system]]s, '''independence of irrelevant alternatives''' is the property some voting systems have that, if one option (X) wins the election, and a new alternative (Y) is added, only X or Y will win the election.
 
-A less strict property is sometimes called '''local independence of irrelevant alternatives'''.  It says that if one option (X) wins an election, and a new alternative (Y) is added, X will win the election if Y is not in the [[Smith set]].  
+A less strict property is sometimes called '''local independence of irrelevant alternatives''' or '''independence of Smith-dominated alternatives''' (ISDA).  It says that if one option (X) wins an election, and a new alternative (Y) is added, X will win the election if Y is not in the [[Smith set]].  
 
 All [[Condorcet method]]s fail the former criterion, but some (e.g. [[Schulze method|Schulze]]) satisfy the latter.
 
