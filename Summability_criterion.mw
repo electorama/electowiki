@@ -1,3 +1,5 @@
+The '''summability criterion''' is a criterion about the counting process of voting systems. Unlike most other voting system criteria, it does not relate to the end result, only to the process.
+
 Each vote should map onto a summable array, where the summation operation is associative and commutative, and the winner should be determined from the array sum for all votes cast.  An election method is ''kth-order summable'' if there exists a constant ''c'' such that in any election with ''n'' candidates, the required size of the array is at most ''cn<sup>k</sup>''.  If there is no value of ''k'' for which the method is ''k''th-order summable, the method is ''non-summable''.
 
 == Summable Methods ==
