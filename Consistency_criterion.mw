@@ -1,0 +1,5 @@
+The '''consistency criterion''' requires that any candidate who wins both of two separate sets of voters must also win the combined electorate. Although it is not a logical requirement, generally speaking systems which satisfy the consistency criterion also satisfy the [[participation criterion]]. The reverse implication is also common, though slightly less so.
+
+==Complying Methods==
+
+[[Plurality voting]], [[Approval voting]], [[Cardinal Ratings]], [[Borda count]], and Woodall's [[Descending Acquiescing Coalitions|DAC]] and [[Descending Solid Coalitions|DSC]] methods all pass the Participation Criterion. [[Condorcet method | Condorcet methods]], [[Majority Choice Approval]], and [[IRV]] fail.
