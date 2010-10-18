@@ -1,6 +1,6 @@
-The '''Condorcet candidate''' or '''Condorcet winner''' of an [[election]] is the candidate who, when compared in turn with each of the other candidates, is preferred over the other candidate.  On a one-dimensional [[political spectrum]], the Condorcet winner will be at the position of the median voter.  Mainly because of Condorcet's [[voting paradox]], a Condorcet winner will not always exist in a given set of votes.
+The '''Condorcet candidate''', '''Pairwise Champion''' (PC), or '''Condorcet winner''' (CW) of an [[election]] is the candidate who, when compared in turn with each of the other candidates, is preferred over the other candidate.  On a one-dimensional [[political spectrum]], the pairwise champion will be at the position of the median voter.  Mainly because of Condorcet's [[voting paradox]], a pairwise champion will not always exist in a given set of votes. If the pairwise champion exists, they will be the only candidate in the [[Smith set]]; otherwise, the Smith set will have three or more members.
 
-The '''Condorcet criterion''' for a [[voting system]] is that it chooses the Condorcet winner when one exists. Any method conforming to the Condorcet criterion is known as a [[Condorcet method]].
+The '''Condorcet criterion''' for a [[voting system]] is that it chooses the pairwise champion when one exists. Any method conforming to the Condorcet criterion is known as a [[Condorcet method]].
 
 ==Complying methods==
 
