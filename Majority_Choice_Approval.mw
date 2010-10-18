@@ -32,7 +32,7 @@ Bucklin satisfies the [[Plurality criterion]], the [[Majority criterion for soli
 
 The [[Condorcet criterion]] is satisfied by MCA-VR if the pairwise champion (PC, aka CW) is visible on the ballots. It is satisfied by MCA-AR if at least half the voters at least approve the PC in the first round. Other MCA versions fail this criterion.
 
-[[Strategic nomination|Clone Independence]] is satisfied by MCA-A, MCA-P, MCA-M, and MCA-S. The weaker (and technically incompatible) but related ISDA is satisfied for MCA-VR and MCA-AR, if Condorcet methods are used to choose the two "finalists".
+[[Strategic nomination|Clone Independence]] is satisfied by most MCA versions. In fact, even the stronger [[Independence of irrelevant alternatives]] is satisfied by MCA-A, MCA-P, MCA-M, and MCA-S. Clone independence is satisfied along with the weaker and related [[ISDA]] by MCA-VR and MCA-AR, if ISDA-compliant Condorcet methods (ie, Schulz) are used to choose the two "finalists". Using simpler methods to decide the finalists, MCA-VR and MCA-AR are not clone independent.
 
 The [[Later-no-help criterion]] and the [[Favorite Betrayal criterion]] are satisfied by MCA-P. They're also satisfied by MCA-AR if MCA-P is used to pick the two finalists. 
 
