@@ -30,17 +30,17 @@ The possible resolution methods include:
 == Criteria compliance ==
 All MCA variants satisfy the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], [[Monotonicity criterion|Monotonicity]] (for MCA-AR, assuming first- and second- round votes are consistent), and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). 
 
-The [[Condorcet criterion]] is satisfied by MCA-VR if the pairwise champion (PC, aka CW) is visible on the ballots and would beat at least one other candidate by an absolute majority. It is satisfied by MCA-AR if at least half the voters at least approve the PC in the first round of voting. These methods also satisfy the [[Strategy-Free criterion]] if an SFC-compliant method such as [[Schulze]] is used to pick at least one of the finalists. All other MCA versions, however, fail the Condorcet and strategy-free criteria.
-
-[[Strategic nomination|Clone Independence]] is satisfied by most MCA versions. In fact, even the stronger [[Independence of irrelevant alternatives]] is satisfied by MCA-A, MCA-P, MCA-M, and MCA-S. Clone independence is satisfied along with the weaker and related [[ISDA]] by MCA-IR and MCA-AR, if ISDA-compliant Condorcet methods (ie, [[Schulze]]) are used to choose the two "finalists". Using simpler methods (such as MCA itself) to decide the finalists, MCA-IR and MCA-AR are not clone independent.
-
-The [[Later-no-help criterion]] and the [[Favorite Betrayal criterion]] are satisfied by MCA-P. They're also satisfied by MCA-AR if MCA-P is used to pick the two finalists. 
-
-The [[Participation criterion|Participation]] and [[Summability criterion]] are not satisfied by any MCA variant, although MCA-P only fails Participation if the additional vote causes an approval majority.
-
-None of the methods satisfy [[Later-no-harm criterion|Later-no-harm]].
-
 All of the methods are [[Summability criterion|matrix-summable]] for counting at the precinct level. Only MCA-IR actually requires a matrix (or, possibly two counting rounds), and is thus "[[Summability criterion|summable for k=2]]" ; the others require only O(N) tallies, and are thus "[[Summability criterion|summable for k=1]]".
+
+The [[Participation criterion]], [[Summability criterion]], and [[Later-no-harm criterion]] are not satisfied by any MCA variant, although MCA-P only fails Participation if the additional vote causes an approval majority.
+
+Other criteria are satisfied by some, but not all, MCA variants. To wit:
+
+* The [[Condorcet criterion]] is satisfied by MCA-VR if the pairwise champion (PC, aka CW) is visible on the ballots and would beat at least one other candidate by an absolute majority. It is satisfied by MCA-AR if at least half the voters at least approve the PC in the first round of voting. These methods also satisfy the [[Strategy-Free criterion]] if an SFC-compliant method such as [[Schulze]] is used to pick at least one of the finalists. All other MCA versions, however, fail the Condorcet and strategy-free criteria.
+
+* [[Strategic nomination|Clone Independence]] is satisfied by most MCA versions. In fact, even the stronger [[Independence of irrelevant alternatives]] is satisfied by MCA-A, MCA-P, MCA-M, and MCA-S. Clone independence is satisfied along with the weaker and related [[ISDA]] by MCA-IR and MCA-AR, if ISDA-compliant Condorcet methods (ie, [[Schulze]]) are used to choose the two "finalists". Using simpler methods (such as MCA itself) to decide the finalists, MCA-IR and MCA-AR are not clone independent.
+
+* The [[Later-no-help criterion]] and the [[Favorite Betrayal criterion]] are satisfied by MCA-P. They're also satisfied by MCA-AR if MCA-P is used to pick the two finalists. 
 
 Thus, the method which satisfies the most criteria is MCA-AR, using [[Schulze]] over the ballots to select one finalist and MCA-P to select the other. Also notable are MCA-M and MCA-P, which, as ''rated'' methods (and thus ones which fail Arrow's ''ranking''-based [[Universality criterion]]), are able to seem to "violate [[Arrow's Theorem]]" by simultaneously satisfying monotonicity and [[independence of irrelevant alternatives]] (as well as of course sovereignty and non-dictatorship).
 
