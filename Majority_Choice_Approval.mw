@@ -6,7 +6,7 @@ Voters rate candidates into a fixed number of rating classes. There are commonly
 
 If one and only one candidate is preferred by an [[absolute majority]] of voters, that candidate wins. If not, the same happens if there is only one candidate approved by a majority.
 
-If the election is still unresolved, one of two things must be true. Either multiple candidates attain a majority at the same rating level, or there are no candidates with an absolute majority at any level. In that case, there are different ways to resolve between the possible winners - that is, in the former case, between those candidates with a majority, or in the latter case, between all candidates.
+If the election is still unresolved, one of two things must be true. Either multiple candidates attain a majority at the same rating level, or there are no candidates with an absolute majority at any level. In either case, there are different ways to resolve between the possible winners - that is, in the former case, between those candidates with a majority, or in the latter case, between all candidates.
 
 The possible resolution methods include:
 
