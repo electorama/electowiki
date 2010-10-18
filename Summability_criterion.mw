@@ -15,7 +15,7 @@ Each vote should map onto a summable array, where the summation operation is ass
 |
 *most [[Condorcet method]]s, 
 *[[Bucklin voting|Bucklin]]
-*[[MCA|MCA-IR]], or [[MCA|MCA-AR]] using a Condorcet method to pick the finalists.
+*[[MCA|MCA-IR]], and some forms of [[MCA|MCA-AR]]
 ||
 *[[Iterative Ranked Approval Voting]]
 *[[Correlated Instant Borda Runoff]]
