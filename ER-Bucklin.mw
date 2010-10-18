@@ -1,4 +1,7 @@
-ER-Bucklin is a version of [[Bucklin voting]] that allows voters to give equal rankings to some candidates. There are at least two main versions of ER-Bucklin; these are '''ER-Bucklin(whole)''' and '''ER-Bucklin(fractional)'''.
+ER-Bucklin is an old name for [[Majority Choice Approval]] (MCA). Please see that article, which mostly supersedes the following.
+
+== Definition ==
+It is a rated version of [[Bucklin voting]] that allows voters to give equal rankings to some candidates. There are at least two main versions of ER-Bucklin; these are '''ER-Bucklin(whole)''' and '''ER-Bucklin(fractional)'''.
 
 
 == ER-Bucklin(whole) ==
