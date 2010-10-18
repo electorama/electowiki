@@ -44,7 +44,7 @@ Other criteria are satisfied by some, but not all, MCA variants. To wit:
 
 * MCA-AR satisfies the [[Guaranteed majority criterion]], a criterion which can only be satisfied by a multi-round (runoff-based) method.
 
-Thus, the method which satisfies the most criteria is MCA-AR, using [[Schulze]] over the ballots to select one finalist and MCA-P to select the other. Also notable are MCA-M and MCA-P, which, as ''rated'' methods (and thus ones which fail Arrow's ''ranking''-based [[Universality criterion]]), are able to seem to "violate [[Arrow's Theorem]]" by simultaneously satisfying monotonicity and [[independence of irrelevant alternatives]] (as well as of course sovereignty and non-dictatorship).
+Thus, the MCA method which satisfies the most criteria is MCA-AR, using [[Schulze]] over the ballots to select one finalist and MCA-P to select the other. Also notable are MCA-M and MCA-P, which, as ''rated'' methods (and thus ones which fail Arrow's ''ranking''-based [[Universality criterion]]), are able to seem to "violate [[Arrow's Theorem]]" by simultaneously satisfying monotonicity and [[independence of irrelevant alternatives]] (as well as of course sovereignty and non-dictatorship).
 
 == An example ==
 
