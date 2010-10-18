@@ -76,6 +76,6 @@ Assume half of voters in each city rate one city preferred, two cities approved,
 |}
 </div>
 
-There is no preferred majority winner. Therefore approved votes are added. This moves Nashville and Chatanooga above 50%, so a winner can be determined. All the given resolution methods would pick Nashville. 
+There is no preferred majority winner. Therefore approved votes are added. This moves Nashville and Chatanooga above 50%, so a winner can be determined. All the given resolution methods would pick Nashville, which is also the [[pairwise champion]] in this example. 
 
 Various strategy attempts are possible in this scenario, but all would likely fail. If the eastern and western halves of the state both strategically refused to approve each other, in an attempt by the eastern half to pick Chatanooga, Nashville would still win. If Memphis, Nashville, and Chatanooga all bullet-voted in the hopes of winning, most Knoxville voters would probably extend approval as far as Nashville to prevent a win by Memphis, and/or at least a few Memphis voters (>8% overall, out of 42%) would approve Nashville to stop Chatanooga from winning. Either one of these secondary groups would be enough to ensure a Nashville win in any of the MCA variants.
