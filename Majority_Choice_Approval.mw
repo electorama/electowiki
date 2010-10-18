@@ -30,7 +30,7 @@ The possible resolution methods include:
 == Criteria compliance ==
 All MCA variants satisfy the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], [[Monotonicity criterion|Monotonicity]] (for MCA-AR, assuming first- and second- round votes are consistent), and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). 
 
-The [[Condorcet criterion]] is satisfied by MCA-VR if the pairwise champion (PC, aka CW) is visible on the ballots. It is satisfied by MCA-AR if at least half the voters at least approve the PC in the first round. Other MCA versions fail this criterion.
+The [[Condorcet criterion]] is satisfied by MCA-VR if the pairwise champion (PC, aka CW) is visible on the ballots. It is satisfied by MCA-AR if at least half the voters at least approve the PC in the first round of voting. Other MCA versions fail this criterion.
 
 [[Strategic nomination|Clone Independence]] is satisfied by most MCA versions. In fact, even the stronger [[Independence of irrelevant alternatives]] is satisfied by MCA-A, MCA-P, MCA-M, and MCA-S. Clone independence is satisfied along with the weaker and related [[ISDA]] by MCA-IR and MCA-AR, if ISDA-compliant Condorcet methods (ie, [[Schulze]]) are used to choose the two "finalists". Using simpler methods to decide the finalists, MCA-IR and MCA-AR are not clone independent.
 
