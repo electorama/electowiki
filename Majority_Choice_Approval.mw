@@ -1,92 +1,45 @@
-Majority Choice Approval (MCA) is a class of rated voting systems which attempt to find majority support for some candidate. It is closely related to Bucklin Voting, which refers to ranked systems using similar rules. In fact, some people consider MCA a subclass of Bucklin, calling it [[ER-Bucklin]] (for Equal-Ratings-[allowed] Bucklin).
+Majority Choice Approval (MCA) is a class of rated voting systems which attempt to find majority support for some candidate. It is closely related to Bucklin Voting, which refers to ranked systems using similar rules. In fact, some people consider MCA a subclass of Bucklin, and call it things like ER-Bucklin (for Equal-Ratings-[allowed] Bucklin).
 
 == How does it work? ==
 
-Voters rate candidates into a fixed number of rating classes. There are commonly 3, 4, 5, or even 100 possible rating levels. The following discussion assumes 3 ratings, called "preferred", "approved", and "unapproved".
+Voters rate candidates into a fixed number of rating classes. There may be 3, 4, 5, or even 100 possible rating levels. The following discussion assumes 3 ratings, called "preferred", "approved", and "unapproved".
 
-If one and only one candidate is preferred by an [[absolute majority]] of voters, that candidate wins. If not, approvals are added to preferences, and again if there is only one candidate with a majority they win.
+If one and only one candidate is preferred by an [[absolute majority]] of voters, that candidate wins. If not, the same happens if there is only one candidate approved by a majority.
 
-If the election is still unresolved, one of two things must be true. Either multiple candidates attain a majority at the same rating level, or there are no candidates with an absolute majority at any level. In either case, there are different ways to resolve between the possible winners - that is, in the former case, between those candidates with a majority, or in the latter case, between all candidates.
+If the election is still unresolved, one of two things must be true. Either multiple candidates attain a majority at the same rating level, or there are no candidates with an absolute majority at any level. In that case, there are different ways to resolve between the possible winners - that is, in the former case, between those candidates with a majority, or in the latter case, between all candidates.
 
 The possible resolution methods include:
 
-* MCA-A: Most approved candidate (most votes above lowest possible rating). This is also called "Majority Top//Approval", or MTA.
+* MCA-A: Most approved candidate 
 
-* MCA-P: Most preferred candidate (most votes at highest possible rating)
+* MCA-P: Most preferred candidate
 
-* MCA-M: Candidate with the highest score at the rating level where an absolute majority first appears, or MCA-A if there are no majorities. This is the system closest to traditional [[Bucklin voting]].
+* MCA-M: Candidate with the highest score at the rating level where an absolute majority first appears, or MCA-A if there are no majorities.
 
-* MCA-S: [[Range voting|Range]] or Score winner. That is, the candidate with the highest score, counting (in the case of 3 ranking levels) 2 points for each preference and 1 point for each approval.
+* MCA-S: Range or Score winner, using (in the case of 3 ranking levels) 2 points for preference and 1 point for approval.
 
-* MCA-R: Runoff - Two "finalists" are chosen by one or two methods, such as one of the methods above or a equality-allowed Condorcet method over the given ballots. The finalists are then measured against each other using one of the following methods:
+* MCA-R: Runoff - One or two of the methods above is used to pick two "finalists", who are then measured against each other using one of the following methods:
 
-** MCA-IR: Instant runoff (Condorcet-style, using ballots): Ballots are recounted for whichever one of the finalists they rate higher. Ballots which rate both candidates at the same level are counted for neither.
+** MCA-VR: Virtual (Condorcet-style, using ballots): Ballots are recounted for whichever one of the finalists they rate higher. Ballots which rate both candidates at the same level are counted for neither.
 
 ** MCA-AR: Actual runoff: Voters return to the polls to choose one of the finalists. This has the advantage that one candidate is guaranteed to receive the absolute majority of the valid votes in the last round of voting of the system as a whole.
 
-== A note on terminology ==
-"Majority Choice Approval" was first used to refer to a specific form, which would be 3-level MCA-AR in the nomenclature above (specifically, 3-MCA-AR-M). Later, [http://betterpolls.com/v/1189 a voting system naming poll] chose this term as a more-accessible replacement for "ER-Bucklin" in general. This is also sometimes known as "median ratings", because it can be defined as "the highest median rating wins".
+== A note on the term MCA ==
+"Majority Choice Approval" was first used to refer to a specific form, which would be 3-level MCA-AR in the nomenclature above. Later, [http://betterpolls.com/v/1189 a voting system naming poll] chose it as a more-accessible replacement term for ER-Bucklin.
 
-== Criteria compliances ==
-All MCA variants satisfy the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], [[Monotonicity criterion|Monotonicity]] (for MCA-AR, assuming first- and second- round votes are consistent), and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). 
+== Criteria compliance ==
+Bucklin satisfies the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], the [[Monotonicity criterion|Monotonicity]] (for MCA-AR, assuming first- and second- round votes are consistent), and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). 
 
-All of the methods are [[Summability criterion|summable]] for counting at the precinct level. Only MCA-IR actually requires a matrix (or, possibly two counting rounds), and is thus "[[Summability criterion|summable for k=2]]" ; the others require only O(N) tallies, and are thus "[[Summability criterion|summable for k=1]]".
+The [[Condorcet criterion]] is satisfied by MCA-VR if the pairwise champion (PC, aka CW) is visible on the ballots. It is satisfied by MCA-AR if at least half the voters at least approve the PC in the first round. Other MCA versions fail this criterion.
 
-The [[Participation criterion]] and its stronger cousin the [[Consistency criterion]], as well as the [[Later-no-harm criterion]] are not satisfied by any MCA variant, although MCA-P only fails Participation if the additional vote causes an approval majority.
+[[Strategic nomination|Clone Independence]] is satisfied by MCA-A, MCA-P, MCA-M, and MCA-S. The weaker (and technically incompatible) but related ISDA is satisfied for MCA-VR and MCA-AR, if Condorcet methods are used to choose the two "finalists".
 
-Other criteria are satisfied by some, but not all, MCA variants. To wit:
+[[Later-no-help]] is satisfied by MCA-P. It's also satisfied by MCA-AR and MCA-VR if MCA-P is used to pick the two finalists. 
 
-* [[Strategic nomination|Clone Independence]] is satisfied by most MCA versions. In fact, even the stronger [[Independence of irrelevant alternatives]] is satisfied by MCA-A, MCA-P, MCA-M, and MCA-S. Clone independence is satisfied along with the weaker and related [[ISDA]] by MCA-IR and MCA-AR, if ISDA-compliant Condorcet methods (ie, [[Schulze]]) are used to choose the two "finalists". Using simpler methods (such as MCA itself) to decide the finalists, MCA-IR and MCA-AR are not strictly clone independent.
+The [[Participation criterion|Participation]] is not satisfied by any MCA system, although MCA-AR and MCA-VR both satisfy it if there is a pairwise champion (aka CW). 
 
-* The [[Condorcet criterion]] is satisfied by MCA-IR if the [[pairwise champion]] (aka CW) is visible on the ballots and would beat at least one other candidate by an absolute majority. It is satisfied by MCA-AR if at least half the voters at least approve the PC in the first round of voting. These methods also satisfy the [[Strategy-Free criterion]] if an SFC-compliant method such as [[Schulze]] is used to pick at least one of the finalists. All other MCA versions, however, fail the Condorcet and strategy-free criteria.
+None of the methods satisfy [[Later-no-harm criterion|Later-no-harm]].
 
-* The [[Later-no-help criterion]] and the [[Favorite Betrayal criterion]] are satisfied by MCA-P. They're also satisfied by MCA-AR if MCA-P is used to pick the two finalists. 
+All of the methods are matrix-summable for counting at the precinct level. Only MCA-VR actually requires a matrix (or, possibly two counting rounds); the others require only O(N) tallies.
 
-* MCA-AR satisfies the [[Guaranteed majority criterion]], a criterion which can only be satisfied by a multi-round (runoff-based) method.
-
-Thus, the MCA method which satisfies the most criteria is MCA-AR, using [[Schulze]] over the ballots to select one finalist and MCA-P to select the other. Also notable are MCA-M and MCA-P, which, as ''rated'' methods (and thus ones which fail Arrow's ''ranking''-based [[Universality criterion]]), are able to seem to "violate [[Arrow's Theorem]]" by simultaneously satisfying monotonicity and [[independence of irrelevant alternatives]] (as well as of course sovereignty and non-dictatorship).
-
-== An example ==
-
-{{Tenn_voting_example}}
-
-Assume half of voters in each city rate one city preferred, two cities approved, and one city unapproved; and half rate one preferred, one approved, and two unapproved.
-
-<div class="floatright">
-{| border=1
-!City
-!Preferred
-!Approved
-|-
-!bgcolor="#ffc0c0"|Memphis
-|bgcolor="#ffc0c0"|42
-|bgcolor="#ffc0c0"|42
-|-
-!bgcolor="#ffc0c0"|Nashville
-|bgcolor="#ffc0c0"|26
-|bgcolor="#e0e0ff"|84
-|-
-!bgcolor="#ffc0c0"|Chatanooga
-|bgcolor="#ffc0c0"|15
-|bgcolor="#e0e0ff"|79
-|-
-!bgcolor="#ffc0c0"|Knoxville
-|bgcolor="#ffc0c0"|17
-|bgcolor="#ffc0c0"|45
-|}
-</div>
-
-There is no preferred majority winner. Therefore approved votes are added. This moves Nashville and Chatanooga above 50%, so a winner can be determined. All the given resolution methods would pick Nashville, which is also the [[pairwise champion]] in this example. 
-
-Various strategy attempts are possible in this scenario, but all would likely fail. If the eastern and western halves of the state both strategically refused to approve each other, in an attempt by the eastern half to pick Chatanooga, Nashville would still win. If Memphis, Nashville, and Chatanooga all bullet-voted in the hopes of winning, most Knoxville voters would probably extend approval as far as Nashville to prevent a win by Memphis, and/or at least a few Memphis voters (>8% overall, out of 42%) would approve Nashville to stop Chatanooga from winning. Either one of these secondary groups would be enough to ensure a Nashville win in any of the MCA variants. It would take a conjunction of four separate conditions for Chatanooga to plausibly win: it could happen only if Knoxville voters also preferred Chatanooga, and Nashville voters (un-strategically) approved Chatanooga, and no Memphis voters preferred Nashville, and the MCA-P variant were used.
-
-== General strategy and notes ==
-
-If the electorate knows which two candidates are frontrunners, and the pairwise champion is indeed among those two, the stable strategy is for everyone to approve or prefer exactly one of those two, and fill out the rest of the ballot honestly and as expressively as possible. (In the example above, that would mean an east/west split, with Nashville winning 68-32 approval over Chatanooga.) If everyone follows this strategy, the pairwise champion will win with the only absolute majority. And if even half of voters follow this strategy, multiple majorities are highly unlikely.
-
-However, this two-frontrunner strategy does not mean that MCA is subject to [[Duverger's law]]. A pairwise champion who is not one of the perceived frontrunners still has a good chance of winning, especially if they have some strong supporters. This fact, in turn, will affect what "frontrunner" means; an extremist candidate with a strong but sharply-limited base of support - the kind of candidate who, using simple [[runoff voting]], makes it into a runoff with a strong showing of 35% but then gets creamed with only 37% in the runoff - will never be perceived as a frontrunner in the first place.
-
-Thus, overall, many elections should be resolved without need for a resolution method, and so all MCA methods should give broadly similar results. However, if resolution is needed, a lack of majorities is, overall, more likely than multiple majorities. Since the design intent is to minimize these situations, the resolution method chosen should be one which tends to encourage extending approvals; that is, one which comes "close" to fulfilling the [[Later-no-harm criterion]], so that extending approval is unlikely to harm one's favorite candidate. From simple to complex, such methods are: MCA-S, MCA-IR, and MCA-AR.
-
-[[Category:Single-winner voting methods]]
-[[Category:Graded Bucklin methods]]
+Thus, the method which satisfies the most criteria is MCA-AR, using a Condorcet method such as [[Schultz]] to select one finalist and MCA-P to select the other. As a rated method (and thus one which fails Arrow's ranking-based Universality Criterion), this method is able to seem to "violate Arrow's theorem" by simultaneously satisfying monotonicity, the Condorcet criterion, and clone independence.
