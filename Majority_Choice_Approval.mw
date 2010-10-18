@@ -43,3 +43,37 @@ None of the methods satisfy [[Later-no-harm criterion|Later-no-harm]].
 All of the methods are matrix-summable for counting at the precinct level. Only MCA-VR actually requires a matrix (or, possibly two counting rounds); the others require only O(N) tallies.
 
 Thus, the method which satisfies the most criteria is MCA-AR, using a Condorcet method such as [[Schultz]] to select one finalist and MCA-P to select the other. As a rated method (and thus one which fails Arrow's ranking-based Universality Criterion), this method is able to seem to "violate Arrow's theorem" by simultaneously satisfying monotonicity, the Condorcet criterion, and clone independence.
+
+=== An example ===
+
+{{Tenn_voting_example}}
+
+Assume half of voters in each city rate one city preferred, two cities approved, and one city unapproved; and half rate one preferred, one approved, and two unapproved.
+
+<div class="floatright">
+{| border=1
+!City
+!Preferred
+!Approved
+|-
+!bgcolor="#ffc0c0"|Memphis
+|bgcolor="#ffc0c0"|42
+|bgcolor="#ffc0c0"|42
+|-
+!bgcolor="#ffc0c0"|Nashville
+|bgcolor="#ffc0c0"|26
+|bgcolor="#ffc0ff"|84
+|-
+!bgcolor="#ffc0c0"|Chatanooga
+|bgcolor="#ffc0c0"|15
+|bgcolor="#e0e0ff"|79
+|-
+!bgcolor="#ffc0c0"|Knoxville
+|bgcolor="#ffc0c0"|17
+|bgcolor="#ffc0c0"|45
+|}
+</div>
+
+There is no preferred majority winner. Therefore approved votes are added. This moves Nashville and Chatanooga above 50%, so a winner can be determined. All the given resolution methods would pick Nashville. 
+
+Various strategy attempts are possible in this scenario, but all would likely fail. If the eastern and western halves of the state both strategically refused to approve each other, in an attempt by the eastern half to pick Chatanooga, Nashville would still win. If Memphis, Nashville, and Chatanooga all bullet-voted in the hopes of winning, most Knoxville voters would probably extend approval as far as Nashville to prevent a win by Memphis, while at least a few Memphis voters (>8% out of 42%) would approve Nashville to stop Chatanooga from winning. Either one of these secondary groups would be enough to ensure a Nashville win in any of the MCA variants.
