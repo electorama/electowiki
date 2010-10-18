@@ -10,9 +10,9 @@ If the election is still unresolved, one of two things must be true. Either mult
 
 The possible resolution methods include:
 
-* MCA-A: Most approved candidate 
+* MCA-A: Most approved candidate (above lowest rating)
 
-* MCA-P: Most preferred candidate
+* MCA-P: Most preferred candidate (highest rating)
 
 * MCA-M: Candidate with the highest score at the rating level where an absolute majority first appears, or MCA-A if there are no majorities.
 
