@@ -96,7 +96,7 @@ They can also be classified on how many times votes can be counted. Methods like
 
 ==== Rated Voting methods ====
 *[[Cardinal Ratings]] (CR) (Also called [[range voting]]) - voters give whole number points (example 1-10) to each candidate, totaled in single round
-*[[Majority Choice Approval]] (MCA) - This term is now used to refer to the class of equal-ranking Bucklin methods, which attempt to find the candidate with an absolute majority at the highest rank. Previously, MCA referred to a specific system, like Approval but with range [0,2] and multiple counting rounds.
+*[[Majority Choice Approval]] (MCA) - This term is now used to refer to Bucklin methods which allow equal ratings. As explained above, Bucklin is like  attempt to find the candidate with an absolute majority at the highest rank. (Previously, MCA referred to a specific system, with 3 rating levels and the possibility of a runoff election).
 *Rated Ballots may also be used for ranked voting methods, in cases where tied rankings are allowed.
 
 ===Single Winner Variations===
