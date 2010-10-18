@@ -2,7 +2,7 @@ Score DSV (Declared Strategy Voting) is a hybrid of Condorcet and Score (Range) 
 
 Actually, I'd prefer to use the [[Dutta set]] instead of the Smith set, but that would require explaining it.
 
-If there's a [[Condorcet winner]], ie, only one member of the Smith set, you use that candidate and the candidate who comes closest to beating them. If all the members of the Smith set are tied on a ballot, then you set them at 100 if they're tied-for-best, at 0 if they're tied-for-worst, and at 50 otherwise. All candidates better than all members of the Smith set on a ballot get 100, and all candidates worse than all members of the Smith set get 0. Thus, the Condorcet winner wins, almost always with an average score of over 50 (you can fix the tied-in-the-middle score to take into account number of candidates above and below to make sure the average is over 50, but it's not worth it). 
+If there's a [[pairwise champion]], ie, only one member of the Smith set, you use that candidate and the candidate who comes closest to beating them. If all the members of the Smith set are tied on a ballot, then you set them at 100 if they're tied-for-best, at 0 if they're tied-for-worst, and at 50 otherwise. All candidates better than all members of the Smith set on a ballot get 100, and all candidates worse than all members of the Smith set get 0. Thus, the Condorcet winner wins, almost always with an average score of over 50 (you can fix the tied-in-the-middle score to take into account number of candidates above and below to make sure the average is over 50, but it's not worth it). 
 
 == Motivation ==
 
