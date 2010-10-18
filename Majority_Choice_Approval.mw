@@ -1,0 +1,45 @@
+Majority Choice Approval (MCA) is a class of rated voting systems which attempt to find majority support for some candidate. It is closely related to Bucklin Voting, which refers to ranked systems using similar rules. In fact, some people consider MCA a subclass of Bucklin, and call it things like ER-Bucklin (for Equal-Ratings-[allowed] Bucklin).
+
+== How does it work? ==
+
+Voters rate candidates into a fixed number of rating classes. There may be 3, 4, 5, or even 100 possible rating levels. The following discussion assumes 3 ratings, called "preferred", "approved", and "unapproved".
+
+If one and only one candidate is preferred by an [[absolute majority]] of voters, that candidate wins. If not, the same happens if there is only one candidate approved by a majority.
+
+If the election is still unresolved, one of two things must be true. Either multiple candidates attain a majority at the same rating level, or there are no candidates with an absolute majority at any level. In that case, there are different ways to resolve between the possible winners - that is, in the former case, between those candidates with a majority, or in the latter case, between all candidates.
+
+The possible resolution methods include:
+
+* MCA-A: Most approved candidate 
+
+* MCA-P: Most preferred candidate
+
+* MCA-M: Candidate with the highest score at the rating level where an absolute majority first appears, or MCA-A if there are no majorities.
+
+* MCA-S: Range or Score winner, using (in the case of 3 ranking levels) 2 points for preference and 1 point for approval.
+
+* MCA-R: Runoff - One or two of the methods above is used to pick two "finalists", who are then measured against each other using one of the following methods:
+
+** MCA-VR: Virtual (Condorcet-style, using ballots): Ballots are recounted for whichever one of the finalists they rate higher. Ballots which rate both candidates at the same level are counted for neither.
+
+** MCA-AR: Actual runoff: Voters return to the polls to choose one of the finalists. This has the advantage that one candidate is guaranteed to receive the absolute majority of the valid votes in the last round of voting of the system as a whole.
+
+== A note on the term MCA ==
+"Majority Choice Approval" was first used to refer to a specific form, which would be 3-level MCA-AR in the nomenclature above. Later, [http://betterpolls.com/v/1189 a voting system naming poll] chose it as a more-accessible replacement term for ER-Bucklin.
+
+== Criteria compliance ==
+Bucklin satisfies the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], the [[Monotonicity criterion|Monotonicity]] (for MCA-AR, assuming first- and second- round votes are consistent), and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). 
+
+The [[Condorcet criterion]] is satisfied by MCA-VR if the pairwise champion (PC, aka CW) is visible on the ballots. It is satisfied by MCA-AR if at least half the voters at least approve the PC in the first round. Other MCA versions fail this criterion.
+
+[[Strategic nomination|Clone Independence]] is satisfied by MCA-A, MCA-P, MCA-M, and MCA-S. The weaker (and technically incompatible) but related ISDA is satisfied for MCA-VR and MCA-AR, if Condorcet methods are used to choose the two "finalists".
+
+[[Later-no-help]] is satisfied by MCA-P. It's also satisfied by MCA-AR and MCA-VR if MCA-P is used to pick the two finalists. 
+
+The [[Participation criterion|Participation]] is not satisfied by any MCA system, although MCA-AR and MCA-VR both satisfy it if there is a pairwise champion (aka CW). 
+
+None of the methods satisfy [[Later-no-harm criterion|Later-no-harm]].
+
+All of the methods are matrix-summable for counting at the precinct level. Only MCA-VR actually requires a matrix (or, possibly two counting rounds); the others require only O(N) tallies.
+
+Thus, the method which satisfies the most criteria is MCA-AR, using a Condorcet method such as [[Schultz]] to select one finalist and MCA-P to select the other. As a rated method (and thus one which fails Arrow's ranking-based Universality Criterion), this method is able to seem to "violate Arrow's theorem" by simultaneously satisfying monotonicity, the Condorcet criterion, and clone independence.
