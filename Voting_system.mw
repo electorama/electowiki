@@ -92,7 +92,7 @@ They can also be classified on how many times votes can be counted. Methods like
 ***Other names for Condorcet-compliant methods:
 ****VOTE-123: another name for Condorcet methods, stands for Virtual One-on-one Tournament Elections using 1st, 2nd, &amp; 3rd choices
 ****Majority voting or Maximum Majority voting: another term often used for Condorcet methods
-**[[Bucklin voting]]: approval runoff; voters vote for more candidates each round until a candidate reaches a majority
+**[[Bucklin voting]]: approval with virtual runoff; each voters' ballot is counted for more candidates each round until some candidate reaches a majority
 
 ==== Rated Voting methods ====
 *[[Cardinal Ratings]] (CR) (Also called [[range voting]]) - voters give whole number points (example 1-10) to each candidate, totaled in single round
