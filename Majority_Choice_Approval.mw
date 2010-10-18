@@ -28,7 +28,7 @@ The possible resolution methods include:
 "Majority Choice Approval" was first used to refer to a specific form, which would be 3-level MCA-AR in the nomenclature above. Later, [http://betterpolls.com/v/1189 a voting system naming poll] chose it as a more-accessible replacement term for ER-Bucklin.
 
 == Criteria compliance ==
-Bucklin satisfies the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], the [[Monotonicity criterion|Monotonicity]] (for MCA-AR, assuming first- and second- round votes are consistent), and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). 
+All MCA variants satisfy the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], the [[Monotonicity criterion|Monotonicity]] (for MCA-AR, assuming first- and second- round votes are consistent), and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). 
 
 The [[Condorcet criterion]] is satisfied by MCA-VR if the pairwise champion (PC, aka CW) is visible on the ballots. It is satisfied by MCA-AR if at least half the voters at least approve the PC in the first round. Other MCA versions fail this criterion.
 
