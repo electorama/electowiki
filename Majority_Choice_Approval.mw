@@ -2,7 +2,7 @@ Majority Choice Approval (MCA) is a class of rated voting systems which attempt 
 
 == How does it work? ==
 
-Voters rate candidates into a fixed number of rating classes. There may be 3, 4, 5, or even 100 possible rating levels. The following discussion assumes 3 ratings, called "preferred", "approved", and "unapproved".
+Voters rate candidates into a fixed number of rating classes. There are commonly 3, 4, 5, or even 100 possible rating levels. The following discussion assumes 3 ratings, called "preferred", "approved", and "unapproved".
 
 If one and only one candidate is preferred by an [[absolute majority]] of voters, that candidate wins. If not, the same happens if there is only one candidate approved by a majority.
 
