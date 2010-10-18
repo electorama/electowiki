@@ -32,7 +32,7 @@ Bucklin satisfies the [[Plurality criterion]], the [[Majority criterion for soli
 
 The [[Condorcet criterion]] is satisfied by MCA-VR if the pairwise champion (PC, aka CW) is visible on the ballots. It is satisfied by MCA-AR if at least half the voters at least approve the PC in the first round. Other MCA versions fail this criterion.
 
-[[Strategic nomination|Clone Independence]] is satisfied by most MCA versions. In fact, even the stronger [[Independence of irrelevant alternatives]] is satisfied by MCA-A, MCA-P, MCA-M, and MCA-S. Clone independence is satisfied along with the weaker and related [[ISDA]] by MCA-VR and MCA-AR, if ISDA-compliant Condorcet methods (ie, Schulz) are used to choose the two "finalists". Using simpler methods to decide the finalists, MCA-VR and MCA-AR are not clone independent.
+[[Strategic nomination|Clone Independence]] is satisfied by most MCA versions. In fact, even the stronger [[Independence of irrelevant alternatives]] is satisfied by MCA-A, MCA-P, MCA-M, and MCA-S. Clone independence is satisfied along with the weaker and related [[ISDA]] by MCA-VR and MCA-AR, if ISDA-compliant Condorcet methods (ie, [[Schulze]]) are used to choose the two "finalists". Using simpler methods to decide the finalists, MCA-VR and MCA-AR are not clone independent.
 
 The [[Later-no-help criterion]] and the [[Favorite Betrayal criterion]] are satisfied by MCA-P. They're also satisfied by MCA-AR if MCA-P is used to pick the two finalists. 
 
@@ -42,7 +42,7 @@ None of the methods satisfy [[Later-no-harm criterion|Later-no-harm]].
 
 All of the methods are matrix-summable for counting at the precinct level. Only MCA-VR actually requires a matrix (or, possibly two counting rounds); the others require only O(N) tallies.
 
-Thus, the method which satisfies the most criteria is MCA-AR, using a Condorcet method such as [[Schultz]] to select one finalist and MCA-P to select the other. As a rated method (and thus one which fails Arrow's ranking-based Universality Criterion), this method is able to seem to "violate Arrow's theorem" by simultaneously satisfying monotonicity, the Condorcet criterion, and clone independence.
+Thus, the method which satisfies the most criteria is MCA-AR, using [[Schulze]] to select one finalist and MCA-P to select the other. As a rated method (and thus one which fails Arrow's ranking-based Universality Criterion), this method is able to seem to "violate Arrow's theorem" by simultaneously satisfying monotonicity, the Condorcet criterion, and clone independence.
 
 === An example ===
 
