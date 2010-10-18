@@ -32,7 +32,7 @@ All MCA variants satisfy the [[Plurality criterion]], the [[Majority criterion f
 
 All of the methods are [[Summability criterion|matrix-summable]] for counting at the precinct level. Only MCA-IR actually requires a matrix (or, possibly two counting rounds), and is thus "[[Summability criterion|summable for k=2]]" ; the others require only O(N) tallies, and are thus "[[Summability criterion|summable for k=1]]".
 
-The [[Participation criterion]], [[Summability criterion]], and [[Later-no-harm criterion]] are not satisfied by any MCA variant, although MCA-P only fails Participation if the additional vote causes an approval majority.
+The [[Participation criterion]] and [[Later-no-harm criterion]] are not satisfied by any MCA variant, although MCA-P only fails Participation if the additional vote causes an approval majority.
 
 Other criteria are satisfied by some, but not all, MCA variants. To wit:
 
