@@ -1,4 +1,4 @@
-Majority Choice Approval (MCA) is a class of rated voting systems which attempt to find majority support for some candidate. It is closely related to Bucklin Voting, which refers to ranked systems using similar rules. In fact, some people consider MCA a subclass of Bucklin, and call it things like [[ER-Bucklin]] (for Equal-Ratings-[allowed] Bucklin).
+Majority Choice Approval (MCA) is a class of rated voting systems which attempt to find majority support for some candidate. It is closely related to Bucklin Voting, which refers to ranked systems using similar rules. In fact, some people consider MCA a subclass of Bucklin, calling it [[ER-Bucklin]] (for Equal-Ratings-[allowed] Bucklin).
 
 == How does it work? ==
 
