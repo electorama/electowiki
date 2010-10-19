@@ -27,7 +27,7 @@ The possible resolution methods include:
 == A note on the term MCA ==
 "Majority Choice Approval" was first used to refer to a specific form, which would be 3-level MCA-AR in the nomenclature above. Later, [http://betterpolls.com/v/1189 a voting system naming poll] chose this term as a more-accessible replacement for "ER-Bucklin" in general.
 
-== Criteria compliance ==
+== Criteria compliances ==
 All MCA variants satisfy the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], [[Monotonicity criterion|Monotonicity]] (for MCA-AR, assuming first- and second- round votes are consistent), and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). 
 
 All of the methods are [[Summability criterion|summable]] for counting at the precinct level. Only MCA-IR actually requires a matrix (or, possibly two counting rounds), and is thus "[[Summability criterion|summable for k=2]]" ; the others require only O(N) tallies, and are thus "[[Summability criterion|summable for k=1]]".
