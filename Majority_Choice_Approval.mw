@@ -25,7 +25,7 @@ The possible resolution methods include:
 ** MCA-AR: Actual runoff: Voters return to the polls to choose one of the finalists. This has the advantage that one candidate is guaranteed to receive the absolute majority of the valid votes in the last round of voting of the system as a whole.
 
 == A note on the term MCA ==
-"Majority Choice Approval" was first used to refer to a specific form, which would be 3-level MCA-AR in the nomenclature above. Later, [http://betterpolls.com/v/1189 a voting system naming poll] chose it as a more-accessible replacement term for ER-Bucklin.
+"Majority Choice Approval" was first used to refer to a specific form, which would be 3-level MCA-AR in the nomenclature above. Later, [http://betterpolls.com/v/1189 a voting system naming poll] chose this term as a more-accessible replacement for "ER-Bucklin" in general.
 
 == Criteria compliance ==
 All MCA variants satisfy the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], [[Monotonicity criterion|Monotonicity]] (for MCA-AR, assuming first- and second- round votes are consistent), and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). 
