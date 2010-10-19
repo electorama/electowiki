@@ -30,7 +30,7 @@ The possible resolution methods include:
 == Criteria compliance ==
 All MCA variants satisfy the [[Plurality criterion]], the [[Majority criterion for solid coalitions]], [[Monotonicity criterion|Monotonicity]] (for MCA-AR, assuming first- and second- round votes are consistent), and [[Minimal Defense criterion|Minimal Defense]] (which implies satisfaction of the [[Strong Defensive Strategy criterion]]). 
 
-All of the methods are [[Summability criterion|matrix-summable]] for counting at the precinct level. Only MCA-IR actually requires a matrix (or, possibly two counting rounds), and is thus "[[Summability criterion|summable for k=2]]" ; the others require only O(N) tallies, and are thus "[[Summability criterion|summable for k=1]]".
+All of the methods are [[Summability criterion|summable]] for counting at the precinct level. Only MCA-IR actually requires a matrix (or, possibly two counting rounds), and is thus "[[Summability criterion|summable for k=2]]" ; the others require only O(N) tallies, and are thus "[[Summability criterion|summable for k=1]]".
 
 The [[Participation criterion]] and its stronger cousin the [[Consistency criterion]], as well as the [[Later-no-harm criterion]] are not satisfied by any MCA variant, although MCA-P only fails Participation if the additional vote causes an approval majority.
 
