@@ -14,7 +14,7 @@ The possible resolution methods include:
 
 * MCA-P: Most preferred candidate (most votes at highest possible rating)
 
-* MCA-M: Candidate with the highest score at the rating level where an absolute majority first appears, or MCA-A if there are no majorities.
+* MCA-M: Candidate with the highest score at the rating level where an absolute majority first appears, or MCA-A if there are no majorities. This is the system closest to traditional [[Bucklin]] voting.
 
 * MCA-S: Range or Score winner, using (in the case of 3 ranking levels) 2 points for preference and 1 point for approval.
 
