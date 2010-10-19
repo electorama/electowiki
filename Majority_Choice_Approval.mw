@@ -16,7 +16,7 @@ The possible resolution methods include:
 
 * MCA-M: Candidate with the highest score at the rating level where an absolute majority first appears, or MCA-A if there are no majorities. This is the system closest to traditional [[Bucklin voting]].
 
-* MCA-S: Range or Score winner. That is, the candidate with the highest score, counting (in the case of 3 ranking levels) 2 points for each preference and 1 point for each approval.
+* MCA-S: [[Range voting|Range]] or Score winner. That is, the candidate with the highest score, counting (in the case of 3 ranking levels) 2 points for each preference and 1 point for each approval.
 
 * MCA-R: Runoff - Two "finalists" are chosen by one or two methods, such as one of the methods above or a equality-allowed Condorcet method over the given ballots. The finalists are then measured against each other using one of the following methods:
 
