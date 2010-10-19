@@ -17,6 +17,9 @@ This statement is stronger, because assuming both monotonicity and independence 
 
 With a narrower definition of &ldquo;irrelevant alternatives&rdquo; which excludes those candidates in the [[Smith set]], some [[Condorcet method]]s meet all the criteria.
 
+==Systems which violate only one of Arrow's criteria==
+[[MCA|MCA-P]], as a rated rather than ranked system, violates only unrestricted domain. A system which arbitrarily chose two candidates to go into a runoff would violate only sovereignty. [[Random ballot]] violates only non-dictatorship. None of the methods described on this wiki violate only monotonicity. The [[Schulze method]] violates only independence of irrelevant alternatives, although it actually satisfies the similar [[ISDA|independence of Smith-dominated alternatives]] criterion.
+
 ==See also==
 *[[Gibbard-Satterthwaite theorem]]
 *[[Voting paradox]]
