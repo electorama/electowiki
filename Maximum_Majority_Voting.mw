@@ -47,8 +47,7 @@ The candidate with the most paiwise wins (i.e. the Maximum Majority) wins the el
 === The situation (voting) ===
 
 Imagine an election for the capital of [[Tennessee]], a state in the United States that is over 500 miles east-to-west, and only 110 miles north-to-south.  Let's say the candidates for the capital are Memphis (on the far west end), Nashville (in the center), Chattanooga (129 miles southeast of Nashville), and Knoxville (on the far east side, 114 northeast of Chattanooga).    Here's the population breakdown by metro area (surrounding county): 
-<div style="float:right;  padding:2px; text-align:center">
-[[Image:CondorcetTennesee.png]]</div>
+<div style="float:right;  padding:2px; text-align:center">[[File:TennesseeMMV.png]]</div>
 
 * Memphis (Shelby County): 826,330
 * Nashville (Davidson County): 510,784
