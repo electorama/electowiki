@@ -1,176 +1,55 @@
-Simple Optionally-Delegated Approval (SODA voting) is a single-winner voting system based on [[approval voting]]. As in approval voting, voters get a ballot which lets them vote for as many or as few candidates as they like. Unlike in approval, voters who don't want to decide yes or no for every candidate can choose to delegate their ballot, trusting their favorite candidate to "fill in the ballot" by adding further approvals. The voters' ballots are counted and preliminary totals are announced.  Then, once everyone knows how much support and how many delegated ballots each candidate has, those who do not expect to win can add approvals to the delegated ballots they control, in order to help others who would be good compromise options.
-
-Approvals added by a candidate to their delegated ballots are worth the same as direct approvals from voters.  Both types of approval are added together and the winner is the candidate with the most total approvals.
+Simple Optional Delegated Approval (SODA) is a single-winner system inspired by [[approval voting]] and [[asset voting]]. It is arguably Pareto dominant over plurality; that is, it offers only advantages, and no disadvantages, when compared to plurality. This makes it an excellent choice as a voting reform proposal, as you can easily and honestly refute any argument against it. (There are many systems which are arguably better than SODA in some way, but all are also arguably worse in some other way.)
 
 == Procedure ==
-=== Sample Ballot ===
-<table border='1px' width='80%'><tr><td>
-'''Vote for as many candidates as you approve, or vote for one candidate to delegate your vote:'''<br>
-&#9634; Adams (Prefers Churchill, then Bachelet, then Deakin)<br>
-&#9634; Bachelet (Prefers Deakin and Churchill)<br>
-&#9634; Churchill (Prefers Adams)<br>
-&#9634; Deakin (No preferences declared)<br>
-&#9634; ____(write-in)____<br>
-&#9634; ____(write-in)____
+Essentially, you vote for any number of candidates (as with approval); but you may also decide to delegate your ballot to your favorite candidate. Top approval wins. The full procedure is:
 
-'''If you only vote for one candidate, your vote is delegated to that candidate, unless you check the box below.''' A delegated vote means that, if your favorite candidate shows preferences above, he or she may use your vote to approve of one or more of the most-preferred of them. For instance, if he or she can not win, he or she might approve of some other "compromise" candidate(s) who can.<br>
-&#9634; Do not delegate. Do not let the candidate I voted for add approvals to my vote.<br><br>
-''Note: If you vote for more than one candidate, or if you vote for a write-in or other candidate with no declared preferences, your vote is not delegated. In that case, no-one can add approvals to your vote, and it does not matter whether you check the box above.''
-</td></tr></table>
+# Before the election, all candidates must rank the other candidates (including declared write-ins) in order of preference. Equal rankings and truncation are allowed. The candidate's rankings are all made public. Later, in the "delegation" step, any delegation from one candidate must be consistent with that candidate's rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms". 
 
-=== Full, step-by-step rules ===
-Steps marked "''(optional)''" are suggested, but only the four substeps in '''bold''' (1a, 2b, 3b, and 3b.i) are necessary for the system to function. Explanations in ''italics'' give the purpose behind each step. <u>Underlined</u> terms are defined on the right.
-{|
-|-
-|<big>1. Candidates publicly declare their rankings of the other candidates</big>
-|-
-|valign=top|
-:a) '''Before the election, all candidates must strictly rank all other official candidates in order of preference. Equal rankings are not allowed.''' ''These pre-announced preferences allow voters to make informed decisions in step 2; and prevent corrupt vote-selling in step 3, where candidates may only approve others in a way that is consistent with their preferences.''
-|-
-|valign=top|
-:b) ''(optional)'' Candidates may <u>enforce any prior agreements</u> of mutual preferences by changing their own preferences in response to those of others*. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that changing preferences at this point will only make them look untrustworthy, will prefer agree on mutual approvals beforehand.''
-<br>
-<big>2. Voters vote delegated plurality-style votes or non-delegated approval-style votes</big>
-| width = 33% |
-<small><u>'''Enforcing mutual approval agreements'''</u>: If A ranked B higher than B ranked A, then A may respond by lowering B's ranking. B may respond by raising A, and A may then respond by restoring B to the original ranking. If B raised A above C, then C may lower A, but A may not respond. Three rounds of response are all that are allowed. </small>
-|-
-|valign=top|
-:a) ''(optional)'' Ballots list all candidates in order from candidates who submit the <u>most complete</u> rankings of other candidates, to those who submit the least. Where this is a tie, ordering is random. ''This is a slight incentive for candidates to submit a complete ranking in order to appear high on the ballot.'' 
-|valign=top|
-<small><u>'''Most complete'''</u>: Completeness of ranking is scored by how many possible pairs of other candidates contain two candidates at different levels.</small>
-|-
-|valign=top|
-:b) '''Voters may approve one or more candidates, and also have the option to mark "Do not delegate". <u>Delegated votes</u> and initial <u>total approvals</u> are tallied and announced for each candidate.''' ''Announcing full tallies makes step 3 predictable and fair.''
-<br>
-<big>3. Candidates take turns to publicly use their delegated votes, in descending order of delegated votes.</big>
-<br>
-:a) ''(optional)'' There is a one-week period for candidates to analyze and negotiate based on these preliminary results. ''Actually, the optimal strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.''
-|valign=top|
-<small><u>'''Delegated votes'''</u>:The delegated votes for candidate X is the number of ballots that approve only X and do not mark "Do not delegate". X will get a chance to effectively add additional approvals to these votes; or, if X has less than 5% approval, then additional approvals will be added automatically, in order to attain a better result by X's predeclared preferences. 
+# Each voter submits an approval ballot. There is some way (such as an extra write-in slot) to vote for an invalid candidate named "do not delegate".
 
-<u>'''Total approvals'''</u>:The total approvals for candidate X is initially the number of ballots that approve X, including X's delegated ballots. This number increases through the process as other candidates use their delegated ballots to approve X.</small>
-|-
-|valign=top|
-:b) '''Each candidate, in descending order of number of delegated votes, may <u>use some or all of their delegated ballots</u> to approve zero or more other candidates, consistent with their predeclared preferences. That is, they may add a number up to their delegated vote tally to the other candidates' approval tallies, as long as they do not give more to a less-preferred candidate.''' ''If, considering the votes, a candidate can win, they will probably prefer not to approve other candidates. If there are two allied candidates who need to cooperate to win, the one with more approvals has first chance not to approve the other. That way, when it's the weaker candidate's turn, they will no longer have the possibility of winning, so the weaker will approve the stronger.''
-|valign=top|
-<small><u>'''Use their delegated ballots'''</u>: The process by which a candidate effectively adds approvals to the votes delegated to him or her. When, for example, candidate A uses their delegated ballots to approve of B and C, then B and C's approval totals are each increased by A's delegated vote total. When it is a candidate's turn, they may choose to approve of nobody else, for instance if they believe they will win; but this counts as using their delegated votes, and they will not be given another chance to change that decision. When all candidates have used their votes, the election is over.</small>
-|-
-|valign=top|
-::i. If the candidate using their delegated votes has more than 5% approval, '''they may choose which candidates approve on their delegated ballots, <u>consistent with preferences</u>.'''
-|valign=top|
-<small>'''<u>Consistent with preferences</u>'': For example, candidate A may not approve B and not C unless A predeclared a preference for B over C.</small>
-|-
-|valign=top|
-::ii. ''(optional)'' If the candidate using their delegated votes has 5% approvals or less, their delegated ballots are used to <u>automatically approve</u> their preference between the frontrunners. ''Automatic approvals respect predeclared preferences but prevent minor candidates from having discretionary kingmaker power.''
-<br>
-::iii. ''(optional)'' If the candidate is a write-in or got less than 1% direct approvals from voters, they may not use their delegated votes. However, any candidate may approve a write-in, regardless of the predeclared preferences. ''Write-ins do not have a chance to declare or figure in the pre-declared preferences. Candidates with less than 1% are not allowed to use delegated votes to discourage a frivolous proliferation of candidates.''
-|valign=top|
-<small>'''<u>Automatic approvals</u>''': When approvals are assigned automatically for candidate X, they are set to approve as many of their pre-declared preferences as possible without approving both of the two candidates with the highest current approval totals that they prefer differently. (For example, say that X's preferences were for A>B>C>D>E, and the approval totals are 10, 30, 10, 20, and 15 alphabetically. B and D have the highest totals. So X's delegated ballots will be assigned to approve as many candidates as possible without approving both B and D; that is, they will approve A, B, and C.)</small>
-|-
-|valign=top|
-<big>4. When step 3b ends, highest total wins</big>
-|}
+# Any "bullet vote" - that is, a ballot which votes for only one candidate - is considered a "delegable vote" for a candidate. These votes are tallied for each candidate. Of course, any ballots which vote for "do not delegate" or any other invalid write-in are not considered as bullet votes.
 
-=== Notes on rules ===
-(technical issues; moved to talk page)
+# Approval totals for each candidate are also tallied. These preliminary results are announced, along with the number of "delegable votes" each candidate has.
 
-== Example ==
+# There is a brief period - perhaps a week or two - for candidates to analyse and negotiate based on these preliminary results. (Actually, in the broad majority of cases, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.)
 
-{{Tenn_voting_example}}
+# All candidates simultaneously delegate their votes; that is, they choose an N, and add their "delegable vote" total to the approval totals of their top N favorites as announced in step one. They may choose N=0 - that is, not delegate their vote to anyone. They may not choose N=(number of candidates) - that is, delegate their votes to everyone. If they declared a tie in their preferences, they must either delegate to all candidates whom they included in that tie (as well as anyone they ranked above that), or none of them.
 
-In this simplified example, all the residents of each city agree on the rankings of all the other cities, so there would be no reason for anybody to do anything but bullet vote. Memphis has the first option to choose approvals for its delegated votes, and, as the leader, decides to approve noone but itself. Nashville goes second; it is the pairwise champion (Condorcet winner), so it also declines to approve any others. Chatanooga and Knoxville would approve each other and Nashville, to prevent Memphis from winning. Nashville would then be the winner, with 58% approval after delegation.
+# The highest total wins.
 
-Chatanooga could, before the election, not include Nashville in its preference list, hoping to force Nashville to approve it. But in that case Memphis would approve Nashville to prevent Nashville from being forced to hand the election to Chatanooga, and so Nashville would win with an even larger majority. Therefore, Chatanooga will not attempt this.
 
 == Advantages ==
-SODA has advantages for many groups. In fact, most of the advantages would fit in more than one of the categories below, so the division is somewhat arbitrary. Also, on the talk page (click "discussion" above) there are also two "hard sell" SODA pitches for two different audiences, which restate these advantages in more-opinionated terms.
-===For voters===
-# SODA is extremely easy for the voters; in fact, '''no voting system is simpler to vote'''. Plurality, by restricting you to only one vote, also makes it possible to mistakenly "overvote", spoiling your ballot. There is no such way to accidentally invalidate your ballot under SODA. Also, both Plurality and Approval require a conscientious voter to consider strategy and polling status; SODA allows a simple bullet vote to still be strategically as strong as possible, regardless of the candidate standings.
-# Under SODA, there is '''no need for dishonesty''' from individual voters. A voter can safely vote for any candidate that they honestly agree with, without fear of that vote being wasted; or safely vote an honest approval-style ballot, if they do not agree with any candidate's preference order. This is drastically different from plurality, where voters must dishonestly spurn "spoiler" candidates as a matter of course.
-# SODA '''does not require you to trust any politician'''. Any vote delegation is both safe (you can see where your delegated vote may go) and entirely optional. There's no "smoke-filled room"; any voter who dislikes how their delegated vote might be used, can simply choose not to delegate.
 
-===For society (results)===
-# SODA is far '''more likely to arrive at a majority result''' than Plurality (or even IRV). Winners will thus have a clearer mandate. In fact, SODA may be '''more likely to elect the pairwise champion''' (aka Condorcet winner, the candidate who could beat all others one-on-one) than ''any other system'' (except SODA-[[DAC]]). See the technical discussion below for the assumptions that would make this true.
-# SODA would '''increase voter turnout''', leading to better, more-democratic results.
-# However, unexpected, relatively unknown or '''unqualified winners will be as rare or rarer under SODA''' than under Approval or a Condorcet system. In a polarized society, Condorcet or Approval can have such a strong tendency to elect centrists that even unqualified, largely-unknown centrists have an advantage over better-known candidates; SODA will not have such a tendency unless the stronger candidates consciously choose this as a compromise.
+# SODA is extremely easy for the voters; in fact, no voting system is simpler to vote. (Plurality, by restricting you to only one vote, also makes it possible to mistakenly "overvote", spoiling your ballot. There is no such way to accidentally invalidate your ballot under SODA.)
 
-===For society (process)===
-# SODA balances '''voice for minority leaders''' with '''power for majority winners or coalitions'''. In fact, you could say that SODA combines the best of both worlds - the negotiated, everyone-gets-a-voice majority coalitions of parliamentary government, with the decisive, buck-stops-here clear winner of a US-style system.
-# SODA would '''reduce negative campaigns'''. A negative personal attack against opponent A would often just shift votes to another opponent B who would end up sharing them back with A in the delegation round. (In fact, some parties might decide to run two candidates per race, to explicitly take advantage of this phenomenon). Meanwhile, the candidate carrying out the attacks could also suffer if voters saw them as a slimy mudslinger.
-# Like many other voting reforms, SODA would '''reduce the influence of money''' in political campaigns. Plurality, with its overriding need to be a frontrunner, exaggerates the importance of money. Any candidate who's not one of the two best-funded, is almost certainly at best a spoiler, and is thus aggressively ignored by voters and media. SODA in particular, by encouraging meaningful campaigns and get-out-the-vote operations by minor candidates, while still ensuring that the extra turnout those generated would have an effective impact in deciding between the major candidates, would help substitute grassroots people-power for dollar-power in campaigns.
-# SODA is '''easier to count and more fraud-resistant''' than most systems, including IRV. It also can be run on most voting machines, including even old and outdated systems.
+# All the steps of SODA have a clear purpose. Instead of relying on complicated rules to give a good outcome, SODA gives simple tools to the people involved, so that a good outcome is simply the rational result.
 
-===For activists===
-# SODA is arguably '''better than Plurality voting in every way''' (Pareto dominant). Although other systems may offer even-greater advantages over plurality, they also come with certain disadvantages. Those disadvantages may be minor; but they give an opportunity for lobbyists, corrupt politicians, and other reform opponents to attack the reform, and put reform advocates on the defensive. A SODA advocate can devote all their attention to its advantages.
-# SODA would lead to '''less infighting'''. Because it solves the spoiler problem, there's no need for pointless debate between radicals who want to pressure their side and moderates who want to support it. Substantive debate would continue, but with less need for unhelpful acrimony.
-# Because it allows more voices in the debate, SODA would '''support the passage of other reforms''' such as '''campaign finance reform'''. The current two-party system sees these issues, which should be bipartisan, through a partisan lens, crippling their progress. By breaking the two-party monopoly, SODA would open the potential for more cross-partisan alliances and independent support on these matters. (See the first process advantage above. One way that SODA would bring new ideas into the public debate is by giving a better voice to the leaders of smaller parties.)
+# There is no motivation for dishonesty from individual voters. A voter can safely vote for any candidate that they honestly agree with, without fear of that vote being wasted.
 
-===For politicians===
-# SODA should be generally '''acceptable to honest officeholders''', who are winners in a Plurality two-party system. Most of their familiar ways of thinking about the campaign would still work - except that it would reduce negative campaigning. Plurality-style voting still works just fine, and if most votes are for major parties, this system will cleanly allow a major party to win, in many cases without going to the delegation round (especially if the major-party candidates do not pre-announce delegation preferences, thus preventing an extorting minor party from demanding their delegated votes).
-# SODA would make a politician's job '''more fun'''. Less time spent on fundraising (see process advantage #3), fewer attack ads from opponents (see process advantage #2); what's not to like? Sure, nobody would be a politician today without a high tolerance for these problems, but even for politicians, negative ads and the fundraising treadmill have gotten out of hand.
-# SODA '''reduces the threat from unserious candidates'''. Under plurality, even an unqualified candidate can be a spoiler. Under Condorcet or Approval, they can prosper simply because of second-choice support from two polarized camps. In fact, in the latter case, candidates can do ''better'' the ''less'' voters know about them! If there's anything that annoys a serious politician, it's losing to an unqualified cipher. SODA has no such problem, unless one of the candidates with more first-choice votes puts their reputation on the line by explicitly choosing the centrist (in order to avoid something worse), not just once but two times. That's not going to happen for an unknown.
+# Any vote delegation is entirely optional. Any voter who dislikes the idea of their vote being delegated in a "smoke-filled room", need not allow that to happen.
+
+# SODA is far more likely to arrive at a majority result than Plurality (or even IRV).
+
+# Assuming that all voters who choose to delegate their vote agree with the declared preference order of their candidate, and assuming that approval ballots are enough to express the relevant preferences of all voters who do not cast a delegable ballot, then any pairwise champion (Condorcet winner) will be a known, strong equilibrium winner. That means that, if all candidates delegate their votes rationally, no coalition of candidates can elect anybody they all prefer to the natural winner, the candidate who could beat all others one-on-one. (This is simply due to the well-known result that a CW is a [[Strong Nash equilibrium]] winner under Approval.) 
+
+# Leaders of minority factions would have an appropriate voice for their concerns, although power would ultimately reside with any majority coalition which exists.
 
 == Criticism and responses ==
-=== "Too complex"? No; simplest for voters. ===
-While the rules for counting SODA are indeed a bit complex, no other system is simpler for the voters, allowing them to simply vote their favorite and go home confident that their vote has full strategic power.
+=== There are other systems which are better in some ways. ===
 
-=== "Delegation is undemocratic"? No; it's a free choice by voters. ===
-Simple response: if you don't want to delegate, don't delegate. You can still vote for whomever you want.
+This is true. Condorcet, Range Voting, and Median systems (MCA or Bucklin) each have some claim to be the "best voting system". But SODA is the best system which has no downsides versus plurality. All those other systems require more-complicated ballots. All of them require more-complicated, or even dishonest, strategic decisions from the voter, to get the most effective vote.
 
-Disliking delegation is no more a reason to oppose SODA, than disliking chocolate is a reason to oppose candy stores. SODA allows delegation, it doesn't force it.
+So in the end, while any of the systems I mentioned would be, in my opinion, a clear net benefit versus plurality, with SODA you don't need my opinion or any qualifications like "'''net''' benefit". It is simply better, in every way.
 
-Also, since candidate's additional approvals must accord with their pre-declared preferences, there is no opportunity for strategy as long as those preferences were honestly-declared. And the preferences do not represent back-room wheeling and dealing; they are public positions. The various risks of dishonestly declaring one's preference clearly outweigh the unlikely chance that doing so would give some strategic benefit.
+=== Spoilers are still technically possible under SODA ===
+This is true of any system without runoffs. In fact, systems which try too hard to make spoilers impossible, may open the possibility that a candidate who expects to lose the honest vote would trick the system into thinking the winner was a spoiler, thus beating them.
 
-Simple response to a ''politician'' who makes this argument: "You just want the only smoke-filled room to be the one inside your skull." That is, minority factions '''should''' have a seat at the table, as long as everything is done transparently. The two-party system stifles some of the valid concerns of the members of the party coalitions. In SODA, all vote totals, preference orders, and final approvals added to delegated ballots are known; in the end, that's not a smoke-filled room, it's a transparent seat at the table, with a just degree of power which is derived from the people.
+SODA, by providing perfect information, makes it likely that any true pairwise champion will be known as such, and will win.
 
-=== "There are other systems which are better in some ways"? Yes, but unlike them, SODA is better than plurality in ALL ways. ===
+=== Allowing a candidate to delegate your vote could lead corrupt back-room deals, not the voters' will, to determine the outcome ===
+Simple response: if you don't want a candidate to delegate your vote, don't make your vote delegable.
 
-This is true. [[Condorcet]], [[Range Voting]], and Median systems like [[Majority Approval Voting]] (or others: [[Majority Judgment]], [[MCA]], or [[Bucklin]]) each have some claim to be the "best voting system". But SODA is the best system which has no downsides versus plurality. All those other systems require more-complicated ballots. All of them require more-complicated, or even dishonest, strategic decisions from the voter, to get the most effective vote.
+Also, since candidate's delegations must accord with their pre-declared preferences, there no opportunity for strategy as long as those preferences were honestly-declared. And the preferences do not represent back-room wheeling and dealing; they are public positions. The various risks of dishonestly declaring one's preference clearly outweigh the unlikely benefits they'd give.
 
-So in the end, while any of those other systems would be, in my opinion, a clear net benefit versus plurality, with SODA you don't need any qualifications like "'''net''' benefit" or "in my opinion". It is simply better, in every way.
-
-=== "Sounds too much like a parliamentary system, which has caused problems in [Italy / Israel / wherever]"? No, SODA still leaves "buck stops here" responsibility. ===
-
-SODA does involve some parliamentary-style negotiation for a short period after each election. But then it's done, and the winner is in power until the next election. Unstable parliamentary countries, or ones where minority parties have inordinate power, are that way because minority parties can leave the governing coalition at will, triggering new elections. SODA does not have that problem; in many ways, it's really the best of both worlds between a 3-branch system and a parliamentary system.
-
-=== "Why go to the trouble of pre-announced rankings and a second round? Why not just have candidates pre-announce the approvals they will add to their delegated votes?" Because the best compromise is only clear after the votes are tallied. ===
-
-This sounds appealing, but would not work if two similar candidates were in a close race to see which had more first-choice votes, while an opponent stood ready to take advantage if they split the vote (that is, in the Chicken Dilemma, also discussed on the talk page). The system as it stands allows the similar candidates to see, after the votes are counted, which of them deserves to win: the one with the higher approval total. That one will go first and not delegate their votes, and then other one (of necessity) will.
-
-In general, this system, because it provides perfect information on voting totals at the time when delegation is happening, will make strategy obvious. This has the paradoxical result that, as long as most voters agree with their favored candidate's chosen ranking order, this system will in practice be '''more Condorcet compliant than a Condorcet method''' (because strategy could confound a true Condorcet method more often than SODA).
-
-== Criteria Compliance ==
-SODA itself does not satisfy [[monotonicity]] due to a complicated and implausible scenario involving 5 or more candidates. However, a slightly-modified version in which, before the delegated assignments, candidates can self-assign a penalty to be assessed at the end of the delegated assignment round, does. This modified version, MODA, is effectively identical to SODA for any plausible real-world election.
-
-MODA satisfies [[monotonicity]], the [[favorite betrayal criterion]], the [[majority criterion]], and the [[mutual majority criterion]]. Depending on assumptions and definitions, it can pass the [[Condorcet loser criterion]].
-
-It does not satisfy the [[independence of irrelevant alternatives]] criterion in general, but it does if the "irrelevant alternative" is assumed to delegate votes in the same way as any candidate whose delegable votes they supplant. Similarly, it can only pass the [[participation]] and [[consistency]] criteria if it is assumed that candidate delegations do not change. These assumptions are ''not'' realistic, but they do show that the method is in some sense "close to" passing these criteria.
-
-In any case where honest delegation could show a majority Condorcet winner, such delegation forms a strong Nash equilibrium. This shows that in general, strategic refusal to delegate is likely to fail.
-
-=== Condorcet criterion (includes highly technical discussion) ===
-SODA fails the [[Condorcet criterion]], although the majority Condorcet winner over the ranking-augmented ballots is the unique strong, subgame-perfect equilibrium winner. That is to say that, the method would in fact pass the ''majority'' Condorcet winner criterion, assuming the following:
-*''Candidates are honest'' in their pre-election rankings. This could be because they are innately unwilling to be dishonest, because they are unable to calculate a useful dishonest strategy, or, most likely, because they fear dishonesty would lose them delegated votes. That is, voters who disagreed with the dishonest rankings might vote approval-style instead of delegating, and voters who perceived the rankings as dishonest might thereby value the candidate less.
-*''Candidates are rationally strategic'' in sharing their delegated vote. Since this process is sequential, game theory states that there is always a subgame-perfect Nash equilibrium, which is always unique except in some cases of tied preferences.
-*''Voters'' are rationally strategic or otherwise able to use the system to ''express all relevant preferences''. That is to say, all voters fall into one of two groups: those who agree with their favored candidate's declared preference order and thus can fully express that by delegating their vote; or those who disagree with their favored candidate's preferences, but are aware of who the Condorcet winner is, and are able to use the approval-style ballot to express their preference between the CW and all second-place candidates. "Second place" means the Smith set if the Condorcet winner were removed from the election; thus, for this assumption to hold, each voter must prefer the CW to all members of this second-place Smith set or vice versa. That's obviously always true if there is a single second-place CW.
-*''Delegated votes are honest''. That is, voters do not delegate their vote to a candidate whom they disagree with. Though such a strategy might work in limited circumstances (when a candidate with exactly the right preferences was available to use to create a Condorcet cycle which didn't include themself), it would be both more trusting and risky than the average strategic betrayal, and also more cold-bloodedly dishonest. To exaggerate the case: how often are psychopaths good at trusting people?
-The assumptions above would probably not strictly hold true in a real-life election, but they usually would be close enough to ensure that the system does elect the CW.
-
-SODA does even better than this if there are only 3 candidates, or if the Condorcet winner goes first in sharing delegated votes, or if there are 4 candidates and the CW goes second. In any of those circumstances, under the first three assumptions above (but without needing the last one), it passes the ''Condorcet'' criterion, not just the majority Condorcet criterion. The important difference between the Condorcet criterion (anyone who beats all others pairwise must win) and the majority Condorcet criterion (anyone who beats all others pairwise by a strict majority must win) is that the former is clone-proof while the latter is not. Thus, with few enough strong candidates, SODA also passes the [[independence of clones criterion]]. 
-
-I believe, though have not proved, that the prior paragraph would always hold regardless of the number of candidates, if the candidates were to add approvals to delegated votes in the [[DAC]] order instead of simply in order of approval score. This is not part of the definition of the method for simplicity's sake.
-
-Note that, although the circumstances where SODA passes the Condorcet criterion are hemmed in by assumptions, when it does pass, it does so in a perfectly strategy-proof sense. That is ''not'' true of any actual Condorcet system (that is, any system which universally passes the Condorcet criterion). Therefore, for rationally-strategic voters who believe and are correct that the above assumptions are likely to practically hold, '''SODA may in practice pass the Condorcet criterion more often than a Condorcet system'''.
-
-== SODA-PR (obsolete; see [[PAL representation]]) ==
-(Section obsolete; for a proportional representation system based on SODA-like ideas, with several unique advantages, see [[PAL representation]].)
-
-==Compatibility with the US electoral college==
-A state could adopt SODA for assigning its electors in the electoral college. If the state did not wish to dilute its voting power, it could adopt SODA, conditional on a certain number of total electoral votes being assigned in a non-winner-take-all fashion.
-
-The way to do this would be to use a divisor-based Proportional Representation process to assign electors between delegated votes for each of the candidates and "undelegated approval electors". 
-
-Each candidate's electors would be sworn to vote as directed by that candidate (not necessarily for that candidate), if consistent with that candidate's pre-approvals. 
-
-Each "undelegated approval elector" would know the statewide non-delegated approval total, and the total of number of affiliated electors throughout the EC, for each candidate. Other "approval electors" would count as fractionally affiliated based on their known approval totals. These electors would be sworn to vote for whichever of the two candidates with the most nationwide electors had the highest statewide undelegated approval total. They would be chosen by the candidate for whom they were sworn to vote. 
-[[Category:Single-winner voting methods]]
+== Technical discussion ==
+How can spoilers still be possible under SODA if the CW has a known, strong equilibrium in their favor? Because it is not necessarily unique. Imagine two, similar candidates in a natural majority coalition, running against one slightly-minority candidate. One of the two majority candidates is almost certain to be the CW, but if the other similar candidate can make a credible threat to withold aproval, and the CW would rather cede to this blackmail than see the minority candidate win, then the non-CW also has a (smaller) strong equilibrium in their favor.
