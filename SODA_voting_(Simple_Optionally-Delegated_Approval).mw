@@ -14,17 +14,11 @@ Essentially, you vote for any number of candidates (as with approval); but you m
 == Advantages ==
 
 # SODA is extremely easy for the voters; in fact, no voting system is simpler to vote. (Plurality, by restricting you to only one vote, also makes it possible to mistakenly "overvote", spoiling your ballot. There is no such way to accidentally invalidate your ballot under SODA.)
-
 # All the steps of SODA have a clear purpose. Instead of relying on complicated rules to give a good outcome, SODA gives simple tools to the people involved, so that a good outcome is simply the rational result.
-
 # There is no motivation for dishonesty from individual voters. A voter can safely vote for any candidate that they honestly agree with, without fear of that vote being wasted.
-
 # Any vote delegation is entirely optional. Any voter who dislikes the idea of their vote being delegated in a "smoke-filled room", need not allow that to happen.
-
 # SODA is far more likely to arrive at a majority result than Plurality (or even IRV).
-
 # Assuming that all voters who choose to delegate their vote agree with the declared preference order of their candidate, and assuming that approval ballots are enough to express the relevant preferences of all voters who do not cast a delegable ballot, then any pairwise champion (Condorcet winner) will be a known, strong equilibrium winner. That means that, if all candidates delegate their votes rationally, no coalition of candidates can elect anybody they all prefer to the natural winner, the candidate who could beat all others one-on-one. (This is simply due to the well-known result that a CW is a [[Strong Nash equilibrium]] winner under Approval.) 
-
 # Leaders of minority factions would have an appropriate voice for their concerns, although power would ultimately reside with any majority coalition which exists.
 
 == Criticism and responses ==
