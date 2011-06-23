@@ -11,6 +11,12 @@ Essentially, you vote for any number of candidates (as with approval); but you m
 # All candidates simultaneously delegate their votes; that is, they choose an N, and add their "delegable vote" total to the approval totals of their top N favorites as announced in step one. They may choose N=0 - that is, not delegate their vote to anyone. They may not choose N=(number of candidates) - that is, delegate their votes to everyone. If they declared a tie in their preferences, they must either delegate to all candidates whom they included in that tie (as well as anyone they ranked above that), or none of them.
 # The highest total wins.
 
+== Example ==
+
+{{Tenn_voting_example}}
+
+In this simplified example, all the residents of each city agree on the rankings of all the other cities, so there would be no reason for anybody to do anything but bullet vote. Nashville, the pairwise champion (Condorcet winner) would have no reason to delegate any of its votes. Chatanooga and Knoxville would delegate to each other and to Nashville, to prevent Memphis from winning. Nashville would then be the winner, with 58% approval after delegation.
+
 == Advantages ==
 
 # SODA is extremely easy for the voters; in fact, no voting system is simpler to vote. (Plurality, by restricting you to only one vote, also makes it possible to mistakenly "overvote", spoiling your ballot. There is no such way to accidentally invalidate your ballot under SODA.)
