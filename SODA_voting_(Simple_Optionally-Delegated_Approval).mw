@@ -40,3 +40,5 @@ Also, since candidate's delegations must accord with their pre-declared preferen
 
 == Technical discussion ==
 How can spoilers still be possible under SODA if the CW has a known, strong equilibrium in their favor? Because it is not necessarily unique. Imagine two, similar candidates in a natural majority coalition, running against one slightly-minority candidate. One of the two majority candidates is almost certain to be the CW, but if the other similar candidate can make a credible threat to withold aproval, and the CW would rather cede to this blackmail than see the minority candidate win, then the non-CW also has a (smaller) strong equilibrium in their favor.
+
+[[Category:Single-winner voting systems]]
