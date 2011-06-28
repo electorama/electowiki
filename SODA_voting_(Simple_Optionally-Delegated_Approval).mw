@@ -46,6 +46,12 @@ Simple response: if you don't want a candidate to delegate your vote, don't make
 
 Also, since candidate's delegations must accord with their pre-declared preferences, there no opportunity for strategy as long as those preferences were honestly-declared. And the preferences do not represent back-room wheeling and dealing; they are public positions. The various risks of dishonestly declaring one's preference clearly outweigh the unlikely benefits they'd give.
 
+=== "Why go to the trouble of pre-announced rankings and a second round? Why not just have candidates pre-announce their delegated approvals?" ===
+
+This sounds appealing, but would not work if two similar candidates were in a close race to see which had more first-choice votes. The system as it stands allows them to see, after the votes are counted, which of them deserves to win. That one will not delegate their votes, and the other one (of necessity) will.
+
+In general, this system, because it provides perfect information on voting totals at the time when delegation is happening, will make strategy obvious. (The pairwise champion/Condorcet winner is a strong Nash equilibrium; and even if there are 3 or 4 candidates in the Smith set, there is still a unique Coalition Proof Nash Equilibrium). This has the paradoxical result that, as long as few voters disagree with their favored candidate's ordering (or as long as there are minor "delegator-only" candidates for every preference ordering of the majors which is held by a significant number of voters), this system will in practice be '''more Condorcet compliant than a Condorcet method''' (because strategy could confound a true Condorcet method, but delegation strategy in SODA is strongly attracted by a correct equilibrium).
+
 == Technical discussion ==
 How can spoilers still be possible under SODA if the CW has a known, strong equilibrium in their favor? Because it is not necessarily unique. Imagine two, similar candidates in a natural majority coalition, running against one slightly-minority candidate. One of the two majority candidates is almost certain to be the CW, but if the other similar candidate can make a credible threat to withold aproval, and the CW would rather cede to this blackmail than see the minority candidate win, then the non-CW also has a (smaller) strong equilibrium in their favor.
 
