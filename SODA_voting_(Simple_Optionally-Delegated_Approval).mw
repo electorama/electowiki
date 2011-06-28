@@ -60,6 +60,32 @@ This sounds appealing, but would not work if two similar candidates were in a cl
 
 In general, this system, because it provides perfect information on voting totals at the time when delegation is happening, will make strategy obvious. (The pairwise champion/Condorcet winner is a strong Nash equilibrium; and even if there are 3 or 4 candidates in the Smith set, there is still a unique Coalition Proof Nash Equilibrium). This has the paradoxical result that, as long as few voters disagree with their favored candidate's ordering (or as long as there are minor "delegator-only" candidates for every preference ordering of the majors which is held by a significant number of voters), this system will in practice be '''more Condorcet compliant than a Condorcet method''' (because strategy could confound a true Condorcet method, but delegation strategy in SODA is strongly attracted by a correct equilibrium).
 
+== Sales pitches ==
+
+I'm going to abandon the neutral voice and talk as myself. If you ask around on the Elections Methods mailing list, you can find me; I've posted almost the same text below as a message there.
+
+One of SODA's advantages that I see is that, more than any other system I can think of, it is compatible with both a two-party and a multiparty system.
+
+While many of us are convinced that, in the long run, a multiparty system is healthier, we should not neglect the importance of a voting system being compatible with two parties. Current politicians, winners under a two-party system, are in many cases the gatekeepers of reform. Yes, that's largely a case of the fox guarding the henhouse, but it's also a fact of life.
+
+Here are the pitches one could make. Both of those pitches are feeding on the sicknesses inherent in a two-party duopoly. But that doesn't mean that SODA would feed those sicknesses or make them worse; I'm just using those sicknesses to make an argument that I think is fully justified. Remember, SODA is fully compatible with a multiparty world; in fact, as I've argued, it is in an important sense more Condorcet compliant than a Condorcet system.
+
+=== For a Democrat or Republican ===
+
+So, why is SODA compatible with two parties? Here's the kind of pitch you could make to a Republican or Democrat. Although I'd definitely include less disingenuous trash talk about other good systems or about third parties or independents, I'm including it here to show the kind of arguments that you could make:
+
+"SODA encourages most voters to vote for a single candidate, just as they do today. So an average joe, who wants to put as little thought as possible into his ballot, will still be voting for one of the major parties. With the large majority of ballots in the same two-party split as today, the minor parties will have essentially no choice but to delegate their vote to one of the majors, or relegate themselves to irrelevance. So all this will do is remove that (Libertarian/Green) thorn from your side.
+
+"Any other system is more of a danger to you. You ever heard of a Condorcet Winner? No? Well, most systems try to elect a Condorcet Winner, and lemme tell you something: H. Ross Perot, that's what a Condorcet winner is. Somebody who comes up in the center, in between the two parties, and it doesn't matter how incompetent or unexperienced he is, because the Democratic voters prefer him to a Republican, and the Republican voters prefer him to a Democrat, so it doesn't matter, he could be two wheels short of a tricycle, there's still no way to beat him. Well, look at how SODA handles that. The Democrat and the Republican, they don't announce a preference order, so it's pointless for him to ask them to delegate their votes to him - they can't. So if the Perot guy wants to be in the game and delegate to someone - whoever he pre-announced before the election, if anybody - he can do that; if he wants to be out of the game, he doesn't announce a delegation order up front, so he either wins or loses on his own. In the first case, he's just a minor candidate, like a Green or a Libertarian, and you don't have to worry about him any more than about them. In the second case, he's irrelevant, at worst a spoiler, just as under plurality. So either way, you're at least as well-off as you are today."
+
+=== For a third-party voter ===
+
+OK, maybe I went a little overboard. So here's the pitch I'd make to a third-party supporter to balance it out.
+
+"What do you want, in the end? People like you are in a minority, and I'm sure you realize that you won't take over the world overnight. So you want a fair hearing, you want a seat at the table. Most voting systems are just selling you dreams. One day, they say, you're going to convince a majority to join your team, and on that glorious day your team's gonna be in charge. How well has that worked for the Republicans and the Democrats? How much important change do you see when the pendulum swings back between the two of them? Not enough. The truth is, by the time you sway a majority, your big ideas are going to be watered down.
+
+"But there's another option. You can keep having big ideas, and just have a system that doesn't shut you out of the room. There are a lot, a lot of people who aren't fully satisfied with 'their' party, who are looking for another option. Take off their two-party shackles, let them safely vote for someone else, and they'll jump at the chance. And there you will be, with 10, 15, 25% of the vote. No, that won't be enough to win, but it will darn well be enough to get some respect, to get your ideas a fair hearing. And if the major party supposedly on 'your' side doesn't listen, you will have the power to take those votes and go home. You know and I know that major party politicians, they call themselves leaders, but what they really are is cowards. When you're sitting on a double-digit pile of votes, they will listen to you, trust me."
+
 == Technical note ==
 How can spoilers still be possible under SODA if the CW has a known, strong equilibrium in their favor? Because it is not necessarily unique. Imagine two, similar candidates in a natural majority coalition, running against one slightly-minority candidate. One of the two majority candidates is almost certain to be the CW, but if the other similar candidate can make a credible threat to withold aproval, and the CW would rather cede to this blackmail than see the minority candidate win, then the non-CW also has a (smaller) strong equilibrium in their favor.
 
