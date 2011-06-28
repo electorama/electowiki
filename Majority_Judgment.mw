@@ -1,0 +1,199 @@
+'''Majority Judgment''' is a single-winner [[voting system]] proposed by Michel Balinski and Rida Laraki. Voters freely grade each candidate in one of several named ranks, for instance from "excellent" to "bad", and the candidate with the highest [[median]] grade is the winner. If more than one candidate has the same median grade, a tiebreaker is used which sees how "broad" that median grade is. It can be considered as a form of [[Bucklin voting]] which allows equal ranks.
+
+==Voting process==
+Voters are allowed rated ballots, on which they may assign a grade or judgement to each candidate. Badinski and Laraki suggest six grading levels, from "Excellent" to "To Reject". Multiple candidates may be given the same grade if the voter desires.
+
+The median grade for each candidate is found, for instance by sorting their list of grades and finding the middle one. If the middle falls between two different grades, the lower of the two is used.
+
+The candidate with the highest median grade wins. If several candidates share the higest median grade, all other candidates are eliminated. Then, one copy of that grade is removed from each remaining candidate's list of grades, and the new median is found, until an unambiguous winner is found.
+
+== Satisfied and failed criteria ==
+Majority Judgment voting satisfies the [[majority criterion]] for rated ballots, the [[mutual majority criterion]], the [[monotonicity criterion]], [[reversal symmetry]], and [[later-no-harm|later-no-help]]. Assuming that ratings are given independently of other candidates, it satisfies the [[independence of clones criterion]] and the [[independence of irrelevant alternatives|independence of irrelevant alternatives criterion]]<ref>Badinski and Laraki, ''Majority Judgment'', p. 217</ref> - although this latter criterion is incompatible with the majority criterion if voters shift their judgments in order to express their [[preferential voting|preferences]] between the available candidates.
+
+It fails the [[Condorcet criterion]],<ref>Strategically in the [[strong Nash equilibrium]], MJ passes the Condorcet criterion.</ref> [[later-no-harm]],<ref>MJ provides a weaker guarantee similar to LNH: rating another candidate at or below your preferred winner's median rating (as opposed to your own rating for the winner) cannot harm the winner.</ref> [[consistency criterion for voting systems|consistency]], the [[Condorcet method|Condorcet loser criterion]],<ref>Nevertheless, it passes a slightly weakened version, the majority condorcet loser criterion, in which all defeats are by an absolute majority (for instance, if there aren't equal rankings).</ref> and the [[participation criterion]].<ref>It can only fail the participation criterion when, among other conditions, the new ballot rates both of the candidates in question on the same side of the winning median, and the prior distribution of ratings is more sharply-peaked or irregular for one of the candidates.</ref> It also fails the ranked or preferential [[majority criterion]], which is incompatible with the passed criterion [[independence of irrelevant alternatives]].
+
+==Example application==
+{{Tenn voting example}}
+
+If there were four ratings named "Excellent", "Good", "Fair", and "Poor", and each voter assigned four different ratings to the four cities, then the sorted scores would be as follows: 
+
+
+<table>
+
+<tr>
+<td align=right>City</td>
+<td>
+<table cellpadding=0 width=600 border=0 cellspacing=0>
+<tr>
+<td width=49%>&nbsp;</td>
+<td width=2% textalign=center>\/</td>
+<td width=49%>Median point</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td align=right>Nashville</td>
+<td>
+<table cellpadding=0 width=600 border=0 cellspacing=0>
+<tr>
+<td bgcolor=green width=26%>&nbsp;</td>
+<td bgcolor=YellowGreen width=42%></td>
+<td bgcolor=Gold width=32%></td>
+<td bgcolor=red width=0%></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td align=right>Chattanooga</td>
+<td>
+<table cellpadding=0 width=600 border=0 cellspacing=0>
+<tr>
+<td bgcolor=green width=15%>&nbsp;</td>
+<td bgcolor=YellowGreen width=43%></td>
+<td bgcolor=Gold width=42%></td>
+<td bgcolor=red width=0%></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td align=right>Knoxville</td>
+<td>
+<table cellpadding=0 width=600 border=0 cellspacing=0>
+<tr>
+<td bgcolor=green width=17%>&nbsp;</td>
+<td bgcolor=YellowGreen width=15%></td>
+<td bgcolor=Gold width=26%></td>
+<td bgcolor=red width=42%></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td align=right>Memphis</td>
+<td>
+<table cellpadding=0 width=600 border=0 cellspacing=0>
+<tr>
+<td bgcolor=green width=42%>&nbsp;</td>
+<td bgcolor=YellowGreen width=0%></td>
+<td bgcolor=Gold width=0%></td>
+<td bgcolor=red width=58%></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>
+<table cellpadding=1 width=600 border=0 cellspacing=1>
+<tr>
+<td width=25%>&nbsp;</td>
+<td bgcolor=green>&nbsp;</td>
+<td>&nbsp;Exellent&nbsp;&nbsp;</td>
+<td bgcolor=YellowGreen>&nbsp;</td>
+<td>&nbsp;Good&nbsp;&nbsp;</td>
+<td bgcolor=Gold>&nbsp;</td>
+<td>&nbsp;Fair&nbsp;&nbsp;</td>
+<td bgcolor=red>&nbsp;</td>
+<td>&nbsp;Poor&nbsp;&nbsp;</td>
+<td width=50%>&nbsp;</td>
+</tr>
+</table>
+</td>
+
+</tr>
+
+</table>
+
+The medians for Nashville and Chatanooga would be "Good"; for Knoxville, "Fair"; and for Memphis, "Poor". Nashville and Chatanooga are tied, so "Good" ratings would be removed from both. After removing 16% of the votes from each, Chatanooga's median would round down to "Fair", while Nashville would remain at "Good"<ref>After removal, Chatanooga would have 42% of the initial electorate at "Fair", 27% "Good", and 15% "Excellent", while Nashville would have 32% "Fair", 26% "Good", and 26% "Excellent"</ref> and so '''Nashville''' would win.
+
+<table>
+
+<tr>
+<td align=right>City</td>
+<td>
+<table cellpadding=0 width=600 border=0 cellspacing=0>
+<tr>
+<td width=49%>&nbsp;</td>
+<td width=2% textalign=center>\/</td>
+<td width=49%>Median point</td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td align=right>Nashville</td>
+<td>
+<table cellpadding=0 width=600 border=0 cellspacing=0>
+<tr>
+<td bgcolor=gray width=8%>&nbsp;</td>
+<td bgcolor=green width=26%>&nbsp;</td>
+<td bgcolor=YellowGreen width=26%></td>
+<td bgcolor=Gold width=32%></td>
+<td bgcolor=gray width=8%></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td align=right>Chattanooga</td>
+<td>
+<table cellpadding=0 width=600 border=0 cellspacing=0>
+<tr>
+<td bgcolor=gray width=8%></td>
+<td bgcolor=green width=15%>&nbsp;</td>
+<td bgcolor=YellowGreen width=27%></td>
+<td bgcolor=Gold width=42%></td>
+<td bgcolor=gray width=8%></td>
+</tr>
+</table>
+</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+
+<tr>
+<td>&nbsp;</td>
+<td>
+<table cellpadding=1 width=600 border=0 cellspacing=1>
+<tr>
+<td width=20%>&nbsp;</td>
+<td bgcolor=gray>&nbsp;</td>
+<td>&nbsp;Removed&nbsp;ratings&nbsp;(sorted&nbsp;to&nbsp;both&nbsp;ends&nbsp;evenly&nbsp;for&nbsp;easy&nbsp;comparison&nbsp;of&nbsp;medians&nbsp;with&nbsp;above).</td>
+<td width=20%>&nbsp;</td>
+</tr>
+</table>
+</td>
+</table>
+
+==See also==
+* [[List of democracy and elections-related topics]]
+* [[Voting system]]
+== Notes ==
+{{Reflist}}
+
+== References ==
+*Balinski, Michel, and Laraki, Rida (2010). ''Majority Judgment: Measuring, Ranking, and Electing'', MIT Press
+
+{{DEFAULTSORT:Bucklin Voting}}
+[[Category:Non-proportional multi-winner electoral systems]]
+[[Category:Single winner electoral systems]]
+[[Category:Preferential electoral systems]]
+[[Category:Monotonic electoral systems]]
