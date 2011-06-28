@@ -13,7 +13,7 @@ Essentially, you vote for any number of candidates (as with approval); but you m
 # The highest total wins.
 
 === Optional rules ===
-==== Prevent sliver-candidates from having kingmaker power ===
+==== Prevent sliver candidates from having kingmaker power ====
 
 Optional rule 4.5 (between 4 and 5): If any candidate has less than 5% (of the total votes) as delegable votes, and is not one of the top two in total votes, then those votes are automatically delegated to the first candidate on their approval list who has more than 5% delegable votes or more than 20% total votes. They will be further delegated to the largest sequence from their original candidate's preference order which is contained in their receiving candidate's delegations. So if they originally went to A who preferred alphabetically, then and they're passed to D who delegates to BCEGH, they'll end up approving ABCDE. This rule prevents giving excessive kingmaker power to a tiny faction. Note that all delegation is still non-exclusive, approval-style.
 
