@@ -28,9 +28,9 @@ Optional alternate rule 8: it would be possible, if there were multiple candidat
 
 {{Tenn_voting_example}}
 
-In this simplified example, all the residents of each city agree on the rankings of all the other cities, so there would be no reason for anybody to do anything but bullet vote. Nashville, the pairwise champion (Condorcet winner) would have no reason to delegate any of its votes. Chatanooga and Knoxville would delegate to each other and to Nashville, to prevent Memphis from winning. Nashville would then be the winner, with 58% approval after delegation.
+In this simplified example, all the residents of each city agree on the rankings of all the other cities, so there would be no reason for anybody to do anything but bullet vote. Memphis has the first option to delegate, and, as the leader, decides not to. Nashville goes second; it is the pairwise champion (Condorcet winner), so it also declines to delegate any of its votes. Chatanooga and Knoxville would delegate to each other and to Nashville, to prevent Memphis from winning. Nashville would then be the winner, with 58% approval after delegation.
 
-Chatanooga could threaten not to delegate its votes to Nashville, hoping to force Nashville to delegate to it. But then Memphis would delegate to Nashville to prevent this from happening, and Nashville would win with an even larger majority, so Chatanooga will not attempt this.
+Chatanooga could, before the election, not include Nashville in its preference list, hoping to force Nashville to delegate to it. But in that case Memphis would delegate to Nashville to prevent Nashville from being forced to hand the election to Chatanooga, and Nashville would win with an even larger majority. Therefore, Chatanooga will not attempt this.
 
 == Advantages ==
 
