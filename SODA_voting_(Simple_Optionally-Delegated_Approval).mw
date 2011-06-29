@@ -94,11 +94,4 @@ OK, maybe I went a little overboard. So here's the pitch I'd make to a third-par
 
 "But there's another option. You can keep having big ideas, and just have a system that doesn't shut you out of the room. There are a lot, a lot of people who aren't fully satisfied with 'their' party, who are looking for another option. Take off their two-party shackles, let them safely vote for someone else, and they'll jump at the chance. And there you will be, with 10, 15, 25% of the vote. No, that won't be enough to win, but it will darn well be enough to get some respect, to get your ideas a fair hearing. And if the major party supposedly on 'your' side doesn't listen, you will have the power to take those votes and go home. You know and I know that major party politicians, they call themselves leaders, but what they really are is cowards. When you're sitting on a double-digit pile of votes, they will listen to you, trust me."
 
-== Technical note ==
-How can spoilers still be possible under SODA if the CW has a known, strong equilibrium in their favor? Because it is not necessarily unique. Imagine two, similar candidates in a natural majority coalition, running against one slightly-minority candidate. One of the two majority candidates is almost certain to be the CW, but if the other similar candidate can make a credible threat to withold aproval, and the CW would rather cede to this blackmail than see the minority candidate win, then the non-CW also has a (smaller) strong equilibrium in their favor.
-
-This situation could only arise if the second candidate could "win the game of chicken", convincing the CW to extend delegated approval to them. Since the CW has the natural advantage in this game, the non-CW could only prevail if they were known not to care very much about who won if they didn't. If voters knew this about them, then their own voters could choose to explicitly approve the CW. Thus, on the whole, it is likely that SODA would get the "right" result even in this case.
-
-(Note that all other single-round single-winner systems suffer either from some spoiler problem or from some converse problem of teaming, which is usually worse.)
-
 [[Category:Single-winner voting systems]]
