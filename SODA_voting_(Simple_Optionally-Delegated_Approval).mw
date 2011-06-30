@@ -24,6 +24,9 @@ This rule would help make this system more attractive to major-party politicians
 ==== More-sophisticated final win criterion ====
 Optional alternate rule 8: it would be possible, if there were multiple candidates with an absolute majority at this point, to choose the one of them with the highest initial total. That would be equivalent to considering the delegated votes as middle-rated votes in [[Majority Judgment]]. However, this extra complication would matter so rarely that it is not worth it.
 
+==== More forgiving handling of write-in candidates ====
+Optional change to step 1: Write-in candidates could receive delegated votes from any candidate, not just one who had ranked them up-front. They would still not be allowed to delegate their own votes unless they had submitted an up-front ranking, just as all other candidates.
+
 == Example ==
 
 {{Tenn_voting_example}}
