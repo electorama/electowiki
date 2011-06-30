@@ -1,4 +1,4 @@
-Simple Optional Delegated Approval (SODA) is a single-winner system inspired by [[approval voting]] and [[asset voting]]. It is arguably [[Pareto dominant]] over these systems (at least, as used for occasional elections), which in turn are both (separately) pareto dominant over plurality; that is, it offers only advantages, and no disadvantages, when compared to approval, occasional asset, or plurality. This makes it an excellent choice as a practical voting reform proposal, as you can easily and honestly refute any argument against it. (There are many systems which are arguably better than SODA in some way, but all are also arguably worse in some other way.)
+Simple Optionally-Delegated Approval (SODA) is a single-winner system inspired by [[approval voting]] and [[asset voting]]. It is arguably [[Pareto dominant]] over these systems (at least, as used for occasional elections), which in turn are both (separately) pareto dominant over plurality; that is, it offers only advantages, and no disadvantages, when compared to approval, occasional asset, or plurality. This makes it an excellent choice as a practical voting reform proposal, as you can easily and honestly refute any argument against it. (There are many systems which are arguably better than SODA in some way, but all are also arguably worse in some other way.)
 
 == Procedure ==
 Essentially, you vote for any number of candidates (as with approval); but you may also decide to delegate your ballot to your favorite candidate. Top approval wins. The full procedure is:
@@ -38,6 +38,14 @@ Optional change to steps 1 and 7: Candidates would not rank declared write-ins. 
 In this simplified example, all the residents of each city agree on the rankings of all the other cities, so there would be no reason for anybody to do anything but bullet vote. Memphis has the first option to delegate, and, as the leader, decides not to. Nashville goes second; it is the pairwise champion (Condorcet winner), so it also declines to delegate any of its votes. Chatanooga and Knoxville would delegate to each other and to Nashville, to prevent Memphis from winning. Nashville would then be the winner, with 58% approval after delegation.
 
 Chatanooga could, before the election, not include Nashville in its preference list, hoping to force Nashville to delegate to it. But in that case Memphis would delegate to Nashville to prevent Nashville from being forced to hand the election to Chatanooga, and so Nashville would win with an even larger majority. Therefore, Chatanooga will not attempt this.
+
+== Criteria Compliance ==
+
+SODA satisfies [[monotonicity]], the [[majority criterion]], the [[mutual majority criterion]], the [[independence of clones criterion]]. Depending on assumptions and definitions, it can pass the [[Condorcet loser criterion]].
+
+It does not satisfy the [[independence of irrelevant alternatives]] criterion in general, but it does if the "irrelevant alternative" is assumed to delegate votes in the same way as any candidate whose delegable votes they supplant. Similarly, it can only pass the [[participation]] and [[consistency]] criteria if it is assumed that candidate delegations do not change. These assumptions are ''not'' realistic, but they do show that the method is in some sense "close to" passing these criteria.
+
+It fails the [[Condorcet criterion]], although the Condorcet winner over the ranking-augmented ballots is the unique strong equilibrium winner. That is to say that, under the realistic but not inviolable assumptions that candidates are honest in their pre-election rankings (not innately, but in because dishonesty would lose them votes) and strategic in their actions, and that the voters are able to use the system to express all relevant preferences, the method would in fact pass.
 
 == Advantages ==
 
