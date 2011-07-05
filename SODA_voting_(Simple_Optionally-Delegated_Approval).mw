@@ -2,6 +2,8 @@ Simple Optionally-Delegated Approval (SODA) is a single-winner system inspired b
 
 == Procedure ==
 Essentially, you vote for any number of candidates (as with approval); but you may also decide to delegate your ballot to your favorite candidate. Top approval wins. The full procedure is:
+
+
 '''1. Candidates publicly declare their delegation order'''
 
 A) Before the election, all candidates must rank the other candidates (including declared write-ins) in order of preference. Equal rankings and truncation are allowed. The candidate's rankings are all made public. Later, in the "delegation" step, any delegation from one candidate must be consistent with that candidate's rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms". 
