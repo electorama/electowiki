@@ -2,34 +2,32 @@ Simple Optionally-Delegated Approval (SODA) is a single-winner system inspired b
 
 == Procedure ==
 Essentially, you vote for any number of candidates (as with approval); but you may also decide to delegate your ballot to your favorite candidate. Top approval wins. The full procedure is:
-'''Candidates publicly declare their delegation order'''
+'''1. Candidates publicly declare their delegation order'''
 
-1 Before the election, all candidates must rank the other candidates (including declared write-ins) in order of preference. Equal rankings and truncation are allowed. The candidate's rankings are all made public. Later, in the "delegation" step, any delegation from one candidate must be consistent with that candidate's rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms". 
+A) Before the election, all candidates must rank the other candidates (including declared write-ins) in order of preference. Equal rankings and truncation are allowed. The candidate's rankings are all made public. Later, in the "delegation" step, any delegation from one candidate must be consistent with that candidate's rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms". 
 
-'''Voters vote delegable plurality-style votes or non-delegable approval-style votes'''
+'''2. Voters vote delegable plurality-style votes or non-delegable approval-style votes'''
 
-2 Each voter submits an approval ballot. There is some way (such as an extra write-in slot) to vote for an invalid candidate named "do not delegate".
+A) Each voter submits an approval ballot. There is some way (such as an extra write-in slot) to vote for an invalid candidate named "do not delegate".
 
-3 Any "bullet vote" - that is, a ballot which votes for only one candidate - is considered a "delegable vote" for a candidate. These votes are tallied for each candidate. Of course, any ballots which vote for "do not delegate" or any other invalid write-in are not considered as bullet votes.
+B) Any "bullet vote" - that is, a ballot which votes for only one candidate - is considered a "delegable vote" for a candidate. These votes are tallied for each candidate. Of course, any ballots which vote for "do not delegate" or any other invalid write-in are not considered as bullet votes.
 
-4 Approval totals for each candidate are also tallied. These preliminary results are announced, along with the number of "delegable votes" each candidate has.
+C) Approval totals for each candidate are also tallied. These preliminary results are announced, along with the number of "delegable votes" each candidate has.
 
-5 If any candidate has an absolute majority at this point, or cannot possibly be beaten by any other candidate using the delegable votes and candidate rankings available, then they win immediately.
+D) If any candidate has an absolute majority at this point, or cannot possibly be beaten by any other candidate using the delegable votes and candidate rankings available, then they win immediately.
 
-'''Candidates delegate their delegable votes according with their delegation order'''
+'''3. Candidates delegate their delegable votes according with their delegation order'''
 
-6 There is a brief period - perhaps a week - for candidates to analyse and negotiate based on these preliminary results. (Actually, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.)
+A) There is a brief period - perhaps a week - for candidates to analyse and negotiate based on these preliminary results. (Actually, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.)
 
-7 All candidates, in descending order of the number of delegable votes they have, publicly delegate their votes; that is, they choose a number N, and their "delegable vote" total is added to the approval totals of their top N favorites as announced in step one. They may choose N=0 - that is, not delegate their vote to anyone. They may not choose N=(number of candidates) - that is, delegate their votes to everyone. If they declared a tie in their preferences, they must either delegate to all candidates whom they included in that tie (as well as anyone they ranked above that), or none of them. (Note: Doing this in descending order prevents a weaker candidate from making an ultimatum to a stronger candidate, and thus strengthens the strategic equilibrium of any pairwise champion there is.)
+B) All candidates, in descending order of the number of delegable votes they have, publicly delegate their votes; that is, they choose a number N, and their "delegable vote" total is added to the approval totals of their top N favorites as announced in step one. They may choose N=0 - that is, not delegate their vote to anyone. They may not choose N=(number of candidates) - that is, delegate their votes to everyone. If they declared a tie in their preferences, they must either delegate to all candidates whom they included in that tie (as well as anyone they ranked above that), or none of them. (Note: Doing this in descending order prevents a weaker candidate from making an ultimatum to a stronger candidate, and thus strengthens the strategic equilibrium of any pairwise champion there is.)
 
-'''Highest total wins'''
-
-8 The highest total wins.
+'''4. Highest total wins'''
 
 === Optional rules ===
 ==== Prevent sliver candidates from having kingmaker power ====
 
-Optional step 4.5 (applied after step 4 above): If any candidate has less than 5% (of the total votes) as delegable votes, and is not one of the top two in total votes, then those votes are automatically delegated down their preference list as far as the Condorcet winner (considering known ballots and preference orders) among the candidates on their preference list, or, in case of elections with a cycle, as far as the second member of the Smith set (this is correct CPNE strategy for a Smith set of size 3; larger Smith sets, with over two members included in the minor candidate's preference list, are hit-by-lightning unlikely).
+Optional step 2.C.ii. (applied after step 2.C above): If any candidate has less than 5% (of the total votes) as delegable votes, and is not one of the top two in total votes, then those votes are automatically delegated down their preference list as far as the Condorcet winner (considering known ballots and preference orders) among the candidates on their preference list, or, in case of elections with a cycle, as far as the second member of the Smith set (this is correct CPNE strategy for a Smith set of size 3; larger Smith sets, with over two members included in the minor candidate's preference list, are hit-by-lightning unlikely).
 
 (Note: extending delegation as far as the Condorcet winner, instead of the candidate just before the Condorcet winner, may not be correct strategy if the Condorcet winner does not need their votes. However, by definition this will not make any practical difference if other candidates use correct strategy, and even if it did it would tend to be a socially-beneficial one. Also, the rule as stated is simpler and more decisive. Candidates with more than 5% would not need to worry about this issue. Neither should readers who don't understand this paragraph.)
 
@@ -40,10 +38,10 @@ This rule is recommended if SODA is to be instituted by legislation (where polit
 5% is a good cutoff here; that's tens of millions of voters nationally, and enough to deserve a voice. It shouldn't be too high, because this rule is effectively taking power away from voters; that's only justified if the faction is so small that the power is not legitimate, and so it's better to err a bit on the small side if anything. But under 5% - that is, under 10% of the winning coalition - doesn't deserve kingmaker power.
 
 ==== More-sophisticated final win criterion ====
-Optional alternate rule 8: it would be possible, if there were multiple candidates with an absolute majority at this point, to choose the one of them with the highest initial total. That would be equivalent to considering the delegated votes as middle-rated votes in [[Majority Judgment]]. However, this extra complication would matter so rarely that it is not worth it.
+Optional alternate rule 4: it would be possible, if there were multiple candidates with an absolute majority at this point, to choose the one of them with the highest initial total. That would be equivalent to considering the delegated votes as middle-rated votes in [[Majority Judgment]]. However, this extra complication would matter so rarely that it is not worth it.
 
 ==== Simpler, more forgiving handling of write-in candidates ====
-Optional change to steps 1 and 7: Candidates would not rank declared write-ins. Write-in candidates could receive delegated votes from any candidate, not just one who had ranked them up-front. However, to counterbalance this advantage, write-ins would not be able to delegate votes. Voters who wished to have a backup for their write-in vote would have to do so with an explicitly approval-style ballot.
+Optional change to steps 1.A and 3.B: Candidates would not rank declared write-ins. Write-in candidates could receive delegated votes from any candidate, not just one who had ranked them up-front. However, to counterbalance this advantage, write-ins would not be able to delegate votes. Voters who wished to have a backup for their write-in vote would have to do so with an explicitly approval-style ballot.
 
 == Example ==
 
