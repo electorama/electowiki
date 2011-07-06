@@ -62,7 +62,7 @@ SODA satisfies [[monotonicity]], the [[majority criterion]], the [[mutual majori
 
 It does not satisfy the [[independence of irrelevant alternatives]] criterion in general, but it does if the "irrelevant alternative" is assumed to delegate votes in the same way as any candidate whose delegable votes they supplant. Similarly, it can only pass the [[participation]] and [[consistency]] criteria if it is assumed that candidate delegations do not change. These assumptions are ''not'' realistic, but they do show that the method is in some sense "close to" passing these criteria.
 
-It fails the [[Condorcet criterion]], although the Condorcet winner over the ranking-augmented ballots is the unique strong equilibrium winner. That is to say that, under the realistic but not inviolable assumptions that candidates are honest in their pre-election rankings (not innately, but in because dishonesty would lose them votes) and strategic in their actions, and that the voters are able to use the system to express all relevant preferences, the method would in fact pass.
+It fails the [[Condorcet criterion]], although the majority Condorcet winner over the ranking-augmented ballots is the unique strong equilibrium winner. That is to say that, under the realistic but not inviolable assumptions that candidates are honest in their pre-election rankings (not innately, but in because dishonesty would lose them votes) and strategic in their actions, and that the voters are able to use the system to express all relevant preferences, the method would in fact pass the majority Condorcet winner criterion.
 
 == Advantages ==
 
