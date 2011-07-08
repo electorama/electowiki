@@ -1,0 +1,19 @@
+'''Quick Runoff''' or '''QR''' is a method devised by Kevin Venzke which satisfies [[Later-no-harm]] but, unlike [[IRV]], can sometimes elect the candidate with the fewest first preferences.
+
+The method is so named because in the three-candidate case it is not as "instant" as [[IRV]], as instead of a single top-two runoff, there is first a simulated runoff between the top two candidates, and then potentially the bottom two candidates.
+
+The method may be badly named because the winner is actually found without doing any vote transfers. The results of the "runoffs" are inferred from the pairwise contests.
+
+==Definition==
+#The voter submits a ranked ballot. Equal-ranking is not allowed; truncation is.
+#Elect the candidate with the most first preferences who does not have a majority-strength pairwise loss (i.e. >50% of all ballots) to the very next candidate in descending order of first-preferences.
+#If every candidate but the last has such a pairwise loss, then the last candidate is elected.
+
+==Comments==
+QR satisfies [[Later-no-harm]] because if candidate X is elected, the addition of a lower preference can only cause X to lose if it creates a majority defeat of X by the candidate that follows X in descending first preference order. This cannot be done by a voter who prefers X to the new preference.
+
+QR fails [[Mono-raise|monotonicity]] ([[Mono-raise]] and [[Mono-add-top]] at least) and is not [[Independence of Clones|clone-independent]]. It is quite possible for a candidate to wish he had a different position in the first-preference ordering, even if it means receiving fewer votes.
+
+QR also doesn't satisfy [[Later-no-help]]. In particular, in a three candidate scenario where A has the most first preferences and C the fewest, C may have incentive to insincerely create a majority win for B over A, if the C voters believe C has the second-preferences of the A voters. So, while the A voters technically have both Later-no-harm and Later-no-help guarantees with respect to A, there may be an incentive to withhold their second preference if they feel other factions are relying on those second preferences in order to try to steal the race from A.
+
+[[Category:Single-winner voting systems]]
