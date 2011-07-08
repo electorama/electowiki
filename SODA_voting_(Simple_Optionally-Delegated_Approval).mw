@@ -51,17 +51,18 @@ Alternative rule 1A) In the intial preference, candidate A can choose to rank B 
 == Sample Ballot ==
 
 '''Vote for as many candidates as you approve:'''<br>
-&#9634; Candidate A<br>
-&#9634; Candidate B<br>
-&#9634; Candidate C<br>
-&#9634; Candidate D<br>
+&#9634; Candidate A (will not share votes)<br>
+&#9634; Candidate B (Prefers A, then C and D)<br>
+&#9634; Candidate C (Prefers D)<br>
+&#9634; Candidate D (Prefers C)<br>
 &#9634; ____(write-in)____<br>
 &#9634; ____(write-in)____<br>
 &#9634; ____(write-in)____<br>
 &#9634; ____(write-in)____
 
-'''If you only vote for one candidate, he can choose to transfer his vote to one or more alternate candidates in the event that he cannot win, UNLESS you check the box below:'''<br>
-&#9634; Do not let the candidate I voted for transfer my vote to other candidates.
+'''If you only vote for one candidate, he or she can choose to share his or her vote to one or more alternate candidates from his or her preference list in the event that he or she cannot win, UNLESS you check the box below:'''<br>
+&#9634; Do not let the candidate I voted for share my vote with other candidates.
+''Note: if you vote for more than one candidate, none of them can share your vote, and it does not matter whether you check the box above.''
 
 == Example ==
 
