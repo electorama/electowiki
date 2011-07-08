@@ -4,25 +4,25 @@ Simple Optionally-Delegated Approval (SODA) is a single-winner system inspired b
 Essentially, you vote for any number of candidates (as with approval); but you may also decide to delegate your ballot to your favorite candidate. Top approval wins. The full procedure is:
 
 
-'''1. Candidates publicly declare their delegation order'''
+'''1. Candidates publicly declare their rankings of the other candidates'''
 
-A) Before the election, all candidates must rank the other candidates (including declared write-ins) in order of preference. Equal rankings and truncation are allowed. The candidate's rankings are all made public. Later, in the "delegation" step, any delegation from one candidate must be consistent with that candidate's rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms". 
+A) Before the election, all candidates must rank the other candidates (including declared write-ins) in order of preference. Equal rankings and truncation are allowed. The candidates' rankings are all made public. Later, in the "candidate voting" step, candidates may only approve other candidates in a way that is consistent with their rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms". 
 
 '''2. Voters vote delegable plurality-style votes or non-delegable approval-style votes'''
 
-A) Each voter submits an approval ballot. There is some way (such as an extra write-in slot) to vote for an invalid candidate named "do not delegate".
+A) Each voter submits an approval ballot.
 
-B) Any "bullet vote" - that is, a ballot which votes for only one candidate - is considered a "delegable vote" for a candidate. These votes are tallied for each candidate. Of course, any ballots which vote for "do not delegate" or any other invalid write-in are not considered as bullet votes.
+B) Any "bullet vote" - that is, a ballot which votes for only one candidate - is considered a "delegable vote" for a candidate, unless the voter indicates that it should not be delegable. These votes are tallied for each candidate.
 
 C) Approval totals for each candidate are also tallied. These preliminary results are announced, along with the number of "delegable votes" each candidate has.
 
 D) If any candidate has an absolute majority at this point, or cannot possibly be beaten by any other candidate using the delegable votes and candidate rankings available, then they win immediately.
 
-'''3. Candidates choose how to delegate their delegable votes in accordance with their delegation order'''
+'''3. Candidates cast their votes publicly in the prescribed order'''
 
 A) There is a brief period - perhaps a week - for candidates to analyse and negotiate based on these preliminary results. (Actually, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.)
 
-B) All candidates, in descending order of the number of total votes they have, publicly delegate their votes; that is, they choose a number N, and their "delegable vote" total is added to the approval totals of their top N favorites as announced in step one. They may choose N=0 - that is, not delegate their vote to anyone. They may not choose N=(number of candidates) - that is, delegate their votes to everyone. If they declared a tie in their preferences, they must either delegate to all candidates whom they included in that tie (as well as anyone they ranked above that), or none of them. (Note: Doing this in descending order prevents a weaker candidate from making an ultimatum to a stronger candidate, and thus strengthens the strategic equilibrium of any pairwise champion there is.) Votes may not be re-delegated.
+B) All candidates, in descending order of the number of total votes they have, choose how many other candidates they want to approve with their own vote and the delegable votes they control; that is, they choose a number N, and their "delegable vote" total is added to the approval totals of their top N favorites as announced in step one. They may choose N=0 - that is, not approve any other candidates. They may not choose N=(number of candidates) - that is, approve all other candidates. If they declared a tie in their preferences, they must either approve all candidates whom they included in that tie (as well as anyone they ranked above that), or none of them. (Note: Doing this in descending order prevents a weaker candidate from making an ultimatum to a stronger candidate, and thus strengthens the strategic equilibrium of any pairwise champion there is.)
 
 '''4. Highest total wins'''
 
