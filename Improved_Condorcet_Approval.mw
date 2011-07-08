@@ -54,6 +54,8 @@ However, it might be more intuitive, and preferred, if t[a,b] were defined rathe
 For the second definition, replace step 3 with:
 :Disregard any pairwise loss that can be reversed or turned into a pairwise tie if the voters approving both candidates and ranking them equal are counted in favor of the pairwise loser.
 
+The definitions can only differ in practice when there are more than three candidates (unless it is allowed to approve all the candidates).
+
 ==Links==
 *[http://lists.electorama.com/pipermail/election-methods-electorama.com/2005-May/015998.html First proposal on the EM list (May 18 2005)]
 
