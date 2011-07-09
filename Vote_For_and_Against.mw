@@ -2,6 +2,8 @@ The '''Vote For and Against''' or '''VFA''' is a simple election method in which
 
 If a ranked ballot were being used, this would be equivalent to the voter having to submit a complete strict ranking of the candidates. The voter would be counted as voting ''for'' the first preference and ''against'' the last preference.
 
+This method has also been called '''Venzke Disqualified''' (or '''Disqualification''') '''Plurality''' or '''VDP'''. One reason to prefer this name is that the name "VFA" refers directly only to the format of the ballot that the method uses.
+
 == Procedure ==
 
 Just as in [[Plurality voting|First-Preference Plurality]], the candidate with the most ''for'' votes is elected. The only exception is that if one candidate receives more than half of the ''against'' votes, this candidate is not eligible to be elected.
