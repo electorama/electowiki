@@ -1,0 +1,12 @@
+'''King of the Hill''' or '''KH''' is a method devised by Kevin Venzke which satisfies [[Later-no-help]]. It was devised as a Condorcet completion method that would be resistant to burial. This article describes it as a method on its own, in which case it has no burial incentive at all.
+
+==Definition==
+#The voter submits a ranked ballot. Equal-ranking is not allowed; truncation is.
+#Find the candidate with the most first preferences who is involved in a majority-strength pairwise contest (i.e. >50% of the ballots) with the first-preference winner.
+#If there is no such candidate, elect the first-preference winner.
+#Otherwise, elect the winner of that pairwise contest.
+
+==Comments==
+KH satisfies [[Later-no-help]]. Adding lower preferences may cause the new preference to win, but it can't make any other candidate win.
+
+[[Category:Single-winner voting systems]]
