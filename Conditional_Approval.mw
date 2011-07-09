@@ -1,0 +1,13 @@
+'''Conditional Approval''' or '''CdlA''' is a method devised by Kevin Venzke which simulates voters adding approval to candidates only as needed over a number of rounds.
+
+==Definition==
+#The voter submits a three-slot ballot (preferred, approved, and disapproved) where the last slot may be implied by not being rated elsewhere. Any number of candidates can be placed in any slot.
+#First, count all the preferred votes only, and note that the winner on these votes has been a "leader" in a round.
+#All ballots which disapproved the current leader, or any past leader, have their "approved" (middle-slot) votes upgraded to "preferred" for purposes of the previous step. (A preference can never be downgraded back to "approved.")
+#Go back to the second step, count the votes in their new states, and identify the new leader, etc.
+#Cease this process and elect the current leader when it happens that the current leader is the same as the previous leader.
+
+==Comments==
+CdlA is not [[monotone]], similar to other methods of this sort. Experimentally it is quite close to [[MinMax]](Winning Votes), and the situation with regard to burial strategies and deterrence is probably similar.
+
+[[Category:Single-winner voting systems]]
