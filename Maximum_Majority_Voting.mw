@@ -188,7 +188,7 @@ In this example, Nashville is the winner using MMV - and would be in any [[Condo
 
 === Ambiguity resolution example ===
 
-Let's say there was an ambiguity.  For a simple situation involving canidates A, B, and C.
+Let's say there was an ambiguity.  For a simple situation involving candidates A, B, and C.
 
 * A > B 72%
 * B > C 68%
@@ -198,7 +198,7 @@ In this situation we sort the majorities starting with the greatest one first.
 
 * Lock A > B
 * Lock B > C
-* We elimate the final C > A as it creates an ambiguity or cycle.
+* We eliminate the final C > A as it creates an ambiguity or cycle.
 
 Therefore, A is the winner.
 
