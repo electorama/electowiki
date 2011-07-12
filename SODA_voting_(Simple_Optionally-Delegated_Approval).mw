@@ -16,6 +16,8 @@ To further decrease the opportunities for manipulation, candidates with the most
 
 A) Before the election, all candidates must rank the other candidates (including declared write-ins) in order of preference. Equal rankings and truncation are allowed. The candidates' rankings are all made public. Later, in the "candidate voting" step, candidates may only approve other candidates in a way that is consistent with their rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms". 
 
+B) It is presumed that there is some mechanism in place so that no candidate is "caught off-guard" by another candidate's rankings. For instance, there could be an option to change your rankings a certain number of times after another candidate announces or changes their rankings. The details of such a mechanism are unimportant, because its very existence would prevent it from being used; candidates, realizing that surprises don't work, wouldn't attempt to use them.
+
 '''2. Voters vote delegable plurality-style votes or non-delegable approval-style votes'''
 
 A) Each voter submits an approval ballot.
