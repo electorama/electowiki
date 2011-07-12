@@ -1,0 +1,9 @@
+Simple Optionally-Delegated Approval (SODA) is a single-winner voting system based on [[approval voting]], where voters can vote for as many candidates as they like. Voters who don't want to decide whether they approve each candidate can choose to delegate their ballot to one of the candidates.  These ballots are counted and the totals are announced, and then candidates can choose to exercise the ballots delegated to them, approving other candidates who they think would be good compromise options.
+
+== Headline text ==
+
+For simplicity, the ballot is organized like an approval ballot.  It is assumed that voters who vote for only one candidate are intending to delegate their ballot to that candidate, but there is also a way for voters to indicate that they voted for one candidate but they don't want their ballot delegated.
+
+Candidates are required to submit a rank-ordering of all the other candidates before the election.  This is to help voters understand how that candidate might choose to complete their delegated ballots, and also to vastly decrease the opportunities for manipulation when the candidates exercise their ballots.  When they exercise the ballots delegated to them, the candidates must approve others in a way that is consistent with the rank-ordering they submitted.  In other words, they must take their submitted rank-ordering and choose a cutoff point, approving all candidates above that point and disapproving all candidates below that point.
+
+To further decrease the opportunities for manipulation, the candidates are actually required to exercise their delegated ballots in a certain order.  This order is generated based on the ballots submitted by the voters, using an algorithm designed to encourage good outcomes in certain problematic situations.  See the full [[Simple Optionally-Delegated Approval]] page for more information.
