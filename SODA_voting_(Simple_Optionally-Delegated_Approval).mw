@@ -1,8 +1,16 @@
-Simple Optionally-Delegated Approval (SODA) is a single-winner system inspired by [[approval voting]] and [[asset voting]]. It is arguably [[Pareto dominant]] over these systems (at least, as used for occasional elections), which in turn are both (separately) pareto dominant over plurality; that is, it offers only advantages, and no disadvantages, when compared to approval, occasional asset, or plurality. This makes it an excellent choice as a practical voting reform proposal, as you can easily and honestly refute any argument against it. (There are many systems which are arguably better than SODA in some way, but all are also arguably worse in some other way.)
+Simple Optionally-Delegated Approval (SODA) is a single-winner voting system based on [[approval voting]], where voters can vote for as many candidates as they like. Unlike in approval, voters can choose to delegate their ballot to their favorite candidate, trusting the candidate to "complete the ballot" by deciding which other candidates to approve. The voters' ballots are counted and the totals are announced, and then candidates can choose to exercise the ballots delegated to them. At that point, candidates who do not expect to win can approve others whom they think would be good compromise options.
+
+After all candidates exercise their delegated ballots, the winner is the candidate with the most approvals.
 
 == Procedure ==
-Essentially, you vote for any number of candidates (as with approval); but you may also decide to delegate your ballot to your favorite candidate. Top approval wins. The full procedure is:
 
+For simplicity, the ballot is organized like an approval ballot. It is assumed that voters who vote for only one candidate are intending to delegate their ballot to that candidate, unless they explicitly indicate otherwise using a "do not delegate" option. Thus, no voter's ballot is delegated without their consent.
+
+Candidates are required to submit a rank-ordering of all the other candidates before the election. This serves two purposes. First, it helps voters understand how that candidate might choose to complete their delegated ballots. A voter who supports a candidate but disagrees with their rankings of others can complete their ballot themselves instead of delegating. Second, the prior rankings vastly decrease the opportunities for manipulation when the candidates exercise their ballots. When they exercise the ballots delegated to them, the candidates must approve others in a way that is consistent with the rank-ordering they submitted. In other words, they must take their submitted rank-ordering and choose a cutoff point, approving all candidates above that point and disapproving all candidates below that point. Thus, they cannot simply "sell their delegated votes" to the highest bidder.
+
+To further decrease the opportunities for manipulation, candidates with the most approvals get the advantage of "moving first" in declaring how they will exercise their delegated ballots. This order is designed to encourage good outcomes in certain problematic situations. See below for more information.
+
+=== Full, step-by-step rules ===
 
 '''1. Candidates publicly declare their rankings of the other candidates'''
 
@@ -81,7 +89,7 @@ It does not satisfy the [[independence of irrelevant alternatives]] criterion in
 It fails the [[Condorcet criterion]], although the majority Condorcet winner over the ranking-augmented ballots is the unique strong equilibrium winner. That is to say that, under the realistic but not inviolable assumptions that candidates are honest in their pre-election rankings (not innately, but in because dishonesty would lose them votes) and strategic in their actions, and that the voters are able to use the system to express all relevant preferences, the method would in fact pass the majority Condorcet winner criterion.
 
 == Advantages ==
-
+# SODA is arguably better than Plurality voting in every way (Pareto dominant). Although other systems may offer even-greater advantages over plurality, they also come with certain disadvantages. Those disadvantages may be minor, but a supporter of such a system must waste time looking defensive in order to convince voters of that. A SODA advocate can devote all their time to talking up its advantages.
 # SODA is extremely easy for the voters; in fact, no voting system is simpler to vote. (Plurality, by restricting you to only one vote, also makes it possible to mistakenly "overvote", spoiling your ballot. There is no such way to accidentally invalidate your ballot under SODA. Also, both Plurality and Approval require a conscientious voter to consider strategy and polling status; SODA allows a simple bullet vote to still be strategically as strong as possible, regardless of the candidate standings.)
 # All the steps of SODA have a clear purpose. Instead of relying on complicated rules to give a good outcome, SODA gives simple tools to the people involved, so that a good outcome is simply the rational result.
 # There is no motivation for dishonesty from individual voters. A voter can safely vote for any candidate that they honestly agree with, without fear of that vote being wasted; or safely vote an honest approval-style ballot, if they do not agree with any candidate's preference order.
