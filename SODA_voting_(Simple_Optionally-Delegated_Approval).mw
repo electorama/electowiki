@@ -119,19 +119,17 @@ This sounds appealing, but would not work if two similar candidates were in a cl
 
 In general, this system, because it provides perfect information on voting totals at the time when delegation is happening, will make strategy obvious. (The pairwise champion/Condorcet winner is a strong Nash equilibrium; and even if there are 3 or 4 candidates in the Smith set, there is still a unique Coalition Proof Nash Equilibrium). This has the paradoxical result that, as long as few voters disagree with their favored candidate's ordering (or as long as there are minor "delegator-only" candidates for every preference ordering of the majors which is held by a significant number of voters), this system will in practice be '''more Condorcet compliant than a Condorcet method''' (because strategy could confound a true Condorcet method, but delegation strategy in SODA is strongly attracted by a correct equilibrium).
 
-== Sales pitches ==
+== Opinionated sales pitches (hard sell) ==
 
-I'm going to abandon the neutral voice and talk as myself. If you ask around on the Elections Methods mailing list, you can find me; I've posted almost the same text below as a message there.
+One of SODA's advantages is that, more than almost any other system, it is compatible with either a two-party or a multiparty system.
 
-One of SODA's advantages that I see is that, more than any other system I can think of, it is compatible with both a two-party and a multiparty system.
+While many are convinced that, in the long run, a multiparty system is healthier, it is still important for a voting system to compatible with two parties. Current politicians, winners under a two-party system, are in many cases the gatekeepers of reform. Yes, that's largely a case of the fox guarding the henhouse, but it's also a fact of life.
 
-While many of us are convinced that, in the long run, a multiparty system is healthier, we should not neglect the importance of a voting system being compatible with two parties. Current politicians, winners under a two-party system, are in many cases the gatekeepers of reform. Yes, that's largely a case of the fox guarding the henhouse, but it's also a fact of life.
-
-Here are the pitches one could make. Both of those pitches are feeding on the sicknesses inherent in a two-party duopoly. But that doesn't mean that SODA would feed those sicknesses or make them worse; I'm just using those sicknesses to make an argument that I think is fully justified. Remember, SODA is fully compatible with a multiparty world; in fact, as I've argued, it is in an important sense more Condorcet compliant than a Condorcet system.
+Here are the pitches one could make. Both of those pitches are feeding on the sicknesses inherent in a two-party duopoly. But that doesn't mean that SODA would feed those sicknesses or make them worse; it's just using those sicknesses to make an argument that is still ethically justified. Remember, SODA is fully compatible with a multiparty world; in fact, as argued above, it is in an important sense more Condorcet compliant than a Condorcet system.
 
 === For a politician (Democrat or Republican) ===
 
-So, why is SODA compatible with two parties? Here's the kind of pitch you could make to a Republican or Democrat. Although I'd definitely include less disingenuous trash talk about other good systems or about third parties or independents, I'm including it here to show the kind of arguments that you could make:
+So, why is SODA compatible with two parties? Here's the kind of pitch you could make to a Republican or Democratic politician. This pitch is a "hard sell" aimed at the toughest audience: a dyed-in-the-wool partisan. As such, it includes some disingenuous trash talk about other good systems and about third parties or independents. If you were dealing with a more-reasonable person who could put the interests of democracy above their partisan interests, you would not pitch it this way. 
 
 "SODA encourages most voters to vote for a single candidate, just as they do today. So an average joe, who wants to put as little thought as possible into his ballot, will still be voting for one of the major parties. With the large majority of ballots in the same two-party split as today, the minor parties will have essentially no choice but to delegate their vote to one of the majors, or relegate themselves to irrelevance. So all this will do is make it so that the Libertarians (for a Rebublican)/Greens (for a Democrat) are your allies, not spoilers.
 
@@ -139,7 +137,7 @@ So, why is SODA compatible with two parties? Here's the kind of pitch you could 
 
 === For a third-party voter ===
 
-OK, maybe I went a little overboard. So here's the pitch I'd make to a third-party supporter to balance it out.
+OK, maybe that was a little overboard. So here's a pitch for a third-party supporter, to balance it out.
 
 "What do you want, in the end? People like you are in a minority, and I'm sure you realize that you won't take over the world overnight. So you want a fair hearing, you want a seat at the table. Most voting systems are just selling you dreams. One day, they say, you're going to convince a majority to join your team, and on that glorious day your team's gonna be in charge. How well has that worked for Republican and Democratic voters? How much important change do you see when the pendulum swings back and forth between those two parties? Not enough. The truth is, by the time you sway a majority, your big ideas are going to be watered down - and, what's worse, you're going to have to be pretending that the watered-down version is the real thing.
 
