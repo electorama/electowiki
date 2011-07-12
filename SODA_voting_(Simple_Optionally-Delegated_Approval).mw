@@ -53,9 +53,6 @@ Optional alternate rule 4: it would be possible, if there were multiple candidat
 ==== Simpler, more forgiving handling of write-in candidates ====
 Optional change to steps 1.A and 3.B: Candidates would not rank declared write-ins. Write-in candidates could receive delegated votes from any candidate, not just one who had ranked them up-front. However, to counterbalance this advantage, write-ins would not be able to delegate votes. Voters who wished to have a backup for their write-in vote would have to do so with an explicitly approval-style ballot.
 
-==== Enforceable mutual ranking ====
-Alternative rule 1A) In the intial preference, candidate A can choose to rank B conditionally on candidate B ranking A at or above some rank r chosen by A. This would prevent B from sneakily removing A from their rankings at the last minute, to force A to delegate to B even if A has more votes. This rule is probably not necessary except in places where a major faction is accustomed to use "dirty tricks" in intraparty struggles. (ie, Peronists in Argentina) In other words, this rule could in most cases be enforced by commonly-understood social sanctions (A would be implicitly pre-committed not to delegate to any B who did this without at least openly declaring their intentions in time for A to take those intentions into account in A's rankings), without need for being written down.
-
 == Sample Ballot ==
 
 '''Vote for as many candidates as you approve:'''<br>
