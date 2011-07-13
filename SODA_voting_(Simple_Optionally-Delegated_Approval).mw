@@ -38,7 +38,7 @@ C) The number of delegated votes held by each candidate is added to the approval
 
 '''4. Highest total wins'''
 
-=== Optional rules ===
+=== Optional rule ===
 ==== Prevent sliver candidates from having kingmaker power ====
 
 Optional step 2.C.ii. (applied after step 2.C above): If any candidate has less than 5% (of the total votes) as delegable votes, and is not one of the top two in total votes, then those votes are automatically delegated down their preference list as far as the Condorcet winner (considering known ballots and preference orders) among the candidates on their preference list, or, in case of elections with a cycle, as far as the second member of the Smith set (this is correct CPNE strategy for a Smith set of size 3; larger Smith sets, with over two members included in the minor candidate's preference list, are hit-by-lightning unlikely).
@@ -50,12 +50,6 @@ This rule would help make this system more attractive to major-party politicians
 This rule is recommended if SODA is to be instituted by legislation (where politicians' support is important), and not recommended if it is to be instituted by initiative/plebiscite (where simplicity is more important).
 
 5% is a good cutoff here; that's tens of millions of voters nationally, and enough to deserve a voice. It shouldn't be too high, because this rule is effectively taking power away from voters; that's only justified if the faction is so small that the power is not legitimate, and so it's better to err a bit on the small side if anything. But under 5% - that is, under 10% of the winning coalition - doesn't deserve kingmaker power.
-
-==== More-sophisticated final win criterion ====
-Optional alternate rule 4: it would be possible, if there were multiple candidates with an absolute majority at this point, to choose the one of them with the highest initial total. That would be equivalent to considering the delegated votes as middle-rated votes in a three-ranked median system such as [[MCA]], [[Bucklin]], or [[Majority Judgment]]. However, this extra complication would matter so rarely that it is not worth it.
-
-==== Simpler, more forgiving handling of write-in candidates ====
-Optional change to steps 1.A and 3.B: Candidates would not rank declared write-ins. Write-in candidates could receive delegated votes from any candidate, not just one who had ranked them up-front. However, to counterbalance this advantage, write-ins would not be able to delegate votes. Voters who wished to have a backup for their write-in vote would have to do so with an explicitly approval-style ballot.
 
 == Sample Ballot ==
 
