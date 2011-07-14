@@ -9,4 +9,8 @@
 ==Comments==
 KH satisfies [[Later-no-help]]. Adding lower preferences may cause the new preference to win, but it can't make any other candidate win.
 
+Note that, although the method doesn't satisfy [[Later-no-harm]], the supporters of the top two candidates are guaranteed both of the LNH criteria. It is only the supporters of weaker candidates (by first preferences) who have the risk of giving the election away to their second preference.
+
+To see this, note that the supporters of the first-preference winner do not have their lower preferences counted at all. The only pairwise contests that matter are those directly involving the first-preference winner. Then, note that the second-place candidate wins if and only if he has a majority-strength win over the first-preference winner. There is no way for supporters of this candidate to affect this test by adding lower preferences.
+
 [[Category:Single-winner voting systems]]
