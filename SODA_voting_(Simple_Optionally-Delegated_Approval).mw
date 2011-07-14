@@ -1,4 +1,4 @@
-Simple Optionally-Delegated Approval (SODA) is a single-winner voting system based on [[approval voting]], where voters can vote for as many candidates as they like. Unlike in approval, voters can choose to delegate their ballot to their favorite candidate, trusting the candidate to "complete the ballot" by deciding which other candidates to approve. The voters' ballots are counted and the totals are announced, and then candidates can choose to exercise the ballots delegated to them. At that point, candidates who do not expect to win can approve others whom they think would be good compromise options.
+Simple Optionally-Delegated Approval (SODA) is a single-winner voting system based on [[approval voting]]. As in approval voting, voters get a ballot which lets them vote for as many or as few candidates as they like. Unlike in approval, voters who don't want to decide yes or no for every candidate can choose to delegate their ballot, trusting their favorite candidate to "complete the ballot" by deciding which others to approve. The voters' ballots are counted and the totals are announced, and then candidates can choose to exercise the ballots delegated to them. At that point, candidates who do not expect to win can use the delegated ballots they hold to approve others whom they think would be good compromise options.
 
 After all candidates exercise their delegated ballots, the winner is the candidate with the most approvals.
 
@@ -50,6 +50,9 @@ This rule would help make this system more attractive to major-party politicians
 This rule is recommended if SODA is to be instituted by legislation (where politicians' support is important), and not recommended if it is to be instituted by initiative/plebiscite (where simplicity is more important).
 
 5% is a good cutoff here; that's tens of millions of voters nationally, and enough to deserve a voice. It shouldn't be too high, because this rule is effectively taking power away from voters; that's only justified if the faction is so small that the power is not legitimate, and so it's better to err a bit on the small side if anything. But under 5% - that is, under 10% of the winning coalition - doesn't deserve kingmaker power.
+
+=== Runoff if there's a majority failure ===
+In some jurisdictions, a runoff may be constitutionally required if no candidate gets an absolute majority of approvals. This is compatible with SODA. Runoffs should be rare, because if voters wish to avoid one, they can ensure that any pairwise champion wins without needing a runoff. In fact, because it can obtain a majority even if most voters bullet vote for different candidates, SODA may get an absolute majority more often than IRV, unless the latter system requires a full ranking for a vote to be valid.
 
 == Sample Ballot ==
 
