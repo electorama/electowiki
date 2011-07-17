@@ -17,16 +17,15 @@ It fails the [[Condorcet criterion]],<ref>Strategically in the [[strong Nash equ
 
 If there were four ratings named "Excellent", "Good", "Fair", and "Poor", and each voter assigned four different ratings to the four cities, then the sorted scores would be as follows: 
 
-
 <table>
 
 <tr>
-<td align=right>City</td>
+<td align=right>City&nbsp;&nbsp;&nbsp;</td>
 <td>
-<table cellpadding=0 width=600 border=0 cellspacing=0>
+<table cellpadding=0 width=500 border=0 cellspacing=0>
 <tr>
 <td width=49%>&nbsp;</td>
-<td width=2% textalign=center>\/</td>
+<td width=2% textalign=center>â†“</td>
 <td width=49%>Median point</td>
 </tr>
 </table>
@@ -36,12 +35,11 @@ If there were four ratings named "Excellent", "Good", "Fair", and "Poor", and ea
 <tr>
 <td align=right>Nashville</td>
 <td>
-<table cellpadding=0 width=600 border=0 cellspacing=0>
+<table cellpadding=0 width=500 border=0 cellspacing=0>
 <tr>
 <td bgcolor=green width=26%>&nbsp;</td>
 <td bgcolor=YellowGreen width=42%></td>
 <td bgcolor=Gold width=32%></td>
-<td bgcolor=red width=0%></td>
 </tr>
 </table>
 </td>
@@ -50,12 +48,11 @@ If there were four ratings named "Excellent", "Good", "Fair", and "Poor", and ea
 <tr>
 <td align=right>Chattanooga</td>
 <td>
-<table cellpadding=0 width=600 border=0 cellspacing=0>
+<table cellpadding=0 width=500 border=0 cellspacing=0>
 <tr>
 <td bgcolor=green width=15%>&nbsp;</td>
 <td bgcolor=YellowGreen width=43%></td>
 <td bgcolor=Gold width=42%></td>
-<td bgcolor=red width=0%></td>
 </tr>
 </table>
 </td>
@@ -64,12 +61,12 @@ If there were four ratings named "Excellent", "Good", "Fair", and "Poor", and ea
 <tr>
 <td align=right>Knoxville</td>
 <td>
-<table cellpadding=0 width=600 border=0 cellspacing=0>
+<table cellpadding=0 width=500 border=0 cellspacing=0>
 <tr>
 <td bgcolor=green width=17%>&nbsp;</td>
 <td bgcolor=YellowGreen width=15%></td>
 <td bgcolor=Gold width=26%></td>
-<td bgcolor=red width=42%></td>
+<td bgcolor=DarkOrange width=42%></td>
 </tr>
 </table>
 </td>
@@ -78,12 +75,10 @@ If there were four ratings named "Excellent", "Good", "Fair", and "Poor", and ea
 <tr>
 <td align=right>Memphis</td>
 <td>
-<table cellpadding=0 width=600 border=0 cellspacing=0>
+<table cellpadding=0 width=500 border=0 cellspacing=0>
 <tr>
 <td bgcolor=green width=42%>&nbsp;</td>
-<td bgcolor=YellowGreen width=0%></td>
-<td bgcolor=Gold width=0%></td>
-<td bgcolor=red width=58%></td>
+<td bgcolor=DarkOrange width=58%></td>
 </tr>
 </table>
 </td>
@@ -97,18 +92,17 @@ If there were four ratings named "Excellent", "Good", "Fair", and "Poor", and ea
 <tr>
 <td>&nbsp;</td>
 <td>
-<table cellpadding=1 width=600 border=0 cellspacing=1>
+<table cellpadding=1 border=0 cellspacing=1>
 <tr>
-<td width=25%>&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 <td bgcolor=green>&nbsp;</td>
-<td>&nbsp;Exellent&nbsp;&nbsp;</td>
+<td>&nbsp;Excellent&nbsp;&nbsp;</td>
 <td bgcolor=YellowGreen>&nbsp;</td>
 <td>&nbsp;Good&nbsp;&nbsp;</td>
 <td bgcolor=Gold>&nbsp;</td>
 <td>&nbsp;Fair&nbsp;&nbsp;</td>
-<td bgcolor=red>&nbsp;</td>
+<td bgcolor=DarkOrange>&nbsp;</td>
 <td>&nbsp;Poor&nbsp;&nbsp;</td>
-<td width=50%>&nbsp;</td>
 </tr>
 </table>
 </td>
@@ -117,17 +111,17 @@ If there were four ratings named "Excellent", "Good", "Fair", and "Poor", and ea
 
 </table>
 
-The medians for Nashville and Chatanooga would be "Good"; for Knoxville, "Fair"; and for Memphis, "Poor". Nashville and Chatanooga are tied, so "Good" ratings would be removed from both. After removing 16% of the votes from each, Chatanooga's median would round down to "Fair", while Nashville would remain at "Good"<ref>After removal, Chatanooga would have 42% of the initial electorate at "Fair", 27% "Good", and 15% "Excellent", while Nashville would have 32% "Fair", 26% "Good", and 26% "Excellent"</ref> and so '''Nashville''' would win.
+The median rating for Nashville and Chatanooga is "Good"; for Knoxville, "Fair"; and for Memphis, "Poor". Nashville and Chatanooga are tied, so "Good" ratings have to be removed from both, until their medians become different. After removing 16% "Good" ratings from the votes of each, the sorted ratings are now:
 
 <table>
 
 <tr>
-<td align=right>City</td>
+<td align=right>City&nbsp;&nbsp;&nbsp;</td>
 <td>
-<table cellpadding=0 width=600 border=0 cellspacing=0>
+<table cellpadding=0 width=500 border=0 cellspacing=0>
 <tr>
 <td width=49%>&nbsp;</td>
-<td width=2% textalign=center>\/</td>
+<td width=2% textalign=center>â†“</td>
 <td width=49%>Median point</td>
 </tr>
 </table>
@@ -137,7 +131,7 @@ The medians for Nashville and Chatanooga would be "Good"; for Knoxville, "Fair";
 <tr>
 <td align=right>Nashville</td>
 <td>
-<table cellpadding=0 width=600 border=0 cellspacing=0>
+<table cellpadding=0 width=500 border=0 cellspacing=0>
 <tr>
 <td bgcolor=gray width=8%>&nbsp;</td>
 <td bgcolor=green width=26%>&nbsp;</td>
@@ -152,7 +146,7 @@ The medians for Nashville and Chatanooga would be "Good"; for Knoxville, "Fair";
 <tr>
 <td align=right>Chattanooga</td>
 <td>
-<table cellpadding=0 width=600 border=0 cellspacing=0>
+<table cellpadding=0 width=500 border=0 cellspacing=0>
 <tr>
 <td bgcolor=gray width=8%></td>
 <td bgcolor=green width=15%>&nbsp;</td>
@@ -172,16 +166,19 @@ The medians for Nashville and Chatanooga would be "Good"; for Knoxville, "Fair";
 <tr>
 <td>&nbsp;</td>
 <td>
-<table cellpadding=1 width=600 border=0 cellspacing=1>
+<table cellpadding=1 border=0 cellspacing=1>
 <tr>
-<td width=20%>&nbsp;</td>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
 <td bgcolor=gray>&nbsp;</td>
 <td>&nbsp;Removed&nbsp;ratings&nbsp;(sorted&nbsp;to&nbsp;both&nbsp;ends&nbsp;evenly&nbsp;for&nbsp;easy&nbsp;comparison&nbsp;of&nbsp;medians&nbsp;with&nbsp;above).</td>
-<td width=20%>&nbsp;</td>
 </tr>
 </table>
 </td>
 </table>
+
+Chatanooga now has the same number of "Fair" ratings as "Good" and "Excellent" combined, so its median is rounded down to "Fair", while Nashville's median remains at "Good"<ref>After removal, Chatanooga has 42% of the initial electorate at "Fair", 27% "Good", and 15% "Excellent", while Nashville has 32% "Fair", 26% "Good", and 26% "Excellent"</ref> and so '''Nashville''', the capital in real life, wins.
+
+If voters from Knoxville and Chattanooga were to rate Nashville as "Poor" and/or both sets of voters were to rate Chattanooga as "Excellent", in an attempt to make their preferred candidate Chatanooga win, the winner would still be Nashville.
 
 ==See also==
 * [[List of democracy and elections-related topics]]
