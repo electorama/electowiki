@@ -73,4 +73,8 @@ Another problem with Median Ratings is its failure of the [[Blank Ballot Criteri
 
 A (median rating=5) beats B (median rating=4), but if the ballot (A=0, B=0) is added, then A's median rating drops to 2, causing B to win.
 
+==See also==
+* [[Majority Judgment]]
+
+
 [[Category:Single-winner voting systems]]
