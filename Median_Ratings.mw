@@ -60,7 +60,7 @@ The main advantages of using the median instead of the sum or arithmetic mean of
 
 ==Disadvantages==
 
-The example illustates one of the major flaws of Median Ratings.  Because the [[median]], by definition, is either the value of a single rating or the average of two ratings, there are very few possible values for a median score, and this makes ties much more likely than in [[Cardinal Ratings]].
+The example illustrates one of the major flaws of Median Ratings.  Because the [[median]], by definition, is either the value of a single rating or the average of two ratings, there are very few possible values for a median score, and this makes ties much more likely than in [[Cardinal Ratings]].
 
 Given that a big range like 0-999 is probably an awkward solution, because nobody senses so sophisticated differences between candidates, a shorter range like 0-9 and a resolving method for ties might work better. Ties could be solved by using the average. Or by using the [http://en.wikipedia.org/wiki/Interquartile_mean interquartile mean]. One could also select just enough ratings above and under the median that the average of those gives a clear frontrunner. But that would fail [[independence of irrelevant alternatives]]. Yet another solution would be to take the average of the rating above and under each median in a tie. If there is still a tie, we take the average of the rating above the rating above and the rating under the rating under each median that is still in a tie. And if there is ''still'' a tie, we take the rating above the rating above the rating above an the rating under the rating under the rating under each median that is still in a tie etc.
 
