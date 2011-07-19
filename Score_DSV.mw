@@ -46,7 +46,7 @@ IRV would eliminate C and elect B.
 == Criteria compliance ==
 Obvious compliances: [[Pareto criterion]], [[Plurality criterion]], [[Strategy-Free criterion]], [[Blank Ballot Criterion]]. Obviously non-compliant: [[Consistency|Consistency criterion]], [[Tactical voting|invulnerability to compromising]], [[Tactical voting|invulnerability to burying]], [[Favorite Betrayal criterion]], [[Later-no-harm criterion]].
 
-This method complies with the [[Condorcet criterion]] but not the [[Generalized Condorcet criterion|Smith criterion]]. The latter non-compliance is seen as a feature; for instance, if there are 4 candididates and 3 voters with the votes:
+This method complies with the [[Condorcet criterion]] but not the [[Generalized Condorcet criterion|Smith criterion]]. The latter non-compliance is seen as a feature; for instance, if there are 4 candidates and 3 voters with the votes:
 *100, 99, 0, 98
 *99, 0, 100, 98
 *0, 100, 99, 98
