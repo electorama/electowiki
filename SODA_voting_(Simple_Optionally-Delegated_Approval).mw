@@ -148,7 +148,7 @@ OK, maybe that was a little overboard. So here's a pitch for a third-party suppo
 == SODA-PR - proportional representation version ==
 SODA-PR is the proportional representation version of the above. 
 
-First, to simplify the ballots, the population is separated into a "district" for each seat, and "districts" are grouped into sets of 2 or 3 "co-districts". The ballot for each district lists the candidates from that district in a larger font, and the candidates from its co-districts in a smaller font. Write-ins may be used to vote for candidates from other districts not listed on the ballot, so the districts only matter for ballot simplicity.
+First, to simplify the ballots, the population is separated into a "district" for each seat, and "districts" are grouped into sets of 2 or 3 "co-districts". The ballot for each district lists the candidates from that district in a larger font, and the candidates from its co-districts in a smaller font. Write-ins may be used to vote for candidates from other districts not listed on the ballot, so the districts only matter for ballot simplicity (Voters do not want to have a ballot with many dozens of candidates on it, but write-ins allow full freedom for those voters who want it).
 
 As with SODA, voters can either vote an approval-style vote or delegate by bullet voting. Instead of a pre-announced ranking which allows them to choose a cutoff after the election, candidates have a pre-announced approval ballot that will be used automatically to complete any votes delegated to them (beyond the votes they need to be elected).
 
