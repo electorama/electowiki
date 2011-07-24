@@ -153,6 +153,7 @@ First, to simplify the ballots, the population is separated into a "district" fo
 As with SODA, voters can either vote an approval-style vote or delegate by bullet voting. Instead of a pre-announced ranking which allows them to choose a cutoff after the election, candidates have a pre-announced approval ballot that will be used automatically to complete any votes delegated to them (beyond the votes they need to be elected).
 
 The counting process is as follows:
+
 While there are more uneliminated candidates than empty seats:
 *Divide each ballot by the number of uneliminated candidates it approves
 *If there are any candidates with more than a Droop quota:
