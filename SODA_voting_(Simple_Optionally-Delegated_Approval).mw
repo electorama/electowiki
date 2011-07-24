@@ -145,4 +145,26 @@ OK, maybe that was a little overboard. So here's a pitch for a third-party suppo
 
 "But there's another option. You can keep having big ideas, and just have a system that doesn't shut you out of the room. There are a lot, a lot of people who aren't fully satisfied with 'their' party, who are looking for another option. Take off their two-party shackles, let them safely vote for someone else, and they'll jump at the chance. And there you will be, with 10, 15, 25% of the vote. No, that won't be enough to win, but it will darn well be enough to get some respect, to get your ideas a fair hearing, get some of them tried, which is what you need in order to grow. And if the major party supposedly on 'your' side doesn't listen, you will have the power to take those votes and go home. You know and I know that major party politicians, they call themselves leaders, but what they really are is cowards. When you're sitting on a double-digit pile of votes, they will listen to you, trust me."
 
+== SODA-PR - proportional representation version ==
+SODA-PR is the proportional representation version of the above. 
+
+First, to simplify the ballots, the population is separated into a "district" for each seat, and "districts" are grouped into sets of 2 or 3 "co-districts". The ballot for each district lists the candidates from that district in a larger font, and the candidates from its co-districts in a smaller font. Write-ins may be used to vote for candidates from other districts not listed on the ballot, so the districts only matter for ballot simplicity.
+
+As with SODA, voters can either vote an approval-style vote or delegate by bullet voting. Instead of a pre-announced ranking, candidates have a pre-announced approval ballot that will be used automatically to complete any votes delegated to them beyond the votes they need to be elected.
+
+The counting process is as follows:
+While there are more uneliminated candidates than empty seats:
+*Divide each ballot by the number of uneliminated candidates it approves
+*If there are any candidates with more than a Droop quota:
+**Elect the one with the highest score (previously "unique ballots")
+**Repeat...
+***Discard a Droop quota of randomly-chosen ballots which approve the elected candidate, starting with the ones delegated to that candidate
+***See who the next candidate to be elected will be
+**...until the next candidate to be elected is the same twice in a row. (this makes it overwhelmingly probable that the random discards do not lead to a fluke result)
+**Assign that candidates pre-declared approvals on any undiscarded delegated ballots for that candidate
+*Otherwise:
+**Eliminate the candidate with the lowest score
+**Assign that candidates pre-declared approvals on any delegated ballots for that candidate
+Elect all remaining candidates to fill the seats.
+
 [[Category:Single-winner voting systems]]
