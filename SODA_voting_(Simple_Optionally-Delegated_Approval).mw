@@ -167,4 +167,5 @@ While there are more uneliminated candidates than empty seats:
 **Assign that candidates pre-declared approvals on any delegated ballots for that candidate
 Elect all remaining candidates to fill the seats.
 
+If all votes are for one of the two main-party candidates in each district, and if all candidates approve everyone from their party, and if the districts are divided fairly so that plurality would give a proportional result, SODA-PR gives the same results as plurality. These assumptions will not generally be perfectly true, but they will generally be close to true, so SODA-PR will give results that are recognizably similar to single-member districts. It is hoped that this would make it a more acceptable system to politicians who have won under single-winner rules.
 [[Category:Single-winner voting systems]]
