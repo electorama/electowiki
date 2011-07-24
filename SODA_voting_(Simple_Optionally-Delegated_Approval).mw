@@ -158,7 +158,7 @@ While there are more uneliminated candidates than empty seats:
 *If there are any candidates with more than a Droop quota:
 **Elect the one with the highest score (previously "unique ballots")
 **Repeat...
-***Discard a Droop quota of randomly-chosen ballots which approve the elected candidate, starting with the ones delegated to that candidate
+***Discard a randomly-chosen [[Droop quota]] of ballots which approve the elected candidate, starting with the ones delegated to that candidate
 ***See who the next candidate to be elected will be
 **...until the next candidate to be elected is the same twice in a row. (this makes it overwhelmingly probable that the random discards do not lead to a fluke result)
 **Assign that candidates pre-declared approvals on any undiscarded delegated ballots for that candidate
