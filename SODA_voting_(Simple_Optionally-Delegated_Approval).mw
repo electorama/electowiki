@@ -153,20 +153,19 @@ First, to simplify the ballots, the population is separated into a "district" fo
 As with SODA, voters can either vote an approval-style vote or delegate by bullet voting. Instead of a pre-announced ranking which allows them to choose a cutoff after the election, candidates have a pre-announced approval ballot that will be used automatically to complete any votes delegated to them (beyond the votes they need to be elected). Candidates may make their approval of other candidates conditional on that approval being mutual, but they may not make it conditional on anything else about the other candidate's approvals. Thus, parties cannot protect corrupt members by forcing other candidates in the party to approve of them. 
 
 The counting process is as follows:
-
-While there are more uneliminated candidates than empty seats:
-*Divide each ballot by the number of uneliminated candidates it approves
-*If there are any candidates with more than a Droop quota:
-**Elect the one with the highest score (previously "unique ballots")
-**Repeat...
-***Discard a randomly-chosen [[Droop quota]] of ballots which approve the elected candidate, starting with the ones delegated to that candidate
-***Check who the next candidate to be elected will be
-***If the next candidate to be elected is not the same as the last time you checked, then re-add the just-discarded ballots and repeat this process
-**...until the next candidate to be elected is the same twice in a row. (this effectively eliminates fluke results due to the randomness of the discard step. If voters tolerate "complicated" math better than they tolerate randomness, this step can be replaced with the equivalent fractional reweighting of ballots. Results should not differ either way.)
-**Assign the elected candidate's pre-declared approvals on any undiscarded delegated ballots for that candidate
-*Otherwise:
-**Eliminate the candidate with the lowest score
-**Assign the eliminated candidate's pre-declared approvals on any delegated ballots for that candidate
+*While there are more uneliminated candidates than empty seats:
+**Divide each ballot by the number of uneliminated candidates it approves
+**If there are any candidates with more than a Droop quota:
+***Elect the one with the highest score (previously "unique ballots")
+***Repeat...
+****Discard a randomly-chosen [[Droop quota]] of ballots which approve the elected candidate, starting with the ones delegated to that candidate
+****Check who the next candidate to be elected will be
+****If the next candidate to be elected is not the same as the last time you checked, then re-add the just-discarded ballots and repeat this process
+***...until the next candidate to be elected is the same twice in a row. (this effectively eliminates fluke results due to the randomness of the discard step. If voters tolerate "complicated" math better than they tolerate randomness, this step can be replaced with the equivalent fractional reweighting of ballots. Results should not differ either way.)
+***Assign the elected candidate's pre-declared approvals on any undiscarded delegated ballots for that candidate
+**Otherwise:
+***Eliminate the candidate with the lowest score
+***Assign the eliminated candidate's pre-declared approvals on any delegated ballots for that candidate
 *Finally, elect all remaining candidates to fill the remaining seats.
 
 Note: If all votes are for one of the two main-party candidates in the voter's district, and if all candidates approve everyone from their party, and if the districts are divided fairly so that plurality would give a proportional result, SODA-PR gives the same results as plurality. These assumptions will not generally be perfectly true, but they will generally be close to true, so SODA-PR will give results that are recognizably similar to single-member districts. It is hoped that this would make it a more acceptable system to politicians who have won under single-winner rules.
