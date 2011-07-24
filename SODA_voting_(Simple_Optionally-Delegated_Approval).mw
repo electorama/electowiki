@@ -160,7 +160,8 @@ While there are more uneliminated candidates than empty seats:
 **Elect the one with the highest score (previously "unique ballots")
 **Repeat...
 ***Discard a randomly-chosen [[Droop quota]] of ballots which approve the elected candidate, starting with the ones delegated to that candidate
-***See who the next candidate to be elected will be
+***Check who the next candidate to be elected will be
+***If the next candidate to be elected is not the same as the last time you checked, then re-add the just-discarded ballots and repeat this process
 **...until the next candidate to be elected is the same twice in a row. (this effectively eliminates fluke results due to the randomness of the discard step. If voters tolerate "complicated" math better than they tolerate randomness, this step can be replaced with the equivalent fractional reweighting of ballots. Results should not differ either way.)
 **Assign the elected candidate's pre-declared approvals on any undiscarded delegated ballots for that candidate
 *Otherwise:
