@@ -61,7 +61,7 @@ In some jurisdictions, a runoff may be constitutionally required if no candidate
 == Sample Ballot ==
 
 '''Vote for as many candidates as you approve:'''<br>
-&#9634; Candidate A (will not share votes)<br>
+&#9634; Candidate A (No preferences declared; this candidate cannot share votes)<br>
 &#9634; Candidate B (Prefers A, then C and D)<br>
 &#9634; Candidate C (Prefers D)<br>
 &#9634; Candidate D (Prefers C)<br>
