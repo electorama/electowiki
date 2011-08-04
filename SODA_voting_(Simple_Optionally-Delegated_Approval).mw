@@ -145,7 +145,7 @@ SODA does even better than this if there are only 3 candidates, or if the Condor
 
 I believe, though have not proved, that the prior paragraph would always hold regardless of the number of candidates, if the candidates were to use delegated votes in the [[DAC]] order instead of simply in order of approval score. This is not part of the definition of the method for simplicity's sake.
 
-Note that, although the circumstances where SODA passes the Condorcet criterion are hemmed in by assumptions, when it does pass, it does so in a perfectly strategy-proof sense. That is ''not'' true of any actual Condorcet system (that is, any system which universally passes the Condorcet criterion). Therefore, for rationally-strategic voters who believe and are correct that the above assumptions are likely to practically hold, '''SODA may in fact pass the Condorcet criterion more often than a Condorcet system'''.
+Note that, although the circumstances where SODA passes the Condorcet criterion are hemmed in by assumptions, when it does pass, it does so in a perfectly strategy-proof sense. That is ''not'' true of any actual Condorcet system (that is, any system which universally passes the Condorcet criterion). Therefore, for rationally-strategic voters who believe and are correct that the above assumptions are likely to practically hold, '''SODA may in practice pass the Condorcet criterion more often than a Condorcet system'''.
 
 == SODA-PR (proportional representation version of SODA) ==
 SODA-PR is the [[proportional representation]] version of the above. 
