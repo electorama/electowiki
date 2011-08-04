@@ -171,4 +171,13 @@ The counting process is as follows:
 *Finally, elect all remaining candidates to fill the remaining seats.
 
 Note: If all votes are for one of the two main-party candidates in the voter's district, and if all candidates approve everyone from their party, and if the districts are divided fairly so that plurality would give a proportional result, SODA-PR gives the same results as plurality. These assumptions will not generally be perfectly true, but they will generally be close to true, so SODA-PR will give results that are recognizably similar to those of single-member districts. It is hoped that this would make it a more acceptable system to politicians who have won under single-winner rules.
+
+==Compatibility with the US electoral college==
+A state could adopt SODA for assigning its electors in the electoral college. If the state did not wish to dilute its voting power, it could adopt SODA, conditional on a certain number of total electoral votes being assigned in a non-winner-take-all fashion.
+
+The way to do this would be to use a divisor-based Proportional Representation process to assign electors between delegated votes for each of the candidates and "approval electors". 
+
+Each candidate's electors would vote as directed by that candidate, if consistent with that candidate's pre-approvals. 
+
+Each "approval elector" would know the statewide non-delegated approval total, and the total of number of affiliated electors throughout the EC, for each candidate. Other "approval electors" would count as fractionally affiliated based on their known approval totals. These electors would be sworn to vote for whichever candidate had the highest product of those two numbers, (nationwide electors * statewide undelegated approval total). They would be chosen by the candidate for whom they were sworn to vote. 
 [[Category:Single-winner voting systems]]
