@@ -10,6 +10,22 @@ Candidates are required to submit a rank-ordering of all the other candidates be
 
 To further decrease the opportunities for manipulation, candidates with the most approvals get the advantage of "moving first" in declaring how they will use their delegated votes. This order is designed to encourage good outcomes in certain problematic situations. See below for more information.
 
+=== Sample Ballot ===
+
+'''Vote for as many candidates as you approve:'''<br>
+&#9634; Candidate A (No preferences declared; this candidate cannot share votes)<br>
+&#9634; Candidate B (Prefers A, then C and D)<br>
+&#9634; Candidate C (Prefers D)<br>
+&#9634; Candidate D (Prefers C)<br>
+&#9634; ____(write-in)____<br>
+&#9634; ____(write-in)____<br>
+&#9634; ____(write-in)____<br>
+&#9634; ____(write-in)____
+
+'''If you only vote for one candidate, he or she can choose to share your vote with one or more others from the top of his or her preference list. If that happens, it will be counted as if you had also checked those candidates above. You can stop this from happening by checking the box below:'''<br>
+&#9634; Do not let the candidate I voted for share my vote with other candidates.<br>
+''Note: if you vote for more than one candidate, none of them can share your vote, and it does not matter whether you check the box above.''
+
 === Full, step-by-step rules ===
 
 '''1. Candidates publicly declare their rankings of the other candidates'''
@@ -57,22 +73,6 @@ This rule is recommended if SODA is to be instituted by legislation (where polit
 In some jurisdictions, a runoff may be constitutionally required if no candidate gets an absolute majority of approvals. This is compatible with SODA. Runoffs would in general be rare, because if voters wish to avoid one, they can ensure that any pairwise champion wins without needing a runoff. In fact, because it can obtain a majority even if most voters bullet vote for different candidates, '''SODA may lead to an absolute majority ''more'' often than IRV'''. IRV is often promoted as guaranteeing a majority, but this only applies if there is a rule to force all voters to rank all candidates; Australia has traditionally had such a rule but it is unpopular, and it would be a total non-starter in the US or UK. Without such a rule, non-majority IRV results are in fact relatively frequent.
 
 (Wonkish note: in the unlikely case that there is no pairwise champion, rational strategy would make runoffs even less likely; the correct strategy with a 3-member Smith set is for each candidate to approve two of the members, which would tend to leave at least one of the candidates with over 2/3 of all delegated votes, plus a good fraction of the non-delegated votes; well over 50% overall in any case. Correct strategy for larger Smith sets is more complicated, but it frequently amounts to using this same two-of-the-three strategy for the first Condorcet triangle which is spanned by the delegated vote declaration order. If this is greek to you, don't worry, it doesn't matter; you'd probably have a "3 member Smith set" well under than 10% of the time, the and a larger one far less than 1% of the time. Even if it did matter, the concrete example would be much easier to understand than this mathematical jargon, and the voters wouldn't have to deal with it anyway.)
-
-=== Sample Ballot ===
-
-'''Vote for as many candidates as you approve:'''<br>
-&#9634; Candidate A (No preferences declared; this candidate cannot share votes)<br>
-&#9634; Candidate B (Prefers A, then C and D)<br>
-&#9634; Candidate C (Prefers D)<br>
-&#9634; Candidate D (Prefers C)<br>
-&#9634; ____(write-in)____<br>
-&#9634; ____(write-in)____<br>
-&#9634; ____(write-in)____<br>
-&#9634; ____(write-in)____
-
-'''If you only vote for one candidate, he or she can choose to share your vote with one or more others from the top of his or her preference list. If that happens, it will be counted as if you had also checked those candidates above. You can stop this from happening by checking the box below:'''<br>
-&#9634; Do not let the candidate I voted for share my vote with other candidates.<br>
-''Note: if you vote for more than one candidate, none of them can share your vote, and it does not matter whether you check the box above.''
 
 == Example ==
 
