@@ -50,6 +50,8 @@ A) There is a brief period - perhaps a week - for candidates to analyse and nego
 
 B) All candidates, in descending order of the number of total votes they have, choose how to add approvals to the votes delegated to them. To do so, they choose a cutoff candidate, and approve all others whom they had ranked above that cutoff. They may choose the top of their ranking list as the cutoff - that is, not approve any other candidates. They may not approve all other candidates, as that would require choosing a cutoff who was worse than all candidates including themselves. If they declared a tie in their preferences, they must either approve all candidates whom they included in that tie (as well as anyone they ranked above that), or none of them. (Note: Doing this in descending order prevents a weaker candidate from making an ultimatum to a stronger candidate, and thus strengthens the strategic equilibrium of any pairwise champion there is.) These choices are announced publicly as they are made. Delegated approvals which are shared during this process may change the decision order of succeeding candidates.
 
+When a candidate adds an approval to their delegated votes, their delegated vote total is added to the approval total of the candidate they approved.
+
 B)i) Write-in candidates could not receive delegated votes, but could be approved at will by official candidates, regardless of declared ranking order. 
 
 C) The number of delegated votes held by each candidate is added to the approval total of everyone they approved.
