@@ -70,6 +70,7 @@ This rule is recommended if SODA is to be instituted by legislation (where polit
 5% is a good cutoff here; that's tens of millions of voters nationally, and enough to deserve a voice. It shouldn't be too high, because this rule is effectively taking power away from voters; that's only justified if the faction is so small that the power is not legitimate, and so it's better to err a bit on the small side if anything. But under 5% - that is, under 10% of the winning coalition - doesn't deserve kingmaker power.
 
 ==== Resolve the "Chicken Dilemma" ====
+<img src="http://chart.apis.google.com/chart?chs=300x225&cht=p&chco=7C9EDD,163C9C,FF9900&chd=s:PVY&chl=Sky|Navy|Orange" width="300" height="225" alt="" />
 Rule: Any equal-rankings in the candidates' predeclared preference order are resolved by the approval totals at the time when that candidate uses their approval votes.
 
 Rationale: One of the toughest situations for any voting system is the "Chicken Dilemma" between two near-clones. Say there are 60% "Blue" voters and 40% "Orange" voters; but the Blue voters are split between two candidates, say 35% for Navy and 25% for Sky. Any good voting system will allow one of the Blue candidates to win, if all the Blue voters support both of their candidates. But under many systems, there is a temptation for the Sky voters not to support Navy, so as to make sure that Sky, not Navy is the winner. But if the Navy voters respond in kind, then Orange could defeat them both.
