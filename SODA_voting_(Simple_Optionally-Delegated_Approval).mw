@@ -14,7 +14,7 @@ To further decrease the opportunities for manipulation, candidates with the most
 
 '''Vote for as many candidates as you approve:'''<br>
 &#9634; Candidate A (No preferences declared; this candidate cannot share votes)<br>
-&#9634; Candidate B (Prefers A, then C and D)<br>
+&#9634; Candidate B (Prefers A, then C, then D)<br>
 &#9634; Candidate C (Prefers D)<br>
 &#9634; Candidate D (Prefers C)<br>
 &#9634; ____(write-in)____<br>
@@ -23,7 +23,7 @@ To further decrease the opportunities for manipulation, candidates with the most
 &#9634; ____(write-in)____
 
 '''If you only vote for one candidate, he or she can choose to share your vote with one or more others from the top of his or her preference list. If that happens, it will be counted as if you had also checked those candidates above. You can stop this from happening by checking the box below:'''<br>
-&#9634; Do not let the candidate I voted for share my vote with other candidates.<br>
+&#9634; Do not let the candidate I voted for share my vote to other candidates.<br>
 ''Note: if you vote for more than one candidate, none of them can share your vote, and it does not matter whether you check the box above.''
 
 === Full, step-by-step rules ===
