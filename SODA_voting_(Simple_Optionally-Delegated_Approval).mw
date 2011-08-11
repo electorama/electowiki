@@ -11,7 +11,7 @@ Candidates are required to submit a rank-ordering of all the other candidates be
 To further decrease the opportunities for manipulation, candidates with the most approvals get the advantage of "moving first" in declaring how they will add approvals to their delegated votes. This order is designed to encourage good outcomes in certain problematic situations. See below for more information.
 
 === Sample Ballot ===
-<table><tr><td>
+<table border='1px'><tr><td>
 '''Vote for as many candidates as you approve, or vote for one candidate to delegate your vote:'''<br>
 &#9634; Candidate A (No preferences declared; even if you delegate to this candidate, they will be unable to add additional approvals for you)<br>
 &#9634; Candidate B (Prefers A, then C, then D)<br>
