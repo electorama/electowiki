@@ -59,7 +59,7 @@ C) The number of delegated votes held by each candidate is added to the approval
 '''4. Highest total wins'''
 
 === Optional rules ===
-==== Prevent sliver candidates from having kingmaker power ====
+==== Prevent weak minor candidates from having kingmaker power ====
 
 Optional step 2.C.ii. (applied after step 2.C above): If any candidate has less than 5% (of the total votes) as delegable votes, and is not one of the top two in total votes, then those votes are automatically delegated down their preference list as far as the Condorcet winner (considering known ballots and preference orders) among the candidates on their preference list, or, in case of elections with a cycle, as far as the second member of the Smith set (this is correct CPNE strategy for a Smith set of size 3; larger Smith sets, with over two members included in the minor candidate's preference list, are hit-by-lightning unlikely).
 
