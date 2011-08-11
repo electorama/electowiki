@@ -1,4 +1,4 @@
-Simple Optionally-Delegated Approval (SODA) is a single-winner voting system based on [[approval voting]]. As in approval voting, voters get a ballot which lets them vote for as many or as few candidates as they like. Unlike in approval, voters who don't want to decide yes or no for every candidate can choose to delegate their ballot, trusting their favorite candidate to "complete the ballot" by adding further approvals. The voters' ballots are counted and preliminary totals are announced.  Then, once the candidates know how much support and how many delegated ballots they have, those who do not expect to win will add approvals to the delegated ballots they control, in order to help others who would be good compromise options.
+Simple Optionally-Delegated Approval (SODA) is a single-winner voting system based on [[approval voting]]. As in approval voting, voters get a ballot which lets them vote for as many or as few candidates as they like. Unlike in approval, voters who don't want to decide yes or no for every candidate can choose to delegate their ballot, trusting their favorite candidate to "fill in the ballot" by adding further approvals. The voters' ballots are counted and preliminary totals are announced.  Then, once it is known how much support and how many delegated ballots each candidate has, those who do not expect to win can add approvals to the delegated ballots they control, in order to help others who would be good compromise options.
 
 Approvals added by a candidate to their delegated ballots are worth the same as direct approvals from voters.  Both types of approval are added together and the winner is the candidate with the most total approvals.
 
@@ -12,19 +12,18 @@ To further decrease the opportunities for manipulation, candidates with the most
 
 === Sample Ballot ===
 
-'''Vote for as many candidates as you approve:'''<br>
+'''Vote for as many candidates as you approve, or vote for one candidate to delegate your vote:'''<br>
 &#9634; Candidate A (No preferences declared; even if you delegate to this candidate, they will be unable to add additional approvals for you)<br>
 &#9634; Candidate B (Prefers A, then C, then D)<br>
 &#9634; Candidate C (Prefers D)<br>
 &#9634; Candidate D (Prefers C)<br>
 &#9634; ____(write-in)____<br>
-&#9634; ____(write-in)____<br>
-&#9634; ____(write-in)____<br>
 &#9634; ____(write-in)____
 
-'''If you only vote for one candidate, he or she can choose to modify your vote to add approvals for others from the top of his or her preference list. If that happens, it will be counted as if you had also checked those candidates above. This is known as delegating your vote to the candidate you voted for. You can stop this from happening by checking the box below:'''<br>
+'''If you only vote for one candidate, you are delegating your vote to that candidate. He or she can then choose to modify your vote by adding approvals for other candidates from the top of his or her preference list. When he or she does so, it will be counted as if you had checked those candidates above. This could allow your favorite candidate to help negotiate a good compromise result even if they cannot win. He or she could not add an approval for a candidate who is not in his or her declared preferences listed above.<br>
+If you do not want your vote to be modified, you can stop this from happening by checking the box below:'''<br>
 &#9634; Do not delegate. Do not let the candidate I voted for add approvals to my vote.<br>
-''Note: if you vote for more than one candidate, your vote is not delegated. In that case, none of your approved candidates can add approvals to your vote, and it does not matter whether you check the box above.''
+''Note: if you vote for more than one candidate, your vote is not delegated. In that case, no-one can add approvals to your vote, and it does not matter whether you check the box above.''
 
 === Full, step-by-step rules ===
 
