@@ -1,0 +1,36 @@
+The study of voting systems has made significant progress over the last decade, and our understanding is even farther beyond what it was 20 years ago. One important place where that has happened is on the election methods mailing list. This mailing list is likely to include the largest and most diverse group of voting systems theorists in the world. It is a place where opinions vary and debate is vigorous. Thus, we think that the broad, though imperfect, consensus on the following ideas is worth paying attention to.
+
+We believe that the voting systems currently used in most of the English-speaking world, including single-round plurality voting (also termed First Past the Post, FPTP) and single-member districts (aka seats, ridings, or electorates), represent some of the worst voting systems known. We believe that reforming these systems would provide important societal benefits, and that there are clearly not corresponding reasons to oppose such reform from the perspective of the public interest. We may disagree about which specific reforms might provide the absolutely optimum results, but we can nevertheless agree that there are a number of options which would represent worthwhile improvements.
+
+==Single-winner reform==
+
+There are various criteria, both formally-defined and informal, by which one can judge a voting system. These criteria can be divided into several classes:
+
+# Honest-results-oriented criteria. These include such measures as Bayesian regret (that is, simulated societal satisfaction), the majority criterion, and the Condorcet criterion, which focus on whether the "correct" candidate, according to some definition, is elected. Although these criteria in some cases can favor different candidates as being "correct", in most practical cases they agree.
+# Strategy-resistance criteria. Voting is a complex process, and inevitably there are some cases where some group could get an advantage by changing their votes.  It is desirable to keep such cases to a minimum. For one thing, it's fairer not to reward such strategic voting behavior. But it's not just that. Perhaps more importantly, a voting system which gives too much of an incentive to strategic voters, can lead to widespread strategy which systematically distorts the results.
+# Process-oriented criteria. These include such measures as simplicity of the ballot, simplicity of the ballot-counting process, and feasibility of auditing or other fraud-prevention measures.
+# Candidate-incentive criteria. Systems which encourage or discourage "clone candidates"; give too much power to parties, as opposed to voters; have problems here. These criteria also include less strictly-defined concerns about the type of candidates and campaign strategies a system encourages; for instance, systems which effectively reduce the field to 2 major candidates could encourage negative advertising.
+
+There is a broad consensus among researchers plurality voting is among the worst systems for honest results, for strategy-resistance, and for candidate incentives. Honest voting can split votes among similar candidates, "spoiling" the election and leading opposing candidates to win. Voters respond by strategically choosing the "lesser evil" among the two major candidates, which can lead to complacent candidates because even corrupt, widely-disliked candidates can win. The system discourages candidates from entering the race, and encourages negative advertising. Although plurality has good simplicity and fraud-resistance, this is not enough to recommend its use.
+
+A number of proposed single-winner replacements for plurality exist. Although theorists can not find consensus about which of these systems is best, we can agree that many of them are clearly head-and-shoulders above plurality. Systems advanced as as best by some of us, and accepted as good by all of us, include (in categorical and alphabetical order):
+
+* Various *Bucklin* or median-based systems such as *Majority Judgment*
+* Various *Condorcet* systems, including *Condorcet//Approval, various Condorcet//IRV hybrids, Ranked Pairs, *and* Schulze*.
+* *Range Voting* (aka Score Voting)
+* *SODA voting*
+
+Notably absent from the above list is IRV (aka Alternative Vote, or misnamed as "Ranked Choice Voting"). IRV has some advocates who feel that its property of "Later-no-harm", a strategy-resistance criterion, make it the only good reform proposal. However, the signatories to this statement agree that it is inferior to most of the systems above. Some of us find it superior to Plurality, and thus would support IRV as a reform; some of us find it as bad or worse, and would oppose it.
+
+Still, even without IRV, the list above has too many options for the average, unengaged voter to understand and choose between. Thus, our advocacy for our various systems has had the tragically ironic result of splitting the vote and ensuring Plurality voting's continued dominance. We find this situation intolerable. Thus, we make two commitments:
+
+* All of us will support any of the above as practical reform, and endeavor to emphasize their advantages when talking to the public.
+* All of us will also unite to support *approval voting*, which can be seen as the simplest case of any one of the above-listed systems.
+
+Approval voting simply means that voters may vote for as many candidates as they wish. It is a clear improvement over plurality. The ballot format is just as simple. It would reduce mistakenly invalid or "spoiled" ballots. It would allow minor parties to show a realistic level of support, while still ensuring that the actual winner had the broadest support.
+
+Some have criticized approval on the basis that it would lead to nearly-universal bullet voting. This is a criticism that we find flatly ridiculous. First, for a large part of the electorate â€” those whose favorite candidate is one of the two frontrunners â€” a bullet vote is entirely appropriate, being both strategically and expressively adequate. Second, the large majority of voters have become accustomed to voting for a "lesser evil" when their favorite candidate is not a frontrunner. It is simply not credible that voters who can betray their favorite in order to avoid vote-splitting under plurality, would suddenly become such partisans that they couldn't add a backup vote under approval.
+
+==Proportional representation==
+
+''not yet drafted''
