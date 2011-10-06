@@ -35,6 +35,8 @@ A) Before the election, all candidates must rank the other official candidates i
 
 B) It is presumed that there is some mechanism in place so that no candidate is "caught off-guard" by another candidate's rankings. For instance, there could be an option for a candidate to change their rankings after another candidate has announced their own rankings. That is, if A and B agree to rank each other for delegation, but then after A ranks B, B reneges on the agreement by ranking A last, A could retaliate by moving B to the last ranking. The details of such a mechanism are unimportant, because its very existence would prevent it from being used; candidates, realizing that surprises don't work and only cause resentment, wouldn't attempt to use them.
 
+C) Ballots are formatted in order from candidates who submit the most complete rankings of other candidates, to those who submit the least. Where this is a tie, ordering is random. This is a slight incentive for candidates to submit a complete ranking in order to appear high on the ballot.
+
 '''2. Voters vote delegable plurality-style votes or non-delegable approval-style votes'''
 
 A) Each voter submits an approval ballot.
