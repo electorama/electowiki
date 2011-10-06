@@ -13,10 +13,10 @@ To further decrease the opportunities for manipulation, candidates with the most
 === Sample Ballot ===
 <table border='1px' width='80%'><tr><td>
 '''Vote for as many candidates as you approve, or vote for one candidate to delegate your vote:'''<br>
-&#9634; Candidate A (No preferences declared)<br>
-&#9634; Candidate B (Prefers A, then C, then D)<br>
-&#9634; Candidate C (Prefers D)<br>
-&#9634; Candidate D (Prefers C)<br>
+&#9634; Candidate A (Prefers C, then B, then D)<br>
+&#9634; Candidate B (Prefers D)<br>
+&#9634; Candidate C (Prefers A)<br>
+&#9634; Candidate D (No preferences declared)<br>
 &#9634; ____(write-in)____<br>
 &#9634; ____(write-in)____
 
