@@ -156,7 +156,7 @@ SODA does involve some parliamentary-style negotiation for about a week after ea
 
 === "Why go to the trouble of pre-announced rankings and a second round? Why not just have candidates pre-announce the approvals they will add to their delegated votes?" ===
 
-This sounds appealing, but would not work if two similar candidates were in a close race to see which had more first-choice votes, while an opponent stood ready to take advantage if they split the vote. The system as it stands allows the similar candidates to see, after the votes are counted, which of them deserves to win: the one with the higher approval total. That one will go first and not delegate their votes, and then other one (of necessity) will.
+This sounds appealing, but would not work if two similar candidates were in a close race to see which had more first-choice votes, while an opponent stood ready to take advantage if they split the vote (that is, in the Chicken Dilemma, also discussed above). The system as it stands allows the similar candidates to see, after the votes are counted, which of them deserves to win: the one with the higher approval total. That one will go first and not delegate their votes, and then other one (of necessity) will.
 
 In general, this system, because it provides perfect information on voting totals at the time when delegation is happening, will make strategy obvious. This has the paradoxical result that, as long as most voters agree with their favored candidate's chosen ranking order, this system will in practice be '''more Condorcet compliant than a Condorcet method''' (because strategy could confound a true Condorcet method more often than SODA).
 
