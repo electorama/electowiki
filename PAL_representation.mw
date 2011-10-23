@@ -31,9 +31,11 @@ First, to simplify the ballots, the population is separated into a "district" fo
 
 * Your representative is the member of the party you voted for who is representing your district. If no member of the party you voted for was elected, then you may look at the public ballot of your chosen candidate to see which of your district's representatives is yours.
 
-== Note ==
-If:
-* all votes are for one of the two main-party candidates in the voter's district, 
-* all candidates approve everyone from their party
-* and the districts are divided fairly so that plurality would give a proportional result
-... then LAP representation (like SODA-PR or Balinski's "Fair Representation") gives the same results as plurality. These assumptions will not generally be perfectly true, but they will generally be close to true, so LAP representation will give results that are recognizably similar to those of single-member districts. It is hoped that this would make it a more acceptable system to politicians who have won under single-winner rules.
+== Advantages ==
+
+
+*If:
+:* all votes are for one of the two main-party candidates in the voter's district, 
+:* all candidates approve everyone from their party
+:* and the districts are divided fairly so that plurality would give a proportional result
+:... then LAP representation (like SODA-PR or Balinski's "Fair Representation") gives the same results as plurality. These assumptions will not generally be perfectly true, but they will generally be close to true, so LAP representation will give results that are recognizably similar to those of single-member districts. It is hoped that this would make it a more acceptable system to politicians who have won under single-winner rules.
