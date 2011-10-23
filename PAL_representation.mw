@@ -87,27 +87,27 @@ The preferences of the voters would be divided like this:
 |
 # '''Memphis 1'''
 # Rest of Memphis party:
-:* Memphis 2
+#* Memphis 2
 # Nashville
 # Eastern party
-:* Chattanooga
-:* (Knoxville not approved)
+#* Chattanooga
+#* (Knoxville not approved)
 |
 # '''Nashville'''
 # Eastern party:
-:* Chattanooga
-:* Knoxville
+#* Chattanooga
+#* Knoxville
 # Memphis party
 |
 # '''Chattanooga'''
 # Rest of Eastern Party:
-:* Knoxville
+#* Knoxville
 # Nashville
 # Memphis party
 |
 # '''Knoxville'''
 # Rest of Eastern Party:
-:* Chattanooga
+#* Chattanooga
 # Nashville
 # Memphis party
 |}
