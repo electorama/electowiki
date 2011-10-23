@@ -1,7 +1,8 @@
-LAP (Locally-Accountable Proportional) representation is a system for electing a legislature, such that ballot secrecy is preserved but each voter can know who "their" representative is. It is designed to be a gentle change from a single-member-district system, and districts can remain unchanged. Each district will have one representative from each represented party. The basic idea is:
+LAP (Locally-Accountable Proportional) representation is a system for electing a legislature, such that ballot secrecy is preserved but each voter can know who their representative is. Unlike with single-member districts (as currently used in the US and UK), an overwhelming majority (not just a little more than half) of voters will have a representative whom they've actually supported in some way. It is designed to be a gentle change from a single-member-district system, and districts can remain unchanged. Most representatives will represent multiple districts, and each district will have one representative from each represented party. For instance, if two parties divide the legislature 50:50, then each representative will have two districts and each district will have two representatives (one from each party). The basic idea is:
 
+* Candidates pre-announce their rank-ordering of the parties (starting with their own party) and may optionally disapprove of any other candidates.
 * Voters may vote on the candidates in their or nearby districts, or write in candidates from farther off.
-* Each vote is transformed into the pre-submitted public ranked ballot of the candidate it chooses. These public ballots must not have non-adjacent members of the same party.
+* Each ballot is transformed into the pre-announced vote of the candidate it supports.
 * A legislature is elected by [[STV]].
 * Each district "drafts" one member of each elected party from the elected slate.
 * Your representative is the member of the party you voted for who is representing your district.
