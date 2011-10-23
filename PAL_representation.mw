@@ -118,8 +118,8 @@ The quota is (100.0008%/(3+1))=25.0002% (The small fraction represents one extra
 * (Memphis 1: 25.0002% (elected))
 * Memphis 2: ~17% (actually 16.9998%)
 * (Nashville: 25.0002% (elected))
-* Chatanooga: ~15.5% (actually, 15.49999%)
-* Knoxville: ~17.5% (actually 17.49999%)
+* Chatanooga: ~15.5% (actually, 15.4999%)
+* Knoxville: ~17.5% (actually 17.4999%)
 
 The party with the fewest remaining votes is the Memphis party. Within that party, Memphis 2 is the site with the fewest votes (in fact, the only remaining site), so even though it has more votes than Chatanooga, Memphis 2 is eliminated. The votes are pass over the already-elected Nashville to tranfer to the Eastern party. Within that party, Memphis disapproved Knoxville, so the full total is transferred to Chatanooga. Chatanooga now has ~32.5%, more than the 25% quota, so it is the third and final site.
 
