@@ -61,11 +61,57 @@ First, to simplify the ballots, the population is separated into a "district" fo
 </td></tr></table>
 
 ==Example==
-Imagine that Tennessee is having an election on where to locate 3 public universities (and not, as it says below, the capital).
 
-{{Tenn_voting_example}}
 
-Imagine that there are two candidate locations in Memphis, and one in each of the other cities. Also imagine that Chatanooga and Knoxville band together to form the "Eastern party". Memphis voters prefer Memphis, then Nashville then "the Eastern party except for Knoxville" (that is, Chatanooga); while Nashville voters prefer the Eastern party (without distinctions) and then Memphis.
+[[Image:Tennessee map for voting example.svg|right|500px|Tennessee's four cities are spread throughout the state]]
+
+magine that Tennessee is having an election on where to locate 3 public universities. The population of Tennessee is concentrated around its four major cities, which are spread throughout the state. For this example, suppose that the entire [[electorate]] lives in these four cities, and that everyone wants to live as near as many universities as possible.
+
+The candidate sites for the university are:
+* {{wp|Memphis}}, the state's largest city, with 42% of the voters, but located far from the other cities
+:* Site 1
+:* Site 2
+* {{wp|Nashville}}, with 26% of the voters, near the center of Tennessee
+* The "Eastern Party", composed of:
+:* {{wp|Knoxville}}, with 17% of the voters
+:* {{wp|Chattanooga}}, with 15% of the voters
+
+The preferences of the voters would be divided like this:
+
+{| class="wikitable"
+! width=25% style="background-color: #ffdddd" | 42% of voters<br /><small>(close to Memphis)</small>
+! width=25% style="background-color: #ccffcc" | 26% of voters<br /><small>(close to Nashville)</small>
+! width=25% style="background-color: #ddddff" | 15% of voters<br /><small>(close to Chattanooga)</small>
+! width=25% style="background-color: #ffeedd" | 17% of voters<br /><small>(close to Knoxville)</small>
+|-
+|
+# '''Memphis 1'''
+# Rest of Memphis party:
+:* Memphis 2
+# Nashville
+# Eastern party
+:* Chattanooga
+:* (Knoxville not approved)
+|
+# '''Nashville'''
+# Eastern party:
+:* Chattanooga
+:* Knoxville
+# Memphis party
+|
+# '''Chattanooga'''
+# Rest of Eastern Party:
+:* Knoxville
+# Nashville
+# Memphis party
+|
+# '''Knoxville'''
+# Rest of Eastern Party:
+:* Chattanooga
+# Nashville
+# Memphis party
+|}
+
 
 The quota is 25%. Since both Memphis (site 1) and Nashville are over the quota, both are elected first. Memphis votes are multiplied by 17/42 and transferred to Memphis site 2, and Nashville votes are multiplied by 1/26 and then split evenly between Chatanooga and Knoxville. Totals are now:
 
