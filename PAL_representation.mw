@@ -113,15 +113,15 @@ The preferences of the voters would be divided like this:
 |}
 
 
-The quota is 25%. Since both Memphis (site 1) and Nashville are over the quota, both are elected first. Memphis votes are multiplied by 17/42 and transferred to Memphis site 2, and Nashville votes are multiplied by 1/26 and then split evenly between Chatanooga and Knoxville. Totals are now:
+The quota is (100.0008%/(3+1))=25.0002% (The small fraction represents one extra virtual voter, to ensure that the quota cannot be met by four different sites). Since both Memphis (site 1) and Nashville are over the quota, both are elected first. Memphis votes are multiplied by 17/42 and transferred to Memphis site 2, and Nashville votes are multiplied by 1/26 and then split evenly between Chatanooga and Knoxville. Totals are now:
 
-* (Memphis 1: 25% (elected))
-* Memphis 2: 17%
-* (Nashville: 25% (elected))
-* Chatanooga: 15.5%
-* Knoxville: 17.5%
+* (Memphis 1: 25.0002% (elected))
+* Memphis 2: ~17% (actually 16.9998%)
+* (Nashville: 25.0002% (elected))
+* Chatanooga: ~15.5% (actually, 15.49999%)
+* Knoxville: ~17.5% (actually 17.49999%)
 
-The party with the fewest remaining votes is the Memphis party. Within that party, Memphis 2 is the site with the fewest votes (in fact, the only remaining site), so even though it has more votes than Chatanooga, Memphis 2 is eliminated. The votes are pass over the already-elected Nashville to tranfer to the Eastern party. Within that party, Memphis disapproved Knoxville, so the full total is transferred to Chatanooga. Chatanooga now has 32.5%, more than the 25% quota, so it is the third and final site.
+The party with the fewest remaining votes is the Memphis party. Within that party, Memphis 2 is the site with the fewest votes (in fact, the only remaining site), so even though it has more votes than Chatanooga, Memphis 2 is eliminated. The votes are pass over the already-elected Nashville to tranfer to the Eastern party. Within that party, Memphis disapproved Knoxville, so the full total is transferred to Chatanooga. Chatanooga now has ~32.5%, more than the 25% quota, so it is the third and final site.
 
 If Knoxville had not joined a party with Chatanooga, then Chatanooga would have been eliminated, and Knoxville would have been the final site. But Chatanooga could have responded by threatening to prefer a second Nashville site, or even Memphis 2, over Knoxville, if Knoxville would not cooperate in the Eastern party. In the end, Knoxville's strategy may or may not have worked. In general, such strategic gamesmanship would be less profitable and more dangerous in a real election, with more seats overall as well as a significant degree of polling uncertainty.
 
