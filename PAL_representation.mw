@@ -2,18 +2,18 @@ LAP (Locally-Accountable Proportional) representation is a system for electing a
 
 * Voters may vote on the candidates in their or nearby districts, or write in candidates from farther off.
 * Each vote is transformed into the pre-submitted public ranked ballot of the candidate it chooses. These public ballots must not have non-adjacent members of the same party.
-* A legislature is elected by STV.
+* A legislature is elected by [[STV]].
 * Each district "drafts" one member of each elected party from the elected slate.
 * Your representative is the member of the party you voted for who is representing your district.
 
-== Procedure ==
+== Full Procedure ==
 * Candidates pre-announce their rank-ordering of the parties (starting with their own party) and may optionally disapprove of any other candidates.
 * Voters may vote on the candidates in their or nearby districts, or write in candidates from farther off.
 
 First, to simplify the ballots, the population is separated into a "district" for each seat, and "districts" are grouped into sets of 2 or 3 "co-districts". The ballot for each district lists the incumbents and candidates from that district in a larger font, and the candidates from its co-districts below that in a smaller font. Write-ins may be used to vote for candidates from other districts not listed on the ballot, so the districts only matter for ballot simplicity (Voters do not want to have a ballot with many dozens of candidates on it, but write-ins allow full freedom for those voters who want it). Larger parties will usually run one candidate per district; smaller parties may just run one candidate per co-district set.
 
 * Each vote is transformed into the pre-announced party preference order and individual approvals/disapprovals of the candidate it chooses. 
-* A legislature is elected by STV. Ballots are transferred by fractionally dividing them among all remaning approved candidates from the top-ranked remaining party.
+* A legislature is elected by [[STV]]. Ballots are transferred by fractionally dividing them among all remaning approved candidates from the top-ranked remaining party.
 * Each district "drafts" one member of each elected party from the elected slate.
 
 :The draft proceeds as follows:
@@ -24,9 +24,8 @@ First, to simplify the ballots, the population is separated into a "district" fo
 
 * Your representative is the member of the party you voted for who is representing your district. If no member of the party you voted for was elected, then you may look at the public ballot of your chosen candidate to see which of your district's representatives is yours.
 
-
-
-Note: If:
+== Note ==
+If:
 * all votes are for one of the two main-party candidates in the voter's district, 
 * all candidates approve everyone from their party
 * and the districts are divided fairly so that plurality would give a proportional result
