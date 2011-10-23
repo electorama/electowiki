@@ -7,15 +7,21 @@ LAP (Locally-Accountable Proportional) representation is a system for electing a
 * Your representative is the member of the party you voted for who is representing your district.
 
 == Procedure ==
+* Candidates pre-announce their rank-ordering of the parties (starting with their own party) and may optionally disapprove of any other candidates.
 * Voters may vote on the candidates in their or nearby districts, or write in candidates from farther off.
 
 First, to simplify the ballots, the population is separated into a "district" for each seat, and "districts" are grouped into sets of 2 or 3 "co-districts". The ballot for each district lists the candidates from that district in a larger font, and the candidates from its co-districts in a smaller font. Write-ins may be used to vote for candidates from other districts not listed on the ballot, so the districts only matter for ballot simplicity (Voters do not want to have a ballot with many dozens of candidates on it, but write-ins allow full freedom for those voters who want it). Larger parties will usually run one candidate per district; smaller parties may just run one candidate per co-district set.
 
-* Each vote is transformed into the pre-submitted public ranked ballot of the candidate it chooses. These public ballots must not have non-adjacent members of the same party.
-* A legislature is elected by STV.
+* Each vote is transformed into the pre-announced party preference order and individual approvals/disapprovals of the candidate it chooses. 
+* A legislature is elected by STV. Ballots are transferred by fractionally dividing them among all remaning approved candidates from the top-ranked remaining party.
 * Each district "drafts" one member of each elected party from the elected slate.
 
 :The draft proceeds as follows:
-:*test
+:*General rule: All representatives from a party must be drafted N times before any representative from that party may be drafted N+1 times.
+:*General rule: No district may draft two representatives from the same party.
+:*First, each representative is drafted by their home district.
+:*From then on, the draft proceeds in descending order of votes. That is, if more votes from district 1 go to candidate A than any other eligible district:candidate pair, then A is drafted to that district.
 
-* Your representative is the member of the party you voted for who is representing your district.
+* Your representative is the member of the party you voted for who is representing your district. If no member of the party you voted for was elected, then you may look at the public ballot of your chosen candidate to see which of your district's representatives is yours.
+
+Note: If all votes are for one of the two main-party candidates in the voter's district, and if all candidates approve everyone from their party, and if the districts are divided fairly so that plurality would give a proportional result, LAP representation (like SODA-PR or Balinski's "Fair Representation") gives the same results as plurality. These assumptions will not generally be perfectly true, but they will generally be close to true, so SODA-PR will give results that are recognizably similar to those of single-member districts. It is hoped that this would make it a more acceptable system to politicians who have won under single-winner rules.
