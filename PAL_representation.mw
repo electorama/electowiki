@@ -15,14 +15,18 @@ The basic idea is:
 
 First, to simplify the ballots, the population is separated into a "district" for each seat, and "districts" are grouped into sets of 2 or 3 "co-districts". The ballot for each district lists the incumbents and candidates from that district in a larger font, and the candidates from its co-districts below that in a smaller font. Write-ins may be used to vote for candidates from other districts not listed on the ballot, so the districts only matter for ballot simplicity (Voters do not want to have a ballot with many dozens of candidates on it, but write-ins allow full freedom for those voters who want it). Larger parties will usually run one candidate per district; smaller parties may just run one candidate per co-district set.
 
+* The quota Q is set to the [[Droop Quota]]; that is, to the rational number (V+1)/(S+1), where V is valid votes and S is seats.
 * Each vote is transformed into the pre-announced party preference order and individual approvals/disapprovals of the candidate it chooses. 
 * A legislature is elected by a version of [[STV]].
 :*Delegated votes first count full-weight for their chosen candidate. Once that candidate is elected or eliminated, a vote is divided equally among all non-disapproved, non-eliminated members of the top party remaining on that ballot with any such members.
 :*Undelegated votes are divided equally among all approved, non-eliminated candidates on that ballot.
-:*Any candidates who reach a [[Droop quota]] are immediately and simultaneously elected, and their ballots are reweighted to eliminate a Droop quota.
-:*If there are no candidates who reach a [[Droop quota]], the party with the fewest votes is identified, and the candidate from that party with the fewest votes is eliminated. All votes for that candidate are reassigned as outlined above.
-:*If the above finishes without electing a full slate, the last candidate to be eliminated is elected.
-:*If there is still no full slate, the process is rerun from the beginning (again electing the last candidate standing) until a full slate is reached.
+:*Any candidates who reach the quota are immediately and simultaneously elected, and their ballots are reweighted to eliminate a Droop quota.
+:*If there are no candidates who reach the quota, the party with the fewest votes is identified, and the candidate from that party with the fewest votes is eliminated. All votes for that candidate are reassigned as outlined above.
+:*If the above finishes without electing a full slate:
+::* All ballots are reweighted to 1
+::* All elected representatives return to being hopeful candidates
+::* the Droop quota is decreased as if there were one more seat (that is, it first changes from (V+1)/(S+1), to (V+1)/(S+2) )
+::* The counting process is rerun from the beginning. If there is still no full slate, the quota is reduced again (to (V+1)/(S+3), etc.) and the counting repeats, until there is one.
 * Each district "drafts" one member of each elected party from the elected slate.
 
 :The draft proceeds as follows:
