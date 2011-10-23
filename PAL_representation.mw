@@ -34,23 +34,26 @@ First, to simplify the ballots, the population is separated into a "district" fo
 * Your representative is the member of the party you voted for who is representing your district. If no member of the party you voted for was elected, then you may look at the public ballot of your chosen candidate to see which of your district's representatives is yours.
 
 == Advantages ==
-
-*'''P'''roportional
+=== P ===
+*Proportional
 :*Thus, a large majority of voters have real representation
 :*Each representative is elected with the same number of votes.
-*'''A'''ccountable
-:*Voters, not party bureaucrats, decide which members of a given party get seated.
-:*Since the total votes needed for election is higher, the "margin of victory" is reduced. There are no safe, gerrymandered seats where corrupt representatives can hide.
-*'''L'''ocal
-:*Representatives know who is a constituent and voters know who is their representative.
-:*Neighbors can organize to lobby their shared representatives.
-:*Fair attention for local issues.
 *Prudent; not a radical change from single-member districts
+:*No redistricting necessary
 :*If:
 ::* all votes are for one of the two main-party candidates in the voter's district, 
 ::* all candidates approve everyone from their party
 ::* and the districts are divided fairly so that plurality would give a proportional result
 ::... then PAL representation (like Balinski's "Fair Representation") gives the same results as plurality. These assumptions will not generally be perfectly true, but they will generally be close to true, so PAL representation will give results that are recognizably similar to those of single-member districts. It is hoped that this would make it a more acceptable system to politicians who have won under single-winner rules.
+=== A ===
+*Accountable
+:*Voters, not party bureaucrats, decide which members of a given party get seated.
+:*Since the total votes needed for election is higher, the "margin of victory" is reduced. There are no safe, gerrymandered seats where corrupt representatives can hide.
+=== L ===
+*Local
+:*Representatives know who is a constituent and voters know who is their representative.
+:*Neighbors can organize to lobby their shared representatives.
+:*Fair attention for local issues.
 
 == Justification ==
 PAL representation is inspired by Michel Balinski's "Fair Representation" and by [[SODA voting]]. From the former, which is used for municipal elections in Belgium, it inherits the combination of geographical districts and proportionality. However, unlike Fair Representation, each candidate elected by PAL representation has received (directly or indirectly) the same number of votes (except in rare, unavoidable cases when there are not enough candidates who get that number of votes). From SODA voting, PAL representation inherits the simple, spoilproof ballot format and the optional vote delegation.
