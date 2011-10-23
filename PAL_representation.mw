@@ -39,16 +39,16 @@ First, to simplify the ballots, the population is separated into a "district" fo
 
 == Sample Ballot ==
 <table border='1px' width='80%'><tr><td>
-'''''District 5 ballot'''''
+'''''District 5 ballot'''''<br>
 '''Vote for one candidate to delegate your vote, or otherwise vote for as many candidates as you approve:'''<br>
 &#9634; '''John Adams''' (Yellow Party, district 5) (Prefers Yellow Party except for Zapatero)<br>
 &#9634; '''Michelle Bachelet''' (Silver Party, district 5) (Prefers Silver Party, then Purple Party)<br>
 &#9634; '''Winston Churchill''' (Purple Party, district 5) (Prefers Purple Party, then Silver Party except for Yarrow)<br>
-&#9634; Alfred Deakin (Yellow Party, district 6) (Prefers Yellow Party then Silver party except for Yarrow)<br>
-&#9634; John Edwards (Silver Party, district 6) (Prefers Silver Party then Purple party)<br>
-&#9634; Vicente Fox (Orange Party, district 6) (Prefers Orange Party then Silver party)<br>
-&#9634; Inder Gujral (Yellow Party, district 7) (Prefers Yellow Party then Silver party except for Yarrow)<br>
-&#9634; Stephen Harper (Silver Party, district 7) (Prefers Silver Party)<br>
+&#9634; Alfred Deakin (Yellow Party, district 4) (Prefers Yellow Party then Silver party except for Yarrow)<br>
+&#9634; John Edwards (Silver Party, district 4) (Prefers Silver Party then Purple party)<br>
+&#9634; Vicente Fox (Orange Party, district 4) (Prefers Orange Party then Silver party)<br>
+&#9634; Inder Gujral (Yellow Party, district 6) (Prefers Yellow Party then Silver party except for Yarrow)<br>
+&#9634; Stephen Harper (Silver Party, district 6) (Prefers Silver Party)<br>
 
 &#9634; ____(write-in)____<br>
 &#9634; ____(write-in)____
@@ -59,6 +59,7 @@ First, to simplify the ballots, the population is separated into a "district" fo
 
 ''If you vote for more than one candidate, or if you vote for a candidate with no declared preferences, your vote is not delegated. In that case, no-one can add approvals to your vote, and it does not matter whether you check the box above.''
 </td></tr></table>
+
 == Advantages ==
 === P ===
 *Proportional
