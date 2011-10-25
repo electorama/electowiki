@@ -2,18 +2,17 @@ PAL (Proportional, Accountable, Local) representation is a system for electing a
 
 The basic idea is:
 
-* Candidates pre-announce their rank-ordering of the parties (starting with their own party) and may optionally approve/disapprove within each party candidates. Their votes will never be transferred to disapproved candidates.
-* Voters may vote on the candidates in their or nearby districts, or write in candidates from farther off. Votes are delegated by default but optionally, voters may refuse to delegate or vote approval-style.
-* Each delegated ballot is transformed into the pre-announced vote of the candidate it supports.
+* Candidates pre-announce their preference among parties and their approvals within parties.
+* Voters may vote on the candidates in their or nearby districts, or write in candidates from farther off. Single-candidate "bullet" votes are delegated to that candidate but voters may refuse to delegate by voting for more than one candidate.
 * A legislature is elected by a version of [[STV]] (with fractional transfers and a Droop quota.)
 * Each district "drafts" one member of each elected party from the elected slate.
 * Your representative is the member of the party you voted for who is representing your district.
 
 == Full Procedure ==
-* Candidates pre-announce their rank-ordering of the parties (starting with their own party) and may optionally disapprove of any other candidates.
+* Candidates pre-announce their rank-ordering of the parties (starting with their own party) and may optionally approve/disapprove within each party.
 * Voters may vote on the candidates in their or nearby districts, or write in candidates from farther off.
-*: To simplify the ballots, the population is separated into a "district" for each seat, and "districts" are grouped into sets of 2 or 3 "co-districts". The ballot for each district lists the incumbents and candidates from that district in a larger font, and the candidates from its co-districts below that in a smaller font. Write-ins may be used to vote for candidates from other districts not listed on the ballot, so the districts only matter for ballot simplicity (Voters do not want to have a ballot with many dozens of candidates on it, but write-ins allow full freedom for those voters who want it). Larger parties will usually run one candidate per district; smaller parties may just run one candidate per co-district set.
-* Each vote is transformed into the pre-announced party preference order and individual approvals/disapprovals of the candidate it chooses. 
+*: To simplify the ballots, the population is separated into a "district" for each seat, and "districts" are grouped into sets of 2 or 3 "co-districts". The ballot for each district lists the incumbents and candidates from that district in a larger font, and the candidates from its co-districts below that in a smaller font. Write-ins may be used to vote for candidates from other districts not listed on the ballot. Larger parties will usually run one candidate per district; smaller parties may run just one candidate per co-district set.
+* Each vote is transformed into the pre-announced party preference order and individual approvals/disapprovals of the candidate it chooses. Votes will never be transferred to a candidate who was disapproved in the pre-announced list.
 * A legislature is elected by a modified version of [[STV]], using the following steps:
 # The iteration number I is set to 1. (Higher iteration numbers mean lower quotas. The process will be run from scratch with an increasing iteration number until a full slate of candidates reaches the quota)
 # The quota Q is set to the [[Droop Quota]]; that is, to the rational number (V+1)/(S+I), where V is valid votes and S is seats.
