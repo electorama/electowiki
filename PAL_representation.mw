@@ -18,7 +18,8 @@ The basic idea is:
 # The quota Q is set to the rational number (V+1)/(S+I), where V is valid votes and S is seats. (For the first iteration, this is a form of the [[Droop Quota]].)
 # Delegated votes first count full-weight for their chosen candidate. Once that candidate is elected or eliminated, a vote is divided equally among all non-disapproved, non-eliminated members of the top party remaining on that ballot with any such members.
 # Undelegated votes are divided equally among all approved, non-eliminated candidates on that ballot.
-# Any candidates who reach the quota are immediately and simultaneously elected, and their ballots are reweighted to eliminate a Droop quota.
+# Any candidates who reach the quota are immediately and simultaneously elected, and their ballots are reweighted to eliminate a quota.
+#* They keep the remaining fraction of the ballots which elected them, one quota in total. This is used later during the draft phase to see which additional districts, besides their home district, they will represent.
 # If there are no candidates who reach the quota, the party with the fewest votes is identified, and the candidate from that party with the fewest votes is eliminated. All votes for that candidate are reassigned as outlined above.
 # If the above finishes without electing a full slate, the process starts from scratch with a lower quota:
 #* All ballots are reweighted to 1
@@ -27,7 +28,7 @@ The basic idea is:
 #* The counting process is rerun from scratch, starting with step 3.
 # Each district "drafts" one member of each elected party from the elected slate. The draft proceeds as follows:
 #*First, each representative is drafted by their home district. (This step is simply a courtesy. Because of ballot design, skipping to the following step would typically give the same results naturally.)
-#*From then on, the draft proceeds in descending order of votes. That is, if more votes from district 1 go to candidate A than any other eligible district:candidate pair, then A is drafted to that district. Eligibility is as follows:
+#*From then on, the draft proceeds in descending order of votes. That is, if more votes from district 1 went to candidate A than any other eligible district:candidate pair, then A is drafted to that district. Eligibility is as follows:
 #:*All representatives from a party must be drafted N times before any representative from that party may be drafted N+1 times.
 #:*No district may draft two representatives from the same party.
 
