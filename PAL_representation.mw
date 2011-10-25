@@ -32,7 +32,7 @@ The basic idea is:
 #:*The difference between the representative with the most total party votes in their district, and the one with the least, must be decreased if there is any such drafting option. (Simpler version: No party representative may be drafted by N+1 districts unless all party representatives have been drafted for at least N. But the simpler version could leave a representative of areas where the party is weak, with much fewer constituents than a representative of areas where it is strong.)
 #:*No district may draft two representatives from the same party.
 
-Your representative is the member of the party you voted for who is representing your district. If no member of the party you voted for was elected, then you may look at the public ballot of your chosen candidate to see which of your district's representatives is yours.
+Your representative is the member of the party you voted for who is representing your district. If no member of the party you voted for was elected, then you may look at the public preferences of your chosen candidate to see which of your district's representatives is yours.
 
 === Optional party threshold ===
 Optionally, one additional rule can be added to modify step 5 above:
