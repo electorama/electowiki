@@ -125,6 +125,8 @@ The party with the fewest remaining votes is the Memphis party. Within that part
 
 If Knoxville had not joined a party with Chatanooga, then Chatanooga would have been eliminated, and Knoxville would have been the final site. But Chatanooga could have responded by threatening to prefer a second Nashville site, or even Memphis 2, over Knoxville, if Knoxville would not cooperate in the Eastern party. In the end, Knoxville's strategy may or may not have worked. In general, such strategic gamesmanship would be less profitable and more dangerous in a real election, with more seats overall as well as a significant degree of polling uncertainty.
 
+Note: This example does not work well to show the district-based part of PAL representation, because there is no way to divide up the voters into three equal-sized districts; and even if there were, real-life voters would never vote this homogeneously; and the example elects only one "representative" from each "party".
+
 == Advantages ==
 === P ===
 *Proportional
