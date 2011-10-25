@@ -26,10 +26,10 @@ The basic idea is:
 #* All elected representatives return to being hopeful candidates
 #* The iteration number is increased by 1. This reduces the quota Q, as if it were the Droop quota for a legislature one seat bigger.
 #* The counting process is rerun from scratch, starting with step 3.
-# Each district "drafts" one member of each elected party from the elected slate. The draft proceeds as follows:
+# Each district "drafts" one member of each elected party from the elected slate. The draft for each party proceeds as follows:
 #*First, each representative is drafted by their home district. (This step is simply a courtesy. Because of ballot design, skipping to the following step would typically give the same results naturally.)
-#*From then on, the draft proceeds in descending order of votes. That is, if more votes from district 1 went to candidate A than any other eligible district:candidate pair, then A is drafted to that district. Eligibility is as follows:
-#:*All representatives from a party must be drafted N times before any representative from that party may be drafted N+1 times.
+#*From then on, the draft proceeds in descending order of vote proportion. That is, if a greater fraction of the party votes from district 1 went to candidate A than any other eligible district:candidate pair, then A is drafted to that district. Eligibility is as follows:
+#:*The difference between the representative with the most total party votes in their district, and the one with the least, must be decreased if there is any such drafting option. (Simpler version: No party representative may be drafted by N+1 districts unless all party representatives have been drafted for at least N. But the simpler version could leave a representative of areas where the party is weak, with much fewer constituents than a representative of areas where it is strong.)
 #:*No district may draft two representatives from the same party.
 
 Your representative is the member of the party you voted for who is representing your district. If no member of the party you voted for was elected, then you may look at the public ballot of your chosen candidate to see which of your district's representatives is yours.
