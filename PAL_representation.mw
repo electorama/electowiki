@@ -26,8 +26,8 @@ The basic idea is:
 #* The iteration number is increased by 1. This reduces the quota Q, as if it were the Droop quota for a legislature one seat bigger.
 #* The counting process is rerun from scratch, starting with step 3.
 # Each district "drafts" one member of each elected party from the elected slate. The draft proceeds as follows:
-#*First, each representative is drafted by their home district.
-#*From then on, the draft proceeds in descending order of votes. That is, if more votes from district 1 go to candidate A than any other eligible district:candidate pair, then A is drafted to that district. Eligibility rules are as follows:
+#*First, each representative is drafted by their home district. (This step is simply a courtesy. Because of ballot design, the same results will typically happen naturally in the following step.)
+#*From then on, the draft proceeds in descending order of votes. That is, if more votes from district 1 go to candidate A than any other eligible district:candidate pair, then A is drafted to that district. Eligibility is as follows:
 #:*All representatives from a party must be drafted N times before any representative from that party may be drafted N+1 times.
 #:*No district may draft two representatives from the same party.
 
