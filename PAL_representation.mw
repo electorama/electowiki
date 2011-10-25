@@ -15,27 +15,33 @@ The basic idea is:
 
 First, to simplify the ballots, the population is separated into a "district" for each seat, and "districts" are grouped into sets of 2 or 3 "co-districts". The ballot for each district lists the incumbents and candidates from that district in a larger font, and the candidates from its co-districts below that in a smaller font. Write-ins may be used to vote for candidates from other districts not listed on the ballot, so the districts only matter for ballot simplicity (Voters do not want to have a ballot with many dozens of candidates on it, but write-ins allow full freedom for those voters who want it). Larger parties will usually run one candidate per district; smaller parties may just run one candidate per co-district set.
 
-* The quota Q is set to the [[Droop Quota]]; that is, to the rational number (V+1)/(S+1), where V is valid votes and S is seats.
-* Each vote is transformed into the pre-announced party preference order and individual approvals/disapprovals of the candidate it chooses. 
-* A legislature is elected by a version of [[STV]].
-:*Delegated votes first count full-weight for their chosen candidate. Once that candidate is elected or eliminated, a vote is divided equally among all non-disapproved, non-eliminated members of the top party remaining on that ballot with any such members.
-:*Undelegated votes are divided equally among all approved, non-eliminated candidates on that ballot.
-:*Any candidates who reach the quota are immediately and simultaneously elected, and their ballots are reweighted to eliminate a Droop quota.
-:*If there are no candidates who reach the quota, the party with the fewest votes is identified, and the candidate from that party with the fewest votes is eliminated. All votes for that candidate are reassigned as outlined above.
-:*If the above finishes without electing a full slate:
-::* All ballots are reweighted to 1
-::* All elected representatives return to being hopeful candidates
-::* the Droop quota is decreased as if there were one more seat (that is, it first changes from (V+1)/(S+1), to (V+1)/(S+2) )
-::* The counting process is rerun from the beginning. If there is still no full slate, the quota is reduced again (to (V+1)/(S+3), etc.) and the counting repeats, until there is one.
-* Each district "drafts" one member of each elected party from the elected slate.
+# The iteration number I is set to 1. (Higher iteration numbers mean lower quotas. The process will be run from scratch with an increasing iteration number until a full slate of candidates reaches the quota)
+# The quota Q is set to the [[Droop Quota]]; that is, to the rational number (V+1)/(S+I), where V is valid votes and S is seats.
+# Each vote is transformed into the pre-announced party preference order and individual approvals/disapprovals of the candidate it chooses. 
+# A legislature is elected by a version of [[STV]].
+#*Delegated votes first count full-weight for their chosen candidate. Once that candidate is elected or eliminated, a vote is divided equally among all non-disapproved, non-eliminated members of the top party remaining on that ballot with any such members.
+#*Undelegated votes are divided equally among all approved, non-eliminated candidates on that ballot.
+#*Any candidates who reach the quota are immediately and simultaneously elected, and their ballots are reweighted to eliminate a Droop quota.
+#*If there are no candidates who reach the quota, the party with the fewest votes is identified, and the candidate from that party with the fewest votes is eliminated. All votes for that candidate are reassigned as outlined above.
+#*If the above finishes without electing a full slate:
+#:* All ballots are reweighted to 1
+#:* All elected representatives return to being hopeful candidates
+#:* The iteration number is increased by 1. This reduces the quota Q, as if it were the Droop quota for a legislature one seat bigger.
+#:* The counting process is rerun from scratch, starting with step 3.
+# Each district "drafts" one member of each elected party from the elected slate. The draft proceeds as follows:
+#*First, each representative is drafted by their home district.
+#*From then on, the draft proceeds in descending order of votes. That is, if more votes from district 1 go to candidate A than any other eligible district:candidate pair, then A is drafted to that district.
+#:*General rule: All representatives from a party must be drafted N times before any representative from that party may be drafted N+1 times.
+#:*General rule: No district may draft two representatives from the same party.
 
-:The draft proceeds as follows:
-:*First, each representative is drafted by their home district.
-:*From then on, the draft proceeds in descending order of votes. That is, if more votes from district 1 go to candidate A than any other eligible district:candidate pair, then A is drafted to that district.
-::*General rule: All representatives from a party must be drafted N times before any representative from that party may be drafted N+1 times.
-::*General rule: No district may draft two representatives from the same party.
+Your representative is the member of the party you voted for who is representing your district. If no member of the party you voted for was elected, then you may look at the public ballot of your chosen candidate to see which of your district's representatives is yours.
 
-* Your representative is the member of the party you voted for who is representing your district. If no member of the party you voted for was elected, then you may look at the public ballot of your chosen candidate to see which of your district's representatives is yours.
+=== Optional party threshold ===
+Optionally, one additional rule can be added:
+* No representative may be elected unless their party got at least T votes, where T is some party threshold.
+This would encourage small parties to join into coalitions, and thus promote a less-fragmented legislature. There are various options for T. It could be as high as 5%, similar to the 5% threshold used in the German parliament. Or it could be as low as V/(S+I-1) (that is, V/S, if the process completes in just one iteration); this would actually allow independent candidates to be their own "party", but only if they have enough support to fully deserve one of the S seats.
+
+This rule complicates the system somewhat, so it is not recommended if the PAL representation is to be implemented by a voter referendum. If the system is being passed by a legislature, they may be more concerned about fragmentation, so they could use a relatively-high 5% threshold. And if the system is implemented by a constitutional convention, a V/(S+I-1) threshold is ideally fair.
 
 == Sample Ballot ==
 <table border='1px' width='80%'><tr><td>
