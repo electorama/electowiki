@@ -44,7 +44,7 @@ This rule complicates the system somewhat, so it is not recommended if the PAL r
 == Sample Ballot ==
 <table border='1px' width='80%'><tr><td>
 '''''District 5 ballot'''''<br>
-'''Vote for one candidate to delegate your vote, or otherwise vote for as many candidates as you approve:'''<br>
+'''Vote for one candidate to delegate your vote. Otherwise vote for as many candidates as you approve:'''<br>
 &#9634; '''John Adams''' (Yellow Party, district 5) (Prefers Yellow Party except for Zapatero)<br>
 &#9634; '''Michelle Bachelet''' (Silver Party, district 5) (Prefers Silver Party, then Purple Party)<br>
 &#9634; '''Winston Churchill''' (Purple Party, district 5) (Prefers Purple Party, then Silver Party except for Yarrow)<br>
@@ -54,14 +54,10 @@ This rule complicates the system somewhat, so it is not recommended if the PAL r
 &#9634; Inder Gujral (Yellow Party, district 4) (Prefers Yellow Party)<br>
 &#9634; Stephen Harper (Silver Party, district 4) (Prefers Silver Party)<br>
 
-&#9634; ________________________(write-in)<br>
-&#9634; ________________________(write-in)
+&#9634; ________________________(write-in; see attached list of all declared candidates for preference information)<br>
+&#9634; ________________________(write-in; see attached list of all declared candidates for preference information)
 
-'''If you only vote for one candidate who does not win, your vote may help elect that candidate's preferences, unless you check the box below:'''<br>
-&#9634; Do not delegate.<br><br>
-''Note: When you vote for just one candidate, you are delegating your vote to him or her. This allows your vote to help elect a similar candidate if your favorite cannot win. Your vote will never go to a candidate who is not in your favorite's declared preferences listed above.''
-
-''If you vote for more than one candidate, or if you vote for a candidate with no declared preferences, your vote is not delegated. In that case, it does not matter whether you check the "do not delegate" box above.''
+'''If you only vote for one candidate, your vote is delegated, which means it may help elect that candidate's preferences. If you do not wish to delegate your vote, you may vote for more than one candidate, including write-ins.'''
 </td></tr></table>
 
 ==Example==
