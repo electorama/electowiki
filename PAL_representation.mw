@@ -150,7 +150,15 @@ Say that party P has elected 3 representatives, A, B, and C. There are 6 distric
 | Totals || 3850 || 771 || 549 || 431 || 1751
 |}
 
-District assignment proceeds in the following order: A:1, B:2, C:5, C:3, A:4, C:6. Note that C gets 3 districts where party P was weak, B gets just 1 district where party P was strong, and A has one of each. Thus, at the end, A has 601 constituents; B, 550; and C, 600. This is a more balanced arrangement than their original vote totals (771, 549, and 431 respectively).
+District assignment proceeds in the following order: 
+* A:1 (400 constituents)
+* B:2 (550 constituents)
+* C:5 (200 constituents)
+* C:3 (200 more constituents, 400 total)
+* A:4 (201 more constituents, 601 total)
+* C:6 (200 more constituents, 600 total)
+
+Note that C gets 3 districts where party P was weak, B gets just 1 district where party P was strong, and A has one of each. Thus, at the end, A has 601 constituents; B, 550; and C, 600. This is a more balanced arrangement than their original vote totals (771, 549, and 431 respectively).
 
 == Advantages ==
 === P ===
