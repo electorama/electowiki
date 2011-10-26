@@ -37,7 +37,7 @@ Your representative is the member of the party you voted for who is representing
 === Optional party threshold ===
 Optionally, one additional rule can be added to modify step 5 above:
 * No representative may be elected unless their party got at least T votes, where T is some party threshold.
-This would encourage small parties to join into coalitions, and thus promote a less-fragmented legislature. There are various options for T. It could be as high as 5%, similar to the 5% threshold used in the German parliament. Or it could be as low as V/(S+I-1) (that is, the [[Hare quota]] V/S, if the process completes in just one iteration); this would actually allow independent candidates to be their own "party", but only if they have enough support to fully deserve one of the S seats.
+This would encourage small parties to join into coalitions, and thus promote a less-fragmented legislature. There are various options for T. It could be as high as 5%, similar to the 5% threshold used in the German parliament. Or it could be as low as V/(S+I-1) (that is, if the process completes in just one iteration, the [[Hare quota]] V/S); this would actually allow independent candidates to be their own "party", but only if they have enough support to fully deserve one of the S seats.
 
 This rule complicates the system somewhat, so it is not recommended if the PAL representation is to be implemented by a voter referendum. If the system is being passed by a legislature, they may be more concerned about fragmentation, so they could use a relatively-high 5% threshold. And if the system is implemented by a constitutional convention, a V/(S+I-1) threshold is ideally fair.
 
