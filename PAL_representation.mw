@@ -61,7 +61,7 @@ This rule complicates the system somewhat, so it is not recommended if the PAL r
 </td></tr></table>
 
 ==Example==
-
+Note: This example does not work well to show the district-based part of PAL representation, because there is no way to divide up the voters into three equal-sized districts; and even if there were, real-life voters would never vote this homogeneously; and the example elects only one "representative" from each "party". Thus, the example only covers the modified-STV system, and does not include the final district "draft" phase.
 
 [[Image:Tennessee map for voting example.svg|right|500px|Tennessee's four cities are spread throughout the state]]
 
@@ -124,8 +124,6 @@ The quota is (100.0008%/(3+1))=25.0002% (The small fraction represents one extra
 The party with the fewest remaining votes is the Memphis party. Within that party, Memphis 2 is the site with the fewest votes (in fact, the only remaining site), so even though it has more votes than Chatanooga, Memphis 2 is eliminated. The votes are pass over the already-elected Nashville to tranfer to the Eastern party. Within that party, Memphis disapproved Knoxville, so the full total is transferred to Chatanooga. Chatanooga now has ~32.5%, more than the 25% quota, so it is the third and final site.
 
 If Knoxville had not joined a party with Chatanooga, then Chatanooga would have been eliminated, and Knoxville would have been the final site. But Chatanooga could have responded by threatening to prefer a second Nashville site, or even Memphis 2, over Knoxville, if Knoxville would not cooperate in the Eastern party. In the end, Knoxville's strategy may or may not have worked. In general, such strategic gamesmanship would be less profitable and more dangerous in a real election, with more seats overall as well as a significant degree of polling uncertainty.
-
-Note: This example does not work well to show the district-based part of PAL representation, because there is no way to divide up the voters into three equal-sized districts; and even if there were, real-life voters would never vote this homogeneously; and the example elects only one "representative" from each "party".
 
 == Advantages ==
 === P ===
