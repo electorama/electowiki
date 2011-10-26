@@ -154,8 +154,8 @@ District assignment proceeds in the following order:
 * A:1 (400 constituents)
 * B:2 (550 constituents)
 * C:5 (200 constituents)
-* C:3 (200 more constituents, 400 total)
-* A:4 (201 more constituents, 601 total)
+* C:3 (200 more constituents, 400 total) Now A and C are tied for number of constituents, ...
+* A:4 (201 more constituents, 601 total) ... but A goes first because they have more votes in some district.
 * C:6 (200 more constituents, 600 total)
 
 Note that C gets 3 districts where party P was weak, B gets just 1 district where party P was strong, and A has one of each. Thus, at the end, A has 601 constituents; B, 550; and C, 600. This is a more balanced arrangement than their original vote totals (771, 549, and 431 respectively).
