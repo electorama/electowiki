@@ -5,7 +5,7 @@ The basic idea is:
 * Candidates pre-announce their preference among parties and their approvals within parties.
 * Voters may vote on the candidates in their or nearby districts, or write in candidates from farther off. Single-candidate "bullet" votes are delegated to that candidate but voters may refuse to delegate by voting for more than one candidate.
 * A legislature is elected by a version of [[STV]] (with fractional transfers and a Droop quota.)
-* Each district "drafts" one member of each elected party from the elected slate.
+* For each party with more than one seat, the districts are automatically divided among the party representatives.
 * Your representative is the member of the party you voted for who is representing your district.
 
 == Full Procedure ==
@@ -26,11 +26,9 @@ The basic idea is:
 #* All elected representatives return to being hopeful candidates
 #* The iteration number is increased by 1. This reduces the quota Q, as if it were the Droop quota for a legislature one seat bigger.
 #* The counting process is rerun from scratch, starting with step 3.
-# Each district "drafts" one member of each elected party from the elected slate. The draft for each party P proceeds as follows:
-#*First, each party P representative is drafted by their home district. (This step is simply a courtesy. Because of ballot design, skipping to the following step would typically give the same results naturally.)
-#*From then on, the draft proceeds in descending order of vote proportion. That is, if a greater fraction of the party P votes from district 1 went to candidate A than any other eligible district:candidate pair, then A is drafted to that district. Eligibility is as follows:
-#:*The difference between the representative with the most total party P votes in their district, and the one with the least, must be decreased if there is any such drafting option. (Simpler version: No party P representative may be drafted by N+1 districts unless all party representatives have been drafted for at least N. But the simpler version could leave a representative of areas where the party is weak, with much fewer constituents than a representative of areas where it is strong.)
-#:*No district may draft two representatives from the same party.
+# For each party with more than one seat, the districts are divided among the party representatives through the following automatic "draft" procedure:
+#*Drafting order: The party P representative with the fewest party P votes in their assigned districts drafts. If there is a tie (such as initially), representative with the highest number of direct votes from some district drafts.
+#*At each step, the representative drafts the unassigned district which gave them the most direct votes.
 
 Your representative is the member of the party you voted for who is representing your district. If no member of the party you voted for was elected, then you may look at the public preferences of your chosen candidate to see which of your district's representatives is yours.
 
@@ -60,7 +58,8 @@ This rule complicates the system somewhat, so it is not recommended if the PAL r
 '''If you only vote for one candidate, your vote is delegated, which means it may help elect that candidate's preferences. If you do not wish to delegate your vote, you may vote for more than one candidate, including write-ins.'''
 </td></tr></table>
 
-==Example==
+==Examples==
+===Vote transfer procedure===
 Note: This example does not work well to show the district-based part of PAL representation, because there is no way to divide up the voters into three equal-sized districts; and even if there were, real-life voters would never vote this homogeneously; and the example elects only one "representative" from each "party". Thus, the example only covers the modified-STV system, and does not include the final district "draft" phase.
 
 [[Image:Tennessee map for voting example.svg|right|500px|Tennessee's four cities are spread throughout the state]]
@@ -125,6 +124,31 @@ The party with the fewest remaining votes is the Memphis party. Within that part
 
 If Knoxville had not joined a party with Chatanooga, then Chatanooga would have been eliminated, and Knoxville would have been the final site. But Chatanooga could have responded by threatening to prefer a second Nashville site, or even Memphis 2, over Knoxville, if Knoxville would not cooperate in the Eastern party. In the end, Knoxville's strategy may or may not have worked. In general, such strategic gamesmanship would be less profitable and more dangerous in a real election, with more seats overall as well as a significant degree of polling uncertainty.
 
+===District assignment ("draft")===
+Say that party P has elected 3 representatives, A, B, and C. There are 6 districts, with 1000 eligible voters each, and the following vote totals:
+
+{| class="wikitable"
+! width=10% style="background-color: #ffdddd" | District
+! width=18% style="background-color: #ffdddd" | Total valid votes
+! width=18% style="background-color: #ffdddd" | Direct votes for A
+! width=18% style="background-color: #ffdddd" | Direct votes for B
+! width=18% style="background-color: #ffdddd" | Direct votes for C
+! width=18% style="background-color: #ffdddd" | Total party P votes
+|-
+| 1 || 600 || 300 || 60 || 40 || 400
+|-
+| 2 || 700 || 100 || 250 || 200 || 550
+|-
+| 3 || 650 || 100 || 59 || 41 || 200
+|-
+| 4 || 630 || 101 || 60 || 40 || 201
+|-
+| 5 || 670 || 70 || 60 || 70 || 200
+|-
+| 6 || 600 || 100 || 60 || 40 || 200
+|}
+
+District assignment proceeds in the following order: A:1, B:2, C:5, C:3, A:4, C:6. Note that C gets 3 districts where party P was weak, while B gets just 1 district each where party P was strong. Thus, at the end, A has 601 constituents; B, 550; and C, 600.
 == Advantages ==
 === P ===
 *Proportional
