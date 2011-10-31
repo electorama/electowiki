@@ -14,18 +14,17 @@ The basic idea is:
 *: To simplify the ballots, districts are grouped into sets of 2 or 3 "super-districts". The ballot for each district lists the incumbents and candidates from that individual district in a larger font, and the candidates from its super-districts below that in a smaller font. Write-ins may be used to vote for candidates from outside the super-district. Larger parties will usually run one candidate per district; smaller parties may run just one candidate per super-district.
 * Each vote is transformed into the pre-announced party preference order and individual approvals/disapprovals of the candidate it chooses. Votes will never be transferred to a candidate who was disapproved in the pre-announced list.
 * A legislature is elected by a modified version of [[STV]], using the following steps:
-# The iteration number I is set to 1. (Higher iteration numbers mean lower quotas. The process will be run from scratch with an increasing iteration number until a full slate of candidates reaches the quota)
+# The iteration number I is set to 1. (Higher iteration numbers mean lower quotas. The process will be run with an increasing iteration number until a full slate of candidates reaches the quota)
 # The quota Q is set to the rational number (V+1)/(S+I), where V is valid votes and S is seats. (For the first iteration, this is a form of the [[Droop Quota]].)
 # Delegated votes first count full-weight for their chosen candidate. Once that candidate is elected or eliminated, a vote is divided equally among all non-disapproved, non-eliminated members of the top party remaining on that ballot with any such members.
 # Undelegated votes are divided equally among all approved, non-eliminated candidates on that ballot.
 # Any candidates who reach the quota are immediately and simultaneously elected, and their ballots are reweighted to eliminate a quota.
 #* They keep the remaining fraction of the ballots which elected them, one quota in total. This is used later during the draft phase to help decide which additional districts, besides their home district, they will represent.
 # If there are no candidates who reach the quota, the party with the fewest votes is identified, and the candidate from that party with the fewest votes is eliminated. All votes for that candidate are reassigned as outlined above.
-# If the above finishes without electing a full slate, the process starts from scratch with a lower quota:
-#* All ballots are reweighted to 1
-#* All elected representatives return to being hopeful candidates
+# If the above finishes without electing a full slate, the process so far is recalculated with a lower quota:
 #* The iteration number is increased by 1. This reduces the quota Q, as if it were the Droop quota for a legislature one seat bigger.
-#* The counting process is rerun from scratch, starting with step 3.
+#* All elections and eliminations so far are re-applied in the same order with the new quota
+#* The process is continued from step 5.
 # For each party with more than one seat, the districts are divided among the party representatives through the following automatic "draft" procedure:
 #*Drafting order: The party P representative with the fewest party P votes in their assigned districts drafts. If there is a tie (such as initially), representative with the highest number of direct votes from some district drafts.
 #*At each step, the representative drafts the unassigned district which gave them the most direct votes.
