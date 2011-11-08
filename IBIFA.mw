@@ -1,35 +1,7 @@
-Irrelevant Ballots Independent Fallback Approval (IBIFA) is a method designed by Chris Benham.
-
-In the three-slot case, IBIFA is like [[MCA]], except that in place of checking for a candidate (call him "A") with top-slot ratings from a majority of the ballots, one checks whether the quantity of top-slot ratings for A is sufficient to defeat the total approval (i.e. above-bottom ratings) of any other candidate, not including approval from the ballots that rate candidate A top. If any candidates pass this test, the one of them with the most top-slot ratings is elected. (If no voters tie multiple candidates at the top slot, a maximum of one candidate will be able to pass the test.)
-
-See also the full rules below.
-
-The weakness of MCA is that one's top-slot preference's security against one's middle-slot preference is based on the likelihood that that the top-slot preference will have a majority of top-slot preferences. However, narrow majorities can easily be eliminated by adding "irrelevant ballots" for minor candidates. Under IBIFA the top-slot preference's security is based on that candidate's likelihood of being able to beat any other single candidate. This may be more predictable and strategically useful than a majority-based rule.
-
-Here is an example to illustrate the difference:
- 51 A>C
- 47 B
- 2  C
- 100
-
-MCA and IBIFA both elect A. If B had received more votes than A, but not a majority, the A voters would be able to use their C preference to ensure that they got their second choice. Since A received a majority, the C preference is not needed.
-
-Now add 5 D ballots:
-
- 51 A>C
- 47 B
- 2  C
- 5  D
- 105
-
-IBIFA still elects A, but MCA moves the win to C because A no longer has a majority. In IBIFA's view the new D ballots are "irrelevant" and don't take the win away from A, because there is still no candidate who can compete with A's top-slot preference count. Tying the usage of the middle-slot preference to the actual viability of the top-slot preference means it is more safe to offer middle-slot preferences, with less fear that they will end up counting with as much weight as a top-slot preference.
-
-IBIFA also does not sacrifice MCA's [[FBC]] compliance. If raising one's favorite candidate to equal-top doesn't make that candidate win, it also can't change the preexisting winner.
+Irrelevant Ballots Independent Fallback Approval (IBIFA)
 
 
-
-
-4-slot version:
+ 4-slot version:
 
 
 *Voters fill out 4-slot ratings ballots, rating each candidate as either Top, Middle1, Middle2
