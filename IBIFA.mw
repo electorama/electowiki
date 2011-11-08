@@ -1,0 +1,75 @@
+Irrelevant Ballots Independent Fallback Approval (IBIFA)
+
+
+ 4-slot version:
+
+
+*Voters fill out 4-slot ratings ballots, rating each candidate as either Top, Middle1, Middle2
+>or Bottom. Default rating is Bottom, signifying least preferred and unapproved.
+>
+>
+>Any rating above Bottom is interpreted as Approval.
+>
+>
+>If any candidate/s X has a Top-Ratings score that is higher than any other candidate's approval
+>score on ballots that don't top-rate X, elect the X with the highest TR score.
+>
+>
+>Otherwise, if any candidate/s X has a Top+Middle1 score that is higher than any other candidate's
+>approval score on ballots that don't give X a Top or Middle1 rating, elect the X with the highest
+>Top+Middle1 score.
+>
+>
+>Otherwise, elect the candidate with the highest Approval score.*(Obviously other slot names are possible, such as 3 2 1 0 or  A B C D or  Top, High Middle, Low Middle, Bottom.)
+
+The 3-slot version:
+
+
+*Voters fill out 3-slot ratings ballots, rating each candidate as either Top, Middle
+>or Bottom. Default rating is Bottom, signifying least preferred and unapproved.
+>
+>Any rating above Bottom is interpreted as Approval.
+>
+>If any candidate/s X has a Top-Ratings score that is higher than any other candidate's approval
+>score on ballots that don't top-rate X, elect the X with the highest TR score.
+>
+>Otherwise, elect the candidate with the highest Approval score.*
+>
+
+It can also be adapted for use with ranked ballots:
+
+
+*Voters rank the candidates, beginning with those they most prefer. Equal-ranking and truncation
+are allowed.
+
+Ranking above at least one other candidate is interpreted as Approval.
+
+The ballots are interpreted as multi-slot ratings ballots thus:
+An approved candidate ranked below zero other candidates is interpreted as Top-Rated.
+An approved candidate ranked below one other candidate is interpreted as being in the second-highest
+ratings slot.
+An approved candidate ranked below two other candidates is interpreted as being in the third-highest
+ratings slot (even if this means the second-highest ratings slot is left empty).
+An approved candidate ranked below three other candidates is interpreted as being in the fourth-highest
+ratings slot (even if this means that a higher ratings slot is left empty).
+
+And so on.
+ 
+
+Say we label these ratings slot from the top A B C D etc. 
+A candidate X's A score is the number of ballots on which it is A rated. 
+A candidate X's A+B score is the number of ballots on which it is rated A or B.
+A candidate X's A+B+C score is the number of ballots on which it is rated A or B or C.
+And so on.
+
+
+If any candidate X has an A score  that is greater than any other candidate's approval score on ballots
+that don't A-rate X, then elect the X with the greatest A score.
+
+Otherwise, if any candidate X has an A+B score that is greater than any other candidate's approval score
+on ballots that don't A-rate of B-rate X, then elect the X with the greatest A+B score.
+
+And so on as in the versions that use a fixed number of ratings slots, if necessary electing the most
+approved candidate.*
+
+This is analogous with ER-Bucklin(whole) on ranked ballots:
