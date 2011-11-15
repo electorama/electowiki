@@ -77,7 +77,7 @@ This rule is recommended if SODA is to be instituted by legislation (where polit
 ==== Finish resolving the "Chicken Dilemma" ====
 Rule: Any equal-rankings in the candidates' predeclared preference order are resolved by the approval totals at the time when that candidate assigns their delegated votes.
 
-Rationale: One of the toughest situations for any voting system is the "Chicken Dilemma" between two near-clones. Say there are 60% "Blue" voters and 40% "Orange" voters; but the Blue voters are split between two candidates, say 35% for Navy and 25% for Sky. Any good voting system will allow one of the Blue candidates to win, if all the Blue voters support both of their candidates. But under many systems, there is a temptation for the Sky voters not to support Navy, so as to make sure that Sky, not Navy is the winner. But if the Navy voters respond in kind, then Orange could defeat them both.
+Rationale: One of the toughest situations for any voting system is the "Chicken Dilemma" between two near-clones. Say there are 60% "Blue" voters and 40% "Orange" voters; but the Blue voters are split between two candidates, say 35% for Navy and 25% for Sky. Any good voting system will allow one of the Blue candidates to win, if all the Blue voters support both of their candidates. But under many systems, there is a temptation for the Sky voters not to support Navy, so as to make sure that Sky, rather than Navy, is the winner. But if the Navy voters respond in kind, then Orange could defeat them both.
 
 http://chart.apis.google.com/chart?chs=300x225&cht=p&chco=103289,76A4FB,FF9900&chd=s:VPY&chp=4.71&chl=Navy|Sky|Orange
 
