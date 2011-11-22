@@ -10,7 +10,7 @@ A voter optimizes the outcome (from his own perspective) if his vote causes the 
 
 ==Complying methods==
 
-[[Approval voting]], [[range voting]], [[MMPO|MinMax(pairwise opposition)]], [[MCA]] (except MCA-A and some versions of MCA-R), [[MAMPO]], and [[Improved Condorcet Approval]] comply with the favorite betrayal criterion. 
+[[Approval voting]], [[range voting]], [[Majority Judgment]], [[MMPO|MinMax(pairwise opposition)]], [[MCA]] (except MCA-A and some versions of MCA-R), [[MAMPO]], and [[Improved Condorcet Approval]] comply with the favorite betrayal criterion. 
 
 [[Borda count]], [[plurality voting]], [[Condorcet criterion|Condorcet methods]], and [[instant-runoff voting]] do not comply.
 
