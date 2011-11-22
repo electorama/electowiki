@@ -10,7 +10,7 @@ If the election is still unresolved, one of two things must be true. Either mult
 
 The possible resolution methods include:
 
-* MCA-A: Most approved candidate (most votes above lowest possible rating)
+* MCA-A: Most approved candidate (most votes above lowest possible rating). This is also called "Majority Top//Approval", or MTA.
 
 * MCA-P: Most preferred candidate (most votes at highest possible rating)
 
