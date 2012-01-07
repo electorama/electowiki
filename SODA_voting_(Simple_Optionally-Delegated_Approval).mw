@@ -31,33 +31,33 @@ To further decrease the opportunities for manipulation, candidates with the most
 
 '''1. Candidates publicly declare their rankings of the other candidates'''
 
-A) Before the election, all candidates must rank the other official candidates in order of preference. Equal rankings and truncation are allowed. The candidates' rankings are all made public. Later, in the "candidate voting" step, candidates may only approve other candidates in a way that is consistent with their rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms". 
+A) Before the election, all candidates must rank the other official candidates in order of preference. Equal rankings are allowed.'' Later, in the "candidate voting" step, candidates may only approve other candidates in a way that is consistent with their rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms".'' 
 
-B) It is presumed that there is some mechanism in place so that no candidate is "caught off-guard" by another candidate's rankings. For instance, there could be an option for a candidate to change their rankings after another candidate has announced their own rankings. That is, if A and B agree to rank each other for delegation, but then after A ranks B, B reneges on the agreement by ranking A last, A could retaliate by moving B to the last ranking. The details of such a mechanism are unimportant, because its very existence would prevent it from being used; candidates, realizing that surprises don't work and only cause resentment, wouldn't attempt to use them.
+B) If A ranked B higher than B ranked A, then A may respond by lowering B's ranking. B may respond by raising A, and A may then respond by restoring B to the original ranking. Three rounds of response are all that are allowed. ''This "response" mechanism is designed never to be used; candidates, realizing that surprises don't work and only cause resentment, would prefer agree on mutual approvals beforehand.''
 
-C) Ballots are formatted in order from candidates who submit the most complete rankings of other candidates, to those who submit the least. Where this is a tie, ordering is random. This is a slight incentive for candidates to submit a complete ranking in order to appear high on the ballot.
+C) Ballots are formatted in order from candidates who submit the most complete rankings of other candidates, to those who submit the least. Where this is a tie, ordering is random.  (Completeness of ranking is scored by how many possible pairs of other candidates contain two candidates at different levels.) ''This is a slight incentive for candidates to submit a complete ranking in order to appear high on the ballot.''
 
 '''2. Voters vote delegable plurality-style votes or non-delegable approval-style votes'''
 
 A) Each voter submits an approval ballot.
 
-B) Any "bullet vote" - that is, a ballot which votes for only one candidate - is considered a "delegable vote" for a candidate, unless the voter indicates that it should not be delegable. These votes are tallied for each candidate.
+B) Any "bullet vote" - that is, a ballot which votes for only one candidate - is considered a "delegated vote" for a candidate, unless the voter indicates that it should not be delegated. These votes are tallied for each candidate.
 
-C) Approval totals for each candidate are also tallied. These preliminary results are announced, along with the number of "delegable votes" each candidate has.
+C) Approval totals for each candidate are also tallied. These preliminary results are announced, along with the number of delegated votes each candidate has. ''Announcing full results makes the process in step 3 more predictable and fair.''
 
-D) If any candidate has an absolute majority at this point, or cannot possibly be beaten by any other candidate adding approvals to the delegable votes and candidate rankings available, then they win immediately.
+'''3. Candidates publicly assign approvals to their delegated votes, in descending order of approval'''
 
-'''3. Candidates add approvals to the votes delegated to them, publicly, in the prescribed order'''
+A) There is a one-week period for candidates to analyse and negotiate based on these preliminary results. ''Actually, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.''
 
-A) There is a brief period - perhaps a week - for candidates to analyse and negotiate based on these preliminary results. (Actually, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.)
+B) The candidate with the most approvals, if they have more than 5% approval, announces which other candidates they approve. ''Starting with the most-approved candidate prevents less-approved candidates from giving ultimatums ("I'm not going to approve you, so you'd better approve me or that other guy will win") to more-approved candidates.'' This approval must be consistent with the preferences announced in step 1, with equal-ranked ties broken by current approval totals. That is, candidate A may not approve B and not C unless they predeclared a preference for B over C, or unless they predeclared B and C equal but B currently has more approvals than C. ''This tie-breaking by approval totals resolves the "chicken dilemma", as explained below.''
 
-B) All candidates, in descending order of the number of total votes they have, choose how to add approvals to the votes delegated to them. To do so, they choose a cutoff candidate, and approve all others whom they had ranked above that cutoff. They may choose the top of their ranking list as the cutoff - that is, not approve any other candidates. They may not approve all other candidates, as that would require choosing a cutoff who was worse than all candidates including themselves. If they declared a tie in their preferences, they must either approve all candidates whom they included in that tie (as well as anyone they ranked above that), or none of them. (Note: Doing this in descending order prevents a weaker candidate from making an ultimatum to a stronger candidate, and thus strengthens the strategic equilibrium of any pairwise champion there is.) These choices are announced publicly as they are made. Delegated approvals which are shared during this process may change the decision order of succeeding candidates.
+C) If the candidate with the most approvals has less than 5% approvals, their delegated votes are assigned for them automatically, so that they approve as many of their pre-declared preferences as possible without approving both of the two candidates with the highest approval totals that they prefer differently. (For example, if their preferences were A or B, then C, then D and E, and the approval totals are 40, 30, 10, 20, and 15 respectively, then they'd approve A, B, and C.) ''This automatic assignment respects predeclared preferences but prevents minor candidates from having discretionary kingmaker power.''
 
-When a candidate adds an approval to their delegated votes, their delegated vote total is added to the approval total of the candidate they approved.
+D) When, for example, candidate A assigns approvals of B and C to their delegated votes, then A's delegated vote total is added to the B and C's approval totals.
 
-B)i) Write-in candidates could not receive delegated votes, but could be approved at will by official candidates, regardless of declared ranking order. 
+E) Steps B-D are repeated until all candidates have assigned approvals, or until one or more candidates have (direct or indirect) approvals from over 50% of voters.
 
-C) The number of delegated votes held by each candidate is added to the approval total of everyone they approved.
+F) If write-ins are allowed, write-in candidates can not receive or assign delegated votes, but can be approved at will by official candidates, regardless of the official candidate's declared preference order. 
 
 '''4. Highest total wins'''
 
