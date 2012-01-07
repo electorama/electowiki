@@ -152,7 +152,7 @@ In general, this system, because it provides perfect information on voting total
 
 == Criteria Compliance ==
 
-SODA satisfies [[monotonicity]], the [[majority criterion]], and the [[mutual majority criterion]]. Depending on assumptions and definitions, it can pass the [[Condorcet loser criterion]].
+SODA satisfies [[monotonicity]], the [[favorite betrayal criterion]], the [[majority criterion]], and the [[mutual majority criterion]]. Depending on assumptions and definitions, it can pass the [[Condorcet loser criterion]].
 
 It does not satisfy the [[independence of irrelevant alternatives]] criterion in general, but it does if the "irrelevant alternative" is assumed to delegate votes in the same way as any candidate whose delegable votes they supplant. Similarly, it can only pass the [[participation]] and [[consistency]] criteria if it is assumed that candidate delegations do not change. These assumptions are ''not'' realistic, but they do show that the method is in some sense "close to" passing these criteria.
 
