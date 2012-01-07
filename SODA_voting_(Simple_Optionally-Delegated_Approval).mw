@@ -61,23 +61,16 @@ F) If write-ins are allowed, write-in candidates can not receive or assign deleg
 
 '''4. Highest total wins'''
 
-=== Optional rules ===
+=== Notes on rules ===
 ==== Prevent weak minor candidates from having kingmaker power ====
 
-Optional step 2.C.ii. (applied after step 2.C above): If any candidate has less than 5% (of the total votes) as delegable votes, and is not one of the top two in total votes, then those votes are automatically delegated down their preference list as far as the Condorcet winner (considering known ballots and preference orders) among the candidates on their preference list, or, in case of elections with a cycle, as far as the second member of the Smith set (this is correct CPNE strategy for a Smith set of size 3; larger Smith sets, with over two members included in the minor candidate's preference list, are hit-by-lightning unlikely).
-
-(Note: extending delegation as far as the Condorcet winner, instead of the candidate just before the Condorcet winner, may not be correct strategy if the Condorcet winner does not need their votes. However, by definition this will not make any practical difference if other candidates use correct strategy, and even if it did it would tend to be a socially-beneficial one. Also, the rule as stated is simpler and more decisive. Candidates with more than 5% would not need to worry about this issue. Neither should readers who don't understand this paragraph.)
-
+Step 3.C) 
 This rule would help make this system more attractive to major-party politicians. But it's a principled rule, not just a sop to the major parties. Consider the "kingmaker" case: in a basically 50/50 split, some tiny party has the balance of votes, and manages to extract concessions far bigger than their base of support justifies, just in order to delegate those votes or not. That's unjust, and this rule would prevent it. 
 
-This rule is recommended if SODA is to be instituted by legislation (where politicians' support is important), and not recommended if it is to be instituted by initiative/plebiscite (where simplicity is more important).
-
-5% is a good cutoff here; that's tens of millions of voters nationally, and enough to deserve a voice. It shouldn't be too high, because this rule is effectively taking power away from voters; that's only justified if the faction is so small that the power is not legitimate, and so it's better to err a bit on the small side if anything. But under 5% - that is, under 10% of the winning coalition - doesn't deserve kingmaker power.
+5% is a good cutoff here; for instance, nationally in the US, that's tens of millions of voters, and enough to deserve a voice. It shouldn't be too high, because this rule is effectively taking power away from voters; that's only justified if the faction is so small that the power is not legitimate, and so it's better to err a bit on the small side if anything. But under 5% - that is, under 10% of the winning coalition - doesn't deserve kingmaker power.
 
 ==== Finish resolving the "Chicken Dilemma" ====
-Rule: Any equal-rankings in the candidates' predeclared preference order are resolved by the approval totals at the time when that candidate assigns their delegated votes.
-
-Rationale: One of the toughest situations for any voting system is the "Chicken Dilemma" between two near-clones. Say there are 60% "Blue" voters and 40% "Orange" voters; but the Blue voters are split between two candidates, say 35% for Navy and 25% for Sky. Any good voting system will allow one of the Blue candidates to win, if all the Blue voters support both of their candidates. But under many systems, there is a temptation for the Sky voters not to support Navy, so as to make sure that Sky, rather than Navy, is the winner. But if the Navy voters respond in kind, then Orange could defeat them both.
+Rationale for breaking equal-ranked ties using approvals in step 3.B): One of the toughest situations for any voting system is the "Chicken Dilemma" between two near-clones. Say there are 60% "Blue" voters and 40% "Orange" voters; but the Blue voters are split between two candidates, say 35% for Navy and 25% for Sky. Any good voting system will allow one of the Blue candidates to win, if all the Blue voters support both of their candidates. But under many systems, there is a temptation for the Sky voters not to support Navy, so as to make sure that Sky, rather than Navy, is the winner. But if the Navy voters respond in kind, then Orange could defeat them both.
 
 http://chart.apis.google.com/chart?chs=300x225&cht=p&chco=103289,76A4FB,FF9900&chd=s:VPY&chp=4.71&chl=Navy|Sky|Orange
 
@@ -93,12 +86,7 @@ This rule would allow Orange to give the win to Navy (the correct winner) if Ora
 
 Unfortunately, while the rule itself is simple, it's taken 6 paragraphs to explain the rationale. This is probably too much complexity for most voters, and so this refinement is not recommended for an initial implementation of SODA. However, it is good to know that such a clear, simple fix exists, in case chicken-dilemma-style strategizing became a problem later on.
 
-Note that this rule, if combined with the anti-kingmaker rule above, would be a strong incentive for any minor candidate (one who expected less than 5% of the vote) to explicitly declare preferences. If they didn't, the votes could simply be transferred to whoever has the highest total. This could never affect who won, but it would increase the winning margin. It is unlikely that voters casting a vote for a "protest" candidate with under 5% support, would want their vote arbitrarily counted to increase the mandate of the winner. Thus, voters would not delegate to a third-party candidate who hadn't declared preferences.
-
-==== Runoff if there's a majority failure ====
-In some jurisdictions, a runoff may be constitutionally required if no candidate gets an absolute majority of approvals. This is compatible with SODA. Runoffs would in general be rare, because if voters wish to avoid one, they can ensure that any pairwise champion wins without needing a runoff. In fact, because it can obtain a majority even if most voters bullet vote for different candidates, '''SODA may lead to an absolute majority ''more'' often than IRV'''. IRV is often promoted as guaranteeing a majority, but this only applies if there is a rule to force all voters to rank all candidates; Australia has traditionally had such a rule but it is unpopular, and it would be a total non-starter in the US or UK. Without such a rule, non-majority IRV results are in fact relatively frequent.
-
-(Wonkish note: in the unlikely case that there is no pairwise champion, rational strategy would make runoffs even less likely; the correct strategy with a 3-member Smith set is for each candidate to approve two of the members, which would tend to leave at least one of the candidates with over 2/3 of all delegated votes, plus a good fraction of the non-delegated votes; well over 50% overall in any case. Correct strategy for larger Smith sets is more complicated, but it frequently amounts to using this same two-of-the-three strategy for the first Condorcet triangle which is spanned by the delegated vote declaration order. If this is greek to you, don't worry, it doesn't matter; you'd probably have a "3 member Smith set" well under than 10% of the time, the and a larger one far less than 1% of the time. Even if it did matter, the concrete example would be much easier to understand than this mathematical jargon, and the voters wouldn't have to deal with it anyway.)
+Note that this rule, combined with the anti-kingmaker rule above, is a strong incentive for any minor candidate (one who expected less than 5% of the vote) to explicitly declare preferences. If they didn't, the votes could simply be transferred to whoever has the highest total. This could never affect who won, but it would increase the winning margin. It is unlikely that voters casting a vote for a "protest" candidate with under 5% support, would want their vote arbitrarily counted to increase the mandate of the winner. Thus, voters would not delegate to a third-party candidate who hadn't declared preferences.
 
 == Example ==
 
