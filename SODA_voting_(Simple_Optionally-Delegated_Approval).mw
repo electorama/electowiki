@@ -72,15 +72,8 @@ To further decrease the opportunities for manipulation, candidates with the most
 '''Write-ins''': If write-ins are allowed, write-in candidates can not declare preferences or assign delegated votes, but can be approved at will by official candidates, regardless of the official candidate's declared preference order.
 
 === Notes on rules ===
-==== Prevent weak minor candidates from having kingmaker power ====
-
-Step 3.C) 
-This rule would help make this system more attractive to major-party politicians. But it's a principled rule, not just a sop to the major parties. Consider the "kingmaker" case: in a basically 50/50 split, some tiny party has the balance of votes, and manages to extract concessions far bigger than their base of support justifies, just in order to delegate those votes or not. That's unjust, and this rule would prevent it. 
-
-5% is a good cutoff here; for instance, nationally in the US, that's tens of millions of voters, and enough to deserve a voice. It shouldn't be too high, because this rule is effectively taking power away from voters; that's only justified if the faction is so small that the power is not legitimate, and so it's better to err a bit on the small side if anything. But under 5% - that is, under 10% of the winning coalition - doesn't deserve kingmaker power.
-
 ==== Finish resolving the "Chicken Dilemma" ====
-Rationale for breaking equal-ranked ties using approvals in step 3.B): One of the toughest situations for any voting system is the "Chicken Dilemma" between two near-clones. Say there are 60% "Blue" voters and 40% "Orange" voters; but the Blue voters are split between two candidates, say 35% for Navy and 25% for Sky. Any good voting system will allow one of the Blue candidates to win, if all the Blue voters support both of their candidates. But under many systems, there is a temptation for the Sky voters not to support Navy, so as to make sure that Sky, rather than Navy, is the winner. But if the Navy voters respond in kind, then Orange could defeat them both.
+Rationale for breaking equal-ranked ties using approvals in step 3.b)i.: One of the toughest situations for any voting system is the "Chicken Dilemma" between two near-clones. Say there are 60% "Blue" voters and 40% "Orange" voters; but the Blue voters are split between two candidates, say 35% for Navy and 25% for Sky. Any good voting system will allow one of the Blue candidates to win, if all the Blue voters support both of their candidates. But under many systems, there is a temptation for the Sky voters not to support Navy, so as to make sure that Sky, rather than Navy, is the winner. But if the Navy voters respond in kind, then Orange could defeat them both.
 
 http://chart.apis.google.com/chart?chs=300x225&cht=p&chco=103289,76A4FB,FF9900&chd=s:VPY&chp=4.71&chl=Navy|Sky|Orange
 
@@ -96,7 +89,12 @@ This rule would allow Orange to give the win to Navy (the correct winner) if Ora
 
 Unfortunately, while the rule itself is simple, it's taken 6 paragraphs to explain the rationale. This is probably too much complexity for most voters, and so this refinement is not recommended for an initial implementation of SODA. However, it is good to know that such a clear, simple fix exists, in case chicken-dilemma-style strategizing became a problem later on.
 
-Note that this rule, combined with the anti-kingmaker rule above, is a strong incentive for any minor candidate (one who expected less than 5% of the vote) to explicitly declare preferences. If they didn't, the votes could simply be transferred to whoever has the highest total. This could never affect who won, but it would increase the winning margin. It is unlikely that voters casting a vote for a "protest" candidate with under 5% support, would want their vote arbitrarily counted to increase the mandate of the winner. Thus, voters would not delegate to a third-party candidate who hadn't declared preferences.
+==== Prevent weak minor candidates from having kingmaker power ====
+
+Step 3.b)ii. 
+This rule helps make this system more attractive to major-party politicians. But it's a principled rule, not just a sop to the major parties. Consider the "kingmaker" case: in a basically 50/50 split, some tiny party has the balance of votes, and manages to extract concessions far bigger than their base of support justifies, just in order to delegate those votes or not. That's unjust, and this rule would prevent it. 
+
+5% is a good cutoff here; for instance, nationally in the US, that's tens of millions of voters, and enough to deserve a voice. It shouldn't be too high, because this rule is effectively taking power away from voters; that's only justified if the faction is so small that the power is not legitimate, and so it's better to err a bit on the small side if anything. But under 5% - that is, under 10% of the winning coalition - doesn't deserve kingmaker power.
 
 == Example ==
 
