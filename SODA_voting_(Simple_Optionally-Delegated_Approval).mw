@@ -59,17 +59,17 @@ To further decrease the opportunities for manipulation, candidates with the most
 
 '''Enforcing mutual approval agreements''': This works as follows: If A ranked B higher than B ranked A, then A may respond by lowering B's ranking. B may respond by raising A, and A may then respond by restoring B to the original ranking. If B raised A above C, then C may lower A, but A may not respond. Three rounds of response are all that are allowed. As noted above, the mere existence of this mechanism should act as a deterrent to betrayals, so that it will almost never need to be actually used.
 
-'''Delegated votes''':The delegated votes for candidate X is the number of ballots that approve only X and do not mark "Do not delegate".
+'''Delegated votes''':The delegated votes for candidate X is the number of ballots that approve only X and do not mark "Do not delegate". X will get a chance to effectively add additional approvals to these votes; or, if X has less than 5% approval, then additional approvals will be added automatically, in order to attain a better result by X's predeclared preferences. 
 
 '''Total approvals''':The total approvals for candidate X is initially the number of ballots that approve X, including both delegated and non-delegated approvals. This number increases through the process as approvals are assigned to X on ballots delegated to other candidates.
 
-'''Assign approvals''': When, for example, candidate A assigns approvals of B and C on their delegated votes, then B and C's approval totals are each increased by A's delegated vote total.
+'''Assign approvals''': The process by which a candidate effectively adds approvals to the votes delegated to him or her. When, for example, candidate A assigns approvals of B and C on their delegated votes, then B and C's approval totals are each increased by A's delegated vote total.
 
 '''Consistent with preferences, with equally preferred ties broken by current approval totals''': For example, candidate A may not approve B and not C unless EITHER A predeclared a preference for B over C, OR A predeclared B and C equal and B currently has more approvals than C.
 
 '''Automatically assign approvals''': When approvals are assigned automatically for candidate X, they are set to approve as many of their pre-declared preferences as possible without approving both of the two candidates with the highest current approval totals that they prefer differently. (For example, say that X's preferences were for A or B, then C, then D and E, and the approval totals are 40, 30, 10, 20, and 15 alphabetically. A has the highest total; B has the next-highest, but does not count, because they are preferred equally to A; and D has the next-highest. So X's delegated ballots will be assigned to approve as many candidates as possible without approving both A and D; that is, they will approve A, B, and C.)
 
-'''Write-ins''': If write-ins are allowed, write-in candidates can not receive or assign delegated votes, but can be approved at will by official candidates, regardless of the official candidate's declared preference order.
+'''Write-ins''': If write-ins are allowed, write-in candidates can not declare preferences or assign delegated votes, but can be approved at will by official candidates, regardless of the official candidate's declared preference order.
 
 === Notes on rules ===
 ==== Prevent weak minor candidates from having kingmaker power ====
