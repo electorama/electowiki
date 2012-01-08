@@ -33,7 +33,7 @@ To further decrease the opportunities for manipulation, candidates with the most
 
 :a) Before the election, all candidates must rank the other official candidates in order of preference. Equal rankings are allowed.'' Later, in the "candidate voting" step, candidates may only approve other candidates in a way that is consistent with their rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms".'' 
 
-:b) If candidates had agreed to prefer each other, they have the tools to enforce those agreements. This works as follows: If A ranked B higher than B ranked A, then A may respond by lowering B's ranking. B may respond by raising A, and A may then respond by restoring B to the original ranking. Three rounds of response are all that are allowed. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that surprises don't work and only cause resentment, would prefer agree on mutual approvals beforehand.''
+:b) If candidates had agreed to prefer each other, they have the tools to enforce those agreements*. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that a surprise betrayal will gain them nothing and only make them look untrustworthy, will prefer agree on mutual approvals beforehand.''
 
 '''2. Voters vote delegable plurality-style votes or non-delegable approval-style votes'''
 
@@ -53,7 +53,11 @@ To further decrease the opportunities for manipulation, candidates with the most
 
 '''4. When step 3b ends, highest total wins'''
 
+:
+
 ''*Definitions:''
+
+'''Enforcing mutual approval agreements''': This works as follows: If A ranked B higher than B ranked A, then A may respond by lowering B's ranking. B may respond by raising A, and A may then respond by restoring B to the original ranking. If B raised A above C, then C may lower A, but A may not respond. Three rounds of response are all that are allowed. As noted above, the mere existence of this mechanism should act as a deterrent to betrayals, so that it will almost never need to be actually used.
 
 '''Delegated votes''':The delegated votes for candidate X is the number of ballots that approve only X and do not mark "Do not delegate".
 
