@@ -63,7 +63,7 @@ To further decrease the opportunities for manipulation, candidates with the most
 
 '''Total approvals''':The total approvals for candidate X is initially the number of ballots that approve X, including both delegated and non-delegated approvals. This number increases through the process as approvals are assigned to X on ballots delegated to other candidates.
 
-'''Assign approvals''': When, for example, candidate A assigns approvals of B and C on their delegated votes, then A's delegated vote total is added to B and C's approval totals.
+'''Assign approvals''': When, for example, candidate A assigns approvals of B and C on their delegated votes, then B and C's approval totals are each increased by A's delegated vote total.
 
 '''Consistent with preferences, with equally preferred ties broken by current approval totals''': For example, candidate A may not approve B and not C unless EITHER A predeclared a preference for B over C, OR A predeclared B and C equal and B currently has more approvals than C.
 
