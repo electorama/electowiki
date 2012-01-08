@@ -35,7 +35,7 @@ To further decrease the opportunities for manipulation, candidates with the most
 
 :b) If candidates had agreed to prefer each other, they have the tools to enforce those agreements*. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that a surprise betrayal will gain them nothing and only make them look untrustworthy, will prefer agree on mutual approvals beforehand.''
 
-'''2. Voters vote delegable plurality-style votes or non-delegable approval-style votes'''
+'''2. Voters vote delegated plurality-style votes or non-delegated approval-style votes'''
 
 :a) Ballots list all candidates in order from candidates who submit the most complete rankings of other candidates, to those who submit the least. Where this is a tie, ordering is random.  (Completeness of ranking is scored by how many possible pairs of other candidates contain two candidates at different levels.) ''This is a slight incentive for candidates to submit a complete ranking in order to appear high on the ballot.'' Voters may approve one or more candidates, and also have the option to mark "Do not delegate".
 
