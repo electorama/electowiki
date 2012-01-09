@@ -35,7 +35,7 @@ To further decrease the opportunities for manipulation, candidates with the most
 
 '''2. Voters vote delegated plurality-style votes or non-delegated approval-style votes'''
 
-:a) Ballots list all candidates in order from candidates who submit the most complete rankings of other candidates, to those who submit the least. Where this is a tie, ordering is random.  (Completeness of ranking is scored by how many possible pairs of other candidates contain two candidates at different levels.) ''This is a slight incentive for candidates to submit a complete ranking in order to appear high on the ballot.'' Voters may approve one or more candidates, and also have the option to mark "Do not delegate".
+:a) Ballots list all candidates in order from candidates who submit the most complete* rankings of other candidates, to those who submit the least. Where this is a tie, ordering is random. ''This is a slight incentive for candidates to submit a complete ranking in order to appear high on the ballot.'' Voters may approve one or more candidates, and also have the option to mark "Do not delegate".
 
 :b) Delegated votes* and total approvals* are tallied and announced for each candidate. ''Announcing full tallies makes the process in step 3 more predictable and fair.''
 
@@ -56,6 +56,8 @@ To further decrease the opportunities for manipulation, candidates with the most
 ''*Definitions:''
 
 '''Enforcing mutual approval agreements''': This works as follows: If A ranked B higher than B ranked A, then A may respond by lowering B's ranking. B may respond by raising A, and A may then respond by restoring B to the original ranking. If B raised A above C, then C may lower A, but A may not respond. Three rounds of response are all that are allowed. As noted above, the mere existence of this mechanism should act as a deterrent to betrayals, so that it will almost never need to be actually used.
+
+'''Most complete ranking''': Completeness of ranking is scored by how many possible pairs of other candidates contain two candidates at different levels.
 
 '''Delegated votes''':The delegated votes for candidate X is the number of ballots that approve only X and do not mark "Do not delegate". X will get a chance to effectively add additional approvals to these votes; or, if X has less than 5% approval, then additional approvals will be added automatically, in order to attain a better result by X's predeclared preferences. 
 
