@@ -1,0 +1,252 @@
+
+{| class="wikitable sortable" style="text-align:center"
+|- style="font-size:90%;"
+! !! [[Majority criterion|Major&shy;ity]]/<br>[[Mutual majority criterion|MMC]]<br> !! [[Condorcet criterion|Condorcet]]/<br>'''Majority Condorcet''' !! [[Condorcet loser criterion|Cond.<br>loser]]<br> !! [[Monotonicity criterion|Mono&shy;tone]]<br> !! [[Consistency criterion|Consist&shy;ency]]/<br>[[Participation criterion|Particip&shy;ation]]<br> !! [[Reversal symmetry|Rever&shy;sal<br>sym&shy;metry]]<br> !! [[Independence of irrelevant alternatives|IIA]]<br> !! [[Clone independence|Cloneproof]]<br> !! [[Polynomial time|Poly&shy;time]]/<br>[[Resolvability criterion|Resolv&shy;able]]<br> !! [[Voting machine#Vote-tabulation Technologies|Summ&shy;able]]<br> !! Equal rankings<br>allowed<br> !! Later<br>prefs<br>allowed<br> !! colspan=2 align=center| [[Later-no-harm]]&shy;/<br>Later-no-help<br> !! '''FBC:No<br>favorite<br>betrayal'''
+
+|-
+! [[Approval voting|Approval]]<ref group=nb name=approvalrangecriteria>These criteria assume that all voters vote their true preference order. This is problematic for Approval and Range, where various votes are consistent with the same order. See [[Approval voting#Compliance with voting system criteria|approval voting]] for compliance under various voter models.</ref>
+| <span style="display:none">3</span>[[Majority criterion#Approval voting|Ambig&shy;uous]] 
+|bgcolor=#ffdddd| <span style="display:none">4</span><span style="background-color: #ffbbbb">[[Condorcet criterion#Approval voting|No]]</span>/&shy;<span style="background-color: #ddffdd">Strategic yes<ref group=nb name=approvalnash>In Approval, Range, and Majority Judgment, if all voters have perfect information about each other's true preferences and use rational strategy, any Majority Condorcet or Majority winner will be strategically forced â€“ that is, win in the unique [[Strong Nash equilibrium]]. In particular if every voter knows that "A or B are the two most-likely to win" and places their "approval threshold" between the two, then the Condorcet winner, if one exists and is in the set {A,B}, will always win. These systems also satisfy the majority criterion in the weaker sense that any majority can force their candidate to win, if it so desires. (However, as the Condorcet criterion is incompatible with the participation criterion and the consistency criterion, these systems cannot satisfy these criteria in this Nash-equilibrium sense.  Laslier, J.-F. (2006) [http://halshs.archives-ouvertes.fr/docs/00/12/17/51/PDF/stratapproval4.pdf "Strategic approval voting in a large electorate,"] ''IDEP Working Papers'' No. 405 (Marseille, France: Institut D'Economie Publique).)</ref></span>
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ddffdd| <span style="display:none">2</span>Yes<ref group=nb name=approvalnash/> 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+| <span style="display:none">3</span>Ambig&shy;uous 
+| <span style="display:none">3</span>Ambig.&shy;<ref group=nb name="ambiguous">The original [[strategic nomination|independence of clones criterion]] applied only to ranked voting methods. (T. Nicolaus Tideman, "Independence of clones as a criterion for voting rules", ''Social Choice and Welfare'' Vol. 4, No. 3 (1987), pp. 185â€“206.) There is some disagreement about how to extend it to unranked methods, and this disagreement affects whether approval and range voting are considered independent of clones.  If the definition of "clones" is that "every voter scores them within &plusmn;&epsilon; in the limit &epsilon;&rarr;0+", then range voting is immune to clones.</ref>  
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>O(N) 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb colspan=2 align=center| <span style="display:none">5</span>No
+|bgcolor=#ddffdd| <span style="display:none">4</span><ref group=nb name=approvalLNH>Approval and Plurality do not allow later preferences. Technically speaking, this means that they pass the technical definition of the LNH criteria - if later preferences or ratings are impossible, then such preferences can not help or harm. However, from the perspective of a voter, these systems do not pass these criteria. Approval, in particular, encourages the voter to give the ''same'' ballot rating to a candidate who, in another voting system, would get a ''later'' rating or ranking. Thus, for approval, the practically meaningful criterion would be not "later-no-harm" but "same-no-harm" - something neither approval nor any other system satisfies.</ref> 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes
+|-
+! [[Borda count]]
+|bgcolor=#ffbbbb| <span style="display:none">5</span>[[Majority criterion#Borda count|No]] 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>[[Condorcet criterion#Borda count|No]] 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No ([[Strategic nomination|teaming]])  
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>O(N) 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb colspan=2 align=center| <span style="display:none">5</span>[[Later-no-harm criterion#Noncomplying methods|No]] 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No
+|-
+! [[Copeland's method|Copeland]]
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffdddd| <span style="display:none">4</span>No <small>(but [[Independence of Smith-dominated alternatives|ISDA]])</small> 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No ([[Strategic nomination|crowding]]) 
+|bgcolor=#ffdddd| <span style="display:none">3</span><span style="background-color: #bbffbb">Yes</span>/<span style="background-color: #ffbbbb">No</span> 
+|bgcolor=#ddffdd| <span style="display:none">2</span>O(N<sup>2</sup>) 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb colspan=2 align=center| <span style="display:none">5</span>[[Later-no-harm criterion#Noncomplying methods|No]] 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No
+|-
+! [[Instant-runoff voting|IRV]] (AV)
+|bgcolor=#bbffbb| <span style="display:none">1</span>[[Majority criterion#Instant-runoff voting|Yes]] 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>[[Condorcet criterion#Instant-runoff voting|No]] 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>[[Monotonicity criterion#Instant-runoff voting|No]] 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No  
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>O(N!)&shy;<ref group=nb>The number of piles that can be summed from various precincts is [[Floor and ceiling functions|floor]]((e-1) N!) - 1.</ref> 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb colspan=2 align=center| <span style="display:none">1</span>[[Later-no-harm criterion#Complying methods|Yes]] 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No
+|-
+! [[Kemeny-Young method|Kemeny-Young]]
+|bgcolor=#bbffbb| <span style="display:none">1</span>[[Majority criterion#Kemeny-Young method|Yes]] 
+|bgcolor=#bbffbb| <span style="display:none">1</span>[[Condorcet criterion#Kemeny-Young method|Yes]] 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffdddd| <span style="display:none">4</span>No <small>(but [[Independence of Smith-dominated alternatives|ISDA]])</small> 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No ([[Strategic nomination|teaming]]) 
+|bgcolor=#ffdddd| <span style="display:none">3</span><span style="background-color: #ffbbbb">No</span>/<span style="background-color: #bbffbb">Yes</span> 
+|bgcolor=#ddffdd| <span style="display:none">2</span>O(N<sup>2</sup>)&shy;<ref group=nb>Each prospective Kemeny-Young ordering has score equal to the sum of the pairwise entries that agree with it, and so the best ordering can be found using the pairwise matrix.</ref> 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb colspan=2 align=center| <span style="display:none">5</span>[[Kemeny-Young method#Failed criteria for all Condorcet methods|No]] 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No
+|-
+! [[Majority Judgment|Majority Judg&shy;ment]]<ref group=nb name=mjbucklin>Bucklin voting, with skipped and equal-rankings allowed, meets the same criteria as Majority Judgment; in fact, Majority Judgment may be considered a form of Bucklin voting. Without allowing equal rankings, Bucklin's criteria compliance is worse; in particular, it fails Independence of Irrelevant Alternatives, which for a ranked method like this variant is incompatible with the Majority Criterion.</ref>
+|bgcolor=#ddffdd| <span style="display:none">1</span>[[Majority criterion#Majority Judgment|Yes]]<ref group=nb name=mjmajority>Majority judgment passes the ''rated'' majority criterion (a candidate rated solo-top by a majority must win). It does not pass the ''ranked'' majority criterion, which is incompatible with Independence of Irrelevant Alternatives.</ref>
+|bgcolor=#ffdddd| <span style="display:none">4</span><span style="background-color: #ffbbbb">[[Condorcet criterion#Approval voting|No]]</span>/&shy;<span style="background-color: #ddffdd">Strategic yes<ref group=nb name=approvalnash/> </span>
+|bgcolor=#ffdddd| <span style="display:none">4</span>No<ref group=nb name=mjcondloser>Majority judgment passes the "majority condorcet loser" criterion; that is, a candidate who loses to all others by a ''majority'' cannot win. However, if some of the losses are not by a majority (including equal-rankings), the Condorcet loser can, theoretically, win in MJ, although such scenarios are rare.</ref> 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffdddd| <span style="display:none">4</span>No<ref group=nb name=mjconsistency>Balinski and Laraki, Majority Judgment's inventors, point out that it meets a weaker criterion they call "grade consistency": if two electorates give the same rating for a candidate, then so will the combined electorate. Majority Judgment explicitly requires that ratings be expressed in a "common language", that is, that each rating have an absolute meaning. They claim that this is what makes "grade consistency" significant. MJ. Balinski M. and R. Laraki (2007) Â«A theory of measuring, electing and rankingÂ». Proceedings of the National Academy of Sciences USA, vol. 104, no. 21, 8720-8725.</ref> 
+|bgcolor=#ffdddd| <span style="display:none">4</span>No<ref group=nb name=mjreversal>Majority judgment can actually pass or fail reversal symmetry depending on the rounding method used to find the median when there are even numbers of voters. For instance, in a two-candidate, two-voter race, if the ratings are converted to numbers and the two central ratings are averaged, then MJ meets reversal symmetry; but if the lower one is taken, it does not, because a candidate with ["fair","fair"] would beat a candidate with ["good","poor"] with or without reversal. However, for rounding methods which do not meet reversal symmetry, the chances of breaking it are on the order of the inverse of the number of voters; this is comparable with the probability of an exact tie in a two-candidate race, and when there's a tie, any method can break reversal symmetry.</ref> 
+|bgcolor=#bbffbb| <span style="display:none">2</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>O(N)&shy;<ref group=nb>Majority Judgment is summable at order KN, where K, the number of ranking categories, is set beforehand.</ref> 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffdddd align=center| <span style="display:none">3</span>[[Later-no-harm criterion#Noncomplying methods|No]] <ref group=nb name=mjlnh>Majority judgment meets a related, weaker criterion: ranking an additional candidate below the median grade (rather than your own grade) of your favorite candidate, cannot harm your favorite.</ref> 
+|bgcolor=#bbffbb align=center| <span style="display:none">1</span><span style="background-color: #bbffbb">Yes</span>
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes
+|-
+! [[Minimax Condorcet|Minimax]]
+|bgcolor=#bbffbb| <span style="display:none">2</span>[[Majority criterion#Minimax Condorcet|Yes]]/<span style="background-color: #ffbbbb">No</span> 
+|bgcolor=#ddffdd| <span style="display:none">2</span>[[Condorcet criterion#Minimax Condorcet|Yes]]<ref group=nb name=minimaxvariant>A variant of Minimax that counts only pairwise opposition, not opposition minus support, fails the Condorcet criterion and meets later-no-harm.</ref> 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No ([[vote-splitting|spoilers]]) 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ddffdd| <span style="display:none">2</span>O(N<sup>2</sup>) 
+|bgcolor=#ffffff| <span style="display:none">3</span>Some variants 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffdddd colspan=2 align=center| <span style="display:none">4</span>[[Later-no-harm criterion#Complying methods|No]]<ref group=nb name=minimaxvariant/> 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No
+|-
+! [[Plurality voting system|Plurality]]
+|bgcolor=#bbffbb| <span style="display:none">2</span>[[Majority criterion#Plurality voting system|Yes]]/<span style="background-color: #ffbbbb">No</span> 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>[[Condorcet criterion#Plurality voting|No]] 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No ([[vote-splitting|spoilers]]) 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>O(N) 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb colspan=2 align=center| <span style="display:none">5</span>No
+|bgcolor=#ddffdd| <ref group=nb name=approvalLNH/>
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No
+|-
+! [[Range voting]]<ref group=nb name=approvalrangecriteria/>
+|bgcolor=#ffbbbb| <span style="display:none">5</span>[[Majority criterion#Range voting|No]] 
+|bgcolor=#ffdddd| <span style="display:none">4</span><span style="background-color: #ffbbbb">[[Condorcet criterion#Approval voting|No]]</span>/&shy;<span style="background-color: #ddffdd">Strategic yes<ref group=nb name=approvalnash/> </span>
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ddffdd| <span style="display:none">2</span>Yes<ref group=nb name=approvalnash/> 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ddffdd| <span style="display:none">2</span>Yes<ref group=nb name=rangeIIA>Range satisfies the mathematical definition of IIA, that is, if each voter scores each candidate independently of which other candidates are in the race. However, since a given range score has no agreed-upon meaning, it is thought that most voters would either "normalize" or exaggerate their vote such that it votes at least one candidate each at the top and bottom possible ratings. In this case, Range would not be independent of irrelevant alternatives. Balinski M. and R. Laraki (2007) Â«A theory of measuring, electing and rankingÂ». Proceedings of the National Academy of Sciences USA, vol. 104, no. 21, 8720-8725.</ref> 
+| <span style="display:none">3</span>Ambig.&shy;<ref group=nb name="ambiguous"/> 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>O(N) 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb colspan=2 align=center| <span style="display:none">5</span>[[Later-no-harm criterion#Noncomplying methods|No]] 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes
+|-
+! [[Ranked pairs]]
+|bgcolor=#bbffbb| <span style="display:none">1</span>[[Majority criterion#Ranked Pairs|Yes]] 
+|bgcolor=#bbffbb| <span style="display:none">1</span>[[Condorcet criterion#Ranked Pairs|Yes]] 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffdddd| <span style="display:none">4</span>No <small>(but [[Independence of Smith-dominated alternatives|ISDA]])</small> 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ddffdd| <span style="display:none">2</span>O(N<sup>2</sup>) 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb colspan=2 align=center| <span style="display:none">5</span>[[Later-no-harm criterion#Noncomplying methods|No]] 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No
+|-
+! [[Two-round system|Runoff voting]]
+|bgcolor=#bbffbb| <span style="display:none">2</span>[[Majority criterion#Two-round system|Yes]]/<span style="background-color: #ffbbbb">No</span> 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>[[Condorcet criterion#Two-round system|No]] 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No ([[vote-splitting|spoilers]]) 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ddffdd| <span style="display:none">2</span>O(N)&shy;<ref group=nb>Once for each round.</ref> 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#ffdddd| <span style="display:none">4</span>No<ref group=nb>Later preferences are only possible between the two candidates who make it to the second round.</ref> 
+|bgcolor=#ddffdd colspan=2 align=center| <span style="display:none">2</span>[[Later-no-harm criterion#Complying methods|Yes]]<ref group=nb>That is, second-round votes cannot harm candidates already eliminated.</ref> 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No
+|-
+! [[Schulze method|Schulze]]
+|bgcolor=#bbffbb| <span style="display:none">1</span>[[Majority criterion#Schulze method|Yes]] 
+|bgcolor=#bbffbb| <span style="display:none">1</span>[[Condorcet criterion#Schulze method|Yes]] 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffdddd| <span style="display:none">4</span>No <small>(but [[Independence of Smith-dominated alternatives|ISDA]])</small> 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ddffdd| <span style="display:none">2</span>O(N<sup>2</sup>) 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ffbbbb colspan=2 align=center| <span style="display:none">5</span>[[Later-no-harm criterion#Noncomplying methods|No]] 
+|bgcolor=#ffbbbb| <span style="display:none">5</span>No
+|-
+! [[SODA voting]] <ref group=nb name=sodabase>Unless otherwise noted, for SODA's compliances:
+*Delegated votes are considered to be equivalent to voting the candidate's predeclared preferences.
+*Ballots only are considered (In other words, voters are assumed not to have preferences that cannot be expressed by a delegated or approval vote.)
+*Since at the time of assigning approvals on delegated votes there is always enough information to find an optimum strategy, candidates are assumed to use such a strategy.</ref>
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes
+|bgcolor=#ddffdd| <span style="display:none">2</span>Strategic yes/<span style="background-color: #bbffbb">yes</span>
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes 
+|bgcolor=#ddffdd| <span style="display:none">2</span>Ambig&shy;uous <ref group=nb name=sodamono>For up to 4 candidates, SODA is monotonic. For more than 4 candidates, it is monotonic for adding an approval, for changing from an approval to a delegation ballot, and for changes in a candidate's preferences. However, if changes in a voter's preferences are executed as changes from a delegation to an approval ballot, such changes are not necessarily monotonic with more than 4 candidates.</ref>
+|bgcolor=#ddffdd| <span style="display:none">2</span>Up to 4 candidates <ref group=nb name=soda4>For up to 4 candidates, SODA meets the Consistency, Participation, IIA, and Cloneproof criteria. It can fail these criteria in certain rare cases with more than 4 candidates. This is considered here as a qualified success for the Consistency and Participation criteria, which do not intrinsically have to do with numerous candidates, and as a qualified failure for the IIA and Cloneproof criteria, which do.</ref>
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes<ref group=nb>SODA voting passes reversal symmetry for all scenarios that are reversible under SODA; that is, if each delegated ballot has a unique last choice. In other situations, it is not clear what it would mean to reverse the ballots, but there is always some possible interpretation under which SODA would pass the criterion.</ref>
+|bgcolor=#ffdddd| <span style="display:none">4</span>Up to 4 candidates <ref group=nb name=soda4/>
+|bgcolor=#ffdddd| <span style="display:none">4</span>Up to 4 cand. (then crowds)<ref group=nb name=soda4/>
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes<ref group=nb>SODA voting is always polytime computable. There are some cases where the optimal strategy for a candidate assigning delegated votes may not be polytime computable; however, such cases are entirely implausible for a real-world election.</ref>
+|bgcolor=#bbffbb| <span style="display:none">1</span>O(N)
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes
+|bgcolor=#ffdddd colspan=2 align=center| <span style="display:none">4</span>Candidates only<ref group=nb>Later preferences are only possible through delegation, that is, if they agree with the predeclared preferences of the favorite.</ref> 
+|bgcolor=#bbffbb| <span style="display:none">3</span>Yes
+|bgcolor=#bbffbb| <span style="display:none">1</span>Yes
+|-
+! [[Sortition|Random winner]]/<br>arbitrary winner<ref group=nb>Random winner: Uniformly randomly chosen candidate is winner. Arbitrary winner: some external entity, not a voter, chooses the winner. These systems are not, properly speaking, voting systems at all, but are included to show that even a horrible system can still pass some of the criteria.</ref>
+|bgcolor=#dd9999| <span style="display:none">5</span>No
+|bgcolor=#dd9999| <span style="display:none">5</span>No
+|bgcolor=#dd9999| <span style="display:none">5</span>No
+|bgcolor=#dd9999| <span style="display:none">5</span>NA
+|bgcolor=#dd9999| <span style="display:none">5</span>No
+|bgcolor=#dd9999| <span style="display:none">1</span>Yes
+|bgcolor=#99dd99| <span style="display:none">1</span>Yes
+|bgcolor=#dd9999| <span style="display:none">5</span>NA
+|bgcolor=#ddbbbb| <span style="display:none">3</span><span style="background-color: #99dd99">Yes</span>/<span style="background-color: #dd9999">No</span>
+|bgcolor=#77dd77| <span style="display:none">0</span>O(1)
+|bgcolor=#dd9999| <span style="display:none">5</span>No
+|bgcolor=#dd9999 colspan=2 align=center| <span style="display:none">5</span>No 
+|bgcolor=#dd9999| <span style="display:none">5</span>
+|bgcolor=#99dd99| <span style="display:none">1</span>Yes
+|-
+! [[Random ballot]]<ref group=nb>Random ballot: Uniformly random-chosen ballot determines winner. This and closely related systems are of mathematical interest because they are the only possible systems which are truly strategy-free, that is, your best vote will never depend on anything about the other voters. They also satisfy both consistency and IIA, which is impossible for a deterministic ranked system. However, this system is not generally considered as a serious proposal for a practical method.</ref>
+|bgcolor=#dd9999| <span style="display:none">5</span>No
+|bgcolor=#dd9999| <span style="display:none">5</span>No
+|bgcolor=#dd9999| <span style="display:none">5</span>No
+|bgcolor=#99dd99| <span style="display:none">1</span>Yes
+|bgcolor=#99dd99| <span style="display:none">1</span>Yes
+|bgcolor=#99dd99| <span style="display:none">1</span>Yes
+|bgcolor=#99dd99| <span style="display:none">1</span>Yes
+|bgcolor=#99dd99| <span style="display:none">1</span>Yes
+|bgcolor=#ddbbbb| <span style="display:none">3</span><span style="background-color: #99dd99">Yes</span>/<span style="background-color: #dd9999">No</span>
+|bgcolor=#99dd99| <span style="display:none">1</span>O(N)
+|bgcolor=#dd9999| <span style="display:none">5</span>No
+|bgcolor=#dd9999 colspan=2 align=center| <span style="display:none">5</span>No 
+|bgcolor=#dd9999| <span style="display:none">5</span>
+|bgcolor=#99dd99| <span style="display:none">1</span>Yes
+|}
+<small>"Yes/No", in a column which covers two related criteria, signifies that the given system passes the first criterion and not the second one.</small>
+{{Reflist|group=nb}}
