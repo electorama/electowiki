@@ -1,0 +1,5 @@
+The acronym DH3 refers to the "Dark Horse plus 3" scenario. This can happen when a voting system encourages burying your "true" (strongest) opponent underneath weaker opponents. If this is the case, then in an election between three strong candidates and a weak "dark horse", the "dark horse" can win precisely because they were the weakest. Each strong candidate votes the dark horse in second place, in order to better bury the stronger opponents; and then the dark horse, with second-place support from all voters, is the strategic Condorcet winner.
+
+This is one of the most pathological possible voting scenarios, as it could lead even the most universally-despised candidate to win. 
+
+There are documented cases of this happening in elections using the Borda count, a system particularly subject to DH3.
