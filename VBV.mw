@@ -1,0 +1,15 @@
+'''VBV''' (for "Venzke Bucklin Variant") is a three-slot method defined by Kevin Venzke as an attempt to improve the [[Later-no-harm]] performance of [[MCA]]. See also [[IBIFA]] by Chris Benham, which could be seen as a similar attempt that doesn't sacrifice [[FBC]] or [[monotonicity]].
+
+==Definition==
+#The voter submits a three-slot ratings ballot (preferred, approved, and the default: disapproved).
+#Identify the candidate with the most top ratings (the "TRW").
+#Find the "tentative winner": the candidate who is preferred or approved on the greatest number of ballots, except don't count any "approved" votes from ballots that rate the TRW as preferred.
+#If the TRW and the tentative winner are the same candidate, elect that candidate.
+#Otherwise, elect the candidate who is preferred or approved on the greatest number of ballots. (The ballots preferring the TRW are not treated differently this time.)
+
+==Comments==
+The idea behind this method is that voters preferring the most-preferred candidate (the TRW) receive a privilege: They do not have their lower preference(s) counted unless the TRW is not going to win. This is a Later-no-harm-like guarantee that works similarly to IRV. All the other voters have their preferred and approved ratings counted equivalently, however.
+
+The method sacrifices FBC and monotonicity basically because only one candidate's supporters can receive the privilege. It's possible that a candidate can win if they are the "tentative winner" given some other TRW, but not if they are the TRW themselves. 
+
+[[Category:Single-winner voting systems]]
