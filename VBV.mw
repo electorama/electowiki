@@ -10,13 +10,6 @@
 ==Comments==
 The idea behind this method is that voters preferring the most-preferred candidate (the TRW) receive a privilege: They do not have their lower preference(s) counted unless the TRW is not going to win. This is a Later-no-harm-like guarantee that works similarly to IRV. All the other voters have their preferred and approved ratings counted equivalently, however.
 
-The method sacrifices FBC and monotonicity basically because only one candidate's supporters can receive the privilege. It's possible that a candidate can win when a certain other candidate is the TRW, but not when they are the TRW themselves. 
+The method sacrifices FBC and monotonicity basically because only one candidate's supporters can receive the privilege. It's possible that a candidate can win if they are the "tentative winner" given some other TRW, but not if they are the TRW themselves. 
 
-== Example ==
-{{Tenn_voting_example}}
-
-Suppose that the voters place their first preference in the top slot and their second preference in the middle slot, leaving the bottom two preferences unvoted.
-
-Memphis is the top-ratings winner, so we count all the preferences aside from the middle-slot Nashville preferences cast by the Memphis supporters. The result is that Chattanooga is the "tentative" winner, since all 58 non-Memphis voters voted for Chattanooga. Since Memphis is not winning, their middle slot preferences are counted. This brings Nashville's vote count up to 68 in comparison to Chattanooga's 58, so Nashville wins.
-
-[[Category:Single-winner voting methods]]
+[[Category:Single-winner voting systems]]
