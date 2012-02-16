@@ -1,43 +1,16 @@
 '''Single Contest''' is a method devised by Kevin Venzke which, according to his simulations, has very little incentive for insincere ranking and very good sincere Condorcet efficiency. It uses a rank ballot with explicitly-placed approval cutoff, expecting voters to employ approval strategy.
 
 ==Definition==
-# Voters fill out rank ballots, with an explicitly-placed approval cutoff. Equal ranking and truncation are allowed.
-# If there is a strict majority favorite (not counting equal-top rankings to the majority) then this candidate wins.
-# Otherwise, elect the winner of the pairwise contest between the pair of candidates who minimize the number of voters that approved neither one. For example, if no one approved A or B, there are no votes for the AB pair. If everyone voted for at least one of A and B, all votes are for the AB pair.
-# If pairs are tied on this measure, break the tie for the pair whose winner has the most voters on his side in that contest (i.e. winning votes). Secondarily, break ties in favor of the pair whose winner has the most approval. (This order might get reversed in the future, since WV is based on rankings and the idea is to minimize their importance.)
+# Rank ballots. Equal ranking and truncation are allowed. At the same time, the voter explicitly places an approval cutoff.
+# If there is a strict majority favorite (not simply equal-top rankings) then this candidate wins.
+# Otherwise, elect the winner of the pairwise contest between the pair of candidates who minimize the number of voters that approved neither one.
+# If pairs are tied on this measure, break the tie for the pair whose winner has the most voters on his side in that contest (i.e. winning votes). Secondarily, you can use the winner's approval score.
 
 ==Comments==
 The method essentially uses the approval scores to guess at the most important two-way contest. It is an approval election for a pair, where you vote for a pair by approving either candidate in that pair. Then the rankings are used to resolve this contest. Two-candidate races don't have strategy incentives.
 
 There is potentially strategy with the majority favorite rule, as creating a majority favorite will end the method prematurely and possibly in a way that a voter prefers.
 
-Manipulating which contest will be selected as the "single contest" is not straightforward. The only way to vote against a contest (because one foresees that it won't resolve favorably) is to approve neither candidate involved. Similarly, there is no way to prop up a contest (foreseeing that it will be easily won by one's preferred candidate) when one was already going to approve one of the candidates. 
+Manipulating which contest will be selected as the "single contest" is not straightforward. The only way to vote against a contest (because one foresees that it won't resolve favorably) is to approve neither candidate involved.
 
-Single Contest satisfies Condorcet Loser, but not Condorcet:
-
- 40 A>B | C  (i.e. only C is disapproved)
- 25 B | A>C
- 35 C | A>B
- 100
-
-The Condorcet winner is A. The BC pair is selected as the most important contest, because all voters distinguish between B and C using approval. Then B is elected.
-
-The method is not clone-independent due to the (admittedly inelegant) majority favorite rule. But the approval and final contest components don't introduce additional clone issues. It's not monotone, because raising the winner from disapproved to approved on some ballots which already counted to the selected pair (that the winner was part of) could add votes for a different pair where the original winner is pairwise beaten.
-
-== Example ==
-{{Tenn_voting_example}}
-
-The voters need to decide where to place their approval cutoffs. They might look at the polling information and decide that the winner will probably be either Memphis or Nashville if the votes are strategically reasonable. So, suppose that the Memphis voters approve only Memphis, and the other voters approve everyone as good as or better than Nashville.
-
-No candidate has a majority of first preferences, so the "votes" for each pair are counted:
-
- 100 Memphis & Nashville
- 74  Memphis & Chattanooga
- 74  Memphis & Knoxville
- 58  Nashville & Chattanooga
- 58  Nashville & Knoxville
- 32  Chattanooga & Knoxville
-
-Memphis vs. Nashville is selected as the single contest. According to the rankings, Nashville beats Memphis 58-42, and so Nashville wins.
-
-[[Category:Single-winner voting methods]]
+[[Category:Single-winner voting systems]]
