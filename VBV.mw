@@ -10,6 +10,6 @@
 ==Comments==
 The idea behind this method is that voters preferring the most-preferred candidate (the TRW) receive a privilege: They do not have their lower preference(s) counted unless the TRW is not going to win. This is a Later-no-harm-like guarantee that works similarly to IRV. All the other voters have their preferred and approved ratings counted equivalently, however.
 
-The method sacrifices FBC and monotonicity basically because only one candidate's supporters can receive the privilege. It's possible that a candidate can win if they are the "tentative winner" given some other TRW, but not if they are the TRW themselves. 
+The method sacrifices FBC and monotonicity basically because only one candidate's supporters can receive the privilege. It's possible that a candidate can win when a certain other candidate is the TRW, but not when they are the TRW themselves. 
 
 [[Category:Single-winner voting systems]]
