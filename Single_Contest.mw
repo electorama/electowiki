@@ -1,10 +1,10 @@
 '''Single Contest''' is a method devised by Kevin Venzke which, according to his simulations, has very little incentive for insincere ranking and very good sincere Condorcet efficiency. It uses a rank ballot with explicitly-placed approval cutoff, expecting voters to employ approval strategy.
 
 ==Definition==
-# Rank ballots. Equal ranking and truncation are allowed. At the same time, the voter explicitly places an approval cutoff.
+# Voters fill out rank ballots, with an explicitly-placed approval cutoff. Equal ranking and truncation are allowed.
 # If there is a strict majority favorite (not simply equal-top rankings) then this candidate wins.
 # Otherwise, elect the winner of the pairwise contest between the pair of candidates who minimize the number of voters that approved neither one.
-# If pairs are tied on this measure, break the tie for the pair whose winner has the most voters on his side in that contest (i.e. winning votes). Secondarily, you can use the winner's approval score.
+# If pairs are tied on this measure, break the tie for the pair whose winner has the most voters on his side in that contest (i.e. winning votes). Secondarily, break ties in favor of the pair whose winner has the most approval.
 
 ==Comments==
 The method essentially uses the approval scores to guess at the most important two-way contest. It is an approval election for a pair, where you vote for a pair by approving either candidate in that pair. Then the rankings are used to resolve this contest. Two-candidate races don't have strategy incentives.
