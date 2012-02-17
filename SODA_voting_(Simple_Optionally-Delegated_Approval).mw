@@ -26,48 +26,63 @@ To further decrease the opportunities for manipulation, candidates with the most
 </td></tr></table>
 
 === Full, step-by-step rules ===
-
-'''1. Candidates publicly declare their rankings of the other candidates'''
-
-:a) Before the election, all candidates must rank the other official candidates in order of preference. Equal rankings are allowed.'' Later, in the "candidate voting" step, candidates may only approve other candidates in a way that is consistent with their rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms".'' 
-
-:b) If candidates had agreed to prefer each other, they have the tools to enforce those agreements*. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that a surprise betrayal will gain them nothing and only make them look untrustworthy, will prefer agree on mutual approvals beforehand.''
-
-'''2. Voters vote delegated plurality-style votes or non-delegated approval-style votes'''
-
-:a) Ballots list all candidates in order from candidates who submit the most complete* rankings of other candidates, to those who submit the least. Where this is a tie, ordering is random. ''This is a slight incentive for candidates to submit a complete ranking in order to appear high on the ballot.'' Voters may approve one or more candidates, and also have the option to mark "Do not delegate".
-
-:b) Delegated votes* and total approvals* are tallied and announced for each candidate. ''Announcing full tallies makes the process in step 3 more predictable and fair.''
-
-'''3. Candidates publicly assign approvals to their delegated votes, in descending order of approval'''
-
-:a) There is a one-week period for candidates to analyse and negotiate based on these preliminary results. ''Actually, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.''
-
-:b) As long as there are unassigned delegated votes and no candidate has approvals equal to over 50% of voters, the candidate with the most approvals who has not yet assigned approvals* on their delegated votes does so. ''Starting with the most-approved candidate prevents less-approved candidates from giving ultimatums ("I'm not going to approve you, so you'd better approve me or that other guy will win") to more-approved candidates.''
-
-::i. If the assigning candidate has more than 5% approval, they may choose which candidates to assign as approvals on their delegated ballots, consistent with preferences, with equally preferred ties broken by current approval totals*. ''This tie-breaking by approval totals resolves the "chicken dilemma", as explained below.''
-
-::ii. If the candidate with the most approvals has 5% approvals or less, their delegated votes are assigned for them automatically*. ''This automatic assignment respects predeclared preferences but prevents minor candidates from having discretionary kingmaker power.''
-
-'''4. When step 3b ends, highest total wins'''
-
-:<br /><br />
-
-''*Definitions:''
-
-'''Enforcing mutual approval agreements''': This works as follows: If A ranked B higher than B ranked A, then A may respond by lowering B's ranking. B may respond by raising A, and A may then respond by restoring B to the original ranking. If B raised A above C, then C may lower A, but A may not respond. Three rounds of response are all that are allowed. As noted above, the mere existence of this mechanism should act as a deterrent to betrayals, so that it will almost never need to be actually used.
-
-'''Most complete ranking''': Completeness of ranking is scored by how many possible pairs of other candidates contain two candidates at different levels.
-
+{|
+|-
+|<big>'''1. Candidates publicly declare their rankings of the other candidates'''</big>
+|-
+|
+:a) '''Before the election, all candidates must rank the other official candidates in order of preference. Equal rankings are allowed.''' ''Later, in the "candidate voting" step, candidates may only approve other candidates in a way that is consistent with their rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms".'' 
+|-
+|
+:b) ''(optional)'' Candidates may enforce any prior agreements of mutual preferences by changing their own preferences in response to those of others*. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that a surprise betrayal will gain them nothing and only make them look untrustworthy, will prefer agree on mutual approvals beforehand.''
+| width = 33% |
+;<small>Enforcing mutual approval agreements'''
+:This works as follows: If A ranked B higher than B ranked A, then A may respond by lowering B's ranking. B may respond by raising A, and A may then respond by restoring B to the original ranking. If B raised A above C, then C may lower A, but A may not respond. Three rounds of response are all that are allowed. </small>
+|-
+|
+<big>'''2. Voters vote delegated plurality-style votes or non-delegated approval-style votes'''</big>
+|-
+|
+:a) ''(optional)'' Ballots list all candidates in order from candidates who submit the most complete* rankings of other candidates, to those who submit the least. Where this is a tie, ordering is random. ''This is a slight incentive for candidates to submit a complete ranking in order to appear high on the ballot.'' 
+|
+Completeness of ranking is scored by how many possible pairs of other candidates contain two candidates at different levels.
+|-
+|
+:b)Voters may approve one or more candidates, and also have the option to mark "Do not delegate".
+|-
+|
+:c) Delegated votes* and total approvals* are tallied and announced for each candidate. ''Announcing full tallies makes the process in step 3 more predictable and fair.''
+|
 '''Delegated votes''':The delegated votes for candidate X is the number of ballots that approve only X and do not mark "Do not delegate". X will get a chance to effectively add additional approvals to these votes; or, if X has less than 5% approval, then additional approvals will be added automatically, in order to attain a better result by X's predeclared preferences. 
 
 '''Total approvals''':The total approvals for candidate X is initially the number of ballots that approve X, including both delegated and non-delegated approvals. This number increases through the process as approvals are assigned to X on ballots delegated to other candidates.
-
+|-
+|
+<big>'''3. Candidates publicly assign approvals to their delegated votes, in descending order of approval'''</big>
+|-
+|
+:a) ''(optional)'' There is a one-week period for candidates to analyse and negotiate based on these preliminary results. ''Actually, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.''
+|-
+|
+:b) As long as there are unassigned delegated votes and no candidate has approvals equal to over 50% of voters, the candidate with the most approvals who has not yet assigned approvals* on their delegated votes does so. ''Starting with the most-approved candidate prevents less-approved candidates from giving ultimatums ("I'm not going to approve you, so you'd better approve me or that other guy will win") to more-approved candidates.''
+|
 '''Assign approvals''': The process by which a candidate effectively adds approvals to the votes delegated to him or her. When, for example, candidate A assigns approvals of B and C on their delegated votes, then B and C's approval totals are each increased by A's delegated vote total.
-
+|-
+|
+::i. If the assigning candidate has more than 5% approval, they may choose which candidates to assign as approvals on their delegated ballots, consistent with preferences, with equally preferred ties broken by current approval totals*. ''This tie-breaking by approval totals resolves the "chicken dilemma", as explained below.''
+|
 '''Consistent with preferences, with equally preferred ties broken by current approval totals''': For example, candidate A may not approve B and not C unless EITHER A predeclared a preference for B over C, OR A predeclared B and C equal and B currently has more approvals than C.
-
+|-
+|
+::ii. ''(optional)'' If the candidate with the most approvals has 5% approvals or less, their delegated votes are assigned for them automatically*. ''This automatic assignment respects predeclared preferences but prevents minor candidates from having discretionary kingmaker power.''
+|
 '''Automatically assign approvals''': When approvals are assigned automatically for candidate X, they are set to approve as many of their pre-declared preferences as possible without approving both of the two candidates with the highest current approval totals that they prefer differently. (For example, say that X's preferences were for A or B, then C, then D and E, and the approval totals are 40, 30, 10, 20, and 15 alphabetically. A has the highest total; B has the next-highest, but does not count, because they are preferred equally to A; and D has the next-highest. So X's delegated ballots will be assigned to approve as many candidates as possible without approving both A and D; that is, they will approve A, B, and C.)
+|-
+|
+<big>'''4. When step 3b ends, highest total wins'''</big>
+|}
+
+:<br /><br />
 
 '''Write-ins''': If write-ins are allowed, write-in candidates can not declare preferences or assign delegated votes, but can be approved at will by official candidates, regardless of the official candidate's declared preference order.
 
