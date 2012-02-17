@@ -1,6 +1,8 @@
 Irrelevant Ballots Independent Fallback Approval (IBIFA) is a method designed by Chris Benham.
 
-In the three-slot case, IBIFA is like [[MCA]], except that in place of checking for a candidate with top-slot ratings from a majority of the ballots, one checks whether the quantity of top-slot ratings is sufficient to defeat the total approval (i.e. above-bottom ratings) of any other candidate, not including approval from the ballots that count to the the top-slot ratings. If any candidates pass this test, the one of them with the most top-slot ratings is elected. (If no voters tie multiple candidates at the top slot, a maximum of one candidate will be able to pass the test.)
+In the three-slot case, IBIFA is like [[MCA]], except that in place of checking for a candidate (call him "A") with top-slot ratings from a majority of the ballots, one checks whether the quantity of top-slot ratings for A is sufficient to defeat the total approval (i.e. above-bottom ratings) of any other candidate, not including approval from the ballots that rate candidate A top. If any candidates pass this test, the one of them with the most top-slot ratings is elected. (If no voters tie multiple candidates at the top slot, a maximum of one candidate will be able to pass the test.)
+
+See also the full rules below.
 
 The weakness of MCA is that one's top-slot preference's security against one's middle-slot preference is based on the likelihood that that the top-slot preference will have a majority of top-slot preferences. However, narrow majorities can easily be eliminated by adding "irrelevant ballots" for minor candidates. Under IBIFA the top-slot preference's security is based on that candidate's likelihood of being able to beat any other single candidate. This may be more predictable and strategically useful than a majority-based rule.
 
