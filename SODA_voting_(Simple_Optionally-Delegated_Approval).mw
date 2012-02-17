@@ -26,13 +26,13 @@ To further decrease the opportunities for manipulation, candidates with the most
 </td></tr></table>
 
 === Full, step-by-step rules ===
-Rules marked "''(optional)''" are suggested, but not necessary for the system to function.
+Rules marked "''(optional)''" are suggested, but only the steps in '''bold''' are necessary for the system to function. Items in ''italics'' explain the justification behind each step.
 {|
 |-
 |<big>'''1. Candidates publicly declare their rankings of the other candidates'''</big>
 |-
 |valign=top|
-:a) Before the election, all candidates must rank the other official candidates in order of preference. Equal rankings are allowed. ''Later, in the "candidate voting" step, candidates may only approve other candidates in a way that is consistent with their rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms".'' 
+:a) '''Before the election, all candidates must rank the other official candidates in order of preference. Equal rankings are allowed.''' ''Later, in the "candidate voting" step, candidates may only approve other candidates in a way that is consistent with their rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms".'' 
 |-
 |valign=top|
 :b) ''(optional)'' Candidates may enforce any prior agreements of mutual preferences by changing their own preferences in response to those of others*. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that a surprise betrayal will gain them nothing and only make them look untrustworthy, will prefer agree on mutual approvals beforehand.''
@@ -48,10 +48,10 @@ Rules marked "''(optional)''" are suggested, but not necessary for the system to
 <small>'''Most complete''': Completeness of ranking is scored by how many possible pairs of other candidates contain two candidates at different levels.</small>
 |-
 |valign=top|
-:b)Voters may approve one or more candidates, and also have the option to mark "Do not delegate".
+:b)'''Voters may approve one or more candidates, and also have the option to mark "Do not delegate".'''
 |-
 |valign=top|
-:c) Delegated votes* and total approvals* are tallied and announced for each candidate. ''Announcing full tallies makes the process in step 3 more predictable and fair.''
+:c) '''Delegated votes* and total approvals* are tallied and announced for each candidate.''' ''Announcing full tallies makes the process in step 3 more predictable and fair.''
 |valign=top|
 <small>'''Delegated votes''':The delegated votes for candidate X is the number of ballots that approve only X and do not mark "Do not delegate". X will get a chance to effectively add additional approvals to these votes; or, if X has less than 5% approval, then additional approvals will be added automatically, in order to attain a better result by X's predeclared preferences. 
 
@@ -64,12 +64,12 @@ Rules marked "''(optional)''" are suggested, but not necessary for the system to
 :a) ''(optional)'' There is a one-week period for candidates to analyse and negotiate based on these preliminary results. ''Actually, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.''
 |-
 |valign=top|
-:b) As long as there are unassigned delegated votes and no candidate has approvals equal to over 50% of voters, the candidate with the most approvals who has not yet assigned approvals* on their delegated votes may so. ''If, considering the votes, a candidate can win, they will probably prefer not to approve other candidates. If there are two allied candidates who need to cooperate to win, the one with more approvals has first chance not to approve the other. That way, when it's the weaker candidate's turn, they will no longer have the possibility of winning, so the weaker will approve the stronger.''
+:b) '''As long as there are unassigned delegated votes and no candidate has approvals equal to over 50% of voters, the candidate with the most approvals who has not yet assigned approvals* on their delegated votes may do so.''' ''If, considering the votes, a candidate can win, they will probably prefer not to approve other candidates. If there are two allied candidates who need to cooperate to win, the one with more approvals has first chance not to approve the other. That way, when it's the weaker candidate's turn, they will no longer have the possibility of winning, so the weaker will approve the stronger.''
 |valign=top|
 <small>'''Assign approvals''': The process by which a candidate effectively adds approvals to the votes delegated to him or her. When, for example, candidate A assigns approvals of B and C on their delegated votes, then B and C's approval totals are each increased by A's delegated vote total.</small>
 |-
 |valign=top|
-::i. If the assigning candidate has more than 5% approval, they may choose which candidates to assign as approvals on their delegated ballots, consistent with preferences, with equally preferred ties broken by current approval totals*. ''This tie-breaking by approval totals resolves the "chicken dilemma", as explained below.''
+::i. If the assigning candidate has more than 5% approval, '''they may choose which candidates to assign as approvals on their delegated ballots, consistent with preferences,''' with equally preferred ties broken by current approval totals*. ''This tie-breaking by approval totals resolves the "chicken dilemma", as explained below.''
 |valign=top|
 <small>'''Consistent with preferences, with equally preferred ties broken by current approval totals''': For example, candidate A may not approve B and not C unless EITHER A predeclared a preference for B over C, OR A predeclared B and C equal and B currently has more approvals than C.</small>
 |-
