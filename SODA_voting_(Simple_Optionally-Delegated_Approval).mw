@@ -59,7 +59,7 @@ Rules marked "''(optional)''" are suggested, but only the four steps in '''bold'
 <small>'''Assign approvals''': The process by which a candidate effectively adds approvals to the votes delegated to him or her. When, for example, candidate A assigns approvals of B and C on their delegated votes, then B and C's approval totals are each increased by A's delegated vote total.</small>
 |-
 |valign=top|
-::i. If the assigning candidate has more than 5% approval, '''they may choose which candidates to assign as approvals on their delegated ballots, consistent with preferences,''' with equally preferred ties broken by current approval totals*. ''This tie-breaking by approval totals resolves the "chicken dilemma", as explained below.''
+::i. If the assigning candidate has more than 5% approval, '''they may choose which candidates to assign as approvals on their delegated ballots, consistent with preferences,''' with equally preferred ties ''(optionally)'' broken by current approval totals*. ''This tie-breaking by approval totals resolves the "chicken dilemma", as explained below.''
 |valign=top|
 <small>'''Consistent with preferences, with equally preferred ties broken by current approval totals''': For example, candidate A may not approve B and not C unless EITHER A predeclared a preference for B over C, OR A predeclared B and C equal and B currently has more approvals than C.</small>
 |-
