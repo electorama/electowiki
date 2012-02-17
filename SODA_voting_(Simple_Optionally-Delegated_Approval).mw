@@ -48,7 +48,7 @@ Rules marked "''(optional)''" are suggested, but only the four steps in '''bold'
 <small>'''Most complete''': Completeness of ranking is scored by how many possible pairs of other candidates contain two candidates at different levels.</small>
 |-
 |valign=top|
-:b) '''Voters may approve one or more candidates, and also have the option to mark "Do not delegate". Delegated votes* and total approvals* are tallied and announced for each candidate.''' ''Announcing full tallies makes the process in step 3 more predictable and fair.''
+:b) '''Voters may approve one or more candidates, and also have the option to mark "Do not delegate". Delegated votes* and total approvals* are tallied and announced for each candidate.''' ''Announcing full tallies makes step 3 predictable and fair.''
 |valign=top|
 <small>'''Delegated votes''':The delegated votes for candidate X is the number of ballots that approve only X and do not mark "Do not delegate". X will get a chance to effectively add additional approvals to these votes; or, if X has less than 5% approval, then additional approvals will be added automatically, in order to attain a better result by X's predeclared preferences. 
 
@@ -58,7 +58,7 @@ Rules marked "''(optional)''" are suggested, but only the four steps in '''bold'
 <big>'''3. Candidates publicly assign approvals to their delegated votes, in descending order of approval'''</big>
 |-
 |valign=top|
-:a) ''(optional)'' There is a one-week period for candidates to analyse and negotiate based on these preliminary results. ''Actually, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.''
+:a) ''(optional)'' There is a one-week period for candidates to analyze and negotiate based on these preliminary results. ''Actually, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.''
 |-
 |valign=top|
 :b) '''As long as there are unassigned delegated votes and no candidate has approvals equal to over 50% of voters, the candidate with the most approvals who has not yet assigned approvals* on their delegated votes may do so.''' ''If, considering the votes, a candidate can win, they will probably prefer not to approve other candidates. If there are two allied candidates who need to cooperate to win, the one with more approvals has first chance not to approve the other. That way, when it's the weaker candidate's turn, they will no longer have the possibility of winning, so the weaker will approve the stronger.''
@@ -71,7 +71,7 @@ Rules marked "''(optional)''" are suggested, but only the four steps in '''bold'
 <small>'''Consistent with preferences, with equally preferred ties broken by current approval totals''': For example, candidate A may not approve B and not C unless EITHER A predeclared a preference for B over C, OR A predeclared B and C equal and B currently has more approvals than C.</small>
 |-
 |valign=top|
-::ii. ''(optional)'' If the candidate with the most approvals has 5% approvals or less, their delegated votes are assigned for them automatically*. ''This automatic assignment respects predeclared preferences but prevents minor candidates from having discretionary kingmaker power.''
+::ii. ''(optional)'' If the candidate with the most approvals has 5% approvals or less, their delegated votes are assigned for them automatically*. ''Automatic approvals respect predeclared preferences but prevent minor candidates from having discretionary kingmaker power.''
 |valign=top|
 <small>'''Automatic approvals''': When approvals are assigned automatically for candidate X, they are set to approve as many of their pre-declared preferences as possible without approving both of the two candidates with the highest current approval totals that they prefer differently. (For example, say that X's preferences were for A or B, then C, then D and E, and the approval totals are 40, 30, 10, 20, and 15 alphabetically. A has the highest total; B has the next-highest, but does not count, because they are preferred equally to A; and D has the next-highest. So X's delegated ballots will be assigned to approve as many candidates as possible without approving both A and D; that is, they will approve A, B, and C.)</small>
 |-
