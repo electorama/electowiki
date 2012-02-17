@@ -54,24 +54,24 @@ Rules marked "''(optional)''" are suggested, but only the four steps in '''bold'
 :a) ''(optional)'' There is a one-week period for candidates to analyze and negotiate based on these preliminary results. ''Actually, the correct strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.''
 |-
 |valign=top|
-:b) '''As long as there are unassigned delegated votes and no candidate has approvals equal to over 50% of voters, the candidate with the most approvals who has not yet assigned approvals* on their delegated votes may do so.''' ''If, considering the votes, a candidate can win, they will probably prefer not to approve other candidates. If there are two allied candidates who need to cooperate to win, the one with more approvals has first chance not to approve the other. That way, when it's the weaker candidate's turn, they will no longer have the possibility of winning, so the weaker will approve the stronger.''
+:b) '''As long as no candidate has approvals equal to over 50% of voters, each candidate in turn must use some or all of their delegated votes* to approve zero or more other candidates. At each step, the candidate with the highest current approval total who has not yet used their votes does so.''' ''If, considering the votes, a candidate can win, they will probably prefer not to approve other candidates. If there are two allied candidates who need to cooperate to win, the one with more approvals has first chance not to approve the other. That way, when it's the weaker candidate's turn, they will no longer have the possibility of winning, so the weaker will approve the stronger.''
 |valign=top|
-<small>'''Assign approvals''': The process by which a candidate effectively adds approvals to the votes delegated to him or her. When, for example, candidate A assigns approvals of B and C on their delegated votes, then B and C's approval totals are each increased by A's delegated vote total.</small>
+<small>'''Use their delegated votes''': The process by which a candidate effectively adds approvals to the votes delegated to him or her. When, for example, candidate A uses their delegated votes to approve of B and C, then B and C's approval totals are each increased by A's delegated vote total. When it is a candidates turn, they may choose to approve of no other candidates; but this counts as using their delegated votes, and they will not be given another chance to change that decision. When all candidates have used their votes, the election is over.</small>
 |-
 |valign=top|
-::i. If the assigning candidate has more than 5% approval, '''they may choose which candidates to assign as approvals on their delegated ballots, consistent with preferences,''' with equally preferred ties ''(optionally)'' broken by current approval totals*. ''This tie-breaking by approval totals resolves the "chicken dilemma", as explained below.''
+::i. If the candidate using their delegated votes has more than 5% approval, '''they may choose which candidates approve on their delegated ballots, consistent with preferences,''' with equally preferred ties ''(optionally)'' broken by current approval totals*. ''This tie-breaking by approval totals resolves the "chicken dilemma", as explained below.''
 |valign=top|
-<small>'''Consistent with preferences, with equally preferred ties broken by current approval totals''': For example, candidate A may not approve B and not C unless EITHER A predeclared a preference for B over C, OR A predeclared B and C equal and B currently has more approvals than C.</small>
+<small>'''Consistent with preferences, with equally preferred ties broken by current approval totals''': For example, candidate A may not approve B and not C unless ''either'' A predeclared a preference for B over C, ''or'' A predeclared B and C equal and B currently has more approvals than C.</small>
 |-
 |valign=top|
-::ii. ''(optional)'' If the candidate with the most approvals has 5% approvals or less, their delegated votes are assigned for them automatically*. ''Automatic approvals respect predeclared preferences but prevent minor candidates from having discretionary kingmaker power.''
+::ii. ''(optional)'' If the candidate with the most approvals has 5% approvals or less, their approvals are assigned for them automatically*. ''Automatic approvals respect predeclared preferences but prevent minor candidates from having discretionary kingmaker power.''
 |valign=top|
 <small>'''Automatic approvals''': When approvals are assigned automatically for candidate X, they are set to approve as many of their pre-declared preferences as possible without approving both of the two candidates with the highest current approval totals that they prefer differently. (For example, say that X's preferences were for A or B, then C, then D and E, and the approval totals are 40, 30, 10, 20, and 15 alphabetically. A has the highest total; B has the next-highest, but does not count, because they are preferred equally to A; and D has the next-highest. So X's delegated ballots will be assigned to approve as many candidates as possible without approving both A and D; that is, they will approve A, B, and C.)</small>
 |-
 |valign=top|
 <big>'''4. When step 3b ends, highest total wins'''</big>
 |
-<small>'''Write-ins''': If write-ins are allowed, write-in candidates can not declare preferences or assign delegated votes, but can be approved at will by official candidates, regardless of the official candidate's declared preference order.</small>
+<small>'''Write-ins''': If write-ins are allowed, write-in candidates can not declare preferences or use delegated votes, but can be approved at will by official candidates, regardless of the official candidate's declared preference order.</small>
 |}
 
 === Notes on rules ===
