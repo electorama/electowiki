@@ -13,4 +13,15 @@ There is potentially strategy with the majority favorite rule, as creating a maj
 
 Manipulating which contest will be selected as the "single contest" is not straightforward. The only way to vote against a contest (because one foresees that it won't resolve favorably) is to approve neither candidate involved.
 
+Single Contest satisfies Condorcet Loser, but not Condorcet:
+
+ 40 A>B | C  (i.e. only C is disapproved)
+ 25 B | A>C
+ 35 C | A>B
+ 100
+
+The Condorcet winner is A. The BC pair is selected as the most important contest, because all voters distinguish between B and C using approval. Then B is elected.
+
+The method is clone-independent assuming clones of a candidate receive the same approval. It's not monotone, because raising the winner from disapproved to approved on some ballots which already counted to the selected pair (that the winner was part of) could add votes for a different pair where the original winner is pairwise beaten.
+
 [[Category:Single-winner voting systems]]
