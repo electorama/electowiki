@@ -3,13 +3,6 @@ Simple Optionally-Delegated Approval (SODA voting) is a single-winner voting sys
 Approvals added by a candidate to their delegated ballots are worth the same as direct approvals from voters.  Both types of approval are added together and the winner is the candidate with the most total approvals.
 
 == Procedure ==
-=== Overview ===
-For simplicity, the ballot is organized like an approval ballot. It is assumed that voters who vote for only one candidate are intending to delegate their ballot to that candidate, unless they explicitly indicate otherwise using a "do not delegate" option. Thus, no voter's ballot is delegated without their consent.
-
-Candidates are required to submit a rank-ordering of all the other candidates before the election. This serves two purposes. First, it helps voters understand how that candidate might choose to add approvals to their delegated votes. A voter who supports a candidate but disagrees with their rankings of others can finish their ballot themselves instead of delegating. Second, the prior rankings prevent them from turning around and selling their delegated votes to the highest bidder. When they add approvals to the votes delegated to them, the candidates must do so in a way that is consistent with the rank-ordering they submitted.
-
-To further decrease the opportunities for manipulation, candidates with the most approvals get the advantage of "moving first" in declaring how they will add approvals to their delegated votes. This order is designed to encourage good outcomes in certain problematic situations. See below for more information.
-
 === Sample Ballot ===
 <table border='1px' width='80%'><tr><td>
 '''Vote for as many candidates as you approve, or vote for one candidate to delegate your vote:'''<br>
