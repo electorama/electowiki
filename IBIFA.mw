@@ -12,7 +12,7 @@ Here is an example to illustrate the difference:
 
 MCA and IBIFA both elect A. If B had received more votes than A, but not a majority, the A voters would be able to use their C preference to ensure that they got their second choice. Since A received a majority, the C preference is not needed.
 
-Now add 10 C ballots:
+Now add 10 D ballots:
 
  51 A>C
  47 B
