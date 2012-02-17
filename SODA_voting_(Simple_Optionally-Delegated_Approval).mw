@@ -26,7 +26,7 @@ To further decrease the opportunities for manipulation, candidates with the most
 </td></tr></table>
 
 === Full, step-by-step rules ===
-Rules marked "''(optional)''" are suggested, but only the steps in '''bold''' are necessary for the system to function. Items in ''italics'' explain the justification behind each step.
+Rules marked "''(optional)''" are suggested, but only the three steps in '''bold''' are necessary for the system to function. Items in ''italics'' explain the justification behind each step.
 {|
 |-
 |<big>'''1. Candidates publicly declare their rankings of the other candidates'''</big>
@@ -48,10 +48,7 @@ Rules marked "''(optional)''" are suggested, but only the steps in '''bold''' ar
 <small>'''Most complete''': Completeness of ranking is scored by how many possible pairs of other candidates contain two candidates at different levels.</small>
 |-
 |valign=top|
-:b)'''Voters may approve one or more candidates, and also have the option to mark "Do not delegate".'''
-|-
-|valign=top|
-:c) '''Delegated votes* and total approvals* are tallied and announced for each candidate.''' ''Announcing full tallies makes the process in step 3 more predictable and fair.''
+:b) '''Voters may approve one or more candidates, and also have the option to mark "Do not delegate". Delegated votes* and total approvals* are tallied and announced for each candidate.''' ''Announcing full tallies makes the process in step 3 more predictable and fair.''
 |valign=top|
 <small>'''Delegated votes''':The delegated votes for candidate X is the number of ballots that approve only X and do not mark "Do not delegate". X will get a chance to effectively add additional approvals to these votes; or, if X has less than 5% approval, then additional approvals will be added automatically, in order to attain a better result by X's predeclared preferences. 
 
