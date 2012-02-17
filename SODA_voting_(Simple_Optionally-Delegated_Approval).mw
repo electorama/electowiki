@@ -35,7 +35,7 @@ Rules marked "''(optional)''" are suggested, but only the four steps in '''bold'
 :a) '''Before the election, all candidates must rank the other official candidates in order of preference. Equal rankings are allowed.''' ''Later, in the "candidate voting" step, candidates may only approve other candidates in a way that is consistent with their rankings. This helps reduce the possibility of corrupt vote-selling or "smoke filled rooms".'' 
 |-
 |valign=top|
-:b) ''(optional)'' Candidates may enforce any prior agreements of mutual preferences by changing their own preferences in response to those of others*. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that a surprise betrayal will gain them nothing and only make them look untrustworthy, will prefer agree on mutual approvals beforehand.''
+:b) ''(optional)'' Candidates may enforce any prior agreements of mutual preferences by changing their own preferences in response to those of others*. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that changing preferences at this point will only make them look untrustworthy, will prefer agree on mutual approvals beforehand.''
 | width = 33% |
 <small>'''Enforcing mutual approval agreements''': If A ranked B higher than B ranked A, then A may respond by lowering B's ranking. B may respond by raising A, and A may then respond by restoring B to the original ranking. If B raised A above C, then C may lower A, but A may not respond. Three rounds of response are all that are allowed. </small>
 |-
