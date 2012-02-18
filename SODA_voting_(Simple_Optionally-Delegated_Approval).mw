@@ -29,11 +29,10 @@ Rules marked "''(optional)''" are suggested, but only the four steps in '''bold'
 |-
 |valign=top|
 :b) ''(optional)'' Candidates may <u>enforce any prior agreements</u> of mutual preferences by changing their own preferences in response to those of others*. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that changing preferences at this point will only make them look untrustworthy, will prefer agree on mutual approvals beforehand.''
+<br>
+<big>'''2. Voters vote delegated plurality-style votes or non-delegated approval-style votes'''</big>
 | width = 33% |
 <small><u>'''Enforcing mutual approval agreements'''</u>: If A ranked B higher than B ranked A, then A may respond by lowering B's ranking. B may respond by raising A, and A may then respond by restoring B to the original ranking. If B raised A above C, then C may lower A, but A may not respond. Three rounds of response are all that are allowed. </small>
-|-
-|valign=top|
-<big>'''2. Voters vote delegated plurality-style votes or non-delegated approval-style votes'''</big>
 |-
 |valign=top|
 :a) ''(optional)'' Ballots list all candidates in order from candidates who submit the <u>most complete</u> rankings of other candidates, to those who submit the least. Where this is a tie, ordering is random. ''This is a slight incentive for candidates to submit a complete ranking in order to appear high on the ballot.'' 
@@ -42,16 +41,14 @@ Rules marked "''(optional)''" are suggested, but only the four steps in '''bold'
 |-
 |valign=top|
 :b) '''Voters may approve one or more candidates, and also have the option to mark "Do not delegate". <u>Delegated votes</u> and initial <u>total approvals</u> are tallied and announced for each candidate.''' ''Announcing full tallies makes step 3 predictable and fair.''
+<br>
+<big>'''3. Candidates take turns to publicly use their delegated votes, starting from the candidate with most approvals'''</big>
+<br>
+:a) ''(optional)'' There is a one-week period for candidates to analyze and negotiate based on these preliminary results. ''Actually, the optimal strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.''
 |valign=top|
 <small><u>'''Delegated votes'''</u>:The delegated votes for candidate X is the number of ballots that approve only X and do not mark "Do not delegate". X will get a chance to effectively add additional approvals to these votes; or, if X has less than 5% approval, then additional approvals will be added automatically, in order to attain a better result by X's predeclared preferences. 
 
 <u>'''Total approvals'''</u>:The total approvals for candidate X is initially the number of ballots that approve X, including X's delegated ballots. This number increases through the process as other candidates use their delegated ballots to approve X.</small>
-|-
-|valign=top|
-<big>'''3. Candidates take turns to publicly use their delegated votes, starting from the candidate with most approvals'''</big>
-|-
-|valign=top|
-:a) ''(optional)'' There is a one-week period for candidates to analyze and negotiate based on these preliminary results. ''Actually, the optimal strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.''
 |-
 |valign=top|
 :b) '''As long as no candidate has approvals equal to over 50% of voters, each candidate in turn must <u>use some or all of their delegated ballots</u> to approve zero or more other candidates. At each step, the candidate with the highest current approval total who has not yet used their ballots has their turn to do so.''' ''If, considering the votes, a candidate can win, they will probably prefer not to approve other candidates. If there are two allied candidates who need to cooperate to win, the one with more approvals has first chance not to approve the other. That way, when it's the weaker candidate's turn, they will no longer have the possibility of winning, so the weaker will approve the stronger.''
