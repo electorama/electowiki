@@ -185,26 +185,6 @@ Note that, although the circumstances where SODA passes the Condorcet criterion 
 == SODA-PR (obsolete; see [[PAL representation]]) ==
 (Section obsolete; see instead [[PAL representation]].)
 
-SODA-PR is the [[proportional representation]] version of the above. 
-
-First, to simplify the ballots, the population is separated into a "district" for each seat, and "districts" are grouped into sets of 2 or 3 "co-districts". The ballot for each district lists the candidates from that district in a larger font, and the candidates from its co-districts in a smaller font. Write-ins may be used to vote for candidates from other districts not listed on the ballot, so the districts only matter for ballot simplicity (Voters do not want to have a ballot with many dozens of candidates on it, but write-ins allow full freedom for those voters who want it). Larger parties will usually run one candidate per district; smaller parties may just run one candidate per co-district set.
-
-As with SODA, voters can either vote an approval-style vote or delegate by bullet voting. Instead of a pre-announced ranking which allows them to choose a cutoff after the election, candidates have a pre-announced list of approvals that will be added to any votes delegated to them (beyond the votes they need to be elected). Candidates may make their approval of other candidates conditional on that approval being mutual, but they may not make it conditional on anything else about the other candidate's approvals. Thus, parties cannot protect corrupt members by forcing other candidates in the party to approve of them. 
-
-The counting process is as follows:
-*While there are more uneliminated candidates than empty seats:
-**Divide each ballot by the number of uneliminated candidates it approves
-**If there are any candidates with more than a Droop quota:
-***Elect the one with the highest score (previously "unique ballots")
-***Reweight ballots for the elected candidate to reduce the total weight by a [[Droop quota]], starting with the ones delegated to that candidate
-***Add the elected candidate's pre-declared approvals to any remaining delegated ballots for that candidate
-**Otherwise:
-***Eliminate the candidate with the lowest score
-***Add the eliminated candidate's pre-declared approvals to any delegated ballots for that candidate
-*Finally, elect all remaining candidates to fill the remaining seats.
-
-Note: If all votes are for one of the two main-party candidates in the voter's district, and if all candidates approve everyone from their party, and if the districts are divided fairly so that plurality would give a proportional result, SODA-PR gives the same results as plurality. These assumptions will not generally be perfectly true, but they will generally be close to true, so SODA-PR will give results that are recognizably similar to those of single-member districts. It is hoped that this would make it a more acceptable system to politicians who have won under single-winner rules.
-
 ==Compatibility with the US electoral college==
 A state could adopt SODA for assigning its electors in the electoral college. If the state did not wish to dilute its voting power, it could adopt SODA, conditional on a certain number of total electoral votes being assigned in a non-winner-take-all fashion.
 
