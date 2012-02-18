@@ -87,7 +87,7 @@ But if the Sky voters are especially strategically-inclined, they could give Sky
 
 This rule would allow Orange to give the win to Navy (the correct winner) if Orange wished to; in the case where the Sky voters had attempted the strategy in the previous paragraph. Remember, if Orange had cared to, they could have declared a preference between Navy and Sky to start out with. This thus resolves the chicken dilemma completely, without causing other bad scenarios; something no other serious voting reform proposal can claim.
 
-Unfortunately, while the rule itself is simple, it's taken 6 paragraphs to explain the rationale. This is probably too much complexity for most voters, and so this refinement is not recommended for an initial implementation of SODA. However, it is good to know that such a clear, simple fix exists, in case chicken-dilemma-style strategizing became a problem later on.
+Unfortunately, while the rule itself is simple, it's taken 6 paragraphs to explain the rationale. Thus it's probably better not to raise this issue with most voters.
 
 ==== Prevent weak minor candidates from having kingmaker power ====
 
