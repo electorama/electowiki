@@ -4,14 +4,14 @@
 # Voters fill out rank ballots, with an explicitly-placed approval cutoff. Equal ranking and truncation are allowed.
 # If there is a strict majority favorite (not counting equal-top rankings to the majority) then this candidate wins.
 # Otherwise, elect the winner of the pairwise contest between the pair of candidates who minimize the number of voters that approved neither one. For example, if no one approved A or B, there are no votes for the AB pair. If everyone voted for at least one of A and B, all votes are for the AB pair.
-# If pairs are tied on this measure, break the tie for the pair whose winner has the most voters on his side in that contest (i.e. winning votes). Secondarily, break ties in favor of the pair whose winner has the most approval.
+# If pairs are tied on this measure, break the tie for the pair whose winner has the most voters on his side in that contest (i.e. winning votes). Secondarily, break ties in favor of the pair whose winner has the most approval. (This order might get reversed in the future, since WV is based on rankings and the idea is to minimize the importance.)
 
 ==Comments==
 The method essentially uses the approval scores to guess at the most important two-way contest. It is an approval election for a pair, where you vote for a pair by approving either candidate in that pair. Then the rankings are used to resolve this contest. Two-candidate races don't have strategy incentives.
 
 There is potentially strategy with the majority favorite rule, as creating a majority favorite will end the method prematurely and possibly in a way that a voter prefers.
 
-Manipulating which contest will be selected as the "single contest" is not straightforward. The only way to vote against a contest (because one foresees that it won't resolve favorably) is to approve neither candidate involved.
+Manipulating which contest will be selected as the "single contest" is not straightforward. The only way to vote against a contest (because one foresees that it won't resolve favorably) is to approve neither candidate involved. Similarly, there is no way to prop up a contest (foreseeing that it will be easily won by one's preferred candidate) when one was already going to approve one of the candidates. 
 
 Single Contest satisfies Condorcet Loser, but not Condorcet:
 
