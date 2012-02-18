@@ -22,6 +22,6 @@ Single Contest satisfies Condorcet Loser, but not Condorcet:
 
 The Condorcet winner is A. The BC pair is selected as the most important contest, because all voters distinguish between B and C using approval. Then B is elected.
 
-The method is clone-independent assuming clones of a candidate receive the same approval. It's not monotone, because raising the winner from disapproved to approved on some ballots which already counted to the selected pair (that the winner was part of) could add votes for a different pair where the original winner is pairwise beaten.
+The method is not clone-independent due to the (admittedly inelegant) majority favorite rule. But the approval and final contest components don't introduce additional clone issues. It's not monotone, because raising the winner from disapproved to approved on some ballots which already counted to the selected pair (that the winner was part of) could add votes for a different pair where the original winner is pairwise beaten.
 
 [[Category:Single-winner voting systems]]
