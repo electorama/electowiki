@@ -19,10 +19,10 @@ Approvals added by a candidate to their delegated ballots are worth the same as 
 </td></tr></table>
 
 === Full, step-by-step rules ===
-Rules marked "''(optional)''" are suggested, but only the four steps in '''bold''' (1a, 2b, 3b, and 3b.i) are necessary for the system to function. Explanations in ''italics'' give the purpose behind each step. <u>Underlined</u> terms are defined on the right.
+Steps marked "''(optional)''" are suggested, but only the four substeps in '''bold''' (1a, 2b, 3b, and 3b.i) are necessary for the system to function. Explanations in ''italics'' give the purpose behind each step. <u>Underlined</u> terms are defined on the right.
 {|
 |-
-|<big>'''1. Candidates publicly declare their rankings of the other candidates'''</big>
+|<big>1. Candidates publicly declare their rankings of the other candidates</big>
 |-
 |valign=top|
 :a) '''Before the election, all candidates must rank the other official candidates in order of preference. Equal rankings are allowed.''' ''These pre-announced preferences allow voters to make informed decisions in step 2; and prevent corrupt vote-selling in step 3, where candidates may only approve others in a way that is consistent with their preferences.''
@@ -30,7 +30,7 @@ Rules marked "''(optional)''" are suggested, but only the four steps in '''bold'
 |valign=top|
 :b) ''(optional)'' Candidates may <u>enforce any prior agreements</u> of mutual preferences by changing their own preferences in response to those of others*. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that changing preferences at this point will only make them look untrustworthy, will prefer agree on mutual approvals beforehand.''
 <br>
-<big>'''2. Voters vote delegated plurality-style votes or non-delegated approval-style votes'''</big>
+<big>2. Voters vote delegated plurality-style votes or non-delegated approval-style votes</big>
 | width = 33% |
 <small><u>'''Enforcing mutual approval agreements'''</u>: If A ranked B higher than B ranked A, then A may respond by lowering B's ranking. B may respond by raising A, and A may then respond by restoring B to the original ranking. If B raised A above C, then C may lower A, but A may not respond. Three rounds of response are all that are allowed. </small>
 |-
@@ -42,7 +42,7 @@ Rules marked "''(optional)''" are suggested, but only the four steps in '''bold'
 |valign=top|
 :b) '''Voters may approve one or more candidates, and also have the option to mark "Do not delegate". <u>Delegated votes</u> and initial <u>total approvals</u> are tallied and announced for each candidate.''' ''Announcing full tallies makes step 3 predictable and fair.''
 <br>
-<big>'''3. Candidates take turns to publicly use their delegated votes, starting from the candidate with most approvals'''</big>
+<big>3. Candidates take turns to publicly use their delegated votes, starting from the candidate with most approvals</big>
 <br>
 :a) ''(optional)'' There is a one-week period for candidates to analyze and negotiate based on these preliminary results. ''Actually, the optimal strategies for all candidates and the resulting winner will already be obvious. Usually, all candidates except this winner would concede as soon as preliminary results are announced. However, for the occasional candidate inclined to act irrationally in a way that matters - say, by not delegating to an ally, even though the alternative is to see an enemy elected - this interim period would give them a chance to rethink things and come into reason.''
 |valign=top|
@@ -68,7 +68,7 @@ Rules marked "''(optional)''" are suggested, but only the four steps in '''bold'
 <small>'''<u>Automatic approvals</u>''': When approvals are assigned automatically for candidate X, they are set to approve as many of their pre-declared preferences as possible without approving both of the two candidates with the highest current approval totals that they prefer differently. (For example, say that X's preferences were for (A and B), then C, then (D and E), and the approval totals are 40, 30, 10, 20, and 15 alphabetically. A has the highest total; B has the next-highest, but does not count, because they are preferred equally to A; and D has the next-highest. So X's delegated ballots will be assigned to approve as many candidates as possible without approving both A and D; that is, they will approve A, B, and C.)</small>
 |-
 |valign=top|
-<big>'''4. When step 3b ends, highest total wins'''</big>
+<big>4. When step 3b ends, highest total wins</big>
 |}
 
 === Notes on rules ===
