@@ -1,5 +1,7 @@
 '''Approval Elimination Runoff''' ('''AER''') or '''Approval AV''' is an [[IRV]] variant under which one eliminates the least-approved candidate until there is a majority favorite.
 
+It is similar to [[DMC]] except that DMC finishes once there is a Condorcet winner, not a majority favorite. AER can potentially eliminate the Condorcet winner.
+
 Approval is usually envisioned as being implied by ranking the candidate.
 
 [[Category:Single-winner voting systems]]
