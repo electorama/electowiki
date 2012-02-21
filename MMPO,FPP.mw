@@ -1,0 +1,23 @@
+[[MMPO,FPP]] refers to [[Minmax|MinMax (Pairwise Opposition)]] breaking ties in best score by electing the candidate with the most first preferences (on the unmodified original ballots).
+
+Since MMPO returns ties relatively often, a tiebreaker is needed. [[FPP]] is the most obvious one, and also doesn't differ much from other tiebreakers. The comma notation in "MMPO,FPP" signifies that one doesn't eliminate the MMPO non-winning candidates before counting first preferences.
+
+Like all MMPO tiebreakers that preserve [[Later-no-harm]] compliance, the combined method violates the [[Plurality criterion]]:
+
+ 49 A
+ 27 B>C
+ 24 C
+ 100
+
+MMPO,FPP breaks the MMPO tie between B and C by electing B, who is not allowed to win according to Plurality.
+
+It can easily be shown that electing C instead would result in a Later-no-harm violation, because if the C voters add preferences for B:
+
+ 49 A
+ 27 B>C
+ 24 C>B
+ 100
+
+It's not possible for a sensible method to elect C anymore.
+
+[[Category:Single-winner voting systems]]
