@@ -1,4 +1,4 @@
-'''King of the Hill''' or '''KH''' is a method devised by Kevin Venzke which satisfies [[Later-no-help]]. It was devised as a Condorcet completion method that would be resistant to burial. This article describes it as a method on its own, in which case it has no burial incentive at all.
+'''King of the Hill''' or '''KH''' or '''KOTH''' is a method devised by Kevin Venzke which satisfies [[Later-no-help]]. It was devised as a Condorcet completion method that would be resistant to burial. This article describes it as a method on its own, in which case it has no burial incentive at all.
 
 ==Definition==
 #The voter submits a ranked ballot. Equal-ranking is not allowed; truncation is.
@@ -12,5 +12,14 @@ KH satisfies [[Later-no-help]]. Adding lower preferences may cause the new prefe
 Note that, although the method doesn't satisfy [[Later-no-harm]], the supporters of the top two candidates are guaranteed both of the LNH criteria. It is only the supporters of weaker candidates (by first preferences) who have the risk of giving the election away to their second preference.
 
 To see this, note that the supporters of the first-preference winner do not have their lower preferences counted at all. The only pairwise contests that matter are those directly involving the first-preference winner. Then, note that the second-place candidate wins if and only if he has a majority-strength win over the first-preference winner. There is no way for supporters of this candidate to affect this test by adding lower preferences.
+
+== Example ==
+{{Tenn_voting_example}}
+
+Since all voters list all their preferences, all wins are of majority strength. Memphis has the most first preferences and Nashville has the second-most, so this contest is regarded. Nashville has a majority over Memphis, so Nashville immediately wins.
+
+However, suppose that the Chattanooga and Knoxville voters strategically decided not to vote for Memphis or Nashville. In that case, there would be no majority contest between them. Consideration would pass to Knoxville (due to placing third in first preferences). Thanks to Nashville supporters ranking Knoxville higher than Memphis, there is a majority decision between Memphis and Knoxville, and it's in favor of Knoxville, who would then be elected. (Note that there is a majority for Nashville over Knoxville, but it has no effect.)
+
+Suppose then that the Nashville voters also decide to not rank Chattanooga or Knoxville over Memphis. In that case, there will be no majority contests involving Memphis at all. This results in Memphis being elected.
 
 [[Category:Single-winner voting systems]]
