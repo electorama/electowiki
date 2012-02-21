@@ -24,4 +24,20 @@ The Condorcet winner is A. The BC pair is selected as the most important contest
 
 The method is not clone-independent due to the (admittedly inelegant) majority favorite rule. But the approval and final contest components don't introduce additional clone issues. It's not monotone, because raising the winner from disapproved to approved on some ballots which already counted to the selected pair (that the winner was part of) could add votes for a different pair where the original winner is pairwise beaten.
 
+== Example ==
+{{Tenn_voting_example}}
+
+The voters need to decide where to place their approval cutoffs. They might look at the polling information and decide that the winner will probably be either Memphis or Nashville if the votes are strategically reasonable. So, suppose that the Memphis voters approve only Memphis, and the other voters approve everyone as good as or better than Nashville.
+
+No candidate has a majority of first preferences, so the "votes" for each pair are counted:
+
+ 100 Memphis & Nashville
+ 74  Memphis & Chattanooga
+ 74  Memphis & Knoxville
+ 58  Nashville & Chattanooga
+ 58  Nashville & Knoxville
+ 32  Chattanooga & Knoxville
+
+Memphis vs. Nashville is selected as the single contest. According to the rankings, Nashville beats Memphis 58-42, and so Nashville wins.
+
 [[Category:Single-winner voting systems]]
