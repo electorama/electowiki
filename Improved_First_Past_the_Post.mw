@@ -1,0 +1,12 @@
+'''Improved First Past the Post''' or '''IFPP''' is a method invented and advocated by Craig Carey. It is only defined for up to three candidates. The designer didn't suggest expanding it in the most obvious way to more than three, because the main purpose of the method is to expand on [[FPP]] without sacrificing monotonicity (or Later-no-harm and Later-no-help). Applying the rules to scenarios with 4+ candidates will violate monotonicity.
+
+IFPP is the same as [[IRV]], except that candidates with below average first-preference scores are eliminated. This prevents IRV's monotonicity failures, but causes the method to fail mutual majority and clone independence:
+
+ 45 A
+ 28 B>C
+ 27 C>B
+ 100
+
+Both B and C (who are clones) are eliminated and A is elected. Mutual majority requires that the winner be either B or C.
+
+[[Category:Single-winner voting systems]]
