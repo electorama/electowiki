@@ -1,4 +1,4 @@
-'''Quick Runoff''' or '''QR''' is a method devised by Kevin Venzke which satisfies [[Later-no-harm]] but, unlike [[IRV]], can sometimes elect the candidate with the fewest first preferences.
+'''Quick Runoff''' or '''QR''' or '''Instant Chain Runoff''' is a method devised by Kevin Venzke which satisfies [[Later-no-harm]] but, unlike [[IRV]], can sometimes elect the candidate with the fewest first preferences.
 
 The method is so named because in the three-candidate case it is not as "instant" as [[IRV]], as instead of a single top-two runoff, there is first a simulated runoff between the top two candidates, and then potentially the bottom two candidates.
 
@@ -17,5 +17,12 @@ QR fails [[Mono-raise|monotonicity]] ([[Mono-raise]] and [[Mono-add-top]] at lea
 QR also doesn't satisfy [[Later-no-help]]. In particular, in a three candidate scenario where A has the most first preferences and C the fewest, C may have incentive to insincerely create a majority win for B over A, if the C voters believe C has the second-preferences of the A voters. So, while the A voters technically have both Later-no-harm and Later-no-help guarantees with respect to A, there may be an incentive to withhold their second preference if they feel other factions are relying on those second preferences in order to try to steal the race from A.
 
 Note that the supporters of the top two candidates (by first preferences) have both [[Later-no-harm]] and [[Later-no-help]] assurances. Labeling the candidates A, B, and C, the A voters' lower preference is only counted once A is known to have lost. The B voters' lower preference is not regarded at all, because candidates are only compared to their "adjacent" candidates in first-preference order, and A vs. C (the race that B voters can influence) are not adjacent.
+
+== Example ==
+{{Tenn_voting_example}}
+
+The first preference ordering is Memphis, Nashville, Knoxville, Chattanooga. Since all the voters listed all of their preferences, all of the pairwise losses have majority strength.
+
+Memphis has a majority loss to Nashville, so Memphis will not win. Nashville does not have a majority loss to Knoxville. The method thus ends here, with the election of Nashville.
 
 [[Category:Single-winner voting systems]]
