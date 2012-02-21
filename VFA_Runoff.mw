@@ -1,4 +1,4 @@
-'''VFA Runoff''' is a type of two-round [[runoff voting]], but using the [[Vote For and Against]] ballot in the first round of voting. If a candidate receives more than half of the ''against'' votes in the first round, this candidate is barred from the second round. Other than this, the two candidates with the most ''for'' votes advance to the second round, which uses a simple "vote for one" ballot.
+'''VFA Runoff''' or '''VFAR''' is a type of two-round [[runoff voting]], but using the [[Vote For and Against]] ballot in the first round of voting. If a candidate receives more than half of the ''against'' votes in the first round, this candidate is barred from the second round. Other than this, the two candidates with the most ''for'' votes advance to the second round, which uses a simple "vote for one" ballot.
 
 In a first-round scenario such as:
 
@@ -6,7 +6,7 @@ In a first-round scenario such as:
   24 voters vote for B, against A
   27 voters vote for C, against A
 
-Standard VFA will elect C outright, while VFA Runoff will hold a second round between B and C. This way, the A supporters have the ability to transfer their support.
+Standard [[VFA]] will elect C outright, while VFA Runoff will hold a second round between B and C. This way, the A supporters have the ability to transfer their support.
 
 == Example ==
 {{Tenn_voting_example}}
