@@ -10,4 +10,13 @@
 ==Comments==
 CdlA is not [[monotone]], similar to other methods of this sort. Experimentally it is quite close to [[MinMax]](Winning Votes), and the situation with regard to burial strategies and deterrence is probably similar.
 
+== Example ==
+{{Tenn_voting_example}}
+
+Suppose that the voters place their first preference in the top slot and their second preference in the middle slot, leaving the bottom two preferences unvoted.
+
+Initially, we count only the top-slot ratings, and Memphis has the most votes (42%) and is the first leader. In response to this, supporters of the other three cities all cast their middle-slot preferences, since they didn't give any rating to Memphis. This results in Chattanooga leading with 58%. Since the Memphis voters didn't rate Chattanooga, they cast their preference for Nashville. This brings Nashville's count up to 68%.
+
+Chattanooga and Knoxville supporters didn't vote for Nashville, but they have already added their middle-slot preferences so nothing changes. Nashville can't lose the leading position and is thus elected.
+
 [[Category:Single-winner voting systems]]
