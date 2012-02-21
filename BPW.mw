@@ -1,3 +1,5 @@
-'''BPW''' (for '''Beats Plurality Winner''') is a Condorcet completion method invented and studied by Eivind Stensholt as an attempt to reduce burial incentive. (Insert reference) It is only defined for up to three candidates and doesn't have an obvious way of being expanded to more. In the absence of a CW, one elects the candidate who defeats the [[FPP]] winner pairwise.
+'''BPW''' (for '''Beats Plurality Winner''') is a Condorcet completion method invented and studied by Eivind Stensholt as an attempt to reduce burial incentive. It is only defined for up to three candidates and doesn't have an obvious way of being expanded to more. In the absence of a CW, one elects the candidate who defeats the [[FPP]] winner pairwise.
+
+[http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1145304 Condorcet Methods - When, Why and How? by Eivind Stensholt, 2008]
 
 [[Category:Single-winner voting systems]]
