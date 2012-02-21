@@ -1,6 +1,3 @@
 '''TACC''' is a Condorcet completion method using an approval component, invented by Forest Simmons. In the three-candidate case it is equivalent to electing the candidate in the cycle who defeats the approval loser pairwise. The motivation is to reduce burial incentive.
 
 (Full definition should be added)
-
-[[Category:Single-winner voting methods]]
-[[Category:Condorcet method]]
