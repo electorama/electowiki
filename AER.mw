@@ -4,4 +4,19 @@ It is similar to [[DMC]] except that DMC finishes once there is a Condorcet winn
 
 Approval is usually envisioned as being implied by ranking the candidate.
 
+== Example ==
+{{Tenn_voting_example}}
+
+Suppose that the voters rank (and thus approve) their top two choices and leave the bottom two unranked.
+
+As there is no majority favorite, the least approved candidate is eliminated, which is Knoxville (32%).
+
+Then, there is still no majority favorite, so Memphis is eliminated (with 42% approval).
+
+This results in Nashville being majority favorite, so Nashville is elected over the other finalist, Chattanooga.
+
+Now instead, suppose that all voters rank their top three choices and leave the last choice unapproved. Then Memphis is the first candidate eliminated, and Nashville then has a majority of first preferences.
+
+In comparison, in either of these scenarios, IRV eliminates first Chattanooga and then Nashville, electing Knoxville.
+
 [[Category:Single-winner voting systems]]
