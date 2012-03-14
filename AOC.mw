@@ -1,0 +1,36 @@
+Approval with Optional Conditional-votes
+
+AOC conditionality can be described in terms of what it does for the voter.
+
+A conditional approval isn't counted unless it is reciprocated.
+
+It can be said in more detail, but a little more wordily:
+
+Call a ballot's unconditionally-approved candidates its "favorites".
+
+A ballot on which C is favorite is called a C-favorite ballot.
+
+For each pair of candidates, C and D, the number of ballots on which D, but not C is favorite,
+and which conditionally approve C must at least equal the number on which C, but not D is
+favorite, and which conditionally approve D. Otherwise enough C-but-not-D-favorite ballots' conditional
+approvals of D are ignored to achieve the above-described parity condition. 
+
+But people will understand that, in examples like the one below, it's good if the voter can
+make an approval conditional upon reciprocity:
+
+(If you haven't been on the list lately, you might not have seen this "Approval bad-example":
+
+Sincere preferences:
+
+27: A>B
+24: B>A
+49: C
+
+The A voters should approve B, and the B voters should approve A. But what if the A voters
+approve B, and the B voters don't approve A? Then B will win, and the B voters will have
+successfully taken advantage of the A voters' co-operativeness and sincerity.
+
+That's the co-operation/defection problem, or the chicken dilemma.
+
+If you're an A voter, you'd be glad to hear that you can give a conditional approval to B, an
+approval that is conditional upon reciprocity.
