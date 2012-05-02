@@ -6,7 +6,7 @@ All [[Condorcet method]]s fail this criterion, as does the [[Borda count]], [[Co
 
 Therefore, less strict properties have been proposed:
 
-:- '''Independence of Smith-dominated alternatives''' (ISDA), which says that if one option (X) wins an election, and a new alternative (Y) is added, X will win the election if Y is not in the [[Smith set]]. ISDA implies Condorcet, and some Condorcet methods (e.g. [[Schulze method|Schulze]]) satisfies ISDA.
+:- '''Independence of Smith-dominated alternatives''' (ISDA), which says that if one option (X) wins an election, and a new alternative (Y) is added, X will win the election if Y is not in the [[Smith set]]. ISDA implies Condorcet, and some Condorcet methods (e.g. [[Schulze method|Schulze]]) satisfy ISDA.
 
 :- '''Independence of covered alternatives''' which says that if one option (X) wins an election, and a new alternative (Y) is added, X will win the election if Y is not in the [[uncovered set]]. Independence of covered alternatives also implies Condorcet. If a method is independent of covered alternatives, then the method fails monotonicity if perfect ties can always be broken in favor of a choice W by using ballots ranking W first.
 
