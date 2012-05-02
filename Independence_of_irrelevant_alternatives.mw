@@ -1,10 +1,22 @@
 In [[voting system]]s, '''independence of irrelevant alternatives''' is the property some voting systems have that, if one option (X) wins the election, and a new alternative (Y) is added, only X or Y will win the election.
 
-A less strict property is sometimes called '''local independence of irrelevant alternatives''' or '''independence of Smith-dominated alternatives''' (ISDA).  It says that if one option (X) wins an election, and a new alternative (Y) is added, X will win the election if Y is not in the [[Smith set]].  
+All [[Condorcet method]]s fail this criterion, as does the [[Borda count]], [[Coombs' method]], and [[Instant-runoff voting]]. [[Range voting]] satisfies the criterion.
 
-All [[Condorcet method]]s fail the former criterion, but some (e.g. [[Schulze method|Schulze]]) satisfy the latter.
+[[Arrow's impossibility theorem]] states that no voting system can satisfy universal domain, non-imposition, non-dictatorship, unanimity, and independence of irrelevant alternatives. In practice, this means that no deterministic ranked ballot system can satisfy independence of irrelevant alternatives without either having a dictator (whose ballot decides who wins no matter the other ballots), failing to elect a candidate that the whole electorate ranks first, or rendering one or more outcomes impossible no matter the ballots.
 
-None of the [[Borda count]], [[Coombs' method]] or [[Instant-runoff voting]] meet either criterion.
+Therefore, less strict properties have been proposed:
+
+:- '''Independence of Smith-dominated alternatives''' (ISDA), which says that if one option (X) wins an election, and a new alternative (Y) is added, X will win the election if Y is not in the [[Smith set]]. ISDA implies Condorcet, and some Condorcet methods (e.g. [[Schulze method|Schulze]]) satisfies ISDA.
+
+:- '''Independence of covered alternatives''' which says that if one option (X) wins an election, and a new alternative (Y) is added, X will win the election if Y is not in the [[uncovered set]]. Independence of covered alternatives also implies Condorcet. If a method is independent of covered alternatives, then the method fails monotonicity if perfect ties can always be broken in favor of a choice W by using ballots ranking W first.
+
+:- '''Independence of Pareto-dominated alternatives''' (IPDA), which says that if one option (X) wins an election, and a new alternative (Y) is added, X will win the election if Y is Pareto-dominated. An alternative W is Pareto-dominated if there exists some other alternative Z so that no voter ranks W ahead of Z and at least one voter ranks Z ahead of W.
+
+:- '''Local independence of irrelevant alternatives''' (LIIA), which says that if the alternative ranked first or last in the outcome is removed, the relative ordering of the other alternatives in the outcome must not change. [[Kemeny-Young]] and [[Ranked Pairs]] satisfies this criterion, but the [[Schulze method]] does not.
+
+:- Woodall's '''Weak IIA''': If x is elected, and one adds a new calternative y ahead of x on some of the ballots on which x was first preference (and nowhere else), then either x or y should be elected. 
+
+Neither the [[Borda count]], [[Coombs' method]] nor [[Instant-runoff voting]] satisfies the less strict criteria above.
 
 An anecdote which illustrates a violation of this property has been attributed to Sidney Morgenbesser:
 
