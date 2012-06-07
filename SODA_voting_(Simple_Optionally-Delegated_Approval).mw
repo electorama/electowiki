@@ -25,7 +25,7 @@ Steps marked "''(optional)''" are suggested, but only the four substeps in '''bo
 |<big>1. Candidates publicly declare their rankings of the other candidates</big>
 |-
 |valign=top|
-:a) '''Before the election, all candidates must rank the other official candidates in order of preference. Equal rankings are allowed.''' ''These pre-announced preferences allow voters to make informed decisions in step 2; and prevent corrupt vote-selling in step 3, where candidates may only approve others in a way that is consistent with their preferences.''
+:a) '''Before the election, all candidates must strictly rank all other official candidates in order of preference. Equal rankings are not allowed.''' ''These pre-announced preferences allow voters to make informed decisions in step 2; and prevent corrupt vote-selling in step 3, where candidates may only approve others in a way that is consistent with their preferences.''
 |-
 |valign=top|
 :b) ''(optional)'' Candidates may <u>enforce any prior agreements</u> of mutual preferences by changing their own preferences in response to those of others*. ''This enforcement mechanism is designed to deter betrayals, so that it should almost never actually need to be used. Candidates, realizing that changing preferences at this point will only make them look untrustworthy, will prefer agree on mutual approvals beforehand.''
@@ -56,16 +56,16 @@ Steps marked "''(optional)''" are suggested, but only the four substeps in '''bo
 <small><u>'''Use their delegated ballots'''</u>: The process by which a candidate effectively adds approvals to the votes delegated to him or her. When, for example, candidate A uses their delegated ballots to approve of B and C, then B and C's approval totals are each increased by A's delegated vote total. When it is a candidate's turn, they may choose to approve of nobody else, for instance if they believe they will win; but this counts as using their delegated votes, and they will not be given another chance to change that decision. When all candidates have used their votes, the election is over.</small>
 |-
 |valign=top|
-::i. If the candidate using their delegated votes has more than 5% approval, '''they may choose which candidates approve on their delegated ballots, <u>consistent with preferences</u>,''' with equally preferred ties ''(optionally)'' broken by current approval totals. ''This tie-breaking by approval totals resolves the "chicken dilemma", as explained below.''
+::i. If the candidate using their delegated votes has more than 5% approval, '''they may choose which candidates approve on their delegated ballots, <u>consistent with preferences</u>.'''
 |valign=top|
-<small>'''<u>Consistent with preferences</u>, with equally preferred ties broken by current approval totals''': For example, candidate A may not approve B and not C unless ''either'' A predeclared a preference for B over C, ''or'' A predeclared B and C equal and B currently has more approvals than C.</small>
+<small>'''<u>Consistent with preferences</u>'': For example, candidate A may not approve B and not C unless A predeclared a preference for B over C.</small>
 |-
 |valign=top|
 ::ii. ''(optional)'' If the candidate using their delegated votes has 5% approvals or less, their delegated ballots are used to <u>automatically approve</u> their preference between the frontrunners. ''Automatic approvals respect predeclared preferences but prevent minor candidates from having discretionary kingmaker power.''
 <br>
 ::iii. ''(optional)'' If the candidate is a write-in or got less than 1% direct approvals from voters, they may not use their delegated votes. However, any candidate may approve a write-in, regardless of the predeclared preferences. ''Write-ins do not have a chance to declare or figure in the pre-declared preferences. Candidates with less than 1% are not allowed to use delegated votes to discourage a frivolous proliferation of candidates.''
 |valign=top|
-<small>'''<u>Automatic approvals</u>''': When approvals are assigned automatically for candidate X, they are set to approve as many of their pre-declared preferences as possible without approving both of the two candidates with the highest current approval totals that they prefer differently. (For example, say that X's preferences were for (A and B), then C, then (D and E), and the approval totals are 40, 30, 10, 20, and 15 alphabetically. A has the highest total; B has the next-highest, but does not count, because they are preferred equally to A; and D has the next-highest. So X's delegated ballots will be assigned to approve as many candidates as possible without approving both A and D; that is, they will approve A, B, and C.)</small>
+<small>'''<u>Automatic approvals</u>''': When approvals are assigned automatically for candidate X, they are set to approve as many of their pre-declared preferences as possible without approving both of the two candidates with the highest current approval totals that they prefer differently. (For example, say that X's preferences were for A>B>C>D>E, and the approval totals are 10, 30, 10, 20, and 15 alphabetically. B and D have the highest totals. So X's delegated ballots will be assigned to approve as many candidates as possible without approving both B and D; that is, they will approve A, B, and C.)</small>
 |-
 |valign=top|
 <big>4. When step 3b ends, highest total wins</big>
