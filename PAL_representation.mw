@@ -20,7 +20,7 @@ The basic idea is:
 # Undelegated votes are divided equally among all approved, non-eliminated candidates on that ballot.
 # Any candidates who reach the quota are immediately and simultaneously elected, and their ballots are reweighted to eliminate a quota.
 #* They keep the remaining fraction of the ballots which elected them, one quota in total. This is used later during the draft phase to help decide which additional districts, besides their home district, they will represent.
-# If there are no candidates who reach the quota, the party with the fewest votes is identified, and the candidate from that party with the fewest votes is eliminated. All votes for that candidate are reassigned as outlined above.
+# If there are no candidates who reach the quota, the party with the lowest remainder, when total party votes are divided by the quota, is identified; and the candidate from that party with the fewest votes is eliminated. All votes for that candidate are reassigned as outlined above.
 # If the above finishes without electing a full slate, the process so far is recalculated with a lower quota:
 #* The iteration number is increased by 1. This reduces the quota Q, as if it were the Droop quota for a legislature one seat bigger.
 #* All elections and eliminations so far are re-applied in the same order with the new quota (see note at bottom of this section)
