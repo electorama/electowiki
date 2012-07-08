@@ -1,6 +1,6 @@
 In [[voting system]]s, '''independence of irrelevant alternatives''' is the property some voting systems have that, if one option (X) wins the election, and a new alternative (Y) is added, only X or Y will win the election.
 
-All [[Condorcet method]]s fail this criterion, as does the [[Borda count]], [[Coombs' method]], and [[Instant-runoff voting]]. [[Range voting]] satisfies the criterion.
+Most [[Condorcet method]]s fail this criterion, although [[Ranked Pairs]] satisfies it. [[Borda count]], [[Coombs' method]], and [[Instant-runoff voting]] fail. [[Range voting]] satisfies the criterion.
 
 [[Arrow's impossibility theorem]] states that no voting system can satisfy universal domain, non-imposition, non-dictatorship, unanimity, and independence of irrelevant alternatives. In practice, this means that no deterministic ranked ballot system can satisfy independence of irrelevant alternatives without either having a dictator (whose ballot decides who wins no matter the other ballots), failing to elect a candidate that the whole electorate ranks first, or rendering one or more outcomes impossible no matter the ballots.
 
