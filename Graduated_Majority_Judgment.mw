@@ -1,35 +1,8 @@
-Like its predecessor [[Majority Judgment]], '''Graduated Majority Judgment''' or '''GMJ''' is a single-winner, median-based voting system. Here's one way to explain it:
-
-===Ballot Explanation===
-
-<strong>The ballot will ask you to grade each candidate</strong> on a scale from A (excellent) to F (unacceptable). You may give two candidates the same grade if you wish. Any candidate whom you do not explicitly grade will get an F from you.
-
-===Counting===
-====Conceptual====
-
-To find the winner, first the "A" votes for each candidate are counted. If no candidate gets over 50% of the voters, the "B" votes are added to the count, then "C" votes, etc. <strong>The first candidate to get over 50% is the winner.</strong> If two candidates would reach 50% at the same grade, each candidate's votes for that grade are added gradually, and the winner is the one who needs the smallest portion of those votes to reach 50%.
-		
-This gradual process can be stated as a "graduated score" for each candidate. If a candidate reaches 50% using 8/10 of their "C" votes (along with all their A and B votes), then their graduated score would be 1.7 (a C-). Another candidate who needed only 2/10 of their "C" votes to reach 50% would have a graduated score of 2.3 (a C+), so between those two candidates the second would be the winner.
-
-====Two equivalent full procedures====
-It works as follows:
-
-# Each voter grades each candidate on a grading scale such as A, B, C, D, F
-# The top-grade (eg, A) votes for each candidate are tallied.
-# If a single candidate has a majority (that is, a number of votes greater than or equal to 50% of voters), they win.
-# If no candidate has a majority, the next grade down (eg, B) is added to the tally, and go back to step 3.
-# If more than one candidate has a majority, the last grade tallied is removed from the tallies, and then re-added at the smallest fraction possible so that some candidate has a majority. This is as if the votes at that grade were added 1% at a time until one candidate gets a majority.
-
-The above process is conceptually simple, but difficult in practice. The following process gives the same results, and is simpler to run in practice:
-
+Like its predecessor [[Majority Judgment]], '''Continuous Majority Judgment''' or '''CMJ''' is a single-winner, median-based voting system. It works as follows:
 
 # Each voter grades each candidate on a grading scale such as A, B, C, D, F
 # Each grade for each candidate is tallied.
 # The tallies are used to find the median grade for each candidate.
-# Tallies are added to find the V(>M), V(@M), and V(<M) (that is, votes above median, votes at median, and votes below median or blank) for each candidate.
+# Tallies are added to find the V(>M), V(@M), and V(>M) (that is, votes above median, votes at median, and votes below median or blank) for each candidate.
 # A candidate's adjustment is a number between -0.5 and +0.5, calculated using the formula (V(>M) - V(<M)) / (2 * V(@M))
 # The candidate with the highest adjustment among those with the highest median, wins.
-
-If medians are converted to integers (such as 0-4), then the adjusted median scores can easily be reported alongside the full tallies.
-
-[[Category:Graded Bucklin systems]]
