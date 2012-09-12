@@ -1,0 +1,64 @@
+
+SYMMETRICAL ICT:
+
+After this description and definition of Symmetrical ICT, I'll say a few words of what it implies for the compatibility of FBC and Condorcet's Criterion.
+
+ICT stands for "Improved-Condorcet-Top". The idea for Improved Condorcet is from Kevin Venzke. Improved Condorcet meets FBC. Then, later, Chris Benham proposed completion by top-count, to achieve "defection-resistance", avoidance of the Chicken Dilemma. Chris had a long name for his method, but I called it "Improved-Condorcet-Top", in keeping with Kevin's naming.
+
+I later proposed that the Improved Condorcet improvement be done at bottom-end as well, to achieve compliance with Later-No-Help, which would achieve additional easing and simplification of strategy need.
+
+But the big improvements were those of Kevin and Chris.
+
+I called my version Symmetrical ICT. 
+
+Here is a definition of Symmetrical ICT, which I prefer to ordinary ICT:
+
+(X>Y) means the number of ballots ranking X over Y
+(Y>X) means the number of ballots ranking Y over X.
+(X=Y)T means the number of ballots ranking X and Y in 1st place.
+(X=Y)B means the number of ballots ranking X and Y at bottom
+....(not ranking X or Y over anything)
+
+iff means "if and only if".
+
+X beats Y iff (X>Y) + (X=Y)B > (Y>X) + (X=Y)T
+
+1. If one candidate beats everyone else, then s/he wins.
+
+2. If everyone or no one is unbeaten, then the winner is the candidate
+ranked in 1st place on the most ballots.
+
+3. If some, but not all, candidates are unbeaten, then the winner is
+the unbeaten candidate ranked in 1st place on the most ballots.
+
+[end of definition of Symmetrical ICT]
+
+Justification of Improved Condorcet:
+
+One justification is that it gains compliance with FBC. 
+
+Additionally, suppose that you rank two candidates, X and Y in 1st place. You rank them in 1st place because you'd prefer that they win, instead of the other candidates.
+
+Now, suppose that candidate X would beat everyone, and thereby win, except that then you (and a few other people) move Y up to 1st place too. Previously X beat Y. But now, because you people have moved Y to 1st place with X, you've removed some X>Y votes, and so now Y beats X. And now, instead of someone beating everyone, there's a top-cycle in which Z (the worst candidate) is a member. And, by whatever circular tiebreaker is used, Z wins.
+
+Did you want that to happen? When you ranked X and Y in 1st place, did you mean that you wanted your last choice to win? No, you primarily wanted X or Y to win. Well then, what if, for the purpose of the X/Y pairwise comparison, you could cast a custom-made, adjustable, vote to achieve the result that you prefer, to protect the win of someone in {X,Y}. You don't want X or Y to beat eachother, because, as seen above, that could make neither of them win, and give the win to someone much worse. So you'd use that vote for the purpose of voting against either candidate beating the other. For instance, if Y would otherwise beat X, then you'd cast an X>Y vote, your vote against one beating the other.
+
+So then, what if we say that, when ranking X and Y in 1st place, in addition to counting as pairwise votes for them over everyone else, it also counts as a vote, by you, against either beating the other. That would be the way to interpret your equal top ranking in a way that is consistent with your interest, preferences, intent and wishes.
+
+That's Improved Condorcet.
+
+Now, traditionally, for the purpose of the Condorcet Criterion, we say that X beats Y iff more people rank X over Y than Y over X. But, as I said, the above-described Improved Condorcet interpretation of equal top ranking is the interpretation that is more in keeping with the interest, preferences, intent and wishes of the voter who votes that equal top ranking. In other words, it has more legimacy than the traditional interpretation, and the traditional definition of "beats", quoted at the beginning of this paragraph.
+
+And, since it has more legitimacy, it would be a better choice, when deciding who beats whom, for the purpose of the Condorcet Criterion.
+
+And when that interpretation and counting of equal top rankings is used for the purpose of the Condorcet Criterion, Improved-Condorcet meets Condorcet's Criterion. 
+
+Before someone says, "Yeah, you make Improved-Condorcet meet the Condorcet Criterion by modifying Condorcet's Criterion to match Improved Condorcet. But note that I told why the Improved Condorcet interpretation of equal top ranking is more in keeping with the interest, prefereces, intent and wishes of the equal top ranking voter, and therefore is more legitimate. It'a a matter of using a more legitimate interpretation, rather than just modifying a criterion to match a method. Besides, the reason why the method uses that interpretation is because it's more legitimate, and what the equal top ranking voter prefers.
+
+So: Improved Condorcet versions, including ICT and Symmetrical ICT, meet the CondorcetCr iterion, when it is defined more legitmately. 
+
+Likewise, then, it can be said that FBC and the Condorcet Criterion are compatible, contrary to popular belief.
+
+FBC will be defined at this electowiki too.
+
+Michael Ossipoff
