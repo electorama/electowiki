@@ -1,37 +1,29 @@
+
+SYMMETRICAL ICT:
+
 After this description and definition of Symmetrical ICT, I'll say a few words of what it implies for the compatibility of FBC and Condorcet's Criterion.
 
 ICT stands for "Improved-Condorcet-Top". The idea for Improved Condorcet is from Kevin Venzke. Improved Condorcet meets FBC. Then, later, Chris Benham proposed completion by top-count, to achieve "defection-resistance", avoidance of the Chicken Dilemma. Chris had a long name for his method, but I called it "Improved-Condorcet-Top", in keeping with Kevin's naming.
 
-I later proposed that the Improved Condorcet improvement be done at bottom-end as well, to almost achieve compliance with Later-No-Help, which would achieve additional easing and simplification of strategy need.
+I later proposed that the Improved Condorcet improvement be done at bottom-end as well, to achieve compliance with Later-No-Help, which would achieve additional easing and simplification of strategy need.
 
 But the big improvements were those of Kevin and Chris.
 
-I call my version Symmetrical ICT. 
+I called my version Symmetrical ICT. 
 
+Here is a definition of Symmetrical ICT, which I prefer to ordinary ICT:
 
-----
-
-
-== Definition of Symmetrical ICT ==
-
-
-(X>Y) means the number of ballots ranking X over Y.
-
+(X>Y) means the number of ballots ranking X over Y
 (Y>X) means the number of ballots ranking Y over X.
-
 (X=Y)T means the number of ballots ranking X and Y in 1st place.
-
-(X=Y)B means the number of ballots ranking X and Y at bottom.
+(X=Y)B means the number of ballots ranking X and Y at bottom
 ....(not ranking X or Y over anything)
 
 iff means "if and only if".
 
 X beats Y iff (X>Y) + (X=Y)B > (Y>X) + (X=Y)T
 
-...except that two candidates can't beat eachother. If the above beat condition statement says that two candidates beat eachother, then only one of them beats the other. The one that beats the other is the one that is ranked over the other on more ballots than vice-versa.
-
-
-1. If only one candidate is unbeaten, then s/he wins.
+1. If one candidate beats everyone else, then s/he wins.
 
 2. If everyone or no one is unbeaten, then the winner is the candidate
 ranked in 1st place on the most ballots.
@@ -41,159 +33,32 @@ the unbeaten candidate ranked in 1st place on the most ballots.
 
 [end of definition of Symmetrical ICT]
 
+Justification of Improved Condorcet:
 
-----
-
-If you leave out the + (X=Y)B term, then you'll have ordinary ICT. Ordinary ICT has the most important properties of Symmetrical ICT. Symmetrical ICT merely adds a somewhat less important improvement, consisting of simpler bottom-end strategy.
-
-Justifications for ICT and Symmetrical ICT:
-
-One justification is that they gain compliance with [[FBC]]. 
-
-Another is that they automatically avoid the chicken dilemma, meeting the [[Chicken Dilemma Criterion]].
+One justification is that it gains compliance with FBC. 
 
 Additionally, suppose that you rank two candidates, X and Y in 1st place. You rank them in 1st place because you'd prefer that they win, instead of the other candidates.
 
-Now, suppose that candidate X would beat everyone, and thereby win, except that then you (and a few other same-voting people) move Y up to 1st place too. Previously X beat Y. But now, because you people have moved Y to 1st place with X, you've removed some X>Y votes, and so now Y beats X. And now, instead of someone beating everyone, there's a top-cycle in which Z (the worst candidate) is a member (becaues Z beats X). And, by whatever circular tiebreaker is used, Z wins.
+Now, suppose that candidate X would beat everyone, and thereby win, except that then you (and a few other people) move Y up to 1st place too. Previously X beat Y. But now, because you people have moved Y to 1st place with X, you've removed some X>Y votes, and so now Y beats X. And now, instead of someone beating everyone, there's a top-cycle in which Z (the worst candidate) is a member. And, by whatever circular tiebreaker is used, Z wins.
 
-Did you want that to happen? When you ranked X and Y in 1st place, did you mean that you wanted your last choice to win? No, you primarily wanted X or Y to win. Well then, what if, for the purpose of the X/Y pairwise comparison, you could cast a custom-made, adjustable, vote to achieve the result that you prefer, to protect the win of someone in {X,Y}. You don't want X or Y to beat eachother, because, as seen above, that could make neither of them win, and give the win to someone much worse. So you'd X prefer to use that vote for the purpose of voting against either candidate beating the other. For instance, if Y would otherwise beat X, then you'd cast an X>Y vote, your vote against one beating the other. You'd do that to avoid the possibility of the sceraio described above, because you prefer that X or Y win.
+Did you want that to happen? When you ranked X and Y in 1st place, did you mean that you wanted your last choice to win? No, you primarily wanted X or Y to win. Well then, what if, for the purpose of the X/Y pairwise comparison, you could cast a custom-made, adjustable, vote to achieve the result that you prefer, to protect the win of someone in {X,Y}. You don't want X or Y to beat eachother, because, as seen above, that could make neither of them win, and give the win to someone much worse. So you'd use that vote for the purpose of voting against either candidate beating the other. For instance, if Y would otherwise beat X, then you'd cast an X>Y vote, your vote against one beating the other.
 
 So then, what if we say that, when ranking X and Y in 1st place, in addition to counting as pairwise votes for them over everyone else, it also counts as a vote, by you, against either beating the other. That would be the way to interpret your equal top ranking in a way that is consistent with your interest, preferences, intent and wishes.
-
-That doesn't give you more voting power. It just allows you to use ''your'' vote in your best interest, consistent with your preferences, intent and wishes. It's your vote, you know.
 
 That's Improved Condorcet.
 
 Now, traditionally, for the purpose of the Condorcet Criterion, we say that X beats Y iff more people rank X over Y than Y over X. But, as I said, the above-described Improved Condorcet interpretation of equal top ranking is the interpretation that is more in keeping with the interest, preferences, intent and wishes of the voter who votes that equal top ranking. In other words, it has more legimacy than the traditional interpretation, and the traditional definition of "beats", quoted at the beginning of this paragraph.
 
 And, since it has more legitimacy, it would be a better choice, when deciding who beats whom, for the purpose of the Condorcet Criterion.
-That results in a more legitimate Condorcet Criterion.
 
 And when that interpretation and counting of equal top rankings is used for the purpose of the Condorcet Criterion, Improved-Condorcet meets Condorcet's Criterion. 
 
-Maybe someone will say, Yeah, you make Improved-Condorcet meet the Condorcet Criterion by modifying Condorcet's Criterion to match Improved Condorcet. But note that I told why the Improved Condorcet interpretation of equal top ranking is more in keeping with the interest, prefereces, intent and wishes of the equal top ranking voter, and therefore is more legitimate. It'a a matter of using a more legitimate interpretation, rather than just modifying a criterion to match a method. 
+Before someone says, "Yeah, you make Improved-Condorcet meet the Condorcet Criterion by modifying Condorcet's Criterion to match Improved Condorcet. But note that I told why the Improved Condorcet interpretation of equal top ranking is more in keeping with the interest, prefereces, intent and wishes of the equal top ranking voter, and therefore is more legitimate. It'a a matter of using a more legitimate interpretation, rather than just modifying a criterion to match a method. Besides, the reason why the method uses that interpretation is because it's more legitimate, and what the equal top ranking voter prefers.
 
-Besides, the reason why the method uses that interpretation is likewise because it's more legitimate, and what the equal top ranking voter prefers.
-
-And that genuine legitimacy is the reason why Symmetrical ICT meets [[FBC]] (unlike traditional unimproved Condorcet).
-
-So: Improved Condorcet versions, including ICT and Symmetrical ICT, meet the Condorcet Criterion, when it is defined more legitmately. 
+So: Improved Condorcet versions, including ICT and Symmetrical ICT, meet the CondorcetCr iterion, when it is defined more legitmately. 
 
 Likewise, then, it can be said that FBC and the Condorcet Criterion are compatible, contrary to popular belief.
 
-Though it's defined elsewhere in electowiki, under its own name, I'd like to state my definition of FBC here. This definition is also linked to at the FBC article in electowiki, as an alternative definition of FBC. But it's the FBC definition that I now prefer, and it's what I now mean when I say FBC.
+FBC will be defined at this electowiki too.
 
-
-----
-
-== Favorite-Burial Criterion (FBC) ==
-
-
-A candidate is top-voted, and at top, on a ballot if that ballot doesn't vote anyone over that candidate.
-
-If no one who is not at top on your ballot wins, then moving an additional candidate to top on your ballot shouldn't cause to win anyone who isn't then at top on your ballot.
-
-[end of FBC definition]
-
-
-----
-
-Symmetrical ICT, like ordinary ICT, automatically avoids the chicken dilemma. Here is a criterion that measures for that property:
-
-
-----
-
-
-== The Chicken Dilemma Criterion: ==
-
-
-The Chicken Dilemma Criterion (CD):
-
-'''Supporting definitions:'''
-
-1. The A voters are the voters who prefer candidate A to every other
-candidate. The B voters are the voters who prefer candidate B to every
-other candidate.
-
-2. The "other candidates" are the candidates other than A and B.
-
-3. A particular voter votes sincerely if s/he doesn't falsify a
-preference, or fail to vote a felt preference that the balloting
-system in use would have allowed hir to vote in addition to the
-preferences that s/he actually votes.
-
-'''Premise:'''
-
-1. The A voters and the B voters, combined, add up to more than half
-of the voters in the election.
-
-2. The A voters and the B voters all prefer both A and B to the other
-candidates.
-
-3. The A voters are more numerous than are the B voters.
-
-4. Voting is sincere, except that the B voters refuse to vote A over anyone.
-
-5. Candidate A would be the unique winner under sincere voting (...in
-other words, if the B voters voted sincerely, as do all the other
-voters).
-
-'''Requirement:'''
-
-B doesn't win.
-
-[end of CD definition]
-
-
-----
-
-'''A few improved properties of ICT and Symmetrical ICT:'''
-
-I already mentioned that ICT and Symmetrical ICT meet [[FBC]]. That's the main, most important, difference between Symmetrical ICT and traditional, unimproved Condorcet.
-
-But, additionally, ICT and Symmetrical ICT, automatically avoid the chicken dilemma. They meet CD, the Chicken Dilemma Criterion.
-
-'''Comparison of strategy in a u/a election:'''
-
-When there are unacceptable candidates who could win, that can greatly simplify voting strategy. I call such a situation a u/a election (standing for unacceptable/acceptable). It's a situaiton in which all that matters is that the winner be an acceptable rather than an unacceptable.  ...and that's incomparably more imporant than the matter of which acceptable or which unacceptable wins. You could say that the candidates can be divided into two sets, such that the merit within the sets is negligible compared to the merit difference between the sets.
-
-That's a u/a election. Voting strategy can be much simpler in a u/a election. For instance, in Approval, just approve all of the acceptables, and none of the unacceptables.
-
-Top-end u/a strategy for ICT, Symmetrical ICT, and traditional unimproved Condorcet:
-
-Traditional unimproved Condorcet? It isn't merely more complicated than Approval. It's unknown. 
-
-ICT and Symmetrical ICT:
-
-Top-rank all of the acceptables and none of the acceptables.
-
-In traditional unimproved Condorcet, you'd still have that same need to top-rank all of the unacceptbles, but there's a risk and penalty for doing so: Anyone you top-rank could pairbeat another top-ranked candidate and thereby give the win to your last choice (ad described above). Of course you'd have to try to guess which acceptable(s) has the best chance to win, and which would sufficiently unlikely to win that the main effect of top-ranking them would be to risk spoiling another top-ranked candidate's win. You'd be guessing. You wouldn't know what to do. Not even in a u/a election.
-
-Bottom-End strategy for ICT, Symmetrical ICT and traditional unimproved Condorcet:
-
-ICT and traditional unimproved Condorcet:
-
-Rank the unacceptable candidates in reverse order of winnability.
-
-Of course you don't ''have'' to, but it's optimal. Because it's only bottom-end strategy, it isn't an important problem. Merely a nuisance.
-
-But it's avoided by Symmetrical ICT:
-
-Bottom-Ennd strategy for Symmetrical ICT:
-
-Don't rank any unacceptables.
-
-In other words, u/a strategy in Symmetrical ICT is as simple as that of Approval.
-
-Let me add here that I suggest that all of our official public elections are u/a. So what does it tell us, when the best that a rank method can do is no different from Approval? It suggests that there's no need or reason to bother with rank methods in official public elections.
-Well, there is one way in which ICT and Symmetrical ICT improve on Approval, even in a u/a election. They automatically avoid the chicken dilemma, as said above. The chicken dilemma is easily dealt with in Approval and Score, and, for a number of other reasons too, isn't really a problem with Approval and Score. Only a nuisance. But it's nice that ICT and Symmetrical ICT automatically get rid of that nuisance. You don't improve on Approval without doing that. Don't even consider a rank-method that doesn't automatically avoid the chicken dilemma.
-
-The count-computation-intensiveness of rank methods, and the consequent count-fraud vulnerabiity, make rank methods unsuitable for official public elections. But I propose ICT and Symmetrical ICT for informational polling, to inform and guide strategy in an upcoming official public election by Plurality--until we can replace Plurality with [[Approval]] or [[Score]] ([[Range]]).
-
-I don't claim that Symmetrical ICT actually strictly meets [[Later-No-Help]] (LNHe). Approval strictly meets LNHe. 
-
-LNHe says that, when you've voted for some candidates on your ballot (you vote for a candidate if you vote him/her over someone), then you don't need to vote for additional candidates on that ballot in order to help as much as you can the candidates for whom you've already voted.
-
-In Symmetrical ICT, you knew that the unacceptable X was going to be beaten by someone other than unacceptable Y, but that Y could be inbeaten and win, then you'd have reason to rank X, to help beat Y. But there's no such information available. One thing that Symmetrical ICT guarantees is that, by leaving X and Y unranked, you're doing everything that you can do to make one beat the other. Not ranking any unacceptable is good u/a strategy in Symmetrical ICT.
- 
 Michael Ossipoff
