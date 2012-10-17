@@ -1,5 +1,3 @@
-
-
 After this description and definition of Symmetrical ICT, I'll say a few words of what it implies for the compatibility of FBC and Condorcet's Criterion.
 
 ICT stands for "Improved-Condorcet-Top". The idea for Improved Condorcet is from Kevin Venzke. Improved Condorcet meets FBC. Then, later, Chris Benham proposed completion by top-count, to achieve "defection-resistance", avoidance of the Chicken Dilemma. Chris had a long name for his method, but I called it "Improved-Condorcet-Top", in keeping with Kevin's naming.
@@ -74,11 +72,11 @@ Besides, the reason why the method uses that interpretation is likewise because 
 
 And that genuine legitimacy is the reason why Symmetrical ICT meets FBC (unlike traditional unimproved Condorcet).
 
-So: Improved Condorcet versions, including ICT and Symmetrical ICT, meet the CondorcetCr iterion, when it is defined more legitmately. 
+So: Improved Condorcet versions, including ICT and Symmetrical ICT, meet the Condorcet Criterion, when it is defined more legitmately. 
 
 Likewise, then, it can be said that FBC and the Condorcet Criterion are compatible, contrary to popular belief.
 
-Though it's defined elsewhere in electowiki, under its own name, I'd like to state my definition of FBC here. This definition is given at the FBC article in electowiki, as an alternative definition of FBC. But it's the FBC definition that I now prefer, and it's what I now mean when I say FBC.
+Though it's defined elsewhere in electowiki, under its own name, I'd like to state my definition of FBC here. This definition is also linked to at the FBC article in electowiki, as an alternative definition of FBC. But it's the FBC definition that I now prefer, and it's what I now mean when I say FBC.
 
 
 ----
