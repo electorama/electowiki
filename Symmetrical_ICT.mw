@@ -26,7 +26,7 @@ X beats Y iff (X>Y) + (X=Y)B > (Y>X) + (X=Y)T
 ...except that two candidates can't beat eachother. If the above beat condition statement says that two candidates beat eachother, then only one of them beats the other. The one that beats the other is the one that is ranked over the other on more ballots than vice-versa.
 
 
-1. If one candidate beats everyone else, then s/he wins.
+1. If only one candidate is unbeaten, then s/he wins.
 
 2. If everyone or no one is unbeaten, then the winner is the candidate
 ranked in 1st place on the most ballots.
