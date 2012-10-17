@@ -1,4 +1,3 @@
-== SYMMETRICAL ICT: ==
 
 
 After this description and definition of Symmetrical ICT, I'll say a few words of what it implies for the compatibility of FBC and Condorcet's Criterion.
@@ -14,7 +13,7 @@ I call my version Symmetrical ICT.
 
 ----
 
-Here is a definition of Symmetrical ICT:
+'''Here is a definition of Symmetrical ICT:'''
 
 (X>Y) means the number of ballots ranking X over Y
 (Y>X) means the number of ballots ranking Y over X.
@@ -84,7 +83,7 @@ Though it's defined elsewhere in electowiki, under its own name, I'd like to sta
 
 ----
 
-Favorite-Burial Criterion (FBC):
+'''Favorite-Burial Criterion (FBC):'''
 
 A candidate is top-voted, and at top, on a ballot if that ballot doesn't vote anyone over that candidate.
 
@@ -95,7 +94,7 @@ If no one who is not at top on your ballot wins, then moving an additional candi
 
 ----
 
-A few improved properties of ICT and Symmetrical ICT.
+'''A few improved properties of ICT and Symmetrical ICT:'''
 
 I already mentioned that ICT and Symmetrical ICT meet FBC. That's the main, most important, difference between Symmetrical ICT and traditional, unimproved Condorcet.
 
@@ -134,12 +133,12 @@ Don't rank any unacceptables.
 In other words, u/a strategy in Symmetrical ICT is as simple as that of Approval.
 
 Let me add here that I suggest that all of our official public elections are u/a. So what does it tell us, when the best that a rank method can do is no different from Approval? It suggests that there's no need or reason to bother with rank methods in official public elections.
-Well, I take that back: There is one way in which ICT and Symmetrical ICT improve on Apperoval, even in a u/a election. They automatically avoid the chicken dilemma, as said above. The chicken dilemma is easily dealt with in Approval and Score, and, for a number of other reasons too, isn't really a problem with Approval and Score. But it's nice that ICT and Symmetrical ICT automatically get rid of that nuisance. You don't improve on Approval without doing that. Don't even consider a rank-method that doesn't automatically avoid the chicken dilemma.
+Well, I take that back: There is one way in which ICT and Symmetrical ICT improve on Approval, even in a u/a election. They automatically avoid the chicken dilemma, as said above. The chicken dilemma is easily dealt with in Approval and Score, and, for a number of other reasons too, isn't really a problem with Approval and Score. Only a nuisance. But it's nice that ICT and Symmetrical ICT automatically get rid of that nuisance. You don't improve on Approval without doing that. Don't even consider a rank-method that doesn't automatically avoid the chicken dilemma.
 
 I don't claim that Symmetrical ICT actually strictly meets Later-No-Help (LNHe). Approval strictly meets LNHe. 
 
-LNHe says that, when you've voted for some candidates on your ballot (you vote for a candidate if you vote him/her over someone), then you don't need to vote for more candidates on that ballot in order to help the ones you've already voted for all that you can.
+LNHe says that, when you've voted for some candidates on your ballot (you vote for a candidate if you vote him/her over someone), then you don't need to vote for additional candidates on that ballot in order to help as much as you can the candidates for whom you've already voted.
 
-In Symmetrical ICT, if a voter had sufficiently detailed and reliable predictive information, s/he could probably gain by ranking some unacceptable candidates, more winnable ones over less winnable ones. But there's no such information available. One thing that Symmetrical ICT guarantees is that, by leaving some particular two candidates unranked, you're doing everything that you can reasonably do to cause some one of them (either one of them) to be beaten by the other.
+In Symmetrical ICT, if a voter had sufficiently detailed and reliable predictive information, s/he could probably sometimes gain by ranking some unacceptable candidates, more winnable ones over less winnable ones. But there's no such information available. One thing that Symmetrical ICT guarantees is that, by leaving some particular two candidates unranked, you're doing everything that you can do to cause some one of them (either one of them) to be beaten by the other.
  
 Michael Ossipoff
