@@ -92,11 +92,56 @@ If no one who is not at top on your ballot wins, then moving an additional candi
 
 ----
 
+Symmetrical ICT, like ordinary ICT, automatically avoids the chicken dilemma. Here is a criterion that measures for that property:
+
+
+----
+
+'''The Chicken Dilemma Criterion:'''
+
+The Chicken Dilemma Criterion (CD):
+
+Supporting definitions:
+
+1. The A voters are the voters who prefer candidate A to every other
+candidate. The B voters are the voters who prefer candidate B to every
+other candidate.
+
+2. The "other candidates" are the candidates other than A and B.
+
+3. A particular voter votes sincerely if s/he doesn't falsify a
+preference, or fail to vote a felt preference that the balloting
+system in use would have allowed hir to vote in addition to the
+preferences that s/he actually votes.
+
+Premise:
+
+1. The A voters and the B voters, combined, add up to more than half
+of the voters in the election.
+
+2. The A voters and the B voters all prefer both A and B to the other
+candidates.
+
+3. The A voters are more numerous than are the B voters.
+
+4. Voting is sincere, except that the B voters refuse to vote A over anyone.
+
+5. Candidate A would be the unique winner under sincere voting (...in
+other words, if the B voters voted sincerely, as do all the other
+voters).
+
+Requirement:
+
+B doesn't win.
+
+[end of CD definition]
+
+
 '''A few improved properties of ICT and Symmetrical ICT:'''
 
 I already mentioned that ICT and Symmetrical ICT meet FBC. That's the main, most important, difference between Symmetrical ICT and traditional, unimproved Condorcet.
 
-But, additionally, ICT and Symmetrical ICT, automatically avoid the chicken dilemma.
+But, additionally, ICT and Symmetrical ICT, automatically avoid the chicken dilemma. They meet CD, the Chicken Dilemma Criterion.
 
 Another advantage of Symmetrical ICT:
 
