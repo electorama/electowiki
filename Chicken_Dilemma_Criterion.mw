@@ -1,11 +1,7 @@
 
-
-
 '''Supporting definitions:'''
 
-1. The A voters are the voters who prefer candidate A to every other
-candidate. The B voters are the voters who prefer candidate B to every
-other candidate.
+1. The A voters are the voters who prefer candidate A to everyone else. The B voters are the voters who prefer candidate B to everyone else.
 
 2. The "other candidates" are the candidates other than A and B.
 
