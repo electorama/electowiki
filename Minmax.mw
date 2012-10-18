@@ -12,7 +12,16 @@ Minmax(winning votes) also satisfies the [[Plurality criterion]]. In the three-c
 
 '''Minmax(pairwise opposition)''' or '''MMPO''' elects the candidate whose greatest ''opposition'' from another candidate is minimal. Pairwise wins or losses are not considered; all that matters is the number of votes for one candidate over another.
 
-Minmax(pairwise opposition) does not strictly satisfy the [[Condorcet criterion]] or [[Smith set|Smith criterion]]. It also fails the [[Plurality criterion]], and is more indecisive than the other Minmax methods. However, it satisfies the [[Later-no-harm criterion]], the [[Favorite Betrayal criterion]], and in the three-candidate case, the [[Participation criterion]].
+Pairwise opposition is defined for a pair of candidates. For X and Y, X's pairwise opposition in that pair is the number of ballots ranking Y over X. MMPO elects the candidate whose greatest pairwise opposition is the least.
+
+Minmax(pairwise opposition) does not strictly satisfy the [[Condorcet criterion]] or [[Smith set|Smith criterion]]. It also fails the [[Plurality criterion]], and is more indecisive than the other Minmax methods (unless it's used with a tiebreaking rule such as the simple one described below). However, it satisfies the [[Later-no-harm criterion]], the [[Favorite Betrayal criterion]], and in the three-candidate case, the [[Participation criterion]], and the [[Chicken Dilemma Criterion]].
+
+MMPO's choice rule can be regarded as a kind of social optimization: The election of the candidate to whom fewest people prefer another. That choice rule can be offered as a standard in and of itself.
+
+MMPO's simple tiebreaker:
+
+If two or more candidates have the same greatest pairwise opposition, then elect the one that has the lowest next-greatest pairwise opposition. Repeat as needed.
+
 
 The Minmax method is also known as ''Simpson-Kramer method''.
 
