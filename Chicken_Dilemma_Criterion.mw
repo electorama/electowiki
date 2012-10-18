@@ -1,48 +1,34 @@
-One type of election scenario which is particularly fraught is when there is a majority split into two subfactions (below called A and B), competing against a united minority (below called C) that is bigger than either of the subfactions. This scenario has been called the "chicken dilemma" because in many election systems, the two majority subfactions are in a situation that resembles the classic "chicken" or "snowdrift game (especially if voters are not sure which of the two subfactions is larger). That is, if we assume each faction has a single, coordinated strategy defined as "cooperate" (vote both candidates A and B above bottom) or "defect" (bullet vote, with only the favorite above bottom); and that each faction values its preferred choice at 10, its less-preferred choice at 8, and candidate C at 0, many voting systems lead to the following payoff matrix:
-
-{| id="Payoff matrix" style="background:white; float: right; clear:right; text-align:center;" align=right cellspacing=0 cellpadding=8 width=225
-|-
-|style="width:33%;                                                     "| 
-|style="width:33%;                      border-bottom: solid black 1px;"| cooperate
-|style="width:33%;                      border-bottom: solid black 1px;"| defect
-|-
-|style="border-right:  solid black 1px; text-align: right;             "| cooperate
-|style="border-right:  solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%; "| 9,&nbsp;9
-|style="border-right:  solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%; "| 8,&nbsp;10
-|-
-|style="border-right:  solid black 1px; text-align: right;             "| defect
-|style="border-right:  solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%; "| 10,&nbsp;9
-|style="border-right:  solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%; "| 0,&nbsp;0
-|-
-|style="font-size: 90%;" colspan=3 |''Fig. 2: Chicken with numerical [[Risk dominance|payoffs]]''
-|}
-
-There are various ways to deal with this situation. For instance:
-
-# Some voting systems, such as approval voting, ignore the problem. Perhaps the assumption here is that it will be impossible to organize a defection without prompting a retaliation, and thus that both sides will prefer to cooperate. ("Mutual assured destruction"?)
-# Some voting systems, such as [[Majority Choice Approval]], try exploit the fact that each faction is not a single coordinated entity, but a group of individual voters. The idea is that if a small number of voters defect, they should be ignored; hopefully, in that situation, majority cooperation will be a stable strategy.
-# Other voting systems, such as [[ICT]], try to exploit the fact that in a real-world election, A and B are never perfectly balanced; one subfaction is always larger. In this case, a voting system can encourage the smaller group to cooperate by threatening to elect C (punishing both groups) if the smaller group defects. The criterion below is passed only by this kind of voting system.
-
-== Definition ==
 
 
-'''Supporting definition:'''
 
-The A voters are the voters who vote A over everyone else. The B voters are the voters who vote B over everyone else. The C voters are the voters who vote C over everyone else.
+'''Supporting definitions:'''
 
+1. The A voters are the voters who prefer candidate A to every other
+candidate. The B voters are the voters who prefer candidate B to every
+other candidate.
+
+2. The "other candidates" are the candidates other than A and B.
+
+3. A particular voter votes sincerely if s/he doesn't falsify a
+preference, or fail to vote a felt preference that the balloting
+system in use would have allowed hir to vote in addition to the
+preferences that s/he actually votes.
 
 '''Premise:'''
 
-1. There are 3 candidates: A, B, and C.
-
-2. The A voters and the B voters, combined, add up to more than half
+1. The A voters and the B voters, combined, add up to more than half
 of the voters in the election.
 
-3. The A voters are more numerous than the B voters. The C voters are more numerous than the A voters, and more numerous than the B voters.
+2. The A voters and the B voters all prefer both A and B to the other
+candidates.
 
-4. The A voters vote B over C. The B voters refuse to vote A over anyone.
+3. The A voters are more numerous than are the B voters.
 
-5. None of the C voters vote A or B over the other. 
+4. Voting is sincere, except that the B voters refuse to vote A over anyone.
+
+5. Candidate A would be the unique winner under sincere voting (...in
+other words, if the B voters voted sincerely, as do all the other
+voters).
 
 '''Requirement:'''
 
@@ -53,47 +39,10 @@ B doesn't win.
 
 ----
 
-In the chicken dilemma scenario described in the premise of the Chicken Dilemma Criterion (CD), defined above, if B won, then the B voters would have successfully taken advantage of the A voters' co-operativeness. The A voters wanted to vote both A and B over the candidate disliked by both the A voters and B voters. Thereby they helped {A,B} against the worse candidate. But, with methods that fail CD, the message is "You help, you lose".
+In the chicken dilemma scenario described in the premise of the Chicken Dilemma Criterion (CD) defined above, if B won, then the B voters would have successfully taken advantage of the A voters' co-operativeness. The A voters wanted to vote both A and B over the candidates disliked by both the A voters and B voters. Thereby they helped {A,B} against worse candidates. But, with methods that fail CD, the message is "You help, you lose".
 
 ----
 
 '''Some methods that pass the Chicken Dilemma Criterion:'''
 
-ICT, [[Symmetrical ICT]], [[MMPO]], MDDTR, [[IRV]], [[Benham's method]], [[Woodall's method]]
-
-----
-
-Because CD is so simple, such a simple situaton, could there be another
-simple implmentation of it?
-
-...maybe one that doesn't speak of numbers of voters in the factions?
-
-CD is sufficient, as-is, but here is a non-numerical definition:
-
-== CD2: ==
-
-'''Supporting definition:'''
-
-The A voters are the voters who vote A over everyone else. The B voters are
-the voters who vote B over everone else. The C voters are the voters
-who vote C over everyone else.
-
-'''Premise:'''
-
-1. There are 3 candidate: A, B, and C.
-
-2. If the A voters and B voters all voted both A and B over C,  then C
-couldn't win.
-
-3. The ballot set is such that if C withdrew from the election and the
-count, A would win.
-
-4.  The A voters vote B over C.
-
-5. The B voters don't vote A over anyone.
-
-'''Requirement:'''
-
-B doesn't win.
-
-[end of CD2 definition]
+ICT, Symmetrical ICT, MMPO, MDDTR
