@@ -12,7 +12,7 @@ Or more simply: ''The voter must not be able to help his favorite candidates by 
 
 ==Complying methods==
 
-'''Sincere Favorite''' is satisfied by [[Approval voting]] (and, e.g., [[range voting]] and [[median rating]]), [[MDDA]], [[MAMPO]], [[Minmax|Minmax(pairwise opposition)]], and [[Improved Condorcet Approval]]. Most varieties of [[MCA]] satisfy the criterion. Other [[Minmax]] methods can be modified to satisfy it using the [[tied at the top]] rule.
+'''Sincere Favorite''' is satisfied by [[Approval voting]] (and, e.g., [[range voting]] and [[median rating]]), [[MDDA]], [[MAMPO]], [[Minmax|Minmax(pairwise opposition)]],[[Improved Condorcet Approval]], ICT, and [[Symmetrical ICT]]. Most varieties of [[MCA]] satisfy the criterion. Other [[Minmax]] methods can be modified to satisfy it using the [[tied at the top]] rule.
 
 ==Commentary==
 
