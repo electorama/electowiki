@@ -15,10 +15,13 @@ I call my version Symmetrical ICT.
 == Definition of Symmetrical ICT ==
 
 
-(X>Y) means the number of ballots ranking X over Y
+(X>Y) means the number of ballots ranking X over Y.
+
 (Y>X) means the number of ballots ranking Y over X.
+
 (X=Y)T means the number of ballots ranking X and Y in 1st place.
-(X=Y)B means the number of ballots ranking X and Y at bottom
+
+(X=Y)B means the number of ballots ranking X and Y at bottom.
 ....(not ranking X or Y over anything)
 
 iff means "if and only if".
@@ -82,7 +85,6 @@ Though it's defined elsewhere in electowiki, under its own name, I'd like to sta
 
 
 ----
-
 
 == Favorite-Burial Criterion (FBC) ==
 
