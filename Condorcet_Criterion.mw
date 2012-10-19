@@ -3,11 +3,15 @@ The '''Condorcet candidate''', '''Pairwise Champion''' (PC), or '''Condorcet win
 The '''Condorcet criterion''' for a [[voting system]] is that it chooses the pairwise champion when one exists. Any method conforming to the Condorcet criterion is known as a [[Condorcet method]].
 
 
-== Alternative Wording of Condorcet Criterion: ==
+== A More General Wording of Condorcet Criterion Definition ==
 
-'''Requirement:''' The voting system must allow the voter to vote as many pairwise preferences as desired.
+'''Requirements:''' 
 
-'''Requirement:''' If there are unbeaten candidates, then the winner should be one of them.
+1. The voting system must allow the voter to vote as many transitive pairwise preferences as desired.
+
+(Typically that's in the form of an unlimited ranking)
+
+2. If there are unbeaten candidates, then the winner should be one of them.
 
 '''Traditional definition of "beat":'''
 
@@ -29,7 +33,7 @@ X beats Y iff (X>Y) > (Y>X) + (X=Y)T
 
 [end of alternative definition]
 
-With this alternative definition of the Condorcet Criterion, FBC and the Condorcet Criterion are compatible.
+With this alternative definition of "beat", [[FBC]] and the Condorcet Criterion are compatible.
 
 
 ==Complying methods==
