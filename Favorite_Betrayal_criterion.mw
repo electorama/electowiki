@@ -2,19 +2,25 @@ The '''Favorite Betrayal criterion''' is a criterion for evaluating [[voting sys
 
 Here is the FBC definition currently advocated and used by the main advocate of FBC (that would be me):
 
+
+== Current Definition of FBC: ==
+
+
 If no one wins who is not top-voted by you, then, if you move an additional candidate to top, on your ballot, that shouldn't cause someone to win who is not top-voted by you.
 
 [end of FBC definition]
 
-Supplementary definition:
+'''Supplementary definition:'''
 
 A candidate is "top-voted" by you, and is "at top" on your ballot, if you don't vote anyone over him/her.
 
 [end of definition of "top-voted" and "top"]
 
-The above-stated wording is chosen to allow for ties, (to presumably be later solved randomly), so that the definition will be useful regardless of whether the tie candidates are called "winner", or only the winner of the tiebreaker is called "winner". In other words, the above definition isn't dependent on which of those ways "win" and "winner" are defined.
+The above-stated wording is chosen to allow for ties, (to presumably be later solved randomly), so that the definition will be useful regardless of whether all of the tie candidates are called "winners", or only the one winner of the tiebreaker is called "winner". In other words, the above definition is independent on which of those ways "win" and "winner" are defined.
 
-But if, in the event of a tie, "winner" refers only to the one single candidate who wins after the random tiebreaker has been applied to the tie, then a somewhat more natural and intuitive sounding definition can be written:
+But if, in the event of a tie, "winner" refers only to the one one candidate who wins after the random tiebreaker has been applied to the tie, then... 
+
+'''a somewhat more natural and intuitive sounding definition can be written:'''
 
 If the winner is a candidate whom you've top-voted, then, if you move an additional candidate to top, the winner should still be a candidate top-voted by you.
 
@@ -23,13 +29,13 @@ If the winner is a candidate whom you've top-voted, then, if you move an additio
 I prefer the first of those two definitions, because it isn't dependent on how "winner" or "win" is defined.
 The first of the above two definitions is my definition of FBC.
 
-The definiton written below is the one that I had originally written and used. I liked it, but it led to the question of "What if the way of voting that optimizes your outcome without favorite-burial is some complicated, difficult-to-find strategy?". That question led me to my better definition, written above on this page.
+The definiton written below is the one that I had originally written and used. I liked it, but it led to the question of "What if the way of voting that optimizes your outcome without favorite-burial is some complicated, difficult-to-find strategy?". That question led me to my better definition, written above on this page. Some time ago, someone else, too, had written it, and a link to it is given at the bottom of this page, under a different name.
 
 Michael Ossipoff
 
-==Definition==
+==Earlier Definition==
 
-A voter optimizes the outcome (from his own perspective) if his vote causes the election of the best possible candidate that can be elected, based on his own preferences, given all the votes cast by other voters.
+A voter optimizes the outcome (from his/her own perspective) if his vote causes the election of the best possible candidate that can be elected, based on his own preferences, given all the votes cast by other voters.
 
 ==Statement of the criterion==
 
@@ -39,7 +45,7 @@ A voter optimizes the outcome (from his own perspective) if his vote causes the 
 
 [[Approval voting]], [[range voting]], [[Majority Judgment]], [[MMPO|MinMax(pairwise opposition)]], [[MCA]] (except MCA-A and some versions of MCA-R), [[MAMPO]], and [[Improved Condorcet Approval]] comply with the favorite betrayal criterion, as do ICT and [[Symmetrical ICT]]. 
 
-[[Borda count]], [[plurality voting]], [[Condorcet criterion|Condorcet methods]], and [[instant-runoff voting]] do not comply.
+[[Borda count]], [[plurality voting]], [[Condorcet criterion|Condorcet methods]] (except for Improved Condorcet methdods, such as Kevin Venzke's [[ICA]], and Chris Benham's ICT, and [[Symmetrical ICT]]) and [[instant-runoff voting]] do not comply.
 
 ==Commentary==
 
