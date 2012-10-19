@@ -37,7 +37,7 @@ A voter optimizes the outcome (from his own perspective) if his vote causes the 
 
 ==Complying methods==
 
-[[Approval voting]], [[range voting]], [[Majority Judgment]], [[MMPO|MinMax(pairwise opposition)]], [[MCA]] (except MCA-A and some versions of MCA-R), [[MAMPO]], and [[Improved Condorcet Approval]] comply with the favorite betrayal criterion. 
+[[Approval voting]], [[range voting]], [[Majority Judgment]], [[MMPO|MinMax(pairwise opposition)]], [[MCA]] (except MCA-A and some versions of MCA-R), [[MAMPO]], and [[Improved Condorcet Approval]] comply with the favorite betrayal criterion, as do ICT and [[Symmetrical ICT]]. 
 
 [[Borda count]], [[plurality voting]], [[Condorcet criterion|Condorcet methods]], and [[instant-runoff voting]] do not comply.
 
@@ -46,8 +46,6 @@ A voter optimizes the outcome (from his own perspective) if his vote causes the 
 Election methods that meet this criterion provide no incentive for voters to betray their favorite candidate by voting another candidate over him or her.
 
 Some complying methods:
-
-Approval, Score(also called "Range"), Majority Judgement (MJ), Symmetrical ICT (which see)
 
 An interpretation of this criterion applied to votes as cast is the [[Sincere Favorite criterion]].
 
