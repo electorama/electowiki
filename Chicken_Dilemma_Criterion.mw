@@ -1,4 +1,3 @@
-
 '''Supporting definitions:'''
 
 1. The A voters are the voters who prefer candidate A to everyone else. The B voters are the voters who prefer candidate B to everyone else.
@@ -41,4 +40,4 @@ In the chicken dilemma scenario described in the premise of the Chicken Dilemma 
 
 '''Some methods that pass the Chicken Dilemma Criterion:'''
 
-ICT, Symmetrical ICT, MMPO, MDDTR
+ICT, [[Symmetrical ICT]], [[MMPO]], MDDTR
