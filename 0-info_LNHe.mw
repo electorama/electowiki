@@ -1,0 +1,67 @@
+(abbreviated ZLNHe)
+
+
+== Definition of ZLNHe: ==
+
+
+----
+
+
+'''Supporting definitions:'''
+
+1. A zero-information (0-info) election is an election about which all
+that is known is the candidates and the voting system. There's no
+information about the voters, their preferences, or any predictive
+information about details of the voting.
+
+2. To vote a candidate at bottom is to not vote that candidate over
+anyone. To vote a candidate above bottom is to vote that candidate
+over someone.
+
+'''Zero-Info LNHe (ZLNHe):'''
+
+In a 0-info election, voting above bottom one or more of some certain
+set of candidates shouldn't decrease the probability that the winner
+will come from that set, as compared to voting them all at bottom.
+
+[end of ZLNHe definition]
+
+
+----
+
+ZLNHe could be called a "weakening" of LNHe. But calling it "weak
+LNHe" would be misleading, because it is only very slightly
+weaker than LNHe.
+
+It's easier to refer to a 0-info election than to try to name
+different kinds of voting-predictive information and stipulate them to be absent. But the information
+that actually must be absent in that criterion's scenario is
+information that is usually or always at least mostly absent even in non-0-info
+elections. Therefore, ZLNHe is nearly the same thing as LNHe, and the
+word "weakening" hardly even applies.
+
+
+
+== Definition of Strong ZLNHe: ==
+
+
+----
+
+Same as ZLNHe, except that voting one or more members of that set over
+bottom must increase the probability that the winner will come from
+that set.
+
+[end of Strong ZLNHe definition]
+
+----
+
+
+== Complyng methods: ==
+
+Of course all methods that meet LNHe also meet ZLNHe.
+
+Methods that comply with LNHe include [[Approval voting]], Score Voting (also called [[Range voting]]), and IRV.
+
+[[Symmetrical ICT]] meets Strong ZLNHe.
+
+Ordinary ICT, and traditional Condorcet methods don't comply with ZLNHe or Strong ZLNHe.
