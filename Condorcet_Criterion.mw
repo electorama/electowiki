@@ -11,7 +11,7 @@ The '''Condorcet criterion''' for a [[voting system]] is that it chooses the pai
 
 (Typically that's in the form of an unlimited ranking)
 
-2. If there are unbeaten candidates, then the winner should be one of them.
+2. If there are one or more unbeaten candidates, then the winner should be an unbeaten candidate.
 
 '''Traditional definition of "beat":'''
 
