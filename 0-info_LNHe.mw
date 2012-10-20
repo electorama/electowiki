@@ -33,21 +33,18 @@ weaker than LNHe.
 
 It's easier to refer to a 0-info election than to try to name
 different kinds of voting-predictive information and stipulate them to be absent. But the information
-that actually must be absent in that criterion's scenario is
+that actually must be absent in order for complying methods to meet that criterion's requirement is
 information that is usually or always at least mostly absent even in non-0-info
 elections. Therefore, ZLNHe is nearly the same thing as LNHe, and the
-word "weakening" hardly even applies.
-
+word "weakening" hardly even applies. I suggest that, with a voting system complying with ZLNHe or Strong ZLNHe, there's no need to vote for unacceptable candidates. (just as can be said for methods complying with the slightly stronger LNHe).
 
 
 == Definition of Strong ZLNHe: ==
 
 
-
-
 Same as ZLNHe, except that voting one or more members of that set over
-bottom must increase the probability that the winner will come from
-that set.
+bottom should ''increase'' the probability that the winner will come from
+that set (instead of just not decreasing that probability).
 
 [end of Strong ZLNHe definition]
 
@@ -63,3 +60,111 @@ Methods that comply with LNHe include [[Approval voting]], Score Voting (also ca
 [[Symmetrical ICT]] meets Strong ZLNHe, though it doesn't strictly meet LNHe.
 
 Ordinary ICT, and traditional Condorcet methods don't comply with LNHe, ZLNHe or Strong ZLNHe.
+
+
+----
+
+
+== Definition of Later-No-Help (LNHe): ==
+
+
+When, while making out your ballot, you've voted for some candidates, then you don't need to vote for additional candidates in order to fully help the candidates you've already voted for.
+
+To vote for a candidate is to vote him/her over at least one other candidate.
+
+To fully help a candidate is to vote in a way that does as much as possible toward making him/her win.
+
+[end of LNHe definition]
+
+
+----
+
+
+== Commentary: ==
+
+LNHe is relevant to bottom-end strategy. For example, many rank methods that fail LNHe have bottom-end strategy that calls for ranking unacceptable candidates in reverse order of winnability. A method that meets LNHe doesn't have such a strategy-need. LNHe-complying methods don't need bottom-end strategy.
+
+Some methods that don't strictly meet LNHe can meet ZLNHe and maybe Strong ZLNHe. For example, Symmetrtical ICT meets Strong ZLNHe, though it doesn't strictly meet LNHe. ZLNHe and Strong ZLNHe are the zero-information counterparts to LNHe. I claim that methods complying with ZLNHe, or especially Strong ZLNHe, for practical purposes, don't need bottom-end strategy.
+
+
+----
+
+
+== A Few Compliance Demonstratons: ==
+
+(This will make more sense after reading the definition of [[Symmetrical ICT]] (SITC) )
+
+
+'''Why Symmetrical ICT (SITC) meets Strong ZLNHe:''' 
+
+In [[Symmetrical ICT]], bottom-voting X and Y (typically done by not ranking them)
+counts as a vote for some (either) one of {X,Y} beating the other.
+Whichever one could be made to beat the other, your bottom-voting of X
+and Y counts toward that pairwise beaten-ness. In the event that
+SICT's beat-condition rule says that both X and Y beat eachother, then
+SICT says that the one that beats the other is the one ranked over the
+other on more ballots than vice-versa.
+
+So, as I said, not ranking X and Y counts as a vote for some (either)
+one of {X,Y} beating the other. Whichever one could be made to beat
+the other.
+
+You're voting for X>Y, and you're voting for Y>X.
+
+Now, what if you rank X, but not Y? You're then only voting for X>Y.
+You're voting for one pairwise defeat among {X,Y}, instead of two.
+You're thereby increasing the probability that the winner will come
+from {X,Y}.
+
+Sure, suppose you knew for a fact that X was going to be beaten by
+someone other than Y, and that Y is the candidate who could be
+unbeaten and win. Then voting X>Y is much more important than voting
+Y>X. There wouldn't be much point in voting Y>X, because X is already
+going to be beaten by someone else. Furthermore, there'd be an
+advantage to voting X>Y, instead of not ranking either: By helping the
+number of X>Y ballots be greater than the number of Y>X ballots you're
+voting for X being the one that beats the other, in the event of both
+beating eachother according to SICT's beat-condition rule.
+
+So, if you knew that, then it would be better to rank X and not Y. But
+ZLNHe and Strong ZLNHe are about a 0-info election.
+
+So what applies to the situation is what I said earlier, supporting
+the conclusion that ranking one of {X,Y} must increase the probability
+that the winner will come from {X,Y}.
+
+'''Why traditional unimproved Condorcet fails ordinary ZLNHe:'''
+
+In a large official public election, pairwise ties are vanishingly
+unlikely and rare. One of {X,Y} is going to beat the other.
+
+But, even aside from that, if you vote X over Y, you're voting for
+X>Y, but you're also voting against Y>X.
+
+For both of those reasons, as regards beatenness of X and Y, you gain
+nothing and lose nothing by voting X over Y.
+
+But, as regards the votes-against, and the margin of defeat, in an X>Y
+defeat, you're increasing it when you vote X>Y (while at the same
+time, voting for X to beat Y).
+
+Therefore, by voting X>Y, you're decreasing the probability that the
+winner will come from {X,Y}.
+
+[end of compliance and noncompliance demonstrations]
+
+
+----
+
+
+You might say, How is Strong ZLNHe compliance better than ordinary ZLNHe compliance? Well,
+suppose that there were a little not-too-reliable information
+suggesting something about likely beaten-ness of X and Y by other candidates.
+That could tend to make some strategic incentive to
+rank one and not the other. But the stronger benefit of not ranking
+either, in a Strong ZLNHe complying method, does more to outweigh that
+tendency.
+
+ZLNHe and Strong ZLNHe are new to me, and I don't know of any method that meets ZLNHe without meeting Strong ZLNHe.
+
+[[Symmetrical ICT]] is the only method that I know of that meets Strong ZLNHe without meeting LNHe.
