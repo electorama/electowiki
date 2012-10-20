@@ -1,0 +1,36 @@
+(abbreviated LNHe)
+
+== Definition of Later-No-Help Criterion: ==
+
+While making out your ballot, when you have voted for some candidates, you don't need to vote for additional candidates in order to fully help the candidates for whom you've already voted.
+
+To vote for a candidate means to vote him/her over at least one other candidate.
+
+To fully help a candidate means to vote in a way that does as much as possible toward making him/her win.
+
+[end of definition of Later-No-Help Criterion]
+
+
+----
+
+
+== Commentary: ==
+
+LNHe is about the absence of need for bottom-end strategy. For instance, many methods that fail LNHe have a strategy-need to rank unacceptable candidates in reverse order of winnability. 
+
+LNHe-complying methods have no need for any bottom-end stragegy. 
+
+LNHe-complying methods' freedom from bottom-end strategy is reminiscent of [[FBC]] complying methods' freedom from need for the top-end strategy of favorite-burial.
+
+
+== Compliance and Non-Compliance Information ==
+
+'''A few methods that comply with LNHe:'''
+
+[[Approval voting]], Score ([[Range voting]]), IRV
+
+'''A few methods that don't comply with LNHe:'''
+
+Condorcet methods don't comply with LNHe.
+
+But [[Symmetrical ICT]] complies with Strong [[0-info LNHe]], which, for practical purposes is just as good.
