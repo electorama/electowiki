@@ -1,10 +1,8 @@
-(abbreviated ZLNHe)
+(abbreviated ZLNHe. LNHe stands for [[Later-No-Help]])
 
 
 == Definition of ZLNHe: ==
 
-
-----
 
 
 '''Supporting definitions:'''
@@ -45,7 +43,7 @@ word "weakening" hardly even applies.
 == Definition of Strong ZLNHe: ==
 
 
-----
+
 
 Same as ZLNHe, except that voting one or more members of that set over
 bottom must increase the probability that the winner will come from
@@ -62,6 +60,6 @@ Of course all methods that meet LNHe also meet ZLNHe.
 
 Methods that comply with LNHe include [[Approval voting]], Score Voting (also called [[Range voting]]), and IRV.
 
-[[Symmetrical ICT]] meets Strong ZLNHe.
+[[Symmetrical ICT]] meets Strong ZLNHe, though it doesn't strictly meet LNHe.
 
-Ordinary ICT, and traditional Condorcet methods don't comply with ZLNHe or Strong ZLNHe.
+Ordinary ICT, and traditional Condorcet methods don't comply with LNHe, ZLNHe or Strong ZLNHe.
