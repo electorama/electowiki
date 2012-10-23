@@ -12,13 +12,14 @@ The voting system must allow the voter to vote at top as many candidates as s/he
 
 If no one wins who is not top-voted by you, then, if you move an additional candidate to top, on your ballot, that shouldn't cause someone to win who is not then top-voted by you.
 
-[end of FBC definition]
 
 '''Supplementary definition:'''
 
 A candidate is "top-voted" by you, and is "at top" on your ballot, if you don't vote anyone over him/her.
 
-[end of definition of "top-voted" and "top"]
+
+----
+
 
 The above-stated wording is chosen to allow for ties, (to presumably be later solved randomly), so that the definition will be useful regardless of whether all of the tie candidates are called "winners", or only the one winner of the tiebreaker is called "winner". In other words, the above definition is independent on which of those ways "win" and "winner" are defined.
 
