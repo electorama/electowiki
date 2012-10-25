@@ -50,6 +50,20 @@ that set (instead of just not decreasing that probability).
 
 ----
 
+Someone could argue that a compliance with Strong 0-info Probabilistic Later-No-Help could, and should more properly, be called a failure of a 0-info probabilistic Later-No-Harm.
+
+Could? Sure. More properly? No. 
+
+Things are different when we're talking about probabilities in a 0-info election.
+
+When, in that 0-info election, the probability of electing an unacceptable isn't reduced by ranking unacceptables--no improvement is gained by ranking unacceptables--then obviously there is no loss if there's a cost that prevents us from ranking unacceptables. We didn't want to anyway.
+
+I name Strong ZLNHe in terms of LNHe because the relevant thing about it is the absence of need to rank unacceptable candidates. Strong ZLNHe simply achieves what ZLNHe achieves, but more so.
+
+If there were a little not-so-reliable information about the relative winnabilities of unacceptables X and Y, then there could begin to be some incentive to rank one over the other. Compliance with Strong ZLNHe instead of just ZLNHe would more strongly outweigh that incentive to rank unacceptables--could delay its becoming important, as there begins to be a little not-very-reliable winnability information.
+
+So, instead of a failure of a 0-info probabilistic Later-No-Harm, a compliance with Strong ZLNHe is more relevantly regarded as a compliance with a stronger and more reassuring 0-info probabilistic Later-No-Help.
+
 
 == Complyng methods: ==
 
