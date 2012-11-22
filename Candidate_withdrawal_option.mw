@@ -1,1 +1,28 @@
-After the initial tally, any candidate has the option of withdrawing from the race and ordering another  tally with their name removed from the ballot.
+Definition: After the votes are cast, the candidates are given a short period of time (days) to decide whether to withdraw. If any candidates withdraw, they are deleted from each vote (or dropped to the bottom of each vote). The result is tallied using these modified votes.
+
+Presumably, immediately after all the votes have been cast, sufficient summary information about the votes will be published on the internet so that candidates can download the data to perform "what if" analyses, to help them decide whether to withdraw. (For a [[Condorcet method]], it would suffice to publish the matrix of pairwise counts.)
+
+'''The purpose of the withdrawal option is to allow candidates to foil voting strategies and/or to avoid being spoilers.''' If candidate X prefers the winner when X is deleted more than the winner when X is not deleted, X has an incentive to withdraw. 
+
+For example, [[Instant-runoff voting]] is susceptible to spoiling that can easily defeat a [[Condorcet winner]] (and all candidates in the [[Smith set]] when there is no Condorcet winner):
+:35%: X > C > Y
+:10%: C > X > Y
+:15%: C > Y > X
+:40%: Y > C > X
+Instant Runoff elects Y. X is a spoiler because X's supporters prefer C (the Condorcet winner) over Y and C would win if X were not a candidate. If X withdraws then C wins. Given Instant Runoff with the withdrawal option, it's more likely that the winner will be a Condorcet winner or in the Smith set. This would give candidates who want to win a stronger incentive to take "moderate" positions on issues, in order to be in the Smith set, which would make it even more likely that the winner will be in the Smith set.
+
+Even a method as simple as Plurality Rule would become less prone to spoiling by allowing candidates to withdraw, assuming each vote is an order of preference. (The definition of Plurality Rule given voters' orders of preference is to elect the candidate ranked on top by the most voters.) However, more candidates would need to be willing to withdraw than with other, more complex ways of tallying voters' orders of preference, so more things could go wrong.
+
+Another interesting example is the classic case in which a minority of the voters strategically "bury" the sincere Condorcet winner in order to elect their favored candidate. Assume the voting method satisfies the Condorcet criterion and there is a sincere Condorcet winner C, but voters whose sincere order of preference is Y>C>X strategically vote Y>X>C. This can elect Y with many Condorcet (and other) methods:
+:34%: X > C > Y
+:10%: C > X > Y
+:10%: C > Y > X
+:46%: Y > X > C
+There are three majorities: 80% rank X over C, 56% rank Y over X, and 54% rank C over Y. The smallest majority is the 54% who rank C over Y, so Y wins given any voting method that behaves like Minmax in this scenario. But if X withdraws, C would win, foiling the voting strategy. Most of X's supporters prefer C over Y, and C has the moral high ground of being the sincere winner, so it would presumably be harder for Y to persuade X not to withdraw than for C to persuade X to withdraw. Also, the burying strategy could backfire by possibly allowing X, the least preferred candidate of the manipulative supporters of Y, to extract policy concessions from C in exchange for X's withdrawal. There is less incentive to strategize when withdrawal is an option.
+
+The withdrawal option would not fix the [[Borda]] method's failure of the [http://en.wikipedia.org/wiki/Independence_of_clones_criterion Independence of Clones criterion] because clones' incentive is not to withdraw:
+:65%: A > B > B2
+:35%: B > B2 > A
+Candidate A is ranked over B by a landslide majority, so A will win if the only candidates are A and B. When B2 (an inferior clone of B) is also nominated, the supporters of A continue to rank B second and the supporters of B continue to rank A at the bottom. This causes Borda to elect B, even though the similarity of B2 to B means voters' preferences regarding B2 are essentially redundant information and thus should not affect the outcome. Presumably B2 was nominated in order to help B win and prefers B over A, and thus lacks an incentive to withdraw. (The same reasoning would hold for B3, B4, B5 etc., and for A2, A3, A4, A5 etc. The faction that nominates the most candidates wins given Borda, regardless of the preferences of the voters... unless the voters too are strategically sophisticated.)
+
+Presumably, candidates' preferences regarding other candidates, and thus their decisions on whether to withdraw, will be influenced by the preferences of their key support groups. Also, candidates will presumably be asked before Election Day to specify their preferences because voters will want to be able to predict withdrawal decisions. If candidates' decisions regarding withdrawal are inconsistent with their stated preferences, they'd risk damage to their political careers. If they state strange preferences inconsistent with positions they've taken on issues, they'd risk being ranked worse by upset voters.
