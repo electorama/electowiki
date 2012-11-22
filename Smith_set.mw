@@ -1,21 +1,42 @@
-The '''Smith set''' is the smallest non-empty set of candidates such that every candidate in the set beats every candidate outside of the set in a pair-wise contest.
-The Smith set represents one approach to identifying a subset of candidates from which an election method should choose a winner.  
-An election method that always chooses a winner from the Smith Set satisfies the Smith Criterion.
-The Smith set is defined for any election in which every candidate is evaluated against every other candidate in pair-wise contests that each result either in a tie or with one of candidates beating the other.
+There are two definitions of the '''Smith set'''. One is general and holds for any voting method; the other can be used only when the votes permit a comparison of any pair of candidates. Thus, the Robert's Rules single elimination pairwise voting method (which is used for voting on motions and amendments) requires the more general definition because it doesn't elicit enough information to allow all pairs of alternatives to be compared. Most voting methods that use a single round of voting--even methods like Plurality Rule and Approval--are compatible with both definitions. (However, the definitions should be used cautiously when the voting method does not allow a vote to contain the voter's order of preference, because the pairwise comparisons will undercount voters and thus be misleading.)
 
-The [[Schwartz set]] is a related set.
+The less general (but simpler) definition: The Smith set is the smallest non-empty subset of candidates such that, for each candidate ''x'' in the subset and each candidate ''y'' not in the subset, the number of votes that have ''x'' better than ''y'' exceeds the number of votes that have ''y'' better than ''x''. 
+
+The general definition: The Smith set is the subset of candidates {''x'' such that, for all ''y'' not equal to ''x'', there exists an arrangement of ''k'' candidates ''z''<sub>1</sub>,''z''<sub>2</sub>,...,''z''<sub>''k''</sub> where ''z''<sub>1</sub> = ''x'' and ''z''<sub>''k''</sub> = ''y'' and for all ''i'' from 1 to ''k''-1 the number of votes that have ''z''<sub>''i''</sub> better than ''z''<sub>''i''+1</sub> is at least as large as the number of votes that have ''z''<sub>''i''+1</sub> better than ''z''<sub>''i''</sub>.} In other words, ''x'' is in the Smith set if and only if, for all ''y'' not equal to ''x'' there exists a "beats-or-ties path" from ''x'' to ''y''.
+
+Example:
+:35% rank A > B > C.
+:20% rank B > A > C.
+:45% rank C > B > A.
+The Smith set is {B} with either definition. 
+Using the less general definition: B is voted over A by a (65%) majority and B is voted over C by a (55%) majority, and the only smaller subset of the candidates is empty.
+Using the general definition: B is in the subset: When z<sub>k</sub>=A, we can pick k=2; the number of votes that rank z<sub>1</sub>(B) over z<sub>2</sub>(A) is 65% and exceeds the number that rank z<sub>2</sub> over z<sub>1</sub>. When z<sub>k</sub>=C, pick k=2; the number of votes that rank B over C (55%) exceeds the number that rank C over B. A is not in the subset: When y=B, so that z<sub>k</sub>=B, there does not exist a candidate z<sub>k-1</sub> such that the number of votes that rank z<sub>k-1</sub> over B exceeds the number of votes that rank B over z<sub>k-1</sub>. C is not in the subset, by the same reasoning.
+
+The Smith set represents one approach to identifying a subset of candidates from which an election method should choose a winner. The idea is to choose the "best compromise." (In the example above, B is the first or second choice of every voter.) The most widely used voting method, the sequential pairwise elimination method used when voting on motions and amendments under Robert's Rules of Order, always chooses an alternative in the Smith set.
+
+An election method that always elects a candidate in the Smith Set is said to satisfy the Smith criterion.
+
+Also of note is the '''sincere Smith set''': the smallest non-empty set of candidates such that every candidate in the set is ''sincerely preferred'' by a majority of the voters over every candidate not in the set. Since the definition depends on voters' preferences, it does not matter what voting method is used, assuming voters' preferences do not depend on the voting method. However, that assumption is naive, because candidates who want to win choose positions on issues that they hope will help them win, and winning positions depend in part on the voting method, and candidates' positions affect voters' preferences. For example, Plurality Rule, Top Two Runoff, Instant Runoff and many other methods can cause candidates to avoid centrist positions due to the risk of being sandwiched between a candidate "on the left" and a candidate "on the right" whereas voting methods that satisfy the Smith criterion can cause candidates to take more centrist positions. In this important sense, the sincere Smith set (and the voted Smith set) depend on the voting method. However, this is beyond the scope of this article. (Unfortunately, many comparisons of voting methods naively oversimplify their analysis by assuming candidates' positions and voters' preferences are constant, and neglect the possibility that the most important criteria for comparing voting methods may involve the effects that voting methods have on candidates' positions.)
+
+The Smith set can differ from the sincere Smith set because votes may misrepresent voters' preferences. (Voters sometimes have an incentive to strategically misrepresent their preferences, as the Gibbard-Satterthwaite "manipulability" theorem shows. Also, some voting methods such as "vote for one, plurality rule" and Approval Voting simply do not allow voters to accurately represent their preferences when there are more than two candidates.) When people say it is desirable that voting methods satisfy the Smith criterion, what they usually mean is that a candidate in the sincere Smith set should be elected. (Similarly, when people say it is desirable that voting methods satisfy the [[Condorcet criterion]] they mean it is desirable to elect the ''sincere'' Condorcet winner--which is defined according to voters' preferences rather than votes--when it exists.) 
+
+Satisfaction of the Smith criterion does not imply the winner is in the sincere Smith set. Therefore, satisfaction of additional criteria (for example, [[Truncation Resistance]] and [[Minimal Defense criterion]]) can help to elect a candidate in the sincere Smith set.
+
+Two other names for the Smith set are the Top Cycle and the GETCHA set.
 
 ==Properties==
 
 The Smith set is the maximal cycle equivalence class of the [[Beatpath#Beat-or-tie_path | beat-or-tie order]].
 
-The Smith set always exists, when it is defined.  It can have more than one candidate, either because of pair-wise ties or because of cycles, such as in [[Condorcet's paradox]].
+The Smith set and the sincere Smith set always exist, regardless of the voting method. When a [[Condorcet Criterion |Condorcet winner]] exists, the Smith set contains only that candidate. This means every voting method that satisfies the Smith criterion also satisfies the [[Condorcet criterion]]. Similarly, when a sincere Condorcet winner exists, the sincere Smith set contains only that candidate.
 
-The Smith set always contains the [[Condorcet Criterion |Condorcet winner]] and any [http://en.wikipedia.org/wiki/Condorcet_method#Related_terms weak Condorcet winners], if they exist. If the Smith set contains only one candidate, that candidate is the Condorcet winner.  If there is a Condorcet winner, it is the only candidate in the Smith set.
+If the Smith set contains more than one candidate, this is due to majority cycles such as in [[Condorcet's paradox]], or to pairwise ties.
 
-If the Smith set contains more than one candidate, any two candidates in the set are in a [[Beatpath#Beat-or-tie_path | beat-or-tie]] cycle with each other.
+The Smith set always contains the [http://en.wikipedia.org/wiki/Condorcet_method#Related_terms weak Condorcet winners] if they exist.
 
-The Schwartz set is always a subset of the Smith set.  The Schwartz set is equal to the Smith set except when there is a candidate in the Schwartz set that has a pair-wise tie with a candidate outside of the Schwartz set.
+The [[Schwartz set]] is always a subset of the Smith set.  The Schwartz set is equal to the Smith set except when there is a candidate in the Schwartz set that has a pairwise tie with a candidate outside of the Schwartz set.
+
+The Uncovered set and the Banks set are also subsets of the Smith set. The Banks set is defined as the alternatives that can win given the Robert's Rules sequential pairwise voting method for at least one agenda order of candidates, assuming the voters are strategically sophisticated and know each others' preferences. (An assumption more likely to hold when the voters are a professional legislature.)
 
 Some examples of the Smith set and Schwartz set are provided, some [[Beatpath examples 3 | with 3 candidates]] or with [[Beatpath example 12 | 12 candidates]].
 
