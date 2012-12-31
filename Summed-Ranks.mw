@@ -1,0 +1,82 @@
+Summed-Ranks
+
+(abbreviated SR)
+ 
+Rankings may be of any length, ranking as many or as few candidates as desired. Several candidates can be ranked at a same rank position.
+ 
+The winner is the candidate with the fewest candidates ranked over him/her, as summed over all of the ballots.
+ 
+(For instance, if there are 3 ballots, and one of them ranks 2 candidates over X, and one ranks 3 candidates over X, and one ranks 5 candidates over X, then, overall, X has 10 candidates ranked over him, as summed over all the ballots).
+ 
+A ballot "bottom-ranks" a candidate if it ranks someone over him/her, and it doesn't rank him/her over anyone.
+ 
+Each candidate bottom-ranked on a ballot is counted as having all candidates, including all of that ballot's other bottom-ranked candidates, ranked over him/her on that ballot.
+ 
+[end of Summed-Ranks definition]
+----
+
+Summed-Ranks is abbreviated "SR".
+ 
+SR meets criteria not met by other Borda versions. These are listed and defined below:
+ 
+1. The [[Favorite-Betrayal Criterion]]:
+ 
+A ballot votes a candidate at top if it votes that candidate over someone, and doesn't vote anyone over that candidate.
+ 
+Moving a candidate to top on a ballot shouldn't change the winner from a candidate then voted at top on that ballot to a candidate not then voted at top on that ballot
+ 
+[end of Favorite-Betrayal Criterion definition]
+ 
+Favorite-Betrayal Criterion is abbreviated "FBC".
+ 
+Because of SR's FBC compliance, SR gives no incentive or need for the "compromise strategy" described below in this article. There's never a reason to not rank one's favorite in 1st place, along with whatever compromise(s) one wishes to also rank there.
+ 
+FBC is important because "favorite-burial", voting other candidates over one's favorite, drastically distorts public wishes and preferences, with obvious seriously adverse societal results.
+ 
+2. [[Later-No-Help]]:
+ 
+If some candidates have been voted-for on a ballot, then causing the winner to be one of those already voted-for should never require voting for additional candidates on that ballot.
+ 
+To vote for a candidate is to vote that candidate over someone.
+ 
+[end of Later-No-Help definition]
+ 
+Later-No-Help is abbreviated "LNHe".
+ 
+Because of SR's LNHe compliance, SR never gives incentive or need to rank unacceptable candidates. If the most important goal is to keep the winner from coming from a certain set, then, for that goal, it it's never necessary to rank any member of that set.
+ 
+3. SR's other criterion-compliances are similar to those of other Borda versions. For example, SR passes [[Participation]] and [[Consistency]], and fails Independence from Irrelevant Alternatives (IIAC) and Clone-Independence (but, as described below, SR's clone problem is greatly alleviated).
+ 
+In addition to Participation, SR passes Participation's more-easily-passed variations:
+ 
+Mono-Add-Top:
+ 
+Adding, to the election, a ballot that votes X at top shouldn't cause X to lose.
+ 
+Mono-Add-Unique-Top:
+ 
+Adding a ballot that votes X over everyone else shoudln't cause X to lose.
+ 
+Instant Runoff, Majority-Judgment, and all Condorcet versions, fail Participation, Mono-Add-Top, and Mono-Add-Unique-Top.
+ 
+Summed-Ranks (SR) is a relatively new proposal, and likely hasn't been used.
+ 
+--------------------------------------------------------------------------------
+
+SR greatly alleviates the typical Borda clone problem. In ordinary Borda, it's advantageous for a faction or party to nominate many indentical candidates. Even when the alternatives-set is fixed, sets of very simiilar alternatives are favored.
+ 
+But SR's treatment of bottom-ranked candidates penalizes that large number of identical candidates, on ballots that bottom-rank them.
+ 
+SR is Approval, for voters who only use the two rank levels of top and unranked.
+ 
+SR can be justified only if its count is a lot easier than that of the best Condorcet methods. Such is the case.
+ 
+SR's count labor is proportional only to the first power of the number of candidates. It's only necessary to make one pass through each ballot.
+ 
+SR's method-chosen ratings for each rank position can be regarded as approximations to the ratings that voters would assign in Score--but voters are relieved of the task of rating. In that way, SR approximates Score's social-utility maximization under sincere voting, and Score's fractional ratings due to uncertainty or for defection-deterrence in a divided majority.
+ 
+SR is for when it's desired to give voters the simple instruction to mark 1st choice(s), 2nd choice(s), etc., instead of asking them to rate the candidates or alternatives, and the number of alternatives is prohibitively large for a Condorcet handcount, and a Condorcet-programmed computer isn't available to do the count.
+ 
+It has been argued that a handcount is the only secure count, for official public elections.
+ 
+SR's uniquely simple definition and count rule are also an acceptance-advantage over other rank methods.
