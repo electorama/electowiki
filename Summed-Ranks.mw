@@ -19,7 +19,7 @@ Summed-Ranks is abbreviated "SR".
  
 SR meets criteria not met by other Borda versions. These are listed and defined below:
  
-1. The [[Favorite-Betrayal Criterion]]:
+1. The Favorite-Betrayal Criterion ([[FBC]]):
  
 A ballot votes a candidate at top if it votes that candidate over someone, and doesn't vote anyone over that candidate.
  
