@@ -45,7 +45,7 @@ Later-No-Help is abbreviated "LNHe".
  
 Because of SR's LNHe compliance, SR never gives incentive or need to rank unacceptable candidates. If the most important goal is to keep the winner from coming from a certain set, then, for that goal, it it's never necessary to rank any member of that set.
  
-3. SR's other criterion-compliances are similar to those of other Borda versions. For example, SR passes [[Participation]] and [[Consistency]], and fails Independence from Irrelevant Alternatives (IIAC) and Clone-Independence (but, as described below, SR's clone problem is greatly alleviated).
+3. SR's other criterion-compliances are similar to those of other Borda versions. For example, SR passes Participation and [[Consistency]], and fails Independence from Irrelevant Alternatives (IIAC) and Clone-Independence (but, as described below, SR's clone problem is greatly alleviated).
  
 In addition to Participation, SR passes Participation's more-easily-passed variations:
  
