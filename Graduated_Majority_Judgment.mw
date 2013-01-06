@@ -1,8 +1,19 @@
 Like its predecessor [[Majority Judgment]], '''Continuous Majority Judgment''' or '''CMJ''' is a single-winner, median-based voting system. It works as follows:
 
 # Each voter grades each candidate on a grading scale such as A, B, C, D, F
+# The top-grade (eg, A) votes for each candidate are tallied.
+# If a single candidate has a majority (that is, a number of votes greater than or equal to 50% of voters), they win.
+# If no candidate has a majority, the next grade down (eg, B) is added to the tally, and go back to step 3.
+# If more than one candidate has a majority, the last grade tallied is removed from the tallies, and then re-added at the smallest fraction possible so that some candidate has a majority. This is as if the votes at that grade were added 1% at a time until one candidate gets a majority.
+
+The above process is conceptually simple, but difficult in practice. The following process gives the same results, and is simpler to run in practice:
+
+
+# Each voter grades each candidate on a grading scale such as A, B, C, D, F
 # Each grade for each candidate is tallied.
 # The tallies are used to find the median grade for each candidate.
 # Tallies are added to find the V(>M), V(@M), and V(>M) (that is, votes above median, votes at median, and votes below median or blank) for each candidate.
 # A candidate's adjustment is a number between -0.5 and +0.5, calculated using the formula (V(>M) - V(<M)) / (2 * V(@M))
 # The candidate with the highest adjustment among those with the highest median, wins.
+
+If medians are converted to integers (such as 0-4), then the adjusted median scores can easily be reported alongside the full tallies.
