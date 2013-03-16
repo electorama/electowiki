@@ -845,7 +845,7 @@ Each figure represents the number of voters who ranked the candidate at the left
 * [http://condorcet.ericgorr.net/ Condorcet Voting Calculator] by Eric Gorr
 * [http://selectricity.org/ Selectricity] and [http://rubyvote.rubyforge.org/ RubyVote] by Benjamin Mako Hill [http://web.mit.edu/newsoffice/2008/voting-tt0312.html] [http://labcast.media.mit.edu/?p=56]
 * [http://relet.net/frog/archives/52 Java implementation of the Schulze method] by Thomas Hirsch
-* [https://bitbucket.org/capitol/schulze] implementation in c++ with python bindings by Alexander KjÃ¤ll
+* [https://bitbucket.org/capitol/schulze schulze implementation] implementation in c++ with python bindings by Alexander KjÃ¤ll
 * [http://wiki.electorama.com/wiki/Electowidget Electowidget] by Rob Lanphier
 * [http://www.votator.com Votator.com] by Louis Philippe Lessard [http://www.votator.com/howitworks/]
 * [http://www.livejournal.com/community/evan_tech/124253.html Haskell Condorcet Module] by Evan Martin
