@@ -1,0 +1,14 @@
+Each voter submits a ballot which, for each candidate, indicates a numeric score which is less than or equal to some maximum number MAX.
+
+Each ballot is given an initial "weight" of 1.
+
+Repeat the following P times, where P is the number of winners to be chosen:
+
+1. The weighted scores on the ballots are summed for each candidate, thus obtaining that candidate's total score. 
+
+2. The candidate with the highest total score (who has not already won), is declared a winner.
+
+3. When a voter "gets her way" in the sense that a candidate she rated highly wins, her ballot weight is reduced so that she has less influence on later choices of winners. To accomplish that, each ballot is given a new weight = 1/(1+SUM/MAX), where SUM is the sum of the scores that ballot gives to the winners-so-far (if one person won multiple seats, they contribute multiple times to SUM).
+
+
+See http://www.rangevoting.org/RRV.html for more details (some of the wording on this page is taken from there). A variant is to use the reweighting formula 0.5/(0.5 + SUM/MAX).
