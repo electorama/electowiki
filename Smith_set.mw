@@ -1,4 +1,26 @@
-There are two definitions of the '''Smith set'''. One is general and holds for any voting method; the other can be used only when the votes permit a comparison of any pair of candidates. Thus, the Robert's Rules single elimination pairwise voting method (which is used for voting on motions and amendments) requires the more general definition because it doesn't elicit enough information to allow all pairs of alternatives to be compared. Most voting methods that use a single round of voting--even methods like Plurality Rule and Approval--are compatible with both definitions. (However, the definitions should be used cautiously when the voting method does not allow a vote to contain the voter's order of preference, because the pairwise comparisons will undercount voters and thus be misleading.)
+There are two definitions of the '''Smith set'''. One is general and holds for any voting method; the other can be used only when the votes permit a comparison of any pair of candidates. Thus, the Robert's Rules single elimination pairwise voting method (which is used for voting on motions and amendments) requires the more general definition because it doesn't elicit enough information to allow all pairs of alternatives to be compared. Most voting methods that use a single round of voting--even methods like Plurality Rule and Approval--are compatible with both definitions. 
+
+[Actually, Plurality and Approval always choose from the Smith set, when the definition referred to here as the simple definition is used. In that way, Plurality and Approval pass the Smith Criterion as it is often defined. But not when the Smith Criterion is defined as I define it two paragraphs below on this page]
+
+(However, the definitions should be used cautiously when the voting method does not allow a vote to contain the voter's order of preference, because the pairwise comparisons will undercount voters and thus be misleading.)
+
+The "Sincere Smith set", (also mentioned below on this page)is the basis for a definition of the Smith Criterion that is applicable to all voting systems, including Plurality and Approval. 
+
+Definition of sincere Smith set:
+
+X is socially preferred to Y if more voters prefer X to Y than prefer Y to X.
+
+The sincere Smith set is the smallest set of candidates such that every candidate in the set is socially preferred to every candidate outside the set.
+
+Smith Criterion:
+
+If everyone votes sincerely, the winner should come from the sincere Smith set.
+
+[end of Smith Criterion definition]
+
+Note that this definition is applicable to Plurality and Approval (which don't pass), and is also applicable to Sequential Pairwise (which passes).
+
+If the Smith Criterion were defined in terms of the voted Smith set, Plurality and Approval would pass.
 
 The less general (but simpler) definition: The Smith set is the smallest non-empty subset of candidates such that, for each candidate ''x'' in the subset and each candidate ''y'' not in the subset, the number of votes that have ''x'' better than ''y'' exceeds the number of votes that have ''y'' better than ''x''. 
 
@@ -16,7 +38,7 @@ The Smith set represents one approach to identifying a subset of candidates from
 
 An election method that always elects a candidate in the Smith Set is said to satisfy the Smith criterion.
 
-Also of note is the '''sincere Smith set''': the smallest non-empty set of candidates such that every candidate in the set is ''sincerely preferred'' by a majority of the voters over every candidate not in the set. Since the definition depends on voters' preferences, it does not matter what voting method is used, assuming voters' preferences do not depend on the voting method. However, that assumption is naive, because candidates who want to win choose positions on issues that they hope will help them win, and winning positions depend in part on the voting method, and candidates' positions affect voters' preferences. For example, Plurality Rule, Top Two Runoff, Instant Runoff and many other methods can cause candidates to avoid centrist positions due to the risk of being sandwiched between a candidate "on the left" and a candidate "on the right" whereas voting methods that satisfy the Smith criterion can cause candidates to take more centrist positions. In this important sense, the sincere Smith set (and the voted Smith set) depend on the voting method. However, this is beyond the scope of this article. (Unfortunately, many comparisons of voting methods naively oversimplify their analysis by assuming candidates' positions and voters' preferences are constant, and neglect the possibility that the most important criteria for comparing voting methods may involve the effects that voting methods have on candidates' positions.)
+Also of note is the '''sincere Smith set''': the smallest non-empty set of candidates such that every candidate in the set is ''sincerely preferred'' by a majority of the voters over every candidate not in the set. (That isn't correct. It's only necessary that each candidate in the set be preferred to each candidate outside the set by more voters than vice-versa. It needn't be a majority Maybe some voters are indifferent between some candidate-pairs] Since the definition depends on voters' preferences, it does not matter what voting method is used, assuming voters' preferences do not depend on the voting method. However, that assumption is naive, because candidates who want to win choose positions on issues that they hope will help them win, and winning positions depend in part on the voting method, and candidates' positions affect voters' preferences. For example, Plurality Rule, Top Two Runoff, Instant Runoff and many other methods can cause candidates to avoid centrist positions due to the risk of being sandwiched between a candidate "on the left" and a candidate "on the right" whereas voting methods that satisfy the Smith criterion can cause candidates to take more centrist positions. In this important sense, the sincere Smith set (and the voted Smith set) depend on the voting method. However, this is beyond the scope of this article. (Unfortunately, many comparisons of voting methods naively oversimplify their analysis by assuming candidates' positions and voters' preferences are constant, and neglect the possibility that the most important criteria for comparing voting methods may involve the effects that voting methods have on candidates' positions.)
 
 The Smith set can differ from the sincere Smith set because votes may misrepresent voters' preferences. (Voters sometimes have an incentive to strategically misrepresent their preferences, as the Gibbard-Satterthwaite "manipulability" theorem shows. Also, some voting methods such as "vote for one, plurality rule" and Approval Voting simply do not allow voters to accurately represent their preferences when there are more than two candidates.) When people say it is desirable that voting methods satisfy the Smith criterion, what they usually mean is that a candidate in the sincere Smith set should be elected. (Similarly, when people say it is desirable that voting methods satisfy the [[Condorcet criterion]] they mean it is desirable to elect the ''sincere'' Condorcet winner--which is defined according to voters' preferences rather than votes--when it exists.) 
 
