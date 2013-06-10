@@ -1,0 +1,75 @@
+
+
+
+'''Definition of Schwartz Woodall:'''
+ 
+Do IRV till there remains un-eliminated only one member of the initial
+Schwartz set. Elect hir.
+ 
+[end of Schwartz Woodall definition]
+ 
+There are two equivalent definitions of the Schwartz set:
+ 
+X beats Y if more ballots rank X over Y than rank Y over X.
+ 
+The beatpath definition of the Schwartz set:
+ 
+There is a beatpath from X to Y if either X beats Y, or X beats
+something that has a beatpath to Y.
+ 
+X has a beatpath to Y if there is a beatpath from X to Y.
+ 
+X is in the Schwartz set if there is no Y such that there is a
+beatpath from Y to X, but not from X to Y.
+ 
+[end of beatpath definition of the Schwartz set]
+ 
+The unbeaten set definition of the Schwartz set:
+ 
+1. An unbeaten set is a set of candidates none of whom are beaten by
+anyone outside that set.
+ 
+2. An innermost unbeaten set is an unbeaten set that doesn't contain a
+smaller unbeaten set.
+ 
+3. The Schwartz set is the set of candidates who are in innermost unbeaten sets.
+ 
+[end of unbeaten set definition of the Schwartz set]
+ 
+For more information, go to the [[Woodall's method]] article.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Click here to Reply or Forward
