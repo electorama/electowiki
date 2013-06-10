@@ -7,21 +7,21 @@
 '''Woodall's method:'''
  
 Do IRV till only one member of the initial Smiths set remains
- un-eliminated. Elect hir.
+un-eliminated. Elect hir.
  
 [end of Woodall definition]
  
 Smith set:
  
 The Smith set is the smallest set of candidates such that every
- candidate in the set beats every candidate outside the set.
+candidate in the set beats every candidate outside the set.
  
 [end of Smith set definition]
  
 IRV definition (for the purpose of Woodall):
  
 Repeatedly, cross-off or delete from the rankings the candidate who
- tops the fewest rankings.
+tops the fewest rankings.
  
 [end of IRV definition for the purpose of Woodall]
  
@@ -49,15 +49,15 @@ Woodall doesn't meet [[FBC]]. FBC is necessary only under current conditions (di
 Definition of MMC:
  
 A mutual majority (MM) is a set of voters comprising a majority of the
- voters, who all prefer some same set of candidates to all of the other
- candidates.  That set of candidates is their MM-preferred set.
+voters, who all prefer some same set of candidates to all of the other
+candidates.  That set of candidates is their MM-preferred set.
  
 If a MM vote sincerely, then the winner should come from their MM-preferred set.
  
 A voter votes sincerely if s/he doesn't vote an unfelt preference, or
- fail to vote a felt preference that the balloting system in use would
- have allowed hir to vote in addition to the preferences that she
- actually does vote.
+fail to vote a felt preference that the balloting system in use would
+have allowed hir to vote in addition to the preferences that she
+actually does vote.
  
 To vote an unfelt preference is to vote X over Y if you prefer X to Y.
  
@@ -70,21 +70,21 @@ To vote an unfelt preference is to vote X over Y if you don't prefer X to Y.
 Consequences of Woodall's properties:
  
 As with IRV, Woodall's MMC compliance and freedom from chicken dilemma
- mean that a MM have no need to not rank sincerely. They can, by merely
- ranking sincerely, ensure that the winner will come from their
- MM-preferred set. They can assure that, even while fully, freely and sincerely choosing
- _among_ that MM preferred set by sincere ranking. And freedom from
- chicken dilemma means that that MM have no need to not rank sincerely.
+mean that a MM have no need to not rank sincerely. They can, by merely
+ranking sincerely, ensure that the winner will come from their
+MM-preferred set. They can assure that, even while fully, freely and sincerely choosing
+_among_ that MM preferred set by sincere ranking. And freedom from
+chicken dilemma means that that MM have no need to not rank sincerely.
  
 Therefore, IRV and Woodall guarantee automatic majority-rule
- enforcement for a mutual majority.
+enforcement for a mutual majority.
  
 But Woodall additionally, as well as possible, guarantees automatic
- majority rule to _all_ majorities, however constituted, by always
- electing the voted Condorcet winner (CW)
+majority rule to _all_ majorities, however constituted, by always
+electing the voted Condorcet winner (CW)
  
 The voted CW is the candidate (when there is one) who beats each one
- of the other candidates (as "beat" was defined above).
+of the other candidates (as "beat" was defined above).
  
 
 ----
@@ -92,15 +92,15 @@ The voted CW is the candidate (when there is one) who beats each one
 '''Benham's method:'''
  
 Benham is a method similar to Woodall. Benham can be defined a bit
- more briefly, because it doesn't mention the Smith set, though Benham,
- like Woodall, always chooses from the Smith set. But Woodall is more
- particular than Benham is, regarding which Smith set member it
- chooses.
+more briefly, because it doesn't mention the Smith set, though Benham,
+like Woodall, always chooses from the Smith set. But Woodall is more
+particular than Benham is, regarding which Smith set member it
+chooses.
  
 Benham:
  
 Do IRV till there is an un-eliminated candidate who beats each one of
- the other un-eliminated candidates. Elect hir.
+the other un-eliminated candidates. Elect hir.
  
 [end of Benham definition]
  
@@ -109,25 +109,25 @@ Do IRV till there is an un-eliminated candidate who beats each one of
 
  
 It should be pointed out that, of course, if there is a CW, then
- Woodall and Benham, by their above-stated definitions, will elect that
- CW without doing any IRV.
+Woodall and Benham, by their above-stated definitions, will elect that
+CW without doing any IRV.
  
 
 ----
 
  
 For current conditions (disinformational media and an electorate who
- believe those media), [[FBC]] is necessary. 
+believe those media), [[FBC]] is necessary. 
 
 [[Approval]], [[Score]] ("[[Range]]"), and
- [[Symmetrical ICT]] meet FBC, and are good proposals for current
- conditions.
+[[Symmetrical ICT]] meet FBC, and are good proposals for current
+conditions.
  
 FBC is important only for current conditions.
  
 But, other than for current conditions, FBC would no longer be needed,
- and then the powerful above-described properties-combinations of IRV, Woodall, and
- Benham become important and decisive.
+and then the powerful above-described properties-combinations of IRV, Woodall, and
+Benham become important and decisive.
  
 
 ----
@@ -135,12 +135,12 @@ But, other than for current conditions, FBC would no longer be needed,
 '''Schwartz Woodall'''
  
 Schwartz Woodall is a variation of Woodall, and an improvement for
- small electorates, such as organizations, meetings or families.
+small electorates, such as organizations, meetings or families.
  
 Schwartz Woodall:
  
 Do IRV till only one member of the initial Schwartz set remains
- un-eliminated. Elect hir.
+un-eliminated. Elect hir.
 
 [end of Schwartz Woodall definition]
  
@@ -149,22 +149,22 @@ The Schwartz set has two equivalent definitions:
 The beatpath definition of the Schwartz set:
  
 There is a beatpath from X to Y if X beats Y, or if X beats something
- that has a beatpath to Y.
+that has a beatpath to Y.
  
 X has a beatpath to Y if there is a beatpath from X to Y.
  
 X is in the Schwartz set if there is no Y such that there is a
- beatpath from Y to X, but not from X to Y.
+beatpath from Y to X, but not from X to Y.
  
 [end of beatpath definition of the Schwartz set]
  
 Unbeaten set definition of the Schwartz set:
  
 1. An unbeaten set is a set of candidates none of whom are beaten by
- anyone outside that set.
+anyone outside that set.
  
 2. An innermost unbeaten set is an unbeaten set that doesn't contain a
- smaller unbeaten set.
+smaller unbeaten set.
  
 3. The Schwartz set is the set of candidates who are in innermost unbeaten sets.
  
