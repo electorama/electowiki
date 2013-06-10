@@ -1,6 +1,6 @@
 '''Definition of Benham's method:'''
  
-Do IRV till there is an un-eliminated candidate who beats each one of
+Do IRV till there is a candidate who beats each one of
 the other un-eliminated candidates.
  
 X beats Y if more ballots rank X over Y than rank Y over X.
