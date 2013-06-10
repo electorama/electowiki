@@ -1,0 +1,10 @@
+'''Definition of Benham's method:'''
+ 
+Do IRV till there is an un-eliminated candidate who beats each one of
+ the other un-eliminated candidates.
+ 
+X beats Y if more ballots rank X over Y than rank Y over X.
+ 
+[end of Benham definition]
+ 
+For more information, go to the [[Woodall's method]] article.
