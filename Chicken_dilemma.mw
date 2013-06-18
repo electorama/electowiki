@@ -1,7 +1,1 @@
-The "chicken dilemma" refers to a situation where two similar candidates share a majority, but are opposed by one candidate which has a plurality against either of the two. That is to say, there is a [[Condorcet winner]] and a majority Condorcet loser, but not a majority Condorcet winner. In many voting systems, supporters of one of the two similar candidates have a dilemma, like a game of "chicken": they can either "cooperate" and support both similar candidates, helping to ensure the opposing plurality candidate loses but risking a win by the the less-preferred of the similar ones; or they can "betray" and support only their favorite candidate, trying to take advantage of cooperation by the other side.
-
-Here's an example of a chicken dilemma scenario, in the format of "#voters:true preferences":
-
-* 33: A>B>>C
-* 22: B>A>>C
-* 45: C>>A=B
+The "chicken dilemma" refers to a situation where two similar candidates share a majority, but are opposed by one candidate which has a plurality against either of the two. In many voting systems, supporters of one of the two similar candidates have a dilemma, like a game of "chicken": they can either "cooperate" and support both similar candidates, helping to ensure the opposing plurality candidate loses but risking a win by the the less-preferred of the similar ones; or they can "betray" and support only their favorite candidate, trying to take advantage of cooperation by the other side.
