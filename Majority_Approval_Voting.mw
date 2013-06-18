@@ -1,24 +1,5 @@
-Majority Approval Voting (MAV) is a modern, [[evaluative]] version of [[Bucklin voting]]. Voters rate each candidate into one of a predefined set of ratings or grades, such as the letter grades "A", "B", "C", "D", and "F". Blanks are counted as the lowest rating ("F"). As with any Bucklin system, first the top-grade ("A") votes for each candidate are counted as approvals. If one or more candidate has a majority, then the highest majority wins. If not, votes at next grade down ("B") are added to each candidate's approval total. If there are one or more candidates with a majority, the winner is whichever of those had more votes at higher grades (the previous stage). If there were no majorities, then the next grade down ("C") is added and the process repeats; and so on. 
+Majority Approval Voting (MAV) is a modern, [[evaluative]] version of [[Bucklin voting]]. Voters rate each candidate into one of a predefined set of ratings or grades, such as the letter grades "A", "B", "C", "D", and "F". As with any Bucklin system, first the top-level ("A") votes for each candidate are tallied, and if one candidate has a majority, they win. If not, the lower levels are added to the tallies, one at a time (ie, "B", then "C", etc.) until some candidate or candidates have a majority. If there are more than one candidates with a majority, the one of those who had the highest tally at the next level up (previous step) is the winner. If there are more than one candidates with a majority at the first step, then the one with the largest majority is the winner.
 
-Note that if this process continues without a majority until the last grade ("F") is added, no new rules are needed. Since by that point all grades will have been counted, all candidate tallies will reach 100%. The process above then naturally elects the candidate with the most approvals at the higher grades (D or above); that is, whichever has the fewest F's. This is a consistent way to resolve such an election, where the ballots show that no candidate has majority support at any level. However, in this case and in cases of multiple majorities, a runoff, if feasible, would be a way to ensure a clean win by a unique majority.
+The grades or ranks for this system could be numbers instead of letter grades. Terms such as "graded MAV" or "rated MAV" can be used to distinguish these possibilities if necessary. In either case, descriptive labels such as "A:Unconditional support" are recommended.
 
-== History ==
 This system was promoted and named due to the confusing array of Bucklin and Median proposals. It is intended to be a relatively generic, simple Bucklin option with good resistance to the [[chicken dilemma]]. It was named by a [http://lists.electorama.com/pipermail/election-methods-electorama.com/2013-June/031938.html poll] on the electorama mailing list in June 2013.
-
-== Number of and labels for grades ==
-The system has been described with 4 possibly-approved and 1 unapproved rating. The number of possibly-approved ratings could vary.
-
-The grades or ranks for this system could be numbers instead of letter grades. Terms such as "graded MAV" or "rated MAV" can be used to distinguish these possibilities if necessary. In either case, descriptive labels for the ratings or grades are recommended. For instance, for the letter grades:
-
-*A: Definite support
-*B: Probable support (if there are no majorities above "C" for other candidates)
-*C: Possible support (if there are no majorities above "D" for other candidates)
-*D: Probable opposition (unless no other candidate has a majority at any level)
-*F: Definite opposition.
-
-As the above labels indicate, support at the middle grades or ratings is not partial, as in [[Score voting]], but conditional. That is, the typical ballot will still count fully for or against a given candidate. The different grade levels are a way to help the voting system figure out how far to extend that support so that some candidate gets a majority.
-
-== Preliminary strategic analysis ==
-The following notes are based on rough calculations by Jameson Quinn. They should be regarded as tentative until further study has been completed.
-
-For a strategic voter, the most important ratings are the top ("A"), second-to-bottom ("D"), and bottom ("F"). A typical zero-knowledge strategy would be to give candidates in the best 30% of the quality range an "A", those in the next 25% a "D", and those in the bottom 45% an "F". If the typical "honest" voter roughly calibrates their grades to an academic curve, with a median vote at "B" or "C", then strategic and honest votes will mesh well. For instance, if candidates can differ on two dimensions, ideology and quality, and voters are normally distributed along the one dimension of ideology (with all voters preferring highest quality), then this system will tend to elect the candidate preferred by the median voter, that is, the one with the smallest sum of quality deficit plus ideological skew; and this tendency will hold for any unbiased combination of "honest" and "strategic" voters as defined above.
