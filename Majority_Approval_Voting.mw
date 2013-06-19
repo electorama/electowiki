@@ -10,11 +10,11 @@ The system has been described with 4 possibly-approved and 1 unapproved rating. 
 
 The grades or ranks for this system could be numbers instead of letter grades. Terms such as "graded MAV" or "rated MAV" can be used to distinguish these possibilities if necessary. In either case, descriptive labels for the ratings or grades are recommended. For instance, for the letter grades:
 
-*A: Unconditional support
-*B: Support if there are no other majorities above "C"
-*C: Support if there are no other majorities above "D"
-*D: Oppose unless there are no other majorities at all.
-*F: Unconditional opposition.
+*A: Definite support
+*B: Probable support (if there are no majorities above "C" for other candidates)
+*C: Possible support (if there are no majorities above "D" for other candidates)
+*D: Probable opposition (unless no other candidate has a majority at any level)
+*F: Defenite opposition.
 
 As the above labels indicate, support at the middle grades or ratings is not partial, as in [[Score voting]], but conditional. That is, the typical ballot will still count fully for or against a given candidate. The different grade levels are a way to help the voting system figure out how far to extend that support so that some candidate gets a majority.
 
