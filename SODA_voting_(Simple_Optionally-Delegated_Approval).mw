@@ -72,29 +72,7 @@ Steps marked "''(optional)''" are suggested, but only the four substeps in '''bo
 |}
 
 === Notes on rules ===
-==== The "Chicken Dilemma": resolved ====
-One of the toughest situations for any voting system is the "Chicken Dilemma" between two near-clones. Say there are 60% "Blue" voters and 40% "Orange" voters; but the Blue voters are split between two candidates, say 35% for Navy and 25% for Sky. Any good voting system will allow one of the Blue candidates to win, if all the Blue voters support both of their candidates. But under many systems, there is a temptation for the Sky voters not to support Navy, so as to make sure that Sky, rather than Navy, is the winner. But if the Navy voters respond in kind, then Orange could defeat them both.
-
-[[File:Chickendilemma.png]]
-
-This is called the "Chicken Dilemma" because it resembles a [http://en.wikipedia.org/wiki/Chicken_(game) game of chicken], in that both blue factions benefit from being the only one to deny support, but both lose if both deny support. In fact, since no single blue voter can reliably know exactly how other voters in the two blue factions will behave, it resembles a blindfolded game of chicken.
-
-This dilemma can be a problem for many voting systems. Approval voting, Range voting, Majority Judgment, and many Condorcet systems such as Schulze voting â€” all of them good systems â€” all can have some version of this problem. There are a few voting systems, such as IRV and some versions of Condorcet, which correctly elect Navy no matter what the Sky voters do. But these systems go too far in fixing the problem, and thus get bad results in some situations that superficially resemble the true "chicken" scenario in some way. For instance, if Orange voters strongly prefer Sky to Navy, IRV pushes them to dishonestly vote the "lesser evil" Sky over their true favorite Orange.
-
-If candidate predeclarations are honest, SODA almost entirely resolves the chicken dilemma. The two blue candidates can each make sure that the other one includes them in the predeclared preference order. Then, if all votes are delegated, Navy, starting with more approvals, will add approvals to those delegated votes first (after Orange), and not approve Sky. Sky will be forced to approve Navy, or see the orange candidate win. Thus, Navy will win â€” the correct result.
-
-If the Sky voters are especially strategically-inclined, they could give Sky non-delegable approvals instead of delegable votes. If Sky did not have enough delegable votes to help Navy defeat Orange, then Navy would be forced to approve Sky, and Sky would win. Of course, the Navy voters could do the same thing; either "defensively" or "in retaliation", it doesn't matter.
-
-However, Orange could resolve this dilemma if they wished to. Remember, Orange was required to predeclare a preference between Navy and Sky to start out with. Say they preferred Navy. If Sky voters tried the trick of casting non-delegated votes, as explained in the previous, then Orange would simply give enough votes to Navy to prevent Navy being forced to give votes to Sky. This thus resolves the chicken dilemma (almost) completely, without causing other bad scenarios; something no other serious voting reform proposal can claim.
-
-There is still technically a way this could fail: if Orange let it be known that they would not share votes despite their predeclarations, then the non-delegated trick could work for Sky voters, and so Navy voters could cast defensively non-delegated votes, and Orange could still win. And a similar process could happen if Orange voters cast non-delegated votes. However, this remnant of the Chicken dilemma involves third-order strategic thinking: Orange or their voters going out of their way to cause Navy voters to go out of their way to cause Sky voters not to go out of their way. It is rare enough to find evidence that voters are thinking in terms of even second-order strategy; the chances of third-order strategy being attempted seem negligible, and the chances of it working yet more so.
-
-==== Prevent weak minor candidates from having kingmaker power ====
-
-Step 3.b)ii. 
-This rule helps make this system more attractive to major-party politicians. But it's a principled rule, not just a sop to the major parties. Consider the "kingmaker" case: in a basically 50/50 split, some tiny party has the balance of votes, and manages to extract concessions far bigger than their base of support justifies, just in order to delegate those votes or not. That's unjust, and this rule would prevent it. 
-
-5% is a good cutoff here; for instance, nationally in the US, that's tens of millions of voters, and enough to deserve a voice. It shouldn't be too high, because this rule is effectively taking power away from voters; that's only justified if the faction is so small that the power is not legitimate, and so it's better to err a bit on the small side if anything. But under 5% - that is, under 10% of the winning coalition - doesn't deserve kingmaker power.
+(technical issues; moved to talk page)
 
 == Example ==
 
