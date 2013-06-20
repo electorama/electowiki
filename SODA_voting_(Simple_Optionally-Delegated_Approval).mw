@@ -162,10 +162,13 @@ This sounds appealing, but would not work if two similar candidates were in a cl
 In general, this system, because it provides perfect information on voting totals at the time when delegation is happening, will make strategy obvious. This has the paradoxical result that, as long as most voters agree with their favored candidate's chosen ranking order, this system will in practice be '''more Condorcet compliant than a Condorcet method''' (because strategy could confound a true Condorcet method more often than SODA).
 
 == Criteria Compliance ==
+SODA itself does not satisfy [[monotonicity]] due to a complicated and implausible scenario involving 5 or more candidates. However, a slightly-modified version in which, before the delegated assignments, candidates can self-assign a penalty to be assessed at the end of the delegated assignment round, does. This modified version, MODA, is effectively identical to SODA for any plausible real-world election.
 
-SODA satisfies [[monotonicity]], the [[favorite betrayal criterion]], the [[majority criterion]], and the [[mutual majority criterion]]. Depending on assumptions and definitions, it can pass the [[Condorcet loser criterion]].
+MODA satisfies [[monotonicity]], the [[favorite betrayal criterion]], the [[majority criterion]], and the [[mutual majority criterion]]. Depending on assumptions and definitions, it can pass the [[Condorcet loser criterion]].
 
 It does not satisfy the [[independence of irrelevant alternatives]] criterion in general, but it does if the "irrelevant alternative" is assumed to delegate votes in the same way as any candidate whose delegable votes they supplant. Similarly, it can only pass the [[participation]] and [[consistency]] criteria if it is assumed that candidate delegations do not change. These assumptions are ''not'' realistic, but they do show that the method is in some sense "close to" passing these criteria.
+
+In any case where honest delegation could show a majority Condorcet winner, such delegation forms a strong Nash equilibrium. This shows that in general, strategic refusal to delegate is likely to fail.
 
 === Condorcet criterion (includes highly technical discussion) ===
 SODA fails the [[Condorcet criterion]], although the majority Condorcet winner over the ranking-augmented ballots is the unique strong, subgame-perfect equilibrium winner. That is to say that, the method would in fact pass the ''majority'' Condorcet winner criterion, assuming the following:
