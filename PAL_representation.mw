@@ -2,21 +2,21 @@ PAL (Proportional, Accountable, Local) representation is a system for electing a
 
 The basic idea is:
 
-* Candidates pre-announce their preference among parties and their approvals within parties.
+* Candidates pre-announce their preference among parties and their approvals within their party.
 * Voters may vote on the candidates in their or nearby districts, or write in candidates from farther off. Single-candidate "bullet" votes are delegated to that candidate but voters may refuse to delegate by voting for more than one candidate.
 * A legislature is elected by a version of [[STV]] (with fractional transfers and a Droop quota.)
 * For each party with more than one seat, the districts are automatically divided among the party representatives.
 * Your representative is the member of the party you voted for who is representing your district.
 
 == Full Procedure ==
-* Candidates pre-announce their rank-ordering of the parties (starting with their own party) and may optionally approve/disapprove within each party.
+* Candidates pre-announce their rank-ordering of the other parties. They may also designate a subset of the candidates in their own party ("their faction") as preferred.
 * Voters may vote on the candidates in their or nearby districts, or write in candidates from farther off.
 *: To simplify the ballots, districts are grouped into sets of 2 or 3 "super-districts". The ballot for each district lists the incumbents and candidates from that individual district in a larger font, and the candidates from its super-districts below that in a smaller font. Write-ins may be used to vote for candidates from outside the super-district. Larger parties will usually run one candidate per district; smaller parties may run just one candidate per super-district.
-* Each vote is transformed into the pre-announced party preference order and individual approvals/disapprovals of the candidate it chooses. Votes will never be transferred to a candidate who was disapproved in the pre-announced list.
+* Any ballot which votes for one candidate only will go to that candidate as long as they remain in the running; then be divided among all "same faction/same party" candidates equally, as long as there are any; then among all "same party" candidates, as long as there are any; then among the candidates for the second preference party; then third, then fourth, etc.
 * A legislature is elected by a modified version of [[STV]], using the following steps:
 # The iteration number I is set to 0. (Higher iteration numbers mean lower quotas. The process will be run with an increasing iteration number until a full slate of candidates reaches the quota)
 # The quota Q is set to the rational number (V+1)/(S+I), where V is valid votes and S is seats. (For the first iteration, this is a form of the [[Hare quota]]. However, it is likely that the process will usually run for exactly two iterations, so the quota will end up being a form of the [[Droop quota]].)
-# Delegated votes first count full-weight for their chosen candidate. Once that candidate is elected or eliminated, a vote is divided equally among all non-disapproved, non-eliminated members of the top party remaining on that ballot with any such members.
+# Delegated votes first count full-weight for their chosen candidate. Once that candidate is elected or eliminated, a vote is divided equally among all non-eliminated members of approved faction of the same party. Once there are no more of those, the vote is divided among the non-eliminated members of the surviving party which was most preferred by the voted candidate.
 # Undelegated votes are divided equally among all approved, non-eliminated candidates on that ballot.
 # Any candidates who reach the quota are immediately and simultaneously elected, and their ballots are reweighted to eliminate a quota.
 #* They keep the remaining fraction of the ballots which elected them, one quota in total. This is used later during the draft phase to help decide which additional districts, besides their home district, they will represent.
