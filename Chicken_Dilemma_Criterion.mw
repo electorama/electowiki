@@ -4,30 +4,31 @@
 
 '''Supporting definitions:'''
 
-1. The A voters are the voters who prefer candidate A to everyone else. The B voters are the voters who prefer candidate B to everyone else.
+1. The A voters are the voters who prefer candidate A to everyone else. The B voters are the voters who prefer candidate B to everyone else. The C voters are the voters who prefer C to everyone else.
 
-2. The "other candidates" are the candidates other than A and B.
-
-3. A particular voter votes sincerely if s/he doesn't falsify a
+2. A particular voter votes sincerely if s/he doesn't falsify a
 preference, or fail to vote a felt preference that the balloting
 system in use would have allowed hir to vote in addition to the
 preferences that s/he actually votes.
 
 '''Premise:'''
 
-1. The A voters and the B voters, combined, add up to more than half
+1. There are 3 candidates: A, B, and C.
+
+2. The A voters and the B voters, combined, add up to more than half
 of the voters in the election.
 
-2. The A voters and the B voters all prefer both A and B to the other
-candidates.
+3. The A voters and the B voters all prefer both A and B to C.
 
-3. The A voters are more numerous than are the B voters.
+4. The A voters are more numerous than are the B voters.
 
-4. Voting is sincere, except that the B voters refuse to vote A over anyone.
+5. Voting is sincere, except that the B voters refuse to vote A over anyone.
 
-5. Candidate A would be the unique winner under sincere voting (...in
+6. Candidate A would be the unique winner under sincere voting (...in
 other words, if the B voters voted sincerely, as do all the other
 voters).
+
+7. The C voters are indifferent between A and B, and vote neither over the other.
 
 '''Requirement:'''
 
@@ -44,4 +45,4 @@ In the chicken dilemma scenario described in the premise of the Chicken Dilemma 
 
 '''Some methods that pass the Chicken Dilemma Criterion:'''
 
-ICT, [[Symmetrical ICT]], [[MMPO]], MDDTR
+ICT, [[Symmetrical ICT]], [[MMPO]], MDDTR, [[IRV]], [[Benham's method]], [[Woodall's method]]
