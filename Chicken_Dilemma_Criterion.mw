@@ -4,7 +4,7 @@
 
 '''Supporting definition:'''
 
-The A voters are the voters who prefer candidate A to everyone else and vote A over everyone else. The B voters are the voters who prefer candidate B to everyone else and vote B over everyone else. The C voters are the voters who prefer C to everyone else and vote C over everyone else.
+The A voters are the voters who vote A over everyone else. The B voters are the voters who vote B over everyone else. The C voters are the voters who vote C over everyone else.
 
 
 '''Premise:'''
