@@ -2,18 +2,9 @@
 == Definition ==
 
 
-'''Supporting definitions:'''
+'''Supporting definition:'''
 
-1. The A voters are the voters who prefer candidate A to everyone else. The B voters are the voters who prefer candidate B to everyone else. The C voters are the voters who prefer C to everyone else.
-
-2. A particular voter votes sincerely if s/he doesn't falsify a
-preference, or fail to vote a felt preference that the balloting
-system in use would have allowed hir to vote in addition to the
-preferences that s/he actually votes.
-
-Falsifying a preference means voting X over Y and not preferring X to Y.
-
-Failing to vote a felt preference means preferring X to Y and not voting X over Y.
+The A voters are the voters who prefer candidate A to everyone else and vote A over everyone else. The B voters are the voters who prefer candidate B to everyone else and vote B over everyone else. The C voters are the voters who prefer C to everyone else and vote C over everyone else.
 
 
 '''Premise:'''
@@ -23,17 +14,11 @@ Failing to vote a felt preference means preferring X to Y and not voting X over 
 2. The A voters and the B voters, combined, add up to more than half
 of the voters in the election.
 
-3. The A voters and the B voters all prefer both A and B to C.
+3. The A voters are more numerous than the B voters. The C voters are more numerous than the A voters, and more numerous than the B voters.
 
-4. The A voters are more numerous than the B voters. The C voters are more numerous than the A voters, and more numerous than the B voters.
+4. The A voters vote B over C. The B voters refuse to vote A over anyone.
 
-5. Voting is sincere, except that the B voters refuse to vote A over anyone.
-
-6. Candidate A would be the unique winner under sincere voting (...in
-other words, if the B voters voted sincerely, as do all the other
-voters).
-
-7. The C voters are indifferent between A and B, and none of the C voters vote A or B over the other.
+5. None of the C voters vote A or B over the other. 
 
 '''Requirement:'''
 
