@@ -11,6 +11,11 @@ preference, or fail to vote a felt preference that the balloting
 system in use would have allowed hir to vote in addition to the
 preferences that s/he actually votes.
 
+Falsifying a preference means voting X over Y and not preferring X to Y.
+
+Failing to vote a felt preference means preferring X to Y and not voting X over Y.
+
+
 '''Premise:'''
 
 1. There are 3 candidates: A, B, and C.
@@ -28,7 +33,7 @@ of the voters in the election.
 other words, if the B voters voted sincerely, as do all the other
 voters).
 
-7. The C voters are indifferent between A and B, and vote neither over the other.
+7. The C voters are indifferent between A and B, and none of the C voters vote A or B over the other.
 
 '''Requirement:'''
 
