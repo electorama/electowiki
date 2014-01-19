@@ -29,10 +29,47 @@ B doesn't win.
 
 ----
 
-In the chicken dilemma scenario described in the premise of the Chicken Dilemma Criterion (CD) defined above, if B won, then the B voters would have successfully taken advantage of the A voters' co-operativeness. The A voters wanted to vote both A and B over the candidates disliked by both the A voters and B voters. Thereby they helped {A,B} against worse candidates. But, with methods that fail CD, the message is "You help, you lose".
+In the chicken dilemma scenario described in the premise of the Chicken Dilemma Criterion (CD), defined above, if B won, then the B voters would have successfully taken advantage of the A voters' co-operativeness. The A voters wanted to vote both A and B over the candidate disliked by both the A voters and B voters. Thereby they helped {A,B} against the worse candidate. But, with methods that fail CD, the message is "You help, you lose".
 
 ----
 
 '''Some methods that pass the Chicken Dilemma Criterion:'''
 
 ICT, [[Symmetrical ICT]], [[MMPO]], MDDTR, [[IRV]], [[Benham's method]], [[Woodall's method]]
+
+----
+
+Because CD is so simple, such a simple situaton, could there be another
+simple implmentation of it?
+
+...maybe one that doesn't speak of numbers of voters in the factions?
+
+CD is sufficient, as-is, but here is a non-numerical definition:
+
+== CD2 ; ==
+
+'''Supporting definition:'''
+
+The A voters are the voters who vote A over everyone else. The B voters are
+the voters who vote B over everone else. The C voters are the voters
+who vote C over everyone else.
+
+'''Premise:'''
+
+1. There are 3 candidate: A, B, and C.
+
+2. If the A voters and B voters all voted both A and B over C,  then C
+couldn't win.
+
+3. The ballot set is such that if C withdrew from the election and the
+count, A would win.
+
+4.  The A voters vote B over C.
+
+5. The B voters don't vote A over anyone.
+
+'''Requirement:'''
+
+B doesn't win.
+
+[end of CD2 definition]
