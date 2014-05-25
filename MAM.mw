@@ -1,0 +1,47 @@
+MAM stands for [[Maximize Affirmed Majorities]]. That link leads to Steve Eppley's page about MAM, which includes a definition, properties, and additional information, and comparison to other somewhat similar methods.
+ 
+This page gives a slightly differently-worded definition of MAM, probably a litle briefer. It's a time-independent definition, which contrbutes to its brevity and simplicity:
+
+
+----
+
+
+'''MAM:'''
+
+Note that paragraph 6 concisely defines MAM. The other paragraphs are merely supporting-definitions for paragraph 6.
+
+(Paragraphs 1 through 4 are common to many other voting systems)
+
+
+1. X beats Y iff the number of ballots ranking X over Y is greater than the number of ballots ranking Y over X.
+
+2. If X beats Y, then there is said to be a "defeat" of Y, by X. "XY" refers to that defeat.
+
+3. XY is "stronger" than AB iff the number of ballots ranking X over Y is greater than the number of ballots ranking Y over X.
+
+...but if those numbers are equal, then XY is stronger than AB iff the number of ballots ranking B over A is greater than the number of ballots ranking Y over X.
+
+If neither XY nor AB is stronger than the other, then they're "equal".
+
+4. A "cycle" is a sequence of defeats in which each defeat's defeated candidate is the defeating candidate in the next defeat, 
+and in which the sequence's initial defeating candidate is the defeated candidate in the sequence's last defeat.
+
+5. A defeat "contradicts" a set of other defeats iff it is in a cycle consisting only of it and themn.
+
+6. A defeat is a "discarded defeat" iff it contradicts a set of not-discarded defeats each of which is either stronger than it, or equal to it and above it in the "dominance-order".
+
+7. How to determine two defeats' dominance-order:
+
+...a) Randomly choose one of the election's ballots. It will be referred to as the "comparison-ballot", and used as such for entire count, for all defeat-dominance-order comparisons.
+
+...b) If XY and AB are equal (neither stronger than the other, as defined above), then XY is above AB in the dominance order iff B is ranked higher than Y on the comparison ballot.
+
+...c) ...but if the comparison-ballot ranks Y and B equal (at the same rank-position), then XY is above AB in the dominance-order iff X is ranked higher than A on the comparison-ballot.
+
+...d) If XY and AB are equal, and if, by b) and c), neither XY nor AB is above the other in the dominance-order, then randomly choose another ballot as the comparison-ballot, for the purpose of comparing XY and AB with regard to dominance-order.
+
+8. A candidate wins if s/he has no not-discarded defeats.
+
+[end of MAM definition]
+
+For much more information about MAM, including a differently-worded definition, go to the above-linked-to MAM page by Steve Eppley.
