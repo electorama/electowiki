@@ -1,4 +1,4 @@
-Bucklin is a [[voting system]] that can be used for single-member districts and also multi-member districts.  It is also known as the Grand Junction system after Grand Junction, Colorado, where it was first proposed. It is closely related to [[Majority Choice Approval]] (MCA), which can be considered a form of Bucklin in which equal rankings are allowed. Modern theorists prefer MCA for its greater compliance with criteria.
+Bucklin is a [[voting system]] that can be used for single-member districts and also multi-member districts.  It is also known as the Grand Junction system after Grand Junction, Colorado, where it was first proposed. It is closely related to the class of [[graded Bucklin systems]], in which equal and/or skipped rankings are allowed, which includes such systems as [[Majority Choice Approval]] (MCA). Modern theorists tend to prefer graded Bucklin systems over ungraded ones, as they usually comply better with criteria such as [[FBC]].
 
 == How did it work? ==
 
