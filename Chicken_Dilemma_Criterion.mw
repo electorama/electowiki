@@ -19,9 +19,9 @@ One type of election scenario which is particularly fraught is when there is a m
 
 There are various ways to deal with this situation. For instance:
 
-- Some voting systems, such as approval voting, ignore the problem. Perhaps the assumption here is that it will be impossible to organize a defection without prompting a retaliation, and thus that both sides will prefer to cooperate. ("Mutual assured destruction"?)
-- Some voting systems, such as [[Majority Choice Approval]], try exploit the fact that each faction is not a single coordinated entity, but a group of individual voters. The idea is that if a small number of voters defect, they should be ignored; hopefully, in that situation, majority cooperation will be a stable strategy.
-- Other voting systems, such as [[ICT]], try to exploit the fact that in a real-world election, A and B are never perfectly balanced; one subfaction is always larger. In this case, a voting system can encourage the smaller group to cooperate by threatening to elect C (punishing both groups) if the smaller group defects. The criterion below is passed only by this kind of voting system.
+# Some voting systems, such as approval voting, ignore the problem. Perhaps the assumption here is that it will be impossible to organize a defection without prompting a retaliation, and thus that both sides will prefer to cooperate. ("Mutual assured destruction"?)
+# Some voting systems, such as [[Majority Choice Approval]], try exploit the fact that each faction is not a single coordinated entity, but a group of individual voters. The idea is that if a small number of voters defect, they should be ignored; hopefully, in that situation, majority cooperation will be a stable strategy.
+# Other voting systems, such as [[ICT]], try to exploit the fact that in a real-world election, A and B are never perfectly balanced; one subfaction is always larger. In this case, a voting system can encourage the smaller group to cooperate by threatening to elect C (punishing both groups) if the smaller group defects. The criterion below is passed only by this kind of voting system.
 
 == Definition ==
 
