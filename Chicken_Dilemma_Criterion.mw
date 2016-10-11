@@ -1,3 +1,26 @@
+One type of election scenario which is particularly fraught is when there is a majority split into two subfactions (below called A and B), competing against a united minority (below called C) that is bigger than either of the subfactions. This scenario has been called the "chicken dilemma" because in many election systems, the two majority subfactions are in a situation that resembles the classic "chicken" or "snowdrift game (especially if voters are not sure which of the two subfactions is larger). That is, if we assume each faction has a single, coordinated strategy defined as "cooperate" (vote both candidates A and B above bottom) or "defect" (bullet vote, with only the favorite above bottom), many voting systems lead to the following payoff matrix:
+
+
+
+{| id="Payoff matrix" style="background:white; float: right; clear:right; text-align:center;" align=right cellspacing=0 cellpadding=8 width=225
+|-
+|style="width:33%;                                                     "| 
+|style="width:33%;                      border-bottom: solid black 1px;"| Swerve
+|style="width:33%;                      border-bottom: solid black 1px;"| Straight
+|style="border-right:  solid black 1px; text-align: right;             "| Swerve
+|style="border-right:  solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%; "| 0,&nbsp;0
+|style="border-right:  solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%; "| -1,&nbsp;+1
+|-
+|style="border-right:  solid black 1px; text-align: right;             "| Straight
+|style="border-right:  solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%; "| +1,&nbsp;-1
+|style="border-right:  solid black 1px; border-bottom: solid black 1px; background:white; font-size:120%; "| -10,&nbsp;-10
+|-
+|style="font-size: 90%;" colspan=3 |''Fig. 2: Chicken with numerical [[Risk dominance|payoffs]]''
+|}
+
+
+
+
 
 == Definition ==
 
