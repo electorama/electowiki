@@ -2,6 +2,6 @@ Majority Acceptable Score voting works as follows:
 
 Voters rate candidates 0, 1, or 2. Any candidate rated 0 by a majority is eliminated, unless that eliminates all candidates. Then the points are added up for the remaining candidates and the highest points wins.
 
-Blank votes are counted as ratings of 1 or 0 in proportion to the fraction of all voters who gave the candidate a 2. For example, a candidate 29% 2-ratings and 71% blank votes will get 71% of 71%, or 50.41%, of 0 ratings, and thus be eliminated.
+Blank votes are counted as ratings of 1 or 0 in proportion to the fraction of all voters who gave the candidate a 2. For example, a candidate could not win with more than 71% blank votes, because even if the other 29% are all 2-ratings, that would leave 71%*71%=50.41% 0-votes, enough to eliminate.
 
-Here's a google spreadsheet to calculate results: [https://docs.google.com/spreadsheets/d/1siFG6XmOZokygY-86EhAKgv8YwzKtTET6AJopyXRqu0/edit#gid=0]. It has some hypothetical results for the Egypt 2012 election.
+Here's a google spreadsheet to calculate results: [https://docs.google.com/spreadsheets/d/1siFG6XmOZokygY-86EhAKgv8YwzKtTET6AJopyXRqu0/edit#gid=0]. On page 2, it has some hypothetical results for the Egypt 2012 election, showing that this system could have elected a reformer over Morsi, despite vote-splitting among the various reformers. IRV could have elected Morsi.
