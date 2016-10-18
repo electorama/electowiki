@@ -89,3 +89,4 @@ However, this two-frontrunner strategy does not mean that MCA is subject to [[Du
 Thus, overall, many elections should be resolved without need for a resolution method, and so all MCA methods should give broadly similar results. However, if resolution is needed, a lack of majorities is, overall, more likely than multiple majorities. Since the design intent is to minimize these situations, the resolution method chosen should be one which tends to encourage extending approvals; that is, one which comes "close" to fulfilling the [[Later-no-harm criterion]], so that extending approval is unlikely to harm one's favorite candidate. From simple to complex, such methods are: MCA-S, MCA-IR, and MCA-AR.
 
 [[Category:Single-winner voting systems]]
+[[Category:Graded Bucklin systems]]
