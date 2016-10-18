@@ -7,4 +7,4 @@ Graded Bucklin systems are those single-winner voting systems which allow voters
 
 Thus, the systems differ mainly in step 4.
 
-In general, these systems may satisfy [[IIA]], [[Mutual Majority]], [[Favorite Betrayal]], [[Later-no-help]], and other criteria, while they fail [[Condorcet]], [[Later-no-harm]], and others. Specific tiebreakers may lead to fewer criteria being passed.
+Depending on the tiebreaker, these systems may satisfy [[IIA]], [[Mutual Majority]], [[Favorite Betrayal]], [[Later-no-help]], and other criteria. Regardless of the tiebreaker, they fail [[Condorcet]], [[Later-no-harm]], and others.
