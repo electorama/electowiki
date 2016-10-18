@@ -31,3 +31,5 @@ The above process is conceptually simple, but difficult in practice. The followi
 # The candidate with the highest adjustment among those with the highest median, wins.
 
 If medians are converted to integers (such as 0-4), then the adjusted median scores can easily be reported alongside the full tallies.
+
+[[Category:Graded Bucklin systems]]
