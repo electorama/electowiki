@@ -1,10 +1,1 @@
-Graded Bucklin systems are those single-winner voting systems which allow voters to grade candidates at one of several levels, with tied or skipped grades allowed, and then guarantee that the winner will be one of those candidates with the highest median. These systems include [[MCA]], [[Majority Judgment]], [[MAS]], [[ER-Bucklin]], [[Graduated Majority Judgment]], and others. They are often described using a [[Bucklin voting|Bucklin]]-like procedure:
-
-# Tally votes for each candidate at the top rank. 
-# If any candidate or candidates' tally is a majority of all votes, eliminate all candidates whose tallies aren't a majority.
-# Otherwise, if there are still untallied ranks, add the highest untallied rank to the tallies, and return to step 2.
-# If more than one candidate remains, use some tiebreaking mechanism to choose which one is the winner.
-
-Thus, the systems differ mainly in step 4.
-
-Depending on the tiebreaker, these systems may satisfy [[IIA]], [[Mutual Majority]], [[Favorite Betrayal]], [[Later-no-help]], and other criteria. Regardless of the tiebreaker, they fail [[Condorcet criterion|Condorcet]], [[Later-no-harm]], and others.
+#REDIRECT [[Category:Graded Bucklin systems]]
