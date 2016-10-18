@@ -1,6 +1,8 @@
-Majority Acceptable Score voting works as follows:
+Majority Acceptable Score voting works as described below. Technically speaking, it's the [[rated Bucklin]] method which uses [[3 grade levels]] and breaks median ties using [[Score voting]].
 
-Voters rate candidates 0, 1, or 2. Any candidate rated 0 by a majority is eliminated, unless that eliminates all candidates. Then the points are added up for the remaining candidates and the highest points wins.
+* Voters rate candidates 0, 1, or 2. 
+* Eliminate any candidates with a majority of votes at or below a number, while some other candidate (or candiadates) has a majority strictly above that number. That is, keep only those with the highest median. For instance, any candidate rated 0 by a majority is eliminated, unless that eliminates all candidates. 
+* Then the points are added up for the remaining candidates, and the highest points wins.
 
 Blank votes are counted as ratings of 1 or 0 in proportion to the fraction of all voters who gave the candidate a 2. For example, a candidate could not win with more than 71% blank votes, because even if the other 29% are all 2-ratings, that would leave 71%*71%=50.41% 0-votes, enough to eliminate.
 
