@@ -1,13 +1,25 @@
 Majority Acceptable Score voting works as described below. Technically speaking, it's the [[graded Bucklin]] method which uses [[3 grade levels]] and breaks median ties using [[Score voting]].
 
 * Voters can give each candidate 0, 1, or 2 points. 
-* If there are any candidates given ''above'' 0 by a majority, then eliminate all who aren't (that is, those with a majority ''at'' 0).
+* If there are any candidates given ''above'' 0 by a majority, then eliminate all who aren't (that is, those with half or more ''at'' 0).
 ** (Do the same for 1. This probably doesn't matter, because any majority-2 candidate that exists would almost certainly win in the next step anyway. But this step is part of Bucklin voting, which was used in over a dozen US cities during the Progressive era, and thus it gives this method a stronger pedigree, and makes it easier to model mathematically.) 
 * The remaining candidate with the highest points wins.
 
 Blank votes are counted as 1 or 0 points in proportion to the fraction of all voters who gave the candidate a 2. For example, a candidate could not win with more than 71% blank votes, because even if the other 29% are all 2-ratings, that would leave 71%*71%=50.41% 0-votes, enough to eliminate.
 
 Here's a google spreadsheet to calculate results: [https://docs.google.com/spreadsheets/d/1siFG6XmOZokygY-86EhAKgv8YwzKtTET6AJopyXRqu0/edit#gid=0]. On page 1, it has some examples of how different combinations of ratings would come out, suggesting that it could work well in both [[chicken dilemma]] and [[center squeeze]] scenarios. On page 2, it has some hypothetical results for the Egypt 2012 election, showing that this system could have elected a reformer over Morsi, despite vote-splitting among the various reformers. IRV could have elected Morsi.
+
+== As the first round of a two-round system ("MAS with runoff") ==
+
+If this system is used as the first round of a two-round runoff, then you want to use it to elect at two finalists in the first round. Thus, run the system twice. The first time, instead of eliminating any candidates with a majority below a threshold (as long as there are any with a majority above the threshold), eliminate only those with over 2/3 below the threshold (as long as there are any with 1/3 above). 
+
+Then, to find the second winner, if the first-time winner got 1/3 or more of 2's, first downweight those ballots as if you'd eliminated enough of them to make up 1/3 of the electorate. Otherwise, discard all of the ballots which gave the first-time winner a 2. After downweighting or discarding, run MAS normally.
+
+If all the candidates in the first round got a majority of 0's, then you can still find two finalists as explained above. But the voters have sent a message that none of the candidates are good, so one way to deal with the situation would be to have a rule to allow candidates to transfer their 2-votes to new candidates who were not running in the first round, and if those transfers would have made the new candidates finalists, then add them to the second round along with the two finalists who did best in the first round. In that case, since there would be more than 2 candidates in the second round, it would be important to use MAS for the second round too.
+
+== Relationship to NOTA ==
+
+As discussed in the above section, if all the candidates in the first round got a majority of 0's, then the voters have sent a message that none of the candidates are good, akin to a result of "[[None Of The Above]]" (NOTA). MAS still gives a winner, but it might be good to have a rule that such a winner could only serve one term, or perhaps a softer rule that if they run for the same office again, the information of what percent of voters gave them a 0 should be next to their name on the ballot  
 
 == An example ==
 
