@@ -13,7 +13,7 @@ Here's a google spreadsheet to calculate results: [https://docs.google.com/sprea
 
 {{Tenn_voting_example}}
 
-Assume voters in each city give their own city 2; any city within 100 miles, 1; any city that is over 200 miles away or is the farthest city, 0; and the rest (those between 100 and 200 miles), get 0 or 1 with 50/50 chance.
+Assume voters in each city give their own city 2; any city within 100 miles, 1; any city that is over 200 miles away or is the farthest city, 0; and the rest (those between 100 and 200 miles), get 1 or blank with 50/50 chance. (These assumptions can be varied substantially without changing the result, but they seem reasonable to start with.)
 
 <div class="floatright">
 {| border=1
