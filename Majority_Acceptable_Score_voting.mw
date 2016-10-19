@@ -1,11 +1,11 @@
 Majority Acceptable Score voting works as described below. Technically speaking, it's the [[graded Bucklin]] method which uses [[3 grade levels]] and breaks median ties using [[Score voting]].
 
-* Voters rate candidates 0, 1, or 2. 
-* Any candidate rated 0 by a majority is eliminated, if any would remain. 
-** (If there are any candidates rated 2 by a majority, you should eliminate any who aren't. But a majority-2 candidate would probably win in the next step anyway, so this step is probably superfluous. It's just included because it's part of Bucklin voting, which was used in over a dozen US cities, and thus it gives this method a stronger pedigree.) 
-* Then the points are added up for the remaining candidates, and the highest points wins.
+* Voters can give each candidate 0, 1, or 2 points. 
+* All candidates given 0 by a majority are eliminated, if any others would remain. 
+** (If there are any candidates given 2 by a majority, you should eliminate any who aren't. But a majority-2 candidate would probably win in the next step anyway, so this step is probably superfluous. It's just included because it's part of Bucklin voting, which was used in over a dozen US cities, and thus it gives this method a stronger pedigree.) 
+* The remaining candidate with the highest points wins.
 
-Blank votes are counted as ratings of 1 or 0 in proportion to the fraction of all voters who gave the candidate a 2. For example, a candidate could not win with more than 71% blank votes, because even if the other 29% are all 2-ratings, that would leave 71%*71%=50.41% 0-votes, enough to eliminate.
+Blank votes are counted as 1 or 0 points in proportion to the fraction of all voters who gave the candidate a 2. For example, a candidate could not win with more than 71% blank votes, because even if the other 29% are all 2-ratings, that would leave 71%*71%=50.41% 0-votes, enough to eliminate.
 
 Here's a google spreadsheet to calculate results: [https://docs.google.com/spreadsheets/d/1siFG6XmOZokygY-86EhAKgv8YwzKtTET6AJopyXRqu0/edit#gid=0]. On page 1, it has some examples of how different combinations of ratings would come out, suggesting that it could work well in both [[chicken dilemma]] and [[center squeeze]] scenarios. On page 2, it has some hypothetical results for the Egypt 2012 election, showing that this system could have elected a reformer over Morsi, despite vote-splitting among the various reformers. IRV could have elected Morsi.
 
