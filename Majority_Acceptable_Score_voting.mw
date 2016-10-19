@@ -7,6 +7,59 @@ Majority Acceptable Score voting works as described below. Technically speaking,
 
 Blank votes are counted as ratings of 1 or 0 in proportion to the fraction of all voters who gave the candidate a 2. For example, a candidate could not win with more than 71% blank votes, because even if the other 29% are all 2-ratings, that would leave 71%*71%=50.41% 0-votes, enough to eliminate.
 
-Here's a google spreadsheet to calculate results: [https://docs.google.com/spreadsheets/d/1siFG6XmOZokygY-86EhAKgv8YwzKtTET6AJopyXRqu0/edit#gid=0]. On page 2, it has some hypothetical results for the Egypt 2012 election, showing that this system could have elected a reformer over Morsi, despite vote-splitting among the various reformers. IRV could have elected Morsi.
+Here's a google spreadsheet to calculate results: [https://docs.google.com/spreadsheets/d/1siFG6XmOZokygY-86EhAKgv8YwzKtTET6AJopyXRqu0/edit#gid=0]. On page 1, it has some examples of how different combinations of ratings would come out, suggesting that it could work well in both [[chicken dilemma]] and [[center squeeze]] scenarios. On page 2, it has some hypothetical results for the Egypt 2012 election, showing that this system could have elected a reformer over Morsi, despite vote-splitting among the various reformers. IRV could have elected Morsi.
+
+== An example ==
+
+{{Tenn_voting_example}}
+
+Assume half of voters in each city rate one city 2, one city 1, and two cities 0; and half rate one 2, leave two blank, and one 0.
+
+
+<div class="floatright">
+{| border=1
+!City
+!2's
+!explicit 1's
+!explicit 0's
+!blanks
+!total 0's
+!score
+|-
+!bgcolor="#fff"|Memphis
+|bgcolor="#fff"|42
+|bgcolor="#fff"|0
+|bgcolor="#fcc"|58
+|bgcolor="#fff"|0
+|bgcolor="#fcc"|58
+|bgcolor="#efe"|(84)
+|-
+!bgcolor="#fff"|Nashville
+|bgcolor="#fff"|26
+|bgcolor="#fff"|21
+|bgcolor="#fff"|16
+|bgcolor="#cfc"|37
+|bgcolor="#fff"|43
+|bgcolor="#cfc"|83
+|-
+!bgcolor="#fff"|Chatanooga
+|bgcolor="#fff"|15
+|bgcolor="#fff"|22
+|bgcolor="#fff"|21
+|bgcolor="#fff"|42
+|bgcolor="#fcc"|57
+|bgcolor="#fff"|(59)
+|-
+!bgcolor="#fff"|Knoxville
+|bgcolor="#fff"|17
+|bgcolor="#fff"|8
+|bgcolor="#fcc"|55
+|bgcolor="#fff"|20
+|bgcolor="#fcc"|72
+|bgcolor="#fff"|(45)
+|}
+</div>
+
+Only Chatanooga is rated above 0 by a majority, so Chatanooga (the [[Condorcet winner]]) wins, even though Memphis has a slightly higher score.
 
 [[Category:Graded Bucklin systems]]
