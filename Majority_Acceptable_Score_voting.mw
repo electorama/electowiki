@@ -61,6 +61,6 @@ Assume voters in each city give their own city 2; any city within 100 miles, 1; 
 
 Memphis and Knoxville are both given 0 by a majority, so they are eliminated. Of the remaining two, Nashville has a higher score and wins.
 
-If Memphis voters rated Nashville at 0 in the above scenario, they could cause Memphis to win. But Chattanooga and Knoxville voters could protect against this as long as at least 3/4 of them (24% from their combined total of 32%) gave Nashville a 1 (or a 2).
+If Memphis voters tried to strategize by rating Nashville and Chattanooga at 0 in the above scenario, it would take a bit over half of them to successfully execute the strategy. Even if all the Memphis voters strategized, Chattanooga and Knoxville voters could protect Nashville against this strategy as long as under half of those who had given Nashville a blank above switched to giving it a 1 (or a 2). Note that the offensive strategy involves moving a natural 1 down to the extreme value of 0, but the defensive strategy only means changing a lazy blank to a natural 1 (not to the extreme value of 2).
 
 [[Category:Graded Bucklin systems]]
