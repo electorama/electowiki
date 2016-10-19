@@ -13,8 +13,7 @@ Here's a google spreadsheet to calculate results: [https://docs.google.com/sprea
 
 {{Tenn_voting_example}}
 
-Assume half of voters in each city rate one city 2, one city 1, and two cities 0; and half rate one 2, leave two blank, and one 0.
-
+Assume voters in each city give their own city 2; any city within 100 miles, 1; any city that is over 200 miles away or is the farthest city, 0; and the rest (those between 100 and 200 miles), get 0 or 1 with 50/50 chance.
 
 <div class="floatright">
 {| border=1
@@ -36,31 +35,31 @@ Assume half of voters in each city rate one city 2, one city 1, and two cities 0
 |-
 !bgcolor="#fff"|Nashville
 |bgcolor="#fff"|26
-|bgcolor="#fff"|21
-|bgcolor="#fff"|16
 |bgcolor="#fff"|37
-|bgcolor="#cfc"|43
-|bgcolor="#cfc"|83
+|bgcolor="#fff"|0
+|bgcolor="#fff"|37
+|bgcolor="#cfc"|27.4
+|bgcolor="#cfc"|98.6
 |-
 !bgcolor="#fff"|Chattanooga
 |bgcolor="#fff"|15
-|bgcolor="#fff"|22
+|bgcolor="#fff"|30
 |bgcolor="#fff"|21
 |bgcolor="#fff"|42
-|bgcolor="#fcc"|57
-|bgcolor="#fff"|(59)
+|bgcolor="#fff"|49.9
+|bgcolor="#fff"|65.1
 |-
 !bgcolor="#fff"|Knoxville
 |bgcolor="#fff"|17
-|bgcolor="#fff"|8
-|bgcolor="#fcc"|55
-|bgcolor="#fff"|20
-|bgcolor="#fcc"|72
-|bgcolor="#fff"|(45)
+|bgcolor="#fff"|28
+|bgcolor="#fcc"|42
+|bgcolor="#fff"|13
+|bgcolor="#fcc"|52.8
+|bgcolor="#fff"|(64.2)
 |}
 </div>
 
-Only Nashville is rated above 0 by a majority, so Nashville (the [[Condorcet winner]]) wins, even though Memphis has a slightly higher score.
+Memphis and Knoxville are both given 0 by a majority, so they are eliminated. Of the remaining two, Nashville has a higher score and wins.
 
 If Memphis voters rated Nashville at 0 in the above scenario, they could cause Memphis to win. But Chattanooga and Knoxville voters could protect against this as long as at least 3/4 of them (24% from their combined total of 32%) gave Nashville a 1 (or a 2).
 
