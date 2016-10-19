@@ -2,7 +2,7 @@ Majority Acceptable Score voting works as described below. Technically speaking,
 
 * Voters can give each candidate 0, 1, or 2 points. 
 * If there are any candidates given ''above'' 0 by a majority, then all who aren't (that is, those with a majority ''at'' 0) are eliminated.
-** (Do the same for 1. This probably doesn't matter, because a majority-2 candidate would probably win in the next step anyway. But this step is part of Bucklin voting, which was used in over a dozen US cities during the Progressive era, and thus it gives this method a stronger pedigree.) 
+** (Do the same for 1. This probably doesn't matter, because any majority-2 candidate would probably win in the next step anyway. But this step is part of Bucklin voting, which was used in over a dozen US cities during the Progressive era, and thus it gives this method a stronger pedigree.) 
 * The remaining candidate with the highest points wins.
 
 Blank votes are counted as 1 or 0 points in proportion to the fraction of all voters who gave the candidate a 2. For example, a candidate could not win with more than 71% blank votes, because even if the other 29% are all 2-ratings, that would leave 71%*71%=50.41% 0-votes, enough to eliminate.
