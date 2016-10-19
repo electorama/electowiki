@@ -42,7 +42,7 @@ Assume half of voters in each city rate one city 2, one city 1, and two cities 0
 |bgcolor="#cfc"|43
 |bgcolor="#cfc"|83
 |-
-!bgcolor="#fff"|Chatanooga
+!bgcolor="#fff"|Chattanooga
 |bgcolor="#fff"|15
 |bgcolor="#fff"|22
 |bgcolor="#fff"|21
@@ -60,6 +60,8 @@ Assume half of voters in each city rate one city 2, one city 1, and two cities 0
 |}
 </div>
 
-Only Chatanooga is rated above 0 by a majority, so Chatanooga (the [[Condorcet winner]]) wins, even though Memphis has a slightly higher score.
+Only Nashville is rated above 0 by a majority, so Nashville (the [[Condorcet winner]]) wins, even though Memphis has a slightly higher score.
+
+If Memphis voters rated Nashville at 0 in the above scenario, they could cause Memphis to win. But Chattanooga and Knoxville voters could protect against this as long as at least 3/4 of them (24% from their combined total of 32%) gave Nashville a 1 (or a 2).
 
 [[Category:Graded Bucklin systems]]
