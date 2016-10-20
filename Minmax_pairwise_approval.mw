@@ -1,4 +1,4 @@
-The following method (created by Forest Simmons, and called the Simmons method by Michael Ossipoff) is based on score or range style ballots.  I believe it satisfies the FBC, Plurality, the CD, Monotonicity, Participation,  Clone Independence, and the IPDA.  It reduces to ordinary Approval when only the extreme ratings are used for all candidates.
+The following method is based on score or range style ballots.  I believe it satisfies the FBC, Plurality, the CD, Monotonicity, Participation,  Clone Independence, and the IPDA.  It reduces to ordinary Approval when only the extreme ratings are used for all candidates.
  
 I call it MinMaxPairwiseApproval or MinMaxPA for short.
  
