@@ -1,9 +1,11 @@
 Majority Acceptable Score voting works as described below. Technically speaking, it's the [[graded Bucklin]] method which uses [[3 grade levels]] and breaks median ties using [[Score voting]].
 
-* Voters can give each candidate 0, 1, or 2 points. 
-* If there are any candidates given ''above'' 0 by a majority, then eliminate all who aren't (that is, those with half or more ''at'' 0).
-** (Do the same for 1. This probably doesn't matter, because any majority-2 candidate that exists would almost certainly win in the next step anyway. But this step is part of Bucklin voting, which was used in over a dozen US cities during the Progressive era, and thus it gives this method a stronger pedigree, and makes it easier to model mathematically.) 
-* The remaining candidate with the highest points wins.
+# Voters can give each candidate 0, 1, or 2 points. 
+# If there are any candidates given ''above'' 0 by a majority, then eliminate all who aren't (that is, those with half or more ''at'' 0).
+#* (Do the same for 1.) 
+# The remaining candidate with the highest points wins.
+
+Step 2b probably doesn't matter, because any majority-2 candidate that exists would almost certainly win in step 3 anyway. But step 2b is part of Bucklin voting, which was used in over a dozen US cities during the Progressive era. Also, it lets you say the whole method in one sentence, if the person you're talking to understands medians: "choose the highest score among the candidates with the highest median".
 
 Blank votes are counted as 1 or 0 points in proportion to the fraction of all voters who gave the candidate a 2. For example, a candidate could not win with more than 71% blank votes, because even if the other 29% are all 2-ratings, that would leave 71%*71%=50.41% 0-votes, enough to eliminate.
 
