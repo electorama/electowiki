@@ -1,8 +1,8 @@
 Majority Acceptable Score voting works as described below. Technically speaking, it's the [[graded Bucklin]] method which uses [[3 grade levels]] and breaks median ties using [[Score voting]].
 
 # Voters can give each candidate 0, 1, or 2 points. 
-# If there are any candidates given ''above'' 0 by a majority, then eliminate all who aren't (that is, those with half or more ''at'' 0).
-#* (Do the same for 1.) 
+# a. If there are any candidates given ''above'' 0 by a majority, then eliminate all who aren't (that is, those with half or more ''at'' 0).
+#* b. (Repeat step 2a, using "at or below 1" instead of "at 0".) 
 # The remaining candidate with the highest points wins.
 
 Step 2b probably doesn't matter, because any majority-2 candidate that exists would almost certainly win in step 3 anyway. But step 2b is part of Bucklin voting, which was used in over a dozen US cities during the Progressive era. Also, it lets you say the whole method in one sentence, if the person you're talking to understands medians: "choose the highest score among the candidates with the highest median".
