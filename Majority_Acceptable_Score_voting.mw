@@ -7,7 +7,7 @@ Majority Acceptable Score voting works as described below. Technically speaking,
 
 Step 2b probably doesn't matter, because any majority-2 candidate that exists would almost certainly win in step 3 anyway. But step 2b is part of Bucklin voting, which was used in over a dozen US cities during the Progressive era. Also, it lets you say the whole method in one sentence, if the person you're talking to understands medians: "choose the highest score among the candidates with the highest median".
 
-Blank votes are counted as 1 or 0 points in proportion to the fraction of all voters who gave the candidate a 2. For example, a candidate could not win with more than 71% blank votes, because even if the other 29% are all 2-ratings, that would leave 71%*71%=50.41% 0-votes, enough to eliminate.
+Blank votes are counted as 1 or 0 points in proportion to the fraction of all voters who gave the candidate a 2. For example, if there were any candidates without a majority of 0s, a candidate could not win with more than 71% blank votes; because even if the other 29% are all 2-ratings, that would leave 71%*71%=50.41% 0-votes, enough to eliminate.
 
 Here's a google spreadsheet to calculate results: [https://docs.google.com/spreadsheets/d/1siFG6XmOZokygY-86EhAKgv8YwzKtTET6AJopyXRqu0/edit#gid=0]. On page 1, it has some examples of how different combinations of ratings would come out, suggesting that it could work well in both [[chicken dilemma]] and [[center squeeze]] scenarios. On page 2, it has some hypothetical results for the Egypt 2012 election, showing that this system could have elected a reformer over Morsi, despite vote-splitting among the various reformers. IRV could have elected Morsi.
 
