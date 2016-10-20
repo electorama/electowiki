@@ -1,0 +1,27 @@
+The following method is based on score or range style ballots.  I believe it satisfies the FBC, Plurality, the CD, Monotonicity, Participation,  Clone Independence, and the IPDA.  It reduces to ordinary Approval when only the extreme ratings are used for all candidates.
+ 
+I call it MinMaxPairwiseApproval or MinMaxPA for short.
+ 
+It is based on a concept of “pairwise approval.” 
+ 
+A zero to 100% cardinal ratings ballot contributes the following amount to the “pairwise approval of candidate X relative to candidate Y”:
+ 
+The amount is either …
+100% if X is rated strictly above Y, or
+Zero if X is rated strictly below Y, or
+Their common rating if they are rated equally.
+ 
+According to this definition, the ballot’s contribution to the pairwise approval of X relative to itself is simply the ballot’s rating of X, since it is rated equally with itself.
+ 
+The method elects the candidate whose minimum pairwise approval (relative to all candidates including self) is maximal.
+ 
+The motivation for this idea is the question, “If candidates X and Y were the only two candidates with any significant chance of winning the election, what is the probability that the ratings ballot voter would want X approved (in a Designated Strategy Voting system, say)?”
+ 
+If the voter rated X over Y, this probability would be 100 percent.
+If the voter rated Y over X, this probability would be zero.
+If the voter rated both X and Y at 100 percent, this probability would be 100 percent.
+If the voter rated them both at zero, she would want neither of the approved.
+If she rated them both at 50%, then our best guess is that there is a fifty-fifty chance that she would approve X.
+Etc.
+ 
+Whatever nice properties the method has depends solely on its definition, not the motivation for the definition, so please explore it with an open mind.
