@@ -1,8 +1,8 @@
-Support Accept Reject Abstain (SARA) voting works as described below. It's very similar to [[Majority Acceptable Score voting]], which is the [[graded Bucklin]] method which uses [[3 grade levels]] and breaks median ties using [[Score voting]].
+Support Accept Reject Abstain (SARA) voting is very similar to [[Majority Acceptable Score voting]], which is the [[graded Bucklin]] method which uses [[3 grade levels]] and breaks median ties using [[Score voting]]. SARA works as follows:
 
-# Voters can support, accept, reject, or abstain on each candidate.
-# Call a candidate "acceptable" if they are rejected by under 50% and supported or accepted by over 25%. If any candidates are acceptable, eliminate all who aren't.
-# Give remaining candidates 2 points for each "support", 1 point for each "accept", and half a point for each "abstain". Highest points wins.
+# Voters can support, accept, reject, or abstain on each candidate. These are worth 2, 1, 0, and 0 points, respectively. Default is abstain.
+# Eliminate all candidates rejected by over 50%, and any who average under half a point per voter, unless that would eliminate all of them.
+# Highest points wins. In case of a tie, fewest rejections wins.
 
 == As the first round of a two-round system ("SARA with runoff") ==
 
@@ -25,19 +25,17 @@ Assume voters in each city give their own city 2; any city within 100 miles, 1; 
 <div class="floatright">
 {| border=1
 !City
-!2's
-!1's
-!0's
-!blanks
-!0's+2/3 b's
-!score
+!Support
+!Accept
+!Reject<br><50
+!Abstain
+!score<br>>50
 |-
 !bgcolor="#fff"|Memphis
 |bgcolor="#fff"|42
 |bgcolor="#fff"|0
 |bgcolor="#fcc"|58
 |bgcolor="#fff"|0
-|bgcolor="#fcc"|58
 |bgcolor="#fff"|(84)
 |-
 !bgcolor="#fff"|Nashville
@@ -45,24 +43,21 @@ Assume voters in each city give their own city 2; any city within 100 miles, 1; 
 |bgcolor="#fff"|0
 |bgcolor="#fff"|0
 |bgcolor="#fff"|74
-|bgcolor="#cfc"|49.7
-|bgcolor="#bfb"|76.3
+|bgcolor="#bfb"|52
 |-
 !bgcolor="#fff"|Chattanooga
 |bgcolor="#fff"|15
 |bgcolor="#fff"|17
 |bgcolor="#fff"|42
 |bgcolor="#fff"|26
-|bgcolor="#fcc"|59.7
-|bgcolor="#fff"|(75.7)
+|bgcolor="#fcc"|47
 |-
 !bgcolor="#fff"|Knoxville
 |bgcolor="#fff"|17
 |bgcolor="#fff"|15
 |bgcolor="#fff"|42
 |bgcolor="#fff"|26
-|bgcolor="#fcc"|59.7
-|bgcolor="#fff"|(77.7)
+|bgcolor="#fcc"|49
 |}
 </div>
 
