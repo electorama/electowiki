@@ -1,13 +1,12 @@
 Majority Acceptable Score voting works as described below. Technically speaking, it's the [[graded Bucklin]] method which uses [[3 grade levels]] and breaks median ties using [[Score voting]].
 
-# Voters can give each candidate 0, 1, or 2 points. 
-# a. If there are any candidates given ''above'' 0 by a majority, then eliminate all who aren't (that is, those with half or more ''at'' 0).
-#* b. (Repeat step 2a, using "at or below 1" instead of "at 0".) 
-# The remaining candidate with the highest points wins.
+# Voters can support, accept, or reject each candidate. Blanks count as 2/3 of a rejection and 1/3 of an acceptance (so 75% blanks counts as 50% rejections).
+# a. If there are any candidates not rejected by a majority, then eliminate all who are rejected by a majority.
+#* b. (If there are any candidates supported by a majority, then eliminate all who aren't.) 
+# Give remaining candidates 2 points for each voter who supports them, and 1 point for each who accepts them (or every three who leave them blank). 
+# Highest points wins.
 
-Step 2b probably doesn't matter, because any majority-2 candidate that exists would almost certainly win in step 3 anyway. But step 2b is part of Bucklin voting, which was used in over a dozen US cities during the Progressive era. Also, it lets you say the whole method in one sentence, if the person you're talking to understands medians: "choose the highest score among the candidates with the highest median".
-
-Blank votes are counted as 1 or 0 points in proportion to the fraction of all voters who gave the candidate a 2. For example, if there were any candidates without a majority of 0s, a candidate could not win with more than 71% blank votes; because even if the other 29% are all 2-ratings, that would leave 71%*71%=50.41% 0-votes, enough to eliminate.
+Step 2b probably doesn't matter, because any majority-supported candidate that exists would almost certainly win in step 4 anyway. But step 2b is part of Bucklin voting, which was used in over a dozen US cities during the Progressive era. Also, it lets you say the whole method in one sentence, if the person you're talking to understands medians: "choose the highest score among the candidates with the highest median".
 
 Here's a google spreadsheet to calculate results: [https://docs.google.com/spreadsheets/d/1siFG6XmOZokygY-86EhAKgv8YwzKtTET6AJopyXRqu0/edit#gid=0]. On page 1, it has some examples of how different combinations of ratings would come out, suggesting that it could work well in both [[chicken dilemma]] and [[center squeeze]] scenarios. On page 2, it has some hypothetical results for the Egypt 2012 election, showing that this system could have elected a reformer over Morsi, despite vote-splitting among the various reformers. IRV could have elected Morsi. (Note: the spreadsheet does not actually check step 2b.)
 
@@ -17,7 +16,7 @@ If this system is used as the first round of a two-round runoff, then you want t
 
 Then, to find the second winner, if the first-time winner got 1/3 or more of 2's, first downweight those ballots as if you'd eliminated enough of them to make up 1/3 of the electorate. Otherwise, discard all of the ballots which gave the first-time winner a 2. After downweighting or discarding, run MAS normally.
 
-If all the candidates in the first round got a majority of 0's, then you can still find two finalists as explained above. But the voters have sent a message that none of the candidates are good, so one way to deal with the situation would be to have a rule to allow candidates to transfer their 2-votes to new candidates who were not running in the first round, and if those transfers would have made the new candidates finalists, then add them to the second round along with the two finalists who did best in the first round. In that case, since there would be more than 2 candidates in the second round, it would be important to use MAS for the second round too.
+If all the candidates in the first round got a majority of 0's, then you can still find two finalists as explained above. But the voters have sent a essage that none of the candidates are good, so one way to deal with the situation would be to have a rule to allow candidates to transfer their 2-votes to new candidates who were not running in the first round, and if those transfers would have made the new candidates finalists, then add them to the second round along with the two finalists who did best in the first round. In that case, since there would be more than 2 candidates in the second round, it would be important to use MAS for the second round too.
 
 == Relationship to NOTA ==
 
@@ -27,16 +26,16 @@ As discussed in the above section, if all the candidates in the first round got 
 
 {{Tenn_voting_example}}
 
-Assume voters in each city give their own city 2; any city within 100 miles, 1; any city that is over 200 miles away or is the farthest city, 0; and the rest (those between 100 and 200 miles), get 1 or blank with 50/50 chance. (These assumptions can be varied substantially without changing the result, but they seem reasonable to start with.)
+Assume voters in each city give their own city 2; any city within 100 miles, 1; any city between 100 and 200 miles, a blank; and any city that is over 200 miles away or is the farthest city, 0. (These assumptions can be varied substantially without changing the result, but they seem reasonable to start with.)
 
 <div class="floatright">
 {| border=1
 !City
 !2's
-!explicit 1's
-!explicit 0's
+!1's
+!0's
 !blanks
-!total 0's
+!0's+2/3 b's
 !score
 |-
 !bgcolor="#fff"|Memphis
