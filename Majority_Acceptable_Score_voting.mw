@@ -6,7 +6,7 @@ Majority Acceptable Score voting works as described below. Technically speaking,
 # Give remaining candidates 2 points for each voter who supports them, and 1 point for each who accepts them (or every three who leave them blank). 
 # Highest points wins.
 
-Step 2b probably doesn't matter, because any majority-supported candidate that exists would almost certainly win in step 4 anyway. But step 2b is part of Bucklin voting, which was used in over a dozen US cities during the Progressive era. Also, it lets you say the whole method in one sentence, if the person you're talking to understands medians: "choose the highest score among the candidates with the highest median".
+Step 2b probably doesn't matter, because any majority-supported candidate that exists would almost certainly win in step 4 anyway. But step 2b is part of Bucklin voting, which was used in over a dozen US cities during the Progressive era. Also, it lets you say the whole method in one sentence, using the idea of medians: "choose the highest score among the candidates with the highest median".
 
 Here's a google spreadsheet to calculate results: [https://docs.google.com/spreadsheets/d/1siFG6XmOZokygY-86EhAKgv8YwzKtTET6AJopyXRqu0/edit#gid=0]. On page 1, it has some examples of how different combinations of ratings would come out, suggesting that it could work well in both [[chicken dilemma]] and [[center squeeze]] scenarios. On page 2, it has some hypothetical results for the Egypt 2012 election, showing that this system could have elected a reformer over Morsi, despite vote-splitting among the various reformers. IRV could have elected Morsi. (Note: the spreadsheet does not actually check step 2b.)
 
@@ -48,27 +48,27 @@ Assume voters in each city give their own city 2; any city within 100 miles, 1; 
 |-
 !bgcolor="#fff"|Nashville
 |bgcolor="#fff"|26
-|bgcolor="#fff"|37
 |bgcolor="#fff"|0
-|bgcolor="#fff"|37
-|bgcolor="#cfc"|27.4
-|bgcolor="#bfb"|98.6
+|bgcolor="#fff"|0
+|bgcolor="#fff"|74
+|bgcolor="#cfc"|49.7
+|bgcolor="#bfb"|76.3
 |-
 !bgcolor="#fff"|Chattanooga
 |bgcolor="#fff"|15
-|bgcolor="#fff"|30
-|bgcolor="#fff"|21
+|bgcolor="#fff"|17
 |bgcolor="#fff"|42
-|bgcolor="#cfc"|49.9
-|bgcolor="#fff"|65.1
+|bgcolor="#fff"|26
+|bgcolor="#cfc"|59.7
+|bgcolor="#fff"|(75.7)
 |-
 !bgcolor="#fff"|Knoxville
 |bgcolor="#fff"|17
-|bgcolor="#fff"|28
+|bgcolor="#fff"|15
 |bgcolor="#fff"|42
-|bgcolor="#fff"|13
-|bgcolor="#fcc"|52.8
-|bgcolor="#fff"|(64.2)
+|bgcolor="#fff"|26
+|bgcolor="#fcc"|59.7
+|bgcolor="#fff"|(77.7)
 |}
 </div>
 
