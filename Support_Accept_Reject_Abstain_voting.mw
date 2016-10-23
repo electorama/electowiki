@@ -1,7 +1,7 @@
 Support Accept Reject Abstain (SARA) voting is very similar to [[Majority Acceptable Score voting]], which is the [[graded Bucklin]] method which uses [[3 grade levels]] and breaks median ties using [[Score voting]]. SARA works as follows:
 
 # Voters can support, accept, reject, or abstain on each candidate. These are worth 2, 1, 0, and 0 points, respectively. Default is abstain.
-# Eliminate all candidates rejected by over 50%, and any who average under half a point per voter, unless that would eliminate all of them.
+# Eliminate any candidates rejected by over 50%, and any who average under half a point per voter, unless that would eliminate all of them.
 # Highest points wins. In case of a tie, fewest rejections wins.
 
 == As the first round of a two-round system ("SARA with runoff") ==
