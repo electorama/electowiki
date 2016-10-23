@@ -3,7 +3,7 @@ Support Accept Reject Abstain (SARA) voting is very similar to [[Majority Accept
 # '''Voters can support, accept, reject, or abstain on each candidate. These are worth 2, 1, 0, and 0 points, respectively. Default is abstain.'''
 #*''You should always support your favorite(s) and reject anyone who's worse than what you expect from the election. As for those in between, you should probably accept them if you think your favorite(s) will be rejected by a majority, and abstain otherwise.''
 # '''Eliminate any candidates averaging under half a point per voter, unless that leaves nobody.'''
-#* ''This eliminates lesser-known candidates so that step 3 won't elect one of them by mistake.''
+#* ''This eliminates lesser-known candidates who got a lot of 'abstains', so that step 3 won't elect one of them by mistake.''
 # '''Eliminate any candidates rejected by over 50%, unless that leaves nobody.'''
 #* ''If possible, the winner shouldn't be somebody opposed by a majority.''
 # '''Highest points wins. In case of a tie, fewest rejections wins.'''
