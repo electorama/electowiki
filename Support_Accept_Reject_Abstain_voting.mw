@@ -3,7 +3,7 @@ Support Accept Reject Abstain (SARA) voting is very similar to [[Majority Accept
 # '''Voters can support, accept, reject, or abstain on each candidate. Default is abstain. Candidates get 2 points for each percent of "support" and 1 point for each percent of "accept", for a total of 0-200 points. '''
 #*''"Support" helps a candidate the most, "reject" hurts the most. "Accept" helps less than support, and is good for helping a second-rate candidate beat a third-rate one. "Abstain" helps a candidate avoid elimination in step 3 but hurts them in steps 2 and 4; it's good for a second-rate candidate when there's a first-rate one who can beat them, or for a candidate you're not sure about.''
 # '''Eliminate any candidates with under 50 points.'''
-#* ''This eliminates lesser-known candidates who got a lot of 'abstains', so that step 3 won't elect one of them by mistake.''
+#* ''50 points would be the score of a candidate supported by 1/4 or accepted by 1/2. Anything less than that probably indicates a lesser-known candidates who got a lot of 'abstains'; eliminating them here ensures that step 3 won't elect them by mistake.''
 # '''Eliminate any candidates rejected by over 50%, unless that leaves nobody.'''
 #* ''If possible, the winner shouldn't be somebody opposed by a majority.''
 # '''Highest points wins. In case of a tie, fewest rejections wins.'''
