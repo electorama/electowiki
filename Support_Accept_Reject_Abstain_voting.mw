@@ -1,7 +1,7 @@
 Support Accept Reject Abstain (SARA) voting is very similar to [[Majority Acceptable Score voting]], which is the [[graded Bucklin]] method which uses [[3 grade levels]] and breaks median ties using [[Score voting]]. SARA works as follows:
 
 # '''Voters can support, accept, reject, or abstain on each candidate. These are worth 2, 1, 0, and 0 points, respectively. Default is abstain.'''
-#*''The toughest distinction to make here is the one between the two middle ratings, "accept" and "abstain". "Abstain" is safer for candidates you don't know much about. Otherwise, for second-rate candidates (the ones who are not your favorite, but average or better among the historical winners of the office), you should rate them "accept" if you're afraid that somebody worse will win, or "abstain" if you hope that somebody better will win.''
+#*''The toughest distinction to make here is the one between the two middle ratings, "accept" and "abstain". "Abstain" is safer for candidates you don't know much about. Otherwise, for second-rate candidates (the ones who are not your favorite, but who would be average or better among the historical winners of the office), you should rate them "accept" if you're afraid that somebody worse will win, or "abstain" if you hope that somebody better will win.''
 # '''Eliminate any candidates averaging under half a point per voter, unless that leaves nobody.'''
 #* ''This eliminates lesser-known candidates who got a lot of 'abstains', so that step 3 won't elect one of them by mistake.''
 # '''Eliminate any candidates rejected by over 50%, unless that leaves nobody.'''
