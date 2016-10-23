@@ -32,42 +32,49 @@ Assume voters in each city give their own city 2; any city within 100 miles, 1; 
 !City
 !Support
 !Accept
-!Reject<br><50
 !Abstain
-!score<br>>50
+!Reject
+!score
+|-
+!bgcolor="#fff"|Cutoff<br>(must be)
+|bgcolor="#fff"|
+|bgcolor="#fff"|
+|bgcolor="#fcc"|
+|bgcolor="#fff"|<50
+|bgcolor="#fff"|>50
 |-
 !bgcolor="#fff"|Memphis
 |bgcolor="#fff"|42
 |bgcolor="#fff"|0
-|bgcolor="#fcc"|58
 |bgcolor="#fff"|0
+|bgcolor="#fcc"|58
 |bgcolor="#fff"|(84)
 |-
 !bgcolor="#fff"|Nashville
 |bgcolor="#fff"|26
 |bgcolor="#fff"|0
-|bgcolor="#fff"|0
 |bgcolor="#fff"|74
+|bgcolor="#fff"|0
 |bgcolor="#bfb"|52
 |-
 !bgcolor="#fff"|Chattanooga
 |bgcolor="#fff"|15
 |bgcolor="#fff"|17
-|bgcolor="#fff"|42
 |bgcolor="#fff"|26
+|bgcolor="#fff"|42
 |bgcolor="#fcc"|47
 |-
 !bgcolor="#fff"|Knoxville
 |bgcolor="#fff"|17
 |bgcolor="#fff"|15
-|bgcolor="#fff"|42
 |bgcolor="#fff"|26
+|bgcolor="#fff"|42
 |bgcolor="#fcc"|49
 |}
 </div>
 
-Memphis is explicitly given 0 by a majority, and is eliminated. Chattanooga and Knoxville are both given 0 by a majority implicitly, so they are eliminated. Nashville remains and wins.
+Chattanooga and Knoxville both get under half a point per voter, and are eliminated. Memphis is explicitly rejected by a majority, and is eliminated. Nashville remains and wins.
 
-If Memphis voters tried to strategize by rating Nashville at 0 in the above scenario, Chattanooga and Knoxville voters could protect against this strategy if 2/3 of them gave Nashville a 1.
+If Memphis voters tried to strategize by rejecting Nashville at 0 in the above scenario, it would have no effect. If Chattanooga and Knoxville tried to strategize by supporting each other, this has a chance of working, but Memphis could safely defend Nashville by accepting it. Since Memphis is almost guaranteed to be solidly rejected, this defensive strategy of accepting Nashville is probably a good idea.
 
 [[Category:Graded Bucklin systems]]
