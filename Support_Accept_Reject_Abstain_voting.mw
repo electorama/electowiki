@@ -19,7 +19,7 @@ If all the candidates in the first round got a majority of 0's, then you can sti
 
 == Relationship to NOTA ==
 
-As discussed in the above section, if all the candidates in the first round got a majority "reject", then the voters have sent a message that none of the candidates are good, akin to a result of "[[none of the above]]" (NOTA). SARA still gives a winner, but it might be good to have a rule that such a winner could only serve one term, or perhaps a softer rule that if they run for the same office again, the information of what percent of voters rejected them should be next to their name on the ballot
+As discussed in the above section, if all the candidates in the first round got a majority "reject", then the voters have sent a message that none of the candidates are good, akin to a result of "[[none of the above]]" (NOTA). SARA still gives a winner, but it might be good to have a rule to limit the chance that such a winner would remain in office for multiple terms. This could either be a hard term limit, so that such a winner could only legally serve one term; or perhaps a softer rule that if they run for the same office again, the information of what percent of voters had rejected them should be next to their name on the ballot
 
 == An example ==
 
