@@ -1,7 +1,7 @@
 Support Accept Reject Abstain (SARA) works as follows:
 
 # '''Voters can support, accept, reject, or abstain on each candidate. Default is abstain. Candidates get 2 points for each percent of "support" and 1 point for each percent of "accept", for a total of 0-200 points. '''
-#*''"Support" the best candidates (perhaps a quarter of them), "reject" the worst (perhaps half of them). "Accept" and "abstain" are for the ones in the high middle range. For those, "accept" if you want to help them beat somebody worse, and "abstain" if you could live with them but are hoping for somebody better.''
+#*''Obviously, you should support the best candidates (perhaps a quarter of them), and reject the worst (perhaps half of them). "Accept" and "abstain" are for the ones in the high middle range. For those, accept candidates you want to help to beat somebody worse, and abstain on candidates that you could live with but are hoping for somebody better.''
 # '''Eliminate any candidates rejected by over 50%, unless that leaves no candidates with over 50 points.'''
 #* ''If possible, the winner shouldn't be somebody opposed by a majority. But this shouldn't end up defaulting to a candidate who couldn't at least get accepted by over 1/2 or supported by over 1/4 (as in, a majority subfaction of a divided majority, such as Nashville voters in the example below).''
 # '''Highest points wins. In case of a tie, fewest rejections wins.'''
