@@ -25,7 +25,7 @@ There are a few criteria for which it does not pass as such, but where it passes
 
 * It fails the [[participation criterion]] but passes the [[semi-honest participation criterion]].
 
-* It fails the [[Strategy-free criterion]], but, as shown in the center squeeze examples below, in a 3-candidate scenario it does at least offer viable strategies to each of the subgroups of the majority that prefers X>Y, such that any subgroup has a strategy to ensure Y loses, even if the other subgroup does not maximally cooperate. ("Subgroup" in this sense is characterized by whether they prefer Z over or under both. The assumption is that the "honest" vote is Support, Accept, Reject in some order for the three candidates, or only Support and Reject in case of indifference between two of them. This guarantees that any X>Z>Y voters will maximally cooperate under honesty.)
+* It fails the [[Strategy free criterion]], but, as shown in the center squeeze examples below, in a 3-candidate scenario it does at least offer viable strategies to each of the subgroups of the majority that prefers X>Y, such that any subgroup has a strategy to ensure Y loses, even if the other subgroup does not maximally cooperate. ("Subgroup" in this sense is characterized by whether they prefer Z over or under both. The assumption is that the "honest" vote is Support, Accept, Reject in some order for the three candidates, or only Support and Reject in case of indifference between two of them. This guarantees that any X>Z>Y voters will maximally cooperate under honesty.)
 
 It fails the [[consistency criterion]], the [[Condorcet loser criterion]], [[reversibility]], the [[majority loser criterion]], and the [[later-no-harm criterion]].
 
