@@ -13,7 +13,7 @@ Note: Majority score voting was originally called SARA voting, an acronym for th
 
 Majority score passes the [[favorite betrayal criterion]], the [[majority criterion]], [[Independence of irrelevant alternatives]], [[Local independence of irrelevant alternatives]] (under the assumption of fixed "honest" ratings for each voter for each candidate), [[Independence of clone alternatives]], [[Monotonicity]], [[polytime]], [[resolvability]], O(N) [[summability]], and the [[later-no-help criterion]].
 
-There are a few criteria that it does not pass as such, but passes related but weaker criteria. These include:
+There are a few criteria for which it does not pass as such, but where it passes related but weaker criteria. These include:
 
 * It fails the [[mutual majority criterion]], but passes if the mutual majority in question unanimously rejects all candidates outside their mutually-preferred set. It also passes if the number who give the strongest candidate in the set a rating below "support" is less than three times the amount by which the overall group exceeds 50%.
 
