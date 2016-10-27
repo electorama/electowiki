@@ -9,39 +9,9 @@ Majority score voting chooses the candidate with highest score among the serious
 
 Note: Majority score voting was originally called SARA voting, an acronym for the 4 ratings voters can give. However, putting these ratings out-of-order is confusing, even if it results in a nice-sounding acronym.
 
-== A few quick scenarios ==
+== Criteria compliance == 
 
-In all of the scenarios that follow, [[plurality voting]] would get the wrong answer if voters vote honestly, and Majority Score would get the right answer. 
-
-Say there are two major and several minor candidates (where "major" and "minor" are defined by true support, not simply by media coverage). Voters should reject one major candidate and any minor candidates who are worse; support their favorite, whether they are major or minor; and accept everyone else. In that case, one of the two majors will be rejected by a majority; the other will win; and all minor candidates will show their true support.
-
-Now suppose that there are two overall ideological "sides", and the majority "side" is split into two subfactions, each smaller than the full minority "side". This is called the "[[chicken dilemma]]", because many voting systems encourage a "game of chicken" between the two majority subfactions; whichever subfaction cooperates less will win, unless cooperation breaks down entirely and the minority wins. A very closely-balanced chicken dilemma would have 27% for subfaction A, 26% for subfaction B, and 47% for the minority Z; whereas a more typical example might have 31%, 24%, and 45%. In Majority Score, each subfaction should support their candidate, accept the other subfaction's, and reject the minority; while minority voters should support their candidate and reject both subfactions. In this case, the bigger subfaction will win.
-
-Note that A, the bigger of the two subfactions, must necessarily be above the 50-point threshold in step 2, so Z will be safely eliminated. In many cases, B, the smaller subfaction, will fall short of 50 points. This helps explain the rationale for putting that threshold at 50 points.
-
-This is not to say that majority score solves the chicken dilemma 100%. It is still possible for the smaller subfaction B to win if they largely reject the A while the A voters largely accept B. And if both factions largely reject, Z can win. But the key word there is "largely"; unlike the case with [[approval voting]] or [[score voting]], this strategy will not work if it's done by only a few individual voters, but only if one subfaction uses it significantly more than the other. Given that organizing such a coordinated betrayal in secret would be hard, and that doing so openly would invite mutually-destructive retaliation, it seems that majority score voting has a good chance of avoiding this problem.
-
-As a final tricky scenario, consider what happens in the above case if the minority Z prefers the smaller subfaction B. That results in a [[center squeeze]] scenario: one where candidate B is a [[Condorcet winner]] (able to beat either rival in a one-on-one race) but an honest plurality loser (with the smallest faction of direct supporters). This is more common than one might think; candidate B is fighting an ideological battle on two fronts, while candidates A and C are free to triangulate towards the middle without losing supporters, so the fact that B has the smallest direct support may not reflect a lack of quality. Thus, generally speaking, as long as each faction considers their second choice to be more than half as good as their first choice (taking the worst choice as 0), it's pretty clear that the Condorcet-winner candidate B is the one who democratically "should" win this election. 
-
-In this scenario, there are two ways that B could win. B voters could reject both A and C; or A and/or C voters could assist B. Either of these makes strategic sense for the voters in question, and either or both could lead to a [[strong equilibrium]] result.
-
-One interesting aspect in the above three scenarios: "assist" is only strategically favored in the case of a center squeeze scenario, when the A and C voters are helping B, whom they see as the the "lesser evil", beat the other extreme. If there isn't a center squeeze, voters need only use "support", "accept", or "reject". In fact, even in center squeeze, voters could get by without "assist", as long as enough A and C voters were willing to support B outright. So eliminating the "assist" option would not substantially change the strategic outcome; but it would reduce the expressive power available to the A and C voters in a center squeeze scenario. Thus majority score sacrifices some possible extra simplicity in return for this increased expressive power.
-
-It is very rare to have a voting system which can deal with both chicken dilemma and center squeeze. The two situations are very similar, even when voted honestly, and yet the "correct" outcome is different. And under strategic voting in many voting systems, it is very easy for the two different scenarios to lead to identical ballots. Delegated voting systems such as [[SODA voting]] can deal with both; but without that kind of explicit participation in the voting process from the candidates, it is very hard to find a system which deals with both types of scenario better than majority score does.    
-
-== As the first round of a two-round system ("majority score with runoff") ==
-
-If this system is used as the first round of a two-round runoff, then you want to use it to elect at two finalists in the first round. Thus, run the system twice. The first time, replace "50%" in step 2 with "2/3".
-
-Then, to find the second winner, if the first-time winner got 1/3 or more support, first downweight those ballots as if you'd eliminated enough of them to make up 1/3 of the electorate. Otherwise, discard all of the ballots which supported first-time winner. After downweighting or discarding, re-tally the points and run Majority Score again.
-
-If all the candidates in the first round got a majority of 0's, then you can still find two finalists as explained above. But the voters have sent a message that none of the candidates are good, so one way to deal with the situation would be to have a rule to allow candidates to transfer their 2-votes to new candidates who were not running in the first round, and if those transfers would have made the new candidates finalists, then add them to the second round along with the two finalists who did best in the first round. In that case, since there would be more than two candidates in the second round, it would be important to use majority score for the second round too.
-
-Note: this "proportional two-winner majority score" system for the first round is "matrix-summable", that is, summable with O(n²) information per ballot for n candidates. This contrasts with the base majority score method, which is summable with only O(n) information per ballot, and thus can be counted voting equipment designed for counting plurality elections.
-
-== Relationship to NOTA ==
-
-As discussed in the above section, if all the candidates in the first round got a majority "reject", then the voters have sent a message that none of the candidates are good, akin to a result of "[[none of the above]]" (NOTA). Majority score still gives a winner, but it might be good to have a rule to limit the chance that such a winner would remain in office for multiple terms. This could either be a hard term limit, so that such a winner could only legally serve one term; or perhaps a softer rule that if they run for the same office again, the information of what percent of voters had rejected them should be next to their name on the ballot
+Majority score passes the [[favorite betrayal criterion]], the [[majority criterion]]...
 
 == An example ==
 
@@ -100,5 +70,39 @@ Chattanooga and Knoxville both get under 50 points, but Nashville is above the t
 If Memphis voters tried to strategize by rejecting Nashville in the above scenario, it would have no effect. 
 
 If Chattanooga and Knoxville tried to strategize by supporting each other, this has a chance of working, but Memphis could safely defend Nashville by assisting it. Since Memphis is essentially guaranteed to be solidly rejected, the Memphis voters have nothing to lose by defensively assisting Nashville like this. A mere 13% of "assist" from Memphis's 42% — that is, under a quarter of the Memphis population — would give Nashville 65 points, more than double the combined size of Chattanooga and Knoxville, safely defending it.
+
+== Other scenarios explored ==
+
+In all of the scenarios that follow, [[plurality voting]] would get the wrong answer if voters vote honestly, and Majority Score would get the right answer. 
+
+Say there are two major and several minor candidates (where "major" and "minor" are defined by true support, not simply by media coverage). Voters should reject one major candidate and any minor candidates who are worse; support their favorite, whether they are major or minor; and accept everyone else. In that case, one of the two majors will be rejected by a majority; the other will win; and all minor candidates will show their true support.
+
+Now suppose that there are two overall ideological "sides", and the majority "side" is split into two subfactions, each smaller than the full minority "side". This is called the "[[chicken dilemma]]", because many voting systems encourage a "game of chicken" between the two majority subfactions; whichever subfaction cooperates less will win, unless cooperation breaks down entirely and the minority wins. A very closely-balanced chicken dilemma would have 27% for subfaction A, 26% for subfaction B, and 47% for the minority Z; whereas a more typical example might have 31%, 24%, and 45%. In Majority Score, each subfaction should support their candidate, accept the other subfaction's, and reject the minority; while minority voters should support their candidate and reject both subfactions. In this case, the bigger subfaction will win.
+
+Note that A, the bigger of the two subfactions, must necessarily be above the 50-point threshold in step 2, so Z will be safely eliminated. In many cases, B, the smaller subfaction, will fall short of 50 points. This helps explain the rationale for putting that threshold at 50 points.
+
+This is not to say that majority score solves the chicken dilemma 100%. It is still possible for the smaller subfaction B to win if they largely reject the A while the A voters largely accept B. And if both factions largely reject, Z can win. But the key word there is "largely"; unlike the case with [[approval voting]] or [[score voting]], this strategy will not work if it's done by only a few individual voters, but only if one subfaction uses it significantly more than the other. Given that organizing such a coordinated betrayal in secret would be hard, and that doing so openly would invite mutually-destructive retaliation, it seems that majority score voting has a good chance of avoiding this problem.
+
+As a final tricky scenario, consider what happens in the above case if the minority Z prefers the smaller subfaction B. That results in a [[center squeeze]] scenario: one where candidate B is a [[Condorcet winner]] (able to beat either rival in a one-on-one race) but an honest plurality loser (with the smallest faction of direct supporters). This is more common than one might think; candidate B is fighting an ideological battle on two fronts, while candidates A and C are free to triangulate towards the middle without losing supporters, so the fact that B has the smallest direct support may not reflect a lack of quality. Thus, generally speaking, as long as each faction considers their second choice to be more than half as good as their first choice (taking the worst choice as 0), it's pretty clear that the Condorcet-winner candidate B is the one who democratically "should" win this election. 
+
+In this scenario, there are two ways that B could win. B voters could reject both A and C; or A and/or C voters could assist B. Either of these makes strategic sense for the voters in question, and either or both could lead to a [[strong equilibrium]] result.
+
+One interesting aspect in the above three scenarios: "assist" is only strategically favored in the case of a center squeeze scenario, when the A and C voters are helping B, whom they see as the the "lesser evil", beat the other extreme. If there isn't a center squeeze, voters need only use "support", "accept", or "reject". In fact, even in center squeeze, voters could get by without "assist", as long as enough A and C voters were willing to support B outright. So eliminating the "assist" option would not substantially change the strategic outcome; but it would reduce the expressive power available to the A and C voters in a center squeeze scenario. Thus majority score sacrifices some possible extra simplicity in return for this increased expressive power.
+
+It is very rare to have a voting system which can deal with both chicken dilemma and center squeeze. The two situations are very similar, even when voted honestly, and yet the "correct" outcome is different. And under strategic voting in many voting systems, it is very easy for the two different scenarios to lead to identical ballots. Delegated voting systems such as [[SODA voting]] can deal with both; but without that kind of explicit participation in the voting process from the candidates, it is very hard to find a system which deals with both types of scenario better than majority score does.    
+
+== As the first round of a two-round system ("majority score with runoff") ==
+
+If this system is used as the first round of a two-round runoff, then you want to use it to elect at two finalists in the first round. Thus, run the system twice. The first time, replace "50%" in step 2 with "2/3".
+
+Then, to find the second winner, if the first-time winner got 1/3 or more support, first downweight those ballots as if you'd eliminated enough of them to make up 1/3 of the electorate. Otherwise, discard all of the ballots which supported first-time winner. After downweighting or discarding, re-tally the points and run Majority Score again.
+
+If all the candidates in the first round got a majority of 0's, then you can still find two finalists as explained above. But the voters have sent a message that none of the candidates are good, so one way to deal with the situation would be to have a rule to allow candidates to transfer their 2-votes to new candidates who were not running in the first round, and if those transfers would have made the new candidates finalists, then add them to the second round along with the two finalists who did best in the first round. In that case, since there would be more than two candidates in the second round, it would be important to use majority score for the second round too.
+
+Note: this "proportional two-winner majority score" system for the first round is "matrix-summable", that is, summable with O(n²) information per ballot for n candidates. This contrasts with the base majority score method, which is summable with only O(n) information per ballot, and thus can be counted voting equipment designed for counting plurality elections.
+
+== Relationship to NOTA ==
+
+As discussed in the above section, if all the candidates in the first round got a majority "reject", then the voters have sent a message that none of the candidates are good, akin to a result of "[[none of the above]]" (NOTA). Majority score still gives a winner, but it might be good to have a rule to limit the chance that such a winner would remain in office for multiple terms. This could either be a hard term limit, so that such a winner could only legally serve one term; or perhaps a softer rule that if they run for the same office again, the information of what percent of voters had rejected them should be next to their name on the ballot
 
 [[Category:Graded Bucklin systems]]
