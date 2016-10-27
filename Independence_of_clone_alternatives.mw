@@ -2,7 +2,9 @@ In [[voting system]]s theory, the '''independence of clones criterion''' measure
 
 To be more precise, a subset of the candidates, called a set of clones, exists if no voter ranks any candidate outside the set between (or equal to) any candidates that are in the set. If a set of clones contains at least two candidates, the criterion requires that deleting one of the clones must not increase or decrease the winning chance of any candidate not in the set of clones.
 
-In some systems (such as [[plurality]]), the addition of a similar candidate divides support between similar candidates, which can cause them both to lose. In some other systems (such as the [[Borda count]]), the addition of a similar alternative increases the apparent support for one of the similar candidates, which can cause it to win. In yet other systems (such as [[ranked pairs]]), the introduction of similar alternatives does not affect the chances of the dissimilar candidates, as required by the criterion. There are further systems where the effect of the additional similar alternatives depends on the distribution of other votes.
+In some systems (such as the [[plurality vote]]), the addition of a similar candidate divides support between similar candidates, which can cause them both to lose. In some other systems (such as the [[Borda count]]), the addition of a similar alternative increases the apparent support for one of the similar candidates, which can cause it to win. In yet other systems (such as [[ranked pairs]]), the introduction of similar alternatives does not affect the chances of the dissimilar candidates, as required by the criterion. There are further systems where the effect of the additional similar alternatives depends on the distribution of other votes.
+
+{{TOC limit|limit=3}}
 
 == Clone negative and clone positive ==
 Election methods that fail independence of clones can be clone negative (the addition of a similar candidate decreases another candidate's chance of winning) or clone positive (the addition of a similar candidate increases another candidate's chance of winning). 
@@ -21,7 +23,8 @@ Some of the other methods that fail the criterion are the [[Borda count]], [[Min
 
 == Examples ==
 
-=== [[Borda count]] ===
+=== Borda count ===
+{{Main|Borda count}}
 
 Consider an election in which there are two candidates, A and B. Suppose the voters have the following preferences:
 
@@ -49,7 +52,8 @@ In typical elections, game theory suggests this manipulability of Borda can be e
 
 In the context of people running for office, people can take similar positions on the issues, and in the context of voting on proposals, it is easy to construct similar proposals. Game theory suggests that all factions would seek to nominate as many similar candidates as possible since the winner would depend on the number of similar candidates, regardless of the voters' preferences.
 
-=== [[Copeland's method]] ===
+=== Copeland ===
+{{Main|Copeland's method}}
 This examples show that Copeland's method violates the Independence of clones criterion.
 
 ==== Crowding ====
@@ -323,7 +327,8 @@ The results would be tabulated as follows:
 ===== Conclusion =====
 B benefits from adding inferior clones, while A cannot benefit from the clones because he ties with all of them. So, by adding two clones of B, B changed from loser to winner. Thus, Copeland's method is vulnerable against Teaming and fails the Independence of clones criterion.
 
-=== [[Plurality voting]] ===
+=== Plurality voting ===
+{{Main|Plurality voting system}}
 
 Suppose there are two candidates, A and B, and 55% of the voters prefer A over B. A would win the election, 55% to 45%. But suppose the supporters of B also nominate an alternative similar to A, named A<sub>2</sub>. Assume a significant number of the voters who prefer A over B also prefer A<sub>2</sub> over A. When they vote for A<sub>2</sub>, this reduces A's total below 45%, causing B to win.
 
@@ -339,7 +344,8 @@ Suppose there are two candidates, A and B, and 55% of the voters prefer A over B
 | B 45%
 |}
 
-=== [[Score Voting]] ===
+=== Range Voting ===
+{{Main|Range voting}}
 
 Range voting satisfies the Independence of clones criterion.
 
@@ -386,7 +392,8 @@ Note, that Condorcet methods would lead to a tie between all candidates in this 
 
 How the definition of clones have to be adapted for scored voting methods is controversial.
 
-=== [[Kemeny–Young method]] ===
+=== Kemeny–Young method ===
+{{Main|Kemeny–Young method}}
 
 This example shows that the Kemeny–Young method violates the Independence of clones criterion. Assume five candidates A, B<sub>1</sub>, B<sub>2</sub>, B<sub>3</sub> and C and 13 voters with the following preferences:
 {| class="wikitable"
@@ -504,7 +511,8 @@ Since the clones have identical results against all other candidates, they have 
 ==== Conclusion ====
 A benefits from the two clones of B<sub>1</sub> because A's win is multiplied by the two. So, by adding two clones of B, B changed from winner to loser. Thus, the Kemeny–Young method is vulnerable against spoilers and fails the independence of clones criterion.
 
-=== [[Minimax]] ===
+=== Minimax ===
+{{Main|Minimax Condorcet}}
 This example shows that the minimax method violates the Independence of clones criterion. Assume four candidates A, B<sub>1</sub>, B<sub>2</sub> and B<sub>3</sub> and 9 voters with the following preferences:
 {| class="wikitable"
 |-
