@@ -1,0 +1,362 @@
+'''Reversal symmetry''' is a [[voting system criterion]] which requires that if candidate A is the unique winner, and each voter's individual preferences are inverted, then A must not be elected. Methods that satisfy reversal symmetry include [[Borda count]], the [[Kemeny-Young method]], and the [[Schulze method]]. Methods that fail include [[Bucklin voting]], [[instant-runoff voting]] and [[Condorcet method]]s that fail the [[Condorcet loser criterion]] such as [[Minimax Condorcet|Minimax]].
+
+For cardinal voting systems which can be meaningfully reversed, [[approval voting]] and [[range voting]] satisfy the criterion.
+
+==Examples==
+
+=== [[Instant-runoff voting]] ===
+
+Consider a preferential system where 11 voters express their preferences as:
+*5 voters prefer A then B then C
+*4 voters prefer B then C then A
+*2 voters prefer C then A then B
+With the Borda count A would get 23 points (5×3+4×1+2×2), B would get 24 points, and C would get 19 points, so B would be elected.  In instant-runoff, C would be eliminated in the first round and A would be elected in the second round by 7 votes to 4.
+
+Now reversing the preferences:   
+*5 voters prefer C then B then A
+*4 voters prefer A then C then B
+*2 voters prefer B then A then C
+With the Borda count A would get 21 points (5×1+4×3+2×2), B would get 20 points, and C would get 25 points, so this time C would be elected.  In instant-runoff, B would be eliminated in the first round and A would as before be elected in the second round, this time by 6 votes to 5.
+
+=== [[Majority Judgment]] ===
+
+This example shows that Majority Judgment violates the Reversal symmetry criterion. Assume two candidates A and B and 2 voters with the following ratings:
+{| class="wikitable"
+|-
+! Candidates/<br /># of voters !! A         !! B
+|-
+| 1           || bgcolor="yellowgreen"|Good || bgcolor="yellow"|Fair
+|-
+| 1           || bgcolor="orangered"|Poor   || bgcolor="yellow"|Fair
+|}
+
+Now, the winners are determined for the normal and the reversed ballots.
+
+==== Normal order ====
+In the following the Majority Judgment winner for the normal ballots is determined.
+{| class="wikitable"
+|-
+! Candidates/<br /># of voters !! A         !! B
+|-
+| 1           || bgcolor="yellowgreen"|Good || bgcolor="yellow"|Fair
+|-
+| 1           || bgcolor="orangered"|Poor   || bgcolor="yellow"|Fair
+|}
+
+The sorted ratings would be as follows:
+{|
+|-
+| align=right | Candidate&nbsp;&nbsp;&nbsp;||
+{| cellpadding=0 width=500 border=0 cellspacing=0
+|-
+| width=49% | &nbsp;|| width=2% textalign=center |?|| width=49% |Median point
+|}
+|-
+| align=right | A||
+{| cellpadding=0 width=500 border=0 cellspacing=0
+|-
+| bgcolor=yellowgreen width=50% | &nbsp;|| bgcolor=orangered width=50% |
+|}
+|-
+| align=right | B||
+{| cellpadding=0 width=500 border=0 cellspacing=0
+|-
+| bgcolor=yellow width=100% | &nbsp;
+|}
+|-
+| &nbsp;||&nbsp;
+|-
+| &nbsp;||
+{| cellpadding=1 border=0 cellspacing=1
+|-
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|| bgcolor=yellowgreen |&nbsp;||&nbsp;Good&nbsp;&nbsp;|| bgcolor=Yellow |&nbsp;||&nbsp;Fair&nbsp;&nbsp;|| bgcolor=orangered |&nbsp;||&nbsp;Poor&nbsp;&nbsp;
+|}
+
+|}
+
+'''Result''': The median of A is between "Good" and "Poor" and thus is rounded down to "Poor". The median of B is "Fair". Thus, '''B''' is elected Majority Judgment winner.
+
+==== Reversed order ====
+In the following the Majority Judgment winner for the reversed ballots is determined. For reversing, the higher ratings are considered to be mirror-inverted to the lower ratings ("Good" is exchanged with "Poor", "Fair" stays as is).
+
+{| class="wikitable"
+|-
+! Candidates/<br /># of voters !! A        !! B
+|-
+| 1           || bgcolor="orangered"|Poor   || bgcolor="yellow"|Fair
+|-
+| 1           || bgcolor="yellowgreen"|Good || bgcolor="yellow"|Fair
+|}
+
+The sorted ratings would be as follows:
+{|
+|-
+| align=right | Candidate&nbsp;&nbsp;&nbsp;||
+{| cellpadding=0 width=500 border=0 cellspacing=0
+|-
+| width=49% | &nbsp;|| width=2% textalign=center |?|| width=49% |Median point
+|}
+|-
+| align=right | A||
+{| cellpadding=0 width=500 border=0 cellspacing=0
+|-
+| bgcolor=yellowgreen width=50% | &nbsp;|| bgcolor=orangered width=50% |
+|}
+|-
+| align=right | B||
+{| cellpadding=0 width=500 border=0 cellspacing=0
+|-
+| bgcolor=yellow width=100% | &nbsp;
+|}
+|-
+| &nbsp;||&nbsp;
+|-
+| &nbsp;||
+{| cellpadding=1 border=0 cellspacing=1
+|-
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|| bgcolor=yellowgreen |&nbsp;||&nbsp;Good&nbsp;&nbsp;|| bgcolor=Yellow |&nbsp;||&nbsp;Fair&nbsp;&nbsp;|| bgcolor=orangered |&nbsp;||&nbsp;Poor&nbsp;&nbsp;
+|}
+
+|}
+
+'''Result''': Still, the median of A is between "Good" and "Poor" and thus is rounded down to "Poor". The median of B is "Fair". Thus, '''B''' is elected Majority Judgment winner for the reversed ballots.
+
+==== Conclusion ====
+B is the Majority Judgment winner using the normal ballots and also using the ballots with reversed ratings. Thus, Majority Judgment fails the Reversal symmetry criterion.
+
+However, note that using another rounding method could prevent the failure to Reversal symmetry. Also, note that this situation is unlikely to arise in practical elections with many voters because it involves a "tie" of sorts - some candidate (A in this case) gets exactly the same number of votes above and below a certain value ("fair" in this case).
+
+=== [[Minimax]] ===
+{{Main|Minimax Condorcet}}
+
+This example shows that the Minimax method violates the Reversal symmetry criterion. Assume four candidates A, B, C and D with 14 voters with the following preferences:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 4           || A > B > D > C
+|-
+| 4           || B > C > A > D
+|-
+| 2           || C > D > A > B
+|-
+| 1           || D > A > B > C
+|-
+| 1           || D > B > C > A
+|-
+| 2           || D > C > A > B
+|}
+
+Since all preferences are strict rankings (no equals are present), all three Minimax methods (winning votes, margins and pairwise opposite) elect the same winners.
+
+Now, the winners are determined for the normal and the reversed order.
+
+==== Normal order ====
+In the following the Minimax winner for the ballots in normal order is determined.
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 4           || A > B > D > C
+|-
+| 4           || B > C > A > D
+|-
+| 2           || C > D > A > B
+|-
+| 1           || D > A > B > C
+|-
+| 1           || D > B > C > A
+|-
+| 2           || D > C > A > B
+|}
+
+The results would be tabulated as follows:
+{| class=wikitable border=1
+|+ Pairwise election results
+|-
+| colspan=2 rowspan=2 | 
+| colspan=4 bgcolor="#c0c0ff" align=center | X
+|-
+| bgcolor="#c0c0ff" | A
+| bgcolor="#c0c0ff" | B
+| bgcolor="#c0c0ff" | C
+| bgcolor="#c0c0ff" | D
+|-
+| bgcolor="#ffc0c0" rowspan=4 | Y
+| bgcolor="#ffc0c0" | A
+|
+| bgcolor="#ffe0e0" | [X] 5 <br/>[Y] 9
+| bgcolor="#e0e0ff" | [X] 9 <br/>[Y] 5
+| bgcolor="#ffe0e0" | [X] 6 <br/>[Y] 8
+|-
+| bgcolor="#ffc0c0" | B
+| bgcolor="#e0e0ff" | [X] 9 <br>[Y] 5
+|
+| bgcolor="#ffe0e0" | [X] 4 <br>[Y] 10
+| bgcolor="#ffe0e0" | [X] 6 <br>[Y] 8
+|-
+| bgcolor="#ffc0c0" | C
+| bgcolor="#ffe0e0" | [X] 5 <br>[Y] 9
+| bgcolor="#e0e0ff" | [X] 10 <br>[Y] 4
+| 
+| bgcolor="#e0e0ff" | [X] 8 <br>[Y] 6
+|-
+| bgcolor="#ffc0c0" | D
+| bgcolor="#e0e0ff" | [X] 8 <br>[Y] 6
+| bgcolor="#e0e0ff" | [X] 8 <br>[Y] 6
+| bgcolor="#ffe0e0" | [X] 6 <br>[Y] 8
+| 
+|-
+| colspan=2 bgcolor="#c0c0ff" | Pairwise election results (won-tied-lost):
+| 2-0-1
+| 2-0-1
+| 1-0-2
+| 1-0-2
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise defeat (winning votes):
+| bgcolor=#ffbbbb|''9''
+| bgcolor=#ffbbbb|''9''
+| bgcolor=#ffbbbb|''10''
+| bgcolor=#bbffbb|'''8'''
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise defeat (margins):
+| bgcolor=#ffbbbb|''4''
+| bgcolor=#ffbbbb|''4''
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#bbffbb|'''2'''
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise opposition:
+| bgcolor=#ffbbbb|''9''
+| bgcolor=#ffbbbb|''9''
+| bgcolor=#ffbbbb|''10''
+| bgcolor=#bbffbb|'''8'''
+|}
+
+* [X] indicates voters who preferred the candidate listed in the column caption to the candidate listed in the row caption
+* [Y] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
+
+'''Result''': The candidates A, B, and C form a cycle with clear defeats. D benefits from that since its two losses are relatively close and therefore D's biggest defeat is the closest of all candidates. Thus, '''D''' is elected Minimax winner.
+
+==== Reversed order ====
+In the following the Minimax winner for the ballots in reversed order is determined.
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 4           || C > D > B > A
+|-
+| 4           || D > A > C > B
+|-
+| 2           || B > A > D > C
+|-
+| 1           || C > B > A > D
+|-
+| 1           || A > C > B > D
+|-
+| 2           || B > A > C > D
+|}
+
+The results would be tabulated as follows:
+{| class=wikitable border=1
+|+ Pairwise election results
+|-
+| colspan=2 rowspan=2 | 
+| colspan=4 bgcolor="#c0c0ff" align=center | X
+|-
+| bgcolor="#c0c0ff" | A
+| bgcolor="#c0c0ff" | B
+| bgcolor="#c0c0ff" | C
+| bgcolor="#c0c0ff" | D
+|-
+| bgcolor="#ffc0c0" rowspan=4 | Y
+| bgcolor="#ffc0c0" | A
+|
+| bgcolor="#e0e0ff" | [X] 9 <br>[Y] 5
+| bgcolor="#ffe0e0" | [X] 5 <br>[Y] 9
+| bgcolor="#e0e0ff" | [X] 8 <br>[Y] 6
+|-
+| bgcolor="#ffc0c0" | B
+| bgcolor="#ffe0e0" | [X] 5 <br>[Y] 9
+|
+| bgcolor="#e0e0ff" | [X] 10 <br>[Y] 4
+| bgcolor="#e0e0ff" | [X] 8 <br>[Y] 6
+|-
+| bgcolor="#ffc0c0" | C
+| bgcolor="#e0e0ff" | [X] 9 <br>[Y] 5
+| bgcolor="#ffe0e0" | [X] 4 <br>[Y] 10
+| 
+| bgcolor="#ffe0e0" | [X] 6 <br>[Y] 8
+|-
+| bgcolor="#ffc0c0" | D
+| bgcolor="#ffe0e0" | [X] 6 <br>[Y] 8
+| bgcolor="#ffe0e0" | [X] 6 <br>[Y] 8
+| bgcolor="#e0e0ff" | [X] 8 <br>[Y] 6
+| 
+|-
+| colspan=2 bgcolor="#c0c0ff" | Pairwise election results (won-tied-lost):
+| 1-0-2
+| 1-0-2
+| 2-0-1
+| 2-0-1
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise defeat (winning votes):
+| bgcolor=#ffbbbb|''9''
+| bgcolor=#ffbbbb|''10''
+| bgcolor=#ffbbbb|''9''
+| bgcolor=#bbffbb|'''8'''
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise defeat (margins):
+| bgcolor=#ffbbbb|''4''
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#ffbbbb|''4''
+| bgcolor=#bbffbb|'''2'''
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise opposition:
+| bgcolor=#ffbbbb|''9''
+| bgcolor=#ffbbbb|''10''
+| bgcolor=#ffbbbb|''9''
+| bgcolor=#bbffbb|'''8'''
+|}
+
+'''Result''': Still, the candidates A, B, and C form a cycle with clear defeats and D benefits from that. Therefore D's biggest defeat is the closest of all candidates. Thus, '''D''' is elected Minimax winner.
+
+==== Conclusion ====
+D is the Minimax winner using the normal preference order and also using the ballots with reversed preference orders. Thus, Minimax fails the Reversal symmetry criterion.
+
+=== [[Plurality voting]] ===
+
+This example shows that Plurality voting violates the Reversal symmetry criterion. Assume three candidates A, B and C and 4 voters with the following preferences:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 1           || A > B > C
+|-
+| 1           || C > B > A
+|-
+| 1           || B > A > C
+|-
+| 1           || C > A > B
+|}
+
+Note that reversing all the ballots, leads to the same set of ballots, since the reversed preference order of the first voter resembles the preference order of the second, and similarly with the third and fourth.
+
+In the following the Plurality winner is determined. Plurality ballots only contain the single favorite:
+{| class="wikitable"
+|-
+! # of voters !! Favorite
+|-
+| 1           || A
+|-
+| 1           || B
+|-
+| 2           || C
+|}
+
+'''Result''': The candidates A and B receive 1 vote each, candidate C receives a plurality of 2 votes (50%). Thus, '''C''' is elected Plurality winner.
+
+C is the Plurality winner using the normal ballots and also using the reversed ballot. Thus, Plurality fails the Reversal symmetry criterion.
+
+Note, that every voting system that satisfies the Reversal symmetry criterion, would have to lead to a tie in this example (as in every example in which the set of reversed ballots is the same as the set of normal ballots).
+
+[[Category:Voting system criteria]]
