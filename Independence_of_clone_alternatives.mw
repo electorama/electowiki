@@ -49,8 +49,7 @@ In typical elections, game theory suggests this manipulability of Borda can be e
 
 In the context of people running for office, people can take similar positions on the issues, and in the context of voting on proposals, it is easy to construct similar proposals. Game theory suggests that all factions would seek to nominate as many similar candidates as possible since the winner would depend on the number of similar candidates, regardless of the voters' preferences.
 
-=== Copeland ===
-{{Main|Copeland's method}}
+=== [[Copeland's method]] ===
 This examples show that Copeland's method violates the Independence of clones criterion.
 
 ==== Crowding ====
@@ -324,8 +323,7 @@ The results would be tabulated as follows:
 ===== Conclusion =====
 B benefits from adding inferior clones, while A cannot benefit from the clones because he ties with all of them. So, by adding two clones of B, B changed from loser to winner. Thus, Copeland's method is vulnerable against Teaming and fails the Independence of clones criterion.
 
-=== Plurality voting ===
-{{Main|Plurality voting system}}
+=== [[Plurality voting]] ===
 
 Suppose there are two candidates, A and B, and 55% of the voters prefer A over B. A would win the election, 55% to 45%. But suppose the supporters of B also nominate an alternative similar to A, named A<sub>2</sub>. Assume a significant number of the voters who prefer A over B also prefer A<sub>2</sub> over A. When they vote for A<sub>2</sub>, this reduces A's total below 45%, causing B to win.
 
@@ -341,8 +339,7 @@ Suppose there are two candidates, A and B, and 55% of the voters prefer A over B
 | B 45%
 |}
 
-=== Range Voting ===
-{{Main|Range voting}}
+=== [[Score Voting]] ===
 
 Range voting satisfies the Independence of clones criterion.
 
@@ -389,8 +386,7 @@ Note, that Condorcet methods would lead to a tie between all candidates in this 
 
 How the definition of clones have to be adapted for scored voting methods is controversial.
 
-=== Kemeny–Young method ===
-{{Main|Kemeny–Young method}}
+=== [[Kemeny–Young method]] ===
 
 This example shows that the Kemeny–Young method violates the Independence of clones criterion. Assume five candidates A, B<sub>1</sub>, B<sub>2</sub>, B<sub>3</sub> and C and 13 voters with the following preferences:
 {| class="wikitable"
@@ -508,8 +504,7 @@ Since the clones have identical results against all other candidates, they have 
 ==== Conclusion ====
 A benefits from the two clones of B<sub>1</sub> because A's win is multiplied by the two. So, by adding two clones of B, B changed from winner to loser. Thus, the Kemeny–Young method is vulnerable against spoilers and fails the independence of clones criterion.
 
-=== Minimax ===
-{{Main|Minimax Condorcet}}
+=== [[Minimax]] ===
 This example shows that the minimax method violates the Independence of clones criterion. Assume four candidates A, B<sub>1</sub>, B<sub>2</sub> and B<sub>3</sub> and 9 voters with the following preferences:
 {| class="wikitable"
 |-
