@@ -11,7 +11,17 @@ Note: Majority score voting was originally called SARA voting, an acronym for th
 
 == Criteria compliance == 
 
-Majority score passes the [[favorite betrayal criterion]], the [[majority criterion]]...
+Majority score passes the [[favorite betrayal criterion]], the [[majority criterion]], [[Independence of irrelevant alternatives]], [[Local independence of irrelevant alternatives]] (under the assumption of fixed "honest" ratings for each voter for each candidate), [[Independence of clone alternatives]], [[Monotonicity]], (polytime) [[resolvability]], O(N) [[summability]], and [[later no help]].
+
+There are a few criteria that it does not pass as such, but passes related but weaker criteria. These include:
+
+* It fails the [[mutual majority criterion]], but passes if the mutual majority in question unanimously rejects all candidates outside their mutually-preferred set. It also passes if the number who give the strongest candidate in the set a rating below "support" is less than three times the amount by which the overall group exceeds 50%.
+
+* It fails the [[Condorcet criterion]], but for any set of voters such that an honest majority Condorcet winner exists, there always exists a strong equilibrium set of strictly semi-honest majority score ballots that elects that CW.
+
+* It fails the [[participation criterion]] but passes the [[semi-honest participation criterion]].
+
+It fails the [[consistency criterion]], the [[Condorcet loser criterion]], the [[majority loser criterion]], and the [[later no-harm criterion]].
 
 == An example ==
 
