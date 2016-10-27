@@ -1,0 +1,16 @@
+The '''majority loser criterion''' is a criterion to evaluate [[single-winner voting system]]s. The criterion states that if a majority of voters prefers every other candidate over a given candidate, then that candidate must not win.
+
+Either of the [[Condorcet loser criterion]] or the [[mutual majority criterion]] implies the majority loser criterion. However, the [[Condorcet criterion]] does not imply the majority loser criterion. Neither does the [[majority criterion]] imply the majority loser criterion.
+
+Methods that comply with this criterion include [[Schulze method|Schulze]], [[ranked pairs]], [[Kemeny–Young method|Kemeny–Young]], [[Nanson's method|Nanson]], [[Nanson's method#Baldwin method|Baldwin]], [[Coombs' method|Coombs]], [[Borda count|Borda]], [[Bucklin voting|Bucklin]], [[instant-runoff voting]], [[contingent vote|contingent voting]], and [[anti-plurality voting]].
+
+Methods that do not comply with this criterion include [[Plurality voting system|plurality]], [[Minimax Condorcet|MiniMax]], [[Contingent vote#Sri Lankan contingent vote|Sri Lankan contingent voting]], [[Contingent vote#Supplementary vote|supplementary voting]], [[approval voting]], and [[range voting]].
+
+== See also ==
+* [[Majority criterion]]
+* [[Voting system]]
+
+== References ==
+{{Reflist}}
+
+[[Category:Voting system criteria]]
