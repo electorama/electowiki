@@ -21,8 +21,7 @@ Some of the other methods that fail the criterion are the [[Borda count]], [[Min
 
 == Examples ==
 
-=== Borda count ===
-{{Main|Borda count}}
+=== [[Borda count]] ===
 
 Consider an election in which there are two candidates, A and B. Suppose the voters have the following preferences:
 
