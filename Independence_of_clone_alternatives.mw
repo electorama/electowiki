@@ -4,8 +4,6 @@ To be more precise, a subset of the candidates, called a set of clones, exists i
 
 In some systems (such as the [[plurality vote]]), the addition of a similar candidate divides support between similar candidates, which can cause them both to lose. In some other systems (such as the [[Borda count]]), the addition of a similar alternative increases the apparent support for one of the similar candidates, which can cause it to win. In yet other systems (such as [[ranked pairs]]), the introduction of similar alternatives does not affect the chances of the dissimilar candidates, as required by the criterion. There are further systems where the effect of the additional similar alternatives depends on the distribution of other votes.
 
-{{TOC limit|limit=3}}
-
 == Clone negative and clone positive ==
 Election methods that fail independence of clones can be clone negative (the addition of a similar candidate decreases another candidate's chance of winning) or clone positive (the addition of a similar candidate increases another candidate's chance of winning). 
 
