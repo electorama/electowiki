@@ -7,11 +7,11 @@ Majority score voting chooses the candidate with highest score among the serious
 # '''Highest points wins. In case of a tie, fewest rejections wins.'''
 #* ''This finds the candidate with the widest and deepest support.''
 
-== Naming note ==
+== Naming and relationship to other systems ==
 
 Majority score voting was originally called SARA voting, an acronym for the 4 ratings voters can give. However, putting these ratings out-of-order is confusing, even if it results in a nice-sounding acronym.
 
-It's also similar to other systems such as [[MAS]], [[Majority Choice Approval]], and other [[graded Bucklin]] systems.
+It's also similar to other systems such as [[MAS]], [[Majority Choice Approval]], and other [[graded Bucklin]] systems. Like such systems, it first checks a candidate's median, and, if that is good enough to be comparable with other candidates, goes on to break that "tie" using some other voting method.
 
 == Criteria compliance == 
 
