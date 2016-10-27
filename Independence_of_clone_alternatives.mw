@@ -1,0 +1,674 @@
+In [[voting system]]s theory, the '''independence of clones criterion''' measures an election method's robustness to [[strategic nomination]]. [[Nicolaus Tideman]] was the first to formulate this criterion, which states that the winner must not change due to the addition of a non-winning candidate who is similar to a candidate already present.<ref>T. Nicolaus Tideman, "Independence of clones as a criterion for voting rules", ''Social Choice and Welfare'' Vol. 4, No. 3 (1987), pp. 185&ndash;206.</ref>
+
+To be more precise, a subset of the candidates, called a set of clones, exists if no voter ranks any candidate outside the set between (or equal to) any candidates that are in the set. If a set of clones contains at least two candidates, the criterion requires that deleting one of the clones must not increase or decrease the winning chance of any candidate not in the set of clones.
+
+In some systems (such as the [[plurality vote]]), the addition of a similar candidate divides support between similar candidates, which can cause them both to lose. In some other systems (such as the [[Borda count]]), the addition of a similar alternative increases the apparent support for one of the similar candidates, which can cause it to win. In yet other systems (such as [[ranked pairs]]), the introduction of similar alternatives does not affect the chances of the dissimilar candidates, as required by the criterion. There are further systems where the effect of the additional similar alternatives depends on the distribution of other votes.
+
+{{TOC limit|limit=3}}
+
+== Clone negative and clone positive ==
+Election methods that fail independence of clones can be clone negative (the addition of a similar candidate decreases another candidate's chance of winning) or clone positive (the addition of a similar candidate increases another candidate's chance of winning). 
+
+A method can also fail the independence of clones method in a way that's neither clone positive nor negative. This happens if the method changes its decision about the winner when a non-winning candidate is cloned, but the new winner is not the candidate that was cloned. The effect is called crowding.
+
+The [[Borda count]] is an example of a clone positive method. [[Plurality voting]] is an example of a clone negative method because of [[vote-splitting]]. [[Copeland's method]] is an example of a method that exhibits crowding.
+
+== Compliant methods ==
+
+[[Instant-runoff voting]] and some election methods that comply with the [[Condorcet criterion]] such as [[ranked pairs]] and the [[Schulze method]]<ref>M. Schulze, "A New Monotonic and Clone-Independent Single-Winner Election Method", ''Voting Matters'' 17 (2003), pp 9&ndash;19.</ref> also meet independence of clones.
+
+The interpretation of the term "set of clones" for scored voting systems is controversial. If clones are candidates that are considered nearly identical by the voters, [[range voting]] and [[majority judgment]] satisfy the criterion. If clones also include candidates that are still similar but clearly superior to an existing candidate, that superior clone can win in range voting, even if no inferior clone of that candidate would have won. However, since range voting and majority judgment satisfy the [[Independence of irrelevant alternatives]] criterion, the addition of clones never helps or harms candidates who are already present.
+
+Some of the other methods that fail the criterion are the [[Borda count]], [[Minimax Condorcet|minimax]], the [[Kemeny–Young method]], [[Copeland's method]], [[Bucklin voting]], the [[plurality voting system|plurality vote]], and the [[two-round system]]. Variants of [[Instant-runoff voting]] that eliminate multiple candidates per round (e.g. the [[contingent vote]]) or forbid the voters from ranking all the candidates (e.g. the [[supplementary vote]]) also fail the criterion.
+
+== Examples ==
+
+=== Borda count ===
+{{Main|Borda count}}
+
+Consider an election in which there are two candidates, A and B. Suppose the voters have the following preferences:
+
+{| class="wikitable" border="1"
+| 66%: A>B
+| 34%: B>A
+|}
+
+Candidate A would receive 66% Borda points (66%×1 + 34%×0) and B would receive 34% (66%×0 + 34%×1). Thus candidate A would win by a 66% landslide.
+
+Now suppose supporters of B nominate an additional candidate, B<sub>2</sub>, that is very similar to B but considered inferior by all voters. For the 66% who prefer A, B continues to be their second choice. For the 34% who prefer B, A continues to be their least preferred candidate. Now the voters' preferences are as follows:
+
+{| class="wikitable" border="1"
+| 66%: A>B>B<sub>2</sub>
+| 34%: B>B<sub>2</sub>>A
+|}
+
+Candidate A now has 132% Borda points (66%×2 + 34%×0). B has 134% (66%×1 + 34%×2). B<sub>2</sub> has 34% (66%×0 + 34%×1). The nomination of B<sub>2</sub> changes the winner from A to B, overturning the landslide, even though the additional information about voters' preferences is redundant due to the similarity of B<sub>2</sub> to B.
+
+Similar examples can be constructed to show that ''given the Borda count, any arbitrarily large landslide can be overturned by adding enough candidates'' (assuming at least one voter prefers the landslide loser). For example, to overturn a 90% landslide preference for A over B, add 9 alternatives similar/inferior to B. Then A's score would be 900% (90%×10 + 10%×0) and B's score would be 910% (90%×9 + 10%×10).
+
+No knowledge of the voters' preferences is needed to exploit this strategy. Factions could simply nominate as many alternatives as possible that are similar to their preferred alternative.
+
+In typical elections, game theory suggests this manipulability of Borda can be expected to be a serious problem, particularly when a significant number of voters can be expected to vote their sincere order of preference (as in public elections, where many voters are not strategically sophisticated; cite Michael R. Alvarez of Caltech). Small minorities typically have the power to nominate additional candidates, and typically it is easy to find additional candidates that are similar.
+
+In the context of people running for office, people can take similar positions on the issues, and in the context of voting on proposals, it is easy to construct similar proposals. Game theory suggests that all factions would seek to nominate as many similar candidates as possible since the winner would depend on the number of similar candidates, regardless of the voters' preferences.
+
+=== Copeland ===
+{{Main|Copeland's method}}
+This examples show that Copeland's method violates the Independence of clones criterion.
+
+==== Crowding ====
+Copeland's method is vulnerable against crowding, that is the outcome of the election is changed by adding (non-winning) clones of a non-winning candidate. Assume five candidates A, B, B<sub>2</sub>, B<sub>3</sub> and C and 4 voters with the following preferences:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 1           || A > B<sub>3</sub> > B > B<sub>2</sub> > C
+|-
+| 1           || B<sub>3</sub> > B > B<sub>2</sub> > C > A
+|-
+| 2           || C > A > B<sub>2</sub> > B > B<sub>3</sub>
+|}
+Note, that B, B<sub>2</sub> and B<sub>3</sub> form a clone set.
+
+===== Clones not nominated =====
+If only one of the clones would compete, preferences would be as follows:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 1           || A > B > C
+|-
+| 1           || B > C > A
+|-
+| 2           || C > A > B
+|}
+
+The results would be tabulated as follows:
+{| class=wikitable border=1
+|+ Pairwise Preferences
+|-
+| colspan=2 rowspan=2 | 
+| colspan=3 bgcolor="#c0c0ff" align=center | X
+|-
+| bgcolor="#c0c0ff" | A
+| bgcolor="#c0c0ff" | B
+| bgcolor="#c0c0ff" | C
+|-
+| bgcolor="#ffc0c0" rowspan=3 | Y
+| bgcolor="#ffc0c0" | A
+|
+| bgcolor="#ffe0e0" | [X] 1 <br>[Y] 3
+| bgcolor="#e0e0ff" | [X] 3 <br>[Y] 1
+|-
+| bgcolor="#ffc0c0" | B
+| bgcolor="#e0e0ff" | [X] 3 <br>[Y] 1
+| 
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+|-
+| bgcolor="#ffc0c0" | C
+| bgcolor="#ffe0e0" | [X] 1 <br>[Y] 3
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+|
+|-
+| colspan=2 bgcolor="#c0c0ff" | Pairwise election results (won-tied-lost):
+| 1-0-1
+| 0-1-1
+| 1-1-0
+|}
+
+* [X] indicates voters who preferred the candidate listed in the column caption to the candidate listed in the row caption
+* [Y] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
+
+'''Result''': C has one win and no defeats, A has one win and one defeat. Thus, '''C''' is elected Copeland winner.
+
+===== Clones nominated =====
+Assume, all three clones would compete. The preferences would be the following:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 1           || A > B<sub>3</sub> > B > B<sub>2</sub> > C
+|-
+| 1           || B<sub>3</sub> > B > B<sub>2</sub> > C > A
+|-
+| 2           || C > A > B<sub>2</sub> > B > B<sub>3</sub>
+|}
+
+The results would be tabulated as follows:
+{| class=wikitable border=1
+|+ Pairwise Preferences
+|-
+| colspan=2 rowspan=2 | 
+| colspan=5 bgcolor="#c0c0ff" align=center | X
+|-
+| bgcolor="#c0c0ff" | A
+| bgcolor="#c0c0ff" | B
+| bgcolor="#c0c0ff" | B<sub>2</sub>
+| bgcolor="#c0c0ff" | B<sub>3</sub>
+| bgcolor="#c0c0ff" | C
+|-
+| bgcolor="#ffc0c0" rowspan=5 | Y
+| bgcolor="#ffc0c0" | A
+|
+| bgcolor="#ffe0e0" | [X] 1 <br>[Y] 3
+| bgcolor="#ffe0e0" | [X] 1 <br>[Y] 3
+| bgcolor="#ffe0e0" | [X] 1 <br>[Y] 3
+| bgcolor="#e0e0ff" | [X] 3 <br>[Y] 1
+|-
+| bgcolor="#ffc0c0" | B
+| bgcolor="#e0e0ff" | [X] 3 <br>[Y] 1
+| 
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+|-
+| bgcolor="#ffc0c0" | B<sub>2</sub>
+| bgcolor="#e0e0ff" | [X] 3 <br>[Y] 1
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+|
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+|-
+| bgcolor="#ffc0c0" | B<sub>3</sub>
+| bgcolor="#e0e0ff" | [X] 3 <br>[Y] 1
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+|
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+|-
+| bgcolor="#ffc0c0" | C
+| bgcolor="#ffe0e0" | [X] 1 <br>[Y] 3
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+| bgcolor="#c0c0c0" | [X] 2 <br>[Y] 2
+|
+|-
+| colspan=2 bgcolor="#c0c0ff" | Pairwise election results (won-tied-lost):
+| 3-0-1
+| 0-3-1
+| 0-3-1
+| 0-3-1
+| 1-3-0
+|}
+
+'''Result''': Still, C has one win and no defeat, but now A has three wins and one defeat. Thus, '''A''' is elected Copeland winner.
+
+===== Conclusion =====
+A benefits from the clones of the candidate he defeats, while C cannot benefit from the clones because C ties with all of them. Thus, by adding two clones of the non-winning candidate B, the winner has changed. Thus, Copeland's method is vulnerable against crowding and fails the independence of clones criterion.
+
+==== Teaming ====
+Copeland's method is also vulnerable against teaming, that is adding clones raises the winning chances of the set of clones. Again, assume five candidates A, B, B<sub>2</sub>, B<sub>3</sub> and C and 2 voters with the following preferences:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 1           || A > C > B > B<sub>3</sub> > B<sub>2</sub>
+|-
+| 1           || B > B<sub>2</sub> > B<sub>3</sub> > A > C
+|}
+Note, that B, B<sub>2</sub> and B<sub>3</sub> form a clone set.
+
+===== Clones not nominated =====
+Assume that only one of the clones would compete. The preferences would be as follows:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 1           || A > C > B
+|-
+| 1           || B > A > C
+|}
+
+The results would be tabulated as follows:
+{| class=wikitable border=1
+|+ Pairwise Preferences
+|-
+| colspan=2 rowspan=2 | 
+| colspan=3 bgcolor="#c0c0ff" align=center | X
+|-
+| bgcolor="#c0c0ff" | A
+| bgcolor="#c0c0ff" | B
+| bgcolor="#c0c0ff" | C
+|-
+| bgcolor="#ffc0c0" rowspan=3 | Y
+| bgcolor="#ffc0c0" | A
+|
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+| bgcolor="#ffe0e0" | [X] 0 <br>[Y] 2
+|-
+| bgcolor="#ffc0c0" | B
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+| 
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+|-
+| bgcolor="#ffc0c0" | C
+| bgcolor="#e0e0ff" | [X] 2 <br>[Y] 0
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+|
+|-
+| colspan=2 bgcolor="#c0c0ff" | Pairwise election results (won-tied-lost):
+| 1-1-0
+| 0-2-0
+| 0-1-1
+|}
+
+'''Result''': A has one win and no defeats, B has no wins or defeats so '''A''' is elected Copeland winner.
+
+===== Clones nominated =====
+If all three clones competed, the preferences would be as follows:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 1           || A > C > B > B<sub>3</sub> > B<sub>2</sub>
+|-
+| 1           || B > B<sub>2</sub> > B<sub>3</sub> > A > C
+|}
+
+The results would be tabulated as follows:
+{| class=wikitable border=1
+|+ Pairwise Preferences
+|-
+| colspan=2 rowspan=2 | 
+| colspan=5 bgcolor="#c0c0ff" align=center | X
+|-
+| bgcolor="#c0c0ff" | A
+| bgcolor="#c0c0ff" | B
+| bgcolor="#c0c0ff" | B<sub>2</sub>
+| bgcolor="#c0c0ff" | B<sub>3</sub>
+| bgcolor="#c0c0ff" | C
+|-
+| bgcolor="#ffc0c0" rowspan=5 | Y
+| bgcolor="#ffc0c0" | A
+|
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+| bgcolor="#ffe0e0" | [X] 0 <br>[Y] 2
+|-
+| bgcolor="#ffc0c0" | B
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+| 
+| bgcolor="#ffe0e0" | [X] 0 <br>[Y] 2
+| bgcolor="#ffe0e0" | [X] 0 <br>[Y] 2
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+|-
+| bgcolor="#ffc0c0" | B<sub>2</sub>
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+| bgcolor="#e0e0ff" | [X] 2 <br>[Y] 0
+|
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+|-
+| bgcolor="#ffc0c0" | B<sub>3</sub>
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+| bgcolor="#e0e0ff" | [X] 2 <br>[Y] 0
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+|
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+|-
+| bgcolor="#ffc0c0" | C
+| bgcolor="#e0e0ff" | [X] 2 <br>[Y] 0
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+| bgcolor="#c0c0c0" | [X] 1 <br>[Y] 1
+|
+|-
+| colspan=2 bgcolor="#c0c0ff" | Pairwise election results (won-tied-lost):
+| 1-3-0
+| 2-2-0
+| 0-3-1
+| 0-3-1
+| 0-3-1
+|}
+
+'''Result''': A has one win and no defeat, but now B has two wins and no defeat. Thus, '''B''' is elected Copeland winner.
+
+===== Conclusion =====
+B benefits from adding inferior clones, while A cannot benefit from the clones because he ties with all of them. So, by adding two clones of B, B changed from loser to winner. Thus, Copeland's method is vulnerable against Teaming and fails the Independence of clones criterion.
+
+=== Plurality voting ===
+{{Main|Plurality voting system}}
+
+Suppose there are two candidates, A and B, and 55% of the voters prefer A over B. A would win the election, 55% to 45%. But suppose the supporters of B also nominate an alternative similar to A, named A<sub>2</sub>. Assume a significant number of the voters who prefer A over B also prefer A<sub>2</sub> over A. When they vote for A<sub>2</sub>, this reduces A's total below 45%, causing B to win.
+
+{| class="wikitable" border="1"
+|-
+| A 55%
+| A 30%
+|- 
+| A<sub>2</sub> not present
+| A<sub>2</sub> 25%
+|-
+| B 45%
+| B 45%
+|}
+
+=== Range Voting ===
+{{Main|Range voting}}
+
+Range voting satisfies the Independence of clones criterion.
+
+==== Voters changing their opinion ====
+However, like in every voting system, if voters change their opinions about candidates if similar candidates are added, adding clone candidates can change the outcome of an election. This can be seen by some premises and a simple example:
+
+In range voting, to raise the influence of the ballot, the voter can give the maximum possible score to their most preferred alternative and the minimum possible score to their least preferred alternative.<ref>http://www.rangevoting.org/RVstrat3.html</ref> In fact, giving the maximum possible score to all candidates that are over some threshold and giving the minimum possible score to the other candidates, will maximize the influence of a ballot on the outcome.<ref>http://scorevoting.net/RVstrat7.html</ref> However, for this example it is necessary that the voter uses the first simple rule, but not the second.
+
+Begin by supposing there are 3 alternatives: A, B and B<sub>2</sub>, where B<sub>2</sub> is similar to B but considered inferior by the supporters of A and B. The voters supporting A would have the order of preference "A>B>B<sub>2</sub>" so that they give A the maximum possible score, they give B<sub>2</sub> the minimum possible score, and they give B a score that's somewhere in between (greater than the minimum). The supporters of B would have the order of preference "B>B<sub>2</sub>>A", so they give B the maximum possible score, A the minimum score and B<sub>2</sub> a score somewhere in between. Assume B narrowly wins the election.
+
+Now suppose B<sub>2</sub> isn't nominated. The voters supporting A who would have given B a score somewhere in between would now give B the minimum score while the supporters of B will still give B the maximum score, changing the winner to A. This violates the criterion.
+Note, that if the voters that support B would prefer B<sub>2</sub> to B, this result would not hold, since removing B<sub>2</sub> would raise the score B receives from his supporters in an analogous way as the score he receives from the supporters of A would decrease.
+
+The conclusion that can be drawn is that considering all voters voting in a certain special way, range voting creates an incentive to nominate additional alternatives that are similar to one you prefer, but considered clearly inferior by his voters and by the voters of his opponent, since this can be expected to cause the voters supporting the opponent to raise their score of the one you prefer (because it looks better by comparison to the inferior ones), but not his own voters to lower their score.
+
+==== Strictly-interpreted definition of ranked-clones ====
+The definition of a set of clones for the Independence of clones criterion has been created for ranked voting systems. For scored voting systems, this definition is not accurate. This can be seen by the following example:
+
+Assume three candidates A, B and C with the following scores:
+{| class="wikitable"
+|-
+!             !! colspan=3|Scores
+|-
+! # of voters !! A  !! B  !! C
+|-
+| 1           || 10 || 8  || 0
+|-
+| 1           || 0  || 8  || 9
+|}
+
+The set {A, B} is a set of clones, since there is no voter that gives C a score between the scores of A and B.
+
+Also, the set {B, C} is a set of clones, since there is no voter that gives A a score between the scores of B and C.
+
+The set {A, C} is not a set of clones, since both voters gives B a score between the scores of A and C.
+
+So, A is a clone of B, and B is a clone of C, but A is not a clone C.
+
+Now, if the election is held between A and C (without B), then A will win. If B is added, B will win. B is a clone of A, the winner in the first place. But B is also a clone of C, the loser in the first place. Thus, using the definition in its strict form, B must not win, because the inferior C cannot win.
+
+However, even in this strict version of the definition of clones, adding a non-winning clone does not change the chances of all candidates to win.
+
+Note, that Condorcet methods would lead to a tie between all candidates in this example. Whether Independence of clones is satisfied depends on the tie-breaker. Using the Schulze method or ranked pairs, simply choosing one of the tied candidates at random would raise the chance of the clone-set {A, B} from 50% if B don't compete to 67%, if B compete and thus, violate the criterion.
+
+How the definition of clones have to be adapted for scored voting methods is controversial.
+
+=== Kemeny–Young method ===
+{{Main|Kemeny–Young method}}
+
+This example shows that the Kemeny–Young method violates the Independence of clones criterion. Assume five candidates A, B<sub>1</sub>, B<sub>2</sub>, B<sub>3</sub> and C and 13 voters with the following preferences:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 4           || A > B<sub>1</sub> > B<sub>2</sub> > B<sub>3</sub> > C
+|-
+| 5           || B<sub>1</sub> > B<sub>2</sub> > B<sub>3</sub> > C > A
+|-
+| 4           || C > A > B<sub>1</sub> > B<sub>2</sub> > B<sub>3</sub>
+|}
+Note, that B<sub>1</sub>, B<sub>2</sub> and B<sub>3</sub> form a clone set.
+
+==== Clones not nominated ====
+Assume only one of the clones competes. The preferences would be:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 4           || A > B<sub>1</sub> > C
+|-
+| 5           || B<sub>1</sub> > C > A
+|-
+| 4           || C > A > B<sub>1</sub>
+|}
+
+The Kemeny–Young method arranges the pairwise comparison counts in the following tally table:
+{| class="wikitable"
+|-
+! colspan=2 rowspan=2|All possible pairs<br/>of choice names !! colspan=3|Number of votes with indicated preference
+|-
+!                                                               Prefer X over Y !! Equal preference !! Prefer Y over X
+|-
+| X = A || Y = B<sub>1</sub>                                 || 8               || 0                || 5
+|-
+| X = A || Y = C                                             || 4               || 0                || 9
+|-
+| X = B<sub>1</sub> || Y = C                                 || 9               || 0                || 4
+|}
+
+The ranking scores of all possible rankings are:
+{| class="wikitable"
+|-
+! Preferences             !! 1. vs 2. !! 1. vs 3. !! 2. vs 3. !! Total
+|-
+| A > B<sub>1</sub> > C   ||  8       ||  4       ||  9       || bgcolor=#ffbbbb|''21''
+|-
+| A > C > B<sub>1</sub>   ||  4       ||  8       ||  4       || bgcolor=#ffbbbb|''16''
+|-
+| B<sub>1</sub> > A > C   ||  5       ||  9       ||  4       || bgcolor=#ffbbbb|''18''
+|-
+| B<sub>1</sub> > C > A   ||  9       ||  5       ||  9       ||  bgcolor=#bbffbb|'''23'''
+|-
+| C > A > B<sub>1</sub>   ||  9       ||  4       ||  8       || bgcolor=#ffbbbb|''21''
+|-
+| C > B<sub>1</sub> > A   ||  4       ||  9       ||  5       || bgcolor=#ffbbbb|''18''
+|}
+
+'''Result''': The ranking B<sub>1</sub> > C > A has the highest ranking score. Thus, '''B<sub>1</sub>''' wins ahead of C and A.
+
+==== Clones nominated ====
+Assume all three clones compete. The preferences would be:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 4           || A > B<sub>1</sub> > B<sub>2</sub> > B<sub>3</sub> > C
+|-
+| 5           || B<sub>1</sub> > B<sub>2</sub> > B<sub>3</sub> > C > A
+|-
+| 4           || C > A > B<sub>1</sub> > B<sub>2</sub> > B<sub>3</sub>
+|}
+
+The Kemeny–Young method arranges the pairwise comparison counts in the following tally table (with <math>i \in \{1, 2, 3\}</math>) :
+{| class="wikitable"
+|-
+! colspan=2 rowspan=2|All possible pairs<br/>of choice names !! colspan=3|Number of votes with indicated preference
+|-
+!                                                               Prefer X over Y !! Equal preference !! Prefer Y over X
+|-
+| X = A || Y = B<sub>i</sub>                                 || 8               || 0                || 5
+|-
+| X = A || Y = C                                             || 4               || 0                || 9
+|-
+| X = B<sub>i</sub> || Y = C                                 || 9               || 0                || 4
+|-
+| X = B<sub>1</sub> || Y = B<sub>2</sub>                     || 13              || 0                || 0
+|-
+| X = B<sub>1</sub> || Y = B<sub>3</sub>                     || 13              || 0                || 0
+|-
+| X = B<sub>2</sub> || Y = B<sub>3</sub>                     || 13              || 0                || 0
+|}
+
+Since the clones have identical results against all other candidates, they have to be ranked one after another in the optimal ranking. More over, the optimal ranking within the clones is unambiguous: B<sub>1</sub> > B<sub>2</sub> > B<sub>3</sub>. In fact, for computing the results, the three clones can be seen as one united candidate B, whose wins and defeats are three times as strong as of every single clone. The ranking scores of all possible rankings with respect to that are:
+{| class="wikitable"
+|-
+! Preferences !! 1. vs 2. !! 1. vs 3. !! 2. vs 3. !! Total
+|-
+| A > B > C   || 24       ||  4       || 27       || bgcolor=#bbffbb|'''55'''
+|-
+| A > C > B   ||  4       || 24       || 12       || bgcolor=#ffbbbb|''40''
+|-
+| B > A > C   || 15       || 27       ||  4       || bgcolor=#ffbbbb|''46''
+|-
+| B > C > A   || 27       || 15       ||  9       || bgcolor=#ffbbbb|''51''
+|-
+| C > A > B   ||  9       || 12       || 24       || bgcolor=#ffbbbb|''45''
+|-
+| C > B > A   || 12       ||  9       || 15       || bgcolor=#ffbbbb|''36''
+|}
+
+'''Result''': The ranking A > B<sub>1</sub> > B<sub>2</sub> > B<sub>3</sub> > C has the highest ranking score. Thus, '''A''' wins ahead of the clones B<sub>i</sub> and C.
+
+==== Conclusion ====
+A benefits from the two clones of B<sub>1</sub> because A's win is multiplied by the two. So, by adding two clones of B, B changed from winner to loser. Thus, the Kemeny–Young method is vulnerable against spoilers and fails the independence of clones criterion.
+
+=== Minimax ===
+{{Main|Minimax Condorcet}}
+This example shows that the minimax method violates the Independence of clones criterion. Assume four candidates A, B<sub>1</sub>, B<sub>2</sub> and B<sub>3</sub> and 9 voters with the following preferences:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 3           || A > B<sub>1</sub> > B<sub>2</sub> > B<sub>3</sub>
+|-
+| 3           || B<sub>2</sub> > B<sub>3</sub> > B<sub>1</sub> > A
+|-
+| 2           || B<sub>3</sub> > B<sub>1</sub> > B<sub>2</sub> > A
+|-
+| 1           || A > B<sub>3</sub> > B<sub>1</sub> > B<sub>2</sub>
+|}
+Note, that B<sub>1</sub>, B<sub>2</sub> and B<sub>3</sub> form a clone set.
+
+Since all preferences are strict rankings (no equals are present), all three minimax methods (winning votes, margins and pairwise opposite) elect the same winners.
+
+==== Clones not nominated ====
+Assume only one of the clones would compete. The preferences would be:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 4           || A > B<sub>1</sub>
+|-
+| 5           || B<sub>1</sub> > A
+|}
+
+The results would be tabulated as follows:
+{| class=wikitable border=1
+|+ Pairwise election results
+|-
+| colspan=2 rowspan=2 | 
+| colspan=2 bgcolor="#c0c0ff" align=center | X
+|-
+| bgcolor="#c0c0ff" | A
+| bgcolor="#c0c0ff" | B<sub>1</sub>
+|-
+| bgcolor="#ffc0c0" rowspan=2 | Y
+| bgcolor="#ffc0c0" | A
+|
+| bgcolor="#e0e0ff" | [X] 5 <br>[Y] 4
+|-
+| bgcolor="#ffc0c0" | B<sub>1</sub>
+| bgcolor="#ffe0e0" | [X] 4 <br>[Y] 5
+|
+|-
+| colspan=2 bgcolor="#c0c0ff" | Pairwise election results (won-tied-lost):
+| 0-1
+| 1-0
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise defeat (winning votes):
+| bgcolor=#ffbbbb|''5''
+| bgcolor=#bbffbb|'''0'''
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise defeat (margins):
+| bgcolor=#ffbbbb|''1''
+| bgcolor=#bbffbb|'''0'''
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise opposition:
+| bgcolor=#ffbbbb|''5''
+| bgcolor=#bbffbb|'''4'''
+|}
+
+* [X] indicates voters who preferred the candidate listed in the column caption to the candidate listed in the row caption
+* [Y] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
+
+'''Result''': B is the Condorcet winner. Thus, '''B''' is elected minimax winner.
+
+==== Clones nominated ====
+Now assume, all three clones would compete. The preferences would be as follows:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 3           || A > B<sub>1</sub> > B<sub>2</sub> > B<sub>3</sub>
+|-
+| 3           || B<sub>2</sub> > B<sub>3</sub> > B<sub>1</sub> > A
+|-
+| 2           || B<sub>3</sub> > B<sub>1</sub> > B<sub>2</sub> > A
+|-
+| 1           || A > B<sub>3</sub> > B<sub>1</sub> > B<sub>2</sub>
+|}
+
+The results would be tabulated as follows:
+{| class=wikitable border=1
+|+ Pairwise election results
+|-
+| colspan=2 rowspan=2 | 
+| colspan=4 bgcolor="#c0c0ff" align=center | X
+|-
+| bgcolor="#c0c0ff" | A
+| bgcolor="#c0c0ff" | B<sub>1</sub>
+| bgcolor="#c0c0ff" | B<sub>2</sub>
+| bgcolor="#c0c0ff" | B<sub>3</sub>
+|-
+| bgcolor="#ffc0c0" rowspan=4 | Y
+| bgcolor="#ffc0c0" | A
+|
+| bgcolor="#e0e0ff" | [X] 5 <br>[Y] 4
+| bgcolor="#e0e0ff" | [X] 5 <br>[Y] 4
+| bgcolor="#e0e0ff" | [X] 5 <br>[Y] 4
+|-
+| bgcolor="#ffc0c0" | B<sub>1</sub>
+| bgcolor="#ffe0e0" | [X] 4 <br>[Y] 5
+|
+| bgcolor="#ffe0e0" | [X] 3 <br>[Y] 6
+| bgcolor="#e0e0ff" | [X] 6 <br>[Y] 3
+|-
+| bgcolor="#ffc0c0" | B<sub>2</sub>
+| bgcolor="#ffe0e0" | [X] 4 <br>[Y] 5
+| bgcolor="#e0e0ff" | [X] 6 <br>[Y] 3
+| 
+| bgcolor="#ffe0e0" | [X] 3 <br>[Y] 6
+|-
+| bgcolor="#ffc0c0" | B<sub>3</sub>
+| bgcolor="#ffe0e0" | [X] 4 <br>[Y] 5
+| bgcolor="#ffe0e0" | [X] 3 <br>[Y] 6
+| bgcolor="#e0e0ff" | [X] 6 <br>[Y] 3
+| 
+|-
+| colspan=2 bgcolor="#c0c0ff" | Pairwise election results (won-tied-lost):
+| 0-0-3
+| 2-0-1
+| 2-0-1
+| 2-0-1
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise defeat (winning votes):
+| bgcolor=#bbffbb|'''5'''
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#ffbbbb|''6''
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise defeat (margins):
+| bgcolor=#bbffbb|'''1'''
+| bgcolor=#ffbbbb|''3''
+| bgcolor=#ffbbbb|''3''
+| bgcolor=#ffbbbb|''3''
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise opposition:
+| bgcolor=#bbffbb|'''5'''
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#ffbbbb|''6''
+|}
+
+'''Result''': A has the closest biggest defeat. Thus, '''A''' is elected minimax winner.
+
+==== Conclusion ====
+By adding clones, the Condorcet winner B<sub>1</sub> becomes defeated. All three clones beat each other in clear defeats. 
+A benefits from that. So, by adding two clones of B, B changed from winner to loser. Thus, the minimax method is vulnerable against spoilers and fails the independence of clones criterion.
+
+==See also==
+* [[Strategic nomination]]
+
+==References==
+{{reflist}}
+
+[[Category:Voting system criteria]]
