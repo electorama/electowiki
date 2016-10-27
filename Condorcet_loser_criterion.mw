@@ -1,0 +1,280 @@
+
+In single-winner [[voting system]] theory, the '''Condorcet loser criterion''' is a measure for differentiating voting systems. It implies the [[majority loser criterion]].
+
+A [[voting system]] complying with the Condorcet loser criterion will never allow a ''Condorcet loser'' to win.  A Condorcet loser is a candidate who can be defeated in a [[Condorcet method|head-to-head competition]] against each other candidate. (Not all elections will have a Condorcet loser since it is possible for three or more candidates to be mutually defeatable in different head-to-head competitions.)
+
+A slightly weaker (easier to pass) version is the majority Condorcet loser criterion, which requires that a candidate who can be defeated ''by a majority'' in a head-to-head competition against each other candidate, lose. It is possible for a system, such as Majority Judgment, which allows voters not to state a preference between two candidates, to pass the MCLC but not the CLC.{{citation needed|date=January 2012}}
+
+Compliant methods include: [[two-round system]], [[instant-runoff voting]] (AV), [[contingent vote]], [[borda count]], [[Schulze method]], [[ranked pairs]], and [[Kemeny-Young method]].
+
+Noncompliant methods include: [[plurality voting]], [[Contingent vote#Supplementary Vote|supplementary voting]], [[Contingent vote#Sri Lankan contingent vote|Sri Lankan contingent voting]], [[approval voting]], [[range voting]], [[Bucklin voting]] and [[minimax Condorcet]].
+
+== Examples ==
+
+=== [[Approval voting]] ===
+The ballots for Approval voting do not contain the information to identify the Condorcet loser. Thus, Approval Voting cannot prevent the Condorcet loser from winning in some cases. The following example shows that Approval voting violates the Condorcet loser criterion.
+
+Assume four candidates A, B, C and L with 3 voters with the following preferences:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 1           || A > B > L > C
+|-
+| 1           || B > C > L > A
+|-
+| 1           || C > A > L > B
+|}
+The Condorcet loser is L, since every other candidate is preferred to him by 2 out of 3 voters.
+
+There are several possibilities how the voters could translate their preference order into an approval ballot, i.e. where they set the threshold between approvals and disapprovals. For example, the first voter could approve (i) only A or (ii) A and B or (iii) A, B and L or (iv) all candidates or (v) none of them. Let's assume, that all voters approve three candidates and disapprove only the last one. The approval ballots would be:
+{| class="wikitable"
+|-
+! # of voters !! Approvals || Disapprovals
+|-
+| 1           || A, B, L   || C
+|-
+| 1           || B, C, L   || A
+|-
+| 1           || A, C, L   || B
+|}
+
+'''Result''': L is approved by all three voters, whereas the three other candidates are approved by only two voters. Thus, the Condorcet loser '''L''' is elected Approval winner.
+
+Note, that if any voter would set the threshold between approvals and disapprovals at any other place, the Condorcet loser L would not be the (single) Approval winner. However, since Approval voting elects the Condorcet loser in the example, Approval voting fails the Condorcet loser criterion.
+
+=== [[Majority Judgment]] ===
+
+This example shows that Majority Judgment violates the Condorcet loser criterion. Assume three candidates A, B and L and 3 voters with the following opinions:
+{| class="wikitable"
+|-
+! Candidates/<br /># of voters !! A !! B !! L
+|-
+| 1           || bgcolor="green"|Excellent || bgcolor="red"|Bad || bgcolor="YellowGreen"|Good
+|-
+| 1           || bgcolor="red"|Bad || bgcolor="green"|Excellent || bgcolor="YellowGreen"|Good
+|-
+| 1           || bgcolor="yellow"|Fair || bgcolor="orange"|Poor || bgcolor="orangered"|Bad
+|}
+
+The sorted ratings would be as follows:
+{|
+|-
+| align=right | Candidate&nbsp;&nbsp;&nbsp;
+|
+{| cellpadding=0 width=500 border=0 cellspacing=0
+|-
+| width=49% | &nbsp;
+| width=2% textalign=center | ?
+| width=49% | Median point
+|}
+|-
+| align=right | L
+|
+{| cellpadding=0 width=500 border=0 cellspacing=0
+|-
+| bgcolor=YellowGreen width=67% | &nbsp;
+| bgcolor=red width=33% |
+|}
+|-
+| align=right | A
+|
+{| cellpadding=0 width=500 border=0 cellspacing=0
+|-
+| bgcolor=green width=33% | &nbsp;
+| bgcolor=yellow width=34% | &nbsp;
+| bgcolor=red width=33% |
+|}
+|-
+| align=right | B
+|
+{| cellpadding=0 width=500 border=0 cellspacing=0
+|-
+| bgcolor=green width=33% | &nbsp;
+| bgcolor=orange width=34% | &nbsp;
+| bgcolor=red width=33% |
+|}
+|-
+| &nbsp;
+| &nbsp;
+|-
+| &nbsp;
+|
+{| cellpadding=1 border=0 cellspacing=1
+|-
+| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+| bgcolor=green | &nbsp;
+| &nbsp;Excellent&nbsp;&nbsp;
+| bgcolor=YellowGreen | &nbsp;
+| &nbsp;Good&nbsp;&nbsp;
+| bgcolor=Yellow | &nbsp;
+| &nbsp;Fair&nbsp;&nbsp;
+| bgcolor=Orange | &nbsp;
+| &nbsp;Poor&nbsp;&nbsp;
+| bgcolor=Red | &nbsp;
+| &nbsp;Bad&nbsp;&nbsp;
+|}
+|}
+
+L has the median rating "Good", A has the median rating "Fair" and B has the median rating "Poor". Thus, '''L''' is the Majority Judgment winner.
+
+Now, the Condorcet loser is determined. If all informations are removed that are not considered to determine the Condorcet loser, we have:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 1           || A > L > B
+|-
+| 1           || B > L > A
+|-
+| 1           || A > B > L
+|}
+A is preferred over L by two voters and B is preferred over L by two voters. Thus, L is the Condorcet loser.
+
+'''Result''': L is the Condorcet loser. However, while the voter least preferring L also rates A and B relatively low, the other two voters rate L close to their favorites. Thus, '''L''' is elected Majority Judgment winner. Hence, Majority Judgment fails the Condorcet loser criterion.
+
+=== Minimax ===
+{{Main|Minimax Condorcet}}
+
+This example shows that the Minimax method violates the Condorcet loser criterion. Assume four candidates A, B, C and L with 9 voters with the following preferences:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 1           || A > B > C > L
+|-
+| 1           || A > B > L > C
+|-
+| 3           || B > C > A > L
+|-
+| 1           || C > L > A > B
+|-
+| 1           || L > A > B > C
+|-
+| 2           || L > C > A > B
+|}
+
+Since all preferences are strict rankings (no equals are present), all three Minimax methods (winning votes, margins and pairwise opposite) elect the same winners:
+{| class=wikitable border=1
+|+ Pairwise election results
+|-
+| colspan=2 rowspan=2 | 
+| colspan=4 bgcolor="#c0c0ff" align=center | X
+|-
+| bgcolor="#c0c0ff" | A
+| bgcolor="#c0c0ff" | B
+| bgcolor="#c0c0ff" | C
+| bgcolor="#c0c0ff" | L
+|-
+| bgcolor="#ffc0c0" rowspan=4 | Y
+| bgcolor="#ffc0c0" | A
+|
+| bgcolor="#ffe0e0" | [X] 3 <br/>[Y] 6
+| bgcolor="#e0e0ff" | [X] 6 <br>[Y] 3
+| bgcolor="#ffe0e0" | [X] 4 <br/>[Y] 5
+|-
+| bgcolor="#ffc0c0" | B
+| bgcolor="#e0e0ff" | [X] 6 <br>[Y] 3
+|
+| bgcolor="#ffe0e0" | [X] 3 <br/>[Y] 6
+| bgcolor="#ffe0e0" | [X] 4 <br/>[Y] 5
+|-
+| bgcolor="#ffc0c0" | C
+| bgcolor="#ffe0e0" | [X] 3 <br/>[Y] 6
+| bgcolor="#e0e0ff" | [X] 6 <br>[Y] 3
+| 
+| bgcolor="#ffe0e0" | [X] 4 <br/>[Y] 5
+|-
+| bgcolor="#ffc0c0" | L
+| bgcolor="#e0e0ff" | [X] 5 <br>[Y] 4
+| bgcolor="#e0e0ff" | [X] 5 <br>[Y] 4
+| bgcolor="#e0e0ff" | [X] 5 <br>[Y] 4
+| 
+|-
+| colspan=2 bgcolor="#c0c0ff" | Pairwise election results (won-tied-lost):
+| 2-0-1
+| 2-0-1
+| 2-0-1
+| 0-0-3
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise defeat (winning votes):
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#bbffbb|'''5'''
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise defeat (margins):
+| bgcolor=#ffbbbb|''3''
+| bgcolor=#ffbbbb|''3''
+| bgcolor=#ffbbbb|''3''
+| bgcolor=#bbffbb|'''1'''
+|-
+| colspan=2 bgcolor="#c0c0ff" | worst pairwise opposition:
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#ffbbbb|''6''
+| bgcolor=#bbffbb|'''5'''
+|}
+
+* [X] indicates voters who preferred the candidate listed in the column caption to the candidate listed in the row caption
+* [Y] indicates voters who preferred the candidate listed in the row caption to the candidate listed in the column caption
+
+'''Result''': L loses against all other candidates and, thus, is Condorcet loser. However, the candidates A, B and C form a cycle with clear defeats. L benefits from that since it loses relatively closely against all three and therefore L's biggest defeat is the closest of all candidates. Thus, the Condorcet loser '''L''' is elected Minimax winner. Hence, the Minimax method fails the Condorcet loser criterion.
+
+=== [[Plurality voting]] ===
+
+{{Tenn voting example}}
+
+Here, Memphis has a plurality (42%) of the first preferences, so would be the winner under simple plurality voting. However, the majority (58%) of voters have Memphis as their ''fourth'' preference, and if two of the remaining three cities were not in the running to become the capital, Memphis would lose all of the contests 58–42. Hence, Memphis is the Condorcet loser.
+
+=== Range voting ===
+{{Main|Range voting}}
+
+This example shows that Range voting violates the Condorcet loser criterion. Assume two candidates A and L and 3 voters with the following opinions:
+{| class="wikitable"
+|-
+!             !! colspan=2|Scores
+|-
+! # of voters !! A                  || L
+|-
+| 2           || bgcolor=#ddff55| 6 || bgcolor=#ffff44| 5
+|-
+| 1           || bgcolor=#ff5555| 0 || bgcolor=#55ff55|10
+|}
+The total scores would be:
+{| class="wikitable"
+|-
+!           !! colspan=2|Scores
+|-
+! candidate !! Sum                      || Average
+|-
+| A         || bgcolor=#ffdddd|''12''   || bgcolor=#ffdddd|''4''
+|-
+| L         || bgcolor=#ddffdd|'''20''' || bgcolor=#ddffdd|'''6.7'''
+|}
+Hence, '''L''' is the Range voting winner.
+
+Now, the Condorcet loser is determined. If all informations are removed that are not considered to determine the Condorcet loser, we have:
+{| class="wikitable"
+|-
+! # of voters !! Preferences
+|-
+| 2           || A > L
+|-
+| 1           || L > A
+|}
+Thus, L would be the Condorcet loser.
+
+'''Result''': L is preferred only by one of the three voters, so L is the Condorcet loser. However, while the two voters preferring A over L rate both candidates nearly equal and L's supporter rates him clearly over A, '''L''' is elected Range voting winner. Hence, Range voting fails the Condorcet loser criterion.
+
+=== Ranked pairs ===
+{{Main|Ranked pairs}}
+Ranked pairs work by "locking in" strong victories, starting with the strongest, unless that would contradict an earlier lock.
+Assume that the Condorcet loser is X. For X to win, ranked pairs must lock a preference of X over some other candidate Y (for at least one Y) before it locks Y over X. But since X is the Condorcet loser, the victory of Y over X will be greater than that of X over Y, and therefore Y over X will be locked first, no matter what other candidate Y is. Therefore X cannot win.
+
+== See also ==
+* [[Condorcet method]]
+* [[Condorcet criterion]]
+
+{{voting systems}}
+[[Category:Voting system criteria]]
