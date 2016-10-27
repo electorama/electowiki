@@ -1,0 +1,7 @@
+A strong Nash equilibrium is a set of ballots such that candidate X wins, and no set of voters can change their ballots such that a candidate Y whom all of them strictly prefer to X will win.  
+
+A slightly stronger and more restrictive concept is that of a strictly semi-honest strong Nash equilibrium; that is, one in which no voter puts any A above some B despite actually preferring B over A or being indifferent between the two.
+
+If there is a majority Condorcet winner, there is almost certain to be a strong Nash equilibrium that favors that winner, in almost any reasonable deterministic voting system; but in some voting systems, that equilibrium may not be strictly semi-honest.
+
+If there is a Condorcet winner but not a majority Condorcet winner (in other words, if enough voters are indifferent between the CW X and some other candidate Y, so that the social preference for X over Y is not a majority), it may not be possible to have a strictly semi-honest strong Nash equilibrium in a candidate-blind, non-dictatorial voting system.
