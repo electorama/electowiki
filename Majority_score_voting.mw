@@ -101,6 +101,12 @@ One interesting aspect in the above three scenarios: "assist" is only strategica
 
 It is very rare to have a voting system which can deal with both chicken dilemma and center squeeze. The two situations are very similar, even when voted honestly, and yet the "correct" outcome is different. And under strategic voting in many voting systems, it is very easy for the two different scenarios to lead to identical ballots. Delegated voting systems such as [[SODA voting]] can deal with both; but without that kind of explicit participation in the voting process from the candidates, it is very hard to find a system which deals with both types of scenario better than majority score does.
 
+=== Worst case? ===
+
+Majority score could still get a "wrong" answer in cases of a multi-way Chicken dilemma, such that none of the subfactions reached 25%. This scenario is avoidable if the subfactions compensate by "assisting" each other's candidates, but that cooperation is subject to slippery-slope chicken dynamics. 
+
+If this highly-specific scenario is the most-plausible worst case, it would seem that majority score is a pretty good system.
+
 == As the first round of a two-round system ("majority score with runoff") ==
 
 If this system is used as the first round of a two-round runoff, then you want to use it to elect at two finalists in the first round. Thus, run the system twice. The first time, replace "50%" in step 2 with "2/3".
