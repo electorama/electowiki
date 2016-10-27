@@ -1,0 +1,12 @@
+A criterion weaker than [[IIA]] proposed by H. Peyton Young and A. Levenglick is called '''local independence from irrelevant alternatives''' (LIIA).<ref name="Young1995">{{cite book|last=Young|first=H. Peyton|title=Equity: In Theory and Practice|url=https://books.google.com/books?id=H0IQ0PKZ4WYC|year=1995|publisher=Princeton University Press|isbn=0-691-04464-3}}</ref>
+LIIA requires that both of the following conditions always hold:
+*If the option that finished in last place is deleted from all the votes, then the order of finish of the remaining options must not change. (The winner must not change.)
+*If the winning option is deleted from all the votes, the order of finish of the remaining options must not change. (The option that finished in second place must become the winner.)
+
+An equivalent way to express LIIA is that if a subset of the options are in consecutive positions in the order of finish, then their relative order of finish must not change if all other options are deleted from the votes. For example, if all options except those in 3rd, 4th and 5th place are deleted, the option that finished 3rd must win, the 4th must finish second, and 5th must finish 3rd.
+
+Another equivalent way to express LIIA is that if two options are consecutive in the order of finish, the one that finished higher must win if all options except those two are deleted from the votes.
+
+LIIA is weaker than IIA because satisfaction of IIA implies satisfaction of LIIA, but not vice versa.
+
+Despite being a weaker criterion (i.e. easier to satisfy) than IIA, LIIA is satisfied by very few voting methods. These include [[Kemeny–Young method|Kemeny-Young]] and [[ranked pairs]], but not [[Schulze method|Schulze]]. Just as with IIA, LIIA compliance for rating methods such as [[approval voting]], [[range voting]], and [[majority judgment]] require the assumption that voters rate each alternative individually and independently of knowing any other alternatives, on an absolute scale (calibrated prior to the election), even when this assumption implies that voters having meaningful preferences in a two candidate election will necessarily abstain.
