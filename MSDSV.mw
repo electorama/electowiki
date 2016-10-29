@@ -19,7 +19,7 @@ So, here's the voting system that results; essentially, majority score declared 
 # For all ballots which support no non-eliminated candidates, change "accept" to "support".
 # Winner is remaining candidate with most support.
 
-This is a system that has aspects of [[Bucklin voting]] (majority threshold for eliminations) and of [[IRV]] (eliminate and then retally votes that lost their top-voted candidates).
+This is a system that has aspects of Bucklin (majority threshold for eliminations) and of IRV (eliminate and then retally votes that lost their top-voted candidates).
 
 == Properties ==
 Is this the best of both worlds between [[Bucklin]] and [[IRV]]? Not exactly. 
@@ -37,7 +37,7 @@ So, I'm not (yet) proposing this as a replacement for MSV. It's simpler and bett
 
 But still, it's a top-shelf system from a theoretical angle, IMO. It doesn't have [[SODA]]'s "strong delegated equilibrium for a delegatable weakly semi-honest majority Condorcet winner" property, which helps with the chicken dilemma; but really all that property is saying is that SODA removes the possibility for CD offensive strategy by forcing the CD threat candidate (what we've conventionally called candidate C) to declare a strict preference between the subfactions (conventionally, A and B), and if lazy voters will then delegate to C then offensive strategy won't work. Aside from that, which is, now that I put it that way, somewhat of a cheap trick, I think MSDSV is the best system I know of for dealing with both center squeeze and CD well.  
 
-== General discussion, comparison to other voting systems ==
+[[General discussion, comparison to other voting systms]]
 
 Here's my "ideal characteristics" for a political single-winner election system, more or less in descending order of importance:
 # FBC
@@ -47,4 +47,4 @@ Here's my "ideal characteristics" for a political single-winner election system,
 # Summable (ideally O(N), no worse than O(N²) in practice, though I might accept some special pleading for the use of prior polling to reduce to O(N²).)
 # Handles CD, or at least, CD offensive strategies don't in practice mess up the center squeeze properties.
 # Some arguable track record
-SODA does well on 1,2,4, 5, and 6, and horribly on 3 and 7. MSV does well on 1,2,5, and 6, is OK on 3 and 4, and bad on 7. Approval does well on 1,3,5, and 7, is OK on 2, and bad on 4 and 6. MSDSV does well on 1,2,4,5, and 6, and is bad on 3 and 7. Various Condorcet-like methods (MAM, ICT, sorted approval methods) are good on 2, 4, and 6, but none as good as the aforementioned on 1, and all fail 3 and 7. MJ and other Bucklin methods are, as far as I can tell, dominated by MSV on all but 7. And other methods just don't compete. So, MSDSV is on the pareto frontier of the above criteria, which makes it a top-shelf method.
+SODA does well on 1,2,4, 5, and 6, and horribly on 3 and 7. MSV does well on 1,2,4, and 5, is OK on 3 and 4, and bad on 6. Approval does well on 1,3,4, and 6, is OK on 2, and bad on 4 and 5. MSDSV does well on 1,2,4,5, and 6, and is bad on 3 and 7. Various Condorcet-like methods (MAM, ICT, sorted approval methods) are good on 2, 4, and 6, but none as good as the aforementioned on 1, and all fail 3 and 7. MJ and other Bucklin methods are, as far as I can tell, dominated by MSV on all but 7. And other methods just don't compete. So, MSDSV is on the pareto frontier of the above criteria, which makes it a top-shelf method.
