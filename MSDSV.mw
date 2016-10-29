@@ -19,7 +19,7 @@ So, here's the voting system that results; essentially, majority score declared 
 # For all ballots which support no non-eliminated candidates, change "accept" to "support".
 # Winner is remaining candidate with most support.
 
-This is a system that has aspects of [[Bucklin]] (majority threshold for eliminations) and of [[IRV]] (eliminate and then retally votes that lost their top-voted candidates).
+This is a system that has aspects of [[Bucklin voting]] (majority threshold for eliminations) and of [[IRV]] (eliminate and then retally votes that lost their top-voted candidates).
 
 == Properties ==
 Is this the best of both worlds between [[Bucklin]] and [[IRV]]? Not exactly. 
