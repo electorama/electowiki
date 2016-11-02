@@ -12,9 +12,11 @@ If all the candidates in the first round got a majority of reject, then the vote
 
 == Criteria compliance == 
 
-PAR voting passes the [[favorite betrayal criterion]], the [[majority criterion]], the [[mutual majority criterion]], [[Local independence of irrelevant alternatives]] (under the assumption of fixed "honest" ratings for each voter for each candidate), [[Independence of clone alternatives]], [[Monotonicity]], [[polytime]], [[resolvability]], and the [[later-no-help criterion]].
+PAR voting passes the [[majority criterion]], the [[mutual majority criterion]], [[Local independence of irrelevant alternatives]] (under the assumption of fixed "honest" ratings for each voter for each candidate), [[Independence of clone alternatives]], [[Monotonicity]], [[polytime]], [[resolvability]], and the [[later-no-help criterion]].
 
 There are a few criteria for which it does not pass as such, but where it passes related but weaker criteria. These include:
+
+* It fails the [[favorite betrayal criterion]], but in any scenario where it fails that for some small group, there is a rational strategy for some superset of that group which does not involve betrayal. (Also, the cases of such failure would arguably be quite rare in practice.)
 
 * It fails [[Independence of irrelevant alternatives]], but passes [[Local independence of irrelevant alternatives]].
 
