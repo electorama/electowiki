@@ -6,7 +6,25 @@ Prefer Accept Reject (PAR) voting works as described below:
 
 == Relationship to NOTA ==
 
-If all the candidates in the first round got a majority of reject, then the voters have sent a message that none of the candidates are good, akin to a result of "[[none of the above]]" (NOTA). PAR still gives a winner, but it might be good to have a rule that such a winner could only serve one term, or perhaps a softer rule that if they run for the same office again, the information of what percent of voters rejected should be next to their name on the ballot
+If all the candidates in the first round got a majority of reject, then the voters have sent a message that none of the candidates are good, akin to a result of "[[none of the above]]" (NOTA). PAR still gives a winner, but it might be good to have a rule that such a winner could only serve one term, or perhaps a softer rule that if they run for the same office again, the information of what percent of voters rejected should be next to their name on the ballot.
+
+== Criteria compliance == 
+
+PAR voting passes the [[favorite betrayal criterion]], the [[majority criterion]], the [[mutual majority criterion]], [[Local independence of irrelevant alternatives]] (under the assumption of fixed "honest" ratings for each voter for each candidate), [[Independence of clone alternatives]], [[Monotonicity]], [[polytime]], [[resolvability]], and the [[later-no-help criterion]].
+
+There are a few criteria for which it does not pass as such, but where it passes related but weaker criteria. These include:
+
+* It fails [[Independence of irrelevant alternatives]], but passes [[Local independence of irrelevant alternatives]].
+
+* It fails the [[Condorcet criterion]], but for any set of voters such that an honest majority Condorcet winner exists, there always exists a strong equilibrium set of strictly semi-honest ballots that elects that CW.
+
+* It fails the [[participation criterion]] but passes the [[semi-honest participation criterion]].
+
+* It fails the [[Strategy-free criterion]], but, as shown in the center squeeze scenario below, in a 3-candidate scenario it does at least offer viable strategies to each of the subgroups of the majority that prefers X>Y, such that either of the potentially-strategic subgroups has a strategy to ensure Y loses, even if the other potentially-strategic subgroup does not maximally cooperate. ("Subgroup" in this sense is characterized by whether they prefer Z over or under both. The assumption is that the "honest" vote is Support, Accept, Reject in some order for the three candidates, or only Support and Reject in case of indifference between two of them. This guarantees that any X>Z>Y voters will maximally cooperate under honesty, so this subgroup is not potentially-strategic.)
+
+* It fails O(N) [[summability]], but can get that summability with two-pass tallying (first determine who's eliminated, then retally).
+
+It fails the [[consistency criterion]], the [[Condorcet loser criterion]], [[reversibility]], the [[majority loser criterion]], and the [[later-no-harm criterion]].
 
 == An example ==
 
