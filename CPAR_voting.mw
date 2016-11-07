@@ -5,7 +5,7 @@ Prefer Accept Reject (PAR) voting works as described below:
 # Voters can Prefer, Accept, or Reject each candidate. Default is Accept.
 # Candidates with a majority of Reject, or with under 25% Prefer, are eliminated, unless that would eliminate all candidates.
 # Tally "prefer" ratings for all non-eliminated candidates. 
-# Find the leader in this tally, and add in "accept" ratings on ballots that don't prefer the leader. 
+# Find the leader in this tally, and add in "accept" ratings on ballots that don't prefer the leader (if they haven't already been counted). 
 # Repeat step 4 until the leader doesn't change. The winner is the final leader.
 
 So, preferring a candidate will always add 1 to their tally if possible; rejecting a candidate never will; and accepting them will add to their tally unless a candidate you prefer wins (or at least was the leader at some point).
