@@ -1,11 +1,9 @@
-This is a temporary page.
-
 Prefer Accept Reject (PAR) voting works as described below:
 
 # Voters can Prefer, Accept, or Reject each candidate. Default is Accept.
 # Candidates with a majority of Reject, or with under 25% Prefer, are eliminated, unless that would eliminate all candidates.
 # Tally "prefer" ratings for all non-eliminated candidates. 
-# Find the leader in this tally, and add in "accept" ratings on ballots that don't prefer the leader (if they haven't already been counted). 
+# Find the leader in this tally, and add in "accept" ratings on ballots that don't prefer the leader. 
 # Repeat step 4 until the leader doesn't change. The winner is the final leader.
 
 So, preferring a candidate will always add 1 to their tally if possible; rejecting a candidate never will; and accepting them will add to their tally unless a candidate you prefer wins (or at least was the leader at some point).
@@ -16,9 +14,7 @@ If all the candidates in the first round got a majority of reject, then the vote
 
 == Criteria compliance == 
 
-PAR voting passes the [[majority criterion]], the [[mutual majority criterion]], [[Local independence of irrelevant alternatives]] (under the assumption of fixed "honest" ratings for each voter for each candidate), [[Independence of clone alternatives]], [[Monotonicity]], [[polytime]], [[resolvability]], and the [[later-no-help criterion]].
-
-Doesn't pass the [[favorite betrayal criterion]], see mailing list or talk page for details.
+PAR voting passes the [[favorite betrayal criterion]], the [[majority criterion]], the [[mutual majority criterion]], [[Local independence of irrelevant alternatives]] (under the assumption of fixed "honest" ratings for each voter for each candidate), [[Independence of clone alternatives]], [[Monotonicity]], [[polytime]], [[resolvability]], and the [[later-no-help criterion]].
 
 There are a few criteria for which it does not pass as such, but where it passes related but weaker criteria. These include:
 
