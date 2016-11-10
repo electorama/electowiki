@@ -1,6 +1,6 @@
 Prefer Accept Reject (PAR) voting works as described below:
 
-# Voters can Prefer, Accept, or Reject each candidate. Default is Accept.
+# Voters can Prefer, Accept, or Reject each candidate. Default is "Accept"; except that for voters who do not explicitly reject any candidates, default is "Reject".
 # Candidates with a majority of Reject, or with under 25% Prefer, are eliminated, unless that would eliminate all candidates.
 # The winner is the non-eliminated candidate rated equal-or-above any other non-eliminated candidate on the most ballots.
 
