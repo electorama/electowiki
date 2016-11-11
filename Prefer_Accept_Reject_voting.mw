@@ -4,6 +4,8 @@ Prefer Accept Reject (PAR) voting works as described below:
 # Candidates with a majority of Reject, or with under 25% Prefer, are eliminated, unless that would eliminate all candidates.
 # The winner is the non-eliminated candidate with the highest score, counting 1 point for each voter who prefers a candidate, and 1 point for each voter who accepts a candidate while preferring only eliminated candidates. 
 
+Note that the 25%-preferred threshold in step 2 is exactly enough so that, in a 3-way election where all voters preferred at least 1 candidate and rejected at least 1 candidate, there will always be at least 1 candidate who passes the thresholds to not be eliminated. This does not hold for an election with 4 or more candidates; but hopefully, even in those cases, the top 3 candidates combined will usually get enough preferences to ensure that at least one of them is above the thresholds.
+
 == Relationship to NOTA ==
 
 If all the candidates in the first round got a majority of reject, then the voters have sent a message that none of the candidates are good, akin to a result of "[[none of the above]]" (NOTA). PAR still gives a winner, but it might be good to have a rule that such a winner could only serve one term, or perhaps a softer rule that if they run for the same office again, the information of what percent of voters rejected should be next to their name on the ballot.
@@ -14,7 +16,7 @@ PAR voting passes the [[majority criterion]], the [[mutual majority criterion]],
 
 There are a few criteria for which it does not pass as such, but where it passes related but weaker criteria. These include:
 
-* It fails the [[favorite betrayal criterion]], but in any scenario where it fails that for some small group, there is a rational strategy for some superset of that group which does not involve betrayal. (Also, the cases of such failure would arguably be quite rare in practice.)
+* It fails the [[favorite betrayal criterion]], but in any scenario where it fails that for some small group, there is a rational strategy for some superset of that group which does not involve betrayal. (Also, the cases of such failure would arguably be quite rare in practice.) Also, in a 3-way election where all voters preferred at least 1 candidate and rejected at least 1 candidate, there is never a favorite-betrayal incentive unless there's a Condorcet cycle. (This holds even if you add weak also-ran candidates to such an election, because of the following property.)
 
 * It fails [[Independence of irrelevant alternatives]], but passes [[Local independence of irrelevant alternatives]].
 
