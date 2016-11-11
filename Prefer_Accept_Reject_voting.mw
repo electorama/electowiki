@@ -1,10 +1,8 @@
-Prefer Accept Reject (PAR) voting works as described below:
+Prefer Accept Reject (PAR) voting works as follows:
 
 # Voters can Prefer, Accept, or Reject each candidate. Default is "Reject" for voters who do not explicitly reject any candidates, and "Accept" otherwise.
-# Candidates with a majority of Reject, or with under 25% Prefer, are eliminated, unless that would eliminate all candidates.
-# The winner is the non-eliminated candidate with the highest score, counting 1 point for each voter who prefers a candidate, and 1 point for each voter who accepts a candidate while preferring only eliminated candidates. 
-
-Note that the 25%-preferred threshold in step 2 is exactly enough so that, in a 3-way election where all voters preferred at least 1 candidate and rejected at least 1 candidate, there will always be at least 1 candidate who passes the thresholds to not be eliminated. This does not hold for an election with 4 or more candidates; but hopefully, even in those cases, the top 3 candidates combined will usually get enough preferences to ensure that at least one of them is above the thresholds.
+# Candidates with a majority of Reject, or with under 25% Prefer, are disqualified, unless that would disqualify all candidates.
+# The winner is the non-eliminated candidate with the highest score. Candidates score 1 point for each voter who prefers them, and 1 point for each voter who accepts them while preferring only disqualified candidates. 
 
 == Relationship to NOTA ==
 
@@ -75,5 +73,12 @@ Assume voters in each city preferred their own city; rejected any city that is o
 Memphis is rejected by a majority, and is eliminated. Chattanooga and Knoxville both get less than 25% preference, so they are also eliminated. Nashville wins with a tally of 100%. This is a strong equilibrium; no rational strategy from any faction or combination thereof would change the winner. Knoxville and/or Chattanooga could each prevent the other from being eliminated, but Nashville would still win with a tally of at least 68 (the ballots of Nashville and Memphis).
 
 (If Memphis voters rejected Nashville, then Chattanooga or Knoxville could win by conspiring to reject Nashville and accept Memphis. However, Nashville could stop this by rejecting them. Thus this strategy would not work without extreme foolishness from both Memphis and Nashville voters, and extreme amounts of strategy from the others.)
+
+== Discussion ==
+
+=== Logic for 25%-preferred threshold (step 2) ===
+
+The 25%-preferred threshold in step 2 is exactly enough so that, in a 3-candidate election where all voters give all three grades, there will always be at least 1 candidate who passes the thresholds to not be disqualified. This does not hold for an election with 4 or more candidates; but even in those cases, it is usually reasonable to hope that the top 3 candidates combined will get enough preferences to ensure that at least one of them is above the 25% threshold.
+
  
 [[Category:Graded Bucklin systems]]
