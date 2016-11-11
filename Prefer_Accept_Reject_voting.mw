@@ -58,7 +58,8 @@ Second, restrict the domain to voting scenarios which meet the following restric
 
 # Each candidate either comes from one of no more than 3 "ideological categories", or is "nonviable".
 # No "nonviable" candidate is preferred by more than 25%.
-# Each voter rejects at least one of the 3 "ideological categories" (that is, rejects all candidates in that category).
+# Each voter rejects at least one of the 3 "ideological categories" (that is, rejects all candidates in that category) and does not reject at least one of them (rejects none of the candidates in that category).
+# There are no honest Condorcet cycles.
 
 If the above restrictions hold, then PAR voting would meet FBC. It is arguably likely that real-world voting scenarios will meet the above restrictions, except for a negligible fraction of "ideologically atypical" voters. For instance, in the first scenario above, the B>AC voters would probably actually vote either B>A or B>C.
 
