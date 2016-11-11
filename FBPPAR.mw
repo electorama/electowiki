@@ -2,7 +2,7 @@ The following system is called FBPPAR voting, for "Favorite-Betrayal-Proof Prefe
 
 # Voters can Prefer, Accept, or Reject each candidate. Default is "Accept"; except that for voters who do not explicitly reject any candidates, default is "Reject". Voters can also mark a global option that says: "I believe that voters like me should be the first to compromise." 
 # Candidates with a majority of Reject, or with under 25% Prefer, are eliminated, unless that would eliminate all candidates. If a candidate would have been eliminatable considering all the "prefer" votes they got on "compromise" ballots as "rejects", then they are considered "eager to compromise"
-# The winner is the non-eliminated candidate with the highest score. Voters give 1 point to each candidate whom they prefer; and, if all the candidates they gave points to are "eager to compromise", they also give 1 point to each candidate whom they accept.
+# The winner is the non-eliminated candidate with the most points. Voters give 1 point to each candidate whom they prefer; and, if all the candidates they gave points to are "eager to compromise", they also give 1 point to each candidate whom they accept.
 
 This is largely a theoretical proposal. In real-world elections, the "compromise" option would probably never be useful. 
 
