@@ -16,7 +16,7 @@ There are a few criteria for which it does not pass as such, but where it passes
 
 * It fails [[Independence of irrelevant alternatives]], but passes [[Local independence of irrelevant alternatives]].
 
-* It fails the [[Condorcet criterion]], but for any set of voters such that an honest majority Condorcet winner exists, there always exists a strong equilibrium set of strictly semi-honest ballots that elects that CW.
+* It fails the [[Condorcet criterion]], but for any set of voters such that an honest majority Condorcet winner exists, there always exists a strong equilibrium set of strictly semi-honest ballots that elects that CW. (Note that this is not true for any strictly-ranked Condorcet system!)
 
 * It fails the [[participation criterion]] but passes the [[semi-honest participation criterion]].
 
