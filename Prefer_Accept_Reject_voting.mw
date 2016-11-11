@@ -112,7 +112,7 @@ Memphis is rejected by a majority, and is eliminated. Chattanooga and Knoxville 
 
 === Logic for 25%-preferred threshold (step 2) ===
 
-The 25%-preferred threshold in step 2 is exactly enough so that, in a 3-candidate election where all voters give all three grades, there will always be at least 1 candidate who passes the thresholds to not be disqualified. This does not hold for an election with 4 or more candidates; but even in those cases, it is usually reasonable to hope that the top 3 candidates combined will get enough preferences to ensure that at least one of them is above the 25% threshold.
+The 25%-preferred threshold in step 2 is not purely arbitrary; it is exactly enough so that, in a 3-candidate election where all voters give all three grades, there will always be at least 1 candidate who passes the thresholds to not be disqualified. In other words: if a minority supports a rejected candidate, while a majority divides preferences between two candidates while accepting the other, then at least one of those two will not be eliminated. This does not hold for an election with 4 or more candidates, because the majority could split its preferences more than two ways; but even in those cases, it is usually reasonable to hope that the top 3 candidates combined will get enough preferences to ensure that at least one of them is above the 25% threshold.
 
  
 [[Category:Graded Bucklin systems]]
