@@ -13,3 +13,6 @@ For instance, consider the voting scenarios which meet the following restriction
 # Each voter rejects at least one of the 3 "ideological categories" (that is, rejects all candidates in that category).
 
 If the above restrictions hold, then the "compromise" option would never be strategically favored, and so simple PAR voting would meet FBC. It is arguably likely that real-world voting scenarios will meet the above restrictions, except for a negligible fraction of "ideologically atypical" voters. Thus, as a real-world proposal, PAR voting's greater simplicity makes it better than FBPPAR.
+
+
+[[Category:Graded Bucklin systems]]
