@@ -1,8 +1,8 @@
 Prefer Accept Reject (PAR) voting works as follows:
 
-# Voters can Prefer, Accept, or Reject each candidate. Default is "Reject" for voters who do not explicitly reject any candidates, and "Accept" otherwise.
-# Candidates with a majority of Reject, or with under 25% Prefer, are disqualified, unless that would disqualify all candidates.
-# The winner is the non-eliminated candidate with the highest score. Candidates score 1 point for each voter who prefers them, and 1 point for each voter who accepts them while preferring only disqualified candidates. 
+# '''Voters can Prefer, Accept, or Reject each candidate.''' Default is "Reject" for voters who do not explicitly reject any candidates, and "Accept" otherwise.
+# '''Candidates with a majority of Reject, or with under 25% Prefer, are disqualified''', unless that would disqualify all candidates.
+# Each voter gives 1 point to each non-eliminated candidate they prefer; and any voter who gave no such points (because their preferred candidates were all eliminated) gives 1 point to each non-eliminated candidate they accept. '''The winner is the candidate with the most points.'''
 
 == Relationship to NOTA ==
 
