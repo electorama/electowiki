@@ -1,24 +1,15 @@
-The following system is called FBPPAR voting, for "Favorite-Betrayal-Proof Prefer Accept Reject". It is a version of [[PAR voting]], with an extra "stand aside" option in order to pass the [[favorite betrayal criterion]] (FBC).
+The following system is called FBPPAR voting, for "Favorite-Betrayal-Proof Prefer Accept Reject". It is a version of [[PAR voting]], with an extra "compromise" option in order to pass the [[favorite betrayal criterion]] (FBC).
 
-Here's the procedure. Note that the two steps with extra indentation (1.1 and 3.1) only rarely matter, so it's best to understand the system without them first.
+# Voters can Prefer, Accept, or Reject each candidate. Default is "Accept"; except that for voters who do not explicitly reject any candidates, default is "Reject". Voters can also mark a global option that says: "I believe that voters like me should be the first to compromise." 
+# Candidates with a majority of Reject, or with under 25% Prefer, are eliminated, unless that would eliminate all candidates. If a candidate would have been eliminatable considering all the "prefer" votes they got on "compromise" ballots as "rejects", then they are considered "eager to compromise"
+# The winner is the non-eliminated candidate with the highest score. Voters give 1 point to each candidate whom they prefer; and, if all the candidates they gave points to are "eager to compromise", they also give 1 point to each candidate whom they accept.
 
-# '''Voters Prefer, Accept, or Reject each candidate.''' On ballots which don't explicitly use "Reject", blanks count as "Reject"; otherwise, blanks count as "Accept".
-## For candidates a voter prefers, they may also mark a "stand aside" option. This has no effect when combined with "accept" or "reject". It is useful for those rare cases when you prefer a candidate, and think they would be the leader in step 2, but do not think they can actually win; so that you think you'd be better off if voters like you compromise more. 
-# '''Candidates with at least 25% Prefer, and no more than 50% reject, are "viable"'''. The most-preferred viable candidate (if any) is the leader.
-## When designating the leader (including who counts as "viable" for that purpose only), all "prefer/stand aside" votes count as if they were "reject".
-# Each "prefer" is worth 1 point. For viable candidates, each "accept" on a ballot which doesn't prefer the leader is also worth 1 point. '''Most points wins.'''
-
-This is largely a theoretical proposal. In real-world elections, the "stand aside" option would probably almost never be useful enough to justify the extra complexity.
+This is largely a theoretical proposal. In real-world elections, the "compromise" option would probably never be useful. 
 
 For instance, consider the voting scenarios which meet the following restrictions:
 
 # Each candidate either comes from one of no more than 3 "ideological categories", or is "nonviable".
 # No "nonviable" candidate is preferred by more than 25%.
-# Each voter rejects at least one of the 3 "ideological categories" (that is, rejects all candidates in that category), and accepts or prefers all candidates in some other category. 
-# No honest Condorcet cycles.
+# Each voter rejects at least one of the 3 "ideological categories" (that is, rejects all candidates in that category).
 
 If the above restrictions hold, then the "compromise" option would never be strategically favored, and so simple PAR voting would meet FBC. It is arguably likely that real-world voting scenarios will meet the above restrictions, except for a negligible fraction of "ideologically atypical" voters. Thus, as a real-world proposal, PAR voting's greater simplicity makes it better than FBPPAR.
-
-
-[[Category:Graded Bucklin systems]]
-{{DEFAULTSORT:PARFBP}}
