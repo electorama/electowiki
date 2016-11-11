@@ -2,7 +2,7 @@ Prefer Accept Reject (PAR) voting works as follows:
 
 # '''Voters can Prefer, Accept, or Reject each candidate.''' Default is "Reject" for voters who do not explicitly reject any candidates, and "Accept" otherwise.
 # '''Candidates with a majority of Reject, or with under 25% Prefer, are disqualified''', unless that would disqualify all candidates.
-# Each voter gives 1 point to each non-eliminated candidate they prefer; and any voter who gave no such points (because their preferred candidates were all eliminated) gives 1 point to each non-eliminated candidate they accept. '''The winner is the candidate with the most points.'''
+# Each voter gives 1 point to each non-disqualified candidate they prefer; and any voter who gave no such points (because their preferred candidates were all disqualified) gives 1 point to each non-disqualified candidate they accept. '''The winner is the candidate with the most points.'''
 
 == Relationship to NOTA ==
 
@@ -20,11 +20,11 @@ There are a few criteria for which it does not pass as such, but where it passes
 
 * It fails the [[participation criterion]] but passes the [[semi-honest participation criterion]].
 
-* It fails O(N) [[summability]], but can get that summability with two-pass tallying (first determine who's eliminated, then retally).
+* It fails O(N) [[summability]], but can get that summability with two-pass tallying (first determine who's disqualified, then retally).
 
 * It may pass the majority Condorcet loser criterion (?).
 
-* It fails the [[later-no-help criterion]], but passes if there is at least one candidate above the elimination thresholds (which is always true, for instance, if there are some three candidates who get 3 different ratings on every ballot).
+* It fails the [[later-no-help criterion]], but passes if there is at least one candidate above the qualification thresholds (which is always true, for instance, if there are some three candidates who get 3 different ratings on every ballot).
 
 It fails the [[consistency criterion]], the [[Condorcet loser criterion]], [[reversibility]], the [[majority loser criterion]], the [[Strategy-free criterion]], and the [[later-no-harm criterion|later-no-harm]] and [[later-no-help criterion|later-no-help]] criteria.
 
@@ -39,7 +39,7 @@ PAR voting fails the [[favorite betrayal criterion]] (FBC). For instance, consid
 * 5: B>C
 * 40: C>B
 
-None are eliminated, so C wins with 40 points (against 35, 25, 35 for A, B, and X). However, if 6 of the first group of voters strategically betrayed their true favorite A, the situation would be as follows:
+None are disqualified, so C wins with 40 points (against 35, 25, 35 for A, B, and X). However, if 6 of the first group of voters strategically betrayed their true favorite A, the situation would be as follows:
 
 * 29: AX>B
 * 6: X>B
@@ -48,7 +48,7 @@ None are eliminated, so C wins with 40 points (against 35, 25, 35 for A, B, and 
 * 5: B>C
 * 40: C>B
 
-Now, A is eliminated with 51% rejection; so B (the CW) wins.
+Now, A is disqualified with 51% rejection; so B (the CW) wins.
 
 However, there are several ways to "rescue" FBC-like behavior for this system.
 
@@ -63,7 +63,7 @@ For another, we could restrict the domain to voting scenarios which meet the fol
 
 If the above restrictions hold, then PAR voting would meet FBC. It is arguably likely that real-world voting scenarios will meet the above restrictions, except for a negligible fraction of "ideologically atypical" voters. For instance, in the first scenario above, the categories appear to be {XA}, {B}, and {C}, so the B>AC voters would probably actually vote either B>A or B>C.
 
-And finally, note that in any scenario where it fails that for some small group, there is a rational strategy for some superset of that group which does not involve betrayal. For instance, in first scenario above, if 11 of the AX>B voters switch to >AXB, then A is eliminated without any betrayal.
+And finally, note that in any scenario where it fails that for some small group, there is a rational strategy for some superset of that group which does not involve betrayal. For instance, in first scenario above, if 11 of the AX>B voters switch to >AXB, then A is disqualified without any betrayal.
 
 == An example ==
 
@@ -105,15 +105,15 @@ Assume voters in each city preferred their own city; rejected any city that is o
 |}
 </div>
 
-Memphis is rejected by a majority, and is eliminated. Chattanooga and Knoxville both get less than 25% preference, so they are also eliminated. Nashville wins with a tally of 100%. This is a strong equilibrium; no rational strategy from any faction or combination thereof would change the winner. Knoxville and/or Chattanooga could each prevent the other from being eliminated, but Nashville would still win with a tally of at least 68 (the ballots of Nashville and Memphis).
+Memphis is rejected by a majority, and is disqualified. Chattanooga and Knoxville both get less than 25% preference, so they are also disqualified. Nashville wins with a tally of 100%. This is a strong equilibrium; no rational strategy from any faction or combination thereof would change the winner. Knoxville and/or Chattanooga could each prevent the other from being disqualified, but Nashville would still win with a tally of at least 68 (the ballots of Nashville and Memphis).
 
-(If Memphis voters rejected Nashville, then Chattanooga or Knoxville could win by conspiring to reject Nashville and accept Memphis. However, Nashville could stop this by rejecting them. Thus this strategy would not work without extreme foolishness from both Memphis and Nashville voters, and extreme amounts of strategy from the others.)
+(If Memphis voters rejected Nashville, then Chattanooga or Knoxville could win by conspiring to reject Nashville and accept Memphis. However, Nashville could stop this by rejecting them. Thus this strategy would not work without extreme foolishness from both Memphis and Nashville voters, ''and'' extreme amounts of strategy from the others.)
 
 == Discussion ==
 
 === Logic for 25%-preferred threshold (step 2) ===
 
-The 25%-preferred threshold in step 2 is not purely arbitrary; it is exactly enough so that, in a 3-candidate election where all voters give all three grades, there will always be at least 1 candidate who passes the thresholds to not be disqualified. In other words: if a minority supports a rejected candidate, while a majority divides preferences between two candidates while accepting the other, then at least one of those two will not be eliminated. This does not hold for an election with 4 or more candidates, because the majority could split its preferences more than two ways; but even in those cases, it is usually reasonable to hope that the top 3 candidates combined will get enough preferences to ensure that at least one of them is above the 25% threshold.
+The 25%-preferred threshold in step 2 is not purely arbitrary; it is exactly enough so that, in a 3-candidate election where all voters give all three grades, there will always be at least 1 candidate who passes the thresholds to not be disqualified. In other words: if a minority supports a rejected candidate, while a majority divides preferences between two candidates while accepting the other, then at least one of those two will not be disqualified. This does not hold for an election with 4 or more candidates, because the majority could split its preferences more than two ways; but even in those cases, it is usually reasonable to hope that the top 3 candidates combined will get enough preferences to ensure that at least one of them is above the 25% threshold.
 
  
 [[Category:Graded Bucklin systems]]
