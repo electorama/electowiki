@@ -14,8 +14,6 @@ PAR voting passes the [[majority criterion]], the [[mutual majority criterion]],
 
 There are a few criteria for which it does not pass as such, but where it passes related but weaker criteria. These include:
 
-* It fails the [[favorite betrayal criterion]], but in any scenario where it fails that for some small group, there is a rational strategy for some superset of that group which does not involve betrayal. (Also, the cases of such failure would arguably be quite rare in practice.) Also, in a 3-way election where all voters preferred at least 1 candidate and rejected at least 1 candidate, there is never a favorite-betrayal incentive unless there's a Condorcet cycle. (This holds even if you add weak also-ran candidates to such an election, because of the following property.)
-
 * It fails [[Independence of irrelevant alternatives]], but passes [[Local independence of irrelevant alternatives]].
 
 * It fails the [[Condorcet criterion]], but for any set of voters such that an honest majority Condorcet winner exists, there always exists a strong equilibrium set of strictly semi-honest ballots that elects that CW.
@@ -29,6 +27,34 @@ There are a few criteria for which it does not pass as such, but where it passes
 * It may pass the majority Condorcet loser criterion (?).
 
 It fails the [[consistency criterion]], the [[Condorcet loser criterion]], [[reversibility]], the [[majority loser criterion]], the [[Strategy-free criterion]], and the [[later-no-harm criterion|later-no-harm]] and [[later-no-help criterion|later-no-help]] criteria.
+
+=== Favorite betrayal? ===
+
+
+PAR voting fails the [[favorite betrayal criterion]] (FBC). For instance, consider the following "non-disqualifying center-squeeze" scenario:
+
+* 35: AX>B
+* 10: B>A
+* 10: B>AC
+* 5: B>C
+* 40: C>B
+
+None are eliminated, so C wins with 40 points (against 35, 25, 35 for A, B, and X). However, if 6 of the first group of voters strategically betrayed their true favorite A, the situation would be as follows:
+
+* 29: AX>B
+* 6: X>B
+* 10: B>A
+* 10: B>AC
+* 5: B>C
+* 40: C>B
+
+Now, A is eliminated with 51% rejection; so B (the CW) wins.
+
+However, there are several ways to "rescue" FBC-like behavior for this system.
+
+First, add a "compromise" option to the ballot, as described in [[FBPPAR]].
+
+Third, note that in any scenario where it fails that for some small group, there is a rational strategy for some superset of that group which does not involve betrayal. For instance, in first scenario above, if 11 of the AX>B voters switch to >AXB, then A is eliminated without any betrayal.
 
 == An example ==
 
