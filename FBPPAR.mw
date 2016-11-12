@@ -1,5 +1,7 @@
 The following system is called FBPPAR voting, for "Favorite-Betrayal-Proof Prefer Accept Reject". It is a version of [[PAR voting]], with an extra "stand aside" option in order to pass the [[favorite betrayal criterion]] (FBC).
 
+Here's the procedure. Note that the two steps with extra indentation (1.1 and 3.1) only rarely matter, so it's best to understand the system without them first.
+
 # Voters can Prefer, Accept, or Reject each candidate. Default is "Reject" for voters who do not explicitly reject any candidates, and "Accept" otherwise. 
 ## For any candidate they prefer, voters may also check "stand aside". (This is rarely useful; it is only worthwhile if they think that the candidate might become the leader in step 3 and stand in the way of a stronger compromise leader.) "Stand aside" has no effect if it is checked along with any option other than "prefer", or with no option.
 # Candidates get 1 point for every ballot that prefers them.
