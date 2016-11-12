@@ -3,7 +3,7 @@ The following system is called FBPPAR voting, for "Favorite-Betrayal-Proof Prefe
 # Voters can Prefer, Accept, or Reject each candidate. Default is "Reject" for voters who do not explicitly reject any candidates, and "Accept" otherwise. 
 ## For any preferred candidate, voters may also check "stand aside". (This is rarely useful; it is only worthwhile if they think that the candidate might become the leader in step 3 and stand in the way of a stronger compromise leader.)
 # Candidates get 1 point for every ballot that prefers them.
-# Candidates with over 25% Prefer, and less than 50% Reject, are called viable. If there are any such candidates who would still be viable if all "prefer/stand aside" votes were counted as "reject", the one pith the most preferences is designated the leader.
+# Candidates with over 25% Prefer, and less than 50% Reject, are called viable. If there are any such candidates who would still be viable if all "prefer/stand aside" votes were counted as "reject", the one with the most preferences is designated the leader.
 # Viable candidates get 1 point for every ballot that accepts them and does not prefer the leader.
 # Winner is the highest score.
 
