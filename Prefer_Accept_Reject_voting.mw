@@ -1,6 +1,6 @@
 Prefer Accept Reject (PAR) voting works as follows:
 
-# '''Voters can Prefer, Accept, or Reject each candidate.''' Default is "Reject" for voters who do not explicitly reject any candidates, and "Accept" otherwise.
+# '''Voters can Prefer, Accept, or Reject each candidate.''' Default is "Reject" for voters who don't explicitly reject any rival candidates, and "Accept" otherwise.
 # '''Candidates with at least 25% Prefer, and no more than 50% reject, are "viable"'''. The most-preferred viable candidate (if any) is the leader.
 # Each "prefer" is worth 1 point. Each "accept" for a viable candidate on a ballot which doesn't prefer the leader is also worth 1 point. '''Most points wins.'''
 
