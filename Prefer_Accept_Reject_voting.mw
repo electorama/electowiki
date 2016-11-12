@@ -6,6 +6,8 @@ Prefer Accept Reject (PAR) voting works as follows:
 
 Note that the procedure above will always elect a viable candidate if any exist. It will usually, but not always, elect the leader. Each candidate's score at the end can be seen as an approval total.
 
+A related system which passes [[FBC]] is [[FBPPAR]]. This has the same steps, except that voters can choose to mark any of their "preferred" candidates as "stand aside". "Stand aside" preferences are counted as rejections when finding the leader, but as preference when assigning points.
+
 == Relationship to NOTA ==
 
 If all the candidates in the first round got a majority of reject, then the voters have sent a message that none of the candidates are good, akin to a result of "[[none of the above]]" (NOTA). PAR still gives a winner, but it might be good to have a rule that such a winner could only serve one term, or perhaps a softer rule that if they run for the same office again, the information of what percent of voters rejected should be next to their name on the ballot.
