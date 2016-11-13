@@ -2,15 +2,13 @@ The following system is called FBPPAR voting, for "Favorite-Betrayal-Proof Prefe
 
 Here's the procedure. Note that the two steps with extra indentation (1.1 and 3.1) only rarely matter, so it's best to understand the system without them first.
 
-# Voters can Prefer, Accept, or Reject each candidate. Default is "Reject" for voters who do not explicitly reject any candidates, and "Accept" otherwise. 
-## For any candidate they prefer, voters may also check "stand aside". (This is rarely useful; it is only worthwhile if they think that the candidate might become the leader in step 3 and stand in the way of a stronger compromise leader.) "Stand aside" has no effect if it is checked along with any option other than "prefer", or with no option.
-# Candidates get 1 point for every ballot that prefers them.
-# Candidates with over 25% Prefer, and less than 50% Reject, are called viable. The viable candidate (if any) with the most non-stand-aside preferences is given the label of leader.
-## If the leader would not have been viable counting all "prefer/stand aside" votes as "reject", then the label of leader switches to the next lower viable candidate (if any) in non-stand-aside preferences. Repeat this step as many times as necessary.
-# Viable candidates get 1 point for every ballot that accepts them and does not prefer the leader.
-# Winner is the highest score.
+# '''Voters Prefer, Accept, or Reject each candidate.''' On ballots which don't explicitly use "Reject", blanks count as "Reject"; otherwise, blanks count as "Accept".
+## For candidates a voter prefers, they may also mark a "stand aside" option. This has no effect when combined with "accept" or "reject". It is useful for those rare cases when you prefer a candidate, and think they would be the leader in step 2, but do not think they can actually win; so that you think you'd be better off if voters like you compromise more. 
+# '''Candidates with at least 25% Prefer, and no more than 50% reject, are "viable"'''. The most-preferred viable candidate (if any) is the leader.
+## When designating the leader (including who counts as "viable" for that purpose only), all "prefer/stand aside" votes count as if they were "reject".
+# Each "prefer" is worth 1 point. For viable candidates, each "accept" on a ballot which doesn't prefer the leader is also worth 1 point. '''Most points wins.'''
 
-This is largely a theoretical proposal. In real-world elections, the "stand aside" option would probably almost never be useful; certainly not enough to justify the extra complexity.
+This is largely a theoretical proposal. In real-world elections, the "stand aside" option would probably almost never be useful enough to justify the extra complexity.
 
 For instance, consider the voting scenarios which meet the following restrictions:
 
