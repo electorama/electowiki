@@ -35,28 +35,28 @@ It fails the [[consistency criterion]], the [[Condorcet loser criterion]], [[rev
 === Favorite betrayal? ===
 
 
-PAR voting fails the [[favorite betrayal criterion]] (FBC). For instance, consider the following "non-disqualifying center-squeeze" scenario:
+PAR voting fails the [[favorite betrayal criterion]] (FBC). For instance, consider the following "non-disqualifying center-squeeze" scenario: (
 
-* 35: AX>B
-* 10: B>A
+* 30: AX>B (That is, on 35 ballots, A and X are preferred, B is accepted, and C is rejected)
+* 5: AX>C
+* 15: B>A
 * 10: B>AC
-* 5: B>C
 * 40: C>B
 
-None are disqualified, so C wins with 40 points (against 35, 25, 35 for A, B, and X). However, if 6 of the first group of voters strategically betrayed their true favorite A, the situation would be as follows:
+None are disqualified, and C is the leader. Points are: A, 60; B, 55; C, 55; X, 35. C wins. However, if 6 of the last group of voters strategically betrayed their true favorite C, the situation would be as follows:
 
-* 29: AX>B
-* 6: X>B
-* 10: B>A
+* 30: AX>B (That is, on 35 ballots, A and X are preferred, B is accepted, and C is rejected)
+* 5: AX>C
+* 15: B>A
 * 10: B>AC
-* 5: B>C
-* 40: C>B
+* 34: C>B
+* 6: B
 
-Now, A is disqualified with 51% rejection; so B (the CW) wins.
+Now, C is not viable with 51% rejection; so B is the leader. Since C is no longer the leader, B gets the 34 points from C voters, and wins.
 
 However, there are several ways to "rescue" FBC-like behavior for this system.
 
-For one, we could add a "compromise" option to the ballot, as described in [[FBPPAR]].
+For one, we could add a "stand aside" option to the ballot, as described in [[FBPPAR]].
 
 For another, we could restrict the domain to voting scenarios which meet the following restrictions:
 
@@ -67,7 +67,7 @@ For another, we could restrict the domain to voting scenarios which meet the fol
 
 If the above restrictions hold, then PAR voting would meet FBC. It is arguably likely that real-world voting scenarios will meet the above restrictions, except for a negligible fraction of "ideologically atypical" voters. For instance, in the first scenario above, the categories appear to be {XA}, {B}, and {C}, so the B>AC voters would probably actually vote either B>A or B>C.
 
-And finally, note that in any scenario where it fails that for some small group, there is a rational strategy for some superset of that group which does not involve betrayal. For instance, in first scenario above, if 11 of the AX>B voters switch to >AXB, then A is disqualified without any betrayal.
+And finally, note that in any scenario where it fails that for some small group, there is a rational strategy for some superset of that group which does not involve betrayal. For instance, in first scenario above, if 16 of the C>B voters switch to CB, then B is the leader and wins without them having to rate C below their true feelings.
 
 == An example ==
 
