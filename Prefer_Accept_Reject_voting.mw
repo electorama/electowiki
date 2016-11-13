@@ -58,14 +58,7 @@ However, there are several ways to "rescue" FBC-like behavior for this system.
 
 For one, we could add a "stand aside" option to the ballot, as described in [[FBPPAR]].
 
-For another, we could restrict the domain to voting scenarios which meet the following restrictions:
-
-# Each candidate either comes from one of no more than 3 "ideological categories", or is "nonviable".
-# No "nonviable" candidate is preferred by more than 25%.
-# Each voter rejects at least one of the 3 "ideological categories" (that is, rejects all candidates in that category) and does not reject at least one of them (rejects none of the candidates in that category).
-# There are no honest Condorcet cycles.
-
-If the above restrictions hold, then PAR voting would meet FBC. It is arguably likely that real-world voting scenarios will meet the above restrictions, except for a negligible fraction of "ideologically atypical" voters. For instance, in the first scenario above, the categories appear to be {XA}, {B}, and {C}, so the B>AC voters would probably actually vote either B>A or B>C.
+For another, the B>AC voters could simply reject C, the strongest rival of their favorite, and B would win with no need for betrayal.
 
 And finally, note that in any scenario where it fails that for some small group, there is a rational strategy for some superset of that group which does not involve betrayal. For instance, in first scenario above, if 16 of the C>B voters switch to CB, then B is the leader and wins without them having to rate C below their true feelings.
 
