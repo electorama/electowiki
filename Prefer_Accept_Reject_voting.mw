@@ -46,7 +46,7 @@ PAR voting fails the [[favorite betrayal criterion]] (FBC). For instance, consid
 * 10: B>AC
 * 40: C>B
 
-None are disqualified, and C is the leader. Points are: A, 60; B, 55; C, 55; X, 35. C wins. However, if 6 of the last group of voters strategically betrayed their true favorite C, the situation would be as follows:
+None are majority-rejected, and C is the frontrunner. Points are: A, 60; B, 55; C, 55; X, 35. A wins. However, if 6 of the last group of voters strategically betrayed their true favorite C, the situation would be as follows:
 
 * 30: AX>B (That is, on 35 ballots, A and X are preferred, B is accepted, and C is rejected)
 * 5: AX>C
@@ -55,13 +55,13 @@ None are disqualified, and C is the leader. Points are: A, 60; B, 55; C, 55; X, 
 * 34: C>B
 * 6: B
 
-Now, C is not viable with 51% rejection; so B is the leader. Since C is no longer the leader, B gets the 34 points from C voters, and wins.
+Now, C is not viable with 51% rejection; so B is the leader. Since C is no longer the leader, B gets the 34 points from C voters, and wins. The strategy succeeded; the strategic voters are better off.
 
 However, there are several ways to "rescue" FBC-like behavior for this system.
 
 For one, we could add a "stand aside" option to the ballot, as described in [[FBPPAR]].
 
-For another, the B>AC voters could simply reject C, the strongest rival of their favorite, and B would win with no need for betrayal.
+For another, the B>AC voters could simply reject C, the strongest rival of their favorite, and B would win with no need for favorite betrayal.
 
 And finally, note that in any scenario where it fails that for some small group, there is a rational strategy for some superset of that group which does not involve betrayal. For instance, in first scenario above, if 16 of the C>B voters switch to CB, then B is the leader and wins without them having to rate C below their true feelings.
 
@@ -69,43 +69,53 @@ And finally, note that in any scenario where it fails that for some small group,
 
 {{Tenn_voting_example}}
 
-Assume voters in each city preferred their own city; rejected any city that is over 200 miles away or is the farthest city; and accepted the rest.
+Assume voters in each city preferred their own city; rejected any city that is over 200 miles away or is the farthest city; explicitly accepted the closest other city; and left the rest blank. In the following table, the quantities in parentheses are explicit votes, while the implicit totals (including blank votes) are unparenthesized.
 
 <div class="floatright">
 {| border=1
 !City
 !P
+!(A)
 !A
+!(R)
 !R
 !tally
 |-
 !bgcolor="#fff"|Memphis
 |bgcolor="#fff"|42
+|bgcolor="#fff"|(0)
 |bgcolor="#fff"|0
+|bgcolor="#fcc"|(58)
 |bgcolor="#fcc"|58
 |bgcolor="#fcc"|42
 |-
 !bgcolor="#fff"|Nashville
 |bgcolor="#fff"|26
+|bgcolor="#fff"|(42)
 |bgcolor="#fff"|74
+|bgcolor="#fff"|(0)
 |bgcolor="#fff"|0
 |bgcolor="#cfc"|100
 |-
 !bgcolor="#fff"|Chattanooga
 |bgcolor="#fcc"|15
+|bgcolor="#fff"|(43)
 |bgcolor="#fff"|43
+|bgcolor="#fff"|(0)
 |bgcolor="#fff"|42
-|bgcolor="#fcc"|15
+|bgcolor="#fcc"|32
 |-
 !bgcolor="#fff"|Knoxville
 |bgcolor="#fcc"|17
-|bgcolor="#fff"|41
-|bgcolor="#fff"|42
-|bgcolor="#fcc"|17
+|bgcolor="#fff"|(15)
+|bgcolor="#fff"|15
+|bgcolor="#fff"|(0)
+|bgcolor="#fff"|68
+|bgcolor="#fcc"|32
 |}
 </div>
 
-Memphis is rejected by a majority, and is nonviable. Chattanooga and Knoxville both get less than 25% preference, so they are also nonviable. Nashville is the leader, and wins with a tally of 100%. This is a strong equilibrium; no rational strategy from any faction or combination thereof would change the winner. Knoxville and/or Chattanooga could each prevent the other from being disqualified, but Nashville would still win with a tally of at least 68 (the ballots of Nashville and Memphis).
+Memphis is rejected by a majority, and is nonviable. Chattanooga and Knoxville both get less than 25% preference, so they are also nonviable. Nashville is the leader, and wins with a tally of 100%. This is a strong equilibrium; no rational strategy from any faction or combination thereof would change the winner. Knoxville and/or Chattanooga could each prevent the other from being disqualified and even get the other to temporarily be the frontrunner, but Nashville would still win with a tally of at least 68 (the ballots of Nashville and Memphis).
 
 (If Memphis voters rejected Nashville, then Chattanooga or Knoxville could win by conspiring to reject Nashville and accept Memphis. However, Nashville could stop this by rejecting them. Thus this strategy would not work without extreme foolishness from both Memphis and Nashville voters, ''and'' extreme amounts of strategy from the others.)
 
