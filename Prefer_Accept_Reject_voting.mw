@@ -3,7 +3,7 @@ Prefer Accept Reject (PAR) voting works as follows:
 # '''Voters Prefer, Accept, or Reject each candidate.''' On ballots which don't explicitly use "Reject", or for candidates with less than 25% "Prefer", blanks count as "Reject"; otherwise, blanks count as "Accept".
 # '''Tally 1 point for each "Prefer"''' for each candidate.
 # Out of the candidates (if any) with no more than 50% "Reject", find the one with the most points. '''For every ballot which doesn't "Prefer" this frontrunner, add 1 point for each "Accept".'''
-# Re-tally step 3 if that makes a difference. (In other words, if the frontrunner changed; this can not happen more than once.) '''Most points wins.'''
+# If the frontrunner changed, add 1 for each "Accept" that's not yet tallied (the ones which "Prefer" the original frontrunner). '''Most points wins.'''
 
 Note that the procedure above will always elect a candidate with no more than 50% "Reject", if any exist. This is because, if any exist, one of them will be the frontrunner, and they will thus score points equal to at least 50% of the voters. 
 
