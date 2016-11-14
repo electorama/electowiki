@@ -2,10 +2,12 @@ Prefer Accept Reject (PAR) voting works as follows:
 
 # '''Voters Prefer, Accept, or Reject each candidate.''' On ballots which don't explicitly use "Reject", or for candidates with less than 25% "Prefer", blanks count as "Reject"; otherwise, blanks count as "Accept".
 # '''Each "Prefer" is worth 1 point.'''
-# Of the candidates (if any) with no more than 50% "Reject", the one with most points is called the frontrunner. '''Add 1 point for each "Accept" on a ballot which doesn't "Prefer" the frontrunner.'''
+# Of the candidates (if any) with no more than 50% "Reject", the one with most points so far is called the frontrunner. '''Add 1 point for each "Accept" on a ballot which doesn't "Prefer" the frontrunner.'''
 # If the frontrunner changes, re-tally step 3. (This will happen at most once.) '''Most points wins.'''
 
-Note that the procedure above will always elect a candidate with no more than 50% "Reject", if any exist. Each candidate's score at the end can be seen as an approval total, and is thus suitable for combining with approval totals from other jurisdictions in a system like the National Popular Vote Interstate Compact.
+Note that the procedure above will always elect a candidate with no more than 50% "Reject", if any exist. This is because, if any exist, one of them will be the frontrunner, and they will thus score points equal to at least 50% of the voters. 
+
+Each candidate's score at the end can be seen as an approval total, and is thus suitable for combining with approval totals from other jurisdictions in a system like the National Popular Vote Interstate Compact.
 
 A related system which passes [[FBC]] is [[FBPPAR]]. This has the same steps, except that voters can choose to mark any of their "preferred" candidates as "stand aside". "Stand aside" preferences are counted as rejections when finding the leader, but as preference when assigning points.
 
