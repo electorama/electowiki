@@ -23,7 +23,7 @@ There are a few criteria for which it does not pass as such, but where it passes
 
 * It fails [[Independence of irrelevant alternatives]], but passes [[Local independence of irrelevant alternatives]].
 
-* It fails the [[Condorcet criterion]], but if there is a voted majority Condorcet winner X, then any faction (defined as the set of voters who prefer X>Y,Z, or alternately as the set who prefer Y>X>Z, for some Y and Z) can ensure that Z doesn't win using semi-honest ballots.
+* It fails the [[Condorcet criterion]], but if there is a voted majority Condorcet winner X, then any faction (defined as the set of voters who prefer X>Y,Z, or alternately as the set who prefer Y>X>Z, for some Y and Z) can ensure that Z doesn't win using semi-honest ballots (X>>Z or YX>>Z, respectively).
 
 * It fails the [[participation criterion]] but passes the [[semi-honest participation criterion]].
 
