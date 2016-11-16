@@ -44,14 +44,14 @@ PAR voting fails the [[favorite betrayal criterion]] (FBC). For instance, consid
 * 10: B>AC
 * 40: C>B
 
-None are majority-rejected, and C is the frontrunner. Points are: A, 60; B, 55; C, 55; X, 35. A wins. However, if 6 of the last group of voters strategically betrayed their true favorite C, the situation would be as follows:
+None are majority-rejected, and C is the frontrunner. Points are: A, 60; B, 55; C, 55; X, 35. A wins. However, if 11 of the last group of voters strategically betrayed their true favorite C, the situation would be as follows:
 
 * 30: AX>B (That is, on 35 ballots, A and X are preferred, B is accepted, and C is rejected)
 * 5: AX>C
 * 15: B>A
 * 10: B>AC
-* 34: C>B
-* 6: B
+* 29: C>B
+* 11: B
 
 Now, C is not viable with 51% rejection; so B is the leader. Since C is no longer the leader, B gets the 34 points from C voters, and wins. The strategy succeeded; the strategic voters are better off.
 
