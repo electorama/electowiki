@@ -5,7 +5,7 @@ Prefer Accept Reject (PAR) voting works as follows:
 # Out of the candidates (if any) with no more than 50% "Reject", find the one with the most points. '''For every ballot which doesn't "Prefer" this frontrunner, add 1 point for each "Accept".'''
 # If the frontrunner still has the most points, they win. Otherwise, the winner is the candidate with fewest "Reject" ratings.
 
-To express it in a single sentence: if the most-preferred of the non-majority-rejected candidates, X, has more non-reject votes than any other candidate has non-reject votes that don't beat X, then X wins; otherwise, the least-rejected candidate wins.
+To express it in a single sentence: if the most-preferred non-majority-rejected candidate, X, has more non-reject votes than any other candidate has non-reject votes that don't beat X, then X wins; otherwise, the least-rejected candidate wins.
 
 Note that the procedure above will always elect a candidate with no more than 50% "Reject", if any exist. This is because, if any exist, one of them will be the frontrunner, and they will thus score points equal to at least 50% of the voters. 
 
