@@ -1,6 +1,6 @@
 Pairwise Sorted Methods all share these properties:
 * The list of alternatives is first sorted top to bottom according to some numerical measure of strength such as approval score, average rank, median rank, average rating, etc.  This can be considered to be a seed for the next sorting stage.
-* The list is then sorted by swaping adjacent alternatives that are "out of order" pairwise, until each alternative pairwise defeats the alternative immediately below it on the list.
+* The list is then sorted by swapping adjacent alternatives that are "out of order" pairwise, until each alternative pairwise defeats the alternative immediately below it on the list.
 * The winner is the candidate that ends up at the top of the list.
 
 All methods of this type satisfy the [[Condorcet Criterion]] because until the "beats all" alternative is at the top of the list, it will be out of pairwise order with the alternative above it.  
