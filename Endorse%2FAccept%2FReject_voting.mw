@@ -4,7 +4,7 @@ Voters “Endorse”, “Accept”, or “Reject” each candidate. The winner i
 
 == Criteria compliances ==
 
-This system is [[monotonicity|monotonic]] and meets the [[majority criterion]] and the [[mutual majority criterion]]. If there are no more than three candidates such that every ballot endorses at least one of the three and rejects at least one of the three, then it meets the [[majority Condorcet winner]] and majority Condorcet loser criteria. 
+This system is [[monotonicity|monotonic]] and meets the [[majority criterion]] and the [[mutual majority criterion]]. If there are no more than three candidates such that every ballot endorses at least one of the three and rejects at least one of the three, then it meets the [[Condorcet_Criterion#Majority_Condorcet_criterion|majority Condorcet winner]] and majority Condorcet loser criteria.
 
 == An example ==
 
