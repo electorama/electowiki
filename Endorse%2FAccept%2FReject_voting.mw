@@ -1,3 +1,56 @@
 Voters “Endorse”, “Accept”, or “Reject” each candidate. The winner is the most-endorsed candidate who isn’t “overwhelmed”. A potential winner is “overwhelmed” if there are fewer voters who don’t reject the potential winner, than voters who don’t reject some other candidate while also rating them at least as high as the potential winner. 
 
 (Note: there will always be at least one candidate who is not overwhelmed, because you always count at least as many votes for a candidate when you’re considering them as a potential winner as when you’re seeing if they overwhelm another candidate.)
+
+== Criteria compliances ==
+
+This system is [[monotonic]] and meets the [[majority criterion]] and the [[mutual majority criterion]]. If there are no more than three candidates such that every ballot endorses at least one of the three and rejects at least one of the three, then it meets the [[majority Condorcet winner]] and majority Condorcet loser criteria. 
+
+== An example ==
+
+{{Tenn_voting_example}}
+
+Assume voters in each city endorse their own city; accept any city within 200 miles except the farthest; and reject any city that is over 200 miles away or is the farthest city. (These assumptions can be varied substantially without changing the result, but they seem reasonable to start with.)
+
+<div class="floatright">
+{| border=1
+!City
+!Endorse
+!Accept
+!Reject
+!Score against Memphis
+!Score against Nashville
+|-
+!bgcolor="#fff"|Memphis
+|bgcolor="#fff"|42
+|bgcolor="#fff"|0
+|bgcolor="#fcc"|58
+|bgcolor="#fff"|42
+|bgcolor="#fcc"|42
+|-
+!bgcolor="#fff"|Nashville
+|bgcolor="#fff"|26
+|bgcolor="#fff"|74
+|bgcolor="#fff"|0
+|bgcolor="#cfc"|58
+|bgcolor="#bfb"|100
+|-
+!bgcolor="#fff"|Chattanooga
+|bgcolor="#fff"|15
+|bgcolor="#fff"|43
+|bgcolor="#fff"|42
+|bgcolor="#fff"|58
+|bgcolor="#fcc"|32
+|-
+!bgcolor="#fff"|Knoxville
+|bgcolor="#fff"|17
+|bgcolor="#fff"|41
+|bgcolor="#fff"|42
+|bgcolor="#fff"|58
+|bgcolor="#fcc"|32
+|}
+</div>
+
+Memphis is overwhelmed by Nashville; Nashville is not overwhelmed, and so wins. This is a strong equilibrium: no subgroup could get a better result through strategy.
+
+[[Category:Graded Bucklin systems]]
