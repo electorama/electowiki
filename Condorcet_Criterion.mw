@@ -35,6 +35,9 @@ X beats Y iff (X>Y) > (Y>X) + (X=Y)T
 
 With this alternative definition of "beat", [[FBC]] and the Condorcet Criterion are compatible.
 
+== Majority Condorcet criterion ==
+
+The majority Condorcet criterion is the same as the above, but with "beat" replaced by "majority-beat", defined to be "X majority-beats Y iff over 50% voters vote X over Y."
 
 ==Complying methods==
 
