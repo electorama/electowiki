@@ -1,4 +1,4 @@
-Voters “Endorse”, “Accept”, or “Reject” each candidate. The winner is the most-endorsed candidate who isn’t “vanquished”. A potential winner is “vanquished” if there are fewer voters who don’t reject the potential winner, than voters who don’t reject some other candidate while also rating them at least as high as the potential winner. 
+Voters “Endorse”, “Accept”, or “Reject” each candidate. The winner is the most-endorsed candidate who isn’t “vanquished”. To see if a potential winner is “vanquished”, you give them one point for each voter who didn't reject them, while other candidates only get points for voters who don’t reject them and also didn't rate them below the potential winner. If the potential winner doesn't have the highest points, they are "vanquished", so you move on to the next-most-endorsed candidate as the new potential winner.
 
 (Note: there will always be at least one candidate who is unvanquished, because you always count at least as many votes for a candidate when you’re considering them as a potential winner as when you’re seeing if they vanquish another candidate.)
 
