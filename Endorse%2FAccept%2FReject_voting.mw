@@ -6,7 +6,19 @@ Voters “Endorse”, “Accept”, or “Reject” each candidate. The winner i
 
 This system is [[monotonicity|monotonic]] and meets the [[majority criterion]] and the [[mutual majority criterion]]. If there are no more than three candidates such that every ballot endorses at least one of the three and rejects at least one of the three, then it meets the [[Condorcet_Criterion#Majority_Condorcet_criterion|majority Condorcet winner]] and majority Condorcet loser criteria.
 
-== An example ==
+== Examples ==
+
+=== School mascot ("chicken dilemma") ===
+
+Imagine there's an election to choose a school mascot, and the options are Jaguar, Leopard, and Bulldog. Say that there are 35 voters who endorse Jaguar and accept Leopard; 25 who endorse Leopard and accept Jaguar; and 40 who endorse only Bulldog, rejecting the other two. (This kind of scenario is called a [[chicken dilemma]] by voting theorists, because in many voting systems it becomes like a game of chicken between the Jaguar and Leopard supporters; they need to cooperate to beat Bulldog, but whichever allied faction cooperates less might get an advantage.)
+
+Bulldog has the most endorsements, so they are the first potential winner. They get 40 points for endorsements and no points for acceptances (nobody accepted Bulldog). Jaguar gets 35 points for endorsements, and 25 for acceptances, because the people who accepted Leopard didn't endorse Bulldog; that's a total of 60. In a similar way, Leopard totals 60. Both of the opponents vanquish Bulldog, so we keep looking for a winner.
+
+Jaguar has the next most endorsements. They get 35 points for endorsements and 25 for acceptances; still 60. Bulldog also keeps the same total of 40. But Leopard now only gets 25 points for endorsements; Leopard's acceptances don't count now, because those voters endorsed Jaguar, the potential winner. So Jaguar wins with a score of 60 to Leopard's 25 and Bulldog's 40.
+
+It is possible for Leopard voters to change this result by strategic voting if they unanimously reject Jaguar. But at least 80% of that faction would have to participate in that strategic voting for it to succeed; while it would take only 58% of the Jaguar faction to defend against this strategy by rejecting Leopard. Thus, in this election, strategic voting would probably not get off the ground.
+
+=== Tennessee example ("center squeeze") ===
 
 {{Tenn_voting_example}}
 
@@ -51,6 +63,10 @@ Assume voters in each city endorse their own city; accept any city within 200 mi
 |}
 </div>
 
-Memphis is overwhelmed by Nashville; Nashville is not overwhelmed, and so wins. This is a strong equilibrium: no subgroup could get a better result through strategy.
+Memphis has the most endorsements, so it's the first potential winner. As with Bulldog in the example above, it is accepted by no voters, so it only gets the 42 points for those who endorse it. Nashville, however, gets 26 points for endorsements, plus 32 points for the acceptances it got from Chattanooga and Knoxville voters. Nashville does not get points at this time for the 42 acceptances from voters who endorsed Memphis, but it still has 58 points total, enough to vanquish Memphis.
+
+Nashville is the next highest in endorsements, so is the next potential winner. It gets 26 points for endorsements, and the other 76 voters all accepted it, so its total is a unanimous 100. It's impossible for any other city to vanquish that score, so Nashville wins.  
+
+Unlike the other example above, this result is a [[strong Nash equilibrium]]; that is, no faction or group of factions could get a result they prefer through strategic voting.
 
 [[Category:Graded Bucklin systems]]
