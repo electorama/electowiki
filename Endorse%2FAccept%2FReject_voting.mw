@@ -1,6 +1,6 @@
-Voters “Endorse”, “Accept”, or “Reject” each candidate. The winner is the most-endorsed candidate who isn’t “overwhelmed”. A potential winner is “overwhelmed” if there are fewer voters who don’t reject the potential winner, than voters who don’t reject some other candidate while also rating them at least as high as the potential winner. 
+Voters “Endorse”, “Accept”, or “Reject” each candidate. The winner is the most-endorsed candidate who isn’t “vanquished”. A potential winner is “vanquished” if there are fewer voters who don’t reject the potential winner, than voters who don’t reject some other candidate while also rating them at least as high as the potential winner. 
 
-(Note: there will always be at least one candidate who is not overwhelmed, because you always count at least as many votes for a candidate when you’re considering them as a potential winner as when you’re seeing if they overwhelm another candidate.)
+(Note: there will always be at least one candidate who is unvanquished, because you always count at least as many votes for a candidate when you’re considering them as a potential winner as when you’re seeing if they vanquish another candidate.)
 
 == Criteria compliances ==
 
