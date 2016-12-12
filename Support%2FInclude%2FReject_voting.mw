@@ -1,0 +1,5 @@
+Support/Include/Reject (SIR) voting works as follows:
+
+Voters can Support, Include, or Reject each candidate. Find the two candidates rejected by the fewest voters; of these two, the one who's supported by the most voters wins.
+
+There is an option on the ballot that a voter can check so that all their blank votes count as "Reject". If a voter does not choose this option, their blank votes count for a given candidate count as "Include" for a number of voters equal to the number of voters who supported that candidate; and then as "Reject" for all further blank votes. In this way, blanks for a well-liked candidate mostly count as "Include", but blanks for relatively unknown candidate mostly count as "Reject".
