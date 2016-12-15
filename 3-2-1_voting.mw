@@ -16,23 +16,23 @@ Imagine an election for a high school mascot, in which the options are “Bulldo
 |-
 | style="text-align: right;" | 39
 | Bulldogs, Knights
-| Lions
-| Tigers
+| 
+| Lions, Tigers
 |-
 | style="text-align: right;" | 1
 | Bulldogs
-| Knights
-| Lions, Tigers
+| 
+| Knights, Lions, Tigers
 |-
 | style="text-align: right;" | 35
 | Tigers
-| Lions, Knights
-| Bulldogs
+| Lions
+| Bulldogs, Knights
 |-
 | style="text-align: right;" | 20
 | Lions
-| Tigers, Knights
-| Bulldogs
+| Tigers
+| Bulldogs, Knights
 |-
 | style="text-align: right;" | 5
 | Knights, Lions
@@ -48,26 +48,26 @@ Imagine an election for a high school mascot, in which the options are “Bulldo
 ! 2-way score
 |-
 | Lions
-| 25
+| bgcolor="#fcc"|25
 | 35
 | 40
-| 
+| bgcolor="#444"|
 |-
 | Tigers
-| style="bgcolor: CFC;" | 35
+| bgcolor="#cfc"| 35
 | 20
-| 45
-| 
+| bgcolor="#cfc"|45
+| bgcolor="#cfc"| 55
 |-
 | Knights
-| 44
-| 1
-| 55
-| 
+| bgcolor="#cfc"|  44
+| 0
+| bgcolor="#fcc"|56
+| bgcolor="#444"|
 |-
 | Bulldogs
-| 40
+| bgcolor="#cfc"|  40
 | 5
-| 55
-| 
+| bgcolor="#cfc"|55
+| bgcolor="#fcc"|45
 |}
