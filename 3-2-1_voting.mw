@@ -14,7 +14,7 @@ Step 3: This is like a runoff between the two strongest candidates. If you know 
 
 == Properties ==
 
-This system satisfies the [[Majority criterion]]; the [[Condorcet Loser criterion]]; [[monotonicity]]; and [[local independence of irrelevant alternatives]].
+This system satisfies the [[Majority criterion]]; the [[Condorcet loser criterion]]; [[monotonicity]]; and [[local independence of irrelevant alternatives]].
 
 It satisfies the [[mutual majority criterion]] as long as any member of the mutual majority set of candidates is among the 3 semifinalists. In practice, this is almost guaranteed to be the case.
 
