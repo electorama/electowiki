@@ -17,28 +17,28 @@ In 3-2-1 voting, voters may rate each candidate “Good”, “Acceptable”, or
 ! "Bad" ratings
 ! 2-way score
 |-
-| Lions
-| bgcolor="#cfc"|25
-| bgcolor="#beb"|35
-|bgcolor="#fcc"| 40
-| bgcolor="#faa"| 25
+| Memphis
+| bgcolor="#cfc"|42
+| bgcolor="#beb"|0
+|bgcolor="#fcc"| 58
+| bgcolor="#faa"| 
 |-
-| Tigers
-| bgcolor="#cfc"| 35
-| bgcolor="#beb"|25
-| bgcolor="#cfc"|40
-| bgcolor="#cfc"|35
+| Nashville
+| bgcolor="#cfc"| 26
+| bgcolor="#beb"|74
+| bgcolor="#cfc"|0
+| bgcolor="#cfc"|68
 |-
-| Knights
-| bgcolor="#faa"|  20
-| bgcolor="#ebb"|20
-| bgcolor="#fcc"|60
-| bgcolor="#fcc"|
+| Chattanooga
+| bgcolor="#faa"|  15
+| bgcolor="#ebb"|85
+| bgcolor="#fcc"|0
+| bgcolor="#fcc"|32
 |-
-| Bulldogs
-| bgcolor="#cfc"|  40
-| bgcolor="#beb"| 0
-| bgcolor="#faa"|60
+| Knoxville
+| bgcolor="#cfc"|  17
+| bgcolor="#beb"| 41
+| bgcolor="#faa"|42
 | bgcolor="#fcc"|
 |}
 
