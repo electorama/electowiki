@@ -10,6 +10,38 @@ In 3-2-1 voting, voters may rate each candidate “Good”, “Acceptable”, or
 
 {{Tenn_voting_example}}
 
+{| class="wikitable"
+! Candidate
+! "Good" ratings
+! "Acceptable" ratings
+! "Bad" ratings
+! 2-way score
+|-
+| Lions
+| bgcolor="#cfc"|25
+| bgcolor="#beb"|35
+|bgcolor="#fcc"| 40
+| bgcolor="#faa"| 25
+|-
+| Tigers
+| bgcolor="#cfc"| 35
+| bgcolor="#beb"|25
+| bgcolor="#cfc"|40
+| bgcolor="#cfc"|35
+|-
+| Knights
+| bgcolor="#faa"|  20
+| bgcolor="#ebb"|20
+| bgcolor="#fcc"|60
+| bgcolor="#fcc"|
+|-
+| Bulldogs
+| bgcolor="#cfc"|  40
+| bgcolor="#beb"| 0
+| bgcolor="#faa"|60
+| bgcolor="#fcc"|
+|}
+
 The three most-endorsed are Memphis (42), Nashville (26), and ? (17), for a total of 85 voters who endorsed at least one of them. Of those three, the two least-rejected are Nashville (0 rejections) and ? (42 rejections). Of those two, Nashville is preferred by 68 to 32.
 
 === High school mascot (chicken dilemma) ===
