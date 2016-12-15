@@ -1,192 +1,73 @@
-In 3-2-1 voting, voters may '''rate each candidate “Good”, “OK”, or “Bad”'''. (Alternately, they may rate one candidate "Good" and leave the rest blank; in this case their chosen candidate's predeclared ratings of the others are used to fill in the blanks.¹) The tallying process has three steps:
+In 3-2-1 voting, voters may rate each candidate “Good”, “Acceptable”, or “Rejected”. It has three steps:
 
-* Find '''3 Semifinalists''': the candidates with the '''most “good”''' ratings.²
-* Find '''2 Finalists''': the semifinalists with the fewest '''"bad" ratings'''.
-* Find '''1 winner''': the finalist who is rated '''above the other''' on more ballots (like a virtual runoff).
-
-== Motivation  ==
-
-The first qualification to win is that a significant number of people take you seriously and support you.
-
-The second qualification is that you're not opposed by a majority; ideally, opposed by as few as possible.
-
-Between the two candidates who pass those two filters, it's just "majority rules", among voters who made some distinction. Putting this step at the end minimizes the incentives for voters to strategically exaggerate distinctions.
-
-These three steps are each important. They have to come in that order: pairwise has to come last because it only works with a pair, and putting the "fewest bad" step first would risk leaving only inoffensive nonentities. 
-
-It is impossible to strategically affect the outcome of the first two stages without risking losing your voice in the third stage. Probably the most safe and effective thing is to just vote honestly.
-
-== Footnote ¹: Blank ratings ==
-
-There are two ways to handle blank ratings: "Delegated", which makes voting easier for voters by letting them choose to give some of their voting power to their favorite candidate; and "Undelegated", which does its best to infer voter intentions directly. "Delegated" is suggested unless there are reasons against it.
-
-=== Delegated 3-2-1 ===
-
-In this method, each candidate can pre-rate other candidates "OK", "conditionally OK", or "bad". If they do not explicitly pre-rate, they are considered to rate all others "conditionally OK". Once all ratings have been submitted, all "conditionally OK" ratings are turned to "Bad" if the rating coming the other way is "Bad", and to "OK" otherwise. Candidate ratings are public information.
-
-When a voter leaves a candidate X blank/unrated, and rates exactly one other candidate Y as "Good", that counts as rating X as "OK" if Y rated X "OK". Otherwise it counts as rating X "Bad". 
-
-For example, if I rated only Aurelio "good" and left Beth and Chung blank; and Aurelio rated Beth as "OK" and Chung as "Bad", then I'd count as giving those ratings. If I'd also rated Amy "good", then my blank rating for Beth would count as "bad", no matter what Amy and Aurelio said.
-
-=== Undelegated 3-2-1 ===
-
-For voters who do not explicitly use the "Bad" rating, blank ratings count as "bad". For those who do use "bad", blank ratings count as "OK", except that in step 3 they count as lower than an explicit "OK".
-
-== Footnote ²: rules for the third semifinalist ==
-
-There are two extra qualifications when choosing the third (weakest) semifinalist. First, they must not be of the same party as both of the other two; if they are, skip to the next-highest "good" ratings. This prevents one party from winning simply by controlling all three semifinalist slots. Second, they must have at least half as many "good" ratings as the first (strongest) semifinalist. If they don't, then skip step 2 entirely and make both semifinalists directly into finalists. This prevents a relatively unknown "also-ran" from winning an election with two dominant, highly-polarized candidates. A third candidate can win, but only by getting appreciable support.
-
-== Tiebreaker ==
-
-In all cases, ties are broken by score, with each "Good" counting as 2 points and each "OK" counting as 1. If two candidates are tied in score as well (highly unlikely), the tie is broken randomly.
+* Find 3 Semifinalists: the candidates with the most “good” ratings. (If this is a partisan election, no two semifinalists may come from the same party).
+* Find 2 Finalists: the semifinalists with the fewest rejections.
+* Find 1 winner: the finalist who is rated above the other on more ballots.
 
 == Examples ==
 
-=== Tennessee capital (center squeeze) ===
-
-{{Tenn_voting_example}}
-
-This leads to the following outcome:
-
-{| class="wikitable"
-! Candidate
-! "Good" ratings
-! "OK" ratings
-! "Bad" ratings
-! 2-way score
-|-
-| Memphis
-| bgcolor="#cfc"|42
-| bgcolor="#beb"|0
-|bgcolor="#faa"| 58
-| bgcolor="#fcc"| 
-|-
-| Nashville
-| bgcolor="#cfc"| 26
-| bgcolor="#beb"|74
-| bgcolor="#cfc"|0
-| bgcolor="#cfc"|68
-|-
-| Chattanooga
-| bgcolor="#faa"|  15
-| bgcolor="#ebb"|85
-| bgcolor="#fcc"|0
-| bgcolor="#fcc"|
-|-
-| Knoxville
-| bgcolor="#cfc"|  17
-| bgcolor="#beb"| 41
-| bgcolor="#cfc"|42
-| bgcolor="#faa"|32
-|}
-
-The three most-endorsed are Memphis (42), Nashville (26), and Knoxville (17). Of those three, the two least-rejected are Nashville (0 rejections) and Knoxville (42 rejections). Of those two, Nashville is preferred by 68 to 32.
-
-=== High school mascot (chicken dilemma) ===
 Imagine an election for a high school mascot, in which the options are “Bulldogs”, “Lions”, “Tigers”, or “Knights”, with the following votes:
 
 {| class="wikitable"
 ! Faction size
 ! "Good" candidates
-! "OK" candidates
+! "Acceptable" candidates
 ! "Bad" candidates
 |-
-| style="text-align: right;" | 2
-| Knights
-| Bulldogs
-| Lions, Tigers
+| style="text-align: right;" | 39
+| Bulldogs, Knights
+| Lions
+| Tigers
 |-
-| style="text-align: right;" | 38
+| style="text-align: right;" | 1
 | Bulldogs
 | Knights
 | Lions, Tigers
 |-
 | style="text-align: right;" | 35
 | Tigers
-| Lions
-| Bulldogs, Knights
+| Lions, Knights
+| Bulldogs
 |-
-| style="text-align: right;" | 25
+| style="text-align: right;" | 20
 | Lions
+| Tigers, Knights
+| Bulldogs
+|-
+| style="text-align: right;" | 5
+| Knights, Lions
+| Bulldogs
 | Tigers
-| Bulldogs, Knights
 |}
-
-The votes above lead to the following outcome:
 
 {| class="wikitable"
 ! Candidate
 ! "Good" ratings
-! "OK" ratings
+! "Acceptable" ratings
 ! "Bad" ratings
 ! 2-way score
 |-
 | Lions
-| bgcolor="#cfc"|25
-| bgcolor="#beb"|35
-|bgcolor="#cfc"| 40
-| bgcolor="#faa"| 25
+| 25
+| 35
+| 40
+| 
 |-
 | Tigers
-| bgcolor="#cfc"| 35
-| bgcolor="#beb"|25
-| bgcolor="#cfc"|40
-| bgcolor="#cfc"|35
+| style="bgcolor: CFC;" | 35
+| 20
+| 45
+| 
 |-
 | Knights
-| bgcolor="#faa"|  2
-| bgcolor="#ebb"|38
-| bgcolor="#fcc"|60
-| bgcolor="#fcc"|
+| 44
+| 1
+| 55
+| 
 |-
 | Bulldogs
-| bgcolor="#cfc"|  38
-| bgcolor="#beb"| 2
-| bgcolor="#faa"|60
-| bgcolor="#fcc"|
+| 40
+| 5
+| 55
+| 
 |}
-
-The semifinalists are Lions, Tigers, and Bulldogs. The finalists are Lions and Tigers. The winner is Tigers.
-
-This shows a "chicken dilemma" between the felines (Lions and Tigers); together, they can beat Bulldogs, but separately they can't. In 3-2-1, as in almost any voting methods which successfully elect Nashville in the example above, it is possible for the Lions voters to win by strategically rating Tigers as "bad". However, it would take at least 20 of the 25 Lions voters to accomplish this; any fewer, and Tigers would still win. Thus, unlike many voting methods, as long as each Lions voter expects even a third of other Lions voters to vote honestly, there is no incentive for them to "defect" individually.
-
-== Properties ==
-
-This method satisfies the [[Majority criterion]]; the [[Condorcet loser criterion]]; [[monotonicity]]; and [[local independence of irrelevant alternatives]].
-
-It satisfies the [[mutual majority criterion]] as long as any member of the mutual majority set of candidates is among the 3 semifinalists. In practice, this is almost guaranteed to be the case.
-
-Steps 1 and 3 satisfy the [[later no-harm criterion]]. Thus, the only strategic reason not to add any "OK" ratings would be if your favorite was one of the two most-rejected semifinalists but also was able to beat the least-rejected semifinalist in step 3. This combination of weak and strong is unlikely to happen in real life, and even less likely to be predictable enough a priori to be a basis for strategy.
-
-This method fails the [[favorite betrayal criterion]], in that in steps 1 or 2 it could in theory be necessary to rate your favorite below "Good" in order to leave room for a more-viable compromise candidate to be a semifinalist or finalist. However, in order for that to be a worthwhile strategy, the compromise would have to do better in a pairwise race against the other finalist, but have a worse chance of becoming a semifinalist or finalist under your honest vote. This combination of strength in one context and weakness in another is akin to a Condorcet cycle, and like such cycles, it may be rare in real-world elections, and even rarer that it is predictable enough a priori to make a favorite-betrayal strategy feasible.
-
-In terms of summability, this can be done in one of two ways. They method can work with one count that is O(N²) summable, or with two consecutive tallies that are each O(N) summable (one for "3-2" and the second for "1"). The latter could make this feasible to run even on older ballot machines; though full counts of the second step might involve some configuration and a couple of passes over the ballots, in many cases the "3-2" tallies would make it obvious who wins the "1" step, so voters would not have to be kept in suspense as the second step proceeded.
-
-== For US presidential elections ==
-
-In order to be usable for US presidential elections, a voting method should be able to work as an interstate compact alongside other methods. Such an interstate compact would have at most the following steps:
-
-# Voters in each state vote using the state's particular voting method.
-# Each state publishes raw totals in some format.
-# Possibly looking at the raw totals of other states, each state publishes its final totals.
-# Final totals for each state are added and the national winner is found
-# If they constitute a majority of the electoral college, signatory states are bound by compact to give all their electors to the national winner.
-
-In order for a voting method to work with this, it must have a feasible way to work with steps 2, 3, and 4.
-
-Step 2: "raw totals in some format": many voting methods exist, and many of them require different information from the ballots for summability. One reasonable lowest common denominator would be that all states must publish the rating or ranking levels available, and the raw tallies — the number of times each candidate is rated or ranked at each level. This is far less information than would be required to find a winner under IRV or Condorcet, but it is enough for 3-2-1, when combined with the following steps. It is also information that naturally would always be available from states using simpler methods such as plurality or approval.
-
-Step 4: In order to add to provide national totals, each state's final totals should be in the form of a point method - that is, approval, score, or borda ballots, normalized so that each vote is in the range 0-1. This is not an endorsement of approval, score, or borda as voting methods; it's simply because these point methods are the only methods natively compatible with ballots from states still using plurality.  
-
-Step 3: So a state using 3-2-1 must be able to look at the raw tallies from other states, and provide final local tallies, such that the following properties are satisfied:
-
-* Each individual local ballot contributes between 0 and 1 points to each candidate's final local tally.
-* A ballot will always contribute 1 point to its most-preferred candidate and 0 points to its least-preferred candidate.
-* A ballot will never contribute more points to a less-preferred candidate than to a more-preferred one.
-* If all states used the same final local tally procedure, the winner would be the 3-2-1 winner.
-
-It's easy to give tallies that satisfy the properties above. First, you find the semifinalists — the 3 candidates with the most top-ratings nationwide — and the finalists — the two semifinalists with the fewest bottom-ratings nationwide. Then, tally 1 point each time a candidate is rated "good"; 0 points each time they're rated "bad"; and for "OK" ratings tally 1 point if that ballot didn't rate either of the finalists "good", and 0 points otherwise. 
-
-This procedure works fine in combination with other states using approval voting, plurality voting, or various other methods. It makes it easier for the voters in 3-2-1 states to cast a strategically-optimal vote, but does not give any greater voting power to a 3-2-1 voter over a strategically-optimal plurality or approval voter. In other words, it is still a matter of "one person one vote"; states would have an incentive to adopt 3-2-1 voting, but voters would not be artificially disenfranchised for not passing it, any more than they are already disenfranchised by inferior voting methods like plurality.
-
-[[Category:Single-winner voting methods]]
