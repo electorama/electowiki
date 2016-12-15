@@ -40,6 +40,8 @@ Imagine an election for a high school mascot, in which the options are “Bulldo
 | Tigers
 |}
 
+The votes above lead to the following outcome:
+
 {| class="wikitable"
 ! Candidate
 ! "Good" ratings
@@ -71,3 +73,5 @@ Imagine an election for a high school mascot, in which the options are “Bulldo
 | bgcolor="#cfc"|55
 | bgcolor="#fcc"|45
 |}
+
+The semifinalists are Tigers, Knights, and Bulldogs. The finalists are Tigers and Bulldogs. The winner is Tigers.
