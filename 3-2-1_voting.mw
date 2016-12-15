@@ -4,6 +4,20 @@ In 3-2-1 voting, voters may rate each candidate “Good”, “Acceptable”, or
 * Find 2 Finalists: the semifinalists with the fewest rejections.
 * Find 1 winner: the finalist who is rated above the other on more ballots.
 
+== Motivation for each step ==
+
+Step 1: A winner should have strong support; at least some voters who have paid attention and are enthusiastic. But if you keep fewer than 3 at this stage, you'd risk prematurely eliminating a centrist and leaving only the two extremes.
+
+Step 2: This allows a majority of the electorate to have a veto on any candidate. Also, candidates that are eliminated here would usually have little chance in step 3 anyway.
+
+Step 3: This is like a runoff between the two strongest candidates. If you know which two candidates will be finalists, you have no incentive not to rank them honestly, and everybody who made a distinction between them gets equal voting power.
+
+== Properties ==
+
+This system satisfies the [[Majority criterion]]; the [[Condorcet Loser criterion]]; [[monotonicity]]; and [[local independence of irrelevant alternatives]].
+
+Steps 1 and 3 satisfy the [[later no-harm]] criterion, so that the only strategic reason not to add any "acceptable" ratings would be if your favorite was one of the two most-rejected semifinalists but also was able to beat the least-rejected semifinalist in step 3. This combination of weak and strong is unlikely to happen in real life, and even less likely to be predictable enough a priori to be a basis for strategy.
+
 == Examples ==
 
 === Tennessee capital (center squeeze) ===
