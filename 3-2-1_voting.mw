@@ -52,19 +52,19 @@ The votes above lead to the following outcome:
 ! 2-way score
 |-
 | Lions
-| bgcolor="#fcc"|25
-| bgcolor="#ebb"|35
+| bgcolor="#cfc"|25
+| bgcolor="#beb"|35
 |bgcolor="#fcc"| 40
 | bgcolor="#fcc"| 25
 |-
 | Tigers
-| bgcolor="#fcc"| 35
-| bgcolor="#ebb"|25
+| bgcolor="#cfc"| 35
+| bgcolor="#beb"|25
 | bgcolor="#cfc"|40
 | bgcolor="#cfc"|35
 |-
 | Knights
-| bgcolor="#cfc"|  20
+| bgcolor="#fcc"|  20
 | bgcolor="#ebb"|20
 | bgcolor="#fcc"|60
 | bgcolor="#fcc"|
