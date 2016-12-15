@@ -21,12 +21,12 @@ Imagine an election for a high school mascot, in which the options are “Bulldo
 ! "Acceptable" candidates
 ! "Bad" candidates
 |-
-| style="text-align: right;" | 36
+| style="text-align: right;" | 20
 | Bulldogs, Knights
 | 
 | Lions, Tigers
 |-
-| style="text-align: right;" | 4
+| style="text-align: right;" | 20
 | Bulldogs
 | Knights
 | Lions, Tigers
@@ -55,25 +55,25 @@ The votes above lead to the following outcome:
 | bgcolor="#fcc"|25
 | bgcolor="#ebb"|35
 |bgcolor="#fcc"| 40
-| bgcolor="#fcc"|
+| bgcolor="#fcc"| 25
 |-
 | Tigers
-| bgcolor="#cfc"| 35
-| bgcolor="#beb"|25
+| bgcolor="#fcc"| 35
+| bgcolor="#ebb"|25
 | bgcolor="#cfc"|40
-| bgcolor="#cfc"| 55
+| bgcolor="#cfc"|35
 |-
 | Knights
-| bgcolor="#cfc"|  36
-| bgcolor="#beb"|0
-| bgcolor="#fcc"|56
+| bgcolor="#cfc"|  20
+| bgcolor="#ebb"|20
+| bgcolor="#fcc"|60
 | bgcolor="#fcc"|
 |-
 | Bulldogs
 | bgcolor="#cfc"|  40
-| bgcolor="#beb"| 5
-| bgcolor="#cfc"|55
-| bgcolor="#fcc"|45
+| bgcolor="#beb"| 0
+| bgcolor="#fcc"|60
+| bgcolor="#fcc"|
 |}
 
 The semifinalists are Tigers, Knights, and Bulldogs. The finalists are Tigers and Bulldogs. The winner is Tigers.
