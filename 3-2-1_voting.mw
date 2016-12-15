@@ -20,8 +20,8 @@ In 3-2-1 voting, voters may rate each candidate “Good”, “Acceptable”, or
 | Memphis
 | bgcolor="#cfc"|42
 | bgcolor="#beb"|0
-|bgcolor="#fcc"| 58
-| bgcolor="#faa"| 
+|bgcolor="#faa"| 58
+| bgcolor="#fcc"| 
 |-
 | Nashville
 | bgcolor="#cfc"| 26
@@ -33,13 +33,13 @@ In 3-2-1 voting, voters may rate each candidate “Good”, “Acceptable”, or
 | bgcolor="#faa"|  15
 | bgcolor="#ebb"|85
 | bgcolor="#fcc"|0
-| bgcolor="#fcc"|32
+| bgcolor="#fcc"|
 |-
 | Knoxville
 | bgcolor="#cfc"|  17
 | bgcolor="#beb"| 41
-| bgcolor="#faa"|42
-| bgcolor="#fcc"|
+| bgcolor="#cfc"|42
+| bgcolor="#faa"|32
 |}
 
 The three most-endorsed are Memphis (42), Nashville (26), and ? (17), for a total of 85 voters who endorsed at least one of them. Of those three, the two least-rejected are Nashville (0 rejections) and ? (42 rejections). Of those two, Nashville is preferred by 68 to 32.
