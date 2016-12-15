@@ -49,9 +49,9 @@ Imagine an election for a high school mascot, in which the options are “Bulldo
 |-
 | Lions
 | bgcolor="#fcc"|25
-| 35
-| 40
-| bgcolor="#444"|
+| bgcolor="#fcc"|35
+|bgcolor="#fcc"| 40
+| bgcolor="#fcc"|
 |-
 | Tigers
 | bgcolor="#cfc"| 35
@@ -63,7 +63,7 @@ Imagine an election for a high school mascot, in which the options are “Bulldo
 | bgcolor="#cfc"|  44
 | 0
 | bgcolor="#fcc"|56
-| bgcolor="#444"|
+| bgcolor="#fcc"|
 |-
 | Bulldogs
 | bgcolor="#cfc"|  40
