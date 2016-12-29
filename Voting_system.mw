@@ -165,6 +165,4 @@ They can also be classified on how many times votes can be counted. Methods like
 * [http://www.mcs.vuw.ac.nz/~ncj/comp303/schulze.pdf A New Monotonic and Clone-Independent Single-Winner Election Method] ('''[[Portable Document Format|PDF]]''') by Markus Schulze ([http://www.citizensassembly.bc.ca/resources/submissions/csharman-10_0409201706-143.pdf mirror1], [http://lists.gnu.org/archive/html/demexp-dev/2003-09/pdflQW7IlpAfC.pdf mirror2])
 * [http://www.masquilier.org/republic/election/ A different way to vote] by AugustinMa. Of interest is the [http://www.masquilier.org/libre/phpbb/ modified] version of the popular phpBB bulletin board that can be found [http://www.masquilier.org/agora/ here]. The board allows the users to create plurality, approval and condorcet ([[Schulze method|Schulze]]) polls and [http://www.masquilier.org/agora/viewforum.php?f=7 cast their ballots].
 
-
-
 {{fromwikipedia}}
