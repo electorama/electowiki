@@ -9,7 +9,7 @@ The result is that only sufficient defeat information to determine the winner is
 Because not all defeats are processed, the social ordering is not linear -- in general it is a tree (or river) diagram, with the victor at the base of the river.
 
 It was first proposed by [[User:Heitzig-j|Jobst Heitzig]] on the [[Election-methods mailing list]]:
-* [http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-April/012701.html First proposal]
+* [http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-April/078029.html First proposal]
 * [http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-April/012706.html slight refinement]
 * [http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-October/014018.html More concise definition].  In this last version, River is defined very similarly to ranked pairs.
 * [http://lists.electorama.com/pipermail/election-methods-electorama.com/2004-October/014147.html Example using 2004 baseball scores].  This shows how a 14-candidate election winner can be determined much more quickly using River than with RP or [[Schulze method|Schulze]].
