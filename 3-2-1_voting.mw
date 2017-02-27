@@ -6,6 +6,8 @@ In 3-2-1 voting, voters may rate each candidate “Good”, “OK”, or “Bad�
 
 There are two extra qualifications for semifinalists: their "good" ratings should be more than anyone else in their party (that is, only one semifinalist per party), and at least 15% of the electorate. Usually all three semifinalists will easily pass these qualifications naturally, but if only 2 of them do, you can just treat them as finalists and skip step 2.
 
+For voters who do not explicitly use the "Bad" rating, blank ratings count as "bad". For those who do use "bad", blank ratings count as "OK", except that in step 3 they count as lower than an explicit "OK".
+
 == Motivation for each step ==
 
 Step 1: A winner should have strong support; at least some voters who have paid attention and are enthusiastic. But if you keep fewer than 3 at this stage, you'd risk prematurely eliminating a centrist and leaving only the two extremes.
