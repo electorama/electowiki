@@ -1,8 +1,10 @@
-In 3-2-1 voting, voters may rate each candidate “Good”, “Acceptable”, or “Rejected”. It has three steps:
+In 3-2-1 voting, voters may rate each candidate “Good”, “OK”, or “Bad”. It has three steps:
 
-* Find 3 Semifinalists: the candidates with the most “good” ratings. (If this is a partisan election, no two semifinalists may come from the same party).
-* Find 2 Finalists: the semifinalists with the fewest rejections.
+* Find 3 Semifinalists: the candidates with the most “good” ratings. 
+* Find 2 Finalists: the semifinalists with the fewest "bad" ratings.
 * Find 1 winner: the finalist who is rated above the other on more ballots.
+
+There are two extra qualifications for semifinalists: their "good" ratings should be more than anyone else in their party (that is, only one semifinalist per party), and at least 15% of the electorate. Usually all three semifinalists will easily pass these qualifications naturally, but if only 2 of them do, you can just treat them as finalists and skip step 2.
 
 == Motivation for each step ==
 
@@ -18,7 +20,7 @@ This system satisfies the [[Majority criterion]]; the [[Condorcet loser criterio
 
 It satisfies the [[mutual majority criterion]] as long as any member of the mutual majority set of candidates is among the 3 semifinalists. In practice, this is almost guaranteed to be the case.
 
-Steps 1 and 3 satisfy the [[later no-harm criterion]]. Thus, the only strategic reason not to add any "acceptable" ratings would be if your favorite was one of the two most-rejected semifinalists but also was able to beat the least-rejected semifinalist in step 3. This combination of weak and strong is unlikely to happen in real life, and even less likely to be predictable enough a priori to be a basis for strategy.
+Steps 1 and 3 satisfy the [[later no-harm criterion]]. Thus, the only strategic reason not to add any "OK" ratings would be if your favorite was one of the two most-rejected semifinalists but also was able to beat the least-rejected semifinalist in step 3. This combination of weak and strong is unlikely to happen in real life, and even less likely to be predictable enough a priori to be a basis for strategy.
 
 This system fails the [[favorite betrayal criterion]], in that in steps 1 or 2 it could in theory be necessary to rate your favorite below "Good" in order to leave room for a more-viable compromise candidate to be a semifinalist or finalist. However, in order for that to be a worthwhile strategy, the compromise would have to do better in a pairwise race against the other finalist, but have a worse chance of becoming a semifinalist or finalist under your honest vote. This combination of strength in one context and weakness in another is akin to a Condorcet cycle, and like such cycles, it may be rare in real-world elections, and even rarer that it is predictable enough a priori to make a favorite-betrayal strategy feasible.
 
@@ -33,7 +35,7 @@ This leads to the following outcome:
 {| class="wikitable"
 ! Candidate
 ! "Good" ratings
-! "Acceptable" ratings
+! "OK" ratings
 ! "Bad" ratings
 ! 2-way score
 |-
@@ -70,7 +72,7 @@ Imagine an election for a high school mascot, in which the options are “Bulldo
 {| class="wikitable"
 ! Faction size
 ! "Good" candidates
-! "Acceptable" candidates
+! "OK" candidates
 ! "Bad" candidates
 |-
 | style="text-align: right;" | 20
@@ -99,7 +101,7 @@ The votes above lead to the following outcome:
 {| class="wikitable"
 ! Candidate
 ! "Good" ratings
-! "Acceptable" ratings
+! "OK" ratings
 ! "Bad" ratings
 ! 2-way score
 |-
