@@ -134,4 +134,31 @@ The votes above lead to the following outcome:
 
 The semifinalists are Lions, Tigers, and Bulldogs. The finalists are Lions and Tigers. The winner is Tigers.
 
+== For US presidential elections ==
+
+In order to be usable for US presidential elections, a voting method should be able to work as a interstate compact alongside other methods. Such an interstate compact would have at most the following steps:
+
+# Voters in each state vote using the state's particular voting method.
+# Each state publishes raw totals in some format.
+# Possibly looking at the raw totals of other states, each state publishes its final totals.
+# Final totals for each state are added and the national winner is found
+# If they constitute a majority of the electoral college, signatory states are bound by compact to give all their electors to the national winner.
+
+In order for a voting system to work with this, it must have a feasible way to work with steps 2, 3, and 4.
+
+Step 2: "raw totals in some format": many voting methods exist, and many of them require different information from the ballots for summability. One reasonable lowest common denominator would be that all states must publish the rating or ranking levels available, and the raw tallies — the number of times each candidate is rated or ranked at each level. This is far less information than would be required to find a winner under IRV or Condorcet, but it is enough for 3-2-1, when combined with the following steps. It is also information that naturally would always be available from states using simpler systems such as plurality or approval.
+
+Step 4: In order to add to provide national totals, each state's final totals should be in the form of a point system - that is, approval, score, or borda ballots, normalized so that each vote is in the range 0-1. This is not an endorsement of approval, score, or borda as voting methods; it's simply because these point systems are the only systems natively compatible with ballots from states still using plurality.  
+
+Step 3: So a state using 3-2-1 must be able to look at the raw tallies from other states, and provide final local tallies, such that the following properties are satisfied:
+
+* Each individual local ballot contributes between 0 and 1 points to each candidate's final local tally.
+* A ballot will always contribute 1 point to its most-preferred candidate and 0 points to its least-preferred candidate.
+* A ballot will never contribute more points to a less-preferred candidate than to a more-preferred one.
+* If all states used the same final local tally procedure, the winner would be the 3-2-1 winner.
+
+It's easy to give tallies that satisfy the properties above. First, you find the semifinalists — the 3 candidates with the most top-ratings nationwide — and the finalists — the two semifinalists with the fewest bottom-ratings nationwide. Then, tally 1 point each time a candidate is rated "good"; 0 points each time they're rated "bad"; and for "OK" ratings tally 1 point if that ballot didn't rate either of the finalists "good", and 0 points otherwise. 
+
+This procedure works fine in combination with other states using approval voting, plurality voting, or various other systems. It makes it easier for the voters in 3-2-1 states to cast a strategically-optimal vote, but does not give any greater voting power to a 3-2-1 voter over a strategically-optimal plurality or approval voter. In other words, it is still a matter of "one person one vote"; states would have an incentive to adopt 3-2-1 voting, but voters would not be artificially disenfranchised for not passing it, any more than they are already disenfranchised by inferior voting methods like plurality.
+
 [[Category:Single-winner voting systems]]
