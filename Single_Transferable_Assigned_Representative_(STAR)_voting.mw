@@ -1,16 +1,16 @@
 The method works as follows:
 
 # Candidates say which other candidates they prefer. 
-:* ''Tied preferences are allowed. Party-affiliated candidates must put most candidates from their party into their top two preference levels, and cannot put non-party candidates at those levels.''
+#* ''Tied preferences are allowed. Party-affiliated candidates must put most candidates from their party into their top two preference levels, and cannot put non-party candidates at those levels.''
 # Voters choose one candidate. 
-:* ''The ballot explicitly lists candidates running in the same district, but allows write-ins of candidates from other districts. Voters may also vote by party if they like a party but not the local party candidate.''
+#* ''The ballot explicitly lists candidates running in the same district, but allows write-ins of candidates from other districts. Voters may also vote by party if they like a party but not the local party candidate.''
 # Each vote is converted into a preference order
-:* ''Thus, the chosen candidate is preferred first, and that candidate's declared preferences make up the later preferences.''
+#* ''Thus, the chosen candidate is preferred first, and that candidate's declared preferences make up the later preferences.''
 # Find the winners using a modified STV (Single Transferrable Voting)
-:* ''Before STV betins, candidates with less than 1/3 of the votes it would take to win (1/3 of a Droop quota) are eliminated. This prevents weak candidates from winning purely based on vote transfers, and ensures that even candidates in strongly partisan districts are accountable to the voters.''
-:* ''STV works by setting a quota so that the total votes make up one quota per seat and one quota of possible wasted votes. As soon as any candidate gets a quota of votes, they are elected, and any leftover votes beyond a quota are transferred to the next preference of the voter's original choice. Until all the seats are filled, unelected candidates are eliminated one by one, in order of fewest direct votes. When a candidate is eliminated, their votes are transferred. Transferred votes go to make up a quota, but do not change elimination order.''
+#* ''Before STV betins, candidates with less than 1/3 of the votes it would take to win (1/3 of a Droop quota) are eliminated. This prevents weak candidates from winning purely based on vote transfers, and ensures that even candidates in strongly partisan districts are accountable to the voters.''
+#* ''STV works by setting a quota so that the total votes make up one quota per seat and one quota of possible wasted votes. As soon as any candidate gets a quota of votes, they are elected, and any leftover votes beyond a quota are transferred to the next preference of the voter's original choice. Until all the seats are filled, unelected candidates are eliminated one by one, in order of fewest direct votes. When a candidate is eliminated, their votes are transferred. Transferred votes go to make up a quota, but do not change elimination order.''
 # The winning candidates each get a territory
-:* Territories are one or more districts assigned by their party, so that each voter is in the territory of one representative per winning party, and each representative has about one quota of voters from their party.
+#* ''Territories are one or more districts assigned by their party, so that each voter is in the territory of one representative per winning party, and each representative has about one quota of voters from their party.''
 
 The advantages of this method are as follows. First, the advantages common to all proportional representation systems:
 * '''Equality''': gerrymandering is impossible, and each party gets its fair share of seats.
