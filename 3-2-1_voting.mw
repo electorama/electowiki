@@ -6,7 +6,19 @@ In 3-2-1 voting, voters may rate each candidate “Good”, “OK”, or “Bad�
 
 There are two extra qualifications for semifinalists: their "good" ratings should be more than anyone else in their party (that is, only one semifinalist per party), and at least 15% of the electorate. Usually all three semifinalists will easily pass these qualifications naturally, but if only 2 of them do, you can just treat them as finalists and skip step 2.
 
+== Blank ratings ==
+
+There are two ways to handle blank ratings: "plain", which does its best to infer voter intentions; and "delegated", which makes voting easier for voters by letting them choose to give some of their voting power to their favorite candidate.
+
+=== Plain 3-2-1 ===
+
 For voters who do not explicitly use the "Bad" rating, blank ratings count as "bad". For those who do use "bad", blank ratings count as "OK", except that in step 3 they count as lower than an explicit "OK".
+
+=== Delegated 3-2-1 ===
+
+In this system, each candidate can pre-rate other candidates "OK", "conditionally OK", or "bad". If they do not explicitly pre-rate, they are considered to rate all others "conditionally OK". Once all ratings have been submitted, all "conditionally OK" ratings are turned to "Bad" if the rating coming the other way is "Bad", and to "OK" otherwise. Candidate ratings are public information.
+
+When a voter leaves a candidate X blank/unrated, X receives the lowest rating that they got from any candidate that voter rated "Good". So if the voter had rated candidates A and B "good", and both A and B rated X as "OK", then X would get an "OK" from that voter; while if either A and/or B had rated X as "Bad", then X would get a "Bad" from that voter.
 
 == Motivation for each step ==
 
