@@ -89,12 +89,12 @@ Imagine an election for a high school mascot, in which the options are “Bulldo
 ! "OK" candidates
 ! "Bad" candidates
 |-
-| style="text-align: right;" | 20
-| Bulldogs, Knights
-| 
+| style="text-align: right;" | 2
+| Knights
+| Bulldogs
 | Lions, Tigers
 |-
-| style="text-align: right;" | 20
+| style="text-align: right;" | 38
 | Bulldogs
 | Knights
 | Lions, Tigers
@@ -132,19 +132,21 @@ The votes above lead to the following outcome:
 | bgcolor="#cfc"|35
 |-
 | Knights
-| bgcolor="#faa"|  20
-| bgcolor="#ebb"|20
+| bgcolor="#faa"|  2
+| bgcolor="#ebb"|38
 | bgcolor="#fcc"|60
 | bgcolor="#fcc"|
 |-
 | Bulldogs
-| bgcolor="#cfc"|  40
-| bgcolor="#beb"| 0
+| bgcolor="#cfc"|  38
+| bgcolor="#beb"| 2
 | bgcolor="#faa"|60
 | bgcolor="#fcc"|
 |}
 
 The semifinalists are Lions, Tigers, and Bulldogs. The finalists are Lions and Tigers. The winner is Tigers.
+
+This shows a "chicken dilemma" between the felines (Lions and Tigers); together, they can beat Bulldogs, but separately they can't. In 3-2-1, as in almost any voting systems which successfully elect Nashville in the example above, it is possible for the Lions voters to win by strategically rating Tigers as "bad". However, it would take at least 20 of the 25 Lions voters to accomplish this; any fewer, and Tigers would still win. Thus, unlike many voting systems, as long as the Lion voters expect most of the other voters like them to vote honestly, there is no incentive for them to "defect" individually.
 
 == For US presidential elections ==
 
