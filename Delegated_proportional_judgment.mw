@@ -1,22 +1,21 @@
-This is a method designed to replace first past the post (FPTP; that is, single-member-district plurality). As explained below, it gets the considerable advantages of proportional representation without giving up any of the convenience of FPTP. The method works as follows:
+This is a method designed to replace first past the post (FPTP; that is, single-member district plurality). As explained below, it gets the considerable advantages of proportional representation without giving up any of the convenience of FPTP. The method works as follows:
 
 # '''Candidates rate each other'''
 #* ''The possible ratings are "me", "same faction", "same party", "ally from other party", or "non-ally". Ratings are public.''
 # '''Voters choose one candidate.''' Each vote is converted into a set of ratings for all candidates.
-#* ''The ballot explicitly lists candidates running in the same riding, but allows write-ins of candidates from other ridings. Voters may also vote by party if they like a party but not the local party candidate.''
-# '''Eliminate any candidate who got less than 25% of the local votes or who is not among the top 3 in their riding.'''
-#* ''For each time a candidate wins from a riding that already got a winner, there must be some other riding where at least 25% of voters did not vote locally. Once the "nonlocal" ridings are used up, all candidates from ridings that already have a winner are eliminated.''
-# '''Find the winners using "Bucklin Transferable Voting"'''
-#* ''Find the quota, the number of votes it would take to win a seat if no more than one quota of votes can be wasted. Say the quota was one thousand votes; in that case, you'd look at each candidate's thousandth-highest rating. Fill seats in order of that. Each time you fill a seat, one quota worth of the ballots that helped elect that candidate are "used up".''
-#* ''Use up the local ballots first, and among the ballots that are all local or all nonlocal, use up the highest ratings first.''
-#* ''Ties are broken by the closest vote to the quota that is higher or lower. So if the quota was 1000, and candidate A had 600 direct votes and 2000 "same faction votes", while candidate B had 700 direct votes and 900 "same faction" votes, then B wins because their 700th "me" rating is 300 spaces from the thousandth, while A's 600th "me" rating is 400 spaces away, and the closest of both of their "same party" ratings are further than that. In this case, if none of the "same party" ratings were from local voters, B's 700 direct ballots would be used up, and 1/3 (that is, (1000-700)/900) of each of the ballots rating them "same faction" would be used up.''
-#* ''When ballots are used up, recount other candidates to see what their new thousandth-highest rating is (or whatever the quota is). Use this to see who wins next.''
+#* ''The ballot explicitly lists candidates running in the same district, but allows write-ins of candidates from other districts. Voters may also vote by party if they like a party but not the local party candidate.''
+# '''Eliminate any candidate who got less than 25% of the local votes or who is not among the top 3 in their district.'''
+# Find the quota, the number of votes it would take to win a seat if no more than one quota of votes can be wasted. Say the quota was one thousand votes; in that case, you'd look at each candidate's thousandth-highest rating. Fill seats in order of that. Each time you fill a seat, one quota worth of the ballots that helped elect that candidate are "used up". 
+#* '''Use up the local ballots first, and among the ballots that are all local or all nonlocal, use up the highest ratings first.'''
+#* '''Ties are broken by the closest vote to the quota that is higher or lower. So if the quota was 1000, and candidate A had 600 direct votes and 2000 "same faction votes", while candidate B had 700 direct votes and 900 "same faction" votes, then B wins because their 700th "me" rating is 300 spaces from the thousandth, while A's 600th "me" rating is 400 spaces away, and the closest of both of their "same party" ratings are further than that. In this case, if none of the "same party" ratings were from local voters, B's 700 direct ballots would be used up, and 1/3 (that is, (1000-700)/900) of each of the ballots rating them "same faction" would be used up.'''
+#* '''When ballots are used up, recount other candidates to see what their new thousandth-highest rating is (or whatever the quota is). Use this to see who wins next.'''
+#* '''For each time a candidate wins from a district that already got a winner, there must be some other district where at least 25% of voters did not vote locally. Once the "nonlocal" districts are used up, all candidates from districts that already have a winner are eliminated.'''
 # '''The winning candidates each get a territory'''
-#* ''Territories are one or more ridings assigned by their party, so that each voter is in the territory of one representative per winning party, and each representative has about one quota of voters from their party.''
+#* ''Territories are one or more districts assigned by their party, so that each voter is in the territory of one representative per winning party, and each representative has about one quota of voters from their party.''
 
 The advantages of this method are as follows. First, the advantages common to all proportional representation systems:
 * '''Equality''': gerrymandering is impossible, and each party gets its fair share of seats.
-* '''Visibility''': Almost all voters are truly represented; even if you are a minority in your riding, your vote helps elect a candidate of your favored party, and you have a sympathetic representative whose job is to listen to you. 
+* '''Visibility''': Almost all voters are truly represented; even if you are a minority in your district, your vote helps elect a candidate of your favored party, and you have a sympathetic representative whose job is to listen to you. 
 
 This method also keeps all the strong points of the current voting system. (The current system is horrible in general, but it still has its strong points.)
 * '''Simplicity''': you just choose one candidate, and the ballot is short.
