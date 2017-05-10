@@ -2,8 +2,8 @@ Proportional 3RD voting is a multi-winner voting method designed for nonpartisan
 
 * Voters rate each candidate “Good”, “OK”, or “Bad”. Blanks are filled in by your “Good” candidates.
 ** Delegation (rules for filling in blanks left by the voter): Before the election, candidates publicly rate each other “OK” or “Bad”. They may rate another candidate “conditionally OK”, which means “Bad” if the other candidate rates them “Bad”, and “OK” otherwise. If you rank one candidate “Good”, their pre-ratings are used for any other candidates you leave blank. If you rate several candidates “Good”, then your blanks are filled in with the lowest rating any “Good” candidate gave that blank candidate.
-If a voter rates no candidate “Good” but rates some as “OK” or “Bad”, any blanks they leave are counted as “Bad”.
-*:(Note that the above ballot format and rules are identical to those of [3-2-1 voting], a single-winner, nonproportional voting method.)
+** If a voter rates no candidate “Good” but rates some as “OK” or “Bad”, any blanks they leave are counted as “Bad”.
+**:(Note that the above ballot format and rules are identical to those of [3-2-1 voting], a single-winner, nonproportional voting method.)
 
 The basic vote-counting process has 4 steps (based on Single Transferrable Voting):
 # Tally votes
