@@ -1,0 +1,16 @@
+Proportional 3RD voting is a multi-winner voting method designed for nonpartisan elections such as a city council. It uses the same basic ballot format as the single-winner method [3-2-1 voting], and a similar delegated STV algorithm to [Open list/delegated (OL/D) voting]. Here's how it works:
+
+* Voters rate each candidate “Good”, “OK”, or “Bad”. Blanks are filled in by your “Good” candidates.
+** Delegation (rules for filling in blanks left by the voter): Before the election, candidates publicly rate each other “OK” or “Bad”. They may rate another candidate “conditionally OK”, which means “Bad” if the other candidate rates them “Bad”, and “OK” otherwise. If you rank one candidate “Good”, their pre-ratings are used for any other candidates you leave blank. If you rate several candidates “Good”, then your blanks are filled in with the lowest rating any “Good” candidate gave that blank candidate.
+If a voter rates no candidate “Good” but rates some as “OK” or “Bad”, any blanks they leave are counted as “Bad”.
+*:(Note that the above ballot format and rules are identical to those of [3-2-1 voting], a single-winner, nonproportional voting method.)
+
+The basic vote-counting process has 4 steps (based on Single Transferrable Voting):
+# Tally votes
+#: Each ballot counts as 1 point. Initially this point is divided equally among the candidates rated “Good”. These points are added to find the direct vote totals.
+# Find winners and transfer leftovers
+#: If V is the total number of valid (non-exhausted) votes, and S is the number of seats, then a “quota” is defined as Q=V/(S+1). This ensures that each full “quota” of voters will get a seat, with less than one “quota” of vote left unrepresented even though they still have a valid preference.
+#: Any candidate with a full quota of points at any time is elected. If their winning point total is W>Q, then the leftover fraction (W-Q)/W of all of their points is transferred.
+# Eliminate candidate with lowest total and transfer votes
+#: When transferring any portion of a vote, it first is split among any remaining candidates that the original voter rated “Good”, in proportion to the direct vote totals each of those candidates received. If there are no such candidates remaining, it is split among remaining candidates that the original voter rated “OK”, in the same way. If there are no such candidates remaining, the ballot is exhausted (and the quota is adjusted).
+# If there are still seats to fill, repeat from step 2.
