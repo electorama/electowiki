@@ -1,4 +1,4 @@
-Geographic Open List/Delegated voting (GOLD voting) is a quasiproportional voting method for electing legislators to a multi-seat body. It's the same as [[Open List/Delegated (OL/D) voting|OL/D voting]] with an additional constraint that precisely one representative per district must win. It assumes the voters have been divided up into one equal-population locality (aka riding, district, or constituency) per seat being elected and that each candidate has publicly declared their preference order for the other candidates ("if I don't win, then I want the votes I hold to go to her, then him, then him, etc.").
+Geographic Open List/Delegated voting (GOLD voting) is a quasiproportional voting method for electing legislators to a multi-seat body. It's the same as [[Open List/Delegated (OL/D) voting|OL/D voting]] with an additional constraint that precisely one representative per area must win. It assumes the voters have been divided up into one equal-population riding (aka district or constituency) per seat being elected and that each candidate has publicly declared their preference order for the other candidates ("if I don't win, then I want the votes I hold to go to her, then him, then him, etc.").
 
 Voters make two different choices in each race:
 # Choose a candidate.
@@ -24,9 +24,9 @@ The basic vote-counting process has 5 steps (based on Single Transferrable Votin
 # Find winners and transfer leftovers
 #* If V is the total number of valid (non-exhausted) votes, and S is the number of seats, then a “quota” is defined as Q=V/(S+1). This ensures that each full “quota” of voters will get a seat, with less than one “quota” of vote left unrepresented even though they still have a valid preference.
 #* Any candidate with a full quota of votes at any time is elected. If their winning vote total is W>Q, then the leftover fraction (W-Q)/W of all of their votes is transferred.
-#* Whenever a candidate wins, all other candidates from their district are eliminated.
+#* Whenever a candidate wins, all other candidates from their riding are eliminated.
 # Eliminate candidate with lowest total and transfer votes
-#* The last candidate in a district is not eligible for elimination.
+#* The last candidate in a riding is not eligible for elimination.
 #* See above for the transfer methods a voter can choose.
 # If there are still seats to fill, repeat from step 3.
 
