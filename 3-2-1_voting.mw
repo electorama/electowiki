@@ -42,6 +42,8 @@ Steps 1 and 3 satisfy the [[later no-harm criterion]]. Thus, the only strategic 
 
 This system fails the [[favorite betrayal criterion]], in that in steps 1 or 2 it could in theory be necessary to rate your favorite below "Good" in order to leave room for a more-viable compromise candidate to be a semifinalist or finalist. However, in order for that to be a worthwhile strategy, the compromise would have to do better in a pairwise race against the other finalist, but have a worse chance of becoming a semifinalist or finalist under your honest vote. This combination of strength in one context and weakness in another is akin to a Condorcet cycle, and like such cycles, it may be rare in real-world elections, and even rarer that it is predictable enough a priori to make a favorite-betrayal strategy feasible.
 
+In terms of summability, this can be done in one of two ways. They system can work with one count that is O(N²) summable, or with two consecutive tallies that are each O(N) summable (one for "3-2" and the second for "1"). The latter could make this feasible to run even on older ballot machines; though full counts of the second step might involve some configuration and a couple of passes over the ballots, in many cases the "3-2" tallies would make it obvious who wins the "1" step, so voters would not have to be kept in suspense as the second step proceeded.
+
 == Examples ==
 
 === Tennessee capital (center squeeze) ===
