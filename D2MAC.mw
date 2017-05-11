@@ -116,4 +116,4 @@ This mainly differ from D2MAC in that voters submit a [[ratings ballot]], that i
 
 These two variants differ from D2MSC and D2MGC in that the ratings of each voters are first normalized by an affine transformation so that the voter's favourite receives a rating of 1 and so that 0 is the expected value of the voter's rating of the candidate that a randomly chosen ballot assigned the highest rating to.
 
-[[Category:Single-winner voting systems]]
+[[Category:Single-winner voting methods]]
