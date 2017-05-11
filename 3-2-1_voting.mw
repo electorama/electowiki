@@ -16,7 +16,7 @@ For voters who do not explicitly use the "Bad" rating, blank ratings count as "b
 
 === Delegated 3-2-1 ===
 
-In this system, each candidate can pre-rate other candidates "OK", "conditionally OK", or "bad". If they do not explicitly pre-rate, they are considered to rate all others "conditionally OK". Once all ratings have been submitted, all "conditionally OK" ratings are turned to "Bad" if the rating coming the other way is "Bad", and to "OK" otherwise. Candidate ratings are public information.
+In this method, each candidate can pre-rate other candidates "OK", "conditionally OK", or "bad". If they do not explicitly pre-rate, they are considered to rate all others "conditionally OK". Once all ratings have been submitted, all "conditionally OK" ratings are turned to "Bad" if the rating coming the other way is "Bad", and to "OK" otherwise. Candidate ratings are public information.
 
 When a voter leaves a candidate X blank/unrated, X receives the lowest rating that they got from any candidate that voter rated "Good". So if the voter had rated candidates A and B "good", and both A and B rated X as "OK", then X would get an "OK" from that voter; while if either A and/or B had rated X as "Bad", then X would get a "Bad" from that voter.
 
@@ -34,15 +34,15 @@ Step 3: This is like a runoff between the two strongest candidates. If you know 
 
 == Properties ==
 
-This system satisfies the [[Majority criterion]]; the [[Condorcet loser criterion]]; [[monotonicity]]; and [[local independence of irrelevant alternatives]].
+This method satisfies the [[Majority criterion]]; the [[Condorcet loser criterion]]; [[monotonicity]]; and [[local independence of irrelevant alternatives]].
 
 It satisfies the [[mutual majority criterion]] as long as any member of the mutual majority set of candidates is among the 3 semifinalists. In practice, this is almost guaranteed to be the case.
 
 Steps 1 and 3 satisfy the [[later no-harm criterion]]. Thus, the only strategic reason not to add any "OK" ratings would be if your favorite was one of the two most-rejected semifinalists but also was able to beat the least-rejected semifinalist in step 3. This combination of weak and strong is unlikely to happen in real life, and even less likely to be predictable enough a priori to be a basis for strategy.
 
-This system fails the [[favorite betrayal criterion]], in that in steps 1 or 2 it could in theory be necessary to rate your favorite below "Good" in order to leave room for a more-viable compromise candidate to be a semifinalist or finalist. However, in order for that to be a worthwhile strategy, the compromise would have to do better in a pairwise race against the other finalist, but have a worse chance of becoming a semifinalist or finalist under your honest vote. This combination of strength in one context and weakness in another is akin to a Condorcet cycle, and like such cycles, it may be rare in real-world elections, and even rarer that it is predictable enough a priori to make a favorite-betrayal strategy feasible.
+This method fails the [[favorite betrayal criterion]], in that in steps 1 or 2 it could in theory be necessary to rate your favorite below "Good" in order to leave room for a more-viable compromise candidate to be a semifinalist or finalist. However, in order for that to be a worthwhile strategy, the compromise would have to do better in a pairwise race against the other finalist, but have a worse chance of becoming a semifinalist or finalist under your honest vote. This combination of strength in one context and weakness in another is akin to a Condorcet cycle, and like such cycles, it may be rare in real-world elections, and even rarer that it is predictable enough a priori to make a favorite-betrayal strategy feasible.
 
-In terms of summability, this can be done in one of two ways. They system can work with one count that is O(N²) summable, or with two consecutive tallies that are each O(N) summable (one for "3-2" and the second for "1"). The latter could make this feasible to run even on older ballot machines; though full counts of the second step might involve some configuration and a couple of passes over the ballots, in many cases the "3-2" tallies would make it obvious who wins the "1" step, so voters would not have to be kept in suspense as the second step proceeded.
+In terms of summability, this can be done in one of two ways. They method can work with one count that is O(N²) summable, or with two consecutive tallies that are each O(N) summable (one for "3-2" and the second for "1"). The latter could make this feasible to run even on older ballot machines; though full counts of the second step might involve some configuration and a couple of passes over the ballots, in many cases the "3-2" tallies would make it obvious who wins the "1" step, so voters would not have to be kept in suspense as the second step proceeded.
 
 == Examples ==
 
@@ -152,7 +152,7 @@ The votes above lead to the following outcome:
 
 The semifinalists are Lions, Tigers, and Bulldogs. The finalists are Lions and Tigers. The winner is Tigers.
 
-This shows a "chicken dilemma" between the felines (Lions and Tigers); together, they can beat Bulldogs, but separately they can't. In 3-2-1, as in almost any voting systems which successfully elect Nashville in the example above, it is possible for the Lions voters to win by strategically rating Tigers as "bad". However, it would take at least 20 of the 25 Lions voters to accomplish this; any fewer, and Tigers would still win. Thus, unlike many voting systems, as long as each Lions voter expects even a third of other Lions voters to vote honestly, there is no incentive for them to "defect" individually.
+This shows a "chicken dilemma" between the felines (Lions and Tigers); together, they can beat Bulldogs, but separately they can't. In 3-2-1, as in almost any voting methods which successfully elect Nashville in the example above, it is possible for the Lions voters to win by strategically rating Tigers as "bad". However, it would take at least 20 of the 25 Lions voters to accomplish this; any fewer, and Tigers would still win. Thus, unlike many voting methods, as long as each Lions voter expects even a third of other Lions voters to vote honestly, there is no incentive for them to "defect" individually.
 
 == For US presidential elections ==
 
@@ -164,11 +164,11 @@ In order to be usable for US presidential elections, a voting method should be a
 # Final totals for each state are added and the national winner is found
 # If they constitute a majority of the electoral college, signatory states are bound by compact to give all their electors to the national winner.
 
-In order for a voting system to work with this, it must have a feasible way to work with steps 2, 3, and 4.
+In order for a voting method to work with this, it must have a feasible way to work with steps 2, 3, and 4.
 
-Step 2: "raw totals in some format": many voting methods exist, and many of them require different information from the ballots for summability. One reasonable lowest common denominator would be that all states must publish the rating or ranking levels available, and the raw tallies — the number of times each candidate is rated or ranked at each level. This is far less information than would be required to find a winner under IRV or Condorcet, but it is enough for 3-2-1, when combined with the following steps. It is also information that naturally would always be available from states using simpler systems such as plurality or approval.
+Step 2: "raw totals in some format": many voting methods exist, and many of them require different information from the ballots for summability. One reasonable lowest common denominator would be that all states must publish the rating or ranking levels available, and the raw tallies — the number of times each candidate is rated or ranked at each level. This is far less information than would be required to find a winner under IRV or Condorcet, but it is enough for 3-2-1, when combined with the following steps. It is also information that naturally would always be available from states using simpler methods such as plurality or approval.
 
-Step 4: In order to add to provide national totals, each state's final totals should be in the form of a point system - that is, approval, score, or borda ballots, normalized so that each vote is in the range 0-1. This is not an endorsement of approval, score, or borda as voting methods; it's simply because these point systems are the only systems natively compatible with ballots from states still using plurality.  
+Step 4: In order to add to provide national totals, each state's final totals should be in the form of a point method - that is, approval, score, or borda ballots, normalized so that each vote is in the range 0-1. This is not an endorsement of approval, score, or borda as voting methods; it's simply because these point methods are the only methods natively compatible with ballots from states still using plurality.  
 
 Step 3: So a state using 3-2-1 must be able to look at the raw tallies from other states, and provide final local tallies, such that the following properties are satisfied:
 
@@ -179,6 +179,6 @@ Step 3: So a state using 3-2-1 must be able to look at the raw tallies from othe
 
 It's easy to give tallies that satisfy the properties above. First, you find the semifinalists — the 3 candidates with the most top-ratings nationwide — and the finalists — the two semifinalists with the fewest bottom-ratings nationwide. Then, tally 1 point each time a candidate is rated "good"; 0 points each time they're rated "bad"; and for "OK" ratings tally 1 point if that ballot didn't rate either of the finalists "good", and 0 points otherwise. 
 
-This procedure works fine in combination with other states using approval voting, plurality voting, or various other systems. It makes it easier for the voters in 3-2-1 states to cast a strategically-optimal vote, but does not give any greater voting power to a 3-2-1 voter over a strategically-optimal plurality or approval voter. In other words, it is still a matter of "one person one vote"; states would have an incentive to adopt 3-2-1 voting, but voters would not be artificially disenfranchised for not passing it, any more than they are already disenfranchised by inferior voting methods like plurality.
+This procedure works fine in combination with other states using approval voting, plurality voting, or various other methods. It makes it easier for the voters in 3-2-1 states to cast a strategically-optimal vote, but does not give any greater voting power to a 3-2-1 voter over a strategically-optimal plurality or approval voter. In other words, it is still a matter of "one person one vote"; states would have an incentive to adopt 3-2-1 voting, but voters would not be artificially disenfranchised for not passing it, any more than they are already disenfranchised by inferior voting methods like plurality.
 
 [[Category:Single-winner voting systems]]
