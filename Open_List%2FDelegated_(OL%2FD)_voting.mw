@@ -1,4 +1,4 @@
-Open List/Delegated voting (OL/D voting, pronounced "old voting") is a proportional voting method for electing legislators to a multi-seat body. It assumes the voters have been divided up into one equal-population locality (aka riding, district, or constituency) per seat being elected and that candidates 
+Open List/Delegated voting (OL/D voting, pronounced "old voting") is a proportional voting method for electing legislators to a multi-seat body. It assumes the voters have been divided up into one equal-population locality (aka riding, district, or constituency) per seat being elected and that each candidate has publicly declared their preference order for the other candidates ("if I don't win, then I want the votes I hold to go to her, then him, then him, etc.").
 
 Voters make two different choices in each race:
 # Choose a candidate.
@@ -29,3 +29,8 @@ The basic vote-counting process has 5 steps (based on Single Transferrable Votin
 # If there are still seats to fill, repeat from step 3.
 
 Once all seats are filled, each party with at least one seat assigns multi-locality a territory to each of their winning candidate, so that each locality is in the territory of one representative per party.
+
+==Related systems==
+
+* [[Geographic Open List/Delegated (GOLD) voting]] — identical, except for a constraint that there must be exactly one winner per district/riding.
+* [[Proportional 3RD voting]] — similar system for nonpartisan elections without districts.
