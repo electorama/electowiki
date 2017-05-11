@@ -19,7 +19,7 @@ River can be interpreted as a [[Minmax]] method, Minmax(non-cyclic pairwise loss
 
 Number of operations:  for each candidate, determine greatest pairwise loss [O(N)];  For all unlocked candidates' GPLs, determine maximum GPL [O(N)].  So the complexity is O(N^2) at best.  At worst, N-1 of the candidates could have N-1 cyclic GPLs each, requiring another O(N) max-searches each, taking the order of operations up to O(N^3).
 
-[[Category:Single-winner voting systems]]
+[[Category:Single-winner voting methods]]
 [[Category:Condorcet method]]
 
 <!--
