@@ -32,18 +32,6 @@ Step 2: This allows a majority of the electorate to have a veto on any candidate
 
 Step 3: This is like a runoff between the two strongest candidates. If you know which two candidates will be finalists, you have no incentive not to rank them honestly, and everybody who made a distinction between them gets equal voting power.
 
-== Properties ==
-
-This method satisfies the [[Majority criterion]]; the [[Condorcet loser criterion]]; [[monotonicity]]; and [[local independence of irrelevant alternatives]].
-
-It satisfies the [[mutual majority criterion]] as long as any member of the mutual majority set of candidates is among the 3 semifinalists. In practice, this is almost guaranteed to be the case.
-
-Steps 1 and 3 satisfy the [[later no-harm criterion]]. Thus, the only strategic reason not to add any "OK" ratings would be if your favorite was one of the two most-rejected semifinalists but also was able to beat the least-rejected semifinalist in step 3. This combination of weak and strong is unlikely to happen in real life, and even less likely to be predictable enough a priori to be a basis for strategy.
-
-This method fails the [[favorite betrayal criterion]], in that in steps 1 or 2 it could in theory be necessary to rate your favorite below "Good" in order to leave room for a more-viable compromise candidate to be a semifinalist or finalist. However, in order for that to be a worthwhile strategy, the compromise would have to do better in a pairwise race against the other finalist, but have a worse chance of becoming a semifinalist or finalist under your honest vote. This combination of strength in one context and weakness in another is akin to a Condorcet cycle, and like such cycles, it may be rare in real-world elections, and even rarer that it is predictable enough a priori to make a favorite-betrayal strategy feasible.
-
-In terms of summability, this can be done in one of two ways. They method can work with one count that is O(N²) summable, or with two consecutive tallies that are each O(N) summable (one for "3-2" and the second for "1"). The latter could make this feasible to run even on older ballot machines; though full counts of the second step might involve some configuration and a couple of passes over the ballots, in many cases the "3-2" tallies would make it obvious who wins the "1" step, so voters would not have to be kept in suspense as the second step proceeded.
-
 == Examples ==
 
 === Tennessee capital (center squeeze) ===
@@ -154,9 +142,21 @@ The semifinalists are Lions, Tigers, and Bulldogs. The finalists are Lions and T
 
 This shows a "chicken dilemma" between the felines (Lions and Tigers); together, they can beat Bulldogs, but separately they can't. In 3-2-1, as in almost any voting methods which successfully elect Nashville in the example above, it is possible for the Lions voters to win by strategically rating Tigers as "bad". However, it would take at least 20 of the 25 Lions voters to accomplish this; any fewer, and Tigers would still win. Thus, unlike many voting methods, as long as each Lions voter expects even a third of other Lions voters to vote honestly, there is no incentive for them to "defect" individually.
 
+== Properties ==
+
+This method satisfies the [[Majority criterion]]; the [[Condorcet loser criterion]]; [[monotonicity]]; and [[local independence of irrelevant alternatives]].
+
+It satisfies the [[mutual majority criterion]] as long as any member of the mutual majority set of candidates is among the 3 semifinalists. In practice, this is almost guaranteed to be the case.
+
+Steps 1 and 3 satisfy the [[later no-harm criterion]]. Thus, the only strategic reason not to add any "OK" ratings would be if your favorite was one of the two most-rejected semifinalists but also was able to beat the least-rejected semifinalist in step 3. This combination of weak and strong is unlikely to happen in real life, and even less likely to be predictable enough a priori to be a basis for strategy.
+
+This method fails the [[favorite betrayal criterion]], in that in steps 1 or 2 it could in theory be necessary to rate your favorite below "Good" in order to leave room for a more-viable compromise candidate to be a semifinalist or finalist. However, in order for that to be a worthwhile strategy, the compromise would have to do better in a pairwise race against the other finalist, but have a worse chance of becoming a semifinalist or finalist under your honest vote. This combination of strength in one context and weakness in another is akin to a Condorcet cycle, and like such cycles, it may be rare in real-world elections, and even rarer that it is predictable enough a priori to make a favorite-betrayal strategy feasible.
+
+In terms of summability, this can be done in one of two ways. They method can work with one count that is O(N²) summable, or with two consecutive tallies that are each O(N) summable (one for "3-2" and the second for "1"). The latter could make this feasible to run even on older ballot machines; though full counts of the second step might involve some configuration and a couple of passes over the ballots, in many cases the "3-2" tallies would make it obvious who wins the "1" step, so voters would not have to be kept in suspense as the second step proceeded.
+
 == For US presidential elections ==
 
-In order to be usable for US presidential elections, a voting method should be able to work as a interstate compact alongside other methods. Such an interstate compact would have at most the following steps:
+In order to be usable for US presidential elections, a voting method should be able to work as an interstate compact alongside other methods. Such an interstate compact would have at most the following steps:
 
 # Voters in each state vote using the state's particular voting method.
 # Each state publishes raw totals in some format.
