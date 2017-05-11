@@ -181,4 +181,4 @@ It's easy to give tallies that satisfy the properties above. First, you find the
 
 This procedure works fine in combination with other states using approval voting, plurality voting, or various other methods. It makes it easier for the voters in 3-2-1 states to cast a strategically-optimal vote, but does not give any greater voting power to a 3-2-1 voter over a strategically-optimal plurality or approval voter. In other words, it is still a matter of "one person one vote"; states would have an incentive to adopt 3-2-1 voting, but voters would not be artificially disenfranchised for not passing it, any more than they are already disenfranchised by inferior voting methods like plurality.
 
-[[Category:Single-winner voting systems]]
+[[Category:Single-winner voting methods]]
