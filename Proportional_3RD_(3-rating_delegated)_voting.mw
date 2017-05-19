@@ -1,11 +1,12 @@
 Proportional 3RD voting is a multi-winner voting method designed for nonpartisan elections such as a city council. It uses the same basic ballot format as the single-winner method [3-2-1 voting], and a similar delegated STV algorithm to [Open list/delegated (OL/D) voting]. Here's how it works:
 
 * Voters rate each candidate “Good”, “OK”, or “Bad”. Blanks are filled in by your “Good” candidates.
-** Delegation (rules for filling in blanks left by the voter): Before the election, candidates publicly rate each other “OK” or “Bad”. They may rate another candidate “conditionally OK”, which means “Bad” if the other candidate rates them “Bad”, and “OK” otherwise. Whenever a voter leaves a blank for candidate X, that blank is filled in by whichever rating X got from the majority of candidates the voter ranked "Good", or by "Bad" if there's a tie.
-** If a voter rates no candidate “Good” but rates some as “OK” or “Bad”, any blanks they leave are counted as “Bad”.
-**:(Note that the above ballot format and rules are basically the same as those of [3-2-1 voting], a single-winner, nonproportional voting method.)
+** Usually, the safest strategy is to rate just your favorite as "good". If you trust that favorite's ratings, you can leave the others blank; otherwise, you can explicitly divide the others between "OK" and "bad".
 
-The basic vote-counting process has 4 steps (based on Single Transferrable Voting):
+The basic vote-counting process has 4 steps (based on STV, Single Transferrable Voting). This is a process which finds winning candidates and assigns them each an equal amount of votes, while trying to ensure that each vote is assigned to a candidate it rates as highly as possible. Votes may be assigned in fractions; for instance, half to one candidate and half to another.
+
+== STV process ==
+
 # Tally votes
 #: Each ballot counts as 1 point. Initially this point is divided equally among the candidates rated “Good”. These points are added to find the direct vote totals.
 # Find winners and transfer leftovers
@@ -14,3 +15,14 @@ The basic vote-counting process has 4 steps (based on Single Transferrable Votin
 # Eliminate candidate with lowest total and transfer votes
 #: When transferring any portion of a vote, it first is split among any remaining candidates that the original voter rated “Good”, in proportion to the direct vote totals each of those candidates received. If there are no such candidates remaining, it is split among remaining candidates that the original voter rated “OK”, in the same way. If there are no such candidates remaining, the ballot is exhausted (and the quota is adjusted).
 # If there are still seats to fill, repeat from step 2.
+
+== Delegation (rules for filling in blank ratings) ==
+
+Before the election, candidates publicly rate each other “OK” or “Bad”. 
+* A candidate may rate another “conditionally OK”. 
+** This means “Bad” if the other candidate rates them “Bad”, and “OK” otherwise. 
+
+Whenever a voter leaves a blank, it is filled in by the ratings of the voter's favorite candidates. 
+* That is, a blank for candidate X counts as "OK" if  X was rated "OK" by the over half of the candidates the voter ranked "Good"; and otherwise by "Bad".
+
+(Note that the above ballot format and rules are basically the same as those of [3-2-1 voting], a single-winner, nonproportional voting method.)
