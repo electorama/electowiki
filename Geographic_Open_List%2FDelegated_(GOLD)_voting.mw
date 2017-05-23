@@ -20,7 +20,6 @@ The basic vote-counting process has 5 steps (based on Single Transferrable Votin
 
 # Tally votes
 #* Each ballot counts as 1 point for the chosen candidate.
-#* A ballot that supports more than one candidate is still counted as 1 point split equally among the choices. Each of these point fractions will be transferred separately. When one of the fractions is “exhausted”, that amount is transferred to any non-exhausted fractions, split equally.  
 # Eliminate all but the top 2 candidates in each riding. Transfer those votes.
 #* This makes sure that no riding is badly mis-represented just because a given party "deserves" more winners.
 #* It also helps discourage voters from splintering into small single-issue parties. If a party can’t make the top two in even one locality, it won’t get seats. But those votes will still be transferred, so those voters can still be represented by a relatively sympathetic candidate from a slightly larger party.
