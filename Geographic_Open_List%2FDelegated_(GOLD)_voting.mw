@@ -4,15 +4,17 @@ Voters make two different choices in each race:
 # '''Choose a candidate'''.
 #* The ballot lists the candidates running locally, with their parties and their first three transfer preferences (explained below).
 #* Voters may write in candidates from further away.
-# '''Choose a transfer method''' for when your first choice is no longer in the running. There are 2 basic options, and voters can also choose to go half and half:
-#* '''Trust your party’s voters''' (that is, the voters of your chosen candidate’s party.)
+#* If a voter mistakenly chooses both a local candidate and a valid write-in, their vote goes to the write-in. 
+# '''Choose a transfer method''' for when your first choice is no longer in the running. There are 2 basic options:
+#* Trust the '''voters''' of your chosen candidate’s party.
 #:* If your first choice is no longer in the running, your vote is transferred to the remaining candidates from your chosen party, in proportion to the number of direct votes they got.
 #:* If every voter chose this option, this would be like an “open list” voting method; that is, seats would be divided proportionally by party, and go to the highest vote-getters within the party. 
 #:* This is the default if you vote for a local, non-independent candidate.
 #:* If you choose this option, your vote will never be transferred out of the party. Since independent candidates are considered to each be in a party by themselves, voters for those candidates should only choose this option if they do not want their vote to be transferred.
-#* '''Trust your candidate''' (that is, the pre-declared preferences of your chosen candidate.)
+#* '''Trust the candidate''' (that is, the pre-declared preferences of your chosen candidate.)
 #:* Each candidate must publicly pre-declare ordered preferences between the other candidates. If the candidate is no longer in the running, these votes will go to the highest remaining candidate on their pre-declared preference list.
 #:* This is the default if you vote for a non-local and/or independent candidate.
+#:* If a voter mistakenly marks both transfer methods, the default applies (as if they had chosen neither).
 
 The basic vote-counting process has 5 steps (based on Single Transferrable Voting):
 
