@@ -1,4 +1,4 @@
-In 3-2-1 voting, voters may rate each candidate “Good”, “OK”, or “Bad”. It has three steps:
+In 3-2-1 voting, voters may rate each candidate “Good”, “OK”, or “Bad”. The tallying process has three steps:
 
 * Find 3 Semifinalists: the candidates with the most “good” ratings. 
 * Find 2 Finalists: the semifinalists with the fewest "bad" ratings.
