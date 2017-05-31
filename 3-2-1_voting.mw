@@ -4,6 +4,18 @@ In 3-2-1 voting, voters may '''rate each candidate “Good”, “OK”, or “B
 * Find '''2 Finalists''': the semifinalists with the fewest '''"bad" ratings'''.
 * Find '''1 winner''': the finalist who is rated '''above the other''' on more ballots (like a virtual runoff).
 
+== Motivation  ==
+
+The first qualification to win is that a significant number of people take you seriously and support you.
+
+The second qualification is that you're not opposed by a majority; ideally, opposed by as few as possible.
+
+Between the two candidates who pass those two filters, it's just "majority rules", among voters who made some distinction. Putting this step at the end minimizes the incentives for voters to strategically exaggerate distinctions.
+
+These three steps are each important. They have to come in that order: pairwise has to come last because it only works with a pair, and putting the "fewest bad" step first would risk leaving only inoffensive nonentities. 
+
+It is impossible to strategically affect the outcome of the first two stages without risking losing your voice in the third stage. Probably the most safe and effective thing is to just vote honestly.
+
 == Footnote ¹: Blank ratings ==
 
 There are two ways to handle blank ratings: "Delegated", which makes voting easier for voters by letting them choose to give some of their voting power to their favorite candidate; and "Undelegated", which does its best to infer voter intentions directly. "Delegated" is suggested unless there are reasons against it.
@@ -27,14 +39,6 @@ There are two extra qualifications when choosing the third (weakest) semifinalis
 == Tiebreaker ==
 
 In all cases, ties are broken by score, with each "Good" counting as 2 points and each "OK" counting as 1. If two candidates are tied in score as well (highly unlikely), the tie is broken randomly.
-
-== Motivation for each step ==
-
-Step 1: A winner should have strong support; at least some voters who have paid attention and are enthusiastic. But if you keep fewer than 3 at this stage, you'd risk prematurely eliminating a centrist and leaving only the two extremes.
-
-Step 2: This allows a majority of the electorate to have a veto on any candidate. Also, candidates that are eliminated here would usually have little chance in step 3 anyway.
-
-Step 3: This is like a runoff between the two strongest candidates. If you know which two candidates will be finalists, you have no incentive not to rank them honestly, and everybody who made a distinction between them gets equal voting power.
 
 == Examples ==
 
