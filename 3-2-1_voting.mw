@@ -14,9 +14,9 @@ There are two ways to handle blank ratings: "Delegated", which makes voting easi
 
 In this method, each candidate can pre-rate other candidates "OK", "conditionally OK", or "bad". If they do not explicitly pre-rate, they are considered to rate all others "conditionally OK". Once all ratings have been submitted, all "conditionally OK" ratings are turned to "Bad" if the rating coming the other way is "Bad", and to "OK" otherwise. Candidate ratings are public information.
 
-When a voter leaves a candidate X blank/unrated, that counts as rating X as "OK" if strictly more than half of the voter's favorite candidates rated X "OK". Otherwise it counts as rating X "OK". 
+When a voter leaves a candidate X blank/unrated, and rates exactly one other candidate Y as "Good", that counts as rating X as "OK" if Y rated X "OK". Otherwise it counts as rating X "Bad". 
 
-For example, if I rated both Aurelio and Amy "good" and left Beth and Chung blank; and Aurelio rated Beth and Chung as "OK", while Amy rated Beth "OK" and Chung "Bad", then I'd count as rating Beth "OK" (2/2 of my favorites rated her "OK") and Chung "Bad" (1/2 "OK"s, which is not ''more'' than half).
+For example, if I rated only Aurelio "good" and left Beth and Chung blank; and Aurelio rated Beth as "OK" and Chung as "Bad", then I'd count as giving those ratings. If I'd also rated Amy "good", then my blank rating for Beth would count as "bad", no matter what Amy and Aurelio said.
 
 === Undelegated 3-2-1 ===
 
