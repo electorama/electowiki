@@ -1,12 +1,10 @@
-In 3-2-1 voting, voters may rate each candidate “Good”, “OK”, or “Bad”. The tallying process has three steps:
+In 3-2-1 voting, voters may rate each candidate “Good”, “OK”, or “Bad” (or rate one "Good" and leave the rest blank¹). The tallying process has three steps:
 
-* Find 3 Semifinalists: the candidates with the most “good” ratings. 
+* Find 3 Semifinalists: the candidates with the most “good” ratings.²
 * Find 2 Finalists: the semifinalists with the fewest "bad" ratings.
 * Find 1 winner: the finalist who is rated above the other on more ballots.
 
-There are two extra qualifications for semifinalists: their "good" ratings should be more than anyone else in their party (that is, only one semifinalist per party), and at least 15% of the electorate. Usually there will be three eligible semifinalists will easily pass these qualifications naturally, but if only two of them do, you can just treat them as finalists and skip step 2. In the unlikely event that fewer than two candidates get 15% "good" ratings, and re-running the election with new candidates is not an option, then the three highest become semifinalists and the election proceeds to step 2 normally.
-
-== Blank ratings ==
+== Footnote ¹: Blank ratings ==
 
 There are two ways to handle blank ratings: "Delegated", which makes voting easier for voters by letting them choose to give some of their voting power to their favorite candidate; and "Undelegated", which does its best to infer voter intentions directly. "Delegated" is suggested unless there are reasons against it.
 
@@ -21,6 +19,10 @@ For example, if I rated only Aurelio "good" and left Beth and Chung blank; and A
 === Undelegated 3-2-1 ===
 
 For voters who do not explicitly use the "Bad" rating, blank ratings count as "bad". For those who do use "bad", blank ratings count as "OK", except that in step 3 they count as lower than an explicit "OK".
+
+== Footnote ²: rules for the third semifinalist ==
+
+There are two extra qualifications when choosing the third (weakest) semifinalist. First, they must not be of the same party as the other two; if they are, skip to the next-highest "good" ratings. This prevents one party from winning simply by controlling the three semifinalist slots. Second, they must have at least half as many "good" ratings as the first (strongest) semifinalist. If they don't, then skip step 2 entirely and make both semifinalists directly into finalists. This prevents a relatively unknown "also-ran" from winning an election with two dominant, highly-polarized candidates. A third candidate can win, but only by getting appreciable support. 
 
 == Tiebreaker ==
 
