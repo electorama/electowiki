@@ -1,8 +1,8 @@
-In 3-2-1 voting, voters may rate each candidate “Good”, “OK”, or “Bad”. (Alternately, they may rate one candidate "Good" and leave the rest blank; in this case their chosen candidate's predeclared ratings of the others are used to fill in the blanks.¹) The tallying process has three steps:
+In 3-2-1 voting, voters may '''rate each candidate “Good”, “OK”, or “Bad”'''. (Alternately, they may rate one candidate "Good" and leave the rest blank; in this case their chosen candidate's predeclared ratings of the others are used to fill in the blanks.¹) The tallying process has three steps:
 
-* Find 3 Semifinalists: the candidates with the most “good” ratings.²
-* Find 2 Finalists: the semifinalists with the fewest "bad" ratings.
-* Find 1 winner: the finalist who is rated above the other on more ballots.
+* Find '''3 Semifinalists''': the candidates with the '''most “good”''' ratings.²
+* Find '''2 Finalists''': the semifinalists with the fewest '''"bad" ratings'''.
+* Find '''1 winner''': the finalist who is rated '''above the other''' on more ballots (like a virtual runoff).
 
 == Footnote ¹: Blank ratings ==
 
