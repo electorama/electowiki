@@ -20,10 +20,9 @@ The basic vote-counting process has 5 steps (based on Single Transferrable Votin
 
 # Tally votes
 #* Each ballot counts as 1 point for the chosen candidate.
-# Eliminate all but the top 2 candidates in each riding. Transfer those votes.
+# Eliminate all candidates who didn't get over 1/3 of the votes from their local riding, unless they got the most of any candidate in their riding.
 #* This makes sure that no riding is badly mis-represented just because a given party "deserves" more winners.
-#* It also helps discourage voters from splintering into small single-issue parties. If a party can’t make the top two in even one locality, it won’t get seats. But those votes will still be transferred, so those voters can still be represented by a relatively sympathetic candidate from a slightly larger party.
-#* There's an extra rule that candidates with over 1/3 the votes of an average riding are not eliminated in this step. This scarcely ever matters, because in order for the third candidate in a riding to have more than 1/3 of the average riding, that riding must have significantly more than the average votes. But in such a case, where many people from other ridings are choosing to spend their vote for an above-average candidate, the fact that they happen to have two above-average opponents shouldn't count against them.
+#* It also helps discourage voters from splintering into small single-issue parties. If a party can’t make 33% in even one locality, it won’t get seats. But those votes will still be transferred, so those voters can still be represented by a relatively sympathetic candidate from a slightly larger party.
 # Find winners and transfer leftovers.
 #* If V is the total number of valid (non-exhausted) votes, and S is the number of unfilled seats, then a “quota” is defined as Q=V/(S+1). This ensures that each full “quota” of voters will get a seat, with less than one “quota” of vote left unrepresented even though they still have a valid preference.
 #* Any candidate with a full quota of votes at any time is elected. If their winning vote total is W>Q, then the leftover fraction (W-Q)/W of all of their votes is transferred.
