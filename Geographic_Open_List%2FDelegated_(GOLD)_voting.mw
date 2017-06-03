@@ -6,7 +6,7 @@ Voters make two different choices in each race:
 #* Voters may write in candidates from further away.
 #* If a voter mistakenly chooses both a local candidate and a valid write-in, their vote goes to the write-in. 
 # '''Choose a transfer method''' for when your first choice is no longer in the running. There are 2 basic options:
-#* '''Open list'': Trust the '''voters''' of your chosen candidate’s party.
+#* '''Open list''': Trust the '''voters''' of your chosen candidate’s party.
 #::* If your first choice is no longer in the running, your vote is transferred to the remaining candidates from your chosen party, in proportion to the number of direct votes they got.
 #::* If every voter chose this option, this would be like an “open list” voting method; that is, seats would be divided proportionally by party, and go to the highest vote-getters within the party. 
 #::* This is the default if you vote for a local, non-independent candidate.
