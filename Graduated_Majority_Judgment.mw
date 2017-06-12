@@ -26,7 +26,7 @@ The above process is conceptually simple, but difficult in practice. The followi
 # Each voter grades each candidate on a grading scale such as A, B, C, D, F
 # Each grade for each candidate is tallied.
 # The tallies are used to find the median grade for each candidate.
-# Tallies are added to find the V(>M), V(@M), and V(>M) (that is, votes above median, votes at median, and votes below median or blank) for each candidate.
+# Tallies are added to find the V(>M), V(@M), and V(<M) (that is, votes above median, votes at median, and votes below median or blank) for each candidate.
 # A candidate's adjustment is a number between -0.5 and +0.5, calculated using the formula (V(>M) - V(<M)) / (2 * V(@M))
 # The candidate with the highest adjustment among those with the highest median, wins.
 
