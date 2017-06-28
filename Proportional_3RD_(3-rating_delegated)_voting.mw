@@ -3,7 +3,12 @@ Proportional 3RD voting is a multi-winner voting method designed for nonpartisan
 * Voters rate each candidate “Good”, “OK”, or “Bad”. Blanks are filled in by your “Good” candidates.
 ** Usually, the safest strategy is to rate just your favorite as "good". If you trust that favorite's ratings, you can leave the others blank; otherwise, you can explicitly divide the others between "OK" and "bad".
 
-The basic vote-counting process has 4 steps (based on STV, Single Transferrable Voting). This is a process which finds winning candidates and assigns them each an equal amount of votes, while trying to ensure that each vote is assigned to a candidate it rates as highly as possible. Votes may be assigned in fractions; for instance, half to one candidate and half to another.
+* Votes are tallied for each pair of candidates X and Y, to see what portion of ballots that rate X "Good" will rate Y at least "OK".
+** A ballot that rates N different candidates "good" only counts as 1/N in each of these tallies. 
+** For example, suppose that there were three candidates: X, Y, and Z. If the three ballots were "Good, OK, Bad", "Good, Good, Bad", and "Good, Bad, Good", then the XY tally would be 1+.5+.5=2 X, votes of which 1+.5=1.5 rate Y at least OK.
+
+* These tallies are then used in a Single Transferrable Voting-like (STV-like) procedure to find the winners. 
+** This is a process which finds winning candidates and assigns them each an equal amount of votes, while trying to ensure that each vote is assigned to a candidate it rates as highly as possible. ** Each vote is assigned to a candidate or candidates it rates at least "OK". To get assignments to balance, votes may be assigned in fractions; for instance, half to one candidate and half to another.
 
 == STV process ==
 
@@ -11,10 +16,34 @@ The basic vote-counting process has 4 steps (based on STV, Single Transferrable 
 #: Each ballot counts as 1 point. Initially this point is divided equally among the candidates rated “Good”. These points are added to find the direct vote totals.
 # Find winners and transfer leftovers
 #: If V is the total number of valid (non-exhausted) votes, and S is the number of seats, then a “quota” is defined as Q=V/(S+1). This ensures that each full “quota” of voters will get a seat, with less than one “quota” of vote left unrepresented even though they still have a valid preference.
-#: Any candidate with a full quota of points at any time is elected. If their winning point total is W>Q, then the leftover fraction (W-Q)/W of all of their points is transferred.
+#: Any candidate with a full quota of points at any time is elected. If their winning point total is W>Q, then the leftover points T=(W-Q) are transferred.
 # Eliminate candidate with lowest total and transfer votes
-#: When transferring any portion of a vote, it first is split among any remaining candidates that the original voter rated “Good”, in proportion to the direct vote totals each of those candidates received. If there are no such candidates remaining, it is split among remaining candidates that the original voter rated “OK”, in the same way. If there are no such candidates remaining, the ballot is exhausted (and the quota is adjusted).
+#: When transferring any portion of a vote that originally went to candidate X, it is split among the other candidates who were rated above "bad" by the voters who rated "X" good. Each other candidate Y gets a portion equal to Tally(XY)*Tally(YY).
 # If there are still seats to fill, repeat from step 2.
+
+== Example ==
+
+Suppose that there were three candidates: X, Y, and Z, for two seats. Say the only three ballots were "Good, OK, Bad", "Good, Good, Bad", and "Good, Bad, Good".
+
+Quota to win: Q=V/(S+1)=3/(2+1)=3/3=1
+
+Initial tallies: 2, .5, .5.
+
+X wins the first seat. Transfer T=(W-Q)=2-1=1 point.
+
+Transfers to Y will be proportional to TXY=Tally(XY)*Tally(YY)=1.5 * .5 =.75
+
+Transfers to Z will be proportional to TXZ=Tally(XZ)*Tally(ZZ)=.5 * .5 =.25
+
+Thus, Y gets T*TXY/(TXY+TXZ)=1*.75/(.75+.25)=.75/1=.75 transferred points, for a total of .5+.75=1.25. 
+
+Z gets T*TXZ/(TXY+TXZ)=1*.25/(.75+.25)=.25/1=.25 transferred points, for a total of .5+.25=.75.
+
+Y has over one quota, so they win. Both seats are now filled, so the election is over.
+
+If the election were not over, you would have to transfer .25 votes for Y. Of those, .5/1.25=40% of .25=.1 originally went to Y, while the other .15 originally went to X. The .15 that went to X now go to Z in the amount T*TXZ/(TXZ)=.15*.25/(.25)=.15; that is to say, since only Z remains, they all go to Z. The .1 that originally went to Y are now exhausted, because Tally(YZ) is 0; there is no overlap between voters who rated Y as "good" and those who rated Z at least "OK". So Z ends up with a tally of .75+.15=.9.
+
+If, due to exhausted votes, no candidate has a quota but there are still M seats to fill, the top M candidates get the remaining seats, with no more vote transfers.
 
 == Delegation (rules for filling in blank ratings) ==
 
@@ -23,6 +52,6 @@ Before the election, candidates publicly rate each other “OK” or “Bad”.
 ** This means “Bad” if the other candidate rates them “Bad”, and “OK” otherwise. 
 
 Whenever a voter leaves a blank, it is filled in by the ratings of the voter's favorite candidates. 
-* That is, a blank for candidate X counts as "OK" if  X was rated "OK" by the over half of the candidates the voter ranked "Good"; and otherwise by "Bad".
+* That is, a blank for candidate Y counts as "OK" in the XY tally if Y was rated "OK" by X.
 
 (Note that the above ballot format and rules are basically the same as those of [3-2-1 voting], a single-winner, nonproportional voting method.)
