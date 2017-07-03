@@ -32,7 +32,7 @@ The basic vote-counting process has 5 steps (based on Single Transferrable Votin
 #* Any candidate with a full quota of votes at any time is elected. If their winning vote total is W>Q, then the leftover fraction (W-Q)/W of all of their votes is transferred.
 #* Whenever a candidate wins, all other candidates from their riding are eliminated.
 # Eliminate the candidate who's furthest behind in their riding and transfer votes
-#* If a candidate's current full tally is 1000 votes (including local votes, direct write-ins, and transferred votes), and the top full tally of any remaining candidate in their riding is 2000, then they are 1000 behind in their riding.
+#* ''If a candidate's current full tally is 1000 votes (including local votes, direct write-ins, and transferred votes), and the top full tally of any remaining candidate in their riding is 2000, then they are 1000 behind in their riding.''
 #* ''This rule means that the last remaining candidate in a riding is not eligible for elimination.''
 #* See above for the transfer methods a voter can choose.
 # If there are still seats to fill, repeat from step 3.
