@@ -5,6 +5,7 @@ Proportional 3RD voting is a multi-winner voting method designed for nonpartisan
 
 * Votes are tallied for each pair of candidates X and Y, to see what portion of ballots that rate X "Good" will rate Y at least "OK".
 ** A ballot that rates N different candidates "good" only counts as 1/N in each of these tallies. 
+*** In settings where ballots may be hand-counted, there may be rules limiting each ballot to rate no more than a certain number of candidates as "good", and rules for approximate counting of ballots that rate too many candidates as "good".
 ** For example, suppose that there were three candidates: X, Y, and Z. If the three ballots were "Good, OK, Bad", "Good, Good, Bad", and "Good, Bad, Good", then the XY tally would be 1+.5+.5=2 X, votes of which 1+.5=1.5 rate Y at least OK.
 
 * These tallies are then used in a Single Transferrable Voting-like (STV-like) procedure to find the winners. 
