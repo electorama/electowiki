@@ -23,10 +23,12 @@ The basic vote-counting process has 5 steps (based on Single Transferrable Votin
 
 # Tally votes
 #* Each ballot counts as 1 point for the chosen candidate.
-# Eliminate candidates without enough support in their riding
-#* The top candidate in each riding, counting local votes only, is never eliminated.
-#* The second candidate in each riding, counting local votes only, is eliminated only if their local votes are fewer than half those of the top.
-#* Others are eliminated by default, surviving only if their local votes are more than half those of the top AND their total direct votes (including non-local write-ins) are more than those of the top local candidate. (For this rule, "top" is counted by local votes only, but "those of" includes non-local votes.)
+# Eliminate candidates without enough support in their riding. 
+#*Candidates are eliminated unless they fulfill one of the following criteria. (In all cases, "local" means "from the same riding".)
+#** First place locally: They have more local votes than any other local candidate.
+#** Second place locally and more than half of first: They have more local votes than all but one other local candidate, and at least half as many as that one.
+#** First place semi-locally: They have more total (local and non-local) votes than any other local candidate, and at least half as many local votes as any other local candidate.
+#** Keep at least 50%: The local votes for candidates who have more than them add up to less than 50% of all the local votes.
 #* ''This makes sure that no riding is badly mis-represented just because a given party "deserves" more winners.''
 #* ''It also helps discourage voters from splintering into small single-issue parties. If a party can’t pass this threshold in even one riding, it won’t get seats. But those votes can still be transferred, so those voters can still be represented by a relatively sympathetic candidate from a slightly larger party.''
 # Find winners and transfer leftovers.
