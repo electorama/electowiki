@@ -9,9 +9,10 @@ Voters make two different choices in each race:
 #* The ballot lists the candidates running locally, with their parties and their first three transfer preferences (explained below).
 #* Voters may write in candidates from further away.
 # '''Choose a transfer method''' for when your first choice is no longer in the running. There are 2 basic options:
-#* '''Open list''': Trust the '''voters''' of your chosen candidate’s party.
+#* '''Open list''': Trust the '''voters''' of your chosen candidate’s party. 
 #::* If your first choice is no longer in the running, your vote is transferred to the remaining candidates from your chosen party, in proportion to the number of direct votes they got.
 #::* This is the default if you vote for a local, non-independent candidate.
+#::* This option is also called "partisan" transfer.
 #::* ''If every voter chose this option, this would be like an “open list” voting method; that is, seats would be divided proportionally by party, and go to the highest vote-getters within the party.''
 #::* ''If you choose this option, your vote will never be transferred out of the party. Since independent candidates are considered to each be in a party by themselves, voters for those candidates should only choose this option if they do not want their vote to be transferred.''
 #* '''Delegated''': Trust the '''candidate''' (that is, the pre-declared preferences of your chosen candidate.)
@@ -70,3 +71,9 @@ This method also keeps all the strong points of the current voting system. (The 
 [[Open List/Delegated (OL/D) voting|OL/D voting]]: basically the same, but without the constraint of one candidate per riding, and with a slightly weaker elimination rule.
 
 [[Proportional 3RD voting]]: a similar system, for a nonpartisan context without ridings.
+
+== Technical note: codes for "write-in" (non-local) candidates ==
+
+One good way to allow "write-ins" of any non-local candidate would be for each candidate to have a unique three-digit code. To "write in" a candidate, one could check boxes corresponding to their three-digit code, plus an additional box for their party. These codes could be assigned such that minor "mistakes" in a valid code, such as adding or subtracting one from any digit or exchanging two adjacent digits, would lead to an invalid code, and one that was dissimilar to all other codes of candidates from the same party. In that way, minor ballot mistakes could be corrected. (The level of such error correction that is possible depends on the size of the states, but it could be quite good for all but the largest states.)
+
+Using such a mechanism, a voter could simply "write in" a party but not a specific candidate. This would be considered as a vote for an eliminated candidate for that party, using "partisan" transfer.
