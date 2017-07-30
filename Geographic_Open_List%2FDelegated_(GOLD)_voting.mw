@@ -1,6 +1,6 @@
 Geographic Open List/Delegated voting (GOLD voting) is a proportional voting method for electing legislators to a multi-seat body. Its main advantages are: simple ballots, minimal wasted votes, and "do no harm" (that is, it doesn't change FPTP outcomes unless they're non-proportional).
 
-It assumes the voters have been divided up into one equal-population riding (aka district or constituency) per seat being elected and that each candidate has publicly declared their preference order for the other candidates ("if I don't win, then I want the votes I hold to go to her, then him, then him, etc."). Precisely one representative per area (district, riding, or constituency) will win.
+It assumes the voters have been divided up into one equal-population riding (aka riding or constituency) per seat being elected and that each candidate has publicly declared their preference order for the other candidates ("if I don't win, then I want the votes I hold to go to her, then him, then him, etc."). Precisely one representative per area (riding, riding, or constituency) will win.
 
 Here are the rules. Items in italics are mere explanations or justifications; the rules themselves are only the non-italic portions.
 
@@ -25,26 +25,27 @@ The basic vote-counting process has 5 steps (based on Single Transferrable Votin
 # Tally votes
 #* Each ballot counts as 1 point for the chosen candidate.
 # Eliminate candidates without enough support in their riding. 
-#*Candidates are eliminated unless they fulfill one of the following criteria. (In all cases, "local" means "from the same riding".)
-#** First place locally: They have more votes from a given locality than any other candidate.
-#** Second place locally and more than half of first: They have more votes from a given locality than all but one other candidate, and at least half as many as that one.
+#*Candidate X is eliminated unless they fulfill one of the following criteria. (In all cases, "local" means "from the same riding".)
+#** First place locally: X has more votes from a given riding than any other candidate.
+#** Second place locally and more than half of first: X has more votes from a given riding than all but one other candidate, and at least half as many as that one.
+#** In top 50% locally and more than 1/3 of first: In some riding, the local votes for candidates who have more than X add up to less than 50% of all the local votes, and X has at least 1/3 the local votes in that riding as the top candidate there.
 #** First place semi-locally: They have more total (local and non-local) votes than any other local candidate, and at least half as many local votes as any other local candidate.
-#** Keep at least 50%: The local votes for candidates who have more than them add up to less than 50% of all the local votes. (This applies if it's true for any district, not just their home one).
-#* If a candidate was kept due to being first or second place, or part of the top 50%, using votes from a district where they weren't originally running, from this point on they are considered to be running in that district. 
+#* If a candidate was kept due to being first or second place, or part of the top 50%, using votes from a riding where they weren't originally running, from this point on they are considered to be running in that riding. 
 #* ''This makes sure that no riding is badly mis-represented just because a given party "deserves" more winners.''
 #* ''It also helps discourage voters from splintering into small single-issue parties. If a party can’t pass this threshold in even one riding, it won’t get seats. But those votes can still be transferred, so those voters can still be represented by a relatively sympathetic candidate from a slightly larger party.''
 # Find winners and transfer leftovers.
 #* If V is the total number of valid (non-exhausted) votes, and S is the number of unfilled seats, then a “quota” is defined as Q=V/(S+1). This ensures that each full “quota” of voters will get a seat, with less than one “quota” of vote left unrepresented even though they still have a valid preference.
 #* Any candidate with a full quota of votes at any time is elected. If their winning vote total is W>Q, then the leftover fraction (W-Q)/W of all of their votes is transferred. 
 #* Whenever a candidate wins, all other candidates from their riding are eliminated.
-#* In the rare case that several candidates from separate districts reach a full quota at the same time, the one with the fewest local votes is elected first, to allow the others to possibly accumulate a bigger surplus before winning. In the even rarer case that more than one candidate from the same district reach a full quota at the same time, the one with more local votes is elected.
+#* In the rare case that several candidates from separate ridings reach a full quota at the same time, the one with the fewest local votes is elected first, to allow the others to possibly accumulate a bigger surplus before winning. In the even rarer case that more than one candidate from the same riding reach a full quota at the same time, the one with more local votes is elected.
 # Eliminate the candidate who's furthest behind in their riding and transfer votes
 #* ''If a candidate's current full tally is 1000 votes (including local votes, direct write-ins, and transferred votes), and the top full tally of any remaining candidate in their riding is 2000, then they are 1000 behind in their riding.''
+#* ''If a candidate passed pre-elimination in multiple ridings, use the riding without a winner yet in which they're behind by the least.''
 #* ''This rule means that the last remaining candidate in a riding is not eligible for elimination.''
 #* See above for the transfer methods a voter can choose.
 # If there are still seats to fill, repeat from step 3.
 
-Once all winners are chosen, each winning party is responsible for assigning each district they did not win to be "additional territory" of one of their winning representatives. Representatives are responsible to all citizens from their own district, and also to hear petitions from their "additional territory". That means that if you are in the minority in your district, you will still have a sympathetic representative to petition.
+Once all winners are chosen, each winning party is responsible for assigning each riding they did not win to be "additional territory" of one of their winning representatives. Representatives are responsible to all citizens from their own riding, and also to hear petitions from their "additional territory". That means that if you are in the minority in your riding, you will still have a sympathetic representative to petition.
 
 == Proportional or semiproportional? ==
 
@@ -57,7 +58,7 @@ Note that other proportional voting methods sometimes are used with extra rules 
 The advantages of this method are as follows. First, the advantages common to all proportional representation methods: 
 
 * Equality: partisan gerrymandering is impossible, and each party gets its fair share of seats.
-* Representation: Almost all voters are truly represented; even if you are a minority in your district, your vote helps elect a candidate of a party you sympathize with.
+* Representation: Almost all voters are truly represented; even if you are a minority in your riding, your vote helps elect a candidate of a party you sympathize with.
 
 This method also keeps all the strong points of the current voting system. (The current system is horrible in general, but it still has its strong points.)
 
