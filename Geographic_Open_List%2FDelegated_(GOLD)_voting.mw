@@ -16,7 +16,7 @@ Voters make two different choices in each race:
 #::* ''If every voter chose this option, this would be like an “open list” voting method; that is, seats would be divided proportionally by party, and go to the highest vote-getters within the party.''
 #::* ''If you choose this option, your vote will never be transferred out of the party. Since independent candidates are considered to each be in a party by themselves, voters for those candidates should only choose this option if they do not want their vote to be transferred.''
 #* '''Delegated''': Trust the '''candidate''' (that is, the pre-declared preferences of your chosen candidate.)
-#::* Each candidate must publicly pre-declare ratings for the other candidates. If the candidate is no longer in the running, these votes will be split among the remaining candidates at the original candidate's highest remaining rating level. 
+#::* Each candidate must publicly pre-declare ratings for the other candidates. If the candidate is no longer in the running, these votes will be split among the remaining candidates at the original candidate's highest remaining rating level. (As with partisan transfers, the split among candidates with the same rating is proportional to the number of votes each candidate received directly from voters.) 
 #::* ''This is the default if you vote for a non-local and/or independent candidate.''
 #::* ''If a voter mistakenly marks both transfer methods, the default applies (as if they had chosen neither).''
 
