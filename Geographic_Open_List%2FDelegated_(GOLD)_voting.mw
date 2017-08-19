@@ -10,15 +10,14 @@ Voters make two different choices in each race:
 #* Voters may write in candidates from further away.
 # '''Choose a transfer method''' for when your first choice is no longer in the running. There are 2 basic options:
 #* '''Open list''': Trust the '''voters''' of your chosen candidate’s party. 
-#::* If your first choice is no longer in the running, your vote is transferred to the remaining candidates from your chosen party, in proportion to the number of direct votes they got.
+#::* If your first choice is no longer in the running, your vote is split equally among the remaining candidates from your chosen party (that is, the party of your first choice).
 #::* This is the default if you vote for a local, non-independent candidate.
 #::* This option is also called "partisan" transfer.
 #::* ''If every voter chose this option, this would be like an “open list” voting method; that is, seats would be divided proportionally by party, and go to the highest vote-getters within the party.''
 #::* ''If you choose this option, your vote will never be transferred out of the party. Since independent candidates are considered to each be in a party by themselves, voters for those candidates should only choose this option if they do not want their vote to be transferred.''
 #* '''Delegated''': Trust the '''candidate''' (that is, the pre-declared preferences of your chosen candidate.)
-#::* Each candidate must publicly pre-declare ratings for the other candidates. If the candidate is no longer in the running, these votes will be split among the remaining candidates at the original candidate's highest remaining rating level. 
-#::* As with partisan transfers, the split among candidates with the same rating is proportional to the number of votes each candidate received directly from voters.) 
-#::* There are 6 rating levels (A through F). To help discourage "funnel candidates" who exist only to give votes to one other candidate, there must be at least 2 other candidates at each rating level that's used at all.
+#::* Each candidate must publicly pre-declare ratings for the other candidates. If the candidate is no longer in the running, these votes will be split equally among the remaining candidates at the original candidate's highest remaining rating level. 
+#::* There are 6 rating levels: endorsed, accepted, or rejected for same-party candidates, then endorsed, accepted, or rejected for other-party candidates. To help discourage "funnel candidates" who exist only to give votes to one other candidate, there must be at least 2 candidates at each rating level that's used at all.
 #::* ''This is the default if you vote for a non-local and/or independent candidate.''
 #::* ''If a voter mistakenly marks both transfer methods, the default applies (as if they had chosen neither).''
 
