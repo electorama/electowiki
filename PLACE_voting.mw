@@ -12,6 +12,7 @@ Here are the rules. Items in italics are mere explanations or justifications; th
 # Each ballot is converted to a transfer order using the chosen candidate, their endorsements, and the initial vote tallies of each.
 #* Transfers go in order of endorsement level, and within each endorsement level in order of initial vote totals.
 #* For example, say you endorsed candidate X, who'd strongly endorsed P and Q, endorsed R and S, and weakly endorsed T and U. If the vote total order among those endorsed candidates was S>T>U>P>Q>R, then your vote would be converted to X>P>Q>S>R>T>U. So if X, P, and Q were all either eliminated or elected, any remaining voting power that hadn't been used up in electing those would be transferred to S.
+#* If voters absolutely do not want their chosen candidate to have any say over vote transfers, they have two checkboxes: one to ensure that their vote will not be transferred, and one to ensure that it will be transferred to all same-party candidates in order of initial vote totals. However, these options are not emphasized, and it's assumed that they will be used by a small minority. They're there merely to ensure that nobody is being forced to delegate. 
 
 The basic vote-counting process has 5 steps (based on Single Transferrable Voting):
 
