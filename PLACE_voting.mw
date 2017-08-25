@@ -1,4 +1,4 @@
-This is a proportional voting method for electing legislators to a multi-seat body. Like [[GOLD voting]], Its main advantages are: simple ballots, minimal wasted votes, and "do no harm" (that is, it doesn't change FPTP outcomes unless they're non-proportional).
+PLACED voting stands for "proportional, locally-accountable, candidate endorsement delegation voting". It is a proportional voting method for electing legislators to a multi-seat body. Like [[GOLD voting]], Its main advantages are: simple ballots, minimal wasted votes, and "do no harm" (that is, it doesn't change FPTP outcomes unless they're non-proportional).
 
 It assumes the voters have been divided up into one equal-population riding (aka district or constituency) per seat being elected. Precisely one representative per area (riding, riding, or constituency) will win.
 
@@ -43,7 +43,7 @@ Once all winners are chosen, each winning party is responsible for assigning eac
 
 == Proportional or semiproportional? ==
 
-This method is proportional in a two-party context. If there are more than two parties, though, it is only semiproportional; smaller parties without a clear regional character may get less than their proportional share. But if that happens, their votes will not be ignored; they will have a say on which of the larger parties gets more seats, and even on which candidates from that allied larger party win. Thus, a smaller party will be able to promote their issues by favoring those candidates who prioritize those issues. Also, if there are two competing party coalitions, with all voters choosing one of the alliances and all candidates preferring same-coalition candidates over opposite-coalition ones, then this will be fully proportional between the two coalitions.
+PLACED is proportional in a two-party context. If there are more than two parties, though, it is only semiproportional; smaller parties without a clear regional character may get less than their proportional share. But if that happens, their votes will not be ignored; they will have a say on which of the larger parties gets more seats, and even on which candidates from that allied larger party win. Thus, a smaller party will be able to promote their issues by favoring those candidates who prioritize those issues. Also, if there are two competing party coalitions, with all voters choosing one of the alliances and all candidates preferring same-coalition candidates over opposite-coalition ones, then this will be fully proportional between the two coalitions.
 
 Note that other proportional voting methods sometimes are used with extra rules designed to stop fringe parties from winning seats. For instance, in the German mixed-member "proportional" method, a party that gets less than 5% or 2 direct seats does not get a proportional allotment of seats. Thus, technically speaking, even the German system is really only semiproportional, not truly proportional.
 
@@ -74,11 +74,3 @@ This method also keeps all the strong points of the current voting system. (The 
 One good way to allow "write-ins" of any non-local candidate would be for each candidate to have a unique numeric code. To "write in" a candidate, one could check boxes corresponding to their three-digit code, plus an additional box for their party. These codes could be assigned such that minor "mistakes" in a valid code, such as adding or subtracting one from any digit or transposing two adjacent digits, would lead to an invalid code, and one that was dissimilar to all other codes of candidates from the same party. In that way, minor ballot mistakes could be caught and even corrected. (The level of such error correction that is possible depends on the size of the states, but it could be quite good for all but the largest states using three-digit codes. The larger states could choose between a reduced potential for error correction, and using four-digit codes.)
 
 Using such a mechanism, a voter could simply "write in" a party but not a specific candidate. This would be considered as a vote for an eliminated candidate for that party, using "partisan" transfer.
-
-== Possible names ==
-
-PLAD voting (pronounced "plaid"): Proportional Locally-Accountable Delegation.
-
-ELF voting: Empowered, Local, Fair Voting (where "empowered"=delegated and "fair"=proportional).
-
-What else?
