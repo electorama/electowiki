@@ -1,3 +1,5 @@
+'''NOTE: this method is largely superceded by [[PLACED voting]], a similar but simpler method which lacks the "open list" aspect.'''
+
 Geographic Open List/Delegated voting (GOLD voting) is a proportional voting method for electing legislators to a multi-seat body. Its main advantages are: simple ballots, minimal wasted votes, and "do no harm" (that is, it doesn't change FPTP outcomes unless they're non-proportional).
 
 It assumes the voters have been divided up into one equal-population riding (aka riding or constituency) per seat being elected and that each candidate has publicly declared their preference ratings for the other candidates ("if I don't win, then I want the votes I hold to be split among the candidates I rate A; then, when they are all eliminated, among those I rate B; etc."). Precisely one representative per area (riding, riding, or constituency) will win.
