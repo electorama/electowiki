@@ -14,10 +14,22 @@ A vote for a candidate is converted to an STV ballot by adding those endorsed by
 
 Once delegated ballots are filled in, an [[STV]] (single transferrable vote) counting process proceeds as normal.
 
-== Optional rule for discouraging vote-funneling ==
+=== Optional rule for discouraging vote-funneling ===
 
 If a candidate X gets less than 1/3 of a quota, and does not endorse at least 2 other candidates who get more than 1/2 of a quota, then X's delegated votes will not be transferred until all candidates with less than 1/2 of a quota of votes have been eliminated. During the time between when X is eliminated and when their delegated votes are transferred, their delegated votes count as exhausted for the purposes of calculating the quota. Thus, during that time, the quota for other candidates is slightly lower.
 
 This reduces the ability of minor candidates to reliably funnel votes to a specific major candidate. Minor candidates can still be useful to a broader coalition, but have a harder time giving an unfair advantage to a single major candidate.
 
 This rule does not unfairly punish voters who choose a minor candidate, since their votes are still eventually transferred.
+
+== Similar methods ==
+
+[[PLACE voting]]: a similar system, for replacing FPTP in a partisan context (such as nationwide or state/provincial elections in Canada, US, or UK).
+
+[[GOLD voting]]: An older, slightly more complex version of PLACE.
+
+[[Open List/Delegated (OL/D) voting|OL/D voting]]: similar to GOLD, but without the constraint of one candidate per riding, and with a slightly weaker elimination rule.
+
+[[SPACE voting]]: a summable version of PACE; simpler for voters, but more complex in terms of vote-counting.
+
+[[Proportional 3RD voting]]: an old version of PACE.
