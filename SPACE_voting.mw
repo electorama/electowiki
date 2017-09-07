@@ -29,6 +29,20 @@ This reduces the ability of minor candidates to reliably funnel votes to a speci
 
 This rule does not unfairly punish voters who choose a minor candidate, since their votes are still eventually transferred.
 
+== Strategic issues ==
+
+=== Favorite betrayal? ===
+
+Say that your preference is A>BC; that A, B, and C have all endorsed each other and nobody else; and that D has endorsed C and E. Should you vote for your true favorite A, or compromise by voting for C? If you do the latter, you may cause C's tally to pass E's, so that C gets D's delegated votes before E does. So a favorite betrayal strategy may work in this case.
+
+However, if A has any chance of winning, then it's unlikely this strategy makes a difference, because there are likely enough votes from A for C to win a seat without needing D's votes. So the only time this strategy is really worth it is if the cost, in terms of reduced chances of electing A, is negligible anyway.
+
+=== False-flag? ===
+
+In theory, it could in some cases be strategic to vote for a candidate you did not like at all and then accept several candidates you did like. If the first candidate you voted for was eliminated, your vote could carry along a fraction of an extra vote to the candidates you did like. However, the risk would be that your vote would go to a candidate you did not like. In general, this is not likely to be a viable strategy. 
+
+In particular, this strategy could only steal a fraction of the non-delegated votes for a weak candidate — likely a negligible amount. And it would always reduce the initial tally for your true favorite, which could have downsides in various ways. 
+
 == Similar methods ==
 
 [[PLACE voting]]: a similar system, for replacing FPTP in a partisan context (such as nationwide or state/provincial elections in Canada, US, or UK).
