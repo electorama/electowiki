@@ -1,4 +1,4 @@
-PLACED voting stands for "proportional, locally-accountable, candidate endorsement delegation voting". It is a proportional voting method for electing legislators to a multi-seat body. Like [[GOLD voting]], Its main advantages are: simple ballots, minimal wasted votes, and "do no harm" (that is, it doesn't change FPTP outcomes unless they're non-proportional).
+PLACE voting stands for "proportional, locally-accountable, candidate endorsement voting". It is a proportional voting method for electing legislators to a multi-seat body. Like [[GOLD voting]], Its main advantages are: simple ballots, minimal wasted votes, and "do no harm" (that is, it doesn't change FPTP outcomes unless they're non-proportional).
 
 It assumes the voters have been divided up into one equal-population riding (aka district or constituency) per seat being elected. Precisely one representative per area (riding, riding, or constituency) will win.
 
@@ -46,7 +46,7 @@ Once all winners are chosen, each winning party is responsible for assigning eac
 
 == Proportional or semiproportional? ==
 
-PLACED is proportional in a two-party context. If there are more than two parties, though, it is only semiproportional; smaller parties without a clear regional character may get less than their proportional share. But if that happens, their votes will not be ignored; they will have a say on which of the larger parties gets more seats, and even on which candidates from that allied larger party win. Thus, a smaller party will be able to promote their issues by favoring those candidates who prioritize those issues. Also, if there are two competing party coalitions, with all voters choosing one of the alliances and all candidates preferring same-coalition candidates over opposite-coalition ones, then this will be fully proportional between the two coalitions.
+PLACE is proportional in a two-party context. If there are more than two parties, though, it is only semiproportional; smaller parties without a clear regional character may get less than their proportional share. But if that happens, their votes will not be ignored; they will have a say on which of the larger parties gets more seats, and even on which candidates from that allied larger party win. Thus, a smaller party will be able to promote their issues by favoring those candidates who prioritize those issues. Also, if there are two competing party coalitions, with all voters choosing one of the alliances and all candidates preferring same-coalition candidates over opposite-coalition ones, then this will be fully proportional between the two coalitions.
 
 Note that other proportional voting methods sometimes are used with extra rules designed to stop fringe parties from winning seats. For instance, in the German mixed-member "proportional" method, a party that gets less than 5% or 2 direct seats does not get a proportional allotment of seats. Thus, technically speaking, even the German system is really only semiproportional, not truly proportional.
 
@@ -70,7 +70,9 @@ This method also keeps all the strong points of the current voting system. (The 
 
 [[Open List/Delegated (OL/D) voting|OL/D voting]]: basically the same, but without the constraint of one candidate per riding, and with a slightly weaker elimination rule.
 
-[[Proportional 3RD voting]]: a similar system, for a nonpartisan context without ridings.
+[[PACE voting]]: a similar system, for a nonpartisan context without ridings.
+
+[[Proportional 3RD voting]]: an old version of PACE.
 
 == Technical note: codes for "write-in" (non-local) candidates ==
 
