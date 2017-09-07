@@ -72,6 +72,8 @@ This method also keeps all the strong points of the current voting system. (The 
 
 [[PACE voting]]: a similar system, for a nonpartisan context without ridings.
 
+[[SPACE voting]]: a summable version of PACE; simpler for voters, but more complex in terms of vote-counting.
+
 [[Proportional 3RD voting]]: an old version of PACE.
 
 == Technical note: codes for "write-in" (non-local) candidates ==
