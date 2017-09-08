@@ -11,11 +11,12 @@ Before the election, each candidate has the opportunity to endorse other candida
 A vote for a candidate is converted to an STV ballot by adding those endorsed by that candidate in the order of their initial vote tallies. So if X endorsed W, Y, and Z, and if the direct votes for these three were 800, 1000, and 600 respectively, a delegated vote for X would be converted to X>Y>W>Z (that is, X first, Y second, W third, and Z fourth).
 
 If they choose exactly one candidate, and grade any others, their vote is undelegated; that is, converted to an STV ballot using the tally of voters who chose the same candidate. Say that of the 1000 votes for X, there are 700 which accept Y, 500 which accept Z, 400 which accept W, and 100 which accept V. 700+500+400+100=1700 approvals, which is greater than the total number of votes involved by 700, so there are 700 excess approvals. 100 filled-in ballots which include all 4 secondary candidates would account for 300 excess approvals, leaving 400; 200 more filled-in ballots which include 3 candidates would account for the remaining 400 excess approvals. So we have:
-100: X>VWYZ (divide equally among remaining candidates)
-200: X>WYZ (ditto)
-700-300=400: X>Y
-500-300=200: X>Z
-400-300=100: X>W
+
+  100: X>VWYZ (divide equally among remaining candidates)
+  200: X>WYZ (ditto)
+  700-300=400: X>Y
+  500-300=200: X>Z
+  400-300=100: X>W
  
 Total filled in: 100+200+400+200+100=1000.
 
