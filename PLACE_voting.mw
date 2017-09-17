@@ -81,3 +81,17 @@ This method also keeps all the strong points of the current voting system. (The 
 One good way to allow "write-ins" of any non-local candidate would be for each candidate to have a unique numeric code. To "write in" a candidate, one could check boxes corresponding to their three-digit code, plus an additional box for their party. These codes could be assigned such that minor "mistakes" in a valid code, such as adding or subtracting one from any digit or transposing two adjacent digits, would lead to an invalid code, and one that was dissimilar to all other codes of candidates from the same party. In that way, minor ballot mistakes could be caught and even corrected. (The level of such error correction that is possible depends on the size of the states, but it could be quite good for all but the largest states using three-digit codes. The larger states could choose between a reduced potential for error correction, and using four-digit codes.)
 
 Using such a mechanism, a voter could simply "write in" a party but not a specific candidate. This would be considered as a vote for an eliminated candidate for that party, using "partisan" transfer.
+
+== Simplifications possible? ==
+
+* Candidate endorsements should offer at least two levels (endorsed or unendorsed) and should take account of party. I think that 2 levels of endorsement (endorsed or not) at 2 levels of party sameness (same or not) is a good amount. The method would work with as few as 2 levels and there could be a rule for the order between "unendorsed same party" and "endorsed different party". So simplification is possible on this but not much.
+
+* Voting for either a same-district candidate or writing in an other-district candidate is pretty fundamental to the method. Leaving out the "do not delegate" option would not break outcomes but might be a deal-breaker for some voters so I think it's worth keeping it. Leaving out the "write in party only" option would change little.
+
+* I do not see a way to further simplify the transformation into a preference ballot.
+
+* The pre-elimination step could be simplified to "eliminate all but top 2". This would make outcomes marginally worse in rare cases but is not a big deal.
+
+* The STV transfer process is already as simple as possible.
+
+* Assigning extra district is cosmetic, so it would be fine to skip this step. Still, it emphasizes the fact that even those who do not win locally are still represented, so I think it's worth it.
