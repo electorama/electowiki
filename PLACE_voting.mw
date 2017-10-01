@@ -2,16 +2,17 @@ PLACE voting stands for "proportional, locally-accountable, candidate endorsemen
 
 It assumes the voters have been divided up into one equal-population riding (aka district or constituency) per seat being elected. Precisely one representative per area (riding, riding, or constituency) will win.
 
-Before the election, a candidate may endorse other candidates at any of three levels: "strongly endorse", "endorse", or "weakly endorse". Same-party candidates may not be left unendorsed, and so are "weakly endorsed" by default; other-party candidates may not be strongly endorsed, and are unendorsed by default. No endorsement level may be used for just one candidate; there must be either 0, or 2 or more.
+Before the election, a candidate may endorse other candidates. Votes will be transferred first to endorsed same-party candidates, then to unendorsed same-party candidates, then to endorsed other-party candidates. If a candidate endorses any others, they must include at least two from their own party; or, for independents, at least two other candidates.
 
 Here are the rules. Items in italics are mere explanations or justifications; the rules themselves are only the non-italic portions.
 
 # '''Voters choose a candidate'''.
 #* The ballot lists the candidates running locally, with their parties and their first three transfer preferences (explained below).
 #* Voters may write in candidates from further away, using error-resistant codes. 
-#* There is also a way to vote for a party without voting for any candidate in particular. This is equivalent to voting for an eliminated candidate who strongly endorsed all party members. 
+##* Because these error-resistant codes include party id, they give a way to vote for a party without voting for any candidate in particular. This is equivalent to voting for an eliminated candidate who from that party with no endorsements.
 # Voters may choose not to delegate.
-#* This is essentially only to satisfy constitutional concerns about voter freedom. It is almost never strategically a good choice, and it is generally discouraged.  
+#* This is essentially only to satisfy constitutional concerns about voter freedom. It is almost never strategically a good choice, and it is generally discouraged.
+#* Choosing not to delegate while voting for an entire party is equivalent to voting for an eliminated candidate from that party who endorsed all candidates from that party except those running in the local district (ie, those listed on the ballot).
 # Each ballot which does not opt out of delegating is converted to a transfer order using the chosen candidate, their endorsements, and the initial vote tallies of each.
 #* Transfers go in order of endorsement level, and within each endorsement level in order of initial vote totals.
 #* For example, say you endorsed candidate X, who'd strongly endorsed P and Q, endorsed R and S, and weakly endorsed T and U. If the vote total order among those endorsed candidates was S>T>U>P>Q>R, then your vote would be converted to X>P>Q>S>R>T>U. So if X, P, and Q were all either eliminated or elected, any remaining voting power that hadn't been used up in electing those would be transferred to S.
