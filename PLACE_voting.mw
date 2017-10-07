@@ -22,13 +22,9 @@ The basic vote-counting process has 5 steps (based on Single Transferrable Votin
 
 # Tally votes
 #* Each ballot counts as 1 point for the chosen candidate.
-# Eliminate candidates without enough support in their riding. 
-#*Candidate X is eliminated unless they fulfill one of the following criteria. (In all cases, "local" means "from the same riding".)
-#** First place locally: X has more votes from a given riding than any other candidate.
-#** Second place locally and more than half of first: X has more votes from a given riding than all but one other candidate, and at least half as many as that one.
-#** In top 50% locally and more than 1/3 of first: In some riding, the local votes for candidates who have more than X add up to less than 50% of all the local votes, and X has at least 1/3 the local votes in that riding as the top candidate there.
-#** First place semi-locally: They have more total (local and non-local) votes than any other local candidate, and at least half as many local votes as any other local candidate.
-#* If a candidate was kept due to being first or second place, or part of the top 50%, using votes from a riding where they weren't originally running, from this point on they are considered to be running in that riding. 
+# Eliminate candidates without 25% support within their riding.
+#* The top candidate in each riding is kept, even if they did not get 25%.
+#* If a candidate gets 25% of the vote from some riding where they were not running, they are considered to be running in whichever riding they got the most votes in.
 #* ''This makes sure that no riding is badly mis-represented just because a given party "deserves" more winners.''
 #* ''It also helps discourage voters from splintering into small single-issue parties. If a party can’t pass this threshold in even one riding, it won’t get seats. But those votes can still be transferred, so those voters can still be represented by a relatively sympathetic candidate from a slightly larger party.''
 # Find winners and transfer leftovers.
