@@ -94,6 +94,46 @@ Assuming that there is one equal-population district (aka riding or constituency
 # Each winning party assigns each district where they did not win to one of their winning candidates as "extra constituents".
 #* Thus, even if your party did not win in your district, you will be a constituent for a representative from your party; you'll still have "your" representative to listen to your petitions.
 
+=== Did you skip any niggling details in the procedure above? ===
+
+A few:
+
+==== Niggling detail 1: Information available in the voting booth ====
+
+Each voting booth will have:
+
+* A list of all candidates in all districts (all eligible write-ins), along with lists of "faction" and "ally" endorsements for each.
+** The "faction" information for each party will also be available in the form of a matrix, where columns are endorsers and rows are endorsees, and "similar" candidates (those getting correlated endorsements) are listed near to each other. Rows and columns will use the same ordering of course.
+** Each eligible write-in candidate will have an optional error-resistant 3-letter code, for people who can't spell their name.
+** Each candidate will be allowed to submit a brief under-50-word statement which will go with their name
+* An explanation of the PLACE rules, with appropriate examples (similar to this FAQ)
+
+==== Niggling detail 2: Rules for "Do not transfer" and for party-only votes ====
+
+* If a voter chooses a local candidate and marks "do not transfer", their vote will be exhausted as soon as that candidate is eliminated or elected.
+** The same if a voter writes in a nonlocal candidate and marks "do not transfer". (Although this is expected to be rare)
+* If a voter chooses a party, their vote will go to any member of that party, in descending order of raw vote total; and then will be exhausted when all members of that party are elected or eliminated.
+** If a voter chooses a party and marks "do not transfer to local candidates", then it will be as above, except that their vote will skip over any candidates from that party running locally.
+* The boxes for "do not transfer" (next to local candidates) and "do not transfer to local candidates" (next to party/write-in slots) are considered equivalent; there are two and their wording is different merely as a convenience.
+
+==== Niggling detail 3: Elimination and the 25% threshold ====
+
+If a candidate gets more than 25% of the local vote, and/or the most votes, from a district where they are not running, they will not be eliminated, and will be considered to be running in all districts in which they passed the threshold. In that case, they will not be eliminated as long as they would survive in one of those districts. For instance, even if one of those seats is filled, they will not be eliminated until they all are.
+
+==== Niggling detail 4: Ties and Simultaneous Winners ====
+
+In the rare case that several candidates from separate ridings reach a full quota at the same time, the one with the fewest local votes is elected first, to allow the others to possibly accumulate a bigger surplus before winning. In the even rarer case that more than one candidate from the same riding reach a full quota at the same time, the one with more local votes is elected.
+
+In other cases of ties, they are resolved by initial vote totals, or if that doesn't break the tie, randomly (by drawing lots or some other random procedure).
+
+==== Niggling detail 5: Independent candidates ====
+
+All independent candidates are considered to be different parties for the purposes of the "same party" grouping, but the same party for the purposes of the "same faction" grouping. The upshot is that a vote for an independent candidate will go first to other independents she or he endorsed, then to non-independents she or he endorsed, then will be exhausted. It will never go to other independents she or he did not endorse.
+
+==== Niggling detail 6: Extra territory ====
+
+Parties are required to assign extra territory in such a way that roughly balances the total party vote for each candidate's full territory. That is to say, it should be impossible to improve that balance by changing the assignment of a single district. Aside from that, they are encouraged to respect geographic or demographic communities when assigning extra territory.
+
 == PLACE voting: method design (why) ==
 
 === Who designed PLACE voting and why? ===
