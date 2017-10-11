@@ -70,7 +70,31 @@ Of course. (Except for closed list, which is strictly worse than open list.)
 
 #PropRep methods have more similarities and common advantages than differences. Though it's worthwhile to debate which method is best, we should not lose sight of the fact that they're all vastly superior to FPTP. Thus, when this FAQ takes the position that PLACE is superior to other #PropRep methods, this should '''not''' be construed as opposition to those other methods.
 
-== PLACE voting: method design ==
+== PLACE voting: process (how) ==
+
+=== How does PLACE voting work? ===
+
+Assuming that there is one equal-population district (aka riding or constituency) per seat, and that the parties have already nominated candidates by district, here are the steps:
+
+# Before the election, candidates may endorse other candidates. From the perspective of candidate X in party Y, this divides other candidates into 4 groups:
+#* "Same faction": those X endorses who are in party Y
+#* "Same party": those who are in party Y but who don't get endorsed by X.
+#* "Allies": Those X endorses who are not in party Y
+#* "Opponents": Those not in party Y who are not endorsed by X.
+# The ballot lists the candidates running locally, and also has a write-in slot for each party. You can choose a local candidate, choose a party, or choose a party and write in a candidate from another district.
+#* There is also a way to check "do not transfer" when choosing a local candidate, or "do not transfer to local candidates" when choosing a party.
+# Ballots are tallied, and any candidate who got less than 25% of the local vote is eliminated (unless they got more local votes than any other).
+# Votes for eliminated candidates are transferred (unless the voter opted out). They go first to "same faction", in descending order of raw vote total; then "Same party", again by vote total; and finally to "allies", again in vote order. If all these groups run out, a ballot is exhausted.
+# Any candidate who gets a "quota" of votes wins, and the excess portion of all their votes (above what they needed to win) is transferred.
+#* A "quota" is defined as V/(S+1), where V is the total number of votes and S is the number of seats. So in an election for 9 seats, a quota would be 10% of the total votes, or 90% of the average district's votes.
+#* If one candidate got two quotas of votes, then half of each of those votes would be "excess" and would be transferred. Thus, transfers can involve partial votes.
+#* As soon as a candidate is elected, all other candidates in the same district are eliminated.
+# Until all seats are full, the candidate that is farthest behind the frontrunner in their district is eliminated, one by one.
+#* Thus votes will move from weaker candidates to stronger ones until they make up full quotas and the seats fill up.
+# Each winning party assigns each district where they did not win to one of their winning candidates as "extra constituents".
+#* Thus, even if your party did not win in your district, you will be a constituent for a representative from your party; you'll still have "your" representative to listen to your petitions.
+
+== PLACE voting: method design (why) ==
 
 === Who designed PLACE voting and why? ===
 
@@ -78,7 +102,7 @@ PLACE was designed by Jameson Quinn, who felt that new advances in mechanism des
 
 === What are the design goals for PLACE? ===
 
-
+Place is designed to ensure that voters get maximum impact for minimum effort. It is also meant to encourage healthy politics.
 
 == Details ==
 
@@ -95,3 +119,7 @@ Voting procedure, voting apparatus, balloting method, etc.: The physical means u
 Electoral method, election method, voting mechanism: synonyms for voting method.
 
 Election system: Could mean any of the above. Best to avoid.
+
+=== What about "district", "riding", and "constituency"? ===
+
+These three terms are synonyms, used in the US, Canada, and the UK, respectively. I've used "district" because I'm from the US and it's annoying to always say all three.
