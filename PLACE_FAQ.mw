@@ -1,24 +1,24 @@
-# Basic questions
+== Basic questions ==
 
-## What is this page?
+=== What is this page? ===
 
 This is an FAQ about PLACE voting, a proportional voting method intended as a replacement for district-based choose-one plurality, aka FPTP, for electing a legislature. It also discusses related issues, such as the problems of FPTP and the advantages of proportional methods in general.
 
-## What does PLACE stand for?
+=== What does PLACE stand for? ===
 
 Proportional, Locally-Accountable, Candidate Endorsement voting.
 
-# The problem
+== The problem ==
 
-## What is FPTP?
+=== What is FPTP? ===
 
 FPTP stands for First Past The Post, the voting method used by countries such as the US, the UK, and Canada. This is where you can vote for just one candidate and only among those running in your local district, and then whichever of those gets the most votes wins. It's also known as "plurality" or "choose-one plurality", and while most democracies do NOT use this method, among those that use single-member districts it is by far the most common, so sometimes "single-member districts" will mistakenly be used as a synonymous term.
 
-## Why is FPTP bad?
+=== Why is FPTP bad? ===
 
 It leads to a large proportion of wasted votes (usually over 50%). This enables gerrymandering. Also, it tends to a two-party duopoly, which tends to be unaccountable, extremist, and acrimonious.
 
-## How does FPTP waste votes?
+=== How does FPTP waste votes? ===
 
 In FPTP, all votes that are not for the winning candidate are wasted. If there's more than 2 candidates, this can add up to over 50% already. Also, any portion of votes for the winning candidate that exceed the 50%+1 threshold needed to guarantee a win are also wasted.
 
@@ -26,7 +26,7 @@ So in a district with 3 candidates that get 40%, 35%, and 25%, the wasted vote t
 
 If your vote is wasted, you are effectively not represented.
 
-## What is gerrymandering, and what does it have to do with wasted votes?
+=== What is gerrymandering, and what does it have to do with wasted votes? ===
 
 Gerrymandering is the practice of drawing district lines in order to maximize wasted votes for your opponents. It's named after an 1812 Massachusetts state senate district signed into law by Elbridge Gerry, which was said to resemble a salamander. (Although Gerry's name is pronounced with a hard "g", the word "gerrymandering" is usually pronounced with a "j" sound at the start.)
 
@@ -38,25 +38,25 @@ Gerrymandering is worst in the US, because most other countries do not allow pol
 
 Across time and space, gerrymandering has been used by various parties and groups. But in one time and place, it tends to favor one party. Right now, in the US House of Representatives, it favors the Republicans. As I write this in October 2017, the latest forecasts for what would happen if the House elections happened now are that the Republicans would get 46.2% of the two-party vote, but 52.4% of the seats (according to Decision Desk HQ).
 
-## Aside from wasted votes and gerrymandering, what's bad about FPTP?
+=== Aside from wasted votes and gerrymandering, what's bad about FPTP? ===
 
 Under FPTP, voters learn that votes for third-party candidates are almost always wasted, so there are strong incentives to only vote for the two biggest parties. That gives those two parties an advantage; in the language of commerce, they have unfair market power. Like any monopoly, over time they tend to abuse that power, becoming less and less accountable to voters as they pander more and more to political donors.
 
 Also, if politics has only two sides, all the political fights start to look zero-sum to those parties. Instead of looking for win-win solutions, their incentives are to take whatever political stance hurts the other party the most. Thus we have mudslinging campaigns and bad-faith legislative negotiations. It pays to hurt yourself in order to hurt one opponent more, because there is no third option who will come out unscathed.
 
-# The general solution: proportional representation
+== The general solution: proportional representation ==
 
-## What is proportional representation?
+=== What is proportional representation? ===
 
 Proportional representation
 
-## What hashtag should I use for proportional representation?
+=== What hashtag should I use for proportional representation? ===
 
 Unfortunately, the initials "PR" are highly ambiguous; they could refer to Puerto Rico, Public Relations, or a Pull Request (used by programmers to collaboratively fix computer code). But the full words "proportional representation" are too long. Thus, #PropRep.
 
-# Details
+== Details ==
 
-## What is the difference between "electoral system" and "voting method"?
+=== What is the difference between "electoral system" and "voting method"? ===
 
 The electoral system of a country (or state or city) is all the rules pertaining to elections: when they happen, who can vote, and how they are conducted. One key aspect of an electoral system is the voting method that is used: what information is in a vote and how votes are combined to find a winner. Thus, though the two terms are closely related, typically electoral systems are studied by political scientists and public choice theorists, while voting methods may also be studied as abstractions by mathematicians, game theorists, and social choice theorists.
 
