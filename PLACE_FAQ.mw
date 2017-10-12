@@ -98,6 +98,10 @@ Assuming that there is one equal-population district (aka riding or constituency
 
 A few:
 
+==== Niggling detail 0: Minimum number of endorsements ====
+
+If a candidate has any within-party ("same faction") endorsements, he must have at least 3 of them (or at least half of the candidates running in his party, whichever is less). This helps prevent unserious candidates from running merely as "vote funnels" for a single specific serious candidate.
+
 ==== Niggling detail 1: Information available in the voting booth ====
 
 Each voting booth will have:
@@ -164,7 +168,15 @@ PLACE is designed to ensure that voters get maximum impact for minimum effort. I
 
 == Arguments against PLACE (and responses) ==
 
-=== Wouldn't ===
+=== Doesn't delegation give too much power to candidates? ===
+
+This is not a crazy concern, but I'd argue it's wrong, for the following reasons:
+
+* The reason you're voting for a candidate is that you think they're the best choice available to represent you in the legislature. To cast that vote, you have to trust them on some level to make many votes in your interest, votes you probably won't even hear about. Why, then, wouldn't you trust their public, predeclared endorsements of other candidates?
+
+* If you really don't want to delegate your vote, you can check the "do not transfer" option. PLACE still gives you just as much voting power as you would have had under FPTP, and more freedom to cast that vote for somebody you truly support.
+
+* Delegation in PLACE is limited. The candidate you pick merely divides their party into two groups ("same faction" and "same party") and also divides the candidates from other parties into two groups ("allies" and "opponents"). Within each of those groups, she does not choose the order; that order comes from the vote totals, that is, from other voters. Thus, delegation
 
 == Details ==
 
