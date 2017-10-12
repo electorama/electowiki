@@ -128,7 +128,7 @@ In other cases of ties, they are resolved by initial vote totals, or if that doe
 
 ==== Niggling detail 5: Independent candidates ====
 
-All independent candidates are considered to be different parties for the purposes of the "same party" grouping, but the same party for the purposes of the "same faction" grouping. The upshot is that a vote for an independent candidate will go first to other independents she or he endorsed, then to non-independents she or he endorsed, then will be exhausted. It will never go to other independents she or he did not endorse.
+All independent candidates are considered to be different parties for the purposes of the "same party" grouping, but the same party for the purposes of the "same faction" grouping. The upshot is that a vote for an independent candidate will go first to other independents she endorsed, then to non-independents she endorsed, then will be exhausted. It will never go to other independents she did not endorse.
 
 ==== Niggling detail 6: Extra territory ====
 
@@ -142,7 +142,29 @@ PLACE was designed by Jameson Quinn, who felt that new advances in mechanism des
 
 === What are the design goals for PLACE? ===
 
-Place is designed to ensure that voters get maximum impact for minimum effort. It is also meant to encourage healthy politics.
+PLACE is designed to ensure that voters get maximum impact for minimum effort. It is also meant to encourage healthy politics.
+
+=== How does PLACE help voters get maximum impact for minimum effort? ===
+
+* '''Voters are free to vote for any candidate.''' Most proportional methods don't give that breadth of choice, because there isn't room for that many candidates on the ballot. PLACE finesses that by having only local candidates listed explicitly on the ballot, but still allowing non-local candidates as write-ins. In practice, this means that even if the candidate who most excites you is not currently in a nearby district, you'd still be able to vote for them. This increased freedom would also increase turnout, as more people would have somebody they're excited to vote for.
+
+* '''Voters do not have to make any decisions that might not have an impact.''' The best way to explain this is to contrast PLACE with STV (explained below). In STV, a diligent voter should rank almost all candidates, because theoretically some fraction of your vote might get passed all the way down your ranking to one of the final candidates. But it's also possible that your whole vote will be soaked up by your first-choice candidate, in which case all the work you're doing ranking beyond that is just wasted time. PLACE, on the other hand, doesn't ask you to make all those extra decisions about whom to rank second, third, etcetera, because when you choose your favorite you're making those decisions too. One important decision with maximum freedom is a lot easier and cleaner than a lot of less-important choices with less freedom in each.
+
+* '''Candidates cannot insulate themselves from accountability towards voters.''' Imagine the structurally "safest" incumbent there could be: running in a highly-favorable partisan district, and somehow able through crooked means to force most of her party to endorse her. Now imagine she does something to anger her constituents. Can they vote her out, while still favoring her party? In many proportional methods, the answer is "not really". But in PLACE, they can vote for any candidates from elsewhere who don't endorse her, or vote for her party but ensure that the vote doesn't transfer to her. Even if most of them don't do those things, as long as a substantial fraction of them do, she will probably be far enough back in the line for transferred votes that they won't trickle down to her. So they can indeed effectively hold her accountable.
+
+* '''The act of delegation itself can improve the bargaining power of minority groups and factions.''' Say there's a candidate who probably won't win, but has the support of a clear subgroup that amounts to a substantial fraction of a seat quota. Under FPTP, as individuals spread across many districts, that subgroup would have a very hard time getting their views heard (unless they are major political donors, of course). But under PLACE, the candidate can go to other candidates and say "Why should I endorse you? What can you offer my base? I'd like you to promise X." They'll take him seriously, because his endorsement is valuable. Essentially, union is strength; by simplifying the collective action problem for the subgroup, PLACE's delegation is making their voice stronger. As above, this should help PLACE boost turnout.
+
+=== How does PLACE encourage healthy politics? ===
+
+* '''Breaks the two-party duopoly.''' This is huge. Because it allows voters to vote for a third party without fear of wasting their vote, PLACE breaks politics out of a zero-sum situation. Thus, cooperation (positive-sum thinking) will be rewarded, and intransigence and spite and mudslinging (negative-sum actions) will be punished. The two parties will have greater accountability, and won't take so many voters for granted.
+
+* '''Doesn't lead to excessive party fragmentation.''' On the other hand, too many parties can also be a problem, as narrowly-focused single-interest parties lose sight of the common good. (Consider, for example, the tiny religious parties in Israel who are more focused on literally parochial issues like maintaining their part of the monopoly on weddings than on the big issues facing the country.) PLACE avoids this problem because a party that can't reach at least 25% in at least some districts doesn't get seats. Those votes aren't wasted, they're transferred; but the party that gets those votes has to have a broad enough platform to appeal to more than one small group. Generally, PLACE should lead to an effective number of parties (ENP) of under 4; that is, two larger parties, one or two medium-sized ones, and a smattering of seats going to charismatic independents or tiny parties with a strong geographic base. Over time, parties can grow or shrink organically as they appealed to more or fewer voters.
+
+* '''Encourages both pre- and post-election coalition-building.''' Because votes can and do transfer between parties, there is an incentive to keep healthy relationships across party lines. Even though larger parties wouldn't have more than a fraction of a seat of leftover votes to pass along, they'd still have that much.
+
+== Arguments against PLACE (and responses) ==
+
+=== Wouldn't ===
 
 == Details ==
 
@@ -163,3 +185,7 @@ Election system: Could mean any of the above. Best to avoid.
 === What about "district", "riding", and "constituency"? ===
 
 These three terms are synonyms, used in the US, Canada, and the UK, respectively. I've used "district" because I'm from the US and it's annoying to always say all three.
+
+=== What's with the randomness of the gender pronouns in this FAQ? ===
+
+Every time in this document I needed to use a singular third person pronoun for a non-specific person, I used a [https://www.fourmilab.ch/cgi-bin/Hotbits.api?nbytes=1&fmt=hex&npass=1&lpass=8&pwtype=3&apikey=&pseudo=pseudo quantum random number] to decide which gender to use. So, if you believe in the many-worlds interpretation of quantum mechanics, there's probably another quantum branch of the universe in which you're reading this document with different pronouns. Any bias towards one gender or the other is purely accidental.
