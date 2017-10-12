@@ -212,7 +212,11 @@ In the end, I don't think this is really unfair to third parties. It's a huge st
 
 === Isn't there some downside to PLACE that's hard to foresee? ===
 
+I have long experience thinking about voting strategies and finding pathological cases for specific voting methods. As theorems like [https://en.wikipedia.org/wiki/Gibbard%E2%80%93Satterthwaite_theorem Gibbard-Satterthwaite] underline, no voting method is entirely free of such pathologies. Here's the worst I've come up with for PLACE:
 
+Third parties could unseat specific enemy incumbents from major parties by endorsing those incumbents' major-party opponents. Say there was a third party that had enough votes for 3 seats, but only 2 of their candidates passed the 25% local threshold. So after they'd elected those two candidates, they'd still have one quota of votes to transfer. If they hated major-party candidate X, they could endorse X's major-party opponent Y in order to unseat X. Since those transfers would happen at the start of the counting process, when the third-party candidates were eliminated, Y could win before X had a chance to get within-party transfers. Because of the one-candidate-per-district rule, X would be eliminated, even if he was popular enough to easily win a seat without third-party interference.
+
+There are a few ways this strategy could fail. If the third party candidates endorsed another candidate Z who's more popular than Y, the transfers would elect Z first and the votes would be soaked up. If in the X/Y district X were highly popular and/or Y unpopular, Y might be eliminated by the 25% rule. And if X got enough cross-district direct votes to reach a quota without vote transfers, X would beat Y no matter how many transfer votes Y got. Still, there is a real possibility this could work.
 
 == Other #PropRep options ==
 
