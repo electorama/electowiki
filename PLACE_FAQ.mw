@@ -282,11 +282,17 @@ MMP is a #PropRep method, so it has all the advantages shared by all such method
 
 * PLACE has just one kind of representative, and all of them are equally accountable to voters.
 
+* PLACE doesn't waste the votes of those supporting parties which don't meet the minimum party threshold.
+
 * PLACE doesn't require redrawing districts or increasing the size of the legislature.
 
 * PLACE is easier to simulate retroactively, so that (with a few assumptions, and in a way that's pretty robust to reasonable variation of those assumptions) you can know specifically who would have won if FPTP had been replaced by PLACE in some past election. This lets you say to incumbents "you would still have won under PLACE against the same opponents", which lets them consider its global advantages without worrying about personal disadvantages.
 
 === How does PLACE compare to other newly-proposed proportional methods? ===
+
+The theory and practice of designing voting methods has advanced substantially in the last 20 years, and PLACE is just one result of that. I've seen various other proposals which I consider to be superior to STV, OLPR, and MMP, such as [http://www.fairvote.ca/ruralurbanproportional/ Rural Urban Proportional]. I can imagine that it might be possible to design something better than PLACE, or something that's just as good but for whatever reason can get more support.
+
+It's impossible to discuss the relative advantages and disadvantages of all possible methods here. Discussing various methods is beneficial insofar as it makes it more likely that one of them will pass, but becomes harmful if it devolves into warring camps each highlighting the disadvantages of opposing methods.
 
 == Political strategy ==
 
