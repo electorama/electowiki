@@ -168,17 +168,73 @@ PLACE is designed to ensure that voters get maximum impact for minimum effort. I
 
 == Arguments against PLACE (and responses) ==
 
+I'll answer each question and concern by first playing "devil's advocate" and laying out why people might have that concern, and then responding with my own arguments for why the issue should not be a major worry.
+
 === Doesn't delegation give too much power to candidates? ===
 
-This is not a crazy concern, but I'd argue it's wrong, for the following reasons:
+Some people don't like how delegation works in PLACE. They believe that voters should directly control how their vote is transferred, not pass that control to candidates (and, within each transfer group, to other voters).
+
+Still, I'd argue this concern is wrong, for the following reasons:
 
 * The reason you're voting for a candidate is that you think they're the best choice available to represent you in the legislature. To cast that vote, you have to trust them on some level to make many votes in your interest, votes you probably won't even hear about. Why, then, wouldn't you trust their public, predeclared endorsements of other candidates?
 
 * If you really don't want to delegate your vote, you can check the "do not transfer" option. PLACE still gives you just as much voting power as you would have had under FPTP, and more freedom to cast that vote for somebody you truly support.
 
-* Delegation in PLACE is limited. The candidate you pick merely divides their party into two groups ("same faction" and "same party") and also divides the candidates from other parties into two groups ("allies" and "opponents"). Within each of those groups, she does not choose the order; that order comes from the vote totals, that is, from other voters. Thus, delegation
+* Delegation in PLACE is limited. The candidate you pick merely divides their party into two groups ("same faction" and "same party") and also divides the candidates from other parties into two groups ("allies" and "opponents"). Within each of those groups, she does not choose the order; that order comes from the vote totals, that is, from other voters. Thus, candidates remain accountable to voters, even if they get endorsements.
 
-== Details ==
+=== Doesn't PLACE put too much emphasis on parties? ===
+
+In PLACE voting, "same party" transfers come before "allies", so out-of-party candidates cannot get vote transfers before in-party ones. Also, the ballot has separate spaces for write-ins depending on which party they are from. Both of these design choices could be changed without breaking PLACE, and both appear to grant extra power to parties. So did I make these choices because I like and trust parties?
+
+As you might suspect, my answer to such a rhetorical question is "no". These aspects of PLACE are both a way to simplify things for voters. Ensuring transferred votes don't leave the party until the party candidates are all gone helps voters know what will happen to their vote, without having to carefully cross-check endorsement lists. Party-specific write-ins help determine voter intent when write-ins are illegible or nearly so. I believe that both of these help ensure that the voters' will is respected. Rather than giving too much power to unelected party insiders, these rules are intended to keep the real power with the voters.
+
+In the end, PLACE hugely reduces the unfair advantages for major parties, and leads to a more fluid party landscape. Opposing it because it keeps a role for parties would, in my opinion, be illogical.
+
+=== Doesn't PLACE put too little emphasis on parties? ===
+
+#PropRep, and especially methods like STV (explained below), lead to more parties. Since voters don't have to worry about wasted votes, they can afford to split into a new party as soon as their current party does something they dislike. Taken to an extreme, this could mean many tiny parties, each focused on only one issue or subgroup.
+
+As discussed above in the question about "healthy politics", PLACE avoids this problem because of the 25% local threshold. Splinter groups without a local base of support don't have to worry about wasting their vote, but they can't actually elect their chosen candidate; they'd have to work through a larger party. This helps ensure some degree of pre-election coalition- and platform-building, so that voters can make a choice between competing visions for the country's future, and not just single-issue parochialism.
+
+=== Doesn't PLACE favor "third parties" and so end up electing too many extremists? ===
+
+See the answer to the previous question.
+
+=== Doesn't PLACE give an unfair advantage to "major parties" over "third parties" ===
+
+Because of the 25% local threshold, smaller parties could end up getting less than their proportional share of seats.
+
+I've run simulations of PLACE for a few past elections, using actual ballot data, and I think it's useful to look at examples of when this would have happened. One instructive example is the British Columbia 2017 provincial elections. In that election, the BC Green Party won just 3 seats under FPTP, though their proportional share was 14 or 15 seats. PLACE would have given them 10 seats, because that's how many districts they passed the 25% threshold in. The Green votes for the other 4-5 proportional seats would have transferred, so the Greens could have chosen to give seats to around 7 candidates from larger parties such as the NDP.
+
+Another example is the UK 2017 parliamentary election. In that election, UKIP (an extreme nationalist party) had the votes for 11 proportional seats. But since they didn't reach 25% in any district, they wouldn't have gotten any seats. The regional parties, on the other hand (Scottish, Welsh, and Irish) all had local bases of support, so each of them would have gotten their full proportional share of seats.
+
+In the end, I don't think this is really unfair to third parties. It's a huge step up from FPTP, because voters are free to vote for them without fear of wasting votes. This gives them a path to grow from minor party to major party over time, if they can find a way to appeal to enough voters. And even if they get less than a "fair" share of direct seats, they can still use that voting power to indirectly help elect representatives they like from larger parties.
+
+=== Isn't there some downside to PLACE that's hard to foresee? ===
+
+
+
+== Other #PropRep options ==
+
+=== How does PLACE compare to single transferable vote (STV) with multimember districts? ===
+
+=== How does PLACE compare to mixed member proportional (MMP) methods? ===
+
+=== How does PLACE compare to open list proportional methods? ===
+
+=== How does PLACE compare to closed list proportional methods? ===
+
+=== How does PLACE compare to other newly-proposed proportional methods? ===
+
+== Political strategy ==
+
+== Other related reforms ==
+
+== Notes and details ==
+
+=== Who are you and why should I listen to you? ===
+
+I'm Jameson Quinn, currently a doctoral candidate in statistics at Harvard. I've been involved in voting theory and voting reform activism since before the 2000 US presidential election. I'm on the board of the Center for Election Science, aka [electology.org].
 
 === What is the difference between "electoral system" and "voting method"? ===
 
