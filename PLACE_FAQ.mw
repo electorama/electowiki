@@ -230,7 +230,7 @@ Also note that this strategy means that a third party would forego its ability t
 
 === How does PLACE compare to single transferable vote (STV) with multimember districts? ===
 
-In STV, used in countries such as Germany and New Zealand, voters rank candidates in order of preference. To keep the number of candidates manageable, usually the election is split up into multimember districts; most proposals for the English-speaking countries contemplate districts of at most 5 seats each. Winners are found using an elimination-and-transfer process similar to PLACE; in fact, the PLACE procedure was directly inspired by STV.
+In STV, used in (certain elections in) countries such as Ireland and Australia, voters rank candidates in order of preference. To keep the number of candidates manageable, usually the election is split up into multimember districts; most proposals for the English-speaking countries contemplate districts of at most 5 seats each. Winners are found using an elimination-and-transfer process similar to PLACE; in fact, the PLACE procedure was directly inspired by STV.
 
 STV is a #PropRep method, so it has all the advantages shared by all such methods: eliminating most wasted votes and breaking the two-party duopoly. Certainly, if the choice is between STV and FPTP, STV is unquestionably the better method. But PLACE does have some advantages:
 
@@ -240,13 +240,51 @@ STV is a #PropRep method, so it has all the advantages shared by all such method
 
 * PLACE has less of a tendency for parties to splinter into tiny single-issue microparties.
 
-* PLACE is easier to simulate retroactively, so that (with a few assumptions, and in a way that's pretty robust to reasonable variation of those assumptions) you can know specifically who would have won if FPTP had been replaced by PLACE in some past election. This lets you say to incumbents "you would still have won under PLACE against the same opponents", which lets them consider its global advantages without worrying about personal disadvantages.
+* PLACE has clearer accountability for incumbent representatives. If they anger the voters in their local district, they can't count on lazy partisan voters to re-elect them.
 
-=== How does PLACE compare to mixed member proportional (MMP) methods? ===
+* PLACE has better geographic representation.
+
+* PLACE is easier to simulate retroactively, so that (with a few assumptions, and in a way that's pretty robust to reasonable variation of those assumptions) you can know specifically who would have won if FPTP had been replaced by PLACE in some past election. This lets you say to incumbents "you would still have won under PLACE against the same opponents", which lets them consider its global advantages without worrying about personal disadvantages.
 
 === How does PLACE compare to open list proportional methods? ===
 
+In open list proportional methods, used in (certain elections in) countries such as Norway, Brazil, and Japan, voters choose a candidate and thus implicitly that candidate's party. All party votes are totalled to decide how many seats each party gets, then those seats are allocated based on vote totals. This method is proportional in terms of your party vote, so you don't have to worry about that portion of your vote being wasted; but it's not proportional in terms of the candidates within the parties, so it is easy to mistakenly waste your vote as to which faction of the party should dominate.
+
+In practice, OLPR usually goes hand-in-hand with a minimum party threshold. For instance, the rule might be that a party with fewer than 5% of the votes gets no seats.
+
+OLPR is a #PropRep method, so it has all the advantages shared by all such methods: eliminating most wasted votes and breaking the two-party duopoly. Certainly, if the choice is between OLPR and FPTP, OLPR is unquestionably the better method. But PLACE does have some advantages:
+
+* PLACE has greater voter power and fewer partially-wasted votes in choosing an intraparty faction
+
+* PLACE doesn't waste the votes of those supporting parties which don't meet the minimum party threshold.
+
+* PLACE encourages representatives within a party to form alliances, while OLPR just pits them against one another.
+
+* Depending on whether the OLPR implementation includes districts, PLACE will either have simpler ballots, or greater freedom to choose a representative to support.
+
+* PLACE has better geographic representation.
+
+* PLACE is easier to simulate retroactively, so that (with a few assumptions, and in a way that's pretty robust to reasonable variation of those assumptions) you can know specifically who would have won if FPTP had been replaced by PLACE in some past election. This lets you say to incumbents "you would still have won under PLACE against the same opponents", which lets them consider its global advantages without worrying about personal disadvantages.
+
 === How does PLACE compare to closed list proportional methods? ===
+
+In closed list methods, voters only choose a party. Once the votes are tallied and the seats are allocated among parties, each party chooses where its seats go. This is a horrible system, worse than open-list PR in every way.
+
+=== How does PLACE compare to mixed member proportional (MMP) methods? ===
+
+In MMP, used in countries such as Germany and New Zealand, voters choose a local candidate and (perhaps implicitly) a national party. Most representatives are chosen in the races, which are run with a single-winner method (usually plurality). But there are some leftover seats which are assigned by party to "top up" and restore proportionality. Those seats are assigned using either open or closed list.
+
+In practice, MMP usually goes hand-in-hand with a minimum party threshold. For instance, the rule might be that a party with fewer than 5% of the votes gets no seats.
+
+MMP is a #PropRep method, so it has all the advantages shared by all such methods: eliminating most wasted votes and breaking the two-party duopoly. Certainly, if the choice is between MMP and FPTP, MMP is unquestionably the better method. But PLACE does have some advantages:
+
+* PLACE has greater freedom for voters, because they're not restricted to vote inside their district.
+
+* PLACE has just one kind of representative, and all of them are equally accountable to voters.
+
+* PLACE doesn't require redrawing districts or increasing the size of the legislature.
+
+* PLACE is easier to simulate retroactively, so that (with a few assumptions, and in a way that's pretty robust to reasonable variation of those assumptions) you can know specifically who would have won if FPTP had been replaced by PLACE in some past election. This lets you say to incumbents "you would still have won under PLACE against the same opponents", which lets them consider its global advantages without worrying about personal disadvantages.
 
 === How does PLACE compare to other newly-proposed proportional methods? ===
 
