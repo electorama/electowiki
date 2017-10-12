@@ -230,9 +230,17 @@ Also note that this strategy means that a third party would forego its ability t
 
 === How does PLACE compare to single transferable vote (STV) with multimember districts? ===
 
-In STV, used in countries such as Germany and New Zealand, voters rank candidates in order of preference. Winners are found using an elimination-and-transfer process similar to PLACE; in fact, the PLACE procedure was directly inspired by STV.
+In STV, used in countries such as Germany and New Zealand, voters rank candidates in order of preference. To keep the number of candidates manageable, usually the election is split up into multimember districts; most proposals for the English-speaking countries contemplate districts of at most 5 seats each. Winners are found using an elimination-and-transfer process similar to PLACE; in fact, the PLACE procedure was directly inspired by STV.
 
-STV is a #PropRep method
+STV is a #PropRep method, so it has all the advantages shared by all such methods: eliminating most wasted votes and breaking the two-party duopoly. Certainly, if the choice is between STV and FPTP, STV is unquestionably the better method. But PLACE does have some advantages:
+
+* PLACE has simpler ballots. Instead of having to rank each candidate, you can just pick one.
+
+* PLACE has greater freedom for voters, because they're not restricted to vote inside their 5-member district.
+
+* PLACE has less of a tendency for parties to splinter into tiny single-issue microparties.
+
+* PLACE is easier to simulate retroactively, so that (with a few assumptions, and in a way that's pretty robust to reasonable variation of those assumptions) you can know specifically who would have won if FPTP had been replaced by PLACE in some past election. This lets you say to incumbents "you would still have won under PLACE against the same opponents", which lets them consider its global advantages without worrying about personal disadvantages.
 
 === How does PLACE compare to mixed member proportional (MMP) methods? ===
 
