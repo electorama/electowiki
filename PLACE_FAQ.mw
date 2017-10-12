@@ -228,6 +228,10 @@ I see this as a problem, but not an intolerable one. The best way to solve it wo
 
 === How does PLACE compare to single transferable vote (STV) with multimember districts? ===
 
+In STV, used in countries such as Germany and New Zealand, voters rank candidates in order of preference. Winners are found using an elimination-and-transfer process similar to PLACE; in fact, the PLACE procedure was directly inspired by STV.
+
+STV is a #PropRep method
+
 === How does PLACE compare to mixed member proportional (MMP) methods? ===
 
 === How does PLACE compare to open list proportional methods? ===
