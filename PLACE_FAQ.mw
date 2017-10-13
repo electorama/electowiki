@@ -97,7 +97,7 @@ Assuming that there is one equal-population district (aka riding or constituency
 === What would a sample ballot look like? ===
 <table border='1px' width='80%'><tr><td>
 ''OFFICIAL BALLOT FOR THE STATE ELECTION - November 8, 2020''<br>
-'''Representative''' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''State of New Guernsey, District 3'''<br>
+'''Representative''' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''State of New Guernsey, District 3'''<br>
 Choose '''one''' local candidate '''or''' party. If you choose a party or ''Independent'', you may write in a candidate of that party from another district. (Further instructions, and a list of all candidates statewide, are available in the voting booth.)<br>
 
 Local candidates:<br>
@@ -106,11 +106,17 @@ Local candidates:<br>
 &#9634; <big>'''Diana Prince''',</big> Libertarian Party. If this candidate can not use your vote, it will pass to one of James Logan (d10, L), Daniel Rand (d2, L), Jon Osterman (d12, L) (whichever has the most votes.)<br>
 &#9634; <big>'''Peter Parker''',</big> Democratic Party. If this candidate can not use your vote, it will pass to one of Charles Xavier (d10, D), Taylor Hebert (d7, D), Matt Murdock (d2, D), Luke Cage (d4, D) (whichever has the most votes.)<br>
 &#9634; <big>'''Clark Kent''',</big> Independent. If this candidate can not use your vote, it will pass to one of Steve Rogers (d1, I), Mark Grayson (d9, D), Carol Danvers (d4, R) (whichever has the most votes.)<br>
-&#9634; ____(write-in)____
+&#9634; Do not transfer my vote (you may check in addition to one option above)<br>
 
-'''If you only vote for one candidate, your vote is delegated to that candidate, unless you check the box below.''' A delegated vote means that, if your favorite candidate shows preferences above, he or she may use your vote to approve of one or more of the most-preferred of them. For instance, if he or she can not win, he or she might approve of some other "compromise" candidate(s) who can.<br>
-&#9634; Do not delegate. Do not let the candidate I voted for add approvals to my vote.<br><br>
-''Note: If you vote for more than one candidate, or if you vote for a write-in or other candidate with no declared preferences, your vote is not delegated. In that case, no-one can add approvals to your vote, and it does not matter whether you check the box above.''
+<big>OR</big><br>
+Parties/out-of-district write-ins:<br>
+&#9634; <big>Green Party.</big> Optional write-in:_________________________________________ <br>
+&#9634; <big>Republican party.</big> Optional write-in:_________________________________________ <br>
+&#9634; <big>Libertarian Party.</big> Optional write-in:_________________________________________ <br>
+&#9634; <big>Democratic Party. </big> Optional write-in:_________________________________________ <br>
+&#9634; <big>Independent. </big> Optional write-in:_________________________________________ <br>
+&#9634; Do not transfer my vote to a local candidate (you may check in addition to one option above)<br>
+
 </td></tr></table>
 
 === Did you skip any niggling details in the procedure above? ===
