@@ -220,7 +220,7 @@ Say there was a third party that had enough votes for 3 seats, but only 2 of the
 
 There are a few ways this strategy could fail. If the third party candidates endorsed another candidate Z who's more popular than Y, the transfers would elect Z first and the votes would be soaked up. If in the X/Y district X were highly popular and/or Y unpopular, Y might be eliminated by the 25% rule. And if X got enough cross-district direct votes to reach a quota without vote transfers, X would beat Y no matter how many transfer votes Y got. Still, there is a real possibility this could work.
 
-Still, this "knockout" power is limited to at most one candidate per faction. As soon as the first candidate X is "knocked out", their votes would pass to the strongest other candidate W in their faction. If W has more local direct votes than their opponent P, then W would win immediately even if the third party had also passed votes to P.
+Still, this "targeted knockout" power is limited to at most one candidate per faction. As soon as the first candidate X is "knocked out", their votes would pass to the strongest other candidate W in their faction. If W has more local direct votes than their opponent P, then W would win immediately even if the third party had also passed votes to P.
 
 I see this as a problem, but not an intolerable one. The best way to solve it would be to add a few non-district seats, as in MMP (explained below). Say that a given state had 3 non-district-based seats. In that case, candidates in the same district with winning candidates would not be eliminated until there were 3 districts with 2 winners. The third time that a second (or later) winner was elected from some district, all candidates in districts that had 1 or more winners would be eliminated simultaneously. Even a small proportion (say, 10%) of such MMP-like seats would be sufficient to prevent "targeted knockouts" from becoming a problem. Stopping the first few knockouts would help, but the big difference is that by spoiling the targeting of the later knockouts, it would greatly blunt the effectiveness of the strategy.
 
@@ -231,6 +231,8 @@ Also note that this strategy means that a third party would forego its ability t
 === How does PLACE compare to single transferable vote (STV) with multimember districts? ===
 
 In STV, used in (certain elections in) countries such as Ireland and Australia, voters rank candidates in order of preference. To keep the number of candidates manageable, usually the election is split up into multimember districts; most proposals for the English-speaking countries contemplate districts of at most 5 seats each. Winners are found using an elimination-and-transfer process similar to PLACE; in fact, the PLACE procedure was directly inspired by STV.
+
+Note that the term "ranked choice voting" (RCV) is sometimes used as a catch-all brand for both STV and its single-winner equivalent, IRV. As a voting theorist, I find that term muddies the waters; there are plenty of ranked voting methods, both single- and multi-winner, aside from these two. What's worse, RCV activists often talk as if RCV were a synonym for voting reform as a whole. We should unite to #endFPTP, not try to paint our proposal as the only option.
 
 STV is a #PropRep method, so it has all the advantages shared by all such methods: eliminating most wasted votes and breaking the two-party duopoly. Certainly, if the choice is between STV and FPTP, STV is unquestionably the better method. But PLACE does have some advantages:
 
@@ -294,10 +296,33 @@ The theory and practice of designing voting methods has advanced substantially i
 
 It's impossible to discuss the relative advantages and disadvantages of all possible methods here. Discussing various methods is beneficial insofar as it makes it more likely that one of them will pass, but becomes harmful if it devolves into warring camps each highlighting the disadvantages of opposing methods.
 
+== Other related reforms ==
+
+=== Voting rights ===
+
+In the US, elections are run by state and local authorities. Yet the number of representatives a state gets is set by total population, not by number of voters. Essentially, the full voting power of non-voters is stolen by the voters. Thus, the Jim Crow South was actually an even greater distortion of voting power than the "three-fifths compromise".
+
+This creates an incentive to politicize rules and suppress the vote. Security against voter fraud is often cited by those wanting restrictive voting rules, but with only a tiny handful of fraud cases for millions of votes, this seems disingenuous.
+
+Those of us who favor #PropRep should also join the fight against voter suppression, and work to draw the links between the two issues. Gerrymandering, as a way of deliberately causing wasted votes, goes hand in hand with suppressing other votes. For instance, that link is especially clear when prisons (full of non-voters) are used to pad the population of districts which are demographically entirely unlike the incarcerated population.
+
+Good organizations on this issue in the US: [https://www.brennancenter.org/ Brennan Center], [http://www.commoncause.org/ Common Cause].
+
+=== Single-winner voting methods ===
+
+The problems with FPTP do not apply only to multi-winner legislative races; they are just as bad in single-winner executive races for offices like President, Governor, or Mayor. In those cases, the solution is not #PropRep, but rather single-winner reforms — beginning with [https://www.youtube.com/watch?v=db6Syys2fmE approval voting], then possibly moving on to [http://wiki.electorama.com/wiki/3-2-1_voting 3-2-1 voting] or [http://www.equal.vote/ star voting]. The best organization on these issues is [http://electology.org/ electology.org] (full disclosure: I'm a board member.) Also doing good work in the Pacific NW is [http://www.equal.vote/about the equal vote coalition].
+
+Another option that gets mentioned for single-winner is IRV (also annoyingly called RCV). This is promoted by the largest US voting reform nonprofit, FairVote. Unfortunately, while they do good work on #PropRep, FairVote seems blind to the flaws in IRV. While I'd vote for IRV if the only other option was FPTP, and while I definitely believe that [http://electology.org/blog/maine-supreme-court-gets-it-wrong-irv voters who've chosen IRV should get to see it implemented], I don't think FairVote has the best path forward on this issue.
+
+=== Campaign finance ===
+
+=== Ballot access and other electoral system reforms ===
+
 == Political strategy ==
 
-=== Historically, how have successful #PropRep reforms passed? ===
+=== Historically, how have successful voting reforms passed? ===
 
+Usually, voting reforms pass through some combination of popular and insider support.
 === What are some ways that PLACE could pass? ===
 
 === Is PLACE constitutional in the USA? ===
@@ -307,16 +332,6 @@ It's impossible to discuss the relative advantages and disadvantages of all poss
 === How can we convince different specific communities in the UK or Canada to support PLACE? ===
 
 === Who are PLACE voting's natural enemies? How can we beat them? ===
-
-== Other related reforms ==
-
-=== Voting rights ===
-
-=== Single-winner voting methods ===
-
-=== Campaign finance ===
-
-=== Ballot access and other electoral system reforms ===
 
 == Notes and details ==
 
