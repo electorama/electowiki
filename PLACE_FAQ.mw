@@ -136,7 +136,8 @@ A candidate may reject an endorsement from another candidate. Rejected endorseme
 Each voting booth will have:
 
 * A list of all candidates in all districts (all eligible write-ins), along with lists of "faction" and "ally" endorsements for each.
-** The "faction" information for each party will also be available in the form of a matrix, where columns are endorsers and rows are endorsees, and "similar" candidates (those getting correlated endorsements) are listed near to each other. Rows and columns will use the same ordering of course.
+** '''Exception''': in elections involving 30 seats or more, districts may be aggregated into "megadistricts" of less than 30 districts each, and information provided only for candidates within the local "megadistrict". Candidates outside the "megadistrict" are still valid write-ins; the grouping only affects the information provided in the booth.
+** The "faction" information for each party will also be available in the form of a matrix, where columns are endorsers and rows are endorsees, and "similar" candidates (those getting correlated endorsements) are listed near to each other. Rows and columns will use the same ordering of course. There will be one matrix per party, so the maximum size of a matrix would be 29x29.
 ** Each eligible write-in candidate will have an optional error-resistant 3-letter code, for people who can't spell their name.
 ** Each candidate will be allowed to submit a brief under-50-word statement which will go with their name
 * An explanation of the PLACE rules, with appropriate examples (similar to this FAQ)
