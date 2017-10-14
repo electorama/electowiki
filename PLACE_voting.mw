@@ -1,45 +1,73 @@
 PLACE voting stands for "proportional, locally-accountable, candidate endorsement voting". It is a proportional voting method for electing legislators to a multi-seat body. Like [[GOLD voting]], Its main advantages are: simple ballots, minimal wasted votes, and "do no harm" (that is, it doesn't change FPTP outcomes unless they're non-proportional).
 
-It assumes the voters have been divided up into one equal-population riding (aka district or constituency) per seat being elected. Precisely one representative per area (riding, riding, or constituency) will win.
+It assumes the voters have been divided up into one equal-population riding (aka district or constituency) per seat being elected. Precisely one representative per area (riding, riding, or constituency) will win. Rules for parties to nominate candidates for each district are outside the scope of PLACE.
 
-Before the election, a candidate may endorse other candidates. Votes will be transferred first to endorsed same-party candidates, then to unendorsed same-party candidates, then to endorsed other-party candidates. If a candidate endorses any others, they must include at least two from their own party; or, for independents, at least two other candidates.
+# Before the election, candidates may endorse other candidates. From the perspective of candidate X in party Y, this divides other candidates into 4 groups:
+#* "Same faction": those X endorses who are in party Y
+#* "Same party": those who are in party Y but who don't get endorsed by X.
+#* "Allies": Those X endorses who are not in party Y
+#* "Opponents": Those not in party Y who are not endorsed by X.
+# The ballot lists the candidates running locally, and also has a write-in slot for each party. You can choose a local candidate, choose a party, or choose a party and write in a candidate from another district.
+#* There is also a way to check "do not transfer" when choosing a local candidate, or "do not transfer to local candidates" when choosing a party.
+# Ballots are tallied, and any candidate who got less than 25% of the local vote is eliminated (unless they got more local votes than any other).
+# Votes for eliminated candidates are transferred (unless the voter opted out). They go first to "same faction", in descending order of raw vote total; then "Same party", again by vote total; and finally to "allies", again in vote order. If all these groups run out, a ballot is exhausted.
+# Any candidate who gets a "quota" of votes wins, and the excess portion of all their votes (above what they needed to win) is transferred.
+#* A "quota" is defined as V/(S+1), where V is the total number of votes and S is the number of seats. So in an election for 9 seats, a quota would be 10% of the total votes, or 90% of the average district's votes.
+#* If one candidate got two quotas of votes, then half of each of those votes would be "excess" and would be transferred. Thus, transfers can involve partial votes.
+#* As soon as a candidate is elected, all other candidates in the same district are eliminated.
+# Until all seats are full, the candidate that is farthest behind the frontrunner in their district is eliminated, one by one.
+#* Thus votes will move from weaker candidates to stronger ones until they make up full quotas and the seats fill up.
+# Each winning party assigns each district where they did not win to one of their winning candidates as "extra constituents".
+#* Thus, even if your party did not win in your district, you will be a constituent for a representative from your party; you'll still have "your" representative to listen to your petitions.
 
-Here are the rules. Items in italics are mere explanations or justifications; the rules themselves are only the non-italic portions.
+=== Niggling details ===
 
-# '''Voters choose a candidate'''.
-#* The ballot lists the candidates running locally, with their parties and their first three transfer preferences (explained below).
-#* Voters may write in candidates from further away, using error-resistant codes. 
-##* Because these error-resistant codes include party id, they give a way to vote for a party without voting for any candidate in particular. This is equivalent to voting for an eliminated candidate who from that party with no endorsements.
-# Voters may choose not to delegate.
-#* This is essentially only to satisfy constitutional concerns about voter freedom. It is almost never strategically a good choice, and it is generally discouraged.
-#* Choosing not to delegate while voting for an entire party is equivalent to voting for an eliminated candidate from that party who endorsed all candidates from that party except those running in the local district (ie, those listed on the ballot).
-# Each ballot which does not opt out of delegating is converted to a transfer order using the chosen candidate, their endorsements, and the initial vote tallies of each.
-#* Transfers go in order of endorsement level, and within each endorsement level in order of initial vote totals.
-#* For example, say you endorsed candidate X, who'd strongly endorsed P and Q, endorsed R and S, and weakly endorsed T and U. If the vote total order among those endorsed candidates was S>T>U>P>Q>R, then your vote would be converted to X>P>Q>S>R>T>U. So if X, P, and Q were all either eliminated or elected, any remaining voting power that hadn't been used up in electing those would be transferred to S.
-#* If voters absolutely do not want their chosen candidate to have any say over vote transfers, they have two checkboxes: one to ensure that their vote will not be transferred, and one to ensure that it will be transferred to all same-party candidates in order of initial vote totals. However, these options are not emphasized, and it's assumed that they will be used by a small minority. They're there merely to ensure that nobody is being forced to delegate. 
+There are a few extra rules for clarification and edge cases:
 
-The basic vote-counting process has 5 steps (based on Single Transferrable Voting):
+==== Niggling detail 0: Endorsement rules ====
 
-# Tally votes
-#* Each ballot counts as 1 point for the chosen candidate.
-# Eliminate candidates without 25% support within their riding.
-#* The top candidate in each riding is kept, even if they did not get 25%.
-#* If a candidate gets 25% of the vote from some riding where they were not running, they are considered to be running in whichever riding they got the most votes in.
-#* ''This makes sure that no riding is badly mis-represented just because a given party "deserves" more winners.''
-#* ''It also helps discourage voters from splintering into small single-issue parties. If a party can’t pass this threshold in even one riding, it won’t get seats. But those votes can still be transferred, so those voters can still be represented by a relatively sympathetic candidate from a slightly larger party.''
-# Find winners and transfer leftovers.
-#* If V is the total number of valid (non-exhausted) votes, and S is the number of unfilled seats, then a “quota” is defined as Q=V/(S+1). This ensures that each full “quota” of voters will get a seat, with less than one “quota” of vote left unrepresented even though they still have a valid preference.
-#* Any candidate with a full quota of votes at any time is elected. If their winning vote total is W>Q, then the leftover fraction (W-Q)/W of all of their votes is transferred. 
-#* Whenever a candidate wins, all other candidates from their riding are eliminated.
-#* In the rare case that several candidates from separate ridings reach a full quota at the same time, the one with the fewest local votes is elected first, to allow the others to possibly accumulate a bigger surplus before winning. In the even rarer case that more than one candidate from the same riding reach a full quota at the same time, the one with more local votes is elected.
-# Eliminate the candidate who's furthest behind in their riding and transfer votes
-#* ''If a candidate's current full tally is 1000 votes (including local votes, direct write-ins, and transferred votes), and the top full tally of any remaining candidate in their riding is 2000, then they are 1000 behind in their riding.''
-#* ''If a candidate passed pre-elimination in multiple ridings, use the riding without a winner yet in which they're behind by the least.''
-#* ''This rule means that the last remaining candidate in a riding is not eligible for elimination.''
-#* See above for the transfer methods a voter can choose.
-# If there are still seats to fill, repeat from step 3.
+If a candidate has any within-party ("same faction") endorsements, he must have at least 3 of them (or at least half of the other candidates running in his party, rounded down; whichever is less). This helps prevent unserious candidates from running merely as "vote funnels" for a single specific serious candidate.
 
-Once all winners are chosen, each winning party is responsible for assigning each riding they did not win to be "additional territory" of one of their winning representatives. Representatives are responsible to all citizens from their own riding, and also to hear petitions from their "additional territory". That means that if you are in the minority in your riding, you will still have a sympathetic representative to petition.
+A candidate may endorse no more than half of all other candidates across all parties, and may not make more endorsements than the number of seats up for election (or 5, whichever is greater). This includes both within-party and out-of-party endorsements.
+
+A candidate may reject an endorsement from another candidate. Rejected endorsements are not valid.
+
+==== Niggling detail 1: Information available in the voting booth ====
+
+Each voting booth will have:
+
+* A list of all candidates in all districts (all eligible write-ins), along with lists of "faction" and "ally" endorsements for each.
+** '''Exception''': in elections involving 30 seats or more, districts may be aggregated into "megadistricts" of less than 30 districts each, and information provided only for candidates within the local "megadistrict". Candidates outside the "megadistrict" are still valid write-ins; the grouping only affects the information provided in the booth.
+** The "faction" information for each party will also be available in the form of a matrix, where columns are endorsers and rows are endorsees, and "similar" candidates (those getting correlated endorsements) are listed near to each other. Rows and columns will use the same ordering of course. There will be one matrix per party, so the maximum size of a matrix would be 29x29.
+** Each eligible write-in candidate will have an optional error-resistant 3-letter code, for people who can't spell their name.
+** Each candidate will be allowed to submit a brief under-50-word statement which will go with their name
+* An explanation of the PLACE rules, with appropriate examples (similar to this FAQ)
+
+==== Niggling detail 2: Rules for "Do not transfer" and for party-only votes ====
+
+* If a voter chooses a local candidate and marks "do not transfer", their vote will be exhausted as soon as that candidate is eliminated or elected.
+** The same if a voter writes in a nonlocal candidate and marks "do not transfer". (Although this is expected to be rare)
+* If a voter chooses a party, their vote will go to any member of that party, in descending order of raw vote total; and then will be exhausted when all members of that party are elected or eliminated.
+** If a voter chooses a party and marks "do not transfer to local candidates", then it will be as above, except that their vote will skip over any candidates from that party running locally.
+* The boxes for "do not transfer" (next to local candidates) and "do not transfer to local candidates" (next to party/write-in slots) are considered equivalent; there are two and their wording is different merely as a convenience.
+
+==== Niggling detail 3: Elimination and the 25% threshold ====
+
+If a candidate gets more than 25% of the local vote, and/or the most votes, from a district where they are not running, they will not be eliminated, and will be considered to be running in all districts in which they passed the threshold. In that case, they will not be eliminated as long as they would survive in one of those districts. For instance, even if one of those seats is filled, they will not be eliminated until they all are.
+
+==== Niggling detail 4: Ties and Simultaneous Winners ====
+
+In the rare case that several candidates from separate ridings reach a full quota at the same time, the one with the fewest local votes is elected first, to allow the others to possibly accumulate a bigger surplus before winning. In the even rarer case that more than one candidate from the same riding reach a full quota at the same time, the one with more local votes is elected.
+
+In other cases of ties, they are resolved by initial vote totals, or if that doesn't break the tie, randomly (by drawing lots or some other random procedure).
+
+==== Niggling detail 5: Independent candidates ====
+
+All independent candidates are considered to be different parties for the purposes of the "same party" grouping, but the same party for the purposes of the "same faction" grouping. The upshot is that a vote for an independent candidate will go first to other independents she endorsed, then to non-independents she endorsed, then will be exhausted. It will never go to other independents she did not endorse.
+
+==== Niggling detail 6: Extra territory ====
+
+Parties are required to assign extra territory in such a way that roughly balances the total party vote for each candidate's full territory. That is to say, it should be impossible to improve that balance by changing the assignment of a single district. Aside from that, they are encouraged to respect geographic or demographic communities when assigning extra territory.
 
 == Proportional or semiproportional? ==
 
