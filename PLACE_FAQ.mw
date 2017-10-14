@@ -241,6 +241,8 @@ STV is a #PropRep method, so it has all the advantages shared by all such method
 
 * PLACE is easier to simulate retroactively, so that (with a few assumptions, and in a way that's pretty robust to reasonable variation of those assumptions) you can know specifically who would have won if FPTP had been replaced by PLACE in some past election. This lets you say to incumbents "you would still have won under PLACE against the same opponents", which lets them consider its global advantages without worrying about personal disadvantages.
 
+* PLACE is easier and more transparent to tally, because it's "precinct summable". That is, results can be calculated if each precinct publishes tallies of votes for each candidate and party with and without the "do not transfer" option. STV cannot be calculated without the full preference order from each individual ballot, so issues with both privacy and chain of custody are much more difficult.
+
 === How does PLACE compare to open list proportional methods? ===
 
 In open list proportional methods, used in (certain elections in) countries such as Norway, Brazil, and Japan, voters choose a candidate and thus implicitly that candidate's party. All party votes are totalled to decide how many seats each party gets, then those seats are allocated based on vote totals. This method is proportional in terms of your party vote, so you don't have to worry about that portion of your vote being wasted; but it's not proportional in terms of the candidates within the parties, so it is easy to mistakenly waste your vote as to which faction of the party should dominate.
