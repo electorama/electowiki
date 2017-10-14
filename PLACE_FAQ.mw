@@ -297,6 +297,15 @@ The theory and practice of designing voting methods has advanced substantially i
 
 It's impossible to discuss the relative advantages and disadvantages of all possible methods here. Discussing various methods is beneficial insofar as it makes it more likely that one of them will pass, but becomes harmful if it devolves into warring camps each highlighting the disadvantages of opposing methods.
 
+=== Are there other methods closely related to PLACE? ===
+
+There are several.
+
+* STV, as mentioned above, is the basis for the vote transfer process in PLACE.
+* The idea of simplifying STV ballots using prepared lists is an old one. Called "Group Voting Tickets" in Australia, this was first proposed in the US around 1890 under the name "[https://archive.org/details/proportionalrepr00berr the Gove system]" by William Gove of Salem, MA.
+* Previous drafts of the same ideas in PLACE went under names including "PAL representation" and "GOLD voting".
+* For comparison, here is a version of [[simplified PLACE]] without endorsements, just parties. This is a good proposal, but compared to PLACE voting it is biased against smaller parties and independent candidates.
+
 == Other related reforms ==
 
 === Voting rights ===
