@@ -203,6 +203,12 @@ Another example is the UK 2017 parliamentary election. In that election, UKIP (a
 
 In the end, I don't think this is really unfair to third parties. It's a huge step up from FPTP, because voters are free to vote for them without fear of wasting votes. This gives them a path to grow from minor party to major party over time, if they can find a way to appeal to enough voters. And even if they get less than a "fair" share of direct seats, they can still use that voting power to indirectly help elect representatives they like from larger parties.
 
+=== "I cringed at the "Do not transfer my vote" check boxes -- a voting system that needs to ask a technical question like that does not seem like the greatest idea to me." ===
+
+When you're electing a legislator, you're fundamentally delegating your voting power to them, so that they can represent you in the legislature. But some people hate the idea of delegating their vote during the election process itself; they see voting on people as fundamentally more subject to corruption than voting on issues. PLACE voting has various safeguards against personal corruption — for instance, candidates only endorse a group of other candidates, they can not decide which of those others will get the vote first. But for voters still concerned about the possibility of such corruption, the "do not transfer" option is a final backstop; with this option, their freedom of association is assured.
+
+However, this option is almost never strategically a good idea for voters. The only time it's a good idea would be if you trusted a candidate's judgement on the issues, but thought their endorsements were actively counterproductive; that's quite unusual. So in the end, the option is like a home fire alarm: you're glad it's there, but you're also glad that you'll probably never have to use it.
+
 === Isn't there some downside to PLACE that's hard to foresee? ===
 
 I have long experience thinking about voting strategies and finding pathological cases for specific voting methods. As theorems like [https://en.wikipedia.org/wiki/Gibbard%E2%80%93Satterthwaite_theorem Gibbard-Satterthwaite] underline, no voting method is entirely free of such pathologies. Here's the worst I've come up with for PLACE:
