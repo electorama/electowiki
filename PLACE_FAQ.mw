@@ -123,9 +123,13 @@ Parties/out-of-district write-ins:<br>
 
 A few:
 
-==== Niggling detail 0: Minimum number of endorsements ====
+==== Niggling detail 0: Endorsement rules ====
 
 If a candidate has any within-party ("same faction") endorsements, he must have at least 3 of them (or at least half of the other candidates running in his party, rounded down; whichever is less). This helps prevent unserious candidates from running merely as "vote funnels" for a single specific serious candidate.
+
+A candidate may endorse no more than half of all other candidates across all parties, and may not make more endorsements than the number of seats up for election (or 5, whichever is greater). This includes both within-party and out-of-party endorsements.
+
+A candidate may reject an endorsement from another candidate. Rejected endorsements are not valid.
 
 ==== Niggling detail 1: Information available in the voting booth ====
 
