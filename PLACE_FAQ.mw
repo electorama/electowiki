@@ -121,52 +121,15 @@ Parties/out-of-district write-ins:<br>
 
 === Did you skip any niggling details in the procedure above? ===
 
-A few:
+A few; see [[PLACE voting#Niggling details]]. This includes rules:
 
-==== Niggling detail 0: Endorsement rules ====
-
-If a candidate has any within-party ("same faction") endorsements, he must have at least 3 of them (or at least half of the other candidates running in his party, rounded down; whichever is less). This helps prevent unserious candidates from running merely as "vote funnels" for a single specific serious candidate.
-
-A candidate may endorse no more than half of all other candidates across all parties, and may not make more endorsements than the number of seats up for election (or 5, whichever is greater). This includes both within-party and out-of-party endorsements.
-
-A candidate may reject an endorsement from another candidate. Rejected endorsements are not valid.
-
-==== Niggling detail 1: Information available in the voting booth ====
-
-Each voting booth will have:
-
-* A list of all candidates in all districts (all eligible write-ins), along with lists of "faction" and "ally" endorsements for each.
-** '''Exception''': in elections involving 30 seats or more, districts may be aggregated into "megadistricts" of less than 30 districts each, and information provided only for candidates within the local "megadistrict". Candidates outside the "megadistrict" are still valid write-ins; the grouping only affects the information provided in the booth.
-** The "faction" information for each party will also be available in the form of a matrix, where columns are endorsers and rows are endorsees, and "similar" candidates (those getting correlated endorsements) are listed near to each other. Rows and columns will use the same ordering of course. There will be one matrix per party, so the maximum size of a matrix would be 29x29.
-** Each eligible write-in candidate will have an optional error-resistant 3-letter code, for people who can't spell their name.
-** Each candidate will be allowed to submit a brief under-50-word statement which will go with their name
-* An explanation of the PLACE rules, with appropriate examples (similar to this FAQ)
-
-==== Niggling detail 2: Rules for "Do not transfer" and for party-only votes ====
-
-* If a voter chooses a local candidate and marks "do not transfer", their vote will be exhausted as soon as that candidate is eliminated or elected.
-** The same if a voter writes in a nonlocal candidate and marks "do not transfer". (Although this is expected to be rare)
-* If a voter chooses a party, their vote will go to any member of that party, in descending order of raw vote total; and then will be exhausted when all members of that party are elected or eliminated.
-** If a voter chooses a party and marks "do not transfer to local candidates", then it will be as above, except that their vote will skip over any candidates from that party running locally.
-* The boxes for "do not transfer" (next to local candidates) and "do not transfer to local candidates" (next to party/write-in slots) are considered equivalent; there are two and their wording is different merely as a convenience.
-
-==== Niggling detail 3: Elimination and the 25% threshold ====
-
-If a candidate gets more than 25% of the local vote, and/or the most votes, from a district where they are not running, they will not be eliminated, and will be considered to be running in all districts in which they passed the threshold. In that case, they will not be eliminated as long as they would survive in one of those districts. For instance, even if one of those seats is filled, they will not be eliminated until they all are.
-
-==== Niggling detail 4: Ties and Simultaneous Winners ====
-
-In the rare case that several candidates from separate ridings reach a full quota at the same time, the one with the fewest local votes is elected first, to allow the others to possibly accumulate a bigger surplus before winning. In the even rarer case that more than one candidate from the same riding reach a full quota at the same time, the one with more local votes is elected.
-
-In other cases of ties, they are resolved by initial vote totals, or if that doesn't break the tie, randomly (by drawing lots or some other random procedure).
-
-==== Niggling detail 5: Independent candidates ====
-
-All independent candidates are considered to be different parties for the purposes of the "same party" grouping, but the same party for the purposes of the "same faction" grouping. The upshot is that a vote for an independent candidate will go first to other independents she endorsed, then to non-independents she endorsed, then will be exhausted. It will never go to other independents she did not endorse.
-
-==== Niggling detail 6: Extra territory ====
-
-Parties are required to assign extra territory in such a way that roughly balances the total party vote for each candidate's full territory. That is to say, it should be impossible to improve that balance by changing the assignment of a single district. Aside from that, they are encouraged to respect geographic or demographic communities when assigning extra territory.
+* About number of endorsements, to prevent abusing the system.
+* About information available in the voting booth
+* About how the "do not transfer" checkboxes are interpreted
+* About rare cases where a candidate gets more votes from a district where they weren't running than from the one where they were.
+* About ties
+* About how vote transfers work for independent candidates (those without a party)
+* About how extra territory should be assigned to winners
 
 == PLACE voting: method design (why) ==
 
