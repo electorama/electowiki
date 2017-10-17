@@ -105,9 +105,9 @@ Local candidates:<br>
 <table>
   <tr>
     <td></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td align="center" colspan="2"><big>'''Bruce Banner'''</big></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&larr;</td>
     <td></td>
   </tr>
   <tr>
@@ -124,10 +124,10 @@ Local candidates:<br>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Green candidates he endorsed:<br> Alec Holland (d5), Hal Jordan (d4), or Jennifer Walters (d9).<br> After that, if still not used, it would go to any Green, then to<br> any non-Green who Banner has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
   <tr>
@@ -138,9 +138,9 @@ Local candidates:<br>
 <table>
   <tr>
     <td></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td align="center" colspan="2"><big>'''Bruce Wayne'''</big></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&larr;</td>
     <td></td>
   </tr>
   <tr>
@@ -157,10 +157,10 @@ Local candidates:<br>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Republican candidates he endorsed.<br> These are: Helen Parr (d9, R), Carol Danvers (d4, R), <br>Tony Stark (d2, R), Dennis Colt (d1, R). If none of these survive, <br>it would go to any Republican, then to any non-Republican endorsed by Wayne. </td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
   <tr>
@@ -171,9 +171,9 @@ Local candidates:<br>
 <table>
   <tr>
     <td></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td align="center" colspan="2"><big>'''Diana Prince'''</big></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&larr;</td>
     <td></td>
   </tr>
   <tr>
@@ -190,10 +190,10 @@ Local candidates:<br>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Libertarian candidates she endorsed.<br> These are: James Logan (d10, L), Daniel Rand (d2, L), Jon Osterman (d12, L). <br>If none of these survive, it would go to any Libertarian, <br>then to any non-Libertarian endorsed by Prince. </td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
   <tr>
@@ -204,7 +204,7 @@ Local candidates:<br>
 <table>
   <tr>
     <td></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td align="center" colspan="2"><big>'''Peter Parker'''</big></td>
     <td rowspan="2">?</td>
     <td></td>
@@ -223,10 +223,10 @@ Local candidates:<br>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Democratic candidates he endorsed.<br> These are: Charles Xavier (d10, D), Taylor Hebert (d7, D), Matt Murdock (d2, D), <br>Luke Cage (d4, D). If none of these survive, it would go to any Democrat, <br>then to any non-Democrat endorsed by Parker. </td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
   <tr>
@@ -237,9 +237,9 @@ Local candidates:<br>
 <table>
   <tr>
     <td></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td align="center" colspan="2"><big>'''Clark Kent'''</big></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&larr;</td>
     <td></td>
   </tr>
   <tr>
@@ -256,10 +256,10 @@ Local candidates:<br>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Independent candidates he endorsed.<br> These are: Steve Rogers (d1, I). If none of these survive, it would go to <br>any non-Independent endorsed by Kent. </td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
   <tr>
@@ -278,9 +278,9 @@ Parties/out-of-district write-ins:<br>
 <table>
   <tr>
     <td></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td align="center" colspan="2"><big>'''Green Party'''</big></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&larr;</td>
     <td></td>
   </tr>
   <tr>
@@ -297,10 +297,10 @@ Parties/out-of-district write-ins:<br>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&rarr;</td>
     <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Green candidates they endorsed. After that, it would go to any Green, then to any non-Green they endorsed.</td>
     <td rowspan="2" style="vertical-align:top">...not be counted. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Bruce Banner).</td>
-    <td rowspan="2">?</td>
+    <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
   <tr>
