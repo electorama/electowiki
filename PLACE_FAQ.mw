@@ -101,7 +101,6 @@ Assuming that there is one equal-population district (aka riding or constituency
 Choose '''one''' local candidate '''or''' party. If you choose a party or ''Independent'', you may write in a candidate of that party from another district. (Further instructions, and a list of all candidates statewide, are available in the voting booth.)<br>
 
 <table border-left-width='20px' border-left-color='black'><tr><td style="border-left: 10px solid #000000;"  >
-<table border-left-width='20px' border-left-color='black'><tr><td style="border-left: 10px solid #000000;"  >
 Local candidates:<br>
 <table>
   <tr>
@@ -275,20 +274,45 @@ Local candidates:<br>
 
 <table border-left-width='20px' border-left-color='black'><tr><td style="border-left: 10px solid #000000;"  >
 Parties/out-of-district write-ins:<br>
-&#9634; <big>Green Party</big> Optional write-in:_________________________________________ <br>
+
+<table>
+  <tr>
+    <td></td>
+    <td rowspan="2">?</td>
+    <td align="center" colspan="2"><big>'''Green Party'''</big></td>
+    <td rowspan="2">?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td align="center" colspan="2">'''Optional write-in:_______________________________________'''</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;">&#9634; </td>
+    <td></td>
+    <td align="center" colspan="2">If your vote can no longer be counted for your write-in, it will:</td>
+    <td></td>
+    <td style="border-left: 2px solid #000000;">&#9634; </td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td rowspan="2">?</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Green candidates they endorsed. After that, it would go to any Green, then to any non-Green they endorsed.</td>
+    <td rowspan="2" style="vertical-align:top">...not be counted. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Bruce Banner).</td>
+    <td rowspan="2">?</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
 &#9634; <big>Republican party</big> Optional write-in:_________________________________________ <br>
 &#9634; <big>Libertarian Party</big> Optional write-in:_________________________________________ <br>
 &#9634; <big>Democratic Party </big> Optional write-in:_________________________________________ <br>
 &#9634; <big>Independent</big> Optional write-in:_________________________________________ <br>
 </td></tr></table>
-</td></tr></table>
-
-<big>AND OPTIONALLY</big><br>
-
-<table border-left-width='20px' border-left-color='black'><tr><td style="border-left: 10px solid #000000;"  >
-&#9634; <big>Do not transfer</big> my vote if my chosen candidate can't use it; let it run out instead. If I voted for a party and did not write in a candidate, do not transfer to the local candidate from that party (that is, the one listed above.)<br>
-</td></tr></table>
-
 </td></tr></table>
 
 === Did you skip any niggling details in the procedure above? ===
