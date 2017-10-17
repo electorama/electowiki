@@ -126,7 +126,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">?</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">....be transferred to whichever survives and has the most votes of the <br>Green candidates he endorsed.<br> These are: Alec Holland (d5, G), Hal Jordan (d4, G), <br>Jennifer Walters (d9, G). If none of these survive, it would go to any Green, <br>then to any non-Green endorsed by Banner. </td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Green candidates he endorsed:<br> Alec Holland (d5), Hal Jordan (d4), or Jennifer Walters (d9).<br> After that, if still not used, it would go to any Green, then to<br> any non-Green who Banner has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">?</td>
     <td style="border-left: 2px solid #000000;"></td>
