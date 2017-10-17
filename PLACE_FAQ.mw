@@ -103,6 +103,181 @@ Choose '''one''' local candidate '''or''' party. If you choose a party or ''Inde
 <table border-left-width='20px' border-left-color='black'><tr><td style="border-left: 10px solid #000000;"  >
 <table border-left-width='20px' border-left-color='black'><tr><td style="border-left: 10px solid #000000;"  >
 Local candidates:<br>
+<table>
+  <tr>
+    <td></td>
+    <td rowspan="2">?</td>
+    <td align="center" colspan="2"><big>'''Bruce Banner'''</big></td>
+    <td rowspan="2">?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td align="center" colspan="2">'''Green Party'''</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;">?</td>
+    <td></td>
+    <td align="center" colspan="2">If your vote can no longer be counted for him, it will:</td>
+    <td></td>
+    <td style="border-left: 2px solid #000000;">?</td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td rowspan="2">?</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">....be transferred to whichever survives and has the most votes of the <br>Green candidates he endorsed.<br> These are: Alec Holland (d5, G), Hal Jordan (d4, G), <br>Jennifer Walters (d9, G). If none of these survive, it would go to any Green, <br>then to any non-Green endorsed by Banner. </td>
+    <td rowspan="2" style="vertical-align:top">...not be counted</td>
+    <td rowspan="2">?</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td></td>
+    <td rowspan="2">?</td>
+    <td align="center" colspan="2"><big>'''Bruce Wayne'''</big></td>
+    <td rowspan="2">?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td align="center" colspan="2">'''Republican party'''</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;">?</td>
+    <td></td>
+    <td align="center" colspan="2">If your vote can no longer be counted for him, it will:</td>
+    <td></td>
+    <td style="border-left: 2px solid #000000;">?</td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td rowspan="2">?</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Republican candidates he endorsed.<br> These are: Helen Parr (d9, R), Carol Danvers (d4, R), <br>Tony Stark (d2, R), Dennis Colt (d1, R). If none of these survive, <br>it would go to any Republican, then to any non-Republican endorsed by Wayne. </td>
+    <td rowspan="2" style="vertical-align:top">...not be counted</td>
+    <td rowspan="2">?</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td></td>
+    <td rowspan="2">?</td>
+    <td align="center" colspan="2"><big>'''Diana Prince'''</big></td>
+    <td rowspan="2">?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td align="center" colspan="2">'''Libertarian Party'''</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;">?</td>
+    <td></td>
+    <td align="center" colspan="2">If your vote can no longer be counted for her, it will:</td>
+    <td></td>
+    <td style="border-left: 2px solid #000000;">?</td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td rowspan="2">?</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Libertarian candidates she endorsed.<br> These are: James Logan (d10, L), Daniel Rand (d2, L), Jon Osterman (d12, L). <br>If none of these survive, it would go to any Libertarian, <br>then to any non-Libertarian endorsed by Prince. </td>
+    <td rowspan="2" style="vertical-align:top">...not be counted</td>
+    <td rowspan="2">?</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td></td>
+    <td rowspan="2">?</td>
+    <td align="center" colspan="2"><big>'''Peter Parker'''</big></td>
+    <td rowspan="2">?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td align="center" colspan="2">'''Democratic Party'''</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;">?</td>
+    <td></td>
+    <td align="center" colspan="2">If your vote can no longer be counted for him, it will:</td>
+    <td></td>
+    <td style="border-left: 2px solid #000000;">?</td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td rowspan="2">?</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Democratic candidates he endorsed.<br> These are: Charles Xavier (d10, D), Taylor Hebert (d7, D), Matt Murdock (d2, D), <br>Luke Cage (d4, D). If none of these survive, it would go to any Democratic, <br>then to any non-Democratic endorsed by Parker. </td>
+    <td rowspan="2" style="vertical-align:top">...not be counted</td>
+    <td rowspan="2">?</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td></td>
+    <td rowspan="2">?</td>
+    <td align="center" colspan="2"><big>'''Clark Kent'''</big></td>
+    <td rowspan="2">?</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td align="center" colspan="2">'''Independent'''</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;">?</td>
+    <td></td>
+    <td align="center" colspan="2">If your vote can no longer be counted for him, it will:</td>
+    <td></td>
+    <td style="border-left: 2px solid #000000;">?</td>
+  </tr>
+  <tr>
+    <td style="border-right: 2px solid #000000;"></td>
+    <td rowspan="2">?</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Independent candidates he endorsed.<br> These are: Steve Rogers (d1, I). If none of these survive, it would go to <br>any non-Independent endorsed by Kent. </td>
+    <td rowspan="2" style="vertical-align:top">...not be counted</td>
+    <td rowspan="2">?</td>
+    <td style="border-left: 2px solid #000000;"></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+
+
 &#9634; <big>'''Bruce Banner''',</big> Green Party. If this candidate can not use your vote, it will pass to one of Alec Holland (d5, G), Hal Jordan (d4, G), Jennifer Walters (d9, G) (whichever has the most votes.)<br>
 &#9634; <big>'''Bruce Wayne''',</big> Republican party. If this candidate can not use your vote, it will pass to one of Helen Parr (d9, R), Carol Danvers (d4, R), Tony Stark (d2, R), Dennis Colt (d1, R) (whichever has the most votes.)<br>
 &#9634; <big>'''Diana Prince''',</big> Libertarian Party. If this candidate can not use your vote, it will pass to one of James Logan (d10, L), Daniel Rand (d2, L), Jon Osterman (d12, L) (whichever has the most votes.)<br>
