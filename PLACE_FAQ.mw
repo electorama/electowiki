@@ -125,7 +125,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Green candidates he endorsed:<br> Alec Holland (d5), Hal Jordan (d4), or Jennifer Walters (d9).<br> After that, if still not used, it would go to any Green, then to<br> any non-Green who Banner has endorsed (list available).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Green candidates he endorsed:<br> Alec Holland (d5), Hal Jordan (d4), or Jennifer Walters (d9).<br> After that, if still not used, it would go to any Green, then to<br> any non-Green who Banner has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
@@ -158,7 +158,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Republican candidates he endorsed.<br> These are: Helen Parr (d9, R), Carol Danvers (d4, R), <br>Tony Stark (d2, R), Dennis Colt (d1, R). If none of these survive, <br>it would go to any Republican, then to any non-Republican endorsed by Wayne. </td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Republican candidates he endorsed:<br> Helen Parr (d9), Carol Danvers (d4), <br>Tony Stark (d2), Dennis Colt (d1).<br> After that, if still not used, it would go to any Republican, then to<br> any non-Republican who Wayne has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
@@ -191,7 +191,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Libertarian candidates she endorsed.<br> These are: James Logan (d10, L), Daniel Rand (d2, L), Jon Osterman (d12, L). <br>If none of these survive, it would go to any Libertarian, <br>then to any non-Libertarian endorsed by Prince. </td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Libertarian candidates she endorsed:<br> James Logan (d10), Daniel Rand (d2), Jon Osterman (d12).After that, if still not used, it would go to any Libertarian, then to<br> any non-Libertarian who Prince has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
@@ -224,7 +224,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Democratic candidates he endorsed.<br> These are: Charles Xavier (d10, D), Taylor Hebert (d7, D), Matt Murdock (d2, D), <br>Luke Cage (d4, D). If none of these survive, it would go to any Democrat, <br>then to any non-Democrat endorsed by Parker. </td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Democratic candidates he endorsed:<br> Charles Xavier (d10), Taylor Hebert (d7), Matt Murdock (d2), <br>Luke Cage (d4). After that, if still not used, it would go to any Democrat, then to<br> any non-Democrat who Parker has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
@@ -257,7 +257,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be transferred to whichever survives and has the most votes of the <br>Independent candidates he endorsed.<br> These are: Steve Rogers (d1, I). If none of these survive, it would go to <br>any non-Independent endorsed by Kent. </td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the independent candidates he endorsed:<br> Steve Rogers (d1).After that, if still not used, it would go to any independent, then to<br> any non-independent who Kent has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
