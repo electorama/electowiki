@@ -125,7 +125,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Green candidates he endorsed:<br> Alec Holland (d5), Hal Jordan (d4), or Jennifer Walters (d9).<br> After that, if still not used, it would go to any Green, then to<br> any non-Green who Banner has endorsed (list available).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Green candidates he endorsed:<br> Alec Holland (d5), Hal Jordan (d4), or Jennifer Walters (d9).<br> After that, if still unused, it would go to any Green, then to<br> any non-Green who Banner has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
@@ -158,7 +158,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Republican candidates he endorsed:<br> Helen Parr (d9), Carol Danvers (d4), <br>Tony Stark (d2), Dennis Colt (d1).<br> After that, if still not used, it would go to any Republican, then to<br> any non-Republican who Wayne has endorsed (list available).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Republican candidates he endorsed:<br> Helen Parr (d9), Carol Danvers (d4), <br>Tony Stark (d2), Dennis Colt (d1).<br> After that, if still unused, it would go to any Republican, then to<br> any non-Republican who Wayne has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
@@ -191,7 +191,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Libertarian candidates she endorsed:<br> James Logan (d10), Daniel Rand (d2), Jon Osterman (d12).After that, if still not used, it would go to any Libertarian, then to<br> any non-Libertarian who Prince has endorsed (list available).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Libertarian candidates she endorsed:<br> James Logan (d10), Daniel Rand (d2), Jon Osterman (d12<br>After that, if still unused, it would go to any Libertarian, then to<br> any non-Libertarian who Prince has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
@@ -224,7 +224,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Democratic candidates he endorsed:<br> Charles Xavier (d10), Taylor Hebert (d7), Matt Murdock (d2), <br>Luke Cage (d4). After that, if still not used, it would go to any Democrat, then to<br> any non-Democrat who Parker has endorsed (list available).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Democratic candidates he endorsed:<br> Charles Xavier (d10), Taylor Hebert (d7), Matt Murdock (d2), <br>Luke Cage (d4).<br> After that, if still unused, it would go to any Democrat, then to<br> any non-Democrat who Parker has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
@@ -257,7 +257,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the independent candidates he endorsed:<br> Steve Rogers (d1).After that, if still not used, it would go to any independent, then to<br> any non-independent who Kent has endorsed (list available).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the independent candidates he endorsed:<br> Steve Rogers (d1).After that, if still unused, it would go to any non-independent<br> who Kent has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
