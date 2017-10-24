@@ -139,13 +139,13 @@ Local candidates:<br>
   <tr>
     <td></td>
     <td rowspan="2">&rarr;</td>
-    <td align="center" colspan="2"><big>'''Bruce Wayne'''</big></td>
+    <td align="center" colspan="2"><big>'''Peter Parker'''</big></td>
     <td rowspan="2">&larr;</td>
     <td></td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
-    <td align="center" colspan="2">'''Republican party'''</td>
+    <td align="center" colspan="2">'''Democratic Party'''</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
   <tr>
@@ -158,7 +158,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Republican candidates he endorsed:<br> Helen Parr (d9), Carol Danvers (d4), <br>Tony Stark (d2), Dennis Colt (d1).<br> After that, if still unused, it would go to any Republican, then to<br> any non-Republican who Wayne has endorsed (list available).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Democratic candidates he endorsed:<br> Charles Xavier (d10), Taylor Hebert (d7), Matt Murdock (d2), <br>Luke Cage (d4).<br> After that, if still unused, it would go to any Democrat, then to<br> any non-Democrat who Parker has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
@@ -205,13 +205,13 @@ Local candidates:<br>
   <tr>
     <td></td>
     <td rowspan="2">&rarr;</td>
-    <td align="center" colspan="2"><big>'''Peter Parker'''</big></td>
+    <td align="center" colspan="2"><big>'''Bruce Wayne'''</big></td>
     <td rowspan="2">&larr;</td>
     <td></td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
-    <td align="center" colspan="2">'''Democratic Party'''</td>
+    <td align="center" colspan="2">'''Republican party'''</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
   <tr>
@@ -224,7 +224,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Democratic candidates he endorsed:<br> Charles Xavier (d10), Taylor Hebert (d7), Matt Murdock (d2), <br>Luke Cage (d4).<br> After that, if still unused, it would go to any Democrat, then to<br> any non-Democrat who Parker has endorsed (list available).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Republican candidates he endorsed:<br> Helen Parr (d9), Carol Danvers (d4), <br>Tony Stark (d2), Dennis Colt (d1).<br> After that, if still unused, it would go to any Republican, then to<br> any non-Republican who Wayne has endorsed (list available).</td>
     <td rowspan="2" style="vertical-align:top">...not be counted</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
