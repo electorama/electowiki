@@ -313,7 +313,7 @@ Parties/out-of-district write-ins:<br>
   <tr>
     <td></td>
     <td rowspan="2">&rarr;</td>
-    <td align="center" colspan="2"><big>'''Republican Party'''</big></td>
+    <td align="center" colspan="2"><big>'''Democratic Party'''</big></td>
     <td rowspan="2">&larr;</td>
     <td></td>
   </tr>
@@ -332,8 +332,8 @@ Parties/out-of-district write-ins:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Republican candidates they endorsed. After that, it would go to any Republican, then to any non-Republican they endorsed.</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Bruce Wayne).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Democratic candidates they endorsed. After that, it would go to any Democrat, then to any non-Democrat they endorsed.</td>
+    <td rowspan="2" style="vertical-align:top">...not be counted. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Jessica Jones).</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
@@ -381,7 +381,7 @@ Parties/out-of-district write-ins:<br>
   <tr>
     <td></td>
     <td rowspan="2">&rarr;</td>
-    <td align="center" colspan="2"><big>'''Democratic Party'''</big></td>
+    <td align="center" colspan="2"><big>'''Republican Party'''</big></td>
     <td rowspan="2">&larr;</td>
     <td></td>
   </tr>
@@ -400,8 +400,8 @@ Parties/out-of-district write-ins:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Democratic candidates they endorsed. After that, it would go to any Democrat, then to any non-Democrat they endorsed.</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Peter Parker).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Republican candidates they endorsed. After that, it would go to any Republican, then to any non-Republican they endorsed.</td>
+    <td rowspan="2" style="vertical-align:top">...not be counted. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Bruce Wayne).</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
