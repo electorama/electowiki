@@ -98,7 +98,7 @@ Assuming that there is one equal-population district (aka riding or constituency
 <table border='1px' width='80%'><tr><td>
 ''OFFICIAL BALLOT FOR THE STATE ELECTION - November 8, 2020''<br>
 '''Representative''' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''State of New Guernsey, District 3'''<br>
-Choose '''one''' local candidate '''or''' party. If you choose a party or ''Independent'', you may write in a candidate of that party from another district. (Further instructions, and a list of all candidates statewide, are available in the voting booth.)<br>
+Choose '''one''' local candidate '''or''' party. If you choose a party or ''Independent'', you may write in a candidate of that party from another district.<br>
 
 <table border-left-width='20px' border-left-color='black'><tr><td style="border-left: 10px solid #000000;"  >
 Local candidates:<br>
@@ -118,15 +118,15 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If your vote can no longer be counted for him, it will:</td>
+    <td align="center" colspan="2">If your vote can no longer be used to help him win, it will:</td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Green candidates he endorsed:<br> Alec Holland (d5), Hal Jordan (d4), or Jennifer Walters (d9).<br> After that, if still unused, it would go to any Green, then to<br> any non-Green whom Banner has endorsed (list available).</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a Green he endorsed:<br> Alec Holland (d5), Hal Jordan (d4), or Jennifer Walters (d9).<br> After that, if still unused, it would go to any Green, then to<br> any non-Green whom Banner has endorsed (list available).</td>
+    <td rowspan="2" style="vertical-align:top">...not be used</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
@@ -151,15 +151,15 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If your vote can no longer be counted for her, it will:</td>
+    <td align="center" colspan="2">If your vote can no longer be used to help her win, it will:</td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Democratic candidates she endorsed:<br> Peter Parker (d2), Charles Xavier (d10), Taylor Hebert (d7), <br>Luke Cage (d4).<br> After that, if still unused, it would go to any Democrat, then to<br> any non-Democrat whom Jones has endorsed (list available).</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a Democratic candidates she endorsed:<br> Peter Parker (d2), Charles Xavier (d10), Taylor Hebert (d7), <br>Luke Cage (d4).<br> After that, if still unused, it would go to any Democrat, then to<br> any non-Democrat whom Jones has endorsed (list available).</td>
+    <td rowspan="2" style="vertical-align:top">...not be used</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
@@ -184,15 +184,15 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If your vote can no longer be counted for her, it will:</td>
+    <td align="center" colspan="2">If your vote can no longer be used to help her win, it will:</td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Libertarian candidates she endorsed:<br> James Logan (d10), Daniel Rand (d2), Jon Osterman (d12<br>After that, if still unused, it would go to any Libertarian, then to<br> any non-Libertarian whom Prince has endorsed (list available).</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a Libertarian she endorsed:<br> James Logan (d10), Daniel Rand (d2), Jon Osterman (d12<br>After that, if still unused, it would go to any Libertarian, then to<br> any non-Libertarian whom Prince has endorsed (list available).</td>
+    <td rowspan="2" style="vertical-align:top">...not be used</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
@@ -217,15 +217,15 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If your vote can no longer be counted for him, it will:</td>
+    <td align="center" colspan="2">If your vote can no longer be used to help him win, it will:</td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the Republican candidates he endorsed:<br> Helen Parr (d9), Carol Danvers (d4), <br>Tony Stark (d2), Dennis Colt (d1).<br> After that, if still unused, it would go to any Republican, then to<br> any non-Republican whom Wayne has endorsed (list available).</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a Republican he endorsed:<br> Helen Parr (d9), Carol Danvers (d4), <br>Tony Stark (d2), Dennis Colt (d1).<br> After that, if still unused, it would go to any Republican, then to<br> any non-Republican whom Wayne has endorsed (list available).</td>
+    <td rowspan="2" style="vertical-align:top">...not be used</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
@@ -250,15 +250,15 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If your vote can no longer be counted for him, it will:</td>
+    <td align="center" colspan="2">If your vote can no longer be used to help him win, it will:</td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be counted for one of the independent candidates he endorsed:<br> Steve Rogers (d1).After that, if still unused, it would go to any non-independent<br> whom Kent has endorsed (list available).</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a candidate he endorsed:<br> Steve Rogers (d1).After that, if still unused, it would go to any non-independent<br> whom Kent has endorsed (list available).</td>
+    <td rowspan="2" style="vertical-align:top">...not be used</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
@@ -291,15 +291,15 @@ Parties/out-of-district write-ins:<br>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If your vote can no longer be counted for your write-in, it will:</td>
+    <td align="center" colspan="2">If your vote can no longer be used for your write-in, it will:</td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Green candidates they endorsed. After that, it would go to any Green, then to any non-Green they endorsed.</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Bruce Banner).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">....be used for a similar candidate, beginning with a Green they endorsed. After that, it would go to any Green, then to any non-Green they endorsed.</td>
+    <td rowspan="2" style="vertical-align:top">...not be used. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Bruce Banner).</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
@@ -325,15 +325,15 @@ Parties/out-of-district write-ins:<br>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If your vote can no longer be counted for your write-in, it will:</td>
+    <td align="center" colspan="2">If your vote can no longer be used for your write-in, it will:</td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Democratic candidates they endorsed. After that, it would go to any Democrat, then to any non-Democrat they endorsed.</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Jessica Jones).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">....be used for a similar candidate, beginning with a Democrat they endorsed. After that, it would go to any Democrat, then to any non-Democrat they endorsed.</td>
+    <td rowspan="2" style="vertical-align:top">...not be used. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Jessica Jones).</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
@@ -359,15 +359,15 @@ Parties/out-of-district write-ins:<br>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If your vote can no longer be counted for your write-in, it will:</td>
+    <td align="center" colspan="2">If your vote can no longer be used for your write-in, it will:</td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Libertarian candidates they endorsed. After that, it would go to any Libertarian, then to any non-Libertarian they endorsed.</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Diana Prince).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">....be used for a similar candidate, beginning with a Libertarian they endorsed. After that, it would go to any Libertarian, then to any non-Libertarian they endorsed.</td>
+    <td rowspan="2" style="vertical-align:top">...not be used. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Diana Prince).</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
@@ -393,15 +393,15 @@ Parties/out-of-district write-ins:<br>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If your vote can no longer be counted for your write-in, it will:</td>
+    <td align="center" colspan="2">If your vote can no longer be used for your write-in, it will:</td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the Republican candidates they endorsed. After that, it would go to any Republican, then to any non-Republican they endorsed.</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Bruce Wayne).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">....be used for a similar candidate, beginning with a Republican they endorsed. After that, it would go to any Republican, then to any non-Republican they endorsed.</td>
+    <td rowspan="2" style="vertical-align:top">...not be used. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Bruce Wayne).</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
@@ -427,15 +427,15 @@ Parties/out-of-district write-ins:<br>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If your vote can no longer be counted for your write-in, it will:</td>
+    <td align="center" colspan="2">If your vote can no longer be used for your write-in, it will:</td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">....be counted for one of the independent candidates they endorsed. After that, it would go to any non-independent they endorsed.</td>
-    <td rowspan="2" style="vertical-align:top">...not be counted. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Clark Kent).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">....be used for a similar candidate, beginning with a candidate they endorsed. After that, it would go to any non-independent they endorsed.</td>
+    <td rowspan="2" style="vertical-align:top">...not be used. If you do not write-in a candidate, this option ensures your vote is not counted for your local candidate (Clark Kent).</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
   </tr>
