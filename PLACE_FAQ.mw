@@ -125,7 +125,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a Green he endorsed:<br> Alec Holland (d5), Hal Jordan (d4), or Jennifer Walters (d9).<br> After that, if still unused, it would go to any Green, then to<br> any non-Green whom Banner has endorsed (list available).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a Green he endorsed:<br> Alec Holland (d5), Hal Jordan (d4), or Jennifer Walters (d9).</td>
     <td rowspan="2" style="vertical-align:top">...not be used</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
@@ -158,7 +158,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a Democratic candidates she endorsed:<br> Peter Parker (d2), Charles Xavier (d10), Taylor Hebert (d7), <br>Luke Cage (d4).<br> After that, if still unused, it would go to any Democrat, then to<br> any non-Democrat whom Jones has endorsed (list available).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a Democratic candidates she endorsed:<br> Peter Parker (d2), Charles Xavier (d10), Taylor Hebert (d7), <br>Luke Cage (d4).</td>
     <td rowspan="2" style="vertical-align:top">...not be used</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
@@ -224,7 +224,7 @@ Local candidates:<br>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
     <td rowspan="2">&rarr;</td>
-    <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a Republican he endorsed:<br> Helen Parr (d9), Carol Danvers (d4), <br>Tony Stark (d2), Dennis Colt (d1).<br> After that, if still unused, it would go to any Republican, then to<br> any non-Republican whom Wayne has endorsed (list available).</td>
+    <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a Republican he endorsed:<br> Helen Parr (d9), Carol Danvers (d4), <br>Tony Stark (d2), Dennis Colt (d1).</td>
     <td rowspan="2" style="vertical-align:top">...not be used</td>
     <td rowspan="2">&larr;</td>
     <td style="border-left: 2px solid #000000;"></td>
