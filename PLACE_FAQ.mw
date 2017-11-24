@@ -107,28 +107,37 @@ Choose '''one''' local candidate '''or''' party. If you choose a party or ''Inde
 <table border-left-width='20px' border-left-color='black'><tr><td style="border-left: 10px solid #000000;"  >
 <table>
   <tr>
-    <td></td>
-    <td rowspan="2">&rarr;</td>
-    <td align="center" colspan="2"><span style="font-size: 1rem">'''Ice Cream Party'''</span></td>
-    <td rowspan="2">&larr;</td>
-    <td></td>
+    <td align="center" colspan="4"><span style="font-size: 1.5rem">'''Ice Cream Party'''</span></td>
   </tr>
   <tr>
     <td >&#9634; </td>
-    <td align="center" colspan="2">'''Chocolate Ice Cream'''</td>
-    <td ></td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Chocolate Ice Cream'''</span>&nbsp;&nbsp;&nbsp;If he loses, your vote will transfer to a similar candidate, beginning with an Ice Cream he endorsed, such as Mint (d5), Rocky Road (d4), or Coffee (d9).</td>
   </tr>
+  <tr>
+    <td rowspan="3">&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Other Ice Cream candidate'''</span></td>
+  </tr>
+  <tr>
+    <td rowspan="2">You may write in your first choice here:</br>If you don’t, your vote will first go to the </br>Ice Cream with the most direct votes.</td>
+    <td align="left" ><span style="font-size: 1.25rem">________________________________</span></td>
+    <td align="left"><span style="font-size: 1.25rem">_____</span></td>
+  </tr>
+  <tr>
+    <td align="left"><span style="font-size: 1.25rem">Candidate name (list available)</span></td>
+    <td align="left"><span style="font-size: 1.25rem">District #</span></td>
+  </tr>
+</table>
+<table>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If he loses, your vote will transfer to a similar candidate, beginning with an Ice Cream he endorsed, such as Mint (d5), Rocky Road (d4), Coffee (d9).
-</td>
+    <td align="center" colspan="2"> </td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;"></td>
-    <td rowspan="2">&rarr;</td>
+    <td rowspan="2"></td>
     <td rowspan="2" style="border-right: 2px dotted #888;">...be used for a similar candidate, beginning with a Green he endorsed:<br> Alec Holland (d5), Hal Jordan (d4), or Jennifer Walters (d9).</td>
     <td rowspan="2" style="vertical-align:top">...not be used</td>
     <td rowspan="2">&larr;</td>
