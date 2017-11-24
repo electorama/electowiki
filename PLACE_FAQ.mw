@@ -76,14 +76,15 @@ The various #PropRep methods have more similarities and common advantages than d
 
 Assuming that there is one equal-population district (aka riding or constituency) per seat, and that the parties have already nominated candidates by district, here are the steps:
 
-# Before the election, candidates may endorse other candidates. From the perspective of candidate X in party Y, this divides other candidates into 4 groups:
-#* "Same faction": those X endorses who are in party Y
-#* "Same party": those who are in party Y but who don't get endorsed by X.
-#* "Allies": Those X endorses who are not in party Y
-#* "Opponents": Those not in party Y who are not endorsed by X.
-# The ballot lists the candidates running locally, and also has a write-in slot for each party. You can choose a local candidate, choose a party, or choose a party and write in a candidate from another district.
-#* There is also a way to check "do not transfer" when choosing a local candidate, or "do not transfer to local candidates" when choosing a party.
-# Ballots are tallied, and any candidate who got less than 25% of the local vote is eliminated (unless they got more local votes than any other). For these purposes, the at-large percentage of party-only votes are added to each party's total. So if candidate X got 20% of their district and 6% of the voters in all districts voted for that party without choosing a candidate, X would pass the 25% threshold.
+# Before the election, candidates may endorse other candidates through some official, public means. This determines how votes for any given candidate (let's call them X) will be transferred if X loses. In order, the vote will pass through the following groups, until it's used up by a winning candidate.
+## "Same faction": same-party candidates endorsed by X. To discourage people from running purely as vote funnels for a singled candidate, if X endorses any same-faction candidates, they must endorse at least 2. There may also be rules on the maximum number of same-faction candidates, to simplify including a full list on the ballot.
+## "Same party": same-party candidates not endorsed by X.
+## "Allies": endorsed by X but not in X's party.
+## That leaves "Opponents", those who are neither endorsed by, nor in the same party as, X. These will never get a transferred vote from X; if they are all that remain, the ballot is considered "exhausted".
+# The ballot lists the candidates running locally, and also has a write-in slot for each party. You can choose a local candidate, choose a party, or write in a candidate from another district.
+#* If you check the write-in line for a given party but do not write in a valid candidate, your vote will simply pass through that party's candidates in order of direct votes until it's used up or they run out and it's exhausted.
+# Ballots are tallied, and any candidate who got less than 25% of the local vote is eliminated (unless they got more local votes than any other).
+#* For these purposes, the at-large percentage of party-only votes are added to each party's total. So if candidate X got 20% of their district and 6% of the voters in all districts voted for that party without choosing a candidate, X would pass the 25% threshold.
 # Votes for eliminated candidates are transferred (unless the voter opted out). They go first to "same faction", in descending order of raw vote total; then "Same party", again by vote total; and finally to "allies", again in vote order. If all these groups run out, a ballot is exhausted.
 # Any candidate who gets a "quota" of votes wins, and the excess portion of all their votes (above what they needed to win) is transferred.
 #* A "quota" is defined as V/(S+1), where V is the total number of votes and S is the number of seats. So in an election for 9 seats, a quota would be 10% of the total votes, or 90% of the average district's votes.
