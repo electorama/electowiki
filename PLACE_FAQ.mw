@@ -97,29 +97,29 @@ Assuming that there is one equal-population district (aka riding or constituency
 
 === What would a sample ballot look like? ===
 <table border='1px' width='85%'><tr><td>
-''OFFICIAL BALLOT FOR THE STATE ELECTION - November 8, 2020''<br>
-'''Representative''' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''State of New Guernsey, District 3'''<br>
+''OFFICIAL BALLOT FOR THE STATE DESSERT ELECTION - November 8, 2020''<br>
+'''Representative''' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''State of Delicious, District 3'''<br>
 Choose '''one''' local candidate '''or''' party. If you choose a party or ''Independent'', you may write in a candidate of that party from another district.<br>
 
 <table border-left-width='20px' border-left-color='black'><tr><td style="border-left: 10px solid #000000;"  >
-Local candidates:<br>
 <table>
   <tr>
     <td></td>
     <td rowspan="2">&rarr;</td>
-    <td align="center" colspan="2"><big>'''Bruce Banner'''</big></td>
+    <td align="center" colspan="2"><span style="font-size: 1rem">'''Ice Cream Party'''</span></td>
     <td rowspan="2">&larr;</td>
     <td></td>
   </tr>
   <tr>
-    <td style="border-right: 2px solid #000000;"></td>
-    <td align="center" colspan="2">'''Green Party'''</td>
-    <td style="border-left: 2px solid #000000;"></td>
+    <td >&#9634; </td>
+    <td align="center" colspan="2">'''Chocolate Ice Cream'''</td>
+    <td ></td>
   </tr>
   <tr>
     <td style="border-right: 2px solid #000000;">&#9634; </td>
     <td></td>
-    <td align="center" colspan="2">If your vote can no longer be used to help him win, it will:</td>
+    <td align="center" colspan="2">If he loses, your vote will transfer to a similar candidate, beginning with an Ice Cream he endorsed, such as Mint (d5), Rocky Road (d4), Coffee (d9).
+</td>
     <td></td>
     <td style="border-left: 2px solid #000000;">&#9634; </td>
   </tr>
