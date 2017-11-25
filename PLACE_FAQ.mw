@@ -123,8 +123,6 @@ Choose '''one''' local candidate '''or''' party. If you choose a party or ''Inde
     <td align="left"><span style="font-size: 1rem">Candidate name (list available)</span></td>
     <td align="left"><span style="font-size: .75rem">District #</span></td>
   </tr>
-</table>
-<table>
   <tr>
     <td align="center" colspan="4"><span style="font-size: 1.5rem">'''Donut Party'''</span></td>
   </tr>
@@ -145,8 +143,6 @@ Choose '''one''' local candidate '''or''' party. If you choose a party or ''Inde
     <td align="left"><span style="font-size: 1rem">Candidate name (list available)</span></td>
     <td align="left"><span style="font-size: .75rem">District #</span></td>
   </tr>
-</table>
-<table>
   <tr>
     <td align="center" colspan="4"><span style="font-size: 1.5rem">'''Pie Party'''</span></td>
   </tr>
@@ -167,8 +163,6 @@ Choose '''one''' local candidate '''or''' party. If you choose a party or ''Inde
     <td align="left"><span style="font-size: 1rem">Candidate name (list available)</span></td>
     <td align="left"><span style="font-size: .75rem">District #</span></td>
   </tr>
-</table>
-<table>
   <tr>
     <td align="center" colspan="4"><span style="font-size: 1.5rem">'''Independent'''</span></td>
   </tr>
