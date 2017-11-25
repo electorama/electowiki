@@ -97,8 +97,6 @@ Assuming that there is one equal-population district (aka riding or constituency
 
 === What would a sample ballot look like? ===
 
-(Currently being worked on, ignore for now)
-
 <table border='1px' width='85%'><tr><td>
 ''OFFICIAL BALLOT FOR THE STATE DESSERT ELECTION - November 8, 2020''<br>
 '''Representative''' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''State of Delicious, District 3'''<br>
@@ -117,7 +115,73 @@ Choose '''one''' local candidate '''or''' party. If you choose a party or ''Inde
     <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Other Ice Cream candidate'''</span></td>
   </tr>
   <tr>
-    <td rowspan="2">You may write in your first choice here:<br>If you don’t, your vote will first go to the <br>Ice Cream with the most direct votes.</td>
+    <td rowspan="2">You may write in your first choice here:<br>''If you don’t, your vote will first go to the <br>Ice Cream with the most direct votes.''</td>
+    <td align="left" ><span style="font-size: 1.25rem">________________________________</span></td>
+    <td align="left"><span style="font-size: 1.25rem">_____</span></td>
+  </tr>
+  <tr>
+    <td align="left"><span style="font-size: 1rem">Candidate name (list available)</span></td>
+    <td align="left"><span style="font-size: .75rem">District #</span></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td align="center" colspan="4"><span style="font-size: 1.5rem">'''Donut Party'''</span></td>
+  </tr>
+  <tr>
+    <td ></td>
+    <td align="left" colspan="3">(No Donut candidate running in this district)</td>
+  </tr>
+  <tr>
+    <td rowspan="3">&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Other Donut candidate'''</span></td>
+  </tr>
+  <tr>
+    <td rowspan="2">You may write in your first choice here:<br>''If you don’t, your vote will first go to the <br>Donut with the most direct votes.''</td>
+    <td align="left" ><span style="font-size: 1.25rem">________________________________</span></td>
+    <td align="left"><span style="font-size: 1.25rem">_____</span></td>
+  </tr>
+  <tr>
+    <td align="left"><span style="font-size: 1rem">Candidate name (list available)</span></td>
+    <td align="left"><span style="font-size: .75rem">District #</span></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td align="center" colspan="4"><span style="font-size: 1.5rem">'''Pie Party'''</span></td>
+  </tr>
+  <tr>
+    <td >&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Key Lime Pie'''</span>&nbsp;&nbsp;&nbsp;If she loses, your vote will transfer to a similar candidate, beginning with a Pie he endorsed, such as Lemon (d9), Banana Cream (d4), or Ginger Cream (d2)</td>
+  </tr>
+  <tr>
+    <td rowspan="3">&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Other Ice Cream candidate'''</span></td>
+  </tr>
+  <tr>
+    <td rowspan="2">You may write in your first choice here:<br>''If you don’t, your vote will first go to the <br>Pie with the most direct votes.''</td>
+    <td align="left" ><span style="font-size: 1.25rem">________________________________</span></td>
+    <td align="left"><span style="font-size: 1.25rem">_____</span></td>
+  </tr>
+  <tr>
+    <td align="left"><span style="font-size: 1rem">Candidate name (list available)</span></td>
+    <td align="left"><span style="font-size: .75rem">District #</span></td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td align="center" colspan="4"><span style="font-size: 1.5rem">'''Independent'''</span></td>
+  </tr>
+  <tr>
+    <td >&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Fruitcake'''</span>&nbsp;&nbsp;&nbsp;If he loses, your vote will transfer to a similar candidate, beginning with a independent he endorsed, such as Rhubarb Crumble (d1).</td>
+  </tr>
+  <tr>
+    <td rowspan="3">&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Other independent candidate'''</span></td>
+  </tr>
+  <tr>
+    <td rowspan="2">You '''must''' write in your first choice here:<br>''If you check this option but don’t write in, <br>your vote will not be counted.''</td>
     <td align="left" ><span style="font-size: 1.25rem">________________________________</span></td>
     <td align="left"><span style="font-size: 1.25rem">_____</span></td>
   </tr>
