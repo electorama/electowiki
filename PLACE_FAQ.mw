@@ -196,6 +196,14 @@ A few; see [[PLACE voting#Niggling details]]. This includes rules:
 * About how vote transfers work for independent candidates (those without a party)
 * About how extra territory should be assigned to winners
 
+=== Candidate eligibility ===
+
+Deciding which candidates run for which parties in which districts is outside the scope of PLACE voting per se. However, it is recommended that:
+
+* Candidates should be relatively free to choose which district to run in. At the very least, you should be able to run in any district if you have lived or work in or "near" it at any time in the last few years. ("Near" can of course be given some suitably-precise legal definition.)
+* Parties should still have some sort of democratic (member-driven) process for deciding one candidate per district.
+* There should be some limit on total candidates per district (perhaps 5 or 6), and that the candidates with the most signatures should qualify for ballot status. This could mean zero independent candidates running in some districts and more than one in others.
+
 == PLACE voting: method design (why) ==
 
 === Who designed PLACE voting and why? ===
