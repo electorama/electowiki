@@ -42,14 +42,6 @@ Each voting booth will have:
 ** Each candidate will be allowed to submit a brief under-50-word statement which will go with their name
 * An explanation of the PLACE rules, with appropriate examples (similar to this FAQ)
 
-==== Niggling detail 2: Rules for "Do not transfer" and for party-only votes ====
-
-* If a voter chooses a local candidate and marks "do not transfer", their vote will be exhausted as soon as that candidate is eliminated or elected.
-** The same if a voter writes in a nonlocal candidate and marks "do not transfer". (Although this is expected to be rare)
-* If a voter chooses a party, their vote will go to any member of that party, in descending order of raw vote total; and then will be exhausted when all members of that party are elected or eliminated.
-** If a voter chooses a party and marks "do not transfer to local candidates", then it will be as above, except that their vote will skip over any candidates from that party running locally.
-* The boxes for "do not transfer" (next to local candidates) and "do not transfer to local candidates" (next to party/write-in slots) are considered equivalent; there are two and their wording is different merely as a convenience.
-
 ==== Niggling detail 3: Elimination and the 25% threshold ====
 
 If a candidate gets more than 25% of the local vote, and/or the most votes, from a district where they are not running, they will not be eliminated, and will be considered to be running in all districts in which they passed the threshold. In that case, they will not be eliminated as long as they would survive in one of those districts. For instance, even if one of those seats is filled, they will not be eliminated until they all are.
