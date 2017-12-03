@@ -9,7 +9,7 @@ It assumes the voters have been divided up into one equal-population riding (aka
 #* "Opponents": Those not in party Y who are not endorsed by X.
 # The ballot lists the candidates running locally, and also has a write-in slot for each party. You can choose a local candidate, choose a party, or choose a party and write in a candidate from another district.
 # Ballots are tallied, and any candidate who got less than 25% of the local vote is eliminated (unless they got more local votes than any other).
-# Votes for eliminated candidates are transferred (unless the voter opted out). They go first to "same faction", in descending order of raw vote total; then "Same party", again by vote total; and finally to "allies", again in vote order. If all these groups run out, a ballot is exhausted.
+# Votes for eliminated candidates are transferred. They go first to "same faction", in descending order of raw vote total; then "Same party", again by vote total; and finally to "allies", again in vote order. If all these groups run out, a ballot is exhausted.
 # Any candidate who gets a "quota" of votes wins, and the excess portion of all their votes (above what they needed to win) is transferred.
 #* A "quota" is defined as V/(S+1), where V is the total number of votes and S is the number of seats. So in an election for 9 seats, a quota would be 10% of the total votes, or 90% of the average district's votes.
 #* If one candidate got two quotas of votes, then half of each of those votes would be "excess" and would be transferred. Thus, transfers can involve partial votes.
