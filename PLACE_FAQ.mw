@@ -372,7 +372,13 @@ MMP is a #PropRep method, so it has all the advantages shared by all such method
 
 === How does PLACE compare to other newly-proposed proportional methods? ===
 
-The theory and practice of designing voting methods has advanced substantially in the last 20 years, and PLACE is just one result of that. I've seen various other proposals which I consider to be superior to STV, OLPR, and MMP, such as [http://www.fairvote.ca/ruralurbanproportional/ Rural Urban Proportional]. I can imagine that it might be possible to design something better than PLACE, or something that's just as good but for whatever reason can get more support.
+The theory and practice of designing voting methods has advanced substantially in the last 20 years, and PLACE is just one result of that. The main ideas that have been drawn from other work are:
+
+- STV transfers. Actually, Bucklin Transferable Voting transfers would be even better from a theoretical perspective, but then you'd have to explain what those are.
+- Biproportionality, a la Fair Majority Voting or Ramirez et al 2008.
+- Automatic delegation to predeclared preferences; in this case, partial delegation, as they're partial preferences.
+
+I've seen various other proposals which I consider to be superior to STV, OLPR, and MMP, such as [http://www.fairvote.ca/ruralurbanproportional/ Rural Urban Proportional]. I can imagine that it might be possible to design something better than PLACE, or something that's just as good but for whatever reason can get more support.
 
 It's impossible to discuss the relative advantages and disadvantages of all possible methods here. Discussing various methods is beneficial insofar as it makes it more likely that one of them will pass, but becomes harmful if it devolves into warring camps each highlighting the disadvantages of opposing methods.
 
