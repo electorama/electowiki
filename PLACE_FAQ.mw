@@ -208,6 +208,14 @@ Deciding which candidates run for which parties in which districts is outside th
 
 All of the above are merely recommendations. More important are the local political laws, traditions, and conditions.
 
+== What about electoral fusion (one candidate endorsed by multiple parties?) ==
+
+In jurisdictions which allow electoral fusion, a multi-party candidate would appear on the ballot multiple times, once per party that endorses them. All their votes would be counted the same, but they would be transferred according to which ballot line the voter had chosen them under.
+
+Say candidate William Orange was running for both the Yellow and Red parties; and that of the 10,000 votes in his district, he got 2,000 as a Yellow and 1,000 as a Red; and that (for simplicity) he got no votes from outside his district. Thus his 3,000 total direct votes are more than 25% of the district votes, and he is not eliminated up-front. If he was eliminated later in the process, his 2,000 Yellow votes would first go to any Yellow candidate he'd endorsed, then to any other Yellow candidate, then to any non-Yellow candidate he'd endorsed; and similarly for his 1,000 Red votes. If all Red and Yellow candidates were eliminated before his votes had been used up, then it would cease to matter which line his votes had come on, because they'd just transfer to any remaining candidate he'd endorsed. (As always, "any candidate" means one at a time, in descending order of direct votes.)
+
+A "fusion" candidate would not be allowed to run in two districts at once.
+
 == PLACE voting: method design (why) ==
 
 === Who designed PLACE voting and why? ===
