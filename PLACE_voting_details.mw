@@ -1,23 +1,6 @@
 PLACE voting stands for "proportional, locally-accountable, candidate endorsement voting". It is a proportional voting method for electing legislators to a multi-seat body. Like [[GOLD voting]], Its main advantages are: simple ballots, minimal wasted votes, and "do no harm" (that is, it doesn't change FPTP outcomes unless they're non-proportional).
 
-It assumes the voters have been divided up into one equal-population riding (aka district or constituency) per seat being elected. Precisely one representative per area (riding, riding, or constituency) will win. Rules for parties to nominate candidates for each district are outside the scope of PLACE.
-
-# Before the election, candidates may endorse other candidates. From the perspective of candidate X in party Y, this divides other candidates into 4 groups. In descending order of preference, these are:
-#* "Same faction": those X endorses who are in party Y
-#* "Same party": those who are in party Y but who don't get endorsed by X.
-#* "Allies": Those X endorses who are not in party Y
-#* "Opponents": Those not in party Y who are not endorsed by X.
-# The ballot lists the candidates running locally, and also has a write-in slot for each party. You can choose a local candidate, choose a party, or choose a party and write in a candidate from another district.
-# Ballots are tallied, and any candidate who got less than 25% of the local vote is eliminated (unless they got more local votes than any other).
-# Votes for eliminated candidates are transferred. They go first to "same faction", in descending order of raw vote total; then "Same party", again by vote total; and finally to "allies", again in vote order. If all these groups run out, a ballot is exhausted.
-# Any candidate who gets a "quota" of votes wins, and the excess portion of all their votes (above what they needed to win) is transferred.
-#* A "quota" is defined as V/(S+1), where V is the total number of votes and S is the number of seats. So in an election for 9 seats, a quota would be 10% of the total votes, or 90% of the average district's votes.
-#* If one candidate got two quotas of votes, then half of each of those votes would be "excess" and would be transferred. Thus, transfers can involve partial votes.
-#* As soon as a candidate is elected, all other candidates in the same district are eliminated.
-# Until all seats are full, the candidate that is farthest behind the frontrunner in their district is eliminated, one by one.
-#* Thus votes will move from weaker candidates to stronger ones until they make up full quotas and the seats fill up.
-# Each winning party assigns each district where they did not win to one of their winning candidates as "extra constituents".
-#* Thus, even if your party did not win in your district, you will be a constituent for a representative from your party; you'll still have "your" representative to listen to your petitions.
+Most of PLACE is described at [[PLACE FAQ]]. Here are the details that aren't:
 
 === Niggling details ===
 
@@ -25,9 +8,11 @@ There are a few extra rules for clarification and edge cases:
 
 ==== Niggling detail 0: Endorsement rules ====
 
-If a candidate has any within-party ("same faction") endorsements, he must have at least 3 of them (or at least half of the other candidates running in his party, rounded down; whichever is less). This helps prevent unserious candidates from running merely as "vote funnels" for a single specific serious candidate.
+If a candidate endorses any within-party ("same faction") candidates, he must do so to at least 3 of them (or at least half of the other candidates running in his party, rounded down; whichever is less). This helps prevent unserious candidates from running merely as "vote funnels" for a single specific serious candidate.
 
 A candidate may endorse no more than half of all other candidates across all parties, and may not make more endorsements than the number of seats up for election (or 5, whichever is greater). This includes both within-party and out-of-party endorsements.
+
+There may also be an upper limit on the number of within-party endorsements, for reasons of ballot space.
 
 A candidate may reject an endorsement from another candidate. Rejected endorsements are not valid.
 
@@ -96,11 +81,9 @@ This method also keeps all the strong points of the current voting system. (The 
 
 * Candidate endorsements should offer at least two levels (endorsed or unendorsed) and should take account of party. I think that 2 levels of endorsement (endorsed or not) at 2 levels of party sameness (same or not) is a good amount. The method would work with as few as 2 levels and there could be a rule for the order between "unendorsed same party" and "endorsed different party". So simplification is possible on this but not much.
 
-* Voting for either a same-district candidate or writing in an other-district candidate is pretty fundamental to the method. Leaving out the "do not delegate" option would not break outcomes but might be a deal-breaker for some voters so I think it's worth keeping it. Leaving out the "write in party only" option would change little.
+* Voting for either a same-district candidate or writing in an other-district candidate is pretty fundamental to the method. Leaving out the "write in party only" option would change little.
 
 * I do not see a way to further simplify the transformation into a preference ballot.
-
-* The pre-elimination step could be simplified to "eliminate all but top 2". This would make outcomes marginally worse in rare cases but is not a big deal.
 
 * The STV transfer process is already as simple as possible.
 
