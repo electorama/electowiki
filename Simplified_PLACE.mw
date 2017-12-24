@@ -1,0 +1,42 @@
+Assuming that there is one equal-population district (aka riding or constituency) per seat, and that the parties have already nominated candidates by district, here are the steps:
+
+# The ballot lists the candidates running locally, and also has a write-in slot for each party. You can choose a local candidate, choose a party, or choose a party and write in a candidate from another district.
+# Ballots are tallied, and any candidate who got less than 25% of the local vote is eliminated (unless they got more local votes than any other).
+# Votes for eliminated candidates are transferred. They go to candidates in the same party, in descending order of raw vote total.
+# Any candidate who gets a "quota" of votes wins, and the excess portion of all their votes (above what they needed to win) is transferred.
+#* A "quota" is defined as V/(S+1), where V is the total number of votes and S is the number of seats. So in an election for 9 seats, a quota would be 10% of the total votes, or 90% of the average district's votes.
+#* If one candidate got two quotas of votes, then half of each of those votes would be "excess" and would be transferred. Thus, transfers can involve partial votes.
+#* As soon as a candidate is elected, all other candidates in the same district are eliminated.
+# Until all seats are full, the candidate that is farthest behind the frontrunner in their district is eliminated, one by one.
+#* Thus votes will move from weaker candidates to stronger ones until they make up full quotas and the seats fill up.
+# Each winning party assigns each district where they did not win to one of their winning candidates as "extra constituents".
+#* Thus, even if your party did not win in your district, you will be a constituent for a representative from your party; you'll still have "your" representative to listen to your petitions.
+
+== What would a sample ballot look like? ==
+<table border='1px' width='80%'><tr><td>
+''OFFICIAL BALLOT FOR THE STATE ELECTION - November 8, 2020''<br>
+'''Representative''' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''State of New Guernsey, District 3'''<br>
+Choose '''one''' local candidate '''or''' party. If you choose a party or ''Independent'', you may write in a candidate of that party from another district. (Further instructions, and a list of all candidates statewide, are available in the voting booth.)<br>
+
+Local candidates:<br>
+&#9634; <big>'''Bruce Banner''',</big> Green Party. <br>
+&#9634; <big>'''Bruce Wayne''',</big> Republican party. <br>
+&#9634; <big>'''Diana Prince''',</big> Libertarian Party. <br>
+&#9634; <big>'''Peter Parker''',</big> Democratic Party. <br>
+&#9634; <big>'''Clark Kent''',</big> Independent. <br>
+
+<big>OR</big><br>
+Parties/out-of-district write-ins:<br>
+&#9634; <big>Green Party</big> Optional write-in:_________________________________________ <br>
+&#9634; <big>Republican party</big> Optional write-in:_________________________________________ <br>
+&#9634; <big>Libertarian Party</big> Optional write-in:_________________________________________ <br>
+&#9634; <big>Democratic Party </big> Optional write-in:_________________________________________ <br>
+&#9634; <big>Independent</big> Optional write-in:_________________________________________ <br>
+
+</td></tr></table>
+
+== Compared to PLACE ==
+
+This voting method is like PLACE, without endorsements. The problem is that votes for parties whose candidates are frequently eliminated by the 25% threshold can end up being wasted. Also, there is no ability for a leader of some community to run as an independent in order to negotiate for that community's interests with their endorsement power.
+
+Nonetheless, this is a proportional method. Unlike PLACE voting, this is probably more favorable to existing large parties than other proportional representation methods.

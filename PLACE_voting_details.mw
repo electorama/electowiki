@@ -1,0 +1,90 @@
+PLACE voting stands for "proportional, locally-accountable, candidate endorsement voting". It is a proportional voting method for electing legislators to a multi-seat body. Like [[GOLD voting]], Its main advantages are: simple ballots, minimal wasted votes, and "do no harm" (that is, it doesn't change FPTP outcomes unless they're non-proportional).
+
+Most of PLACE is described at [[PLACE FAQ]]. Here are the details that aren't:
+
+=== Niggling details ===
+
+There are a few extra rules for clarification and edge cases:
+
+==== Niggling detail 0: Endorsement rules ====
+
+If a candidate endorses any within-party ("same faction") candidates, he must do so to at least 3 of them (or at least half of the other candidates running in his party, rounded down; whichever is less). This helps prevent unserious candidates from running merely as "vote funnels" for a single specific serious candidate.
+
+A candidate may endorse no more than half of all other candidates across all parties, and may not make more endorsements than the number of seats up for election (or 5, whichever is greater). This includes both within-party and out-of-party endorsements.
+
+There may also be an upper limit on the number of within-party endorsements, for reasons of ballot space.
+
+A candidate may reject an endorsement from another candidate. Rejected endorsements are not valid.
+
+==== Niggling detail 1: Information available in the voting booth ====
+
+Each voting booth will have:
+
+* A list of all candidates in all districts (all eligible write-ins), along with lists of "faction" and "ally" endorsements for each.
+** '''Exception''': in elections involving 30 seats or more, districts may be aggregated into "megadistricts" of less than 30 districts each, and information provided only for candidates within the local "megadistrict". Candidates outside the "megadistrict" are still valid write-ins; the grouping only affects the information provided in the booth.
+** The "faction" information for each party will also be available in the form of a matrix, where columns are endorsers and rows are endorsees, and "similar" candidates (those getting correlated endorsements) are listed near to each other. Rows and columns will use the same ordering of course. There will be one matrix per party, so the maximum size of a matrix would be 29x29.
+** Each eligible write-in candidate will have an optional error-resistant 3-letter code, for people who can't spell their name.
+** Each candidate will be allowed to submit a brief under-50-word statement which will go with their name
+* An explanation of the PLACE rules, with appropriate examples (similar to this FAQ)
+
+==== Niggling detail 3: Elimination and the 25% threshold ====
+
+If a candidate gets more than 25% of the local vote, and/or the most votes, from a district where they are not running, they will not be eliminated, and will be considered to be running in all districts in which they passed the threshold. In that case, they will not be eliminated as long as they would survive in one of those districts. For instance, even if one of those seats is filled, they will not be eliminated until they all are.
+
+==== Niggling detail 4: Ties and Simultaneous Winners ====
+
+In the rare case that several candidates from separate ridings reach a full quota at the same time, the one with the fewest local votes is elected first, to allow the others to possibly accumulate a bigger surplus before winning. In the even rarer case that more than one candidate from the same riding reach a full quota at the same time, the one with more local votes is elected.
+
+In other cases of ties, they are resolved by initial vote totals, or if that doesn't break the tie, randomly (by drawing lots or some other random procedure).
+
+==== Niggling detail 5: Independent candidates ====
+
+All independent candidates are considered to be different parties for the purposes of the "same party" grouping, but the same party for the purposes of the "same faction" grouping. The upshot is that a vote for an independent candidate will go first to other independents she endorsed, then to non-independents she endorsed, then will be exhausted. It will never go to other independents she did not endorse.
+
+==== Niggling detail 6: Extra territory ====
+
+Parties are required to assign extra territory in such a way that roughly balances the total party vote for each candidate's full territory. That is to say, it should be impossible to improve that balance by changing the assignment of a single district. Aside from that, they are encouraged to respect geographic or demographic communities when assigning extra territory.
+
+== Proportional or semiproportional? ==
+
+PLACE is proportional in a two-party context. If there are more than two parties, though, it is only semiproportional; smaller parties without a clear regional character may get less than their proportional share. But if that happens, their votes will not be ignored; they will have a say on which of the larger parties gets more seats, and even on which candidates from that allied larger party win. Thus, a smaller party will be able to promote their issues by favoring those candidates who prioritize those issues. Also, if there are two competing party coalitions, with all voters choosing one of the alliances and all candidates preferring same-coalition candidates over opposite-coalition ones, then this will be fully proportional between the two coalitions.
+
+Note that other proportional voting methods sometimes are used with extra rules designed to stop fringe parties from winning seats. For instance, in the German mixed-member "proportional" method, a party that gets less than 5% or 2 direct seats does not get a proportional allotment of seats. Thus, technically speaking, even the German system is really only semiproportional, not truly proportional.
+
+== Advantages ==
+
+The advantages of this method are as follows. First, the advantages common to all proportional representation methods: 
+
+* Equality: partisan gerrymandering is impossible, and each party gets its fair share of seats.
+* Representation: Almost all voters are truly represented; even if you are a minority in your riding, your vote helps elect a candidate of a party you sympathize with.
+
+This method also keeps all the strong points of the current voting system. (The current system is horrible in general, but it still has its strong points.)
+
+* Simplicity: you just choose one candidate, and the ballot is short.
+* Accountability: voters, not parties, choose who is elected.
+* Unity: discourages splinter parties, because candidates without a strong local base of support are eliminated up-front.
+* Geography: Everyone has a representative who lives relatively close to them.
+
+== Similar methods ==
+
+[[GOLD voting]]: An older, slightly more complex version of PLACE.
+
+[[Open List/Delegated (OL/D) voting|OL/D voting]]: similar to GOLD, but without the constraint of one candidate per riding, and with a slightly weaker elimination rule.
+
+[[PACE voting]]: a similar system, for a nonpartisan context without ridings.
+
+[[SPACE voting]]: a summable version of PACE; simpler for voters, but more complex in terms of vote-counting.
+
+[[Proportional 3RD voting]]: an old version of PACE.
+
+== Simplifications possible? ==
+
+* Candidate endorsements should offer at least two levels (endorsed or unendorsed) and should take account of party. I think that 2 levels of endorsement (endorsed or not) at 2 levels of party sameness (same or not) is a good amount. The method would work with as few as 2 levels and there could be a rule for the order between "unendorsed same party" and "endorsed different party". So simplification is possible on this but not much.
+
+* Voting for either a same-district candidate or writing in an other-district candidate is pretty fundamental to the method. Leaving out the "write in party only" option would change little.
+
+* I do not see a way to further simplify the transformation into a preference ballot.
+
+* The STV transfer process is already as simple as possible.
+
+* Assigning extra district is cosmetic, so it would be fine to skip this step. Still, it emphasizes the fact that even those who do not win locally are still represented, so I think it's worth it.

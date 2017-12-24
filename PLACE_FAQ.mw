@@ -1,0 +1,550 @@
+== Basic questions ==
+
+=== What is this page? ===
+
+This is an FAQ about PLACE voting, a proportional voting method intended as a replacement for district-based choose-one plurality, aka FPTP, for electing a legislature. It also discusses related issues, such as the problems of FPTP and the advantages of proportional methods in general.
+
+=== What does PLACE stand for? ===
+
+Proportional, Locally-Accountable, Candidate Endorsement voting.
+
+== The problem ==
+
+=== What is FPTP? ===
+
+FPTP stands for First Past The Post, the voting method used by countries such as the US, the UK, and Canada. This is where you can vote for just one candidate and only among those running in your local district, and then whichever of those gets the most votes wins. It's also known as "plurality" or "choose-one plurality", and while most democracies do NOT use this method, among those that use single-member districts it is by far the most common, so sometimes "single-member districts" will mistakenly be used as a synonymous term.
+
+=== Why is FPTP bad? ===
+
+It leads to a large proportion of wasted votes (usually over 50%). This enables gerrymandering. Also, it tends to a two-party duopoly, which tends to be unaccountable, extremist, and acrimonious.
+
+=== How does FPTP waste votes? ===
+
+In FPTP, all votes that are not for the winning candidate are wasted. If there's more than 2 candidates, this can add up to over 50% already. Also, any portion of votes for the winning candidate that exceed the 50%+1 threshold needed to guarantee a win are also wasted.
+
+So in a district with 3 candidates that get 40%, 35%, and 25%, the wasted vote total is 60%, the sum of the two losing candidate totals. In a district with 2 candidates that get 75% and 25%, the wasted vote total is 50% -1; the losing vote total plus 1/3 of each winning vote.
+
+If your vote is wasted, you are effectively not represented.
+
+=== What is gerrymandering, and what does it have to do with wasted votes? ===
+
+Gerrymandering is the practice of drawing district lines in order to maximize wasted votes for your opponents. It's named after an 1812 Massachusetts state senate district signed into law by Elbridge Gerry, which was said to resemble a salamander. (Although Gerry's name is pronounced with a hard "g", the word "gerrymandering" is usually pronounced with a "j" sound at the start.)
+
+Modern computer-aided gerrymandering can be extremely effective, especially in areas where housing is highly segregated. Minority areas, which tend to vote reliably for one party, are used as pawns in engineering an advantage for one party. Gerrymandering can also be bipartisan, in which case it is used not to create a partisan advantage, but simply to ensure well-connected incumbents are re-elected (and sometimes, to get rid of incumbents who don't toe the party line).
+
+The most famous gerrymandered districts are the ones which look craziest when mapped, with filigreed edges and bizarre tentacled shapes. However, the heart of gerrymandering is engineering wasted votes, and these exist even in districts with sensible, compact shapes. A compact district can be highly gerrymandered, and a strangely-shaped one can be fair from a partisan perspective.
+
+Gerrymandering is worst in the US, because most other countries do not allow politicians to draw their own boundaries.
+
+Across time and space, gerrymandering has been used by various parties and groups. But in one time and place, it tends to favor one party. Right now, in the US House of Representatives, it favors the Republicans. As I write this in October 2017, the latest forecasts for what would happen if the House elections happened now are that the Republicans would get 46.2% of the two-party vote, but 52.4% of the seats (according to Decision Desk HQ).
+
+=== Aside from wasted votes and gerrymandering, what's bad about FPTP? ===
+
+Under FPTP, voters learn that votes for third-party candidates are almost always wasted, so there are strong incentives to only vote for the two biggest parties. That gives those two parties an advantage; in the language of commerce, they have unfair market power. Like any monopoly, over time they tend to abuse that power, becoming less and less accountable to voters as they pander more and more to political donors.
+
+Also, if politics has only two sides, all the political fights start to look zero-sum to those parties. Instead of looking for win-win solutions, their incentives are to take whatever political stance hurts the other party the most. Thus we have mudslinging campaigns and bad-faith legislative negotiations. It pays to hurt yourself in order to hurt one opponent more, because there is no third option who will come out unscathed.
+
+== The general solution: proportional representation ==
+
+=== What is proportional representation? ===
+
+Proportional representation is any voting method which ensures that a party (or any other group of voters who uniformly prefer the same large-enough set of candidates) will get approximately the same portion of seats as they have of votes. ("Approximately" in this case can usually be defined rigorously, but that definition varies for different proportional methods). It also refers to the entirety of any electoral system which uses such a voting method.
+
+=== What hashtag should I use for proportional representation? ===
+
+Unfortunately, the initials "PR" are highly ambiguous; they could refer to Puerto Rico, Public Relations, or a Pull Request (used by programmers to collaboratively fix computer code). But the full words "proportional representation" are too long. Thus, #PropRep.
+
+=== What does #PropRep have to do with wasted votes? ===
+
+Another definition of proportional representation methods is that they are designed to minimize wasted votes. When one party gets a seat proportion that is substantially better or worse than their vote proportion, it must be because they are wasting less or more of their voting power than average. Thus minimizing wasted votes implies getting a proportional result.
+
+In other words: if you want the best chance that your vote will matter and you will be represented, you should be looking for a #PropRep method.
+
+=== Is proportional representation just a theory? ===
+
+Certainly not! Over 80% of OECD countries use some form of #PropRep.
+
+=== Should advocates of different #PropRep methods work together? ===
+
+Of course. (Except for closed list, which is strictly worse than open list.)
+
+The various #PropRep methods have more similarities and common advantages than differences. Though it's worthwhile to debate which method is best, we should not lose sight of the fact that they're all vastly superior to FPTP. Thus, when this FAQ takes the position that PLACE is superior to other #PropRep methods, this should '''not''' be construed as opposition to those other methods.
+
+== PLACE voting: process (how) ==
+
+=== How does PLACE voting work? ===
+
+Assuming that there is one equal-population district (aka riding or constituency) per seat, and that the parties have already nominated candidates by district, here are the steps:
+
+# Before the election, candidates may endorse other candidates through some official, public means. This determines how votes for any given candidate (let's call them X) will be transferred if X loses. In order, the vote will pass through the following groups, until it's used up by a winning candidate.
+## "Same faction": same-party candidates endorsed by X. To discourage people from running purely as vote funnels for a singled candidate, if X endorses any same-faction candidates, they must endorse at least 2. There may also be rules on the maximum number of same-faction candidates, to simplify including a full list on the ballot.
+## "Same party": same-party candidates not endorsed by X.
+## "Allies": endorsed by X but not in X's party.
+## That leaves "Opponents", those who are neither endorsed by, nor in the same party as, X. These will never get a transferred vote from X; if they are all that remain, the ballot is considered "exhausted".
+# The ballot lists the candidates running locally, and also has a write-in slot for each party. You can choose a local candidate, choose a party, or write in a candidate from another district.
+#* If you check the write-in ("other party candidate") line for a given party but do not write in a valid candidate, your vote will be divided among that party's other (non-local to you) candidates, in proportion to how many direct votes each received. These vote fractions will be transferred as appropriate, as if they had been cast directly.
+# Ballots are tallied, and any candidate who got less than 25% of the local vote is eliminated (unless they got more local votes than any other).
+# Votes for eliminated candidates are transferred. They go first to "same faction", in descending order of raw vote total; then "Same party", again by vote total; and finally to "allies", again in vote order. If all these groups run out, a ballot is exhausted.
+#* Each vote is transferred according to the candidate it was originally cast for, not just according to the last candidate who held it.
+# Any candidate who gets a "quota" of votes wins, and the excess portion of all their votes (above what they needed to win) is transferred.
+#* A "quota" is defined as V/(S+1), where V is the total number of votes and S is the number of seats. So in an election for 9 seats, a quota would be 10% of the total votes, or 90% of the average district's votes.
+#* If one candidate got two quotas of votes, then half of each of those votes would be "excess" and would be transferred. Thus, transfers can involve partial votes.
+#* As soon as a candidate is elected, all other candidates in the same district are eliminated.
+# Until all seats are full, the candidate that is farthest behind the frontrunner in their district is eliminated, one by one.
+#* Thus votes will move from weaker candidates to stronger ones until they make up full quotas and the seats fill up.
+# Each winning party assigns each district where they did not win to one of their winning candidates as "extra constituents".
+#* Thus, even if your party did not win in your district, you will be a constituent for a representative from your party; you'll still have "your" representative to listen to your petitions.
+
+=== What would a sample ballot look like? ===
+
+There are at least two possibilities for ballot format. One is that voters would have a choice of ballots: a short version with only local candidates, and one or more possible long versions which cover(s) all candidates state-wide. The other possibility would look something like the following:
+
+<table border='1px' width='85%'><tr><td>
+''OFFICIAL BALLOT FOR THE STATE DESSERT ELECTION - November 8, 2020''<br>
+'''Representative''' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'''State of Delicious, District 3'''<br>
+Choose '''one''' local candidate '''or''' party. If you choose a party or ''Independent'', you may write in a candidate of that party from another district.<br>
+
+<table>
+  <tr>
+    <td align="center" colspan="4"><span style="font-size: 1.5rem">'''Ice Cream Party'''</span></td>
+  </tr>
+  <tr>
+    <td >&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Chocolate Ice Cream'''</span>&nbsp;&nbsp;&nbsp;If he loses, your vote will transfer to a similar candidate, beginning with an Ice Cream he endorsed, such as Mint (d5), Rocky Road (d4), or Coffee (d9).</td>
+  </tr>
+  <tr>
+    <td rowspan="3">&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Other Ice Cream candidate'''</span></td>
+  </tr>
+  <tr>
+    <td rowspan="2">You may write in your first choice here:<br>''If you don’t, your vote will first go to the <br>Ice Cream with the most direct votes.''</td>
+    <td align="left" ><span style="font-size: 1.25rem">________________________________</span></td>
+    <td align="left"><span style="font-size: 1.25rem">_____</span></td>
+  </tr>
+  <tr>
+    <td align="left"><span style="font-size: 1rem">Candidate name (list available)</span></td>
+    <td align="left"><span style="font-size: .75rem">District #</span></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="4"><span style="font-size: 1.5rem">'''Donut Party'''</span></td>
+  </tr>
+  <tr>
+    <td ></td>
+    <td align="left" colspan="3">(No Donut candidate running in this district)</td>
+  </tr>
+  <tr>
+    <td rowspan="3">&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Other Donut candidate'''</span></td>
+  </tr>
+  <tr>
+    <td rowspan="2">You may write in your first choice here:<br>''If you don’t, your vote will first go to the <br>Donut with the most direct votes.''</td>
+    <td align="left" ><span style="font-size: 1.25rem">________________________________</span></td>
+    <td align="left"><span style="font-size: 1.25rem">_____</span></td>
+  </tr>
+  <tr>
+    <td align="left"><span style="font-size: 1rem">Candidate name (list available)</span></td>
+    <td align="left"><span style="font-size: .75rem">District #</span></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="4"><span style="font-size: 1.5rem">'''Pie Party'''</span></td>
+  </tr>
+  <tr>
+    <td >&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Key Lime Pie'''</span>&nbsp;&nbsp;&nbsp;If she loses, your vote will transfer to a similar candidate, beginning with a Pie he endorsed, such as Lemon (d9), Banana Cream (d4), or Ginger Cream (d2)</td>
+  </tr>
+  <tr>
+    <td rowspan="3">&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Other Ice Cream candidate'''</span></td>
+  </tr>
+  <tr>
+    <td rowspan="2">You may write in your first choice here:<br>''If you don’t, your vote will first go to the <br>Pie with the most direct votes.''</td>
+    <td align="left" ><span style="font-size: 1.25rem">________________________________</span></td>
+    <td align="left"><span style="font-size: 1.25rem">_____</span></td>
+  </tr>
+  <tr>
+    <td align="left"><span style="font-size: 1rem">Candidate name (list available)</span></td>
+    <td align="left"><span style="font-size: .75rem">District #</span></td>
+  </tr>
+  <tr>
+    <td align="center" colspan="4"><span style="font-size: 1.5rem">'''Independent'''</span></td>
+  </tr>
+  <tr>
+    <td >&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Fruitcake'''</span>&nbsp;&nbsp;&nbsp;If he loses, your vote will transfer to a similar candidate, beginning with a independent he endorsed, such as Rhubarb Crumble (d1).</td>
+  </tr>
+  <tr>
+    <td rowspan="3">&#9634; </td>
+    <td align="left" colspan="3"><span style="font-size: 1.25rem">'''Other independent candidate'''</span></td>
+  </tr>
+  <tr>
+    <td rowspan="2">You '''must''' write in your first choice here:<br>''If you check this option but don’t write in, <br>your vote will not be counted.''</td>
+    <td align="left" ><span style="font-size: 1.25rem">________________________________</span></td>
+    <td align="left"><span style="font-size: 1.25rem">_____</span></td>
+  </tr>
+  <tr>
+    <td align="left"><span style="font-size: 1rem">Candidate name (list available)</span></td>
+    <td align="left"><span style="font-size: .75rem">District #</span></td>
+  </tr>
+</table>
+</td></tr></table>
+
+=== Did you skip any niggling details in the procedure above? ===
+
+A few; see [[PLACE voting details]]. This includes rules:
+
+* About information available in the voting booth
+* About rare cases where a candidate gets more votes from a district where they weren't running than from the one where they were.
+* About ties
+* About how vote transfers work for independent candidates (those without a party)
+* About how extra territory should be assigned to winners
+
+=== Candidate eligibility ===
+
+Deciding which candidates run for which parties in which districts is outside the scope of PLACE voting per se. However, it is recommended that:
+
+* Candidates should be relatively free to choose which district to run in. At the very least, you should be able to run in any district if you have lived or work in or "near" it at any time in the last few years. ("Near" can of course be given some suitably-precise legal definition.)
+* Parties should still have some sort of democratic (member-driven) process for deciding one candidate per district.
+* There should be some limit on total candidates per district (perhaps 5 or 6), and that the candidates with the most signatures should qualify for ballot status. This could mean zero independent candidates running in some districts and more than one in others.
+
+All of the above are merely recommendations. More important are the local political laws, traditions, and conditions.
+
+== What about electoral fusion (one candidate endorsed by multiple parties?) ==
+
+In jurisdictions which allow electoral fusion, a multi-party candidate would appear on the ballot multiple times, once per party that endorses them. All their votes would be counted the same, but they would be transferred according to which ballot line the voter had chosen them under.
+
+Say candidate William Orange was running for both the Yellow and Red parties; and that of the 10,000 votes in his district, he got 2,000 as a Yellow and 1,000 as a Red; and that (for simplicity) he got no votes from outside his district. Thus his 3,000 total direct votes are more than 25% of the district votes, and he is not eliminated up-front. If he was eliminated later in the process, his 2,000 Yellow votes would first go to any Yellow candidate he'd endorsed, then to any other Yellow candidate, then to any non-Yellow candidate he'd endorsed; and similarly for his 1,000 Red votes. If all Red and Yellow candidates were eliminated before his votes had been used up, then it would cease to matter which line his votes had come on, because they'd just transfer to any remaining candidate he'd endorsed. (As always, "any candidate" means one at a time, in descending order of direct votes.)
+
+A "fusion" candidate would not be allowed to run in two districts at once.
+
+== PLACE voting: method design (why) ==
+
+=== Who designed PLACE voting and why? ===
+
+PLACE was designed by Jameson Quinn, who felt that new advances in mechanism design could allow a better FPTP replacement than existing PR options.
+
+=== What are the design goals for PLACE? ===
+
+PLACE is designed to ensure that voters get maximum impact for minimum effort. It is also meant to encourage healthy politics.
+
+=== How does PLACE help voters get maximum impact for minimum effort? ===
+
+* '''Voters are free to vote for any candidate.''' Most proportional methods don't give that breadth of choice, because there isn't room for that many candidates on the ballot. PLACE finesses that by having only local candidates listed explicitly on the ballot, but still allowing non-local candidates as write-ins. In practice, this means that even if the candidate who most excites you is not currently in a nearby district, you'd still be able to vote for them. This increased freedom would also increase turnout, as more people would have somebody they're excited to vote for.
+
+* '''Voters do not have to make any decisions that might not have an impact.''' The best way to explain this is to contrast PLACE with STV (explained below). In STV, a diligent voter should rank almost all candidates, because theoretically some fraction of your vote might get passed all the way down your ranking to one of the final candidates. But it's also possible that your whole vote will be soaked up by your first-choice candidate, in which case all the work you're doing ranking beyond that is just wasted time. PLACE, on the other hand, doesn't ask you to make all those extra decisions about whom to rank second, third, etcetera, because when you choose your favorite you're making those decisions too. One important decision with maximum freedom is a lot easier and cleaner than a lot of less-important choices with less freedom in each.
+
+* '''Candidates cannot insulate themselves from accountability towards voters.''' Imagine the structurally "safest" incumbent there could be: running in a highly-favorable partisan district, and somehow able through crooked means to force most of her party to endorse her. Now imagine she does something to anger her constituents. Can they vote her out, while still favoring her party? In many proportional methods, the answer is "not really". But in PLACE, they can vote for any candidates from elsewhere who don't endorse her, or vote for her party but ensure that the vote doesn't transfer to her. Even if most of them don't do those things, as long as a substantial fraction of them do, she will probably be far enough back in the line for transferred votes that they won't trickle down to her. So they can indeed effectively hold her accountable.
+
+* '''The act of delegation itself can improve the bargaining power of minority groups and factions.''' Say there's a candidate who probably won't win, but has the support of a clear subgroup that amounts to a substantial fraction of a seat quota. Under FPTP, as individuals spread across many districts, that subgroup would have a very hard time getting their views heard (unless they are major political donors, of course). But under PLACE, the candidate can go to other candidates and say "Why should I endorse you? What can you offer my base? I'd like you to promise X." They'll take him seriously, because his endorsement is valuable. Essentially, union is strength; by simplifying the collective action problem for the subgroup, PLACE's delegation is making their voice stronger. As above, this should help PLACE boost turnout.
+
+=== How does PLACE encourage healthy politics? ===
+
+* '''Breaks the two-party duopoly.''' This is huge. Because it allows voters to vote for a third party without fear of wasting their vote, PLACE breaks politics out of a zero-sum situation. Thus, cooperation (positive-sum thinking) will be rewarded, and intransigence and spite and mudslinging (negative-sum actions) will be punished. The two parties will have greater accountability, and won't take so many voters for granted.
+
+* '''Doesn't lead to excessive party fragmentation.''' On the other hand, too many parties can also be a problem, as narrowly-focused single-interest parties lose sight of the common good. (Consider, for example, the tiny religious parties in Israel who are more focused on literally parochial issues like maintaining their part of the monopoly on weddings than on the big issues facing the country.) PLACE avoids this problem because a party that can't reach at least 25% in at least some districts doesn't get seats. Those votes aren't wasted, they're transferred; but the party that gets those votes has to have a broad enough platform to appeal to more than one small group. Generally, PLACE should lead to an effective number of parties (ENP) of under 4; that is, two larger parties, one or two medium-sized ones, and a smattering of seats going to charismatic independents or tiny parties with a strong geographic base. Over time, parties can grow or shrink organically as they appealed to more or fewer voters.
+
+* '''Encourages both pre- and post-election coalition-building.''' Because votes can and do transfer between parties, there is an incentive to keep healthy relationships across party lines. Even though larger parties wouldn't have more than a fraction of a seat of leftover votes to pass along, they'd still have that much.
+
+== Arguments against PLACE (and responses) ==
+
+I'll answer each question and concern by first playing "devil's advocate" and laying out why people might have that concern, and then responding with my own arguments for why the issue should not be a major worry.
+
+=== Isn't PLACE too complicated? ===
+
+The explanation above has 7 steps for clarity, but you can explain PLACE with just 4 steps (vote, eliminate, transfer/eliminate/elect, and assign).
+
+Furthermore, voters only have to actually do anything in step 2 above, and can vote effectively as long as they understand just steps 1, 2, and 4.
+
+=== Doesn't delegation give too much power to candidates? ===
+
+Some people don't like how delegation works in PLACE. They believe that voters should directly control how their vote is transferred, not pass that control to candidates (and, within each transfer group, to other voters).
+
+Still, I'd argue this concern is wrong, for the following reasons:
+
+* The reason you're voting for a candidate is that you think they're the best choice available to represent you in the legislature. To cast that vote, you have to trust them on some level to make many votes in your interest, votes you probably won't even hear about. Why, then, wouldn't you trust their public, predeclared endorsements of other candidates?
+
+* Delegation in PLACE is limited. The candidate you pick merely divides their party into two groups ("same faction" and "same party") and also divides the candidates from other parties into two groups ("allies" and "opponents"). Within each of those groups, she does not choose the order; that order comes from the vote totals, that is, from other voters. Thus, candidates remain accountable to voters, even if they get endorsements.
+
+=== Doesn't PLACE put too much emphasis on parties? ===
+
+In PLACE voting, "same party" transfers come before "allies", so out-of-party candidates cannot get vote transfers before in-party ones. Also, the ballot has separate spaces for write-ins depending on which party they are from. Both of these design choices could be changed without breaking PLACE, and both appear to grant extra power to parties. So did I make these choices because I like and trust parties?
+
+As you might suspect, my answer to such a rhetorical question is "no". These aspects of PLACE are both a way to simplify things for voters. Ensuring transferred votes don't leave the party until the party candidates are all gone helps voters know what will happen to their vote, without having to carefully cross-check endorsement lists. Party-specific write-ins help determine voter intent when write-ins are illegible or nearly so. I believe that both of these help ensure that the voters' will is respected. Rather than giving too much power to unelected party insiders, these rules are intended to keep the real power with the voters.
+
+In the end, PLACE hugely reduces the unfair advantages for major parties, and leads to a more fluid party landscape. Opposing it because it keeps a role for parties would, in my opinion, be illogical.
+
+=== Doesn't PLACE put too little emphasis on parties? ===
+
+I'd argue that it has more of a happy medium in this regard. For instance, though it's less favorable to parties than FPTP, it's more so than methods like STV. "#PropRep", and especially methods like STV (explained below), lead to more, smaller parties. Since voters don't have to worry about wasted votes, they can afford to split into a new party as soon as their current party does something they dislike. Taken to an extreme, this could mean many tiny parties, each focused on only one issue or subgroup.
+
+As discussed above in the question about "healthy politics", PLACE avoids this problem because of the 25% local threshold. Splinter groups without a local base of support don't have to worry about wasting their vote, but they can't actually elect their chosen candidate; they'd have to work through a larger party. This helps ensure some degree of pre-election coalition- and platform-building, so that voters can make a choice between competing visions for the country's future, and not just single-issue parochialism.
+
+=== Doesn't PLACE favor "third parties" and so end up electing too many extremists? ===
+
+See the answer to the previous question.
+
+=== Doesn't PLACE give an unfair advantage to "major parties" over "third parties" ===
+
+Because of the 25% local threshold, smaller parties could end up getting less than their proportional share of seats.
+
+I've run simulations of PLACE for a few past elections, using actual ballot data, and I think it's useful to look at examples of when this would have happened. One instructive example is the British Columbia 2017 provincial elections. In that election, the BC Green Party won just 3 seats under FPTP, though their proportional share was 14 or 15 seats. PLACE would have given them 10 seats, because that's how many districts they passed the 25% threshold in. The Green votes for the other 4-5 proportional seats would have transferred, so the Greens could have chosen to give seats to around 7 candidates from larger parties such as the NDP.
+
+Another example is the UK 2017 parliamentary election. In that election, UKIP (an extreme nationalist party) had the votes for 11 proportional seats. But since they didn't reach 25% in any district, they wouldn't have gotten any seats. The regional parties, on the other hand (Scottish, Welsh, and Irish) all had local bases of support, so each of them would have gotten their full proportional share of seats.
+
+In the end, I don't think this is really unfair to third parties. It's a huge step up from FPTP, because voters are free to vote for them without fear of wasting votes. This gives them a path to grow from minor party to major party over time, if they can find a way to appeal to enough voters. And even if they get less than a "fair" share of direct seats, they can still use that voting power to indirectly help elect representatives they like from larger parties.
+
+=== Wouldn't too many voters vote for charismatic party leaders, neglecting the election in their local district? ===
+
+It is not in a party's interest to encourage this kind of voting too much, nor in the voter's interest to vote like this excessively. If taken to an extreme, it could lead to most of the party's candidates being eliminated for failing to meet the 25% threshold.
+
+Out-of-district voting is an important freedom to give to atypical voters, such as voters who want to support a minority ethnic, ideological, or demographic group. But for the typical partisan voter, simply voting for the local party candidate is the best move. Insofar as these typical voters are a majority within each party, out-of-district voting should not be a problem. They are tautologically a plurality, so imagining that they will be a majority is not a stretch.
+
+=== Isn't there some downside to PLACE that's hard to foresee? ===
+
+I have long experience thinking about voting strategies and finding pathological cases for specific voting methods. As theorems like [https://en.wikipedia.org/wiki/Gibbard%E2%80%93Satterthwaite_theorem Gibbard-Satterthwaite] underline, no voting method is entirely free of such pathologies. Here's the worst I've come up with for PLACE:
+
+Third parties could unseat specific enemy incumbents from major parties by endorsing those incumbents' major-party opponents. I call this possibility "targeted knockouts". Here's how it works:
+
+Say there was a third party that had enough votes for 3 seats, but only 2 of their candidates passed the 25% local threshold. So after they'd elected those two candidates, they'd still have one quota of votes to transfer. If they hated major-party candidate X, they could endorse X's major-party opponent Y in order to unseat X. Since those transfers would happen at the start of the counting process, when the third-party candidates were eliminated, Y could win before X had a chance to get within-party transfers. Because of the one-candidate-per-district rule, X would be eliminated, even if he was popular enough to easily win a seat without third-party interference.
+
+There are a few ways this strategy could fail. If the third party candidates endorsed another candidate Z who's more popular than Y, the transfers would elect Z first and the votes would be soaked up. If in the X/Y district X were highly popular and/or Y unpopular, Y might be eliminated by the 25% rule. And if X got enough cross-district direct votes to reach a quota without vote transfers, X would beat Y no matter how many transfer votes Y got. Still, there is a real possibility this could work.
+
+Still, this "targeted knockout" power is limited to at most one candidate per faction. As soon as the first candidate X is "knocked out", their votes would pass to the strongest other candidate W in their faction. If W has more local direct votes than their opponent P, then W would win immediately even if the third party had also passed votes to P.
+
+I see this as a problem, but not an intolerable one. The best way to solve it would be to add a few non-district seats, as in MMP (explained below). Say that a given state had 3 non-district-based seats. In that case, candidates in the same district with winning candidates would not be eliminated until there were 3 districts with 2 winners. The third time that a second (or later) winner was elected from some district, all candidates in districts that had 1 or more winners would be eliminated simultaneously. Even a small proportion (say, 10%) of such MMP-like seats would be sufficient to prevent "targeted knockouts" from becoming a problem. Stopping the first few knockouts would help, but the big difference is that by spoiling the targeting of the later knockouts, it would greatly blunt the effectiveness of the strategy.
+
+Also note that this strategy means that a third party would forego its ability to precisely pick a representative they ''do'' like in order to knockout one they ''don't'' like. From a social point of view, it seems that that's at least arguably a legitimate use of their voting power.
+
+== Other #PropRep method options ==
+
+=== How does PLACE compare to single transferable vote (STV) with multimember districts? ===
+
+In STV, used in (certain elections in) countries such as Ireland and Australia, voters rank candidates in order of preference. To keep the number of candidates manageable, usually the election is split up into multimember districts; most proposals for the English-speaking countries contemplate districts of at most 5 seats each. Winners are found using an elimination-and-transfer process similar to PLACE; in fact, the PLACE procedure was directly inspired by STV.
+
+Note that the term "ranked choice voting" (RCV) is sometimes used as a catch-all brand for both STV and its single-winner equivalent, IRV. As a voting theorist, I find that term muddies the waters; there are plenty of ranked voting methods, both single- and multi-winner, aside from these two. What's worse, RCV activists often talk as if RCV were a synonym for voting reform as a whole. We should unite to #endFPTP, not try to paint our proposal as the only option.
+
+STV is a #PropRep method, so it has all the advantages shared by all such methods: eliminating most wasted votes and breaking the two-party duopoly. Certainly, if the choice is between STV and FPTP, STV is unquestionably the better method. But PLACE does have some advantages:
+
+* PLACE has simpler ballots. Instead of having to rank each candidate, you can just pick one.
+
+* PLACE has greater freedom for voters, because they're not restricted to vote inside their 5-member district.
+
+* PLACE has less of a tendency for parties to splinter into tiny single-issue microparties.
+
+* PLACE has clearer accountability for incumbent representatives. If they anger the voters in their local district, they can't count on lazy partisan voters to re-elect them.
+
+* PLACE has better geographic representation.
+
+* PLACE is easier to simulate retroactively, so that (with a few assumptions, and in a way that's pretty robust to reasonable variation of those assumptions) you can know specifically who would have won if FPTP had been replaced by PLACE in some past election. This lets you say to incumbents "you would still have won under PLACE against the same opponents", which lets them consider its global advantages without worrying about personal disadvantages.
+
+* PLACE is easier and more transparent to tally, because it's "precinct summable". That is, results can be calculated if each voting location counts votes locally and publishes tallies for each candidate and party. STV results cannot be calculated without the full preference order from each individual ballot, so issues with privacy, auditability, and chain of custody are much more difficult.
+
+=== How does PLACE compare to open list proportional methods? ===
+
+In open list proportional methods, used in (certain elections in) countries such as Norway, Brazil, and Japan, voters choose a candidate and thus implicitly that candidate's party. All party votes are totalled to decide how many seats each party gets, then those seats are allocated based on vote totals. This method is proportional in terms of your party vote, so you don't have to worry about that portion of your vote being wasted; but it's not proportional in terms of the candidates within the parties, so it is easy to mistakenly waste your vote as to which faction of the party should dominate.
+
+In practice, OLPR usually goes hand-in-hand with a minimum party threshold. For instance, the rule might be that a party with fewer than 5% of the votes gets no seats.
+
+OLPR is a #PropRep method, so it has all the advantages shared by all such methods: eliminating most wasted votes and breaking the two-party duopoly. Certainly, if the choice is between OLPR and FPTP, OLPR is unquestionably the better method. But PLACE does have some advantages:
+
+* PLACE has greater voter power and fewer partially-wasted votes in choosing an intraparty faction
+
+* PLACE doesn't waste the votes of those supporting parties which don't meet the minimum party threshold.
+
+* PLACE encourages representatives within a party to form alliances, while OLPR just pits them against one another.
+
+* Depending on whether the OLPR implementation includes districts, PLACE will either have simpler ballots, or greater freedom to choose a representative to support.
+
+* PLACE has better geographic representation.
+
+* PLACE is easier to simulate retroactively, so that (with a few assumptions, and in a way that's pretty robust to reasonable variation of those assumptions) you can know specifically who would have won if FPTP had been replaced by PLACE in some past election. This lets you say to incumbents "you would still have won under PLACE against the same opponents", which lets them consider its global advantages without worrying about personal disadvantages.
+
+=== How does PLACE compare to closed list proportional methods? ===
+
+In closed list methods, voters only choose a party. Once the votes are tallied and the seats are allocated among parties, each party chooses where its seats go. This is a horrible system, worse than open-list PR in every way.
+
+=== How does PLACE compare to mixed member proportional (MMP) methods? ===
+
+In MMP, used in countries such as Germany and New Zealand, voters choose a local candidate and (perhaps implicitly) a national party. Most representatives are chosen in the races, which are run with a single-winner method (usually plurality). But there are some leftover seats which are assigned by party to "top up" and restore proportionality. Those seats are assigned using either open or closed list.
+
+In practice, MMP usually goes hand-in-hand with a minimum party threshold. For instance, the rule might be that a party with fewer than 5% of the votes gets no seats.
+
+MMP is a #PropRep method, so it has all the advantages shared by all such methods: eliminating most wasted votes and breaking the two-party duopoly. Certainly, if the choice is between MMP and FPTP, MMP is unquestionably the better method. But PLACE does have some advantages:
+
+* PLACE has greater freedom for voters, because they're not restricted to vote inside their district.
+
+* PLACE has just one kind of representative, and all of them are equally accountable to voters.
+
+* PLACE doesn't waste the votes of those supporting parties which don't meet the minimum party threshold.
+
+* PLACE doesn't require redrawing districts or increasing the size of the legislature.
+
+* PLACE is easier to simulate retroactively, so that (with a few assumptions, and in a way that's pretty robust to reasonable variation of those assumptions) you can know specifically who would have won if FPTP had been replaced by PLACE in some past election. This lets you say to incumbents "you would still have won under PLACE against the same opponents", which lets them consider its global advantages without worrying about personal disadvantages.
+
+=== How does PLACE compare to other newly-proposed proportional methods? ===
+
+The theory and practice of designing voting methods has advanced substantially in the last 20 years, and PLACE is just one result of that. The main ideas that have been drawn from other work are:
+
+- STV transfers. Actually, Bucklin Transferable Voting transfers would be even better from a theoretical perspective, but then you'd have to explain what those are.
+- Biproportionality, a la Fair Majority Voting or Ramirez et al 2008.
+- Automatic delegation to predeclared preferences; in this case, partial delegation, as they're partial preferences.
+
+I've seen various other proposals which I consider to be superior to STV, OLPR, and MMP, such as [http://www.fairvote.ca/ruralurbanproportional/ Rural Urban Proportional]. I can imagine that it might be possible to design something better than PLACE, or something that's just as good but for whatever reason can get more support.
+
+It's impossible to discuss the relative advantages and disadvantages of all possible methods here. Discussing various methods is beneficial insofar as it makes it more likely that one of them will pass, but becomes harmful if it devolves into warring camps each highlighting the disadvantages of opposing methods.
+
+=== Are there other methods closely related to PLACE? ===
+
+There are several.
+
+* STV, as mentioned above, is the basis for the vote transfer process in PLACE.
+* The idea of simplifying STV ballots using prepared lists is an old one. Called "Group Voting Tickets" in Australia, this was first proposed in the US around 1890 under the name "[https://archive.org/details/proportionalrepr00berr the Gove system]" by William Gove of Salem, MA.
+* Previous drafts of the same ideas in PLACE went under names including "PAL representation" and "GOLD voting". Note that there is also an old version of PLACE which included a "do not transfer" option on the ballot.
+* For comparison, here is a version of [[simplified PLACE]] without endorsements, just parties. This is a good proposal, but compared to PLACE voting it is biased against smaller parties and independent candidates.
+
+== Other related reforms ==
+
+=== Voting rights ===
+
+In the US, elections are run by state and local authorities. Yet the number of representatives a state gets is set by total population, not by number of voters. Essentially, the full voting power of non-voters is stolen by the voters. Thus, the Jim Crow South was actually an even greater distortion of voting power than the "three-fifths compromise".
+
+This creates an incentive to politicize rules and suppress the vote. Security against voter fraud is often cited by those wanting restrictive voting rules, but with only a tiny handful of fraud cases for millions of votes, this seems disingenuous.
+
+Those of us who favor #PropRep should also join the fight against voter suppression, and work to draw the links between the two issues. Gerrymandering, as a way of deliberately causing wasted votes, goes hand in hand with suppressing other votes. For instance, that link is especially clear when prisons (full of non-voters) are used to pad the population of districts which are demographically entirely unlike the incarcerated population.
+
+Good organizations on this issue in the US: [https://www.brennancenter.org/ Brennan Center], [http://www.commoncause.org/ Common Cause].
+
+=== Single-winner voting methods ===
+
+The problems with FPTP do not apply only to multi-winner legislative races; they are just as bad in single-winner executive races for offices like President, Governor, or Mayor. In those cases, the solution is not #PropRep, but rather single-winner reforms — beginning with [https://www.youtube.com/watch?v=db6Syys2fmE approval voting], then possibly moving on to [http://wiki.electorama.com/wiki/3-2-1_voting 3-2-1 voting] or [http://www.equal.vote/ star voting]. The best organization on these issues is [http://electology.org/ electology.org] (full disclosure: I'm a board member.) Also doing good work in the Pacific NW is [http://www.equal.vote/about the equal vote coalition].
+
+Another option that gets mentioned for single-winner is IRV (also annoyingly called RCV). This is promoted by the largest US voting reform nonprofit, FairVote. Unfortunately, while they do good work on #PropRep, FairVote seems blind to the flaws in IRV. While I'd vote for IRV if the only other option was FPTP, and while I definitely believe that [http://electology.org/blog/maine-supreme-court-gets-it-wrong-irv voters who've chosen IRV should get to see it implemented], I don't think FairVote has the best path forward on this issue.
+
+==== Electoral college and national popular vote ====
+
+In the US, an important special case of single-winner reform is the presidential system, where constitutional issues involving the electoral college (EC) complicate matters. As far as I can tell, the [http://www.nationalpopularvote.com/ National Popular Vote Interstate Compact] (NPVIC) idea is the best way to solve those issues. [https://equalvotes.us/ Larry Lessig's court challenge to statewide EC winner-take-all] also deserves mention, though personally I suspect it's unlikely to win.
+
+In any case, solving the EC without fixing the single-winner voting system seems as if it would be a missed opportunity. As I read it, the NPVIC would be compatible with approval voting, and could with a little work be made compatible with 3-2-1 voting. But I think that more people should be working on, or even just talking about, combining these ideas.
+
+=== Campaign finance, ballot access and other electoral system reforms ===
+
+The two-party duopoly is rooted in FPTP, but its branches run throughout politics. (In Canada and the UK, things are slightly better, and the effective number of parties is above 2, but it's still well under 3, so the same problems mostly hold.) As with any 'opoly, it's a distortion of market power. And where ordinary voters lack political power, donors, lobbyists, and parties are happy to fill that void. This process has been ably criticized or [http://www.hbs.edu/competitiveness/Documents/why-competition-in-the-politics-industry-is-failing-america.pdf analyzed] by various groups such as [https://represent.us/ represent.us].
+
+At this point, even if we cut off the roots, we'd still need to clear the branches. In fact, there's good synergy between these efforts; the more we can weaken the duopoly in one domain, the easier and more effective it will be to fight it in others.
+
+== Political strategy ==
+
+=== What are some ways that PLACE could pass? ===
+
+In Canada: If it gets enough vetting from academics prior to the BC #PropRep referendum in November 2018, it could be on the ballot there. The plan is to have two questions, as they did in New Zealand 1992: first, should FPTP be replaced, and second, if so, with what. The second ballot could have STV, MMP, and PLACE as options. If PLACE wins that vote, it could show effectiveness, and it would then spread to Prince Edward Island and to Canada as a whole.
+
+In the USA: Short version: Attract activists from across the political spectrum, then pass it in a partisan vote by a Democratic congress in around 2021. Democrats could impose it only on states that have been highly gerrymandered through a partisan process; since the impact of this would largely fall on "red" states, this would be relatively politically easy to get Democratic votes for.
+
+Longer version:
+
+Usually, voting reforms pass through some combination of popular and insider support. For single-winner reforms, which are a direct threat to the two major parties, that usually means a grassroots effort building from locales where there have been a series of high-profile spoiled elections. That's how Bucklin passed in the Progressive era, that's how IRV has notched up successes more recently, and that's the plan for approval voting starting with Fargo ND.
+
+But proportional representation can potentially jump straight to the national level, and thus happen much faster. The key factor would be support from whichever of the two major parties. This is possible because, although in the long term it would break the two-party duopoly, in the short term the benefits to Democrats from fixing the gerrymandering problem exceed the loss of duopoly power. After all, according to Decision Desk HQ, if the House elections happened now are that the Republicans would get 46.2% of the two-party vote, but 52.4% of the seats; so PLACE voting could reasonably accomplish a 6.2% swing towards the Democrats. Even if they also lost 5% to the Greens, they'd still come out ahead. Furthermore, as mentioned above, they could pass it only on states that have been highly gerrymandered through a partisan process; since the impact of this would largely fall on "red" states, this would be relatively politically easy to get Democratic votes for.
+
+So, concretely, the plan would be to build support at the grassroots for the next few years, then to encourage the Democrats to include this in their national platform in 2020. If they win Congress and the White House that year — which is looking very plausible right now — they could then pass this.
+
+=== Historically, how have successful voting reforms passed? ===
+
+The expert on this in the US context is Jack Santucci, (@jacksantucci on Twitter) who wrote his thesis on the 20th-century history of STV in US cities. It passed in dozens, though it was later repealed everywhere but here in Cambridge. As I understand [http://www.jacksantucci.com/research.php his work], the story is that:
+
+* Various forms of proportional representation were actively discussed, primarily by leftist groups, starting from about the 1890s.
+
+* They didn't get anywhere until they unified behind STV, and decided to work with major parties to get it passed, around WWI.
+
+* From then on, the reform efforts that were successful seemed to involve a dissatisfied faction of the majority party, most of the opposition party, and possibly but not pivotally some third parties.
+
+* It was repealed when the major party thought they could continue to dominate after repeal. Cambridge, without a strong party or even quasi-party structure, is the only place it survived.
+
+In an international context, the biggest example is New Zealand. There, the idea of reform was initially raised for partisan advantage by one of the 2 major parties, but then dropped when they were in power; then, the other party picked it up and made it a strong promise, which they then reluctantly had to carry out. Grassroots support was crucial in getting it across the finish line.
+
+=== Is PLACE constitutional in the USA? ===
+
+Short answer: Yes.
+
+Longer answer: There are solid constitutional arguments that it is. As the preamble to the Fair Representation Act sponsored by Rep Beyer (D-VA) puts it:
+
+> Congress finds that it has the authority to establish the terms and conditions States must follow in carrying out Congressional redistricting after an apportionment of Members of the House of Representatives and in administering elections for the House of Representatives because—
+>
+> (1) the authority granted to Congress under article I, section 4 of the Constitution of the United States gives Congress the power to enact laws governing the time, place, and manner of elections for Members of the House of Representatives; and
+>
+> (2) the authority granted to Congress under section 5 of the fourteenth amendment to the Constitution gives Congress the power to enact laws to enforce section 2 of such amendment, which requires Representatives to be apportioned among the several States according to their number.
+
+Of course, the best constitutional arguments in the world would be worthless if it faced a Supreme Court with 5 judges ready to twist logic to the degree they did in ''Bush v. Gore'' or ''Shelby County''. Still, with an impartial court, this can very much pass constitutional muster.
+
+In fact, because it still has single-member districts, PLACE voting could be implemented at the state level with no changes in federal law, unlike other #PropRep options. The hangup is a 1967 statute that requires states to use single-member districts for the House of Representatives.
+
+=== How can we convince different specific communities in the USA to support PLACE? ===
+
+Dem incumbents: Gerrymandering hurts your team. This stops gerrymandering and helps your team. Look at these simulations: against the same opponent, you would have won the last election under PLACE, so you don't have to worry about it personally.
+
+Dem voters: Gerrymandering hurts your team. This stops gerrymandering and helps your team. It also gives you as a voter more voice in intraparty debates.
+
+Independent/unaffiliated voters: This would give you a chance to vote for somebody you actually liked, and not waste your vote.
+
+Ethnic minorities, women, youth, and other underrepresented groups: This would give you effective voice and greater, more-effective representation.
+
+Minor-party activists (Libertarians, Greens, etc.): This would let your party win a few seats immediately, and create a fair system where you could grow to be a majority party.
+
+"#NeverTrump" Republicans: Safe seats have let an extremist primary electorate steal your party from you. This would let you take it back.
+
+==== But how can we get all of those disparate groups to work together? Won't they distrust any activist they see as belonging to a different group? ====
+
+Good question. I don't know the answer, but I [https://medium.com/@jameson.quinn/how-to-be-two-faced-with-integrity-6ee240857cd4 have some thoughts.]
+
+=== How can we convince different specific communities in the UK or Canada to support PLACE? ===
+
+Sorry, I'm not an expert. But this is a wiki — you can edit this section and create arguments modeled on the ones above.
+
+=== Who are PLACE voting's natural enemies? How can we beat them? ===
+
+Incumbents who benefit from gerrymandering: point out their conflicts of interest.
+
+Lobbyists who love political duopoly and hate voter power: as Emperor Palpatine says "Use your aggressive feelings. Let the hate flow through you."
+
+Partisan media outlets who like to simplify debates to two-sided "right" and "wrong": point out that most people are on neither side.
+
+== Notes and details ==
+
+=== Who are you and why should I listen to you? ===
+
+I'm Jameson Quinn, currently a doctoral candidate in statistics at Harvard. I've been involved in voting theory and voting reform activism since before the 2000 US presidential election. I'm on the board of the Center for Election Science, aka [http://electology.org electology.org]. I helped the members of the World Science Fiction Society (WSFS) redesign the nomination process for the Hugo Awards, using a specially-designed proportional voting method called E Pluribus Hugo to prevent a minority of voters from taking over the nominations. (That was a 2-year effort; the peer-reviewed paper I wrote about it with Bruce Schneier is [https://www.schneier.com/academic/paperfiles/Proportional_Voting_System.pdf here].)
+
+But you should listen to me not because of any credentials I have, but because you can tell that I've considered this from many angles, that I'm being reasonable, and that this is a serious proposal. Or if you think I'm wrong somehow, write to me at firstname dot lastname at gmail.
+
+=== What are some other articles/writings about PLACE? ===
+
+[https://medium.com/@jameson.quinn/voting-should-be-free-important-and-unifying-603286ddcf86 Voting should be free, important, and unifying]
+
+[https://medium.com/@jameson.quinn/gerrymandering-is-solvable-but-not-the-way-you-think-c6f6d34fe471 Gerrymandering is solvable. But not the way you think.]
+
+[https://medium.com/@jameson.quinn/ceo-harvard-prof-us-politics-rigged-a5de7e2b2a42 CEO, Harvard prof: “US politics rigged”]
+
+[https://medium.com/@jameson.quinn/place-voting-explained-129e65cbb625 PLACE voting explained]
+
+[https://medium.com/@jameson.quinn/how-to-be-two-faced-with-integrity-6ee240857cd4 How to be two-faced, with integrity]
+
+=== What is the difference between "electoral system" and "voting method"? ===
+
+The electoral system of a country (or state or city) is all the rules pertaining to elections: when they happen, who can vote, and how they are conducted. One key aspect of an electoral system is the voting method that is used: what information is in a vote and how votes are combined to find a winner. Thus, though the two terms are closely related, typically electoral systems are studied by political scientists and public choice theorists, while voting methods may also be studied as abstractions by mathematicians, game theorists, and social choice theorists.
+
+Other related terms include:
+
+Voting system: sometimes used to refer to what I've called "voting methods", but also sometimes refers to voting machines.
+
+Voting procedure, voting apparatus, balloting method, etc.: The physical means used to register votes. This can be paper, mechanical, electronic, lots or marbles, or other.
+
+Electoral method, election method, voting mechanism: synonyms for voting method.
+
+Election system: Could mean any of the above. Best to avoid.
+
+=== What about "district", "riding", and "constituency"? ===
+
+These three terms are synonyms, used in the US, Canada, and the UK, respectively. I've used "district" because I'm from the US and it's annoying to always say all three.
+
+=== What's with the randomness of the gender pronouns in this FAQ? ===
+
+Every time in this document I needed to use a singular third person pronoun for a non-specific person, I used a [https://www.fourmilab.ch/cgi-bin/Hotbits.api?nbytes=1&fmt=hex&npass=1&lpass=8&pwtype=3&apikey=&pseudo=pseudo quantum random number] to decide which gender to use. So, if you believe in the many-worlds interpretation of quantum mechanics, there's probably another quantum branch of the universe in which you're reading this document with different pronouns. Any bias towards one gender or the other is purely accidental.
