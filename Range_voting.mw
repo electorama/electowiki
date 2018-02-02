@@ -32,7 +32,7 @@ is the winner.
 ==Example==
 {{Tenn_voting_example}}
 
-Suppose that voters were told to grant 1 to 4 points to each city, giving their most favorite 4 points, second favorite 3 points, third favorite 2 points, and least favorite 1 point. For simplicity, letâ€™s say we had 42 voters from Memphis, 26 from Nashville, 15 from Chattanooga, and 17 from Knoxville. The votes would be as follows.
+Suppose that voters were told to grant 1 to 4 points to each city, giving their most favorite 4 points, second favorite 3 points, third favorite 2 points, and least favorite 1 point. For simplicity, let’s say we had 42 voters from Memphis, 26 from Nashville, 15 from Chattanooga, and 17 from Knoxville. The votes would be as follows.
 
 
 <TABLE BORDER=1 style="empty-cells: show">

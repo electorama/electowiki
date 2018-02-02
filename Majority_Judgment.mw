@@ -25,7 +25,7 @@ If there were four ratings named "Excellent", "Good", "Fair", and "Poor", and ea
 <table cellpadding=0 width=500 border=0 cellspacing=0>
 <tr>
 <td width=49%>&nbsp;</td>
-<td width=2% textalign=center>â†“</td>
+<td width=2% textalign=center>↓</td>
 <td width=49%>Median point</td>
 </tr>
 </table>
@@ -121,7 +121,7 @@ The median rating for Nashville and Chatanooga is "Good"; for Knoxville, "Fair";
 <table cellpadding=0 width=500 border=0 cellspacing=0>
 <tr>
 <td width=49%>&nbsp;</td>
-<td width=2% textalign=center>â†“</td>
+<td width=2% textalign=center>↓</td>
 <td width=49%>Median point</td>
 </tr>
 </table>
