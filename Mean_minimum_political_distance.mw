@@ -18,7 +18,7 @@ If the candidate set {0.25, 0.75} is elected, then
       <th>position</th>
       <th>nearest winner</th>
       <th>distance</th>
-      <th>voters Ã— distance</th>
+      <th>voters × distance</th>
    </tr>
    <tr align="right">
       <td>0.15</td>
@@ -56,7 +56,7 @@ If the candidate set {0.25, 0.75} is elected, then
       <td>0.0375</td>
    </tr>
    <tr>
-      <th colspan="4">sum of voters Ã— distance</th>
+      <th colspan="4">sum of voters × distance</th>
       <td align="right">0.1500</td>
    </tr>
 </table>
@@ -73,7 +73,7 @@ The mathematically expected MMPD for ''n'' winners randomly selected from unifor
 
 === Droop Multiples ===
 
-Electing the candidates {i/(n+1): 1&le;i&le;n} gives an MMPD of (n+3)/(4(n+1)Â²).  As ''n'' approaches infinity, this is asymptotically equal to the optimal value of 1/(4n).
+Electing the candidates {i/(n+1): 1&le;i&le;n} gives an MMPD of (n+3)/(4(n+1)²).  As ''n'' approaches infinity, this is asymptotically equal to the optimal value of 1/(4n).
 
 === Optimal Winners ===
 

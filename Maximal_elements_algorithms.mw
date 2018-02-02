@@ -158,7 +158,7 @@ Floyd Algorithm to calculate the Schwartz winners:
 * http://lists.electorama.com/htdig.cgi/election-methods-electorama.com/2004-January/011627.html
 * Cormen, Thomas H.; Leiserson, Charles E.; Rivest, Ronald L. (1990). Introduction to Algorithms, first edition, MIT Press and McGraw-Hill. ISBN 0-262-03141-8.
 ** Section 23.5, "Strongly connected components", pp. 488-493;
-** Section 26.2, "The Floyd-Warshall algorithm", pp. 558â€“565;
+** Section 26.2, "The Floyd-Warshall algorithm", pp. 558–565;
 
 ==See Also==
 * [[Schwartz set]]

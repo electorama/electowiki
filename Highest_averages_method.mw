@@ -1,23 +1,23 @@
 The '''highest averages method''' is one way of allocating seats proportionally for representative assemblies with [[Party-list proportional representation|party list]] [[voting systems]]. 
 
-The ''highest averages method'' requires the number of votes for each party to be divided successively by a series of divisors, and seats are allocated to parties that secure the highest resulting quotient, up to the total number of seats available. The most widely used is the [[d'Hondt method|d'Hondt formula]], using the divisors 1,2,3,4... The [[Sainte-LaguÃƒÂ« method]] divides the votes with odd numbers (1,3,5,7 etc). The Sainte-LaguÃƒÂ« method can also be modified, for instance by the replacement of the first divisor by 1.4, which in small constituencies has the effect of prioritizing proportionality for larger parties over smaller ones at the allocation of the first few seats.
+The ''highest averages method'' requires the number of votes for each party to be divided successively by a series of divisors, and seats are allocated to parties that secure the highest resulting quotient, up to the total number of seats available. The most widely used is the [[d'Hondt method|d'Hondt formula]], using the divisors 1,2,3,4... The [[Sainte-LaguÃ« method]] divides the votes with odd numbers (1,3,5,7 etc). The Sainte-LaguÃ« method can also be modified, for instance by the replacement of the first divisor by 1.4, which in small constituencies has the effect of prioritizing proportionality for larger parties over smaller ones at the allocation of the first few seats.
 
 In addition to the procedure above, highest averages methods can be conceived of in a different way.  In this manner, what was called the '''divisor''' above will now be the '''quotient''', and what was called the quotient will now be the divisor.  For an election, a '''divisor''' is calculated, usually the total number of votes cast divided by the number of seats to be allocated.  Then, each parties' quotient is calculated by dividing their vote total by the divisor.  Parties are then allocated seats by rounding the quotient to a whole number. 
-Rounding down is equivalent to using the d'Hondt method, while rounding to the nearest whole number is equivalent to the Sainte-LaguÃƒÂ« method.  However, because of the rounding, this will not necessarily result in the desired number of seats being filled.  In that case, the divisor may be adjusted up or down until the number of seats after rounding is equal to the desired number.
+Rounding down is equivalent to using the d'Hondt method, while rounding to the nearest whole number is equivalent to the Sainte-LaguÃ« method.  However, because of the rounding, this will not necessarily result in the desired number of seats being filled.  In that case, the divisor may be adjusted up or down until the number of seats after rounding is equal to the desired number.
 
 The tables used in the d'Hondt method can then be viewed as calculating the lowest divisor necessary to round off to a given number of seats.  For example, the quotient which wins the first seat in a d'Hondt calculation is the lowest divisor necessary to have one party's vote, when rounded down, be greater than 1.  The quotient for the second round is the lowest divisor necessary to have a total of 2 seats allocated, and so on.
 
 An alternative to the ''highest averages method'' is the [[largest remainder method]], which use a minimum quota which can be calculated in a number of ways.
 
-== Comparison between the ''d'Hondt'' and ''Sainte-LaguÃƒÂ«'' methods ==
+== Comparison between the ''d'Hondt'' and ''Sainte-LaguÃ«'' methods ==
 
 
-=== The unmodified ''Sainte-LaguÃƒÂ«'' method shows differences for the first mandates ===
+=== The unmodified ''Sainte-LaguÃ«'' method shows differences for the first mandates ===
 <table border=1>
 
 <tr>
 <td>
-<th colspan=6>d'Hondt method<td rowspan=3>&nbsp;<th colspan=6>unmodified Sainte-LaguÃƒÂ« method
+<th colspan=6>d'Hondt method<td rowspan=3>&nbsp;<th colspan=6>unmodified Sainte-LaguÃ« method
 </tr>
 
 <tr>
@@ -206,7 +206,7 @@ An alternative to the ''highest averages method'' is the [[largest remainder met
 
 <tr>
 <td>
-<th colspan=6>d'Hondt method<td rowspan=3>&nbsp;<th colspan=6>modified Sainte-LaguÃƒÂ« method
+<th colspan=6>d'Hondt method<td rowspan=3>&nbsp;<th colspan=6>modified Sainte-LaguÃ« method
 </tr>
 
 <tr>

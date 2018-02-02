@@ -31,7 +31,7 @@ It is possible to prove that p[X,Y] &gt; p[Y,X] and p[Y,Z] &gt; p[Z,Y] together 
 
 === Implementation ===
 
-Suppose ''C'' is the number of candidates. Then the strengths of the strongest paths can be calculated with the Floydâ€“Warshall algorithm.
+Suppose ''C'' is the number of candidates. Then the strengths of the strongest paths can be calculated with the Floyd–Warshall algorithm.
 
 Input: d[i,j] is the number of voters who strictly prefer candidate i to candidate j.
 
@@ -41,7 +41,7 @@ Output: Candidate i is a potential winner if and only if "winner[i] = true".
   2 '''begin'''
   3    '''for''' j : = 1 '''to''' ''C''
   4    '''begin'''
-  5       '''if''' ( i â‰  j ) '''then'''
+  5       '''if''' ( i ≠ j ) '''then'''
   6       '''begin'''
   7          '''if''' ( d[i,j] > d[j,i] ) '''then'''
   8          '''begin'''
@@ -59,13 +59,13 @@ Output: Candidate i is a potential winner if and only if "winner[i] = true".
  20 '''begin'''
  21    '''for''' j : = 1 '''to''' ''C''
  22    '''begin'''
- 23       '''if''' ( i â‰  j ) '''then'''
+ 23       '''if''' ( i ≠ j ) '''then'''
  24       '''begin'''
  25          '''for''' k : = 1 '''to''' ''C''
  26          '''begin'''
- 27             '''if''' ( i â‰  k ) '''then'''
+ 27             '''if''' ( i ≠ k ) '''then'''
  28             '''begin'''   
- 29                '''if''' ( j â‰  k ) '''then'''
+ 29                '''if''' ( j ≠ k ) '''then'''
  30                '''begin'''
  31                   p[j,k] : = max { p[j,k]; min { p[j,i]; p[i,k] } }
  32                '''end'''
@@ -84,7 +84,7 @@ Output: Candidate i is a potential winner if and only if "winner[i] = true".
  45 '''begin'''
  46    '''for''' j : = 1 '''to''' ''C''
  47    '''begin'''
- 48       '''if''' ( i â‰  j ) '''then'''
+ 48       '''if''' ( i ≠ j ) '''then'''
  49       '''begin'''
  50          '''if''' ( p[j,i] > p[i,j] ) '''then'''
  51          '''begin'''
@@ -690,7 +690,7 @@ The Schulze method is not currently used in government elections.  However, it i
 * [http://www.fsfla.org/ Free Software Foundation Latin America (FSFLA)] [http://wiki.fsfla.org/wiki/index.php/Instrucoes-es] [http://wiki.fsfla.org/wiki/index.php/Instrucoes-pt]
 * [http://www.gentoo.org/ Gentoo Foundation] [http://www.gentoo.org/foundation/en/] [http://article.gmane.org/gmane.linux.gentoo.nfp/252/match=Condorcet+Schwartz+drop+dropped] [http://article.gmane.org/gmane.linux.gentoo.weekly-news/121/match=Condorcet] [http://article.gmane.org/gmane.linux.gentoo.devel/28603/match=Condorcet+Cloneproof+Schwartz+Sequential+Dropping] [http://article.gmane.org/gmane.linux.gentoo.devel/42260/match=Schulze+method] [http://dev.gentoo.org/~fox2mike/elections/council/2007/council2007-results]
 * [http://www.gnupg.org/ GNU Privacy Guard (GnuPG)] [http://logo-contest.gnupg.org/results.html]
-* [http://gbg.hackerspace.se/site/ Gothenburg Hacker Space (GHS)] (see Â§14 of the [http://gbg.hackerspace.se/site/om-ghs/stadgar/ bylaws])
+* [http://gbg.hackerspace.se/site/ Gothenburg Hacker Space (GHS)] (see §14 of the [http://gbg.hackerspace.se/site/om-ghs/stadgar/ bylaws])
 * [http://gso.cs.binghamton.edu/index.php/GSOCS_Home Graduate Student Organization at the State University of New York: Computer Science (GSOCS)] [http://gso.cs.binghamton.edu/index.php/Voting]
 * [http://haskell.org/ Haskell] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?num_winners=1&id=E_d21b0256a4fd5ed7&algorithm=beatpath]
 * [http://www.wvscrabble.com/ Kanawha Valley Scrabble Club] [http://wvscrabble.blogspot.com/2009/04/club-by-any-other-name.html]
@@ -720,7 +720,7 @@ The Schulze method is not currently used in government elections.  However, it i
 * [http://www.ubuntu.com/ Ubuntu] [http://www.cs.cornell.edu/w8/~andru/cgi-perl/civs/results.pl?id=E_e09bf9bea196cfff]
 * [http://wikimediafoundation.org/ Wikimedia Foundation] [http://lists.wikimedia.org/pipermail/foundation-l/2008-May/043134.html] [http://lists.wikimedia.org/pipermail/foundation-l/2008-June/044361.html] [http://meta.wikimedia.org/wiki/Board_elections/2008/Results] [http://meta.wikimedia.org/wiki/Board_elections/2009/Results]
 * [http://fr.wikipedia.org/wiki/Wikip%C3%A9dia Wikipedia in French] (The Schulze method is one of three methods recommended for decision-making.) [http://fr.wikipedia.org/wiki/Wikip%C3%A9dia:Prise_de_d%C3%A9cision/Choix_dans_les_votes]
-* [http://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%95%D7%93_%D7%A8%D7%90%D7%A9%D7%99 Wikipedia in Hebrew] [http://he.wikipedia.org/w/index.php?title=×•×™×§×™×¤×“×™×”:×¤×¨×œ×ž× ×˜&oldid=7014412#.D7.94.D7.A7.D7.93.D7.9E.D7.94]
+* [http://he.wikipedia.org/wiki/%D7%A2%D7%9E%D7%95%D7%93_%D7%A8%D7%90%D7%A9%D7%99 Wikipedia in Hebrew] [http://he.wikipedia.org/w/index.php?title=ויקיפדיה:פרלמנט&oldid=7014412#.D7.94.D7.A7.D7.93.D7.9E.D7.94]
 * [http://hu.wikipedia.org/wiki/Wikip%C3%A9dia Wikipedia in Hungarian] [http://hu.wikipedia.org/wiki/Wikip%C3%A9dia:Szavaz%C3%A1s/Az_%E2%80%9EArbitr%C3%A1ci%C3%B3s_Bizotts%C3%A1g%E2%80%9D_magyar_neve] [http://hu.wikipedia.org/wiki/Sablon_vita:F%C5%91/Szavaz%C3%A1s]
 * [http://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F Wikipedia in Russian] [http://toolserver.org/~kalan/arb7/schulze] [http://toolserver.org/~kalan/arb8/schulze] [http://ru.wikipedia.org/wiki/%D0%92%D0%B8%D0%BA%D0%B8%D0%BF%D0%B5%D0%B4%D0%B8%D1%8F:%D0%92%D1%8B%D0%B1%D0%BE%D1%80%D1%8B_%D0%B0%D1%80%D0%B1%D0%B8%D1%82%D1%80%D0%BE%D0%B2/%D0%92%D0%B5%D1%81%D0%BD%D0%B0_2009]
 * [http://es.wikipedia.org/wiki/Wikipedia Wikipedia in Spanish] [http://es.wikipedia.org/wiki/Wikipedia_Discusi%C3%B3n:Comit%C3%A9_de_Resoluci%C3%B3n_de_Conflictos/Archivo1#Opci.C3.B3n_2:_m.C3.A9todo_Schulze]
@@ -822,20 +822,20 @@ Each figure represents the number of voters who ranked the candidate at the left
 * [http://congress.utu.fi/epcs2006/docs/A2_meskanen.pdf Distance from Consensus: a Theme and Variations] by Tommi Meskanen and Hannu Nurmi
 * [http://www.math.temple.edu/~wds/homepage/votedesc.pdf Descriptions of voting systems] by Warren D. Smith
 * [http://home.earthlink.net/~peter.a.taylor/swuusi.pdf Election Systems] by Peter A. Taylor
-* [http://m-schulze.9mail.de/wilke.pdf Personalisierung der VerhÃ¤ltniswahl durch Varianten der Single Transferable Vote] by Martin Wilke
+* [http://m-schulze.9mail.de/wilke.pdf Personalisierung der Verhältniswahl durch Varianten der Single Transferable Vote] by Martin Wilke
 * [http://dukespace.lib.duke.edu/dspace/bitstream/10161/1278/1/Wright_Barry.pdf Objective Measures of Preferential Ballot Voting Systems] by Barry Wright
 * [http://www.cs.qub.ac.uk/~W.Liu/ecsqaru-paper-46.pdf Approaches to Constructing a Stratified Merged Knowledge Base] by Anbu Yue, Weiru Liu, and Anthony Hunter
 
 === Books ===
 
 <!-- this section contains a lot of links; please try to keep it organized by the author's last name. -->
-* Christoph BÃ¶rgers (2009), ''[http://books.google.com/books?id=dccBaphP1G4C&pg=PA37#v=onepage&q=&f=false Mathematics of Social Choice: Voting, Compensation, and Division]'', SIAM, ISBN 0-8987-1695-0
+* Christoph Börgers (2009), ''[http://books.google.com/books?id=dccBaphP1G4C&pg=PA37#v=onepage&q=&f=false Mathematics of Social Choice: Voting, Compensation, and Division]'', SIAM, ISBN 0-8987-1695-0
 * Saul Stahl and Paul E. Johnson (2006), ''[http://books.google.com/books?id=CMLL9sVGLb8C&pg=PA119#v=onepage&q=&f=false Understanding Modern Mathematics]'', Sudbury:  Jones and Bartlett Publishers, ISBN 0-7637-3401-2
 * Nicolaus Tideman (2006), ''[http://books.google.com/books?id=RN5q_LuByUoC&pg=PA228#v=onepage&q=&f=false Collective Decisions and Voting: The Potential for Public Choice]'' [http://www.ashgate.com/pdf/SamplePages/Collective_Decisions_and_Voting_Index.pdf], Burlington: Ashgate, ISBN 0-7546-4717-X
 
 === Newspaper articles ===
 
-* [http://www.heise.de/tp/r4/artikel/31/31832/1.html Entscheidungsfindung via Software] by Peter MÃ¼hlbauer (January 2010)
+* [http://www.heise.de/tp/r4/artikel/31/31832/1.html Entscheidungsfindung via Software] by Peter Mühlbauer (January 2010)
 
 === Software ===
 
@@ -845,7 +845,7 @@ Each figure represents the number of voters who ranked the candidate at the left
 * [http://condorcet.ericgorr.net/ Condorcet Voting Calculator] by Eric Gorr
 * [http://selectricity.org/ Selectricity] and [http://rubyvote.rubyforge.org/ RubyVote] by Benjamin Mako Hill [http://web.mit.edu/newsoffice/2008/voting-tt0312.html] [http://labcast.media.mit.edu/?p=56]
 * [http://relet.net/frog/archives/52 Java implementation of the Schulze method] by Thomas Hirsch
-* [https://bitbucket.org/capitol/schulze schulze implementation] implementation in c++ with python bindings by Alexander KjÃ¤ll
+* [https://bitbucket.org/capitol/schulze schulze implementation] implementation in c++ with python bindings by Alexander Kjäll
 * [http://wiki.electorama.com/wiki/Electowidget Electowidget] by Rob Lanphier
 * [http://www.votator.com Votator.com] by Louis Philippe Lessard [http://www.votator.com/howitworks/]
 * [http://www.livejournal.com/community/evan_tech/124253.html Haskell Condorcet Module] by Evan Martin

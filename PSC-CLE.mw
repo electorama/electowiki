@@ -17,7 +17,7 @@ The elimination order is determined using a [[Condorcet ranking method]].  The r
 
 Step 2: Compute the proportionality rules.
 
-Each possible set of candidates is entitled to a number of seats equal to either the greatest integer less than (proportion of voters solidly committed to that set) Ãƒâ€” (seats + 1), or the number of candidates in that set, whichever is lower.  ("Solidly committed" is defined as in [[Descending Solid Coalitions]].)
+Each possible set of candidates is entitled to a number of seats equal to either the greatest integer less than (proportion of voters solidly committed to that set) × (seats + 1), or the number of candidates in that set, whichever is lower.  ("Solidly committed" is defined as in [[Descending Solid Coalitions]].)
 
 Step 3: Using the elimination order found in Step 1, eliminate candidates one-by-one until the number of candidates remaining is equal to the number of seats.  But if the elimination of a candidate would cause a proportionality rule to be violated, then do not eliminate that candidate.
 
@@ -56,7 +56,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{A}</td>
       <td>66/90 = 11/15</td>
-      <td>(11/15)Ãƒâ€”(2+1) = 2+1/5</td>
+      <td>(11/15)×(2+1) = 2+1/5</td>
       <td>2</td>
       <td>1</td>
       <td>1</td>
@@ -64,7 +64,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{D}</td>
       <td>24/90 = 4/15</td>
-      <td>(4/15)Ãƒâ€”(2+1) = 4/5</td>
+      <td>(4/15)×(2+1) = 4/5</td>
       <td>0</td>
       <td>1</td>
       <td>0</td>
@@ -72,7 +72,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{A, B}</td>
       <td>15/90 = 1/6</td>
-      <td>(1/6)Ãƒâ€”(2+1) = 1/2</td>
+      <td>(1/6)×(2+1) = 1/2</td>
       <td>0</td>
       <td>2</td>
       <td>0</td>
@@ -80,7 +80,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{A, C}</td>
       <td>51/90 = 17/30</td>
-      <td>17/30Ãƒâ€”(2+1) = 1+7/10</td>
+      <td>17/30×(2+1) = 1+7/10</td>
       <td>1</td>
       <td>2</td>
       <td>1</td>
@@ -88,7 +88,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{A, D}</td>
       <td>8/90 = 4/45</td>
-      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>(4/45)×(2+1) = 4/15</td>
       <td>0</td>
       <td>2</td>
       <td>0</td>
@@ -96,7 +96,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{B, D}</td>
       <td>8/90 = 4/45</td>
-      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>(4/45)×(2+1) = 4/15</td>
       <td>0</td>
       <td>2</td>
       <td>0</td>
@@ -104,7 +104,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{C, D}</td>
       <td>8/90 = 4/45</td>
-      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>(4/45)×(2+1) = 4/15</td>
       <td>0</td>
       <td>2</td>
       <td>0</td>
@@ -112,7 +112,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{A, B, C}</td>
       <td>66/90 = 11/15</td>
-      <td>(11/15)Ãƒâ€”(2+1) = 2+1/5</td>
+      <td>(11/15)×(2+1) = 2+1/5</td>
       <td>2</td>
       <td>3</td>
       <td>2</td>
@@ -120,7 +120,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{A, B, D}</td>
       <td>8/90 = 4/45</td>
-      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>(4/45)×(2+1) = 4/15</td>
       <td>0</td>
       <td>3</td>
       <td>0</td>
@@ -128,7 +128,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{A, C, D}</td>
       <td>8/90 = 4/45</td>
-      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>(4/45)×(2+1) = 4/15</td>
       <td>0</td>
       <td>3</td>
       <td>0</td>
@@ -136,7 +136,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{B, C, D}</td>
       <td>8/90 = 4/45</td>
-      <td>(4/45)Ãƒâ€”(2+1) = 4/15</td>
+      <td>(4/45)×(2+1) = 4/15</td>
       <td>0</td>
       <td>3</td>
       <td>0</td>
@@ -144,7 +144,7 @@ The sets of candidates with solidly-committed voters are:
    <tr align="center">
       <td>{A, B, C, D}</td>
       <td>90/90 = 1</td>
-      <td>1Ãƒâ€”(2+1) = 3</td>
+      <td>1×(2+1) = 3</td>
       <td>2</td>
       <td>4</td>
       <td>2</td>

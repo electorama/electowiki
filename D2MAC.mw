@@ -85,7 +85,7 @@ This is because this voting behaviour of "full cooperation" is a group strategic
 
 Had some ''x'' of the last 45 voters voted no approval for C instead, they would have ended up with a smaller expected utility than 75, namely
 
-: (''x'' % + (45 - ''x'')% * ''x'' %) * 100 + (100 - ''x'')% * (100 - ''x'')% * 75 = 75 - 0.05 ''x'' - 0.002 ''x'' Â² < 75.
+: (''x'' % + (45 - ''x'')% * ''x'' %) * 100 + (100 - ''x'')% * (100 - ''x'')% * 75 = 75 - 0.05 ''x'' - 0.002 ''x'' ² < 75.
 
 Analogously, had some x of the other 55 voters voted no approval for C instead, they would have ended up with a smaller expected utility than 80.
 

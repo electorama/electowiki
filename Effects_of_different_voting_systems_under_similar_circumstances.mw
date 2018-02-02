@@ -220,7 +220,7 @@ Note that although Coomb's method chose the [[Condorcet winner]] here, this is n
 !Knoxville
 |17||15||26||42||107
 |}
-In [[Borda count]] each voter ranks all the candidates on their ballot. If there are '''n''' candidates in the election, then the first-place candidate on a ballot receives '''n'''âˆ’1 points, the second-place candidate receives '''n'''âˆ’2, and in general the candidate in ''x''th place receives '''n'''âˆ’''x'' points. The candidate ranked last on the ballot therefore receives zero points.
+In [[Borda count]] each voter ranks all the candidates on their ballot. If there are '''n''' candidates in the election, then the first-place candidate on a ballot receives '''n'''−1 points, the second-place candidate receives '''n'''−2, and in general the candidate in ''x''th place receives '''n'''−''x'' points. The candidate ranked last on the ballot therefore receives zero points.
 
 Nashville is the winner in this election, as it has the most points.  Nashville also happens to be the [[Condorcet winner]] in this case. While the Borda count does not always select the Condorcet winner as the Borda Count winner, it always ranks the Condorcet winner above the Condorcet loser.  No other positional method can guarantee such a relationship.
 
@@ -254,7 +254,7 @@ The first round has no majority winner. Therefore the second rank votes are adde
 === Majority choice approval  ===
 :''Winner: Nashville''
 
-[[Majority-choice approval]] (MCA) is a voting system devised by Forest Simmons in April 2002 for use with three-slot ballots. That is, a voter has three possible choices for rating each candidate: â€˜favoredâ€™, â€˜acceptedâ€™, or â€˜disapprovedâ€™. A rating of either â€˜favoredâ€™ or â€˜acceptedâ€™ signifies approval of the candidate.  If at least one candidate is marked â€˜favoredâ€™ by more than 50% of the voters, then the candidate marked â€˜favoredâ€™ on the most ballots is elected. Otherwise, the winner is the candidate with the highest approval (i.e., the sum of â€˜favoredâ€™ and â€˜acceptedâ€™ marks). Ties can be broken based on the number of â€˜favoredâ€™ marks. Thus, MCA is equivalent to [[Bucklin voting]] with the voter only able to classify in two slots, but able to vote any number of candidates in those slots.
+[[Majority-choice approval]] (MCA) is a voting system devised by Forest Simmons in April 2002 for use with three-slot ballots. That is, a voter has three possible choices for rating each candidate: ‘favored’, ‘accepted’, or ‘disapproved’. A rating of either ‘favored’ or ‘accepted’ signifies approval of the candidate.  If at least one candidate is marked ‘favored’ by more than 50% of the voters, then the candidate marked ‘favored’ on the most ballots is elected. Otherwise, the winner is the candidate with the highest approval (i.e., the sum of ‘favored’ and ‘accepted’ marks). Ties can be broken based on the number of ‘favored’ marks. Thus, MCA is equivalent to [[Bucklin voting]] with the voter only able to classify in two slots, but able to vote any number of candidates in those slots.
 
 In this example, like with Bucklin, we see that Nashville wins, and that everyone would accept Chattanooga as an alternative. (The majority of voters did not disapprove of Chattanooga.)
 
@@ -546,34 +546,34 @@ In this example, suppose that voters each decided to grant from 1 to 10 points t
 </TR>
 <TR>
 	<TD>Memphis</TD>
-	<TD>420 (42 Ã— 10)</TD>
-	<TD>26 (26 Ã— 1)</TD>
-	<TD>15 (15 Ã— 1)</TD>
-	<TD>17 (17 Ã— 1)</TD>
+	<TD>420 (42 × 10)</TD>
+	<TD>26 (26 × 1)</TD>
+	<TD>15 (15 × 1)</TD>
+	<TD>17 (17 × 1)</TD>
 	<TD>478</TD>
 </TR>
 <TR>
 	<TD>Nashville</TD>
-	<TD>210 (42 Ã— 5)</TD>
-	<TD>260 (26 Ã— 10)</TD>
-	<TD>30 (15 Ã— 2)</TD>
-	<TD>34 (17 Ã— 2)</TD>
+	<TD>210 (42 × 5)</TD>
+	<TD>260 (26 × 10)</TD>
+	<TD>30 (15 × 2)</TD>
+	<TD>34 (17 × 2)</TD>
 	<TD>534</TD>
 </TR>
 <TR>
 	<TD>Chattanooga</TD>
-	<TD>84 (42 Ã— 2)</TD>
-	<TD>130 (26 Ã— 5)</TD>
-	<TD>150 (15 Ã— 10)</TD>
-	<TD>85 (17 Ã— 5)</TD>
+	<TD>84 (42 × 2)</TD>
+	<TD>130 (26 × 5)</TD>
+	<TD>150 (15 × 10)</TD>
+	<TD>85 (17 × 5)</TD>
 	<TD>449</TD>
 </TR>
 <TR>
 	<TD>Knoxville</TD>
-	<TD>42 (42 Ã— 1)</TD>
-	<TD>52 (26 Ã— 2)</TD>
-	<TD>75 (15 Ã— 5)</TD>
-	<TD>170 (17 Ã— 10)</TD>
+	<TD>42 (42 × 1)</TD>
+	<TD>52 (26 × 2)</TD>
+	<TD>75 (15 × 5)</TD>
+	<TD>170 (17 × 10)</TD>
 	<TD>339</TD>
 </TR>
 </TABLE>
