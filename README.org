@@ -1,15 +1,15 @@
-electowiki could refer to a couple of different sites:
+"Electowiki" could refer to a couple of different sites:
 
  * electowiki: [[https://electowiki.org][electowiki.org]] - 
  * Electorama wiki: [[https://wiki.electorama.com][wiki.electorama.com]]
 
 Since wiki.electorama.com has been pretty dormant for a while (as of 2020-07-04), let's just talk about the former
 
-# electowiki
-(i.e. electowiki.miraheze.org)
+* electowiki
+ (_i.e. [[https://electowiki.miraheze.org][electowiki.miraheze.org]] _)
 
 Most of the current activity associated with electowiki has moved over to [[https://electowiki.org][electowiki.org]]
 
-# Electorama wiki
+* Electorama wiki
 
 This is the site that @robla has been trying to wrap up for a while.
